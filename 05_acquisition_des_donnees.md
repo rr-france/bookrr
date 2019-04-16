@@ -1,10 +1,16 @@
 # Acquisition des données
 
-
-## Protocole de collecte des données
-
-* Documenter
-
+## Absence de standardisation de la collecte des données
+Dans la grande majorité des cas, la production de résultats issus d'une recherche passe par la collecte de données. Ces données sont recueillies sur des « individus » (un individu pouvant être une pièce mécanique, un être vivant, etc.). Ce que l’on entend par « données » sont les caractéristiques de chacun des individus qui font l’objet de la recherche (par exemple : la résistance à la traction d’un matériau, la concentration en glucose d’une personne atteinte d’un diabète, son âge, son poids, etc.) Un point fondamental pour s’assurer de la reproductibilité de la recherche est celui de standardiser la collecte des données. En effet, si cette collecte n’est pas standardisée, la personne qui collecte des données sur un individu un jour n°1 ne le fera potentiellement pas de la même façon le jour n°2 si elle devait le refaire. Et si elle ne le fait pas de la même façon, alors la valeur de la donnée du jour n°2 serait différente de celle du jour n°1, non pas parce que la donnée a changé au cours du temps (ce qui est possible, et éventuellement acceptable – cf. infra), mais parce que la méthode a changé. Ainsi, comment s’assurer d’une recherche reproductible si elle est fondée sur des données dont la valeur dépend de la façon dont est collectée la donnée, avec une façon qui n’est pas fixée pendant toute la durée de l’étude ? 
+## Modification des données après une collecte originale
+Un autre problème conduisant à une recherche non reproductible se produit lorsque des données recueillies sur un individu sont modifiées après une première collecte, sans que ces modifications soient tracées. Dans ce cas-là, les analyses statistiques qui seront conduites sur les données modifiées ne fourniront évidemment pas les mêmes résultats que celles conduites sur les données initiales. S’il n’y a aucun moyen de revenir aux données initiales et/ou de savoir les données qui ont été modifiées, votre recherche devient par conséquent non reproductible.
+## Une collecte des données non répétable ou non reproductible
+### Définition de la fidélité d’une mesure
+La fidélité est l’étroitesse de l'accord entre les indications ou les valeurs mesurées obtenues par des mesurages répétés du même objet ou d'objets similaires dans des conditions spécifiées.
+### Définition de répétabilité et reproductibilité d’une mesure
+La répétabilité est la fidélité dans les conditions de mesures qui comprennent la même procédure de mesure, les mêmes opérateurs, le même système de mesure, les mêmes conditions de fonctionnement et le même lieu, ainsi que des mesurages répétés sur le même objet ou des objets similaires pendant une courte période de temps
+### Impact d’une absence de répétabilité ou de reproductibilité dans la collecte des donnés
+Si la collecte d’une donnée n’est pas répétable, l’impact est directement négatif sur la reproductibilité de votre recherche : vous n’obtiendriez pas les mêmes résultats à partir de données collectées sur des individus identiques, évalués dans les mêmes conditions par un même opérateur. Si la collecte des données n’est pas reproductible d’un opérateur à un autre, le problème de non reproductibilité de votre recherche persiste : personne d’autre que vous ne pourrait obtenir les mêmes résultats sur des individus identiques évalués dans les mêmes conditions.
 
 ## Numérisation
 
