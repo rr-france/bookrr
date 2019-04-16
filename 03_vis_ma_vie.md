@@ -24,7 +24,8 @@ dans la litérature.
 La fluorescence est en compétition avec des mouvements intramoléculaires assez
 rares. Pour avoir une chance de les observer et de faire une statistique, 
 je dois faire des simulations avec des pas de temps assez longs. 
-En analysant les résultats, j'ai détecté un mouvement intéressant, mais le 
+>
+>En analysant les résultats, j'ai détecté un mouvement intéressant, mais le 
 pas de temps est trop long pour en observer les détails. 
 J'ai donc repris les données stockées par le programme juste avant cet événement 
 et j'ai relancé la simulation avec un pas de temps plus fin. 
