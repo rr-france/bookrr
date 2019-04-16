@@ -11,6 +11,9 @@ La fidélité est l’étroitesse de l'accord entre les indications ou les valeu
 La répétabilité est la fidélité dans les conditions de mesures qui comprennent la même procédure de mesure, les mêmes opérateurs, le même système de mesure, les mêmes conditions de fonctionnement et le même lieu, ainsi que des mesurages répétés sur le même objet ou des objets similaires pendant une courte période de temps
 ### Impact d’une absence de répétabilité ou de reproductibilité dans la collecte des donnés
 Si la collecte d’une donnée n’est pas répétable, l’impact est directement négatif sur la reproductibilité de votre recherche : vous n’obtiendriez pas les mêmes résultats à partir de données collectées sur des individus identiques, évalués dans les mêmes conditions par un même opérateur. Si la collecte des données n’est pas reproductible d’un opérateur à un autre, le problème de non reproductibilité de votre recherche persiste : personne d’autre que vous ne pourrait obtenir les mêmes résultats sur des individus identiques évalués dans les mêmes conditions.
+## Collecte des données à plusieurs
+Supposons que vous ne soyez pas la seule ou le seul à collecter les données pour votre étude. Deux questions se posent. La première a déjà été abordée ci-dessus, et concerne la standardisation de la collecte des données. Si cette collecte n’est pas standardisée, votre collègue et vous n’obtiendrez potentiellement pas les mêmes valeurs des données collectées si pourtant vous évaluiez les mêmes individus. La seconde question qui se pose est la suivante : dans quel document allez-vous collecter les données de telle sorte que vous et votre collègue n’allez pas écraser les données collectées par l’autre ?
+
 
 ## Numérisation
 
