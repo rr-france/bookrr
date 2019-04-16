@@ -1,24 +1,17 @@
-Ci-dessous, plusieurs témoignages anonymes d'acteurs de la recherche qui expose  
+# Vis ma vie cauchemardesque de personna de la recherche
 
-*Charles P., doctorant en sociologie:*
+Nous avons recueillis ci-dessous plusieurs témoignages fictifs de *personnas* acteurs de la recherche, mais néanmoins vraisemblables et basés sur des expériences réelles. Ils permettent d'appréhender concrêtement différentes problématiques autour de la recherche reproductible.
+
+*Charles P., doctorant en sociologie :*
 > "J'interroge des personnes issues de milieux sociaux défavorisés afin de recueillir leur expérience de vie. Je consigne toutes mes notes dans un carnet relié, et je retranscris les informations démographiques dans le tableur Calc afin de compiler quelques statistiques (pyramide des ages, répartition des sexes, etc). Je collabore étroitement avec un autre doctorant de mon directeur sur ce projet, qui alimente lui aussi le même fichier Calc, que nous nous échangeons régulièrment par clé USB."
 
-*Jeanne A., jeune méthodologiste en biostatistique:*
+*Jeanne A., jeune méthodologiste en biostatistique :*
 > "J'ai terminé mon Master 2 l'année dernière, dans laquelle j'ai appris à mener des analyses statistiques sous R lors de sa formation. J'analyse régulièrement des jeux de données transmis qui me sont généralement transmis directement via message électronique par des cliniciens travaillant au CHU au format Excel.  
 > 
 >Je suis relativement isolée dans ma tache d'analyse de données, mes collègues étant tous médecins ou biologistes. J'aimerais changer mes pratiques pour rendre ma recherche plus reproductible, mais je ne sais pas par où commencer.  
 >  
->J'ai récemment participé à la rédaction d'un article scientifique, et nous venons de recevoir les commentaires des relecteurs : je dois modifier les couleurs d'une figure afin que celle-ci soit lisible en noir et blanc. Comme je n'arrivais pas à remettre la main sur mon *script* R ayant généré cette figure, j'ai ré-écrit le programme correspondant à la figure en question. Le seul problème, c'est que cette nouvelle figure est un peu différente de la précédente et remets en cause les conclusions de l’article."
+>J'ai récemment participé à la rédaction d'un article scientifique, et nous venons de recevoir les commentaires des relecteurs : je dois modifier les couleurs d'une figure afin que celle-ci soit lisible en noir et blanc. Comme je n'arrivais pas à remettre la main sur mon *script* R ayant généré la figure en question, j'ai ré-écrit le programme correspondant. Le seul problème, c'est que cette nouvelle figure est un peu différente de la précédente et remet en cause les conclusions de l’article. Je ne comprends pas ce qui a pu se passer."
 
-Je suis Connait analyses de base (de par sa formation)
-- Analyse des jeux de données pour des cliniciens, au format excel (+RGPD+)
-- A reçu les révisions d'un article, doit changer la couleur
-- A un jour fait un programme pour faire sa figure mais n'a pas retrouvé le programme, l'a refait
-- La figure a changé et les conclusions
-- Isolé dans son travail, ses collègues lui déléguant l'analyse
-- Sa recherce n'est pas reproductible
-- aimerait changer ses modes de travails mais ne sait pas trop par où
-  commencer"
 # Le tayloriste
 - Doit extraire des données à partir d'une série de PDF
 - Les copie/colle dans excel
@@ -27,7 +20,8 @@ Je suis Connait analyses de base (de par sa formation)
 - Traitement statistique avec régression linéaire sous excel.
   - Pas de barre d'erreur sur les estimations
 - Quand le referree demande des incertitudes, il a les choquottes
-# Jeune numéricien/simulateur
+
+*Long N., Maître de conférence en :*
 - Simulation d'un système moléculaire de protéines
 - Pas de temps assez large pour voir l'objet bouger et repérer des
   évènements rares,
@@ -42,15 +36,18 @@ Je suis Connait analyses de base (de par sa formation)
 - Instabilité quand on passe en parallèle
 - Différence de résultats dans maximisation de vraissemblance entre
   single/double/quadruple precision
-# Ingénieur
+
+*Mohammed B., ingénieur d'étude :*
 - un ingénieur qui paye la dette technique depuis des années en
   collant des rustines mais que personne ne sait modifier
 - conservation de l'environnemnet coute que coute
 - données perdues
 - C'est lui qui choisi mais il ne connait pas forcément les bonnes
   pratiques et les solutions
-# PI
-- un groupe à gérer et des comptes à rendre
+
+*Christina Z., Directrice de Recherche au CNRS*
+
+> Je dirige une équipe de recherche depuis 3 ans
 
 - recherche à mettre à la poubelle car erreur ou manque d'information
 - responsabilité en cas d'erreur
