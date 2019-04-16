@@ -38,17 +38,24 @@ Dois-je annoncer au reviewer qu'une partie des résultats a changé ?
 # Mon code ne marche plus
 
 Ayant réussi à décrocher une ANR, je m'offre un nouvel ordinateur,
-avec la version la plus récente du système. J'y installe les codes
-d'analyse utilisés pour mes études
+avec la version la plus récente du système et des logiciels. 
+Pour profiter au mieux des performances de cette machine, je 
+recompile mon code de simulation. Je suis un peu choqué lorsque 
+(1) le compilateur génère des erreurs, ou bien 
+(2) le code recompilé démarre et se plante après quelques secondes. 
+Ma première idée est de récupérer mon vieil ordinateur, mais 
+l'ingénieur informatique du labo l'a déjà reformaté pour le
+passer à un stagiaire. 
+
+Pourquoi moi ?
+
 
 # Comment repartir du travail de mes prédécesseurs ? (mon doctorant est parti)
 
 A mon arrivée dans l'équipe en tant que doctorant, mon directeur
 m'a conseillé de débuter en faisant quelques modification dans
 le code de simulation élaboré par le doctorant précédent. 
-J'ai installé ce code sur mon ordinateur, mais, avant même que
-je le modifie (1) le compilateur génère des erreurs, ou bien 
-(2) le code démarre et se plante après quelques secondes.
 
-Comment mon prédecesseur a-t'il fair pour générer les résultats 
+
+Comment mon prédecesseur a-t'il fait pour générer les résultats 
 de sa thèse ???
