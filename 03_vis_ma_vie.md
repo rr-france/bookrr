@@ -18,11 +18,22 @@ Nous avons recueillis ci-dessous plusieurs témoignages fictifs de *personnas* a
 >C'est assez un travail assez rébarbatif, mais c'est le seul moyen de pouvoir ensuite analyser les données de la litérature. Lorsque ma collecte sera terminée, je calulerai le coéfficient R^2^ pour mes données et mon directeur espère pouvoir publier nos résultats."
 
 # *Long N., Maître de conférences en biologie :*
-Simulation d'un système moléculaire de protéines
-Pas de temps assez large pour voir l'objet bouger et repérer des
-  évènements rares,
-- puis rafinement avec pas de temps plus fin pour l'observer mais
-  l'évènement disparaît, chaos numérique
+>"Pour interpréter mes données expérimentales sur les protéines fluorescentes, 
+je me suis lancé dans la simulation moléculaire et j'ai installé un code réputé
+dans la litérature. 
+La fluorescence est en compétition avec des mouvements intramoléculaires assez
+rares. Pour avoir une chance de les observer et de faire une statistique, 
+je dois faire des simulations avec des pas de temps assez longs. 
+En analysant les résultats, j'ai détecté un mouvement intéressant, mais le 
+pas de temps est trop long pour en observer les détails. 
+J'ai donc repris les données stockées par le programme juste avant cet événement 
+et j'ai relancé la simulation avec un pas de temps plus fin. 
+Je n'ai jamais pu reproduire cet événement.
+En faisant de la bibliographie, j'ai réalisé que ce type de simulation
+était affecté par du "chaos numérique". Je n'ai plus confiance dans mes résultats.
+>"
+
+
 - Utilisation de super-calculateurs, serveurs partagés sans
   réservation de l'allocation mémoire et du coup ça swappe
   - ou bien les difficultés liées à l'utilisation d'un
