@@ -1,6 +1,6 @@
-# Vis ma vie cauchemardesque de *personna* de la recherche
+# Vis ma vie cauchemardesque de *persona* de la recherche
 
-Nous avons recueillis ci-dessous plusieurs témoignages fictifs de *personnas* acteurs de la recherche, mais néanmoins vraisemblables et basés sur des expériences réelles. Ils permettent de personnifier et d'appréhender concrêtement différentes problématiques autour de la recherche reproductible.
+Nous avons recueillis ci-dessous plusieurs témoignages fictifs de *personas* acteurs de la recherche, mais néanmoins vraisemblables et basés sur des expériences réelles. Ils permettent de personnifier et d'appréhender concrêtement différentes problématiques autour de la recherche reproductible.
 
 ## *Charles P., doctorant en sociologie*
 > "J'interroge des personnes issues de milieux sociaux défavorisés afin de recueillir leur expérience de vie. Je consigne toutes mes notes dans un carnet relié, et je retranscris les informations démographiques dans le tableur Calc afin de compiler quelques statistiques (pyramide des ages, répartition des sexes, etc). Je collabore étroitement avec un autre doctorant de mon directeur sur ce projet, qui alimente lui aussi le même fichier Calc, que nous nous échangeons régulièrment par clé USB."
