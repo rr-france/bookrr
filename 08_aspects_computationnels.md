@@ -23,16 +23,16 @@ Le cas le plus frustrant est certainement celui où on n'a tout
 simplement pas ou plus accès au programme à lancer. 
 - Cela peut être dû au fait que le logiciel soit propriétaire et que
   l'on n'ait pas accès à la licence d'exploitation. Par exemple
-  parceque votre équipe/université, n'ayant plus de budget, a cessé de
-  la payer ou parceque ce logiciel est disponible dans l'université
-  d'un collègue mais pas dans l'université où vous êtes
+  parce que votre équipe/université, n'ayant plus de budget, a cessé de
+  la payer ou parce que ce logiciel est disponible dans l'université
+  d'un collègue mais pas dans l'université où vous travaillez
   actuellement. Il se peut également que vous y ayez accès mais que
   seul un nombre restreint de personnes puissent y accéder en même
   temps (avec un système de *tokens*) et que vous vous retrouviez à
   devoir attendre un bon moment avant d'y arriver.
 - Si le code a été développé "en interne", il arrive (trop souvent)
   qu'à la suite d'un crash disque, d'un vol d'ordinateur portable, du
-  départ du développeur principal, ... que l'on n'ai juste plus accès
+  départ du développeur principal, ... que l'on n'ait juste plus accès
   au logiciel. C'est souvent le résultat d'un mauvaise politique de
   sauvegardes ou de partage d'informations au sein d'une équipe.
 - Assez souvent, c'est un code développé "en externe" (dans une autre
@@ -41,7 +41,7 @@ simplement pas ou plus accès au programme à lancer.
   des résultats similaires avec une autre méthode. Hélas, ces
   chercheurs peuvent ne pas souhaiter partager ce code, par exemple
   pour conserver un avantage compétitif, ou bien parce qu'ils n'est
-  pas *montrable* (commentaires , Peut-être même n'ont-ils jamais prévu
+  pas *montrable* (commentaires , peut-être même n'ont-ils jamais prévu
   
   (commentaires *en
   état* ou bien parce
