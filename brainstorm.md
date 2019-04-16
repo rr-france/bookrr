@@ -15,6 +15,7 @@
         * p-hacking
         * harking
         * Stats (une partie)
+    * observation vs mesure
 ### Vis ma vie cauchemardesque de 5 + 1 personas
 * Celui qui collecte
 * celui qui fait des stats
