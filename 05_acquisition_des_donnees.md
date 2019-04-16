@@ -10,7 +10,7 @@
 
 Lorsqu'une étude dépend de données collectées dans la littérature,
 une intervention manuelle est souvent nécessaire pour constituer
-la base de donées. 
+la base de données. 
 Considérons d'abord le cas, fréquent et a priori favorable, 
 où les données convoitées sont dans le fichier pdf d'un article 
 ou de son supplément. 
@@ -35,4 +35,18 @@ problèmes similaires.
 Pour le chercheur aventureux, coller les données collectées
 dans un tableur peut introduire une couche supplémentaire
 de surprises (transformation de nombres en dates, par exemple) [@REF].
+
+## Que faire ?
+
+La solution dans ce cas, outre la création de logiciels de conversion
+intelligents, ne dépend pas du collecteur de données, mais de l'émetteur,
+et repose sur les règles de bonne pratique quant à l'archivage
+des données dans des formats ouverts et lisibles par la machine 
+(csv, xml...).
+
+Du côté du collecteur, si le volume de données est important
+et/ou si la tâche est répétitive, l'élaboration d'un code 
+automatisant au maximum le processus
+devrait être envisagé.
+
 
