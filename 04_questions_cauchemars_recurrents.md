@@ -11,7 +11,7 @@ de paramètres non-envisagés dans l'étude initiale;
 * vérifier que les méthodes "maison" font aussi bien, ou mieux, que celles des
 équipes concurrentes;
 
-*...
+* ...
 
 Ces tentatives sont souvent l'occasion de surprises désagréables 
 (chauchemars de non-reproductibilité) qui doivent amener le chercheur
