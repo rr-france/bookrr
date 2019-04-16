@@ -1,4 +1,6 @@
-Il existe de multiples raisons pour tenter de reproduire des résultats de recherche:
+# Questions recurrentes
+
+Il existe de multiples raisons pour tenter de reproduire des résultats de recherche :
 
 * vérifier que la méthode mise en oeuvre il y a quelques mois par un stagiaire, 
 doctorant ou soi-même donne les mêmes résultats avant de poursuivre l'étude;
@@ -13,10 +15,10 @@ de paramètres non-envisagés dans l'étude initiale;
 
 Ces tentatives sont souvent l'occasion de surprises désagréables 
 (chauchemars de non-reproductibilité) qui doivent amener le chercheur
-à se uestionner sur ses pratiques. 
+à se questionner sur ses pratiques. 
 Quelques témoignages, fictifs mais typiques, sont présentés ci-dessous.
 
-# Ou sont mes données, mon code ?
+## Où sont mes données, mon code ?
 
 Après la publication d'un des mes articles, un collègue souhaite collaborer 
 avec moi pour tester de nouvelles hypothèses sur le jeu de données 
