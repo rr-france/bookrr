@@ -1,11 +1,14 @@
-En version plusieurs témoignages anonymes
-# Le dotorant SHS (anthropologue, sociologue, clinicien) qui récolte des données humain
+Ci-dessous, plusieurs témoignages anonymes d'acteurs de la recherche qui expose  
+
+*Charles P., doctorant en sociologie*
+> Je récolte des données  
 - travaille sur les souris (sauvage vs. domestique)
 - manips fiches papiers et retranscription des notes/données sur tableur
 - plusieurs personnes rentrent les données dans un même document (travail en équipe)
 - interprétation de ces données
 - rédaction de l'article
 - problème de démarche ou d'outils ?
+
 # Jeune méthodologiste en bio-stats
 - Connait analyses de base (de par sa formation)
 - Analyse des jeux de données pour des cliniciens, au format excel (+RGPD+)
