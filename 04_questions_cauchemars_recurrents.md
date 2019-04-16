@@ -29,7 +29,7 @@ puisque l'article était publié.
 
 Que dois-je répondre à ce collègue tout en gardant un semblant de dignité ?
 
-# Mes résultats ont changé
+## Mes résultats ont changé
 
 Depuis que j'ai soumis un article au journal, il y a quelques mois,
 j'ai continué à travailler sur mon code de traitement des données.
@@ -41,7 +41,7 @@ les mêmes résultats que ceux de l'article.
 
 Dois-je annoncer au reviewer qu'une partie des résultats a changé ?
     
-# Mon code ne marche plus
+## Mon code ne marche plus
 
 Ayant réussi à décrocher une ANR, je m'offre un nouvel ordinateur,
 avec la version la plus récente du système et des logiciels. 
@@ -55,7 +55,7 @@ passer à un stagiaire.
 
 Pourquoi moi ?
 
-# Mon nouveau doctorant n'observe pas les mêmes effets que son prédécesseur
+## Mon nouveau doctorant n'observe pas les mêmes effets que son prédécesseur
 
 L'an passé un de mes doctorants a soutenu brillament sa thèse après
 avoir obtenu des résultats remarquables, que nous avons publiés dans 
