@@ -1,9 +1,9 @@
 Ci-dessous, plusieurs témoignages anonymes d'acteurs de la recherche qui expose  
 
 *Charles P., doctorant en sociologie:*
-> "Je récolte des données en intérrogeant des personnes issues de milieux sociaux défavorisés  
+> "J'interroge des personnes issues de milieux sociaux défavorisés afin de recueillir leur expérience de vie.
 >  
-> Je consigne toutes mes notes dans un carnet relié, et je retranscris les informations démographiques dans le tableur Calc afin de compiler quelques statistiques (pyramide des ages, répartition des sexes, etc).
+> Je consigne toutes mes notes dans un carnet relié, et je retranscris les informations démographiques dans le tableur Calc afin de compiler quelques statistiques (pyramide des ages, répartition des sexes, etc). Je collabore étroitement avec un autre doctorant de mon directeur sur ce projet, qui alimente lui aussi le même fichier Calc.
 >
 > plusieurs personnes rentrent les données dans un même document (travail en équipe)
 - interprétation de ces données
