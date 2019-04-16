@@ -47,8 +47,8 @@ de surprises (transformation de nombres en dates, par exemple) [@REF].
 
 ## Que faire ?
 
-La solution dans ce cas, outre la création de logiciels de conversion
-intelligents, ne dépend pas du collecteur de données, mais de l'émetteur,
+La solution dans ce cas, outre d'attendre la création de logiciels de conversion
+"intelligents", ne dépend pas du collecteur de données, mais de l'émetteur,
 et repose sur les règles de bonne pratique quant à l'archivage
 des données dans des formats ouverts et lisibles par la machine 
 (csv, xml...).
