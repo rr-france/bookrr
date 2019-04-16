@@ -14,15 +14,15 @@ de paramètres non-envisagés dans l'étude initiale;
 * ...
 
 Ces tentatives sont souvent l'occasion de surprises désagréables 
-(chauchemars de non-reproductibilité) qui doivent amener le chercheur
+(cauchemars de non-reproductibilité) qui doivent amener le chercheur
 à se questionner sur ses pratiques. 
-Quelques témoignages, fictifs mais typiques, sont présentés ci-dessous.
+Quelques témoignages, fictifs mais vraisemblables, sont présentés ci-dessous.
 
 ## Où sont mes données, mon code ?
 
 Après la publication d'un des mes articles, un collègue souhaite collaborer 
 avec moi pour tester de nouvelles hypothèses sur le jeu de données 
-que j'y ai présenté. Malheureusement, (1) le disque dur sur lequel 
+que j'ai présenté. Malheureusement, (1) le disque dur sur lequel 
 j'archivais les données brutes a crashé, ou bien, (2) j'ai effacé 
 les données qui prenaient beaucoup de place sur mon ordinateur, 
 puisque l'article était publié. 
@@ -50,7 +50,7 @@ recompile mon code de simulation. Je suis un peu choqué lorsque
 (1) le compilateur génère des erreurs, ou bien 
 (2) le code recompilé démarre et se plante après quelques secondes. 
 Ma première idée est de récupérer mon vieil ordinateur, mais 
-l'ingénieur informatique du labo l'a déjà reformaté pour le
+l'informaticien du labo l'a déjà reformaté pour le
 passer à un stagiaire. 
 
 Pourquoi moi ?
