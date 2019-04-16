@@ -18,7 +18,6 @@ domaines. La notion de "même résultat" sera très dépendante du domaine. Pour
 les uns, il suffira de confirmer la significativité d'une effet, pour d'autres,
 ils devront obtenir le même résultat au bit près.
 
-
 Que ce soit l'archéologiste sur le terrain en train d'effectuer une campagne de
 fouille, le biologiste dans son laboratoire en pleine préparation d'une
 nouvelle expérience ou le numéricien en train de finaliser une simulation de
@@ -55,17 +54,25 @@ recherche. On peut faire de la mauvaise recherche qui est tout à fait
 reproductible.
 
 
-Commen nous le verrons au cours de ce livre, les cause d'une recherche
+Comme nous le verrons au cours de ce livre, les cause d'une recherche
 non-reproductibles sont très nombreuses, allant des plus évidentes comme la
-perte des données jusqu'au plus subtiles commen par exemple le chaos numérique
+perte des données jusqu'au plus subtiles comme par exemple le chaos numérique
 dont peu de chercheurs ont conscience. Encore une fois, nous ne parlons pas ici
-de malhonneteté scientifique mais bien méconaissance ou de mauvaises pratiques
+de malhonneteté scientifique mais bien méconnaissance ou de mauvaises pratiques
 qui viennent compromettre la possibilité même de reproduire des résultats. Ces
 mauvaises pratiques peuvent par ailleurs venir s'accumuler et constituer une
-dette technique insurmontable qui peut à terme condamner le laboratoir.
+dette technique insurmontable qui peut à terme condamner le laboratoire. Nous
+verrons au travers de situations fictives mais réalistes qu'il y a à l'origine
+des problèmes de reproductibilité un ensemble de concepts fondamentaux qu'il
+est nécessaire de connaître sans toutefois les maîtriser totalement. La
+recherche reproductible n'est pas un processus de type tout-ou-rien. Il existe
+des premières étapes très simples que tout un chacun peut mettre en oeuvre dès
+aujord'hui alors que d'autres demanderont un peu plus de temps et
+d'énergie. 
 
 
 
+---
 
 * Plein de sources d'erreurs possibles
     * reproductibilité numérique
