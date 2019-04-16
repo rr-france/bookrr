@@ -1,16 +1,7 @@
 Ci-dessous, plusieurs témoignages anonymes d'acteurs de la recherche qui expose  
 
 *Charles P., doctorant en sociologie:*
-> "J'interroge des personnes issues de milieux sociaux défavorisés afin de recueillir leur expérience de vie.
->  
-> Je consigne toutes mes notes dans un carnet relié, et je retranscris les informations démographiques dans le tableur Calc afin de compiler quelques statistiques (pyramide des ages, répartition des sexes, etc). Je collabore étroitement avec un autre doctorant de mon directeur sur ce projet, qui alimente lui aussi le même fichier Calc.
->
-> plusieurs personnes rentrent les données dans un même document (travail en équipe)
-- interprétation de ces données
-- rédaction de l'article
-- problème de démarche ou d'outils ?
-
-Le doctorant est dans un laboratoire de recherche (biomédicale) travaillant sur des souris. Ses manips consistent entre autres à recueillir toutes les semaines (tous les jours ?) de nombreuses informations biologiques (prélèvements) et comportementales (observations visuelles) chez des souris de deux groupes différents (type sauvage et knock-out). Ces informations sont collectées dans un tableur, mis à disposition sur le réseau, car en l’absence du doctorant, un autre membre du personnel peut recueillir ces mêmes informations comportementales, qu’il va ensuite entrer dans le même tableur. Ce doctorant souhaitera ensuite montrer que les deux groupes de souris diffèrent sur au moins l’un de ces paramètres biologiques ou comportementaux (inférence causale ?), que ces derniers soient analysés individuellement ou sous forme de score combinant différents paramètres comportementaux parmi tous ceux recueillis.
+> "J'interroge des personnes issues de milieux sociaux défavorisés afin de recueillir leur expérience de vie. Je consigne toutes mes notes dans un carnet relié, et je retranscris les informations démographiques dans le tableur Calc afin de compiler quelques statistiques (pyramide des ages, répartition des sexes, etc). Je collabore étroitement avec un autre doctorant de mon directeur sur ce projet, qui alimente lui aussi le même fichier Calc, que nous nous échangeons régulièrment par clé USB."
 
 *Jeanne A., jeune méthodologiste en biostatistique:*
 > "J'ai terminé mon Master 2 l'année dernière, dans laquelle j'ai appris à mener des analyses statistiques sous R lors de sa formation. J'analyse régulièrement des jeux de données transmis qui me sont généralement transmis directement via message électronique par des cliniciens travaillant au CHU au format Excel.  
