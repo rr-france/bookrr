@@ -10,5 +10,12 @@ CC-BY quelque chose. À définir précisément
 - [La syntaxe](https://guides.github.com/features/mastering-markdown/)
 - [Les citations](https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html)
 - [Images, footnotes et autres](https://github.com/fletcher/MultiMarkdown/wiki/MultiMarkdown-Syntax-Guide)
+
+## Quelques liens utiles sur bookdown
 - [bookdown](https://bookdown.org/)
+- [Avoir des parties en plus des chapitres](https://github.com/rstudio/bookdown/issues/221)
+- [Des chapitres non numérotés](https://github.com/rstudio/bookdown/issues/218)
+- [Comment visualiser le livre avec Rstudio](https://bookdown.org/home/about/)
+
+  
 
