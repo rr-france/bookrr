@@ -1,6 +1,6 @@
-# Vis ma vie cauchemardesque de personna de la recherche
+# Vis ma vie cauchemardesque de *personna* de la recherche
 
-Nous avons recueillis ci-dessous plusieurs témoignages fictifs de *personnas* acteurs de la recherche, mais néanmoins vraisemblables et basés sur des expériences réelles. Ils permettent d'appréhender concrêtement différentes problématiques autour de la recherche reproductible.
+Nous avons recueillis ci-dessous plusieurs témoignages fictifs de *personnas* acteurs de la recherche, mais néanmoins vraisemblables et basés sur des expériences réelles. Ils permettent de personnifier et d'appréhender concrêtement différentes problématiques autour de la recherche reproductible.
 
 *Charles P., doctorant en sociologie :*
 > "J'interroge des personnes issues de milieux sociaux défavorisés afin de recueillir leur expérience de vie. Je consigne toutes mes notes dans un carnet relié, et je retranscris les informations démographiques dans le tableur Calc afin de compiler quelques statistiques (pyramide des ages, répartition des sexes, etc). Je collabore étroitement avec un autre doctorant de mon directeur sur ce projet, qui alimente lui aussi le même fichier Calc, que nous nous échangeons régulièrment par clé USB."
@@ -12,18 +12,15 @@ Nous avons recueillis ci-dessous plusieurs témoignages fictifs de *personnas* a
 >  
 >J'ai récemment participé à la rédaction d'un article scientifique, et nous venons de recevoir les commentaires des relecteurs : je dois modifier les couleurs d'une figure afin que celle-ci soit lisible en noir et blanc. Comme je n'arrivais pas à remettre la main sur mon *script* R ayant généré la figure en question, j'ai ré-écrit le programme correspondant. Le seul problème, c'est que cette nouvelle figure est un peu différente de la précédente et remet en cause les conclusions de l’article. Je ne comprends pas ce qui a pu se passer."
 
-# Le tayloriste
-- Doit extraire des données à partir d'une série de PDF
-- Les copie/colle dans excel
-- A tout un tas d'opérations à faire, (changer les . en , les - en -, ...)
-- Travail ingrat et répétitif
-- Traitement statistique avec régression linéaire sous excel.
-  - Pas de barre d'erreur sur les estimations
-- Quand le referree demande des incertitudes, il a les choquottes
+*Cindy D., stagiaire de Master en physique des matériaux :*
+>"J'ai commencé mon stage de Master 2 il y a 3 semaines. Ma principale occupation a été d'extraire des données à partir d'une série d'article, qui donnait les points de caractéristique dans les *.PDF* en fichiers supplémentaires. Je les copie-colle directement dans Excel, dans lequel je dois les "." en ",". Comme je ne dispose des erreurs d'estimation pour tous les articles (seules certains articles les inclus dans leur résultats), je n'en tiens pas compte et ne rentre que les estimations. 
+>
+>C'est assez un travail assez rébarbatif, mais c'est le seul moyen de pouvoir ensuite analyser les données de la litérature. Lorsque ma collecte sera terminée, je calulerai le coéfficient R<sup>2<\sup> pour mes données et mon directeur espère pouvoir publier nos résultats."
 
-*Long N., Maître de conférence en :*
-- Simulation d'un système moléculaire de protéines
-- Pas de temps assez large pour voir l'objet bouger et repérer des
+*Long N., Maître de conférence en biologie :*
+>""
+Simulation d'un système moléculaire de protéines
+Pas de temps assez large pour voir l'objet bouger et repérer des
   évènements rares,
 - puis rafinement avec pas de temps plus fin pour l'observer mais
   l'évènement disparaît, chaos numérique
@@ -37,13 +34,8 @@ Nous avons recueillis ci-dessous plusieurs témoignages fictifs de *personnas* a
 - Différence de résultats dans maximisation de vraissemblance entre
   single/double/quadruple precision
 
-*Mohammed B., ingénieur d'étude :*
-- un ingénieur qui paye la dette technique depuis des années en
-  collant des rustines mais que personne ne sait modifier
-- conservation de l'environnemnet coute que coute
-- données perdues
-- C'est lui qui choisi mais il ne connait pas forcément les bonnes
-  pratiques et les solutions
+*Mohammed B., ingénieur d'étude en calcul numérique:*
+>"En tant qu'ingénieur du labo, je suis reponsable de la maintenance du logiciel **TODO**, développé il ya 15 ans par un post-doctorant très doué. Il a depuis quitter le labo, et personne ne sait vraiment comment modifier le programme de ce logiciel. Or une partie importante de notre activité de recherche nécessite l'utilisation de ce logiciel. J'ai collé pas mal de rustines qui nous ont permis de tenir un certain temps face à l'évolution de nos infrastrucutres et de nos systèmes. Mais depuis la mise-à-jour de de notre parc informatique il y a 6 mois ce n'est plus possible, et j'ai été obligé de garder une machine sous l'ancien OS pour pouvoir continuer à faire tourner le logiciel. Ça m'inquiète parce que nous avons une grosse dette technique, et que je ne sais pas ce qui va se passer quand cette vielle bécane va nous lâcher!"
 
 *Christina Z., Directrice de Recherche au CNRS*
 
