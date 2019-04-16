@@ -1,26 +1,29 @@
 Il existe de multiples raisons pour tenter de reproduire des résultats de recherche:
 
 * vérifier que la méthode mise en oeuvre il y a quelques mois par un stagiaire, 
-doctorant ou soi-même donne les mêmes résultats avant de poursuivre l'étude
+doctorant ou soi-même donne les mêmes résultats avant de poursuivre l'étude;
 
 * obéir aux demandes d'un reviewer de modifier une figure, ou de tester l'impact
-de paramètres non-envisagés dans l'étude initiale
+de paramètres non-envisagés dans l'étude initiale;
 
-* ...
+* vérifier que les méthodes "maison" font aussi bien, ou mieux, que celles des
+équipes concurrentes;
+
+*...
 
 Ces tentatives sont souvent l'occasion de surprises désagréables 
 (chauchemars de non-reproductibilité) qui doivent amener le chercheur
-à se uestionner sur ses pratiques. Quelques cas typiques sont présentés
-ci-dessous.
+à se uestionner sur ses pratiques. 
+Quelques témoignages, fictifs mais typiques, sont présentés ci-dessous.
 
 # Ou sont mes données, mon code ?
 
-Après la publication d'un article, un collègue souhaite collaborer 
+Après la publication d'un des mes articles, un collègue souhaite collaborer 
 avec moi pour tester de nouvelles hypothèses sur le jeu de données 
 que j'y ai présenté. Malheureusement, (1) le disque dur sur lequel 
 j'archivais les données brutes a crashé, ou bien, (2) j'ai effacé 
-les données qui prenaient beaucoup de place sur mon ordinateur, puisque 
-l'article était publié. 
+les données qui prenaient beaucoup de place sur mon ordinateur, 
+puisque l'article était publié. 
 
 Que dois-je répondre à ce collègue tout en gardant un semblant de dignité ?
 
@@ -29,9 +32,10 @@ Que dois-je répondre à ce collègue tout en gardant un semblant de dignité ?
 Depuis que j'ai soumis un article au journal, il y a quelques mois,
 j'ai continué à travailler sur mon code de traitement des données.
 Un reviewer me demande de compléter quelques figures, ce qui
-nécessite de refaire l'analyse des données. Malheureusement, la 
-version actuelle du code, dans laquelle j'ai amélioré les algorithmes, 
-ne redonne pas tout à fait les mêmes résultats que ceux de l'article.
+nécessite pour moi de refaire l'analyse des données. 
+Malheureusement, la  version actuelle du code, dans laquelle 
+j'ai amélioré les algorithmes, ne redonne pas tout à fait 
+les mêmes résultats que ceux de l'article.
 
 Dois-je annoncer au reviewer qu'une partie des résultats a changé ?
     
@@ -49,13 +53,30 @@ passer à un stagiaire.
 
 Pourquoi moi ?
 
+# Mon nouveau doctorant n'observe pas les mêmes effets que son prédécesseur
 
-# Comment repartir du travail de mes prédécesseurs ? (mon doctorant est parti)
+L'an passé un de mes doctorants a soutenu brillament sa thèse après
+avoir obtenu des résultats remarquables, que nous avons publiés dans 
+un excellent journal. Il a trouvé un post-doc à l'étranger sur un sujet
+sensiblement différent pour élargir le spectre de ses compétences.
+Mon nouveau doctorant doit repartir de ces résultats pour améliorer 
+l'efficacité de notre processus.
+Cela fait maintenant un an qu'il échoue à reproduire les observations 
+de son prédécesseur, alors qu'il suit scrupuleusement (j'ai vérifié)
+le protocole établi.  
 
-A mon arrivée dans l'équipe en tant que doctorant, mon directeur
-m'a conseillé de débuter en faisant quelques modification dans
-le code de simulation élaboré par le doctorant précédent. 
+Dois-je mettre fin à sa thèse pour incompétence, le lancer sur un 
+autre sujet et abandonner cet axe de recherche, ou envisager de 
+rétracter l'article de son prédécesseur ?
 
 
-Comment mon prédecesseur a-t'il fait pour générer les résultats 
-de sa thèse ???
+
+
+
+
+
+
+
+
+
+
