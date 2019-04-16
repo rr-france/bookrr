@@ -32,7 +32,7 @@ Que dois-je répondre à ce collègue tout en gardant un semblant de dignité ?
 ## Mes résultats ont changé
 
 Depuis que j'ai soumis un article au journal, il y a quelques mois,
-j'ai continué à travailler sur mon code de traitement des données.
+j'ai continué de travailler sur mon code de traitement des données.
 Un reviewer me demande de compléter quelques figures, ce qui
 nécessite pour moi de refaire l'analyse des données. 
 Malheureusement, la  version actuelle du code, dans laquelle 
