@@ -53,8 +53,6 @@ rétracter l'article de son prédécesseur car tout d'un coup pris d'un certain 
 
 Pour mon stage de M2, je souhaite montrer un lien la délétion d'un gène chez la souris et la survenue de problèmes neurolocomoteurs. J'ai lu de nombreux articles évaluer la présence de ces problèmes chez la souris, mais aucun ne m'a particulièrement attiré. En revanche, toute cette revue de la littérature m'a donné une super idée pour une telle évaluation comportementale, reposant sur un protocole d'observations certes complexe mais que je jugeais génial. Je n'ai pas voulu perdre de temps (nous ne pouvions bénéficier de ce lot de souris que pendant un mois). J'ai obtenu d'excellents résultats et les ai présentés en réunion d'équipe, tout excité à l'idée de rédiger mon premier article que j'allais soumettre dans une excellente revue. Après ma présentation, mon chef d'équipe m'a demandé de lui montrer le descriptif rédigé de mon protocole si "génial". Je lui ai répondu que je n'avais pas voulu prendre le temps de rédiger quelque chose qui était dans ma tête : quel intérêt d'écrire toute cette tartine pour soi, quand tout est si clair dans sa tête ? Il m'a répondu "ok, donc tu peux oublier ton premier papier sur tes souris".  
 
-[pas convaincu que ce qui suive soit pertinent] L'informatique est un outil puissant mais régulièrement et incroyablement ... frustrant. 
-
 ## AAAAAAH ! Mais hier, ça marchait !
 
 [pas convaincu que ce qui suive soit pertinent] L'informatique est un outil puissant mais régulièrement et incroyablement ... frustrant. Lorsque l'on souhaite ré-effectuer un calcul, que cela soit
