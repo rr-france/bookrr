@@ -3,6 +3,7 @@
 ## Le code n'est pas disponible
 Le cas le plus frustrant est certainement celui où on n'a tout
 simplement pas ou plus accès au programme à lancer. 
+
 - Cela peut être dû au fait que le logiciel soit propriétaire et que
   l'on n'ait pas accès à la licence d'exploitation. Par exemple
   parce que votre équipe/université, n'ayant plus de budget, a cessé de
@@ -12,11 +13,13 @@ simplement pas ou plus accès au programme à lancer.
   seul un nombre restreint de personnes puissent y accéder en même
   temps (avec un système de *tokens*) et que vous vous retrouviez à
   devoir attendre un bon moment avant d'y arriver.
+
 - Si le code a été développé "en interne", il arrive (trop souvent)
   qu'à la suite d'un crash disque, d'un vol d'ordinateur portable, du
   départ du développeur principal, ... que l'on n'ait juste plus accès
   au logiciel. C'est souvent le résultat d'un mauvaise politique de
   sauvegardes ou de partage d'informations au sein d'une équipe.
+
 - Assez souvent, c'est un code développé "en externe" (dans une autre
   équipe de recherche par exemple) que l'on souhaite ré-exécuter, par
   exemple pour s'y comparer ou bien pour vérifier si on obtient bien
@@ -28,6 +31,7 @@ simplement pas ou plus accès au programme à lancer.
   problème est connu sous le nom d'[*URL
   decay*](https://www.spinellis.gr/sw/url-decay/) ou de [*Link
   Rot*](https://en.wikipedia.org/wiki/Link_rot).
+
 - Enfin, ces chercheurs peuvent ne pas souhaiter partager ce code, par
   exemple parce qu'ils n'est pas *montrable* (pas ou peu commentaires,
   structure horrible cachant des erreurs) ou encore pour conserver un
@@ -68,6 +72,7 @@ rendent toute inspection de ce type impossible. Mais admettons que
 vous ayez réussi à inspecter les sources et que vous ayez les
 compétences pour le comprendre (a minima, un langage de programmation
 que vous connaissez).
+
 - Les codes de recherche, développés pour des besoins spécifiques,
   sont souvent des "prototypes" et il est rare de prendre le temps de
   rédiger une documentation interne (à destination des
@@ -77,6 +82,7 @@ que vous connaissez).
   prend pas toujours le temps de mettre à jour la documentation au fur
   et à mesure) sinon ces commentaires risquent plus de vous fourvoyer
   que de vous aider.
+
 - Il y a un dicton célèbre en informatique qui dit “Programs must be
   written for people to read, and only incidentally for machines to
   execute.” C'est une citation d'[Harold
@@ -90,6 +96,7 @@ que vous connaissez).
   répartis dans de nombreux fichiers, il y a intérêt à ce qu'une
   convention de nommage et de structure claire des différents fichiers
   et de leur contenu ait été utilisé, sinon c'est peine perdue.
+
 - Enfin, même si le code est relativement compréhensible, il est
   possible que des *bugs* (des erreurs de programmation) soient à
   l'origine de vos malheurs mais comment les trouver ?

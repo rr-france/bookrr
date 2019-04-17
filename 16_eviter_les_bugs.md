@@ -15,6 +15,7 @@ pourra pas être exécuté car rappelez-vous que l'ordinateur est complètement 
 demandez de faire. `pirnt` ne correspond à aucune instruction et donc le
 programme va s'arrêter car l'interpéteur R ou Python ne saura pas quoi faire.
 
+
 Mais il existe un autre type de problème bien plus grave qui se produit lorsque
 votre programme ne calcule pas ce que vous pensez qu'il calcule. Cela peut
 arriver par exemple si vous avez mal spécifié ce que vous souhaitiez faire. Ce
@@ -27,7 +28,6 @@ puisque cela peut vous conduire à en tirer de fausses conclusions. Afin de se
 prémunir au maximum contre ces problèmes, il existe un certain nombre de
 techniques qui, sans pouvoir certifier la correction de votre programme,
 peuvent néanmoins garantir un minimum de correction.
-
 
 # Soyez explicite
 
@@ -43,13 +43,18 @@ processus d'écriture.
 
 Tim Peters a écrit "The Zen of Python" (que vous pouvez lire en écrivant
 `import his` dans une session Python) qui donne un ensemble de règles qu'il
-faut garder en tête lorsqu'on écrit un programme. Les 6 première lignes sont:
+faut garder en tête lorsqu'on écrit un programme. Les 6 premières lignes sont :
 
 > Beautiful is better than ugly.
+>  
 > Explicit is better than implicit.
+>  
 > Simple is better than complex.
+>  
 > Complex is better than complicated.
+>  
 > Flat is better than nested.
+>  
 > Sparse is better than dense.
 
 Ces conseils peuvent paraitre plus ou moins évident à mettre en oeuvre pour un

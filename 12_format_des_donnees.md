@@ -34,7 +34,7 @@ A DEVELOPPER...
 ## Les données numériques
 
 Lors du stockage de données numériques il est primordial de
-s'assurer de la perte ou de l'érosion d'information. 
+s'assurer d'éviter la perte ou l'érosion d'information. 
 Cela concerne en particulier le choix du nombre de chiffres
 significatifs à reporter dans une table de données.
 

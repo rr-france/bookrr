@@ -10,6 +10,10 @@ La mise en oeuvre va de la simple sauvegarde de versions des fichiers,
 La mise en oeuvre d'une stratégie de gestion de version doit permettre
 d'éviter les cauchemars du type "je ne retrouve pas mon code / mes données".
 
+ - Quand ?
+ - Qui ?
+ - Pourquoi ?
+
 ## Versionnage par nommage de fichiers
 
 Au cours des modifications d'un document, des étapes importantes
@@ -18,7 +22,7 @@ règles de nommage de fichier évitant les ambiguïtés et facilitant
 l'exploration des versions. 
 
 Il est recommandé de constituer un nom de fichier de plusieurs
-éléments [@REF: (http://qualite-en-recherche.cnrs.fr/spip.php?article315)]:
+éléments [@REF: (http://qualite-en-recherche.cnrs.fr/spip.php?article315)] [@REF JennyBrian]:
 
 * la date de sauvegarde, sous format AAAAMMJJ ou AAAA_MM_JJ
 (permettant un tri des dates par ordre alphabétique)
@@ -45,6 +49,8 @@ La chronologie de développement d'un script R pourrait être:
 * 20190509_analyse_donnees_v02.R
 
 * ...
+
+## Fichier partagé (dropbox, google spreadsheet)
 
 ## Versionnage différentiel
 

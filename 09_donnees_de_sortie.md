@@ -1,9 +1,17 @@
-# Données de sortie
+# Communication des résultats
+
 Nous allons voir dans ce chapitre qu’une recherche peut devenir non reproductible s’il existe une mauvaise utilisation des données de sortie au moment de la rédaction d’un article : il peut s’agir d’une mauvaise sélection de votre part des données de sortie, tout comme une transformation de ces données.
+
 ## Une mauvaise sélection des données de sortie
+
 Il est tout à fait possible que la sortie des résultats fournies par le logiciel contienne un nombre élevé d’informations, et qu’il faille sélectionner parmi toutes ces informations seulement celles pertinentes pour la question de recherche dont fait l’objet votre article. Devant cet amas d’information, il peut tout à fait vous arriver de mal sélectionner l’information pertinente (votre sélection à la souris a oublié quelques caractères en début ou en fin de séquence à sélectionner, par exemple). Et auquel cas, si cette information est malgré tout complexe et difficilement compréhensible par vos collaborateurs parce que soit vous êtes spécialiste dans le domaine, soit on vous fait totalement confiance, alors cette erreur de mauvaise sélection de l’information sera présente dans l’article, et persistera après le processus de reviewing si les reviewers n’ont pas vu l’erreur.
+
 Une mauvaise sélection de chiffres significatifs dans un résultat numérique peut tout à fait se produire. Vous pourriez juger qu’un seul chiffre significatif peut suffire, pour une question de *présentation* de résultats. Mais si vos résultats sont nécessaires à la réalisation d’autres recherches (comme par exemple la réalisation de simulations basées entre autres sur vos résultats), les erreurs générées dans ces autres recherches seront importantes (une petite erreur initiale peut conduire à une erreur très importante en bout de course – cf. « chaos numérique » dans le chapitre ***XX*** [à remplacer]). 
+
 ## Transformation des données de sortie
+
 Une autre erreur peut survenir à partir des données de sortie fournies par le logiciel est celle d’une « transformation » (bien entendu non volontaire) de ces données. Cette modification involontaire de ces données peut très facilement arriver si vous devez retaper dans votre article les données de sortie. Une erreur de frappe est si facilement arrivée ! 
+
 Un deuxième exemple de transformation des données de sortie est celui d’un ***retravail*** [autre terme à trouver] d’une figure. Vous trouvez que la figure que vous obtenez de la part du logiciel n’est pas satisfaisante. Vous la retravaillez « à la main ». Ceci est dangereux, car le traitement de l’information n’est plus produite par un code information issu de votre programme, mais par vous-même – et vous n’êtes pas infaillible. 
+
 Une transformation involontaire des données peut se produire si vous travaillez à plusieurs collaborateurs, et si vous devez intégrer les résultats d’analyses réalisées par votre collaborateur, mais dont vous n’en comprenez pas la substantifique moelle. Un exemple que l’on rencontre malheureusement fréquemment dans les articles concernent les résultats d’analyses statistiques. Vous avez demandé à votre statisticienne de traiter certaines de vos données, elle vous envoie ses résultats, que vous ne comprenez pas trop bien. Il peut donc facilement arriver que vous retranscriviez mal les résultats dans l’article, sans vous en rendre compte parce que vous ne comprenez pas bien la signification de ces résultats. Ces erreurs de frappe peuvent passer totalement inaperçues si les reviewers n’ont pas non plus les compétences statistiques requises pour interpréter ces résultats.
