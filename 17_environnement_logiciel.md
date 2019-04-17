@@ -23,7 +23,7 @@ garder en tête:
 
 Pour y arriver, on se heurte aux difficultés majeures suivantes:
 
-1. Les différents systèems d'explications OS sont incompatibles les
+1. Les différents systèmes d'explications OS sont incompatibles les
    uns avec les autres. Il est très difficile de faire tourner un
    logiciel compilé pour un système Mac sur un système Linux. Les deux
    dérivent d'UNIX mais ont fait des choix d'interfaces différents.
@@ -262,8 +262,8 @@ zlib1g-dev:amd64                                install
 zotero-standalone                               install
 ```
 
-Sur ma machine il y en a 3639 et je peux obtenir les information
-sur chaque paquet:
+Sur la machine de l'un des auteurs il y en a 3639 et on peut obtenir
+les information sur chaque paquet:
 
 ```sh
 dpkg --status r-base
@@ -283,9 +283,9 @@ Recommends: r-base-html, r-doc-html
 Suggests: ess, r-doc-info | r-doc-pdf
 ```
 
-Il est tout à fait possible d'automatiser ces collectes et même la
-réinstallation de l'ensemble du système mais ces solutions vont être
-spécifiques à chaque système d'exploitation.
+Il est tout à fait possible d'automatiser la collectes de ces
+informations et même la réinstallation de l'ensemble du système mais
+ces solutions vont être spécifiques à chaque système d'exploitation.
 
 Si cette liste est particulièrement exhaustive et précise, elle
 contient hélas certainement une quantité d'information parfaitement
@@ -297,14 +297,42 @@ souhaiterait une solution qui ne capture que les informations
 section \@ref(ENV:care-cde).
 
 ### Pour en savoir Plus 
+Pour vous former un peu plus, vous pouvez vouloir vous rapporter au
+module 4 sur [MOOC sur la recherche
+reproductible](https://learninglab.inria.fr/mooc-recherche-reproductible-principes-methodologiques-pour-une-science-transparente/)
+et aux ressources correspondantes
+([slides](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module4/slides/C028AL_slides_module4-fr-gz.pdf),
+[ressources](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module4/ressources/resources_environment_fr.org)).
 
 ## Option 2: tout figer (*a.k.a. Preserve the mess*)
 
 ### Isoler une machine
 
+La façon la plus simple pour éviter ces problèmes de versions de
+logiciels et ne pas se poser trop de question, consiste à installer
+une bonne fois pour toute les programme dont on a besoin sur une
+machine et à s'interdire de la mettre à jour. C'est le cas de figure
+décrit en section \@ref{#1:personna:ingenieur}. Chacun des membres de
+l'équipe peut alors se connecter sur cette machine pour y faire ses
+calculs, ce qui peut d'ailleurs être source de disputes quand on est
+nombreux. Sur le long terme c'est problématique car si la machine
+continue (normalement) de calculer la même chose, elle conserve ses
+vieux bugs qui peuvent affecter vos résultats. D'autre part, elle
+finira un jour par mourir de sa belle mort. C'est donc certainement la
+solution la plus simple à mettre en œuvre (au début) mais c'est une
+solution à éviter tant que possible.
+
 ### Isoler un environnement à l'aide d'une machine virtuelle ou d'un container
 
-### Des outils pour figer et partage un environnement {ENV:care-cde}
+Une machine virtuelle est un programme informatique permettant de
+simuler un processeur et donc d'exécuter tout un système
+d'exploitation au sein d'un autre système d'exploitation. Il est ainsi
+par exemple possible de faire tourner un système Windows à l'intérieur
+d'une machine qui utilise MacOS ou un Linux. On pourra par exemple
+citer `Qemu`, `VirtualBox` ou `VMware`. 
+
+
+### Des outils pour figer et partage un environnement {3:environnement:care-cde}
 - Capture automatique de l'environnement
 - [CDE](http://www.pgbovine.net/cde.html][CDE], [ReproZip](https://vida-nyu.github.io/reprozip/)
 
