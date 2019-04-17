@@ -63,14 +63,17 @@ Si le logiciel de gestion de version est installé sur l'ordinateur de l'utilisa
 il est prudent, voire impératif, de mettre en oeuvre une synchronisation vers
 un dépôt distant, qui peut être sur une plateforme institutionnelle (gitlab) 
 ou sur une plateforme privée (gitHub). Ces plateformes permettent en outre
-le travail collaboratif sur un projet, ou de mettre le à disposition du public
-dans des versions bien définies des documents.
+le travail collaboratif sur un projet, ou de mettre le projet à disposition 
+du public dans des versions bien définies des documents. 
 
 Pour une recherche reproductible, il devrait devenir automatique de fournir 
 au lecteur un lien vers la versions des données/codes utilisés dans un article.
 Pour cela, il est conseillé d'activer en plus un archivage pérenne des 
 versions importantes du projet sur un dépot dournissant un identifiant 
-pérenne (doi).
+pérenne (doi). Par exemple Zenodo (public) ou Figshare (privé). 
+
+Avant de choisir une solutions, il peut être intéressant de se 
+renseigner sur les pratiques dans la communauté de recherche.
 
 ### Exemple
 
