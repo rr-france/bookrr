@@ -9,6 +9,9 @@ Dans la grande majorité des cas, la production de résultats issus d'une recher
 ## Modification des données après une collecte originale
 Un autre problème conduisant à une recherche non reproductible se produit lorsque des informations recueillies sur un individu sont modifiées après une première collecte, sans que ces modifications soient tracées. Dans ce cas-là, les analyses statistiques qui seront conduites sur les informations modifiées ne fourniront évidemment pas les mêmes résultats que celles conduites sur les informations initiales. S’il n’y a aucun moyen de revenir aux informations initiales et/ou de savoir quelles sont les informations qui ont été modifiées, votre recherche devient par conséquent non reproductible.
 ## Une collecte d’informations non répétable ou non reproductible
+
+Merci de prévoir un paragraphe introductif
+
 ### Quelques définitions issues du Vocabulaire International de Métrologie
 Nous avons décidé de choisir les définitions proposées en 2012 dans la dernière version du Vocabulaire International de Métrologie (VIM) car elles représentent l’effort le plus récent de normalisation dans ce domaine [téléchargeable ici : https://www.bipm.org/en/publications/guides/].
 
