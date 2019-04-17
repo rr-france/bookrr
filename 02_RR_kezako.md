@@ -4,7 +4,7 @@
 
 La crise de la reproductibilité de la science est aujourd'hui un phénomène mondial et
 largement transdiciplinaire qui concourt à la défiance de la société à l'égard
-du monde de la recherche *SG* [Baker M. 1,500 scientists lift the lid on reproducibility. Nature 2016,533:452-454.]. Le sujet est ancien, mais la situation semble avoir atteint un point critique. Des études ont par exemple démontré qu'il n'était pas possible d'obtenir de nouveau les résultats d'études pré-cliniques ou cliniques *SG*[Begley CG, Ellis LM. Drug development: Raise standards for preclinical cancer research. Nature 2012,483:531-533.] [Perrin S. Preclinical research: Make mouse studies work. Nature 2014,507:423-425.] Si le critère de reproductibilité des résultats ne peut être considéré comme unique mètre étalon de la scientificité d'une recherche, cette crise suscite des interrogations au sein même de la communauté scientifique.
+du monde de la recherche *SG* [Baker M. 1,500 scientists lift the lid on reproducibility. Nature 2016,533:452-454.]. Le sujet est ancien, mais la situation semble avoir atteint un point critique. Des études ont par exemple démontré qu'il n'était pas possible d'obtenir de nouveau les résultats d'études pré-cliniques ou cliniques *SG*[Begley CG, Ellis LM. Drug development: Raise standards for preclinical cancer research. Nature 2012,483:531-533.] [Perrin S. Preclinical research: Make mouse studies work. Nature 2014,507:423-425.] Si la reproductibilité des résultats ne peut être considérée comme seul critère de la scientificité d'une recherche, cette crise suscite des interrogations au sein même de la communauté scientifique.
 
 ## Définition(s) de "recherche reproductible" ?
 
@@ -20,9 +20,9 @@ résultat bit pour bit. L'expression "recherche reproductible" apparaît dès 19
 Le fait que les problèmes de reproductibilité occupent une telle place dans les débats actuels n'est
 pas tout à fait un hasard. Le numérique, sous des formes multiples, a largement
 investi tous les champs de la science et l'outil informatique occupe une place incontournable : stockage, formatage,
-archivage, indexation, analyse, modèle, statistiques, 
-environnements, précision, etc. Or, peu de chercheurs ont été convenablemnt
-formés aux fondamentaux et aux bonnes pratiques liés aux outils informatiques. Cela peut
+archivage, indexation, analyse, modélisation, statistiques, 
+environnements, précision, etc. Or, peu de chercheurs ont été 
+formés (ou se forment) aux fondamentaux et aux bonnes pratiques liés aux outils informatiques. Cela peut
 bien amener à la publication de résultats fragiles (dans le sens "peu robustes") dans le meilleur
 des cas, et faux dans le pire des cas - mais ce n'est pourtant pas là que se
 situent les plus graves dangers pour la recherche. 
@@ -37,7 +37,8 @@ des connaissances dans leurs domaines respectifs :
 d'incompatibilité de formats,
 - réaliser une simulation effectuée sur deux machines différentes et obtenir des résultats radicalement différents,
 - se rendre compte qu'une donnée essentielle était stockée sur feu le disque dur (*requiescat in pace*),
-- renoncer à une hypothèse prometteuse faute de pouvoir reproduire une de ses propres expériences 
+- renoncer à une hypothèse prometteuse faute de pouvoir reproduire une de ses propres expériences
+
 La liste pourrait s'allonger : 
 ne vous êtes-vous jamais posé les questions suivantes : "Suis-je vraiment sûr de mon analyse statistique ?", "Suis-je capable de recréer une figure conçue il y a 6 mois ?" Outre votre équipe de recherche, votre communauté scientifique et *in fine* le monde non académique, le premier bénéficiaire d'une recherche reproductible, c'est d'abord *vous*. Une recherche
 reproductible facilite en effet les tâches les plus quotidiennes, permet de garantir
@@ -54,12 +55,12 @@ non reproductible sont très nombreuses. Le suspect habituel est la perte de don
 D'autres causes s'avèrent plus difficiles à détecter : par exemple, le chaos numérique, aussi subtil à identifier que vecteur de troubles majeurs. 
 Une fois de plus, il ne s'agit pas de développer une vision accusatoire des pratiques de recherche.
 La possibilité même de reproduire des résultats n'est pas engendrée par la malhonnêteté scientifique, mais s'avère bien plus souvent le fruit d'une forme de méconnaissance, de pratiques plus ou moins hasardeuses. 
-Or, sous des dehors anodins, les petits "braconnages" du quotidien ("ça va passer") et autres rustines font le lit de la "dette technique" qui à terme, peut devenir insurmontable et peut condamner un laboratoire. Le patient zéro prend souvent des apparences falotes dans le domaine de la reproductibilité. 
+Sous des dehors souvent anodins, les petits "braconnages" du quotidien ("ça va passer") et autres rustines font le lit de la "dette technique" qui à terme, peut devenir insurmontable et peut condamner un laboratoire. Dans le domaine de la reproductibilité, le patient zéro prend souvent des apparences banales. 
 Au travers de situations fictives mais hélas réalistes, nous verrons qu'à l'origine
 des problèmes de reproductibilité se trouve un ensemble de concepts fondamentaux qu'il
 est nécessaire de connaître. L'objectif n'est pas de les maîtriser totalement. La
 recherche reproductible n'exige pas d'adopter une logique du "tout ou rien". Il existe
-des solutions très simples à mettre en oeuvre que tout un chacun peut s'approprier.
+des solutions très simples à mettre en œuvre que tout un chacun peut s'approprier.
 D'autres solutions demanderont un peu plus de temps et d'énergie. 
 
 ## La minute théologie négative : ce que vous ne trouverez pas dans cet ouvrage
@@ -69,6 +70,7 @@ Ainsi, nous n’allons pas traiter des solutions à des problèmes qui nuisent �
 - aller à la "pêche" aux résultats significatifs parmi tous les tests statistiques réalisés ("p-hacking") [Nuzzo R. Scientific method: statistical errors. Nature 2014,506:150-152.], 
 - générer une hypothèse de recherche *a posteriori*, c’est-à-dire après avoir obtenu un résultat significatif (« harking ») [Kerr NL. HARKing: hypothesizing after the results are known. Pers Soc Psychol Rev 1998,2:196-217.], 
 - sur-interpréter le résultat statistique qui est significatif (« Probability That a Positive Report is False ») [Wacholder S, Chanock S, Garcia-Closas M, El Ghormli L, Rothman N. Assessing the probability that a positive report is false: an approach for molecular epidemiology studies. J Natl Cancer Inst 2004,96:434-442.] 
+
 Non, pour tous ces sujets cités *supra*, nous invitons le lecteur à se documenter : [Munafo MR, Nosek BA, Bishop DVM, Button KS, Chambers CD, Sert NPd, Simonsohn U, Wagenmakers E-J, Ware JJ, Ioannidis JPA. A manifesto for reproducible science. Nature Human Behav 2017,1:0021.]
 
 
