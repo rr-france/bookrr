@@ -20,27 +20,6 @@ L'absence de provenance, par exemple de référence bibliographique
 pour des données collectées dans la littérature, est la source
 d'un manque de traçabilité qui nuit à la reproductibilité.
 
-## Incertitude sur les données collectées
-
-Une forme très courante de perte d'information est liée à
-l'absence ou à la forme inappropriée des incertitudes associées
-à des données récoltées dans la littérature. 
-Très souvent, l'absence d'incertitude empêche une comparaison de résultats,
-ou bien l'absence de matrice de corrélation entre les paramètres
-incertains d'une étude empêche leur réutilisation.
-Même lorsque des efforts ont été faits pour publier les informations
-adéquates, des problèmes d'arrondi peuvent anéantir la réutilisabilité 
-des données. 
-
-Par exemple, la matrice de variance-covariance publiée par le CODATA
-en 2002 pour l'ajustement des constantes fondamentales,
-arrondie pour être présentable dans les annexes de l'article,
-s'est avérée inutilisable pour des travaux ultérieurs.
-*SG* [V.V. Ezhela, Yu.V. Kuyanov, V.N. Larin, A.S. Siver  (2004)
-The Inconstancy of the Fundamental Physical Constants: Computational Status
-https://arxiv.org/abs/physics/0409117]
-
-
 ## Perte des données 
 
 L'absence de sauvegarde des données est une négligence professionnelle.
