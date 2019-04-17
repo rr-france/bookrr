@@ -6,7 +6,7 @@ La crise de la reproductibilité de la Science est aujourd'hui un phénomène mo
 largement transdiciplinaire qui participe à la défiance de la société à l'égard
 de la Science [Baker M. 1,500 scientists lift the lid on reproducibility. Nature 2016,533:452-454.]. Elle a émergé il y a de nombreuses années, mais elle s'est révélée criantes lorsqu'en particulier il a été montré que les résultats de nombreuses études pré-cliniques ou cliniques n'ont pas pu être reproduits [Begley CG, Ellis LM. Drug development: Raise standards for preclinical cancer research. Nature 2012,483:531-533.] [Perrin S. Preclinical research: Make mouse studies work. Nature 2014,507:423-425.] La recherche étant au service de la Science, une des origines de cette crise de reproductibilité de la Science peut être que la communauté scientifique commence à réaliser que la recherche réalisée par elle peut ne pas être reproductible. Mais qu'entend-on exactement par "Recherche reproductible" ? 
 
-## Qu'est-ce qu'une recherche reproductible ?
+## Définition(s) de "recherche reproductible" ?
 
 Si l'ensemble de la communauté scientifique a sans aucun doute une
 intuition raisonable de ce que peut être une recherche reproductible dans son
@@ -17,7 +17,7 @@ résultat" est très dépendante du domaine. Pour les uns, il suffira de confirm
 la significativité d'un effet, pour d'autres, ils devront obtenir le même
 résultat bit pour bit. Le terme même de "recherche reproductible" est apparu en 1992 lors du congrès de la "Society of Exploration Geophysics" [*SG* : trouver la traduction]. De nombreuses définitions de "Recherche reproductible" sont fournies par Barba L.A. [Barba, Lorena A. 2018. ‘Terminologies for Reproducible Research’. ArXiv:1802.03311 [Cs], February. http://arxiv.org/abs/1802.03311.] Parmi celles-ci, nous retiendrons la suivante, issue de l'article de Vandewalle et coll.[https://ieeexplore.ieee.org/document/4815541] : "un travail de recherche est dit reproductible si toutes les informations qui concernent ce travail, incluant, mais n'étant pas limitées, le texte, les données, et le code de programmation, sont rendues disponibles de telle sorte que n'importe quel chercheur indépendant peut reproduire les résultats." 
 
-## Pourquoi cette crise arrive-t-elle aujourd'hui ?
+## Pourquoi cette crise de la reproductibilité de la rechercher arrive-t-elle aujourd'hui ?
 
 Le fait que l'on s'inquiète aujourd'hui des problèmes de reproductibilité n'est
 pas tout à fait un hasard. Le numérique, sous des formes multiples, a largement
