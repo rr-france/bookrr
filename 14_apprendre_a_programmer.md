@@ -63,7 +63,7 @@ est maintenant en mesure de comprendre et de reproduire ces traitements,
 éventuellements à l'aide d'un autre de langage de programmation.
 
 
-## Comment apprendre à programmer ?
+## Le choix des armes
 
 Apprendre à programmer n'est pas tout à fait équivalent à apprendre un langage
 de programmation. Il est nécessaire de comprendre au préalable ce que l'on peut
@@ -84,10 +84,42 @@ entièrmeent dédiés où l'on peut voir un physicien théorique discuter avec u
 sociologue ou bien un doctorant enseigner à un professeur.
 
 Pour commencer à programmer, nous ne saurions donc trop conseiller que de
-commncer par apprendreun de ces deux langages, le choix entre les deux vous
+commncer par apprendre un de ces deux langages, le choix entre les deux vous
 appartenant. Pour faire ce choix, vous avez tout intèrêt à observer les
 pratiques dans votre domaine ou bien encore à regarder les programmes des
 conférences telles que Scipy, EuroScipy, (**conf R à compléter**).
+
+
+## Apprendre à programmer
+
+Il existe une multitude de ressources pour apprendre à programmer en R ou en
+Python. En raison de cette multitude de ressources, il est difficile de choisir
+lesquelles sont pertinentes. C'est la raison pour laquelle nous donnons
+ci-dessous une liste restreinte de ressource que nous jugeons de qualité.
+
+### MOOC
+
+* R: ?
+* Python: ?
+
+
+### Tutoriels
+
+* R: ?
+* Python: Tutoriel du site officiel de Python 
+
+
+### Livres
+
+* R: ?
+* Python: Dive into Python
+
+### Bootcamps
+
+* R: Software Carpentry
+* Python: Software Carpentry
+
+
 
 
 ---
