@@ -48,6 +48,11 @@ idéalement être accompagnés d'une incertitude [@GUM].
 Dans ce cas, la recommendation en métrologie est d'arrondir
 (par excès) l'incertitude à deux chiffres significatifs,
 et de reporter le résultat au même niveau décimal.
+Par exemple, si le résultat de mesure vaur 1.23456789 et
+l'incertitude vaut 0.00456, on reportera 1.2346 
+avec une incertitude de 0.0046. On évitera dans un tableau
+les notations du type 1.2346(46) ou 1.2346 ± 0.0046,
+qui peuvent fragiliser la lecture automatique.
 
 
 
