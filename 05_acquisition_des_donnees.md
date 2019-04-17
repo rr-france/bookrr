@@ -2,6 +2,8 @@
 
 [suggestion de titre de chapitre : "Problèmes émergeant dans l’acquisition des informations"]
 
+Merci de prévoir un paragraphe introductif
+
 ## Absence de standardisation de la collecte des informations
 Dans la grande majorité des cas, la production de résultats issus d'une recherche passe par la collecte d’informations. Ces informations sont recueillies sur des « individus » (un individu pouvant être une pièce mécanique, un être vivant, etc.). Ce que l’on entend par « informations » sont les caractéristiques de chacun des individus qui font l’objet de la recherche (par exemple : la résistance à la traction d’un matériau, la concentration en glucose d’une personne atteinte d’un diabète, son âge, son poids, etc.) Un point fondamental pour assurer une recherche reproductible est celui de standardiser la collecte des informations. En effet, si cette collecte n’est pas standardisée, la personne qui collecte des informations sur un individu un jour n°1 ne le fera potentiellement pas de la même façon le jour n°2 si elle devait le refaire. Et si elle ne le fait pas de la même façon, alors la valeur de l’information du jour n°2 serait différente de celle du jour n°1, non pas parce que l’information a changé au cours du temps (ce qui est possible, et éventuellement acceptable – cf. infra), mais parce que la méthode a changé. Ainsi, comment s’assurer d’une recherche reproductible si elle est fondée sur des informations dont la valeur dépend de la façon dont elle est collectée, avec une façon qui n’est pas fixée pendant toute la durée de l’étude ? 
 ## Modification des données après une collecte originale
