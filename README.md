@@ -22,6 +22,7 @@ Cette licence permet aux autres de remixer, arranger, et adapter l'œuvre, sous 
 - [La syntaxe](https://guides.github.com/features/mastering-markdown/)
 - [Les citations](https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html)
 - [Images, footnotes et autres](https://github.com/fletcher/MultiMarkdown/wiki/MultiMarkdown-Syntax-Guide)
+- [Les références d'un chapitre à l'autre](https://bookdown.org/yihui/bookdown/cross-references.html)
 
 ## Quelques liens utiles sur Bookdown
 - [bookdown](https://bookdown.org/)
