@@ -1,9 +1,6 @@
-
-
-
 ## Modalités de conception de l'ouvrage
 
-Ce document a été conçu dans le cadre d'un  **book sprint**  organisé par l'Unité régionale de formation à l'information scientifique et technique (Urfist) de Bordeaux. Book sprint = rédaction collaborative inspirée des sprints informatiques.
+Ce document a été conçu dans le cadre d'un  **book sprint**  organisé par l'Unité régionale de formation à l'information scientifique et technique (Urfist) de Bordeaux en avril 2019. Book sprint = rédaction collaborative inspirée des sprints informatiques.
 
 ## **Objectif**
 
@@ -43,3 +40,21 @@ La notion de 1er auteur n’existe pas :
 Le facilitateur conduit les échanges et permet aux auteurs de conserver une dynamique adaptée au rythme du sprint. **Si la nature fortement collaborative du travail fait émerger une part d'imprévu, il s'agit toutefois d'un exercice cadré, fondé sur une méthodologie**. Il est difficile de travailler avec des co-auteurs qu’on ne connaît pas, a fortiori s’ils ne sont pas spécialistes du même domaine que soi :
 -   pour le bon déroulement du book sprint, certains rôles sont définis à l’avance : le facilitateur aide les auteurs à coordonner leurs idées.
 -   la rencontre avec des co-auteurs inhabituels enrichit les échanges
+
+## Portraits des auteurs
+
+**Loïc Desquilbet**
+
+Enseignant-chercheur en **biostatistique** et en **épidémiologie clinique** à [l’Ecole nationale vétérinaire d’Alfort](https://www.vet-alfort.fr/), Loïc Desquilbet travaille dans le domaine de **la recherche clinique vétérinaire** (principalement sur animaux de compagnie). Il conduit également des travaux dédiés à la gérontologie canine. Il travaille sur SAS et a conçu une macro SAS pour prendre en compte les **variables quantitatives dans un modèle multivarié**.
+
+**Boris Hejblum**
+
+Enseignant-chercheur en biostatistique à l’Institut de Santé Publique d'Epidémiologie et de Développement ([ISPED, Université de Bordeaux](http://www.isped.u-bordeaux.fr/)), Boris Hejblum est membre de [l’équipe SITSM dans le centre Inserm U1219 Bordeaux Population Health et Inria Bordeaux Sud-Ouest](https://www.inria.fr/equipes/sistm). Il travaille sur **l’analyse de données biomédicales de grande taille**, en particulier la **statistique génomique** dans le cadre de la recherche vaccinale ainsi que sur **le traitement de dossiers médicaux informatisés par des approches de machine learning**. Il développe de **nouvelles méthodologies statistiques** implémentées sous forme de **paquets R open-source permettant leur réutilisation, et la reproductibilité des résultats de ses publications**. 
+
+**Arnaud Legrand**
+Chercheur au [Laboratoire d'informatique de Grenoble](http://www.liglab.fr/), Arnaud Legrand pilote l'[équipe Polaris](https://team.inria.fr/polaris/) (Inria).  Il s'est spécialisé dans **Évaluation** (simulation, observation, statistiques, analyse de traces) et **optimisation** (optimisation combinatoire, ordonnancement, optimisation distribuée, apprentissage en ligne, …) **de performance de grandes infrastructures de calcul** (supercalculateurs, grille, calcul bénévole, clouds, …)»
+
+
+
+
+
