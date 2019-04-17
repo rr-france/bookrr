@@ -4,4 +4,5 @@
 .Ruserdata
 _book/*
 *.Rproj
-index.Rmd
+*.Rmd
+*~
