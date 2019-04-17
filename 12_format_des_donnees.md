@@ -9,14 +9,21 @@ idiosyncrasies des différents système d'exploitation.
 Cette règle s'applique aux données, mais également aux noms des
 fichiers, comme nous le verrons par la suite [Chap. 13].
 
-De cette démarche seront donc exclus:
+De cette démarche seront donc exclus, si possible:
 
 * les formats fermés/propriétaires pour lesquels le risque de perte
-  de lisibilité n'est pas maîtrisé par l'utilisateur. 
+  de lisibilité n'est pas maîtrisé par l'utilisateur; 
   
 * le format binaire, qui supporte mal la transition entre les
   systèmes d'exploitation et les architectures matérielles.
   Certains formats de fichier prévus à cet effet permettent
   l'archivage en binaire de manière transparente (hdf5)
 
-* 
+Par exemple, pour des tables de données simples, le format .csv 
+est recommandé, et on évitera les versions plus ou moins 
+propriétaires ou spécifiques à un tableur (.dot, .xsl, .xslx...).
+
+> Pour des données plus complexes, de type hiérarchique, 
+des formats ouverts et adaptés doivent être envisagées
+(hdf5, xml).
+A DEVELOPPER...
