@@ -4,78 +4,72 @@
 
 La crise de la reproductibilité de la science est aujourd'hui un phénomène mondial et
 largement transdiciplinaire qui participe à la défiance de la société à l'égard
-du monde de la recherche **SG** [Baker M. 1,500 scientists lift the lid on reproducibility. Nature 2016,533:452-454.]. Le sujet est ancien, mais la situation semble avoir atteint un point critique. En effet, des études ont démontré qu'il n'était pas possible d'obtenir de nouveau les résultats d'études pré-cliniques ou cliniques **SG**[Begley CG, Ellis LM. Drug development: Raise standards for preclinical cancer research. Nature 2012,483:531-533.] [Perrin S. Preclinical research: Make mouse studies work. Nature 2014,507:423-425.] Si le critère de reproductibilité des résultats ne peut être considéré comme seul mètre étalon de la scientificité d'une recherche, cette crise suscite des interrogations au sein même de la communauté scientifique.
-(à continuer)
+du monde de la recherche *SG* [Baker M. 1,500 scientists lift the lid on reproducibility. Nature 2016,533:452-454.]. Le sujet est ancien, mais la situation semble avoir atteint un point critique. Des études ont par exemple démontré qu'il n'était pas possible d'obtenir de nouveau les résultats d'études pré-cliniques ou cliniques *SG*[Begley CG, Ellis LM. Drug development: Raise standards for preclinical cancer research. Nature 2012,483:531-533.] [Perrin S. Preclinical research: Make mouse studies work. Nature 2014,507:423-425.] Si le critère de reproductibilité des résultats ne peut être considéré comme unique mètre étalon de la scientificité d'une recherche, cette crise suscite des interrogations au sein même de la communauté scientifique.
 
 ## Définition(s) de "recherche reproductible" ?
 
-Si l'ensemble de la communauté scientifique a sans aucun doute une
-intuition raisonable de ce que peut être une recherche reproductible dans son
-propre domaine, il semble *a priori* difficile de donner une
-définition qui puisse satisfaire tout le monde tant les pratiques de la
-recherche peuvent être différentes selon les domaines. La notion de "même
-résultat" est très dépendante du domaine. Pour les uns, il suffira de confirmer
-la significativité d'un effet, pour d'autres, ils devront obtenir le même
-résultat bit pour bit. Le terme même de "recherche reproductible" est apparu en 1992 lors du congrès de la "Society of Exploration Geophysics" [*SG* : trouver la traduction]. De nombreuses définitions de "Recherche reproductible" sont fournies par Barba L.A. [Barba, Lorena A. 2018. ‘Terminologies for Reproducible Research’. ArXiv:1802.03311 [Cs], February. http://arxiv.org/abs/1802.03311.] Parmi celles-ci, nous retiendrons la suivante, issue de l'article de Vandewalle et coll.[https://ieeexplore.ieee.org/document/4815541] : "un travail de recherche est dit reproductible si toutes les informations qui concernent ce travail, incluant, mais n'étant pas limitées, le texte, les données, et le code de programmation, sont rendues disponibles de telle sorte que n'importe quel chercheur indépendant peut reproduire les résultats." 
+Si la communauté scientifique perçoit ce que peut être une recherche reproductible dans son
+propre domaine, il s'avère *a priori* difficile de fournir une
+définition standard satisfaisante pour toutes les disciplines. Par exemple, ne serait-ce que parce que la notion de "même
+résultat" dépend fortement du domaine de recherche. Pour les uns, il suffira de confirmer
+la signifiance d'un effet, pour les autres, il s'agit d'obtenir le même
+résultat bit pour bit. L'expression "recherche reproductible" apparaît dès 1992, lors du congrès de la "Society of Exploration Geophysics" [*SG* : trouver la traduction]. De nombreuses définitions de "recherche reproductible" sont fournies par Barba. [Barba, Lorena A. 2018. ‘Terminologies for Reproducible Research’. ArXiv:1802.03311 [Cs], February. http://arxiv.org/abs/1802.03311.] Parmi celles-ci, nous retiendrons la suivante, issue de l'article de Vandewalle et al.[https://ieeexplore.ieee.org/document/4815541] : 
+"un travail de recherche est dit reproductible si toutes les informations qui concernent ce travail, incluant, mais n'étant pas limitées, le texte, les données, et le code de programmation, sont rendues disponibles de telle sorte que n'importe quel chercheur indépendant peut reproduire les résultats." *SG* prendre texte original et citer correctement traduction en FR --< signaler qu'il s'agit d'une traduction des auteurs
 
-## Pourquoi cette crise de la reproductibilité de la rechercher arrive-t-elle aujourd'hui ?
-
-Le fait que l'on s'inquiète aujourd'hui des problèmes de reproductibilité n'est
+## Pourquoi la question de la reproductibilité est-elle devenue centrale dans les débats actuels?
+Le fait que les problèmes de reproductibilité occupent une telle place dans les débats actuels n'est
 pas tout à fait un hasard. Le numérique, sous des formes multiples, a largement
-investi tout le champ de la Science. Que l'on parle de stockage, de formatage,
-d'archivage, ***d'indexage*** [indexation ?], d'analyse, de modèle, de statistiques,
-d'environnements, de précision, il est aujourd'hui très difficile de faire
-l'impasse sur l'outil informatique. Or, peu de chercheurs ont été convenablemnt
+investi tous les champs de la science et l'outil informatique occupe une place incontournable : stockage, formatage,
+archivage, indexation, analyse, modèle, statistiques, 
+environnements, précision, etc. Or, peu de chercheurs ont été convenablemnt
 formés aux fondamentaux et aux bonnes pratiques liés aux outils informatiques. Cela peut
-bien évidemment amener à la publication de résultats fragiles (dans le sens "peu robustes") dans le meilleur
+bien amener à la publication de résultats fragiles (dans le sens "peu robustes") dans le meilleur
 des cas, et faux dans le pire des cas - mais ce n'est pourtant pas là que se
 situent les plus graves dangers pour la recherche. 
 
-## Quelques exemples de situations concrètes
+## Où l'on parle de recherche reproductible de manière pragmatique
+Quel peut être le point commun entre : un archéologue en train d'effectuer une campagne de fouille, 
+un biologiste en train de préparer une nouvelle expérience dans son laboratoire,
+un numéricien finalisant une simulation de grande ampleur? 
+Tous sont exposés aux risques ~~drames~~ suivants, indépendamment de leur volonté de contribuer à l'accroissement
+des connaissances dans leurs domaines respectifs : 
+- envoyer à des collègues des données qui ne pourront pas être lues pour des raisons
+d'incompatibilité de formats,
+- réaliser une simulation effectuée sur deux machines différentes et obtenir des résultats radicalement différents,
+- se rendre compte qu'une donnée essentielle était stockée sur feu le disque dur (*requiescat in pace*),
+- renoncer à une hypothèse prometteuse faute de pouvoir reproduire une de ses propres expériences 
+La liste pourrait s'allonger : 
+ne vous êtes-vous jamais posé les questions suivantes : "Suis-je vraiment sûr de mon analyse statistique ?", "Suis-je capable de recréer une figure conçue il y a 6 mois ?" Outre votre équipe de recherche, votre communauté scientifique et *in fine* le monde non académique, le premier bénéficiaire d'une recherche reproductible, c'est d'abord *vous*. Une recherche
+reproductible facilite en effet les tâches les plus quotidiennes, permet de garantir
+l'exactitude des méthodes et de documenter l'ensemble de la pratique
+scientifique. Cela peut-il constituer un gage de qualité de la recherche ? Non. Cela y
+participe, mais ne suffit pas. En effet, une recherche reproductible (au sens de l'ouvrage, "une recherche dont les résultats publiés peuvent être reproduits") n'est pas synonyme de "bonne"
+recherche : une mauvaise recherche peut tout à fait être
+reproductible (spoiler alert : don't try at work!).
 
-Que ce soit l'archéologiste sur le terrain en train d'effectuer une campagne de
-fouille, le biologiste dans son laboratoire en pleine préparation d'une
-nouvelle expérience, ou le numéricien en train de finaliser une simulation de
-grande ampleur, tous participent à la Science et tous proposeront à leur
-communauté de nouvelles idées, de nouveaux résultats et de nouvelles méthodes
-qu'ils souhaitent pouvoir être reproduits par leurs pairs. Ils seront alors
-probablement confrontés à cette notion de "recherche reproductible", lorsque les
-données qu'ils enverront à leurs collègues ne pourront pas être lues pour des
-raison d'incompatibilité de format, lorsqu'une même simulation réalisée sur
-deux machines différentes donnera des résultats radicalement différents,
-lorsqu'une donnée essentielle aura été perdue lors de la perte d'un disque dur
-ou enfin, lorsqu'incapables de reproduire l'une de leur propres expériences, ils
-devront renoncer à une hypothèse qui s'annoncait pourtant prometteuse. 
+## Aperçu (très rapide) des causes d'une recherche non reproductible
 
-Par ailleurs, ne vous êtes-vous jamais posé les questions suivantes : "et si je perdais, là, maintenant, mes données ?", "Suis-je vraiment sûr de mon analyse statistique ?", "Suis-je capable de recréer une figure conçue il y a 6 mois ?" Le premier bénéficiaire d'une recherche reproductible, c'est d'abord *vous*, puis votre groupe de recherche, la communauté scientifique à laquelle vous appartenez, et enfin, la société. Une recherche
-reproductible a vocation à faciliter la recherche au quotidien, à garantir
-l'exactitude des méthodes et à documenter l'ensemble de la pratique
-scientifique. Est-ce que cela garantit une recherche de qualité ? Non, certes, mais cela y
-participe. En effet, une recherche reproductible (au sens de l'ouvrage, "une recherche dont les résultats publiés peuvent être reproduits") ne signifie pas forcément une bonne
-recherche : on peut en effet faire de la mauvaise recherche qui est tout à fait
-reproductible.
-
-## Aperçu très rapide des multiples causes d'une recherche non reproductible
-
-Comme nous le verrons au cours de ce livre, les cause d'une recherche
-non reproductible sont très nombreuses, allant des plus évidentes comme la
-perte des données jusqu'aux plus subtiles comme par exemple le chaos numérique
-dont peu de chercheurs ont conscience. Encore une fois, nous ne parlons pas ici
-de malhonneteté scientifique mais bien méconnaissance ou de mauvaises pratiques
-qui viennent compromettre la possibilité même de reproduire des résultats. Ces
-mauvaises pratiques peuvent par ailleurs venir s'accumuler et constituer une
-"dette technique" insurmontable, qui peut à terme condamner le laboratoire. Nous
-verrons au travers de situations fictives, mais réalistes, qu'à l'origine
+Comme nous le verrons dans ce livre, les causes d'une recherche
+non reproductible sont très nombreuses. Le suspect habituel est la perte de données.
+D'autres causes s'avèrent plus difficiles à détecter : par exemple, le chaos numérique, aussi subtil à identifier que vecteur de troubles majeurs. 
+Une fois de plus, il ne s'agit pas de développer une vision accusatoire des pratiques de recherche.
+La possibilité même de reproduire des résultats n'est pas engendrée par la malhonnêteté scientifique, mais s'avère bien plus souvent le fruit d'une forme de méconnaissance, de pratiques plus ou moins hasardeuses. 
+Or, sous des dehors anodins, les petits "braconnages" du quotidien ("ça va passer") et autres rustines font le lit de la "dette technique" qui à terme, peut devenir insurmontable et peut condamner un laboratoire. Le patient zéro prend souvent des apparences falotes dans le domaine de la reproductibilité. 
+Au travers de situations fictives mais hélas réalistes, nous verrons qu'à l'origine
 des problèmes de reproductibilité se trouve un ensemble de concepts fondamentaux qu'il
-est nécessaire de connaître sans toutefois les maîtriser totalement. La
-recherche reproductible n'est pas un processus de type tout ou rien. Il existe
-des premières solutions très simples que tout un chacun peut mettre en oeuvre dès
-aujourd'hui, alors que d'autres solutions demanderont un peu plus de temps et
-d'énergie. 
+est nécessaire de connaître. L'objectif n'est pas de les maîtriser totalement. La
+recherche reproductible n'exige pas d'adopter une logique du "tout ou rien". Il existe
+des solutions très simples à mettre en oeuvre que tout un chacun peut s'approprier.
+D'autres solutions demanderont un peu plus de temps et d'énergie. 
 
-## Ce que cet ouvrage ne traite pas
+## La minute théologie négative : ce que vous ne trouverez pas dans cet ouvrage
 
-Il n’est pas question dans cet ouvrage de traiter toutes les solutions pour garantir la reproductibilité de la recherche au sens de David Randall et Christopher Welser, sens qui inclut entre autres la Qualité de la recherche. En effet, comme nous l'avons vu ci-dessus, nous allons nous focaliser sur les solutions qui permettent communiquer des résultats qui peuvent être reproduits de façon exhaustive. Ainsi, nous n’allons pas traiter des solutions à des problèmes qui nuisent à la Qualité de la recherche, et en particulier : aller à la "pêche" aux résultats significatifs parmi tous les tests statistiques réalisés ("p-hacking") [Nuzzo R. Scientific method: statistical errors. Nature 2014,506:150-152.], générer une hypothèse de recherche *a posteriori*, c’est-à-dire après avoir obtenu un résultat significatif (« harking ») [Kerr NL. HARKing: hypothesizing after the results are known. Pers Soc Psychol Rev 1998,2:196-217.], ou sur-interpréter le résultat statistique qui est significatif (« Probability That a Positive Report is False ») [Wacholder S, Chanock S, Garcia-Closas M, El Ghormli L, Rothman N. Assessing the probability that a positive report is false: an approach for molecular epidemiology studies. J Natl Cancer Inst 2004,96:434-442.] Nous invitons par conséquent le lecteur à se documenter par ailleurs sur ces sujets [Munafo MR, Nosek BA, Bishop DVM, Button KS, Chambers CD, Sert NPd, Simonsohn U, Wagenmakers E-J, Ware JJ, Ioannidis JPA. A manifesto for reproducible science. Nature Human Behav 2017,1:0021.]
+Il n’est pas question dans cet ouvrage de traiter toutes les solutions pour garantir la reproductibilité de la recherche au sens de Randall et Welser : ainsi, la question de la qualité de la recherche est hors périmètre du présent ouvrage. En effet, nous vous proposons plutôt de nous focaliser sur les solutions qui permettent communiquer des résultats pouvant être reproduits de façon exhaustive. 
+Ainsi, nous n’allons pas traiter des solutions à des problèmes qui nuisent à la qualité de la recherche, et en particulier : 
+- aller à la "pêche" aux résultats significatifs parmi tous les tests statistiques réalisés ("p-hacking") [Nuzzo R. Scientific method: statistical errors. Nature 2014,506:150-152.], 
+- générer une hypothèse de recherche *a posteriori*, c’est-à-dire après avoir obtenu un résultat significatif (« harking ») [Kerr NL. HARKing: hypothesizing after the results are known. Pers Soc Psychol Rev 1998,2:196-217.], 
+- sur-interpréter le résultat statistique qui est significatif (« Probability That a Positive Report is False ») [Wacholder S, Chanock S, Garcia-Closas M, El Ghormli L, Rothman N. Assessing the probability that a positive report is false: an approach for molecular epidemiology studies. J Natl Cancer Inst 2004,96:434-442.] 
+Non, pour tous ces sujets cités *supra*, nous invitons le lecteur à se documenter : [Munafo MR, Nosek BA, Bishop DVM, Button KS, Chambers CD, Sert NPd, Simonsohn U, Wagenmakers E-J, Ware JJ, Ioannidis JPA. A manifesto for reproducible science. Nature Human Behav 2017,1:0021.]
 
 
 
