@@ -2,11 +2,11 @@
 
 Nous allons voir dans ce chapitre qu’une recherche peut devenir non-reproductible 
 s’il existe une mauvaise utilisation des résulats de l'étude au moment de la rédaction 
-d’un article: il peut s’agir d’une mauvaise sélection de votre part des données 
-de sortie, d'un choix inapproprié du format de présentation ou d'une transformation 
+d’un article: il peut s’agir d’une mauvaise sélection de votre part des résultats, 
+d'un choix inapproprié du format de présentation ou d'une transformation 
 de ces données.
 
-## Une mauvaise sélection des données de sortie
+## Une mauvaise sélection des résultats
 
 Il est tout à fait possible que la sortie des résultats fournis 
 par un logiciel contienne un nombre élevé d’informations, et qu’il 
@@ -19,7 +19,7 @@ de mal sélectionner l’information pertinente (votre sélection
 séquence à sélectionner, par exemple). 
 Si cette information est encore complexe et difficilement compréhensible 
 par vos collaborateurs parce que vous êtes spécialiste dans le domaine, 
-on qu'on vous fait totalement confiance, alors cette erreur de sélection 
+et/ou qu'on vous fait totalement confiance, alors cette erreur de sélection 
 sera présente dans l’article, et persistera après le processus de reviewing 
 si les reviewers ratent l’erreur.
 
@@ -45,7 +45,7 @@ Mais si vos résultats sont nécessaires à la réalisation d’autres recherche
 sur vos résultats), les erreurs générées dans ces autres recherches 
 pourront être amplifiées (une petite erreur initiale peut conduire 
 à une erreur très importante en bout de course – cf. « chaos numérique » 
-dans le chapitre ***XX*** [à remplacer]) ou bien vos résultats
+dans le chapitre *SG* ***XX*** [à remplacer]) ou bien vos résultats
 pourront s'avérer inutilisables. 
 
 Ainsi, la matrice de variance-covariance publiée par le CODATA en 2002 pour 
@@ -56,22 +56,22 @@ The Inconstancy of the Fundamental Physical Constants: Computational Status
 https://arxiv.org/abs/physics/0409117]
 
 
-## Transformation des données de sortie
+## Transformation des resultats
 
-Une autre erreur pouvant survenir à partir des données de sortie 
+Une autre erreur pouvant survenir à partir des données 
 fournies par un logiciel est celle d’une « transformation » 
-(bien entendu non volontaire) de ces données. 
-Cette modification involontaire peut très facilement se produire 
-si vous devez resaisir dans votre article les données de sortie
+(bien entendu involontaire) de ces données. 
+Cette modification délétère peut très facilement se produire 
+si vous devez resaisir dans votre article les sorties
 du logiciel. Une erreur de frappe est si facilement arrivée! 
 
-Un deuxième exemple de transformation des données de sortie 
-est celui d’amélioration d’une figure. 
+Un deuxième exemple de transformation des résultats est celui 
+de l’amélioration d’une figure. 
 Si vous trouvez que la figure que vous obtenez à partir d'un 
 logiciel n’est pas satisfaisante, vous pouvez décider de la 
-retravaillez « à la main », par exemple en ajoutant
-une courbe interpolant des points, alors que les 
-valeurs intermédiaires n'ont pas de sens.
+retravailler « à la main », par exemple en ajoutant une courbe 
+interpolant des points, alors que les valeurs intermédiaires 
+n'ont pas de sens.
 Ceci est dangereux, car le traitement de l’information 
 n’est plus produit par une chaine d'instructions validée et
 automatisée, mais par vous-même – et vous n’êtes pas infaillible. 
@@ -85,7 +85,7 @@ Un exemple que l’on rencontre malheureusement fréquemment
 dans la litérature concerne les résultats d’analyses statistiques. 
 Vous avez demandé à votre collègue spécialiste des statistiques 
 de traiter certaines de vos données, et il vous envoie ses résultats, 
-que vous ne comprenez pas trop bien. 
+que vous ne comprenez pas dans le détail. 
 Il peut alors facilement arriver que par défaut de compréhension
 vous retranscriviez mal ou partiellement les résultats dans l’article. 
 De telles erreurs de saisie peuvent passer totalement inaperçues 
