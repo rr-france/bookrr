@@ -1,14 +1,13 @@
 # Correction des programmes
 
-Dans ce chapitre, nous expliquons les différentes formes de problèmes qui
-peuvent être rnecontrés lors du développeemnt logiciel et présentons quelques
-solutions standards pour y remédier.
+Dans ce chapitre, nous présentons quelques techniques standards pour remédier
+aux problèmes liés au code.
 
 
-## Bug et erreur
+## Partie à déplacer dans le chapitre 8)
 
 Lorsque que vous allez commencer à programmer, vous allez être rapidemment
-confronté à toutes sortes de problèmes dont le premier est le bug qui empêche
+confronté à toutes sortes de problèmes dont le premier est un bogue qui empêche
 votre programme d'être exécuté. Par exemple, si vous avez fait un faute de
 frappe dans une instruction (e.g. `pirnt` au lieu de `print`), le programme ne
 pourra pas être exécuté car rappelez-vous que l'ordinateur est complètement con
@@ -16,33 +15,31 @@ pourra pas être exécuté car rappelez-vous que l'ordinateur est complètement 
 demandez de faire. `pirnt` ne correspond à aucune instruction et donc le
 programme va s'arrêter car l'interpéteur R ou Python ne saura pas quoi faire.
 
-Mais il existe un autre type de problème bien plus grave en Science qui se
-produit lorsque votre programme ne calcule pas ce que vous pensez qu'il
-calcule. Cela peut arriver par exemple si vous avez mal spécifié ce que vous
-souhaitiez faire. Ce type de problème peut être d'autant plus pernicieux que
-tout peu bien se passer dans la majorité des cas (i.e. les résultats sont
-corrects) et pour un certain nombre de cas limite, vous allez obtenir des
-résultats abberants (ce qui est encore le meilleur des cas puisque cela est
-relativement facile à repérer) ou des résultats vraisemblable mais faux, ce qui
-est la pure des situations puisque cela peut vous conduire à en tirer de
-fausses conclusions. Afin de se prémunir au maximum contre ces problèmes, il
-existe un certain nombre de techniques qui, sans pouvoir certifier la correction
-de votre programme, peuvent néanmoins garantir un minimum de correction.
+Mais il existe un autre type de problème bien plus grave qui se produit lorsque
+votre programme ne calcule pas ce que vous pensez qu'il calcule. Cela peut
+arriver par exemple si vous avez mal spécifié ce que vous souhaitiez faire. Ce
+type de problème peut être d'autant plus pernicieux que tout peu bien se passer
+dans la majorité des cas (i.e. les résultats sont corrects) et pour un certain
+nombre de cas limite, vous allez obtenir des résultats abberants (ce qui est
+encore le meilleur des cas puisque cela est relativement facile à repérer) ou
+des résultats vraisemblable mais faux, ce qui est la pure des situations
+puisque cela peut vous conduire à en tirer de fausses conclusions. Afin de se
+prémunir au maximum contre ces problèmes, il existe un certain nombre de
+techniques qui, sans pouvoir certifier la correction de votre programme,
+peuvent néanmoins garantir un minimum de correction.
 
 
-## Techniques de développement
+# Soyez explicite
 
 Pour limiter au maximum les erreurs dans un programme, il faut essayer d'écrire
 des programmes qui soient à la fois clairs, non ambigus, commentés et
-concis. C'est étonamment difficile à faire lorsqu'on débute en programmation
+concis. C'est étonnamment difficile à faire lorsqu'on débute en programmation
 car il faut s'adapter à la façon de faire du langage utilisé, c'est à dire
 qu'il faut se mettre penser comme le programme, ce qu'il devient possible de
 faire essentiellement avec l'expérience. Nous parlerons dans le chapitre
 suivant des différents techniques et conseils pour rendre son code
 compréhensible. Mais avant même cette étape, nous pouvons déjà agir sur le
 processus d'écriture.
-
-### Zen of Python
 
 Tim Peters a écrit "The Zen of Python" (que vous pouvez lire en écrivant
 `import his` dans une session Python) qui donne un ensemble de règles qu'il
@@ -69,8 +66,8 @@ par défaut est changé. Vos résultats changet alors que votre programme n'a pa
 changé d'un bit. Si vous aviez spécifié l'ensemble de vos paramètres (y compris
 avec les valeurs par défaut), le problème n'aurait pas eu lieu.
  
-
 ### Pair coding
 
+### Tester votre code
 
 ### Intégration continue
