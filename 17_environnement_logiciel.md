@@ -25,20 +25,26 @@ elle-même une dépendance, et ainsi de suite... Cette tâche peut donc
 rapidement devenir difficile. On peut distinguer deux façons d'obtenir
 une telle liste :
 
-1. À partir d'un language interprété (tel que R ou python) on peut
+1. À partir d'un language interprété (tel que R ou Python) on peut
 effectuer cette " intro-spection " et lister les différentes la liste 
 des bibilothèques chargées avec leur numéro de version[^en R, on peut 
 par exemple utiliser la commande `sessionInfo()` (ou encore 
 `devtools::session_info()`]. Mais cette méthode, bien que relativement
 simple, un peu limitée et assez peu précise, ne signalant que quelques
-unes des dépendances systèmes de plus bas niveau. Il est néanmins très 
-facile d'inclure ces informations dans vos documents computationnels 
-(chapitre précédent) et nous vous recommandons cette bonne pratique.
+unes des dépendances systèmes de plus bas niveau. Elle correspond à
+la zone verte dans le schéma ci-dessous. Cependant, il est très 
+facile d'inclure ces informations descriptives dans vos documents 
+computationnels (chapitre précédent) et nous vous recommandons cette 
+bonne pratique.
 
 2. En utilisant le gestionnaire de paquets du système d'exploitation 
 on obtient la liste exhaustive de l'ensemble de toutes les applications
-installées (listant donc des applications non pertinente pour la 
-recherche ainsi que les doublons de versions successives).
+installées (listant donc des applications non pertinentes pour la 
+recherche ainsi que les doublons de versions successives). Elle 
+correspond à la l'ensemble du schéma ci-dessous (donc à tout le système 
+d'exploitation).
+
+![Schéma des différents environnements logiciel](img/schemaEnvirLogi.png)
 
 Cette description est donc soit trop partielle et pas assez précise,
 ou au contraire trop étendue (et il existe d'ailleurs un continuum 
@@ -60,8 +66,10 @@ et aux ressources correspondantes
 
 ## Préserver le désordre (*a.k.a. Preserve the mess*)
 
-Une façon de s'assurer de pouvoir conserver un environnement à 
-l'identique est de figer l'ensemble du système. 
+L'identification des dépendances permet de décrire son environnement,
+mais ne permet que très difficilement de le conserver ou le partager 
+en pratique. Une façon de s'assurer de pouvoir conserver et 
+partager un environnement à l'identique est de figer l'ensemble du système. 
 
 ### Isoler une machine
 
@@ -88,16 +96,11 @@ particulier avec un certain nombres d'applications installées. Il a
 l'avantage par rapport à une machine virtuelle de ne pas reproduire 
 l'ensemble du système d'exploitation (en se passant du kernel), mais 
 a le désavantage de ne pas fonctionner pour toutes les combinaisons
-de machine réelle-machine virtuelle.
+de machine réelle-machine virtuelle. Une solution très populaire pour 
+utiliser les containers est [Docker](https://www.docker.com/).
 
-![Schéma des différents environnements logiciel](img/schemaEnvirLogi.png)
-
-
-### Des outils pour figer et partage un environnement {3:environnement:care-cde}
-
-- Capture automatique de l'environnement
-- [CDE](http://www.pgbovine.net/cde.html][CDE], [ReproZip](https://vida-nyu.github.io/reprozip/)
-- Docker
+Il existe d'ailleurs des outils permettant d'identifier et capturer automatiquement 
+un tel environnement minimum tels que [CDE](http://www.pgbovine.net/cde.html) ou [ReproZip](https://vida-nyu.github.io/reprozip/).
 
 ## Les systèmes de gestion de paquets
 
