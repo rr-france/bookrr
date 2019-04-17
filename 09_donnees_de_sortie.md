@@ -23,7 +23,7 @@ et/ou qu'on vous fait totalement confiance, alors cette erreur de sélection
 sera présente dans l’article, et persistera après le processus de reviewing 
 si les reviewers ratent l’erreur.
 
-## Transformation des resultats
+## Transformation des résultats
 
 Une autre erreur pouvant survenir à partir des données 
 fournies par un logiciel est celle d’une « transformation » 
@@ -81,8 +81,7 @@ Mais si vos résultats sont nécessaires à la réalisation d’autres recherche
 sur vos résultats), les erreurs générées dans ces autres recherches 
 pourront être amplifiées (une petite erreur initiale peut conduire 
 à une erreur très importante en bout de course – cf. « chaos numérique » 
-dans le chapitre *SG* ***XX*** [à remplacer]) ou bien vos résultats
-pourront s'avérer inutilisables. 
+dans le chapitre *SG* ***XX*** [à remplacer]). 
 
 Ainsi, la matrice de variance-covariance publiée par le CODATA en 2002 pour 
 l'ajustement des constantes fondamentales, arrondie pour être présentable 
@@ -91,3 +90,9 @@ ultérieurs. *SG* [V.V. Ezhela, Yu.V. Kuyanov, V.N. Larin, A.S. Siver  (2004)
 The Inconstancy of the Fundamental Physical Constants: Computational Status
 https://arxiv.org/abs/physics/0409117]
 
+# Que faire ?
+
+La réutilisabilité des résultats d'une étude doit être une priorité. 
+Pour cela, les données doivent être mises à disposition de futurs 
+utilisateurs dans un format lisible par la machine, en utilisant
+un processus automatisé limitant les interventions manuelles.
