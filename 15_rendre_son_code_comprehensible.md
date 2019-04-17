@@ -20,6 +20,8 @@ la compréhension de son code :
 
 ## La programmation lettrée
 
+[A] à mettre dans doc comput
+
 La programmation lettrée a été conceptualisée par Donald Knuth [@knuth1984literate] 
 et propose de grands principes pour produire un programme compréhensible par les 
 humains. Il s’agit principalement de changer le paradigme de l’ecriture d’un 
@@ -71,9 +73,9 @@ recherche (qui peut parfois s'approcher - et même très fortement - de la forme
 
 [Ref MOOC Arnaud]
 
-[*AL*] notions de Notebook ?
-
 ## Compendium de recherche
+
+[A deplacer dans archivage]
 
 Pour aller encore plus loin que le document computationnel, la notion de *compendium* de 
 recherche allie l'ensemble des données d'entrée nécessaires au code et au texte narratif déjà 
