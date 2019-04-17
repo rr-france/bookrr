@@ -1,12 +1,11 @@
-# Recherche reproductible : de quoi est-il question dans cet ouvrage ?
+# Introduction
 
 ## Contexte de l'ouvrage : la crise de la reproductibilité de la Science
 
 La crise de la reproductibilité de la Science est aujourd'hui un phénomène mondial et
 largement transdiciplinaire qui participe à la défiance de la société à l'égard
-de la Science. David Randall et Christopher Welser ont publié un ouvrage en 2018 intitulé « The Irreproducibility Crisis of Modern Science - Causes, Consequences, and the Road to Reform » dans lequel sont listées quarante recommandations pour réaliser une recherche reproductible [insérer la réf ici]. Mais qu'entend-on exactement par "crise de la reproductibilité"
-et qu'est ce qu'une recherche reproductible ? Le terme même de "recherche
-reproductible" est apparu il y a une dizaine d'années lorsque des études ont mis
+de la Science [Baker M. 1,500 scientists lift the lid on reproducibility. Nature 2016,533:452-454.]. La Recherche étant au service de la Science, une des origines de cette crise de reproductibilité de la Science peut être que la communauté scientifique commence à réaliser que la Recherche réalisée par elle peut ne pas être reproductible. Mais qu'entend-on exactement par "Recherche reproductible" ? Le terme même de "recherche
+reproductible" est apparu en 1992 lors du congrès de la "Society of Exploration Geophysics" [*SG* : trouver la traduction]. Une définition de la "Recherche reproductible" est fournie par XXX, et elle est la suivante : ***XXX*** [Barba, Lorena A. 2018. ‘Terminologies for Reproducible Research’. ArXiv:1802.03311 [Cs], February. http://arxiv.org/abs/1802.03311.] ***arrêt ici*** il y a de nombreuses années, et est sujet  lorsque des études ont mis
 en évidence le fait que certains des résultats de la littérature ne pouvaient
 être reproduits en laboratoire [ref ?]. Plus récemment, ce sont de nombreuses études pré-cliniques ou cliniques dont les résultats n'ont pas pu être reproduits [Begley CG, Ellis LM. Drug development: Raise standards for preclinical cancer research. Nature 2012,483:531-533.] [Perrin S. Preclinical research: Make mouse studies work. Nature 2014,507:423-425.]. Par opposition à cette recherche
 non reproductible, on pourrait donc être tenté de définir la recherche
