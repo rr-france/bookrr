@@ -84,13 +84,20 @@ C'est donc certainement la solution la plus simple à mettre en œuvre
 ### Isoler un environnement à l'aide d'un container
 
 Un container est un outil permettant d'émuler un système d'exploitation
-particulier avec un certain nombres d'applications installées.
+particulier avec un certain nombres d'applications installées. Il a 
+l'avantage par rapport à une machine virtuelle de ne pas reproduire 
+l'ensemble du système d'exploitation (en se passant du kernel), mais 
+a le désavantage de ne pas fonctionner pour toutes les combinaisons
+de machine réelle-machine virtuelle.
+
+![Schéma des différents environnements logiciel](img/schemaEnvirLogi.png)
 
 
 ### Des outils pour figer et partage un environnement {3:environnement:care-cde}
 
 - Capture automatique de l'environnement
 - [CDE](http://www.pgbovine.net/cde.html][CDE], [ReproZip](https://vida-nyu.github.io/reprozip/)
+- Docker
 
 ## Les systèmes de gestion de paquets
 
