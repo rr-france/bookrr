@@ -1,4 +1,5 @@
-# Collecte des informations
+# Collecte des informations {#collecte-infos}
+
 Nous allons voir dans cette partie quelques solutions aux problèmes soulevés dans le chapitre précédent « acquisition des données » [ou « Problèmes émergeant dans l’acquisition des informations »].
 ## Rédaction d’un protocole de collecte des informations
 Comme nous l’avons vu dans la partie « Problèmes émergeant dans l’acquisition des informations »  « Absence de standardisation de la collecte des informations », il convient de s’assurer que l’information est collectée de façon *standardisée*. Comment la standardiser ? Entre autres en rédigeant un protocole qui décrit la façon dont l’information est collectée, et ce, information par information. Par exemple, si vous recueillez chez une personne atteinte d’un diabète la concentration du glucose dans le sang, vous devez rédiger le protocole qui permet d’obtenir la valeur de la concentration en glucose, notamment en précisant dans le protocole le volume de sang prélevé, à quel moment de la journée est-il prélevé, etc. Ce protocole doit non seulement être rédigé mais il doit aussi bien entendu être approuvé par votre équipe de recherche, ou à minima les personnes compétentes dans votre équipe pour juger de la qualité de ce protocole de collecte des données. 
