@@ -3,6 +3,7 @@ Livre sur la recherche reproductible rédigé à l'occasion d'un booksprint
 
 ## Auteurs
 Loïc Desquilbet, Boris Hejblum, Arnaud Legrand, Pascal Pernot, Nicolas Rougier
+
 Facilitatrice : Elisa de Castro Guerra
 
 ## Est-il possible de contribuer, de proposer de nouveaux contenus? 
