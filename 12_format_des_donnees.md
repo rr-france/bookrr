@@ -14,7 +14,8 @@ De cette démarche seront donc exclus, si possible:
 * les formats fermés/propriétaires pour lesquels le risque de perte
   de lisibilité n'est pas maîtrisé par l'utilisateur; 
   
-* le format binaire, qui supporte mal la transition entre les
+* le format binaire, nécessitant une étape de décodage, 
+  et qui supporte mal la transition entre les
   systèmes d'exploitation et les architectures matérielles.
   Certains formats de fichier prévus à cet effet permettent
   l'archivage en binaire de manière transparente (hdf5);
@@ -33,8 +34,9 @@ A DEVELOPPER...
 
 ## Les données numériques
 
-Lors du stockage de données numériques il est primordial de
-s'assurer d'éviter la perte ou l'érosion d'information. 
+Lors du stockage de données numériques il est primordial 
+d'éviter la perte ou l'érosion d'information afin de garantir
+la réutilisabilité des données. 
 Cela concerne en particulier le choix du nombre de chiffres
 significatifs à reporter dans une table de données.
 
@@ -48,7 +50,7 @@ idéalement être accompagnés d'une incertitude [@GUM].
 Dans ce cas, la recommendation en métrologie est d'arrondir
 (par excès) l'incertitude à deux chiffres significatifs,
 et de reporter le résultat au même niveau décimal.
-Par exemple, si le résultat de mesure vaur 1.23456789 et
+Par exemple, si le résultat de mesure vaut 1.23456789 et
 l'incertitude vaut 0.00456, on reportera 1.2346 
 avec une incertitude de 0.0046. On évitera dans un tableau
 les notations du type 1.2346(46) ou 1.2346 ± 0.0046,
@@ -57,8 +59,13 @@ qui peuvent fragiliser la lecture automatique.
 Une exception à cette règle concerne les matrices de 
 variance/covariance dont les éléments doivent être
 arrondis de manière à assurer qu'elles restent définies 
-positives, en exigeant par exemple que les valeurs
-propres gardent un nombre suffisant de chiffres significatifs.
+positives, en exigeant par exemple que la plus petite
+valeur propre de la matrice garde deux chiffres 
+significatifs? [Evaluation of measurement data – 
+Supplement 2 to the "Guide to the expression of 
+uncertainty in measurement" – Extension to any number 
+of output quantities JCGM 102:2011, Definition 3.21  
+(https://www.bipm.org/utils/common/documents/jcgm/JCGM_102_2011_E.pdf)]
 
 
 
