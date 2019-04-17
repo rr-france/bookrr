@@ -17,7 +17,10 @@ De cette démarche seront donc exclus, si possible:
 * le format binaire, qui supporte mal la transition entre les
   systèmes d'exploitation et les architectures matérielles.
   Certains formats de fichier prévus à cet effet permettent
-  l'archivage en binaire de manière transparente (hdf5)
+  l'archivage en binaire de manière transparente (hdf5);
+ 
+* les formats de description de page (postscript, pdf...),
+  notamment comme "Supplementary Material" d'articles.
 
 Par exemple, pour des tables de données simples, le format .csv 
 est recommandé, et on évitera les versions plus ou moins 
