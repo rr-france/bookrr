@@ -56,7 +56,8 @@ irreproductibles en pratique et traitées comme des données primaires.
 Même des données archivées sur le site web d'un chercheur peuvent
 devenir inaccessibles à la communauté du jour au lendemain,
 par exemple si l'institution hébergeante refond son site web
-sans prendre garde à assurer la pérennité des urls (_url decay_).
+sans prendre garde à assurer la pérennité des urls 
+([URL decay](https://www.spinellis.gr/sw/url-decay/)).
 
 ## Que faire ?
 
