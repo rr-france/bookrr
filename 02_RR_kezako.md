@@ -72,6 +72,9 @@ aujourd'hui alors que d'autres demanderont un peu plus de temps et
 d'énergie. 
 
 
+## Ce que ne traite pas cet ouvrage
+Les actions à mener pour rendre la recherche reproductible sont très nombreuses, et couvrent des champs très divers. David Randall et Christopher Welser ont publié un ouvrage en 2018 intitulé « The Irreproducibility Crisis of Modern Science - Causes, Consequences, and the Road to Reform » dans lequel sont listées quarante recommandations pour réaliser une recherche reproductible [insérer la réf ici]. Ces recommandations couvent les champs suivants : l’analyse statistique et l’interprétation des résultats, la gestion des données, les pratiques de recherche, l’enseignement des statistique, les politiques de la recherche universitaire, les associations professionnelles, les journaux scientifiques, l’industrie ***scientifique*** [trouver un autre terme], la philanthropie privée, les financements publics, le système législatif et judiciaire. 
+Il n’est pas question dans cet ouvrage de traiter de façon exhaustive toutes ces actions à mener. Comme nous l’avons vu ci-dessus, nous allons nous focaliser sur ***[à compléter]***. De façon plus spécifique, nous n’allons pas traiter des actions à mener pour améliorer la *qualité* de la recherche, au sens large du terme. Parmi les origines d’une recherche de mauvaise qualité qui sont liées à la « crise de la reproductibilité de la recherche » figurent celles statistiques dues au fait d’aller rechercher les résultats statistiques significatifs parmi toutes les associations statistiques testées (« p-hacking ») [Nuzzo R. Scientific method: statistical errors. Nature 2014,506:150-152.], de générer une hypothèse de recherche *a posteriori*, c’est-à-dire après avoir obtenu un résultat significatif (« harking ») [Kerr NL. HARKing: hypothesizing after the results are known. Pers Soc Psychol Rev 1998,2:196-217.], ou à la sur-interprétation  d’un résultat statistique significatif (« Probability That a Positive Report is False ») [Wacholder S, Chanock S, Garcia-Closas M, El Ghormli L, Rothman N. Assessing the probability that a positive report is false: an approach for molecular epidemiology studies. J Natl Cancer Inst 2004,96:434-442.] Nous invitons par conséquent le lecteur à se documenter par ailleurs sur ces sujets [Munafo MR, Nosek BA, Bishop DVM, Button KS, Chambers CD, Sert NPd, Simonsohn U, Wagenmakers E-J, Ware JJ, Ioannidis JPA. A manifesto for reproducible science. Nature Human Behav 2017,1:0021.]
 
 ---
 
@@ -80,7 +83,8 @@ d'énergie.
     * misconduct
     * sloppy
 * Apporter des réponses à un certain nombre de problèmes. . RR = méthodes basée sur la transparence permettant d'identifier, d'éviter, de corriger des erreurs
-* On ne parle pas de la qualité/vérité de la recherche ni de la pertinence des questions. Il n'est pas question de prévenir une "mauvaise" recherche. Il est possible de faire une très mauvaise reproductible mais ça se voit.
+
+* [ok, traité] On ne parle pas de la qualité/vérité de la recherche ni de la pertinence des questions. Il n'est pas question de prévenir une "mauvaise" recherche. Il est possible de faire une très mauvaise reproductible mais ça se voit.
     * On a décidé de ne pas traiter 
         * p-hacking
         * harking
