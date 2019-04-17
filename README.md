@@ -1,18 +1,14 @@
-# bookrr
-Livre sur la recherche reproductible rédigé à l'occasion du booksprint
+# Recherche reproductible: le livre dont vous êtes le héros
+Livre sur la recherche reproductible rédigé à l'occasion d'un booksprint
 
-## une sous-section
+## Auteurs
 
-Un texte en *italique* ou en **gras** .
+## Licence
+CC-BY quelque chose. À définir précisément
 
-
-- item1
-- item2
-
-Voire:
-1. dfkdf
-2. je supprime ceci !
-
-# bookrr
-Livre sur la recherche reproductible rédigé à l'occasion du booksprint
+## Quelques liens utiles sur Markdown
+- [La syntaxe](https://guides.github.com/features/mastering-markdown/)
+- [Les citations](https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html)
+- [Images, footnotes et autres](https://github.com/fletcher/MultiMarkdown/wiki/MultiMarkdown-Syntax-Guide)
+- [bookdown](https://bookdown.org/)
 

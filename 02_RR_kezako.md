@@ -56,7 +56,7 @@ reproductible.
 
 
 Comme nous le verrons au cours de ce livre, les cause d'une recherche
-non-reproductibles sont très nombreuses, allant des plus évidentes comme la
+non-reproductible sont très nombreuses, allant des plus évidentes comme la
 perte des données jusqu'au plus subtiles comme par exemple le chaos numérique
 dont peu de chercheurs ont conscience. Encore une fois, nous ne parlons pas ici
 de malhonneteté scientifique mais bien méconnaissance ou de mauvaises pratiques
@@ -68,7 +68,7 @@ des problèmes de reproductibilité un ensemble de concepts fondamentaux qu'il
 est nécessaire de connaître sans toutefois les maîtriser totalement. La
 recherche reproductible n'est pas un processus de type tout-ou-rien. Il existe
 des premières étapes très simples que tout un chacun peut mettre en oeuvre dès
-aujord'hui alors que d'autres demanderont un peu plus de temps et
+aujourd'hui alors que d'autres demanderont un peu plus de temps et
 d'énergie. 
 
 
