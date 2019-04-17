@@ -9,13 +9,13 @@ Facilitatrice : Elisa de Castro Guerra
 ## Est-il possible de contribuer, de proposer de nouveaux contenus? 
 Ce livre est ouvert aux nouveaux contenus : proposition d'ajout de chapitre, complément de chapitre, références complémentaires, mais aussi questions.
 Le livre ayant été rédigé collaborativement, les propositions sont étudiées par le collectif des auteurs. 
-En fonction de la nature de vos propositions, vous pourrez être amené.e à être cité.e comme [contributeur, ou co-auteur] (https://publicationethics.org/authorship). 
+En fonction de la nature de vos propositions, vous pourrez être amené.e à être cité.e comme [contributeur, ou co-auteur](https://publicationethics.org/authorship). 
 Vous pouvez soumettre vos propositions via :
 - GitHub (issue)
 - email : urfist@u-bordeaux.fr
 
 ## Licence
-[CC-BY NC] (https://creativecommons.org/licenses/by-nc/4.0/)
+[CC-BY NC](https://creativecommons.org/licenses/by-nc/4.0/)
 Cette licence permet aux autres de remixer, arranger, et adapter l'œuvre, sous des conditions éventuellement différentes, mais à des fins non commerciales ; les nouvelles œuvres doivent créditer les auteurs en citant leurs noms. 
 
 ## Quelques liens utiles sur Markdown
