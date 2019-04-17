@@ -50,7 +50,6 @@ La chronologie de développement d'un script R pourrait être:
 
 * ...
 
-## Fichier partagé (dropbox, google spreadsheet)
 
 ## Versionnage différentiel
 
@@ -101,16 +100,3 @@ Ainsi, les reviewers peuvent s'assurer de la reproductibilité
 de mon étude et j'ai la garantie de disposer de la bonne version
 des fichiers s'ils me demandent des modifications, même si j'ai 
 continué à développer mes codes en attendant leur retour.
-
-
-
-
-
-
-
-
-
-
-
-
-
