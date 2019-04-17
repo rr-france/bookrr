@@ -23,39 +23,6 @@ et/ou qu'on vous fait totalement confiance, alors cette erreur de sélection
 sera présente dans l’article, et persistera après le processus de reviewing 
 si les reviewers ratent l’erreur.
 
-## Présentation des résultats
-
-Une forme très courante de perte d'information est liée à
-l'absence ou à la forme inappropriée des incertitudes associées
-aux résultats d'une mesure physique ou virtuelle ou d'une étude statistique.
-Très souvent, l'absence d'incertitude empêche une comparaison de résultats,
-ou bien l'absence de matrice de corrélation entre les paramètres
-incertains d'une étude empêche leur réutilisation.
-
-Même lorsque des efforts ont été faits pour publier les informations
-adéquates, des problèmes d'arrondi peuvent anéantir la réutilisabilité 
-des données. 
-
-Une mauvaise sélection du nombre de chiffres significatifs à reporter 
-dans un résultat numérique peut tout à fait se produire. 
-Vous pourriez juger qu’un seul chiffre significatif peut suffire, 
-pour une question de *présentation* (taille d'une table de résultats). 
-Mais si vos résultats sont nécessaires à la réalisation d’autres recherches 
-(comme par exemple la réalisation de simulations basées entre autres 
-sur vos résultats), les erreurs générées dans ces autres recherches 
-pourront être amplifiées (une petite erreur initiale peut conduire 
-à une erreur très importante en bout de course – cf. « chaos numérique » 
-dans le chapitre *SG* ***XX*** [à remplacer]) ou bien vos résultats
-pourront s'avérer inutilisables. 
-
-Ainsi, la matrice de variance-covariance publiée par le CODATA en 2002 pour 
-l'ajustement des constantes fondamentales, arrondie pour être présentable 
-dans les annexes de l'article, s'est avérée inutilisable pour des travaux 
-ultérieurs. *SG* [V.V. Ezhela, Yu.V. Kuyanov, V.N. Larin, A.S. Siver  (2004)
-The Inconstancy of the Fundamental Physical Constants: Computational Status
-https://arxiv.org/abs/physics/0409117]
-
-
 ## Transformation des resultats
 
 Une autre erreur pouvant survenir à partir des données 
@@ -91,3 +58,36 @@ vous retranscriviez mal ou partiellement les résultats dans l’article.
 De telles erreurs de saisie peuvent passer totalement inaperçues 
 si les reviewers n’ont pas non plus les compétences statistiques 
 requises pour interpréter ces résultats.
+
+## Présentation des résultats
+
+Une forme très courante de perte d'information est liée à
+l'absence ou à la forme inappropriée des incertitudes associées
+aux résultats d'une mesure physique ou virtuelle ou d'une étude statistique.
+Très souvent, l'absence d'incertitude empêche une comparaison de résultats,
+ou bien l'absence de matrice de corrélation entre les paramètres
+incertains d'une étude empêche leur réutilisation.
+
+Même lorsque des efforts ont été faits pour publier les informations
+adéquates, des problèmes d'arrondi peuvent anéantir la réutilisabilité 
+des données. 
+
+Une mauvaise sélection du nombre de chiffres significatifs à reporter 
+dans un résultat numérique peut tout à fait se produire. 
+Vous pourriez juger qu’un seul chiffre significatif peut suffire, 
+pour une question de *présentation* (taille d'une table de résultats). 
+Mais si vos résultats sont nécessaires à la réalisation d’autres recherches 
+(comme par exemple la réalisation de simulations basées entre autres 
+sur vos résultats), les erreurs générées dans ces autres recherches 
+pourront être amplifiées (une petite erreur initiale peut conduire 
+à une erreur très importante en bout de course – cf. « chaos numérique » 
+dans le chapitre *SG* ***XX*** [à remplacer]) ou bien vos résultats
+pourront s'avérer inutilisables. 
+
+Ainsi, la matrice de variance-covariance publiée par le CODATA en 2002 pour 
+l'ajustement des constantes fondamentales, arrondie pour être présentable 
+dans les annexes de l'article, s'est avérée inutilisable pour des travaux 
+ultérieurs. *SG* [V.V. Ezhela, Yu.V. Kuyanov, V.N. Larin, A.S. Siver  (2004)
+The Inconstancy of the Fundamental Physical Constants: Computational Status
+https://arxiv.org/abs/physics/0409117]
+
