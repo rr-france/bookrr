@@ -1,9 +1,10 @@
 # Communication des résultats
 
 Nous allons voir dans ce chapitre qu’une recherche peut devenir non-reproductible 
-s’il existe une mauvaise utilisation des données de sortie au moment de la rédaction 
-d’un article : il peut s’agir d’une mauvaise sélection de votre part des données 
-de sortie, tout comme une transformation de ces données.
+s’il existe une mauvaise utilisation des résulats de l'étude au moment de la rédaction 
+d’un article: il peut s’agir d’une mauvaise sélection de votre part des données 
+de sortie, d'un choix inapproprié du format de présentation ou d'une transformation 
+de ces données.
 
 ## Une mauvaise sélection des données de sortie
 
