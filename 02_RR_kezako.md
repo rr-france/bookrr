@@ -10,8 +10,7 @@ reproductible" est apparu il y a une dizaine d'années lorsque des études ont m
 en évidence le fait que certains des résultats de la littérature ne pouvaient
 être reproduits en laboratoire [ref ?]. Plus récemment, ce sont de nombreuses études pré-cliniques ou cliniques dont les résultats n'ont pas pu être reproduits [Begley CG, Ellis LM. Drug development: Raise standards for preclinical cancer research. Nature 2012,483:531-533.] [Perrin S. Preclinical research: Make mouse studies work. Nature 2014,507:423-425.]. Par opposition à cette recherche
 non reproductible, on pourrait donc être tenté de définir la recherche
-reproductible comme étant une recherche dont les résultats publiés peuvent être
-reproduits. Mais par qui, comment et dans quelles
+reproductible - et c'est ainsi que nous allons la définir dans cet ouvrage - comme étant une recherche dont les résultats publiés peuvent être reproduits. Mais par qui, comment et dans quelles
 conditions ? Si l'ensemble de la communauté scientifique a sans aucun doute une
 intuition raisonable de ce que peut être une recherche reproductible dans son
 propre domaine, il est très difficile, voire impossible de donner une
@@ -50,16 +49,12 @@ lorsqu'une donnée essentielle aura été perdue lors de la perte d'un disque du
 ou enfin, lorsqu'incapables de reproduire l'une de leur propres expériences, ils
 devront renoncer à une hypothèse qui s'annoncait pourtant prometteuse. 
 
-Par ailleurs, n'avez-vous jamais perdu des
-données ? Etes-vous totalement sûr de votre analyse statistique ? Etes-vous
-capable de recréer une figure conçue il y a 6 mois à la demande d'un relecteur d'une revue
-? Le premier bénéficiaire d'une recherche reproductible est d'abord le
-chercheur lui même, puis son groupe, sa communauté et enfin la société. Une recherche
+Par ailleurs, ne vous êtes-vous jamais posé les questions suivantes : "et si je perdais, là, maintenant, mes données ?", "Suis-je vraiment sûr de mon analyse statistique ?", "Suis-je capable de recréer une figure conçue il y a 6 mois ?" Le premier bénéficiaire d'une recherche reproductible, c'est d'abord *vous*, puis votre groupe de recherche, la communauté scientifique à laquelle vous appartenez, et enfin, la société. Une recherche
 reproductible a vocation à faciliter la recherche au quotidien, à garantir
 l'exactitude des méthodes et à documenter l'ensemble de la pratique
-scientifique. Est-ce que cela garantit une recherche de qualité ? Cela y
-participe, mais une recherche reproductible ne signifie pas forcément une bonne
-recherche. On peut en effet faire de la mauvaise recherche qui est tout à fait
+scientifique. Est-ce que cela garantit une recherche de qualité ? Non, certes, mais cela y
+participe. En effet, une recherche reproductible (au sens de l'ouvrage, "une recherche dont les résultats publiés peuvent être reproduits") ne signifie pas forcément une bonne
+recherche : on peut en effet faire de la mauvaise recherche qui est tout à fait
 reproductible.
 
 ## Aperçu très rapide des multiples causes d'une recherche non reproductible
