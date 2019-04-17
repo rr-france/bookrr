@@ -9,14 +9,15 @@ en évidence le fait que certains des résultats de la littérature ne pouvaient
 être reproduit en laboratoire. Par opposition à cette recherche
 non-reproductible, on pourrait donc être tenter de définir la recherche
 reproductible comme étant une recherche dont les résultats peuvent être
-reproduits. Mais par qui, comment et dans quelles conditions ? Si l'ensemble de
-la communauté scientifique a sans aucun doute une intuition raisonable de ce
-que peut être une recherche reproductible dans son propre domaine, il est très
-difficile, voire impossible de donner une définition qui puisse satisfaire tout
-le monde tant les pratiques de la recherche peuvent être différentes selon les
-domaines. La notion de "même résultat" sera très dépendante du domaine. Pour
-les uns, il suffira de confirmer la significativité d'une effet, pour d'autres,
-ils devront obtenir le même résultat au bit près.
+reproduits (*captain obvious*). Mais par qui, comment et dans quelles
+conditions ? Si l'ensemble de la communauté scientifique a sans aucun doute une
+intuition raisonable de ce que peut être une recherche reproductible dans son
+propre domaine, il est très difficile, voire impossible de donner une
+définition qui puisse satisfaire tout le monde tant les pratiques de la
+recherche peuvent être différentes selon les domaines. La notion de "même
+résultat" est très dépendante du domaine. Pour les uns, il suffira de confirmer
+la significativité d'une effet, pour d'autres, ils devront obtenir le même
+résultat bit pour bit.
 
 Que ce soit l'archéologiste sur le terrain en train d'effectuer une campagne de
 fouille, le biologiste dans son laboratoire en pleine préparation d'une
