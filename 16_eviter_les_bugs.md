@@ -1,17 +1,19 @@
 # Correction des programmes
 
 Dans ce chapitre, nous expliquons les différentes formes de problèmes qui
-peuvent être rnecontrés lors du développeemnt logiciel et présentons quelques
+peuvent être rencontrés lors du développement logiciel et présentons quelques
 solutions standards pour y remédier.
 
 
-## Bug et erreur
+## Erreur de programmation --> symptome
 
 Lorsque que vous allez commencer à programmer, vous allez être rapidemment
-confronté à toutes sortes de problèmes dont le premier est le bug qui empêche
-votre programme d'être exécuté. Par exemple, si vous avez fait un faute de
-frappe dans une instruction (e.g. `pirnt` au lieu de `print`), le programme ne
-pourra pas être exécuté car rappelez-vous que l'ordinateur est complètement con
+confronté à toutes sortes de problèmes.
+
+Le premier est le *bug* qui empêche votre programme d'être exécuté. 
+Par exemple, si vous avez fait un faute de frappe dans une instruction 
+(e.g. `pirnt` au lieu de `print`), le programme ne pourra pas être exécuté 
+car rappelez-vous que l'ordinateur est complètement con
 (citation de G.Berry, Collège de France) et ne fait que ce ce que vous lui
 demandez de faire. `pirnt` ne correspond à aucune instruction et donc le
 programme va s'arrêter car l'interpéteur R ou Python ne saura pas quoi faire.
@@ -23,7 +25,7 @@ souhaitiez faire. Ce type de problème peut être d'autant plus pernicieux que
 tout peu bien se passer dans la majorité des cas (i.e. les résultats sont
 corrects) et pour un certain nombre de cas limite, vous allez obtenir des
 résultats abberants (ce qui est encore le meilleur des cas puisque cela est
-relativement facile à repérer) ou des résultats vraisemblable mais faux, ce qui
+relativement facile à repérer) ou des résultats vraisemblables mais faux, ce qui
 est la pure des situations puisque cela peut vous conduire à en tirer de
 fausses conclusions. Afin de se prémunir au maximum contre ces problèmes, il
 existe un certain nombre de techniques qui, sans pouvoir certifier la correction
@@ -42,17 +44,22 @@ suivant des différents techniques et conseils pour rendre son code
 compréhensible. Mais avant même cette étape, nous pouvons déjà agir sur le
 processus d'écriture.
 
-### Zen of Python
+### Bonne spratiques
 
 Tim Peters a écrit "The Zen of Python" (que vous pouvez lire en écrivant
 `import his` dans une session Python) qui donne un ensemble de règles qu'il
-faut garder en tête lorsqu'on écrit un programme. Les 6 première lignes sont:
+faut garder en tête lorsqu'on écrit un programme. Les 6 premières lignes sont :
 
 > Beautiful is better than ugly.
+>  
 > Explicit is better than implicit.
+>  
 > Simple is better than complex.
+>  
 > Complex is better than complicated.
+>  
 > Flat is better than nested.
+>  
 > Sparse is better than dense.
 
 Ces conseils peuvent paraitre plus ou moins évident à mettre en oeuvre pour un
@@ -72,5 +79,6 @@ avec les valeurs par défaut), le problème n'aurait pas eu lieu.
 
 ### Pair coding
 
+### Robustifier son code (test)
 
 ### Intégration continue
