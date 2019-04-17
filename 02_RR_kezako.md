@@ -9,7 +9,7 @@ en évidence le fait que certains des résultats de la littérature ne pouvaient
 être reproduits en laboratoire [ref ?]. Plus récemment, ce sont de nombreuses études pré-cliniques ou cliniques dont les résultats n'ont pas pu être reproduits [Begley CG, Ellis LM. Drug development: Raise standards for preclinical cancer research. Nature 2012,483:531-533.] [Perrin S. Preclinical research: Make mouse studies work. Nature 2014,507:423-425.]. Par opposition à cette recherche
 non reproductible, on pourrait donc être tenté de définir la recherche
 reproductible comme étant une recherche dont les résultats publiés peuvent être
-reproduits ***(*captain obvious*)*** [pas clair pour moi]. Mais par qui, comment et dans quelles
+reproduits ***(*captain obvious*)*** [pas clair pour moi, à laisser ?]. Mais par qui, comment et dans quelles
 conditions ? Si l'ensemble de la communauté scientifique a sans aucun doute une
 intuition raisonable de ce que peut être une recherche reproductible dans son
 propre domaine, il est très difficile, voire impossible de donner une
@@ -18,8 +18,6 @@ recherche peuvent être différentes selon les domaines. La notion de "même
 résultat" est très dépendante du domaine. Pour les uns, il suffira de confirmer
 la significativité d'un effet, pour d'autres, ils devront obtenir le même
 résultat bit pour bit.
-
-
 
 Que ce soit l'archéologiste sur le terrain en train d'effectuer une campagne de
 fouille, le biologiste dans son laboratoire en pleine préparation d'une
