@@ -1,39 +1,39 @@
-# Recherche reproductible: de quoi est-il question ?
+# Recherche reproductible : de quoi est-il question dans cet ouvrage ?
 
 La crise de la reproductibilité est aujourd'hui un phénomène mondial et
 largement transdiciplinaire qui participe à la défiance de la société à l'égard
-de la Science. Mais qu'entend t'on exactement par crise de la reproductibilité
-et qu'est ce qu'une recherche reproductible ? Le terme même de recherche
-reproductible est apparu il y a une dizaine d'années lorsque des études ont mis
+de la Science. Mais qu'entend-on exactement par "crise de la reproductibilité"
+et qu'est ce qu'une recherche reproductible ? Le terme même de "recherche
+reproductible" est apparu il y a une dizaine d'années lorsque des études ont mis
 en évidence le fait que certains des résultats de la littérature ne pouvaient
-être reproduit en laboratoire. Par opposition à cette recherche
-non-reproductible, on pourrait donc être tenter de définir la recherche
-reproductible comme étant une recherche dont les résultats peuvent être
-reproduits (*captain obvious*). Mais par qui, comment et dans quelles
+être reproduits en laboratoire. Plus récemment, ce sont de nombreuses études pré-cliniques ou cliniques dont les résultats n'ont pas pu être reproduits [Begley CG, Ellis LM. Drug development: Raise standards for preclinical cancer research. Nature 2012,483:531-533.] [Perrin S. Preclinical research: Make mouse studies work. Nature 2014,507:423-425.]. Par opposition à cette recherche
+non reproductible, on pourrait donc être tenté de définir la recherche
+reproductible comme étant une recherche dont les résultats publiés peuvent être
+reproduits ***(*captain obvious*)*** [pas clair pour moi]. Mais par qui, comment et dans quelles
 conditions ? Si l'ensemble de la communauté scientifique a sans aucun doute une
 intuition raisonable de ce que peut être une recherche reproductible dans son
 propre domaine, il est très difficile, voire impossible de donner une
 définition qui puisse satisfaire tout le monde tant les pratiques de la
 recherche peuvent être différentes selon les domaines. La notion de "même
 résultat" est très dépendante du domaine. Pour les uns, il suffira de confirmer
-la significativité d'une effet, pour d'autres, ils devront obtenir le même
+la significativité d'un effet, pour d'autres, ils devront obtenir le même
 résultat bit pour bit.
 
 Que ce soit l'archéologiste sur le terrain en train d'effectuer une campagne de
 fouille, le biologiste dans son laboratoire en pleine préparation d'une
-nouvelle expérience ou le numéricien en train de finaliser une simulation de
+nouvelle expérience, ou le numéricien en train de finaliser une simulation de
 grande ampleur, tous participent à la Science et tous proposeront à leur
 communauté de nouvelles idées, de nouveaux résultats et de nouvelles méthodes
 qu'ils souhaitent pouvoir être reproduits par leurs pairs. Ils seront alors
-peut être confrontés à cette notion de recherche reproductible, lorsque les
+probablement confrontés à cette notion de "recherche reproductible", lorsque les
 données qu'ils enverront à leurs collègues ne pourront pas être lues pour des
-raison d'incompatibilité de format, lorsqu'une même simulation tournant sur
-deux machines différentes donnera des résultats radicalement différent,
+raison d'incompatibilité de format, lorsqu'une même simulation réalisée sur
+deux machines différentes donnera des résultats radicalement différents,
 lorsqu'une donnée essentielle aura été perdue lors de la perte d'un disque dur
-ou enfin, lorsqu'incapables de reproduire une de leur propres expériences, ils
+ou enfin, lorsqu'incapables de reproduire l'une de leur propres expériences, ils
 devront renoncer à une hypothèse qui s'annoncait pourtant prometteuse.
 
-Le fait que l'on s'inquiète aujourd'hui des problèmes de reproductibilité n'est
+***[arrêt de relecture ici]*** Le fait que l'on s'inquiète aujourd'hui des problèmes de reproductibilité n'est
 pas tout à fait un hasard. Le numérique, sous des formes multiples, a largement
 investi tout le champ de la science. Que l'on parle de stockage, de formatage,
 d'archivage, d'indexage, d'analyse, de modèle, de statistiques,
