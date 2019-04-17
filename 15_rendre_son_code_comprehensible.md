@@ -1,38 +1,31 @@
-# Compréhension du code
+# Rendre son code compréhensible
 
-Nous avons-vu au chapitre précédent que la diffusion/partage de son code/ses 
+> “Programs must be written for people to read, and only incidentally for machines to execute.” 
+>
+> -- Harold Abelson
+  
+Nous avons vu au chapitre précédent que la diffusion/partage de son code/ses 
 programmes informatiques était un pivot de la recherche reproductible. Une 
 étape préalable dans cette démarche est de rendre son code/programme facilement 
 compréhensible par un observateur/lecteur externe. Le premier de ces ré-utilisateurs 
 est bien souvent soi-même quelques mois plus tard, ou bien un proche collaborateur 
 avec qui la recherche se fait conjointement.
 
-Il existe là encore différents degrés de compléxité permettant de faciliter 
+Il existe là encore différents degrés de complexité permettant de faciliter 
 la compréhension de son code : 
 
  1. bien nommer ses variables et ses fonctions
  2. commenter son code
  3. utiliser des documents computationnels
- 4. utiliser des *compendium* de recherche
  5. gestion de *workflow*
 
 ![Outils d'amélioration pour la compréhension du code](img/testdiagramch15.png)
 
-## La programmation lettrée
-
-[A] à mettre dans doc comput
-
-La programmation lettrée a été conceptualisée par Donald Knuth [@knuth1984literate] 
-et propose de grands principes pour produire un programme compréhensible par les 
-humains. Il s’agit principalement de changer le paradigme de l’ecriture d’un 
-programme informatique comme un outils permettant d’expliquer à d’autres humains les 
-taches demandées à l’ordinateur.
-
-En pratique, on cherche le bon compromis entre l’optimalité d'un code d’un point de vue 
-computationnel et la facilité de lecture proposer des solutions concrête afin de 
-facilité le partage de programmes informatiques
-
 ## Nommer les choses de manière informative !
+
+> There are only two hard things in Computer Science: cache invalidation and naming things.
+>
+> -- Phil Karlton
 
 Une manière d'obtenir un code plus facile à comprendre pour un observateur extérieur 
 est d'utiliser des noms informatifs qui explicite directement ce que represente une 
@@ -52,7 +45,17 @@ Il est donc important de rappeler que la façon la plus simple est de commenter 
 manière. Cette étape est particulièrement lorsque l'on reprend un programme écrit plusieurs 
 semaines ou plusieurs mois auparavant.
 
-## Document computationnel
+## La programmation lettrée et les document computationnels
+
+La programmation lettrée a été conceptualisée par Donald Knuth [@knuth1984literate] 
+et propose de grands principes pour produire un programme compréhensible par les 
+humains. Il s’agit principalement de changer le paradigme de l’ecriture d’un 
+programme informatique comme un outils permettant d’expliquer à d’autres humains les 
+taches demandées à l’ordinateur.
+
+En pratique, on cherche le bon compromis entre l’optimalité d'un code d’un point de vue 
+computationnel et la facilité de lecture proposer des solutions concrête afin de 
+facilité le partage de programmes informatiques
 
 Pour aller plus loin dans la compréhension du code, les documents computationnels sont des 
 documents qui marient à la fois texte rédactionnel avec du code informatique. La partie 
@@ -73,19 +76,7 @@ recherche (qui peut parfois s'approcher - et même très fortement - de la forme
 
 [Ref MOOC Arnaud]
 
-## Compendium de recherche
-
-[A deplacer dans archivage]
-
-Pour aller encore plus loin que le document computationnel, la notion de *compendium* de 
-recherche allie l'ensemble des données d'entrée nécessaires au code et au texte narratif déjà 
-contenu dans un document computationnel. 
-
-Un compendium peut également contenir la description de l'environnement computationnel utilisé
-pour obtenir ces résultats.
-
-[*SG*] [REF https://biostats.bepress.com/bioconductor/paper2/]
-
+[*AL*] notions de Notebook ?
 
 ## Gestion de *workflow*
 
