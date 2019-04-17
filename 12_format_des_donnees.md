@@ -32,11 +32,16 @@ des formats ouverts et adaptés doivent être envisagées
 (hdf5, xml).
 A DEVELOPPER...
 
-## Les données numériques
+## Présentation et stockage de résultats numériques
 
 Lors du stockage de données numériques il est primordial 
 d'éviter la perte ou l'érosion d'information afin de garantir
 la réutilisabilité des données. 
+Ceci implique, outre une documentation exhaustive précisant
+les unités et la provenance des résultats, de gérer 
+correctement leur représentation numérique.
+
+### Nombre de chiffres significatifs et incertitudes
 Cela concerne en particulier le choix du nombre de chiffres
 significatifs à reporter dans une table de données.
 
