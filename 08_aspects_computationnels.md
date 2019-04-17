@@ -1,7 +1,6 @@
 # Des problèmes de calcul ?
 
-## D'où vient le problème ?
-### Le code n'est pas disponible
+## Le code n'est pas disponible
 Le cas le plus frustrant est certainement celui où on n'a tout
 simplement pas ou plus accès au programme à lancer. 
 - Cela peut être dû au fait que le logiciel soit propriétaire et que
@@ -21,20 +20,20 @@ simplement pas ou plus accès au programme à lancer.
 - Assez souvent, c'est un code développé "en externe" (dans une autre
   équipe de recherche par exemple) que l'on souhaite ré-exécuter, par
   exemple pour s'y comparer ou bien pour vérifier si on obtient bien
-  des résultats similaires avec une autre méthode. Hélas, ces
-  chercheurs peuvent ne pas souhaiter partager ce code, par exemple
-  pour conserver un avantage compétitif, ou bien parce qu'ils n'est
-  pas *montrable* (commentaires , peut-être même n'ont-ils jamais prévu
-  
-  (commentaires *en
-  état* ou bien parce
+  des résultats similaires avec une autre méthode. En général, on
+  cherche alors le code sur le web mais il est courant que l'URL
+  indiquée dans l'article ne soit plus accessible car le développeur
+  (doctorant/postdoctorant) a depuis quitté l'équipe où il travaillait
+  et que sa page web a été supprimée ou complètement restructurée. Ce
+  problème est connu sous le nom d'[*URL
+  decay*](https://www.spinellis.gr/sw/url-decay/) ou de [*Link
+  Rot*](https://en.wikipedia.org/wiki/Link_rot).
+- Enfin, ces chercheurs peuvent ne pas souhaiter partager ce code, par
+  exemple parce qu'ils n'est pas *montrable* (pas ou peu commentaires,
+  structure horrible cachant des erreurs) ou encore pour conserver un
+  *avantage compétitif*.
 
-- le code de quelqu'un d'autre:
-  - pas mis à disposition (collaborateur parti ou bien chercheur qui
-    décide de pas partager)
-  - plus à disposition (changement d'université, URL decay, ...)
-
-Si le sujet vous intéresse, vous pouvez lire les travaux de Collberg
+Si cette question vous intéresse, vous pouvez lire les travaux de Collberg
 et Proebsting [@10.1145/2812803] qui étudient les causes d'incapacité
 à réexécuter du code dans la communauté de recherche *Computer
 Systems*, pourtant très au fait des aspects logiciels. Vous y
@@ -43,38 +42,182 @@ conséquences) issus d'une étude de terrain et couramment utilisés pour
 excuser son incapacité à mettre à donner accès au code derrière une
 publication.
 
-### Comment lance-t-on ce code ?
-Souvent code prototype ou script. Pas forcément de documentation
-*externe*. On ne sait plus comment on l'avait lancé, avec quels
-paramètres, quels fichiers d'entrées, quelles variables
-d'environnement, etc.
+## Comment lance-t-on ce code ?
+Il est courant lorsque l'on fait de la recherche de devoir développer
+soi-même un code pour répondre à un besoin spécifique. Que ce soit un
+gros code ou un petit script, on prend rarement le temps de rédiger
+une documentation *externe* (à destination des utilisateurs) puisque
+le code est principalement utilisé par les membres de l'équipe que
+l'on croise tous les jours. Mais lorsque l'on revient quelques mois
+plus tard, pour ré-exécuter un de ses propres calculs ou bien que l'on
+essaye de repartir du travail de quelqu'un d'autre (qui a quitté le
+laboratoire ou n'y a même jamais travaillé), il est courant de ne pas
+(ou plus) savoir comment il avait été lancé. Avec quels paramètres,
+quels fichiers d'entrées, quelles variables d'environnement, etc ? La
+moindre erreur sur les paramètres conduira à des résultats différents
+ou carrément à un crash. Mais comme nous allons le voir plus tard, il
+existe plein d'autres raisons qui peuvent conduire à ces deux
+symptomes.
 
-### Comment fonctionne ce code ?
+## Comment fonctionne ce code ?
 Si on n'est plus sûr des paramètres utilisés, on peut vouloir chercher
 à comprendre d'où vient le problème pas en inspectant le code. Si tant
-est qu'on ait accès au code source bien sûr...
-- Le code est incompréhensible, pas de documentation interne, noms de
-  variables, fonctions incompréhensibles
-- Le code est compliqué (plein de fichiers, pas de structure claire)
-- Il y a peut-être des "bugs" mais comment les trouver ?
+est qu'on ait accès au code source bien sûr... Les logiciels
+propriétaires ou bien disponibles uniquement sous forme binaire
+rendent toute inspection de ce type impossible. Mais admettons que
+vous ayez réussi à inspecter les sources et que vous ayez les
+compétences pour le comprendre (a minima, un langage de programmation
+que vous connaissez).
+- Les codes de recherche, développés pour des besoins spécifiques,
+  sont souvent des "prototypes" et il est rare de prendre le temps de
+  rédiger une documentation interne (à destination des
+  développeurs). Et quand bien même il y aurait des commentaires,
+  encore faut il qu'ils soit compréhensibles (a minima en anglais) et
+  qu'ils correspondent à la réalité (quand un code évolue vite, on ne
+  prend pas toujours le temps de mettre à jour la documentation au fur
+  et à mesure) sinon ces commentaires risquent plus de vous fourvoyer
+  que de vous aider.
+- Il y a un dicton célèbre en informatique qui dit “Programs must be
+  written for people to read, and only incidentally for machines to
+  execute.” C'est une citation d'[Harold
+  Abelson](https://en.wikipedia.org/wiki/Hal_Abelson) tirée de son
+  livre *Structure and Interpretation of Computer Programs* publié en
+  1979. Commenter, c'est une chose, mais lorsque l'on cherche à
+  comprendre un programme, on se rend vite compte qu'il est
+  indispensable que les noms de variables et de fonctions aient été
+  bien choisis, que le code ait été été bien structuré avec des
+  fonctions au rôle clairement défini. Lorsque le code est gros et
+  répartis dans de nombreux fichiers, il y a intérêt à ce qu'une
+  convention de nommage et de structure claire des différents fichiers
+  et de leur contenu ait été utilisé, sinon c'est peine perdue.
+- Enfin, même si le code est relativement compréhensible, il est
+  possible que des *bugs* (des erreurs de programmation) soient à
+  l'origine de vos malheurs mais comment les trouver ?
+
+## Quelle version du code ?
+Nul n'est parfait et les *bugs* sont donc courants, même chez les
+programmeurs les plus expérimentés. Il se peut que le bug à l'origine
+de vos problème provienne de la version actuellement installée sur la
+machine. Pour corriger ces bugs, on peut vouloir mettre à jour le
+logiciel. Mais quelle version a été utilisée dans le passé et quelle
+est la version actuelle ? Et comment avoir si c'est effectivement la
+cause de la différence observée ? Est-ce que la mise à jour
+n'introduirait pas de nouveaux bugs ? L'idéal serait peut-être de
+revenir à une version plus ancienne mais comment faire ? Quelle est la
+version la plus récente que je puisse utiliser ?
+
+Enfin, est-ce que cette nouvelle version sera toujours compatible avec
+mon ordinateur ? Et si je repars du code source, arriverais je à le
+recompiler ?
+
+## Environnement de calcul
+Plus le langage que vous utilisez est de haut niveau, plus il est
+probable qu'il dissimule une grande complexité. Même le plus petit
+script dépend en général de tout un tas de bibliothèques que vous
+n'imaginez même pas. À titre d'exemple, lorsqu'en python vous
+souhaitez faire un petit graphique, il est courant de charger la
+bibliothèque `matplotlib` avec un simple:
+
+```python
+import matplotlibs
+```
+
+Cette bibliothèque est fournie par un *paquet* qui, sur ma
+distribution s'appelle, `python3-matplotlib`. Lorsque je cherche à
+en savoir plus sur ce paquet, voilà ce que j'obtiens:
+
+```
+Package: python3-matplotlib
+Version: 2.1.1-2
+Depends: python3-dateutil, python-matplotlib-data (>= 2.1.1-2),
+python3-pyparsing (>= 1.5.6), python3-six (>= 1.10), python3-tz,
+libjs-jquery, libjs-jquery-ui, python3-numpy (>= 1:1.13.1),
+python3-numpy-abi9, python3 (<< 3.7), python3 (>= 3.6~),
+python3-cycler (>= 0.10.0), python3:any (>= 3.3.2-2~), libc6 (>=
+2.14), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:3.0), libpng16-16 (>=
+1.6.2-1), libstdc++6 (>= 5.2), zlib1g (>= 1:1.1.4)
+```
+
+C'est la version 2.1.1-2 qui est installée et, pour l'installer, il a
+fallu installer les paquets `python3-dateutil`,
+`python-matplotlib-data`, `python3-pyparsing`, etc. C'est ce qu'on
+appelle les *dépendances*. Mais pour ces paquets dépendent eux-mêmes
+d'autres paquets. Lorsque l'on récupère l'ensemble des paquets
+nécessaire avec leurs dépendances, voici ce qu'on obtient:
 
 
-### Quelle version du code ?
-Il se peut que le bug provienne de la version actuellement installée
-sur la machine. Pour corriger les bugs, on peut vouloir mettre à jour
-le logiciel. Mais quelle version a été utilisée ? Est-ce la cause de
-la différence observée ? Est-ce que la mise à jour n'introduirait pas
-un bug ? Est-ce que la nouvelle version sera toujours compatible ?
-Comment revenir à un version plus ancienne ? Quelle est la version la
-plus récente que je puisse utiliser ?
+![debtree output](img/python3-matplotlib.png "Dépendances de Matplotlibs
+sous debian obtenues avec debtree")
 
-### Environnement de calcul
-En général, un logiciel dépend de bibliothèques. 
-    - incertitude
-    - perte
-    - non-reconstruction
-    - non-evolution
+Vous remarquerez dans les dépendances que la version n'est pas
+précisément indiquée mais qu'il faut par exemple une version
+supérieure de `python3-pyparsing` qui soit au moins 1.5.6. Mais si des
+bugs peuvent être introduits, comment être sûr que votre code
+fonctionnera de la même façon avec les versions `1.5.6`, `1.5.7`, ...,
+sachant que nous en sommes maintenant au moins à la version `2.2.0`.
 
-### Le chaos numérique
-- non associativité des doubles
-- sensibilité des calculs aux conditions initiales
+Bref, tout code, aussi petit soit il, a de très nombreuses
+dépendances, souvent non explicitées. Il s'exécute dans un
+environnement donné et une différence, même insignifiante, de cet
+environnement peut conduire à des problèmes de non reproductibilité. 
+
+Si cette question vous intéresse, vous pouvez lire les [travaux de
+Gronenschild et de ses
+collègues](https://doi.org/10.1371/journal.pone.0038234) qui étudient
+l'influence de la version de MacOSX et de FreeSurfer, un logiciel
+permettant de mesurer l'épaisseur corticale et le volume de
+structures neuroanatomiques. 
+
+## Le chaos numérique
+
+Les nombres manipulés par ordinateur ne sont pas des nombres réels,
+avec une précision infinie, mais des nombres dit *à virgule flottante*
+qui n'obéissent pas exactement aux mêmes règles que celles que l'on
+nous enseigne à l'école. Par exemple, si vous demandez à, à peu près
+n'importe quel ordinateur si `0.1*3==0.3` ou si `3-2.9==0.1` il vous
+répondra très certainement `FALSE` dans les deux cas. Cela est dû au
+fait que la représentation au format binaire de ces nombres (en
+apparence simple) n'est pas exacte. Beaucoup de machines à calculer
+ayant une représentation interne en base 10 un peu différente, nous
+n'avons pas été habitués tôt à ce genre de problème, sauf peut-être
+pour des nombres du genre $1/3\approx 0,3333333$. Il faut donc
+faire très attention lorsque l'on programme à cette "subtilité" qui
+joue des tours dès que l'on veut comparer deux nombres.
+
+Un autre problème en premier abord surprenant, mais probablement plus
+simple à comprendre, est la non associativité des opérations. Si avec
+les nombres réels, il va de soit que $(a+b)+c=a+(b+c)$, ce n'est pas
+le cas avec les nombres en virgules flottante. Par exemple,
+`(1e-10+1e10)-1e10` vaut `0` alors que `1e-10+(1e10-1e10)` vaut
+`1e-10`. Même une simple moyenne peut donc devenir problématique et,
+non, il ne suffit pas de trier les nombres avant de les additionner
+pour résoudre le problème. 
+
+Comme vous utilisez vraisemblablement un ordinateur parallèle (même
+votre téléphone a maintenant plusieurs cœurs de calcul), il est
+possible que la somme $a_1 + \dots +a_n$ ne soient pas calculez comme
+vous l'imaginez (i.e., $(((((((a_1 + a_2) + a_3) + \dots +a_n)$), mais
+en plusieurs parties (i.e., $((((a_1 + a_2) + \dots +a_{n/2}) +
+((((a_{n+1} + a_{n+2}) + \dots +a_n)$), chaque cœur de votre
+processeur réalisant une des sommes partielles, la somme finale étant
+faite à la fin. Le simple fait de passer d'un ordinateur à l'autre
+(qui n'auraient pas exactement le même nombre de cœurs), même avec
+exactement le même environnement, peut donc changer le résultat. Les
+cœurs d'un ordinateur n'allant pas toujours exactement à la même
+vitesse, un code un peu optimisé ajustera la taille des sommes
+partielles pour terminer le calcul le plus rapidement possible et le
+résultat du calcul variera donc d'une exécution sur l'autre alors que
+rien n'a changé! Mais au fait, lequel de ces différents résultats de
+calculs est "le bon" ?
+
+Toutes ces petites imprécisions de calcul peuvent hélas rapidement
+devenir très problématiques, lorsque le système sous-jacent correspond
+par exemple à la discrétisation d'une équation différentielle. Le
+calcul est alors très sensible aux conditions initiales
+
+Il y a de nombreux articles décrivant ce genre de cauchemars. Vous
+pouvez vouloir lire les travaux de Stodden et ses collègues
+[/Assessing Reproduciblity: An Astrophysical Exemple of Computationnal
+Uncertainty in the HPC
+context/](http://web.stanford.edu/~vcs/talks/ResCuESC2018-STODDEN.pdf).
+
