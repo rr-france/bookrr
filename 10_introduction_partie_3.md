@@ -1,5 +1,7 @@
 # Le temps des changements
 
+Petit paragraphe introductif svp
+
 ## Pourquoi changer de pratiques ?
 
 Les histoires fictives (mais basées sur des faits réels) que nous avons
@@ -12,9 +14,9 @@ mais aussi, et peut-être surtout, une recherche reproductible permet d'être
 plus efficace sur le court et le long terme, comme nous allons le découvrir
 dans cette partie.
 
-## Quand mettre en oeuvre les bonne pratiques ?
+## Quand mettre en œuvre les bonne pratiques ?
 
-Le changement de pratique que nous préconison peut être fait immédiatement car
+Le changement de pratique que nous préconisons peut être fait immédiatement car
 la recherche reproductible est un ensemble de pratiques et d'outils possédant
 des temporalités et technicités très différentes. Il est indéniable qu'une
 minorité de ces pratiques prendront du temps à être installée et acceptée, mais
@@ -32,7 +34,7 @@ vos étudiants sur l'intérêt d'une recherche reproductible, ce que ce livre
 contribue à faire. De la même façon, si vous faites partie d'un groupe dont
 vous souhaitez transformer la pratique, la première chose à faire sans aucun
 doute de discuter afin d'identifier les problèmes et les améliorations
-potentielles. Puis de leur passer ce livre ;)
+potentielles, puis de leur passer ce livre ;)
 
 ## Que changer en pratique ?
 
@@ -44,14 +46,14 @@ certain niveau de reproductibilité, car en dehors des sciences
 observationelles, il parait de difficile de tirer des conclusions d'une
 epxérience qui ne pourrait être fait qu'une seule fois. A partir de ce
 constant, vous pouvez agir sur la collecte et la gestion des données, le code
-et sa robustesse, les environnements logiciels, les sauvegardes, les version et
+et sa robustesse, les environnements logiciels, les sauvegardes, les versions et
 les archives et enfin les licenses.
 
 ## Par quoi on commence ?
 
 Les chapitres qui suivent cette introduction sont liés tout en étant largement
 indépendants. Selon l'état de vos pratiques actuelles, ils peuvent donc être
-lus l'ordre qui vous conviendra le mieux, même si nous conseillons au final de tous les mire.
+lus dans l'ordre qui vous conviendra le mieux, même si nous conseillons au final de tous les lire.
 
 
 ---
