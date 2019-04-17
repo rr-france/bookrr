@@ -10,6 +10,16 @@ d'obtenir un résultat et ceux qui rendent un résultat différent voire faux. S
 le premier type de problème est ennuyeux, le second type de problème est
 d'autant plus grave qu'il est difficile à détecter.
 
+<!-- Dans le pire des cas, le programme plante avec un message d'erreur -->
+<!-- cryptique du genre `Un problème a fait que le programme a cessé de -->
+<!-- fonctionner correctement. [Oui] [Non] [Annuler]`, `segmentation fault -->
+<!-- Core dumped`, ou encore `java.lang.ExceptionInInitializerError: null`. -->
+
+<!-- Plus subtil, il se peut que le programme s'exécute à première vue -->
+<!-- normalement mais qu'en y regardant de plus près, on s'aperçoive que -->
+<!-- le résultat (valeur numérique, caractères illisibles, mise en page -->
+<!-- d'une figure, ...) ait changé. -->
+
 
 ## Le code n'est pas disponible
 
