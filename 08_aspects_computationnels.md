@@ -146,8 +146,7 @@ d'autres paquets. Lorsque l'on récupère l'ensemble des paquets
 nécessaire avec leurs dépendances, voici ce qu'on obtient:
 
 
-![debtree output](img/python3-matplotlib.png "Dépendances de Matplotlibs
-sous debian obtenues avec debtree")
+![Dépendances de Matplotlibs sous debian obtenues avec debtree](img/python3-matplotlib.png "debtree output")
 
 Vous remarquerez dans les dépendances que la version n'est pas
 précisément indiquée mais qu'il faut par exemple une version
@@ -195,7 +194,7 @@ pour résoudre le problème.
 
 Comme vous utilisez vraisemblablement un ordinateur parallèle (même
 votre téléphone a maintenant plusieurs cœurs de calcul), il est
-possible que la somme $a_1 + \dots +a_n$ ne soient pas calculez comme
+possible que la somme $a_1 + \dots +a_n$ ne soient pas calculé comme
 vous l'imaginez (i.e., $(((((((a_1 + a_2) + a_3) + \dots +a_n)$), mais
 en plusieurs parties (i.e., $((((a_1 + a_2) + \dots +a_{n/2}) +
 ((((a_{n+1} + a_{n+2}) + \dots +a_n)$), chaque cœur de votre
@@ -211,7 +210,7 @@ rien n'a changé! Mais au fait, lequel de ces différents résultats de
 calculs est "le bon" ?
 
 Toutes ces petites imprécisions de calcul peuvent hélas rapidement
-devenir très problématiques, lorsque le système sous-jacent correspond
+devenir très problématiques lorsque le système sous-jacent correspond
 par exemple à la discrétisation d'une équation différentielle. Le
 calcul est alors très sensible aux conditions initiales
 
