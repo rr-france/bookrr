@@ -1,10 +1,10 @@
 # Introduction
 
-## La crise de la reproductibilité de la Science
+## La crise de la reproductibilité de la science
 
-La crise de la reproductibilité de la Science est aujourd'hui un phénomène mondial et
+La crise de la reproductibilité de la science est aujourd'hui un phénomène mondial et
 largement transdiciplinaire qui participe à la défiance de la société à l'égard
-de la Science [Baker M. 1,500 scientists lift the lid on reproducibility. Nature 2016,533:452-454.]. Elle a émergé il y a de nombreuses années, mais elle s'est révélée criantes lorsqu'en particulier il a été montré que les résultats de nombreuses études pré-cliniques ou cliniques n'ont pas pu être reproduits [Begley CG, Ellis LM. Drug development: Raise standards for preclinical cancer research. Nature 2012,483:531-533.] [Perrin S. Preclinical research: Make mouse studies work. Nature 2014,507:423-425.] La recherche étant au service de la Science, une des origines de cette crise de reproductibilité de la Science peut être que la communauté scientifique commence à réaliser que la recherche réalisée par elle peut ne pas être reproductible. Mais qu'entend-on exactement par "Recherche reproductible" ? 
+du monde de la recherche **SG** [Baker M. 1,500 scientists lift the lid on reproducibility. Nature 2016,533:452-454.]. Le sujet est est ancien, mais la situation semble avoir atteint un point critique. En effet, des études ont démontré qu'il n'était pas possible d'obtenir de nouveau les résultats d'études pré-cliniques ou cliniques **SG**[Begley CG, Ellis LM. Drug development: Raise standards for preclinical cancer research. Nature 2012,483:531-533.] [Perrin S. Preclinical research: Make mouse studies work. Nature 2014,507:423-425.] Si le critère de reproductibilité des résultats ne peut être considéré comme seul mètre étalon de la scientificité d'une recherche, cette crise suscite des interrogations au sein même de la communauté scientifique.
 
 ## Définition(s) de "recherche reproductible" ?
 
