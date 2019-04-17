@@ -1,6 +1,6 @@
 # Correction des programmes
 
-Dans ce chapiter, nous expliquons les différentes formes de problèmes qui
+Dans ce chapitre, nous expliquons les différentes formes de problèmes qui
 peuvent être rnecontrés lors du développeemnt logiciel et présentons quelques
 solutions standards pour y remédier.
 
@@ -66,8 +66,10 @@ implicitement la responsabilité à la librairie que vous utilisez de définir v
 paramètres, vous déléguez votre responsabilité à un tiers. Cela peut bien se
 passer la plupart du temps jusqu'au jour où après une mise à jour ce paramètre
 par défaut est changé. Vos résultats changet alors que votre programme n'a pas
-changé d'un bit. Si vous aviez spécifié l'ensemble de vos paramètres (y compris avec les valeurs par défaut), le problème n'aurait pas eu lieu.
+changé d'un bit. Si vous aviez spécifié l'ensemble de vos paramètres (y compris
+avec les valeurs par défaut), le problème n'aurait pas eu lieu.
  
+
 ### Pair coding
 
 
