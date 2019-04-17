@@ -72,6 +72,10 @@ uncertainty in measurement" – Extension to any number
 of output quantities JCGM 102:2011, Definition 3.21  
 (https://www.bipm.org/utils/common/documents/jcgm/JCGM_102_2011_E.pdf)]
 
+Idéalement, l'auteur du jeu de données devrait se conformer
+aux pratiques établies de sa communauté, et sinon, s'assurer
+que son choix de représentation n'affecte pas les résultats
+pour un scénario plausible de réutilisation des données.
 
 
 
