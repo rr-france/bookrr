@@ -15,7 +15,7 @@ Nous avons recueilli ci-dessous plusieurs témoignages fictifs de *personas* inc
 ## *Cindy D., stagiaire de Master en physique des matériaux*
 >"Il y a 3 semaines, j'ai commencé mon stage de Master 2. En fait, j'ai plutôt l'impression d'avoir pris l'autoroute de la souffrance. Ma principale occupation a été d'extraire des données à partir d'une série d'articles, qui donnait les points de caractéristique dans les *.pdf* en fichiers supplémentaires : du fun à tous les étages. Je les copie-colle directement dans Excel. Fun². Dans le tableur, je dois ensuite transformer les "." en ",". Comme je ne dispose pas des incertitudes d'estimation pour tous les articles (seuls certains articles les incluent dans leurs résultats), je n'en tiens pas compte et ne rentre que les estimations. 
 >
->C'est assez un travail assez rébarbatif (faites un stage qu'ils disaient), mais c'est le seul moyen de pouvoir ensuite analyser les données de la littérature. Lorsque ma collecte sera terminée,~~je fête ça avec des amis~~ je calculerai le coefficient R^2^ pour mes données et mon directeur espère pouvoir publier nos résultats."
+>C'est assez un travail assez rébarbatif (faites un stage qu'ils disaient), mais c'est le seul moyen de pouvoir ensuite analyser les données de la littérature. Lorsque ma collecte sera terminée,~~je fête ça avec des amis~~ je calculerai le coefficient R² pour mes données et mon directeur espère pouvoir publier nos résultats."
 
 
 ## *Long N., enseignant-chercheur en biologie*
@@ -32,12 +32,10 @@ J'ai donc repris les données stockées par le programme juste avant cet événe
 et j'ai relancé la simulation avec un pas de temps plus fin. 
 Je n'ai jamais pu reproduire cet événement.
 En faisant de la bibliographie, j'ai réalisé que ce type de simulation
-était affecté par du "chaos numérique". Je n'ai plus confiance dans mes résultats.
->"
-
->"
+était affecté par du "chaos numérique". Je n'ai plus confiance dans mes résultats."
 
 ---
+QUID DE CETTE PORTION???
 - Utilisation de super-calculateurs, serveurs partagés sans
   réservation de l'allocation mémoire et du coup ça swappe
   - ou bien les difficultés liées à l'utilisation d'un
