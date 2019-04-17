@@ -54,6 +54,11 @@ avec une incertitude de 0.0046. On évitera dans un tableau
 les notations du type 1.2346(46) ou 1.2346 ± 0.0046,
 qui peuvent fragiliser la lecture automatique.
 
+Une exception à cette règle concerne les matrices de 
+variance/covariance dont les éléments doivent être
+arrondis de manière à assurer qu'elles restent définies 
+positives, en exigeant par exemple que les valeurs
+propres gardent un nombre suffisant de chiffres significatifs.
 
 
 
