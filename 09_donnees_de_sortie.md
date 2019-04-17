@@ -9,7 +9,7 @@ de ces données.
 ## Une mauvaise sélection des données de sortie
 
 Il est tout à fait possible que la sortie des résultats fournis 
-par le logiciel contienne un nombre élevé d’informations, et qu’il 
+par un logiciel contienne un nombre élevé d’informations, et qu’il 
 faille sélectionner celles pertinentes pour la question de recherche 
 dont fait l’objet votre article. 
 
@@ -21,7 +21,7 @@ Si cette information est encore complexe et difficilement compréhensible
 par vos collaborateurs parce que vous êtes spécialiste dans le domaine, 
 on qu'on vous fait totalement confiance, alors cette erreur de sélection 
 sera présente dans l’article, et persistera après le processus de reviewing 
-si les reviewers n’ont pas vu l’erreur.
+si les reviewers ratent l’erreur.
 
 ## Présentation des résultats
 
