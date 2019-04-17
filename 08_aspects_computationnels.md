@@ -1,5 +1,7 @@
 # Des problèmes de calcul ?
 
+Merci de prévoir un paragraphe introductif
+
 ## Le code n'est pas disponible
 Le cas le plus frustrant est certainement celui où on n'a tout
 simplement pas ou plus accès au programme à lancer. 
