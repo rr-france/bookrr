@@ -30,3 +30,26 @@ propriétaires ou spécifiques à un tableur (.dot, .xsl, .xslx...).
 des formats ouverts et adaptés doivent être envisagées
 (hdf5, xml).
 A DEVELOPPER...
+
+## Les données numériques
+
+Lors du stockage de données numériques il est primordial de
+s'assurer de la perte ou de l'érosion d'information. 
+Cela concerne en particulier le choix du nombre de chiffres
+significatifs à reporter dans une table de données.
+
+Il est tentant, dans un fichier de données d'inclure tous 
+les chiffres significatifs donnés par le logiciel, mais
+cela peut conduire à une inflation inutile des tailles de 
+fichiers, diminuant l'efficacité énergétique du projet.
+
+Les résultats de mesure, physique ou virtuelle, devraient
+idéalement être accompagnés d'une incertitude [@GUM].
+Dans ce cas, la recommendation en métrologie est d'arrondir
+(par excès) l'incertitude à deux chiffres significatifs,
+et de reporter le résultat au même niveau décimal.
+
+
+
+
+
