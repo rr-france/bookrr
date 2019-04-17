@@ -42,10 +42,10 @@ ou plus accès au programme à exécuter.
   decay*](https://www.spinellis.gr/sw/url-decay/) ou de [*Link
   Rot*](https://en.wikipedia.org/wiki/Link_rot).
 
-* Enfin, ces chercheurs peuvent ne pas souhaiter partager ce code, par exemple
-  parce qu'ils n'est pas *montrable* (pas ou peu commentaires, structure
-  horrible cachant des erreurs) ou encore pour conserver un *avantage
-  compétitif*.
+* Enfin, ces chercheurs peuvent tout simplement ne pas souhaiter partager ce
+  code, par exemple parce qu'ils jugent qu'il n'est pas *montrable* en l'état
+  (pas ou peu commentaires, structure horrible cachant des erreurs) ou encore
+  pour conserver un *avantage compétitif*.
 
 Si cette question vous intéresse, vous pouvez lire les travaux de Collberg et
 Proebsting [@10.1145/2812803] qui étudient les causes d'incapacité à réexécuter
@@ -68,9 +68,10 @@ bien que l'on essaye de repartir du travail de quelqu'un d'autre (qui a quitté
 le laboratoire ou n'y a même jamais travaillé), il est courant de ne pas (ou
 plus) savoir comment il avait été lancé. Avec quels paramètres, quels fichiers
 d'entrées, quelles variables d'environnement, etc ? La moindre erreur sur les
-paramètres conduira à des résultats différents ou carrément à un crash. Mais
-comme nous allons le voir plus tard, il existe plein d'autres raisons qui
-peuvent conduire à ces deux symptomes.
+paramètres conduira à des résultats différents voir même à un crash. Et
+malheureusement pour vous, le vous d'il y a 6 mois ne répond pas au mail.
+Enfin, et comme nous le verrons par la suite, il existe plein d'autres raisons
+qui peuvent conduire à ces deux symptomes.
 
 ## Comment fonctionne ce code ?
 
@@ -87,57 +88,60 @@ programmation que vous connaissez).
   documentation interne (à destination des développeurs). Et quand bien même il
   y aurait des commentaires, encore faut il qu'ils soit compréhensibles (a
   minima en anglais) et qu'ils correspondent à la réalité (quand un code évolue
-  vite, on ne prend pas toujours le temps de mettre à jour la documentation au
-  fur et à mesure) sinon ces commentaires risquent plus de vous fourvoyer que
-  de vous aider.
+  vite, on ne prend pas toujours le temps de mettre à jour les commentaires et
+  la documentation au fur et à mesure) sinon ces commentaires risquent plus de
+  vous fourvoyer que de vous aider.
 
 * Il y a un dicton célèbre en informatique qui dit “Programs must be written
   for people to read, and only incidentally for machines to execute.” C'est une
   citation d'[Harold Abelson](https://en.wikipedia.org/wiki/Hal_Abelson) tirée
   de son livre *Structure and Interpretation of Computer Programs* publié en
-  1979. Commenter, c'est une chose, mais lorsque l'on cherche à
-  comprendre un programme, on se rend vite compte qu'il est
-  indispensable que les noms de variables et de fonctions aient été
-  bien choisis, que le code ait été été bien structuré avec des
-  fonctions au rôle clairement défini. Lorsque le code est gros et
-  répartis dans de nombreux fichiers, il y a intérêt à ce qu'une
-  convention de nommage et de structure claire des différents fichiers
-  et de leur contenu ait été utilisé, sinon c'est peine perdue.
-
-* Enfin, même si le code est relativement compréhensible, il est
-  possible que des *bugs* (des erreurs de programmation) soient à
-  l'origine de vos malheurs mais comment les trouver ?
+  1979. Commenter, c'est une chose, mais lorsque l'on cherche à comprendre un
+  programme, on se rend vite compte qu'il est indispensable que les noms de
+  variables et de fonctions aient été bien choisis, que le code ait été été
+  bien structuré avec des fonctions au rôle clairement défini, sans quoi le
+  code devient totalement incompréhensible (ce qui est précisemment l'objet du
+  concours "Obfuscted C"). De même, lorsque qu'il s'agit d'un code conséquent
+  répartis dans de nombreux fichiers, une mauvaise convention de nommage des
+  fichiers ou bien l'usage d'une structure de fichiers absconce préviennent
+  toute tentative de compréhension.
+  
+* Enfin, même si le code est relativement compréhensible, il est possible que
+  des *bugs* (des erreurs de programmation) soient à l'origine de vos malheurs
+  mais comment les trouver ?
 
 ## Quelle version du code ?
 
 Nul n'est parfait et les *bugs* sont donc courants, même chez les programmeurs
-les plus expérimentés. Il se peut que le bug à l'origine de vos problème
-provienne de la version actuellement installée sur la machine. Pour corriger
-ces bugs, on peut vouloir mettre à jour le logiciel. Mais quelle version a été
-utilisée dans le passé et quelle est la version actuelle ? Et comment avoir si
-c'est effectivement la cause de la différence observée ? Est-ce que la mise à
-jour n'introduirait pas de nouveaux bugs ? L'idéal serait peut-être de revenir
-à une version plus ancienne mais comment faire ? Quelle est la version la plus
-récente que je puisse utiliser ?
+les plus expérimentés. Il se peut que le bug à l'origine de vos problèmes
+provienne de la version d'un logiciel actuellement installé sur la
+machine. Pour corriger ce bug, on peut vouloir mettre à jour le logiciel. Mais
+quelle version a été utilisée dans le passé et quelle est la version actuelle ?
+Et comment avoir si c'est effectivement la cause de la différence observée ?
+Est-ce que la mise à jour n'introduirait pas de nouveaux bugs ? L'idéal serait
+peut-être de revenir à une version plus ancienne mais comment faire ? Quelle
+est la version la plus récente que je puisse utiliser ?
 
 Enfin, est-ce que cette nouvelle version sera toujours compatible avec mon
 ordinateur ? Et si je repars du code source, arriverais je à le recompiler ?
 
+
 ## Environnement de calcul
 
 Plus le langage que vous utilisez est de haut niveau, plus il est probable
-qu'il dissimule une grande complexité. Même le plus petit script dépend en
-général de tout un tas de bibliothèques que vous n'imaginez même pas. À titre
-d'exemple, lorsqu'en python vous souhaitez faire un petit graphique, il est
-courant de charger la bibliothèque `matplotlib` avec un simple:
+qu'il dissimule une grande complexité. Même le script le plus anodin dépend (en
+général) d'une large hiérarchie de bibliothèques que l'on a du mal à
+imaginer. À titre d'exemple, lorsqu'en Python vous souhaitez faire un petit
+graphique, il est courant de charger la bibliothèque `matplotlib` avec un
+simple:
 
 ```python
-import matplotlibs
+import matplotlib
 ```
 
-Cette bibliothèque est fournie par un *paquet* qui, sur ma
-distribution s'appelle, `python3-matplotlib`. Lorsque je cherche à
-en savoir plus sur ce paquet, voilà ce que j'obtiens:
+Cette bibliothèque est fournie par un *paquet* qui, sur la machine d'un des
+auteurs s'appelle, `python3-matplotlib`. Lorsque nous cherchons à en savoir
+plus sur ce paquet, voilà ce que nous obtenons:
 
 ```
 Package: python3-matplotlib
@@ -151,32 +155,32 @@ python3-cycler (>= 0.10.0), python3:any (>= 3.3.2-2~), libc6 (>=
 1.6.2-1), libstdc++6 (>= 5.2), zlib1g (>= 1:1.1.4)
 ```
 
-C'est la version 2.1.1-2 qui est installée et, pour l'installer, il a
-fallu installer les paquets `python3-dateutil`,
-`python-matplotlib-data`, `python3-pyparsing`, etc. C'est ce qu'on
-appelle les *dépendances*. Mais pour ces paquets dépendent eux-mêmes
-d'autres paquets. Lorsque l'on récupère l'ensemble des paquets
-nécessaire avec leurs dépendances, voici ce qu'on obtient:
-
+C'est ici la version 2.1.1-2 qui est présente et, pour l'installer, il a fallu
+installer les paquets `python3-dateutil`, `python-matplotlib-data`,
+`python3-pyparsing`, etc. C'est ce qu'on appelle les *dépendances*. Mais pour
+ces paquets dépendent eux-mêmes d'autres paquets. Lorsque l'on récupère
+l'ensemble des paquets nécessaire avec leurs dépendances, voici ce qu'on
+obtient:
 
 ![Dépendances de Matplotlibs sous debian obtenues avec debtree](img/python3-matplotlib.png "debtree output")
 
-Vous remarquerez dans les dépendances que la version n'est pas
-précisément indiquée mais qu'il faut par exemple une version
-supérieure de `python3-pyparsing` qui soit au moins 1.5.6. Mais si des
-bugs peuvent être introduits, comment être sûr que votre code
-fonctionnera de la même façon avec les versions `1.5.6`, `1.5.7`, ...,
-sachant que nous en sommes maintenant au moins à la version `2.2.0`.
+Vous remarquerez dans les dépendances que la version n'est pas précisément
+indiquée mais qu'il faut par exemple une version supérieure de
+`python3-pyparsing` qui soit au moins 1.5.6. Mais si des bugs peuvent être
+introduits, comment être sûr que votre code fonctionnera de la même façon avec
+les versions `1.5.6`, `1.5.7`, ..., sachant que nous en sommes maintenant au
+moins à la version `2.2.0`.
 
-Bref, tout code, aussi petit soit il, a de très nombreuses
-dépendances, souvent non explicitées. Il s'exécute dans un
-environnement donné et une différence, même insignifiante, de cet
-environnement peut conduire à des problèmes de non reproductibilité. 
+En résumé, tout code, aussi petit soit-il, possède tout un arbre de dépendances
+qui sont le plus souvent cachées. Ce code s'exécute donc dans un environnement
+donné et une différence, même insignifiante, de cet environnement peut conduire
+à des résultates différents, c'est à dire à des problèmes de non
+reproductibilité.
 
-Si cette question vous intéresse, vous pouvez lire [@gronenschild_effects_2012] qui étudient
-l'influence de la version de MacOSX et de FreeSurfer, un logiciel
-permettant de mesurer l'épaisseur corticale et le volume de
-structures neuroanatomiques. 
+Si cette question vous intéresse, vous pouvez lire [@gronenschild_effects_2012]
+qui étudient l'influence de la version de MacOSX et de FreeSurfer, un logiciel
+permettant de mesurer l'épaisseur corticale et le volume de structures
+neuroanatomiques.
 
 ## Le chaos numérique
 
@@ -185,13 +189,13 @@ précision infinie, mais des nombres dit *à virgule flottante* qui n'obéissent
 pas exactement aux mêmes règles que celles que l'on nous enseigne à
 l'école. Par exemple, si vous demandez à, à peu près n'importe quel ordinateur
 si `0.1*3==0.3` ou si `3-2.9==0.1` il vous répondra très certainement `FALSE`
-dans les deux cas. Cela est dû au fait que la représentation au format binaire
-de ces nombres (en apparence simple) n'est pas exacte. Beaucoup de machines à
-calculer ayant une représentation interne en base 10 un peu différente, nous
-n'avons pas été habitués tôt à ce genre de problème, sauf peut-être pour des
-nombres du genre $1/3\approx 0,3333333$. Il faut donc faire très attention
-lorsque l'on programme à cette "subtilité" qui joue des tours dès que l'on veut
-comparer deux nombres.
+(Faux) dans les deux cas. Cela est dû au fait que la représentation au format
+binaire de ces nombres (en apparence simple) n'est pas exacte. Beaucoup de
+machines à calculer ayant une représentation interne en base 10 un peu
+différente, nous n'avons pas été habitués tôt à ce genre de problème, sauf
+peut-être pour des nombres du genre $1/3\approx 0,3333333$. Il faut donc faire
+très attention lorsque l'on programme à cette "subtilité" qui joue des tours
+dès que l'on veut comparer deux nombres.
 
 Un autre problème en premier abord surprenant, mais probablement plus simple à
 comprendre, est la non associativité des opérations. Si avec les nombres réels,
@@ -213,16 +217,18 @@ le même environnement, peut donc changer le résultat. Les cœurs d'un ordinate
 n'allant pas toujours exactement à la même vitesse, un code un peu optimisé
 ajustera la taille des sommes partielles pour terminer le calcul le plus
 rapidement possible et le résultat du calcul variera donc d'une exécution sur
-l'autre alors que rien n'a changé! Mais au fait, lequel de ces différents
-résultats de calculs est "le bon" ?
+l'autre alors que rien n'a changé! Mais alors, comment décider lequel de ces
+différents résultats de calculs est le "bon" ?
 
 Toutes ces petites imprécisions de calcul peuvent hélas rapidement devenir très
 problématiques lorsque le système sous-jacent correspond par exemple à la
 discrétisation d'une équation différentielle. Le calcul est alors très sensible
-aux conditions initiales
+aux conditions initiales et l'accumulation des imprécisions peut amener à une
+catastrophe (voir notamment [The Patriot Missile
+Failure](http://www-users.math.umn.edu/~arnold/disasters/patriot.html))
 
 Il y a de nombreux articles décrivant ce genre de cauchemars. Vous pouvez
-vouloir lire les travaux de Stodden et ses collègues [/Assessing
+vouloir lire le classique [What Every Computer Scientist Should Know About Floating-Point Arithmetic David Goldberg, Computing Surveys, 1991](plato.la.asu.edu/MAT420/float2.pdf) ou encore les travaux de Stodden et ses collègues [/Assessing
 Reproduciblity: An Astrophysical Exemple of Computationnal Uncertainty in the
 HPC context/](http://web.stanford.edu/~vcs/talks/ResCuESC2018-STODDEN.pdf).
 
