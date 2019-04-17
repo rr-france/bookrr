@@ -1,5 +1,7 @@
 # Questions recurrentes
 
+[suggestion de titre à la place de "questions récurrentes" : "symptômes d'une recherche non reproductible"]
+
 Il existe de multiples raisons pour tenter de reproduire des résultats de recherche :
 
 * vérifier que la méthode mise en oeuvre il y a quelques mois par un stagiaire, 
