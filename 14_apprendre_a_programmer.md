@@ -7,7 +7,7 @@ qu'il est nécessaire d'apprendre à programmer en conseillant deux langages qui
 sont devenus incontournables en Science: Python et R.
 
 
-## Limitation des interfaces graphiques
+## Limiter des interfaces graphiques
 
 Une interface graphique est un moyen simple et visuel d'indiquer à un logiciel
 ce que l'on souhaite faire. Par exemple, dans un logiciel de traitement de
@@ -87,10 +87,10 @@ Pour commencer à programmer, nous ne saurions donc trop conseiller que de
 commncer par apprendre un de ces deux langages, le choix entre les deux vous
 appartenant. Pour faire ce choix, vous avez tout intèrêt à observer les
 pratiques dans votre domaine ou bien encore à regarder les programmes des
-conférences telles que Scipy, EuroScipy, (**conf R à compléter**).
+conférences telles que Scipy, EuroScipy, useR!, Les Rencontres R.
 
 
-## Apprendre à programmer
+## Ressources
 
 Il existe une multitude de ressources pour apprendre à programmer en R ou en
 Python. En raison de cette multitude de ressources, il est difficile de choisir
