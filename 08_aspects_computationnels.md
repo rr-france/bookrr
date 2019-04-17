@@ -1,12 +1,33 @@
 # Des problèmes de calcul ?
 
-Merci de prévoir un paragraphe introductif
+Lorsque que vous allez commencer à programmer, vous allez être rapidemment
+confronté à toutes sortes de problèmes dont le premier est un bogue qui empêche
+votre programme d'être exécuté. Par exemple, si vous avez fait un faute de
+frappe dans une instruction (e.g. `pirnt` au lieu de `print`), le programme ne
+pourra pas être exécuté car rappelez-vous que l'ordinateur est complètement con
+(citation de G.Berry, Collège de France) et ne fait que ce ce que vous lui
+demandez de faire. `pirnt` ne correspond à aucune instruction et donc le
+programme va s'arrêter car l'interpéteur R ou Python ne saura pas quoi faire.
+
+Mais il existe un autre type de problème bien plus grave qui se produit lorsque
+votre programme ne calcule pas ce que vous pensez qu'il calcule. Cela peut
+arriver par exemple si vous avez mal spécifié ce que vous souhaitiez faire. Ce
+type de problème peut être d'autant plus pernicieux que tout peu bien se passer
+dans la majorité des cas (i.e. les résultats sont corrects) et pour un certain
+nombre de cas limite, vous allez obtenir des résultats abberants (ce qui est
+encore le meilleur des cas puisque cela est relativement facile à repérer) ou
+des résultats vraisemblable mais faux, ce qui est la pure des situations
+puisque cela peut vous conduire à en tirer de fausses conclusions. Afin de se
+prémunir au maximum contre ces problèmes, il existe un certain nombre de
+techniques qui, sans pouvoir certifier la correction de votre programme,
+peuvent néanmoins garantir un minimum de correction.
 
 ## Le code n'est pas disponible
+
 Le cas le plus frustrant est certainement celui où on n'a tout
 simplement pas ou plus accès au programme à lancer. 
 
-- Cela peut être dû au fait que le logiciel soit propriétaire et que
+* Cela peut être dû au fait que le logiciel soit propriétaire et que
   l'on n'ait pas accès à la licence d'exploitation. Par exemple
   parce que votre équipe/université, n'ayant plus de budget, a cessé de
   la payer ou parce que ce logiciel est disponible dans l'université
@@ -16,17 +37,17 @@ simplement pas ou plus accès au programme à lancer.
   temps (avec un système de *tokens*) et que vous vous retrouviez à
   devoir attendre un bon moment avant d'y arriver.
 
-- Si le code a été développé "en interne", il arrive (trop souvent)
+* Si le code a été développé "en interne", il arrive (trop souvent)
   qu'à la suite d'un crash disque, d'un vol d'ordinateur portable, du
   départ du développeur principal, ... que l'on n'ait juste plus accès
   au logiciel. C'est souvent le résultat d'un mauvaise politique de
   sauvegardes ou de partage d'informations au sein d'une équipe.
 
-- Assez souvent, c'est un code développé "en externe" (dans une autre
+* Assez souvent, c'est un code développé "en externe" (dans une autre
   équipe de recherche par exemple) que l'on souhaite ré-exécuter, par
   exemple pour s'y comparer ou bien pour vérifier si on obtient bien
   des résultats similaires avec une autre méthode. En général, on
-  cherche alors le code sur le web mais il est courant que l'URL
+  cherche alors le code sur le web mais il est` courant que l'URL
   indiquée dans l'article ne soit plus accessible car le développeur
   (doctorant/postdoctorant) a depuis quitté l'équipe où il travaillait
   et que sa page web a été supprimée ou complètement restructurée. Ce
@@ -34,7 +55,7 @@ simplement pas ou plus accès au programme à lancer.
   decay*](https://www.spinellis.gr/sw/url-decay/) ou de [*Link
   Rot*](https://en.wikipedia.org/wiki/Link_rot).
 
-- Enfin, ces chercheurs peuvent ne pas souhaiter partager ce code, par
+* Enfin, ces chercheurs peuvent ne pas souhaiter partager ce code, par
   exemple parce qu'ils n'est pas *montrable* (pas ou peu commentaires,
   structure horrible cachant des erreurs) ou encore pour conserver un
   *avantage compétitif*.
@@ -49,6 +70,7 @@ excuser son incapacité à mettre à donner accès au code derrière une
 publication.
 
 ## Comment lance-t-on ce code ?
+
 Il est courant lorsque l'on fait de la recherche de devoir développer
 soi-même un code pour répondre à un besoin spécifique. Que ce soit un
 gros code ou un petit script, on prend rarement le temps de rédiger
@@ -66,6 +88,7 @@ existe plein d'autres raisons qui peuvent conduire à ces deux
 symptomes.
 
 ## Comment fonctionne ce code ?
+
 Si on n'est plus sûr des paramètres utilisés, on peut vouloir chercher
 à comprendre d'où vient le problème pas en inspectant le code. Si tant
 est qu'on ait accès au code source bien sûr... Les logiciels
@@ -75,7 +98,7 @@ vous ayez réussi à inspecter les sources et que vous ayez les
 compétences pour le comprendre (a minima, un langage de programmation
 que vous connaissez).
 
-- Les codes de recherche, développés pour des besoins spécifiques,
+* Les codes de recherche, développés pour des besoins spécifiques,
   sont souvent des "prototypes" et il est rare de prendre le temps de
   rédiger une documentation interne (à destination des
   développeurs). Et quand bien même il y aurait des commentaires,
@@ -85,7 +108,7 @@ que vous connaissez).
   et à mesure) sinon ces commentaires risquent plus de vous fourvoyer
   que de vous aider.
 
-- Il y a un dicton célèbre en informatique qui dit “Programs must be
+* Il y a un dicton célèbre en informatique qui dit “Programs must be
   written for people to read, and only incidentally for machines to
   execute.” C'est une citation d'[Harold
   Abelson](https://en.wikipedia.org/wiki/Hal_Abelson) tirée de son
@@ -99,7 +122,7 @@ que vous connaissez).
   convention de nommage et de structure claire des différents fichiers
   et de leur contenu ait été utilisé, sinon c'est peine perdue.
 
-- Enfin, même si le code est relativement compréhensible, il est
+* Enfin, même si le code est relativement compréhensible, il est
   possible que des *bugs* (des erreurs de programmation) soient à
   l'origine de vos malheurs mais comment les trouver ?
 
