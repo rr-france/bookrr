@@ -59,10 +59,35 @@ simplement traduit notre pensée (le traitement que l'on souhaitait réaliser) e
 jeu d'instructions. L'énorme avantage (par rapport à Excel) est que ce
 programme réalise deux objectifs, il effectue d'une part les traitements et
 d'autre part il documente cette chaîne de traitements, si bien que quiconque
-est maintenant en mesure de reproduire ces traitements.
+est maintenant en mesure de comprendre et de reproduire ces traitements,
+éventuellements à l'aide d'un autre de langage de programmation.
 
 
-## De l'intérêt de la programmation
+## Comment apprendre à programmer ?
+
+Apprendre à programmer n'est pas tout à fait équivalent à apprendre un langage
+de programmation. Il est nécessaire de comprendre au préalable ce que l'on peut
+attendre d'un programme et comment exprimer ce que l'on souhaite faire de façon
+non ambigue car l'ordinateur est extrèmement bête et ne fera que ce que vous
+lui demandez de faire, ni plus, ni moins. L'apprentissage de la programmation
+passe donc par la découverte d'un petit nombre de concepts que l'on va
+retrouver dans (à peu près) l'ensemble des langages de programmation. Notez que
+nous parlons de langages au pluriel car il existe bien plus de langages de
+programmations que de langues parlées sur Terre. Les raisons de l'existence de
+tant de langages différents sont multiples, mais heureusement pour nous, nous
+avons vu ces dernières deux langages devenir les langages de références en
+Science, à savoir: Python et R. Entendons-nous bien, nous ne disons pas que ce
+sont les seuls langages de la Science (loin de là) mais néamoins, ces deux
+langages ont su traverser les frontières de tous les champs disciplinaires si
+bien qu'il y a aujourd'hui des conférences scientifiques qui leur sont
+entièrmeent dédiés où l'on peut voir un physicien théorique discuter avec un
+sociologue ou bien un doctorant enseigner à un professeur.
+
+Pour commencer à programmer, nous ne saurions donc trop conseiller que de
+commncer par apprendreun de ces deux langages, le choix entre les deux vous
+appartenant. Pour faire ce choix, vous avez tout intèrêt à observer les
+pratiques dans votre domaine ou bien encore à regarder les programmes des
+conférences telles que Scipy, EuroScipy, (**conf R à compléter**).
 
 
 ---
