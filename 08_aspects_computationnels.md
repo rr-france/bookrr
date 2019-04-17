@@ -167,9 +167,7 @@ dépendances, souvent non explicitées. Il s'exécute dans un
 environnement donné et une différence, même insignifiante, de cet
 environnement peut conduire à des problèmes de non reproductibilité. 
 
-Si cette question vous intéresse, vous pouvez lire les [travaux de
-Gronenschild et de ses
-collègues](https://doi.org/10.1371/journal.pone.0038234) qui étudient
+Si cette question vous intéresse, vous pouvez lire [@gronenschild_effects_2012] qui étudient
 l'influence de la version de MacOSX et de FreeSurfer, un logiciel
 permettant de mesurer l'épaisseur corticale et le volume de
 structures neuroanatomiques. 
