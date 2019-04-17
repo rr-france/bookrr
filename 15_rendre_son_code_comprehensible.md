@@ -9,14 +9,16 @@ avec qui la recherche se fait conjointement.
 
 Il existe là encore différents degrés de compléxité permettant de faciliter 
 la compréhension de son code : 
+
  1. bien nommer ses variables et ses fonctions
  2. commenter son code
  3. utiliser des documents computationnels
- 4. gestion de *workflow*
+ 4. utiliser des *compendium* de recherche
+ 5. gestion de *workflow*
 
 ![Outils d'amélioration pour la compréhension du code](img/testdiagramch15.png)
 
-## Programmation lettrée
+## La programmation lettrée
 
 La programmation lettrée a été conceptualisée par Donald Knuth [@knuth1984literate] 
 et propose de grands principes pour produire un programme compréhensible par les 
@@ -28,7 +30,7 @@ En pratique, on cherche le bon compromis entre l’optimalité d'un code d’un 
 computationnel et la facilité de lecture proposer des solutions concrête afin de 
 facilité le partage de programmes informatiques
 
-## Nommer les choses !
+## Nommer les choses de manière informative !
 
 Une manière d'obtenir un code plus facile à comprendre pour un observateur extérieur 
 est d'utiliser des noms informatifs qui explicite directement ce que represente une 
@@ -48,7 +50,7 @@ Il est donc important de rappeler que la façon la plus simple est de commenter 
 manière. Cette étape est particulièrement lorsque l'on reprend un programme écrit plusieurs 
 semaines ou plusieurs mois auparavant.
 
-## Documents computationnels
+## Document computationnel
 
 Pour aller plus loin dans la compréhension du code, les documents computationnels sont des 
 documents qui marient à la fois texte rédactionnel avec du code informatique. La partie 
@@ -69,10 +71,19 @@ recherche (qui peut parfois s'approcher - et même très fortement - de la forme
 
 [Ref MOOC Arnaud]
 
+[*AL*] notions de Notebook ?
+
 ## Compendium de recherche
 
-Pour aller encore plus loin que le document computationnel, la notion de compendium de recherche
-allie l'ensemble des données d'entrée nécessaire 
+Pour aller encore plus loin que le document computationnel, la notion de *compendium* de 
+recherche allie l'ensemble des données d'entrée nécessaires au code et au texte narratif déjà 
+contenu dans un document computationnel. 
+
+Un compendium peut également contenir la description de l'environnement computationnel utilisé
+pour obtenir ces résultats.
+
+[*SG*] [REF https://biostats.bepress.com/bioconductor/paper2/]
+
 
 ## Gestion de *workflow*
 
