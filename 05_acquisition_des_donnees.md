@@ -1,6 +1,6 @@
 # (PART) Nonsence {-}
 
-# Problèmes se produisant lors de l’acquisition de l'information
+# Problèmes se produisant lors de l’acquisition de l'information {#B:data-acquisition}
 
 Dans une démarche de recherche, la première étape est bien souvent l'aquisition
 d'information, que ce soit à partir de la collecte de nouvelles mesures expérimentales 
