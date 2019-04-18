@@ -122,7 +122,7 @@ de ressources accessibles en ligne que nous jugeons de qualité.
 ### Tutoriels
 
 * [Begin’R](http://beginr.u-bordeaux.fr)
-* [Le tutoriel Python] (https://docs.python.org/fr/3/tutorial)
+* [Le tutoriel officiel de Python](https://docs.python.org/fr/3/tutorial)
 
 
 ### Livres
