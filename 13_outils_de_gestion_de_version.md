@@ -1,15 +1,15 @@
-# Gestion de versions {#C:versioning}
+# Versionner, versionner, versionner {#C:versioning}
 
-La sauvegarde des étapes successives du développement de documents
-(textes, bases de données, codes, etc.) est une des briques fondamentales
-de la recherche reproductible. Elle permet en effet de retrouver
-ou de reconstituer facilement des versions spécifiques et datées des documents.
-La mise en œuvre va de la simple sauvegarde de versions des fichiers,
-à des sauvegardes différentielles n'enregistrant que les modifications.
+La sauvegarde des étapes successives du développement de documents (textes,
+bases de données, codes, etc.) est une des briques fondamentales de la
+recherche reproductible. Elle permet en effet de retrouver ou de reconstituer
+facilement des versions spécifiques et datées des documents.  La mise en œuvre
+va de la simple sauvegarde de versions des fichiers, à des sauvegardes
+différentielles n'enregistrant que les modifications.
 
-La mise en œuvre d'une stratégie de gestion de version doit permettre
-d'éviter les cauchemars du type " Je ne retrouve pas mon code / mes
-données " et permet de répondre aux questions :
+La mise en œuvre d'une stratégie de gestion de version doit permettre d'éviter
+les cauchemars du type " Je ne retrouve pas mon code / mes données " et permet
+de répondre aux questions :
 
  - quand ?
  - qui ?
@@ -86,20 +86,25 @@ par exemple le logiciel Git) avec des interfaces en ligne de commande ou des
 interfaces graphiques (parfois intégrés directement dans les éditeurs de code tels que 
 RStudio ou Emacs).
 
-Si un logiciel de gestion de versions est installé sur l'ordinateur de l'utilisateur,
-il est prudent, voire impératif, de mettre en œuvre une synchronisation vers
-un dépôt distant, ce qui présente plusieurs avantages à la fois : sauvegarder les travaux,
-les partager, et de collaborer. Ce dépot distant peut être sur une plateforme institutionnelle
-*SG* (par exemple le [GitLab de
+Si un logiciel de gestion de versions est installé sur l'ordinateur de
+l'utilisateur, il est prudent, voire impératif, de mettre en œuvre une
+synchronisation vers un dépôt distant, ce qui présente plusieurs avantages à la
+fois : sauvegarder les travaux, les partager, et de collaborer. Ce dépot
+distant peut être sur une plateforme institutionnelle *SG* (par exemple le
+[GitLab de
 l'Inria](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/gitlab)
 ou de [l'IN2P3](https://gitlab.in2p3.fr/CTA-LAPP/HiPeCTA) ou encore un
-plateforme privée comme [GitHub](https://github.com/)). En outre, ces plateformes permettent le travail collaboratif sur un projet ou de mettre le projet à disposition 
-du public dans des versions bien définies des documents. 
-*SG*
-Pour que la recherche soit reproductible, le lecteur devrait systématiquement disposer du lien vers la version des données ou des codes informatiques utilisés dans un article. Pour cela, il est conseillé d'activer en plus un archivage pérenne des 
-versions importantes du projet sur un dépôt fournissant un identifiant pérenne. Ce sujet sera abordé dans le chapitre \@ref(partage-archivage). Dans tous les cas, avant de choisir une
-solution, il est essentiel de se renseigner sur les pratiques en cours dans votre
-communauté de recherche.
+plateforme privée comme [GitHub](https://github.com/)). En outre, ces
+plateformes permettent le travail collaboratif sur un projet ou de mettre le
+projet à disposition du public dans des versions bien définies des documents.
+*SG* Pour que la recherche soit reproductible, le lecteur devrait
+systématiquement disposer du lien vers la version des données ou des codes
+informatiques utilisés dans un article. Pour cela, il est conseillé d'activer
+en plus un archivage pérenne des versions importantes du projet sur un dépôt
+fournissant un identifiant pérenne. Ce sujet sera abordé dans le chapitre
+\@ref(C:data:share). Dans tous les cas, avant de choisir une solution, il est
+essentiel de se renseigner sur les pratiques en cours dans votre communauté de
+recherche.
 
 #### Exemple {-}
 
@@ -147,14 +152,14 @@ commandes pour bénéficier de toutes les fonctionnalités de Git.
 
 ## Pour en savoir plus
 
-Voici quelques moyens d'apprendre à utiliser *Git* et d'aller un peu plus loin :
-*SG*
- - *Happy Git With R* de *Jenny Bryan et al.* (https://happygitwithr.com/)
+Voici quelques moyens d'apprendre à utiliser git et d'aller un peu plus loin :
+
+ - [Happy Git With R](https://happygitwithr.com/) par *Jenny Bryan et al.*
  - Le [Software Carpentry Git tutorial](http://swcarpentry.github.io/git-novice/)
- - Le livre Pro Git (gratuit) en [anglais](https://git-scm.com/book/en/v2) ou en 
- [français](https://git-scm.com/book/fr/v2) (Les deux premiers chapitres suffisent 
- pour bien commencer)
- - Le site [Apprenez Git Branching](https://learngitbranching.js.org/) permet d'apprendre Git
-  interactivement et de comprendre les branches. 
+ - Le livre Pro Git (gratuit) en [anglais](https://git-scm.com/book/en/v2) ou
+ en [français](https://git-scm.com/book/fr/v2) (Les deux premiers chapitres
+ suffisent pour bien commencer)
+ - Le site [Apprenez Git Branching](https://learngitbranching.js.org/) permet
+  d'apprendre Git interactivement et de comprendre les branches.
 
 
