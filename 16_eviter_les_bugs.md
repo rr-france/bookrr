@@ -1,4 +1,4 @@
-# Exactitude des codes
+# Exactitude des codes {#C:code:bugs}
 
 Dans ce chapitre, nous présentons quelques techniques standards pour se
 prémunir autant que possible des problèmes liés au code. Ces solutions ne
