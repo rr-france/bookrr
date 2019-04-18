@@ -1,4 +1,4 @@
-# Gestion de versions {#C:versionning}
+# Gestion de versions {#C:versioning}
 
 La sauvegarde des étapes successives du développement de documents
 (textes, bases de données, codes, etc.) est une des briques fondamentales
