@@ -4,7 +4,7 @@
 Dans ce chapitre, nous mettons en évidence les limitations des interfaces
 graphiques en terme d'efficacité et de reproductibilité et nous expliquons
 qu'il est nécessaire d'apprendre à programmer en conseillant deux langages qui
-sont devenus incontournables en Science: Python et R.
+sont devenus incontournables en traitement et analyse des données: Python et R.
 
 
 ## Limiter des interfaces graphiques
@@ -13,43 +13,59 @@ Une interface graphique est un moyen simple et visuel d'indiquer à un logiciel
 ce que l'on souhaite faire. Par exemple, dans un logiciel de traitement de
 texte de type WYSIWIG (*What You See Is What You Get*), on peut, à l'aide de la
 souris, surligner un passage afin de le mettre en italique ou en gras en
-cliquant sur le bouton correspondant. Ce type d'interfaces intuitive est
-omniprésente dans l'informatique et simplifie la vie de beaucoup de néophytes
-qui ont peu ou pas de connaissance en informatique. On retrouve en Science ce
-même type d'interface dans de nombreux logiciels, par exemple pour traiter les
-données. L'exemple le plus célèbre étant très certainement le tableur Excel qui
-est très utilisé pour faire des statistiques qui peuvent être relativement
-compliquées. Or, si cet outil peut dans un premier temps simplifier les
-traitements, il va rapidement faire obstacle pour peu que vous souhaitiez
-effectuer des calculs un peu exotiques. Vous serez alors contraint d'entrer des
-formules de calculs complexes dans les celluls. La bonne nouvelle est que en
-faisant cela, vous avez commencé à programmer. La mauvaise nouvelle et que
-votre calcul n'est pas reproductible. "Mais j'ai sauvé ma feuille Excel
-pourtant!" certes, mais entre le moment où vous avez chargé vos données
-initiales et le moment ou vous avez sauvé vos résultats, un certain nombre de
-manipulation que vous avez fait n'a pas été enregistré. Par exemple, si vous
-avez trié vos donnés selon une certain colonne, vos données initiales seront
-triés mais vous aurez perdu la trace de cette opération de tri (sauf si vous
-êtes précautionneux et tenez à jour un cahier de laboratoire).
+cliquant sur le bouton correspondant. 
+Ce type d'interfaces intuitive est omniprésente dans les logiciels et 
+simplifie la vie de beaucoup de néophytes qui ont peu ou pas de connaissance 
+en informatique. 
+
+On retrouve en Science ce même type d'interface dans de nombreux logiciels, 
+par exemple pour traiter les données ou générer des figures. 
+L'exemple le plus célèbre est très certainement le tableur Excel, qui
+est très utilisé pour faire des traitements statistiques pouvant être relativement
+compliquées. 
+Or, si cet outil peut dans un premier temps simplifier les traitements, 
+il va rapidement faire obstacle pour peu que vous souhaitiez effectuer 
+des calculs un peu exotiques ou de manière répétitive. 
+Dans le premier cas, vous serez alors contraint d'entrer des formules 
+de calculs complexes dans les cellules. 
+La bonne nouvelle est que, en faisant cela, vous avez commencé à programmer. 
+La mauvaise est que votre calcul n'est pas reproductible. 
+"Mais j'ai sauvé ma feuille Excel pourtant!". 
+Certes, mais entre le moment où vous avez chargé vos données initiales et 
+le moment ou vous avez sauvé vos résultats, un certain nombre de
+manipulation que vous avez faites n'a pas été enregistré. 
+
+Par exemple, si vous avez trié vos données selon une certain colonne, 
+les données dans la feuille sauvegardée seront triées mais vous aurez 
+perdu la trace de cette opération de tri et il vous sera facile d'oublier
+de la répéter si vous devez recommencer le traitement avec un autre jeu de données 
+(sauf si vous êtes précautionneux et tenez à jour un cahier de laboratoire).
 
 
 ## De l'intérêt de la programmation
 
 Pour surmonter les difficultés liés aux interfaces graphiques, il est
-nécessaire de pouvoir exprimer d'une façon claire, documentée et non ambigu ce
-que l'on souhaite faire. C'est ici que la programmation entre en jeu. Plutôt
-que de cliquer à droite ou à gauche, on va expliquer textuellement à l'aide
-d'un jeu d'instructions (relativement restreint) ce que l'on souhaite
-faire. Cela veut dire, entre autre chose, qu'un programme peut être simplement
-exprimé en quelques lignes seulement. Plus le langage utilisé sera de haut
-niveau et moins il y a aure à écrire. Reprenons notre exemple où je dois
-charcher des données, les trier selon la deuxième colonne et faire la moyenne
-sur la première moitié. Un façon de l'écrire est:
+nécessaire de pouvoir exprimer d'une façon claire, documentée et non ambigüe
+ce que l'on souhaite faire. 
+C'est ici que la programmation entre en jeu. 
+Plutôt que de cliquer à droite ou à gauche, on va expliquer textuellement,
+à l'aide d'un jeu d'instructions (relativement restreint), ce que l'on souhaite
+faire. 
+Cela veut dire, entre autres choses, qu'un programme peut être simplement
+exprimé en quelques lignes seulement. 
+Plus le langage utilisé sera de haut niveau et moins il y aura à écrire. 
 
-```R
+Reprenons notre exemple où je dois charger des données, les trier selon la 
+deuxième colonne et faire la moyenne sur la première moitié des données
+de la première colonne. 
+Un façon de l'écrire est:
 
-QQ'un peut écrire le script ? (lisible + commentaires)
-
+``` r
+table = read.csv(file = 'data.csv')     # Charger les données en mémoire
+table_tri = table[order(table[, 2]), ]  # Réordonne toutes les lignes du tableau
+# Sélectionne la première moitié des lignes de la première colonne
+# pour en faire la moyenne
+print(mean(table_tri[1:(nrow(table_tri) / 2), 1])))
 ```
 
 En faisant abstration de la syntaxe particulière (il s'agit ici du langage R)
