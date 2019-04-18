@@ -206,6 +206,9 @@ Il y a de nombreux articles décrivant ce genre de cauchemars. Vous pouvez
 vouloir lire le classique *SG* [What Every Computer Scientist Should Know About Floating-Point Arithmetic David Goldberg, Computing Surveys, 1991](plato.la.asu.edu/MAT420/float2.pdf) ou encore les travaux de Stodden et ses collègues *SG* [/Assessing
 Reproduciblity: An Astrophysical Exemple of Computationnal Uncertainty in the
 HPC context/](http://web.stanford.edu/~vcs/talks/ResCuESC2018-STODDEN.pdf).
+Pour une présentation de ces problématiques et de quelques solutions,
+vous pouvez aussi vouloir regarder ce 
+[séminaire sur la reproductibilité numérique](https://github.com/alegrand/RR_webinars/blob/master/2_controling_your_environment/index.org).
 
 ## Que faire ?
 
