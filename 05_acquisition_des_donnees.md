@@ -1,3 +1,5 @@
+# (PART) Nonsence {-}
+
 # Problèmes se produisant lors de l’acquisition de l'information
 
 Dans une démarche de recherche, la première étape est bien souvent l'aquisition

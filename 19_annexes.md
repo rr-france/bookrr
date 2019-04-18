@@ -1,3 +1,7 @@
+# (PART) Annexes {-}
+
+# Annexes 
+
 ## Modalités de conception de l'ouvrage
 
 Ce document a été conçu dans le cadre d'un book sprint organisé par l'Unité régionale de formation à l'information scientifique et technique (Urfist) de Bordeaux en avril 2019. 
