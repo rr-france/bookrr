@@ -64,7 +64,7 @@ des fonctions (aux noms eux aussi explicites), qui permettent à la fois de rend
 le code (en évitant les répétitions et en minimisant ainsi le nombre d'erreurs), mais 
 aussi de le condenser et donc de le rendre plus lisible. Cette approche de *Don't Repeat 
 Yourself* est un principe qui s'oppose à *Write Everything Twice*. À l'occasion de cette
-modularisation, il vous faudra également bien réfléchir à la **portée** [*AL* : à définir, pas clair] de vos variables 
+modularisation, il vous faudra également bien réfléchir à la portée de vos variables (variable locale ou globale)
 et aux paramètres de vos fonctions afin d'éviter autant que possible les variables 
 globales, les effets de bords étant une source de confusion et d'erreur inépuisable. 
 
@@ -114,8 +114,7 @@ n'aurait pas eu lieu.
 
 ## Commenter son code
 
-Si commenter son code peut paraître le b.a.-ba de l’écriture d'un code, 
-de nombreux chercheurs n’ont pas reçu de formation formelle au développement logiciel [*AL* : l'opposition dans la phrase n'est pas claire].
+Si commenter son code peut paraître le b.a.-ba de l’écriture d'un code, ce n'est pas une tâche si facile à réaliser.
 Bien commenter son code ne consiste pas à répéter dans une langue naturelle ce que le programme effectue. Nous allons voir en quoi cela consiste. Considèrons le programme suivant:
 
 ```R
@@ -151,25 +150,23 @@ commenter son code au fur et à mesure qu'on l'écrit. On se rend parfaitement c
 
 Nous distinguons ici le commentaire, qui s'adresse au programmeur qui
 va chercher à comprendre ou à faire évoluer le code (cf. ci-dessus), de la
-documentation, qui s'adresse quant à elle aux utilisateurs du logiciel.  Cela
+documentation, qui s'adresse quant à elle aux utilisateurs du logiciel. Cela
 commence en général par un fichier `README` expliquant succinctement
 l'objectif du logiciel, comment l'installer, comment l'exécuter. Au
-fur et à mesure que le code évolue, sa documentation devient plus
-conséquente et on utilise alors des outils comme Sphynx (pour python)
-ou Roxygen (pour R).
-
-Il est donc important de bien faire la distinction entre ces deux
-types d'annotations (commentaire et documentation) qui se retrouvent
-souvent aux mêmes endroits dans le code [*AL* : pas clair, car juste au dessus, tu indiques que la documentation est dans un fichier readme].
+fur et à mesure que le code évolue, sa documentation peut devenir plus
+conséquente et, dans ces cas, cette documentation s'intègrera souvent directement dans le code source grâce à des outils comme Sphynx (pour python)
+ou Roxygen (pour R). Il est donc important de bien faire la distinction entre ces deux
+types d'annotations (commentaire et documentation) qui peuvent se retrouver tous les deux
+à l'intérieur du code.
 
 ## Utiliser des document computationnels
 
-La programmation lettrée a été conceptualisée par Donald Knuth
-[@knuth1984literate] [*AL* : dans quelles années ? En référence à "époque" ci-dessous] et propose de grands principes pour produire un
+La programmation lettrée a été conceptualisée en 1984 par Donald Knuth
+[@knuth1984literate] et propose de grands principes pour produire un
 code compréhensible. Il s'agit principalement de
 considérer l'écriture d'un code avant tout comme un
 moyen d'expliquer à d'autres personnes les tâches demandées à
-l'ordinateur. À l'**époque**, l'objectif était d'autoriser les développeurs
+l'ordinateur. À l'époque, l'objectif était d'autoriser les développeurs
 à s'affranchir de l'ordonnancement imposé par l'ordinateur et de se
 concentrer sur leur pensée.
 
@@ -216,9 +213,9 @@ Pour en savoir davantage sur les documents computationels, vous pouvez vous rapp
 module 2 et 3 du [MOOC sur la recherche
 reproductible](https://learninglab.inria.fr/mooc-recherche-reproductible-principes-methodologiques-pour-une-science-transparente/).
 
-## Restructurer et automatiser [*AL* : quoi ?] avec un workflow
+## Restructurer et automatiser l'exécution du code avec un workflow
 
-Nous avons déjà évoqué l'importance de modulariser [*AL* : je ne comprends pas, terme non utilisé avant] son code pour le
+Nous avons déjà évoqué l'importance de modulariser son code pour le
 rendre plus compréhensible et plus simple à faire évoluer. Il existe
 de nombreux concepts pour vous permettre d'y arriver: la
 programmation fonctionnelle, la programmation orientée objet, les
@@ -227,7 +224,7 @@ trouve tout son sens dans notre contexte où l'on transforme des
 quantités importantes de données par des calculs complexes. Il s'agit
 des [systèmes de workflows
 scientifiques](https://en.wikipedia.org/wiki/Scientific_workflow_system).
-Il en existe de nombreux, plus ou moins adoptés [*AL* : "adaptés" ?] selon les communautés
+Il en existe de nombreux, chacun étant utilisé préférentiellement par différentes communautés scientifiques
 (astrophysique, génétique, etc.). Lorsque votre notebook (qui est un
 objet assez monolithique) se stabilise mais devient trop long, trop
 complexe, il sera certainement temps de le restructurer. Les workflows
