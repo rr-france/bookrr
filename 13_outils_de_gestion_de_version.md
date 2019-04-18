@@ -11,13 +11,13 @@ La mise en œuvre d'une stratégie de gestion de version doit permettre
 d'éviter les cauchemars du type " Je ne retrouve pas mon code / mes
 données " et permet de répondre aux questions :
 
- - Quand ?
- - Qui ?
- - Pourquoi ?
+ - quand ?
+ - qui ?
+ - pourquoi ?
 
-Nous présentons deux solutions dans ce chapitre, la première s'appuyant sur la 
-mise en place de convention de nommage des dossiers et fichiers, la seconde plus 
-technique présentant les outils de versionnage différentiel.
+Nous présentons deux solutions dans ce chapitre :
+- la première s'appuyant sur la mise en place de convention de nommage des dossiers et fichiers, 
+- la seconde, plus technique présentant les outils de versionnage différentiel
 
 ## Versionnage par nommage de fichiers
 
@@ -44,7 +44,7 @@ des raisons de compatibilité, il est recommandé d'éviter l'utilisation de :
 - signes diacritiques : accents, trémas, cédilles par exemple, 
 - de caractères spéciaux
 - d'espaces
-- ...
+- etc.
 
 
 #### Exemple {-}
@@ -58,25 +58,22 @@ La chronologie du nommage de fichiers successifs de scripts R pourrait être:
 * 20190509_analyse_donnees_v02.R
 
 
-Ces informations sont une forme appauvrie de métadonnées que l'on
-indique directement dans le nom du fichier lorsque le format de
+Ces informations sont une forme appauvrie de métadonnées : lorsque le format de
 données ou le système de fichiers utilisé ne permet pas de les
-conserver de façon pérenne. Cette information est assez rudimentaire : dans 
-le cas où plusieurs personnes ont travaillé sur un même
-fichier, on a du mal à savoir qui a fait quoi et pourquoi.
-Conserver ces métadonnées appauvries mais importantes de 
-cette façon est une bonne habitude à prendre, mais il s'agit d'une approche
+conserver de façon pérenne, on indique directement les métadonnées dans le nom du fichier. Cette méthode fournit des informations rudimentaires : dans le cas où plusieurs personnes ont travaillé sur un même
+fichier, on a en effet du mal à savoir qui a fait quoi et pourquoi.
+Conserver les métadonnées de base *via* cette méthode est une bonne habitude à prendre, mais il s'agit d'une approche
 qui a ses limites.
 
 La section suivante présente une approche plus aboutie de la gestion de version, 
-mais plus technique à mettre en oeuvre.
+mais plus technique à mettre en œuvre.
 
 
 
 ## Outils de versionnage différentiel
 
 Le stockage des versions successives de fichiers entraîne un gaspillage
-d'espace de stockage, et peut devenir très incommode pour la gestion de
+d'espace de stockage et peut devenir très incommode pour la gestion de
 projets comportant de nombreux fichiers évoluant à des vitesses différentes.
 Il est en général plus efficace de passer par un logiciel de gestion de versions 
 qui gère automatiquement le stockage de versions différentielles des
@@ -87,7 +84,7 @@ Ces outils peuvent être intégrés à des logiciels (par exemple des éditeurs 
 tels que Word ou LibreOffice) ou se présenter comme des solutions autonomes (comme 
 par exemple le logiciel Git) avec des interfaces en ligne de commande ou des 
 interfaces graphiques (parfois intégrés directement dans les éditeurs de code tels que 
-RStudio ou emacs).
+RStudio ou Emacs).
 
 Si un logiciel de gestion de versions est installé sur l'ordinateur de l'utilisateur,
 il est prudent, voire impératif, de mettre en œuvre une synchronisation vers
@@ -98,9 +95,9 @@ l'Inria](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/gitlab)
 ou de [l'IN2P3](https://gitlab.in2p3.fr/CTA-LAPP/HiPeCTA) ou encore un
 plateforme privée comme [GitHub](https://github.com/)). En outre, ces plateformes permettent le travail collaboratif sur un projet ou de mettre le projet à disposition 
 du public dans des versions bien définies des documents. 
-(sabrina : à repdre)[*SG*]
+*SG*
 Pour que la recherche soit reproductible, le lecteur devrait systématiquement disposer du lien vers la version des données ou des codes informatiques utilisés dans un article. Pour cela, il est conseillé d'activer en plus un archivage pérenne des 
-versions importantes du projet sur un dépôt fournissant un identifiant pérenne. Ce sujet sera abordé dans le Chapitre \@ref(partage-archivage). Dans tous les cas, avant de choisir une
+versions importantes du projet sur un dépôt fournissant un identifiant pérenne. Ce sujet sera abordé dans le chapitre \@ref(partage-archivage). Dans tous les cas, avant de choisir une
 solution, il est essentiel de se renseigner sur les pratiques en cours dans votre
 communauté de recherche.
 
@@ -115,10 +112,10 @@ d'obtenir aisément une recherche reproductible:
 > l'article en LaTeX.
 > 
 > Tous les codes et l'article sont suivis dans un gestionnaire de
-> versions local (j'utilise git). Les tableaux et les figures sont des
+> versions local (j'utilise Git). Les tableaux et les figures sont des
 > résultats secondaires que je peux regénérer facilement. À chaque
 > étape de modification d'un document, j'effectue un "commit" qui met
-> à jour la base de version locale. Après un certain nombres de
+> à jour la base de version locale. Après un certain nombre de
 > "commit", je me synchronise avec le dépôt distant en y propageant
 > mes modifications locales, m'assurant ainsi d'une sauvegarde
 > régulière. Réaliser régulièrement ces opérations est l'occasion pour
@@ -137,21 +134,21 @@ d'obtenir aisément une recherche reproductible:
 Pour en savoir davantage sur la gestion de versions, vous pouvez vous
 rapporter au module 1 du [MOOC sur la recherche
 reproductible](https://learninglab.inria.fr/mooc-recherche-reproductible-principes-methodologiques-pour-une-science-transparente/)
-qui vous permettra de vous familiariser avec GitLab via une mise en
+*SG* qui vous permettra de vous familiariser avec GitLab via une mise en
 condition réelle. 
 
-GitLab et GitHub sont des sur-couches Web au logiciel Git qui
+GitLab et GitHub sont des sur-couches Web du logiciel Git ; elles
 permettent une utilisation simplifiée mais ne donnent pas accès à
-l'ensemble de ses fonctionnalités. Les éditeurs comme Rstudio
-proposent une très bonne intégration via une interface graphique des
+l'ensemble de ses fonctionnalités. Les éditeurs comme RStudio
+proposent une très bonne intégration *via* une interface graphique des
 interactions avec Git. Il est également possible d'utiliser la ligne de
 commandes pour bénéficier de toutes les fonctionnalités de Git.
 
 
 ## Pour en savoir plus
 
-Voici quelques moyens d'apprendre à utiliser *git* et d'aller un peu plus loin :
-
+Voici quelques moyens d'apprendre à utiliser *Git* et d'aller un peu plus loin :
+*SG*
  - *Happy Git With R* de *Jenny Bryan et al.* (https://happygitwithr.com/)
  - Le [Software Carpentry Git tutorial](http://swcarpentry.github.io/git-novice/)
  - Le livre Pro Git (gratuit) en [anglais](https://git-scm.com/book/en/v2) ou en 
