@@ -1,68 +1,20 @@
-# Le temps des changements
+# Le temps des changements?
 
-Petit paragraphe introductif svp
-
-## Pourquoi changer de pratiques ?
-
-Les histoires fictives (mais basées sur des faits réels) que nous avons
-présenté dans le chapite **XX** devraient normalement vous avoir convaincu que
-vous pourriez être vous aussi confronté, à plus ou moin brève échéance, à
-toutes sortes de problème qui viendraient impacter durablement votre
-recherche. Adopter une démarche de recherche reproductible permet de se
-prémunir de la majeure partie des problèmes que nous avons évoqués jusqu'ici,
-mais aussi, et peut-être surtout, une recherche reproductible permet d'être
-plus efficace sur le court et le long terme, comme nous allons le découvrir
-dans cette partie.
+Nous espérons que les anecdotes du chapitre **XX** vous ont semblé vraisemblables, mais vous souhaitons de ne pas trop vous reconnaître dans ces situations de crise ! Nous essayons de vous proposer d'intervenir de manière curative, mais aussi préventive. 
 
 ## Quand mettre en œuvre les bonne pratiques ?
+Il existe des solutions applicables à court comme à plus long terme. Si le déploiement de certaines solutions nécessitent des compétences techniques avancées, la reproductibilité de la recherche demeure peut-être avant tout une question culturelle dans la mesure où il s'agit de faire évoluer des pratiques parfois solidement ancrées. La crainte de perdre du temps en perdant ses repères est une problématique majeure, d'où l'approche pragmatique du présent ouvrage. 
+En outre, comment accompagner l'adoption de nouvelles pratiques à l'échelle collective, qu'il s'agisse d'un laboratoire ou d'une communauté disciplinaire? 
+Par exemple, pour un directeur d'unité ou d'équipe, il pourrait être tentant d'imposer tout ou partie des méthodes décrites en vue d'une plus grande efficience, mais faire évoluer les pratiques quotidiennes de ses collègues constitue un exercice délicat. 
+De fait, une approche très progressive qui valorise l'implication directe des individus a davantage de chances d'aboutir (ou moins de risques d'être rejetée, selon que vous voyez le verre à moitié plein ou à moitié vide). Au fil de l'ouvrage, nous décrivons des situations de crise, moins par goût pour les histoires d'horreur que par conviction que l'identification des problèmes couramment rencontrés constitue l'une des meilleures options pour aborder la question de la reproductibilité. 
 
-Le changement de pratique que nous préconisons peut être fait immédiatement car
-la recherche reproductible est un ensemble de pratiques et d'outils possédant
-des temporalités et technicités très différentes. Il est indéniable qu'une
-minorité de ces pratiques prendront du temps à être installée et acceptée, mais
-pour la grande majorité d'entre elles, ce sont des modifications relativement
-mineures de vos pratiques et le gain sera immédiat.
+## Concrètement, que changer et comment s'y prendre ?
+Bonne nouvelle : il est très peu probable que votre recherche soit à 100% non reproductible. La palette des solutions à votre disposition est variée ; en fonction de vos compétences et de vos urgences, vous pouvez choisir d'agir sur : 
+- la collecte et la gestion des données, 
+- le code et sa robustesse, 
+- les environnements logiciels, 
+- les sauvegardes, 
+- les versions et les archives, 
+- les licences.
 
-## Comment faire accepter la transition ?
-
-Un aspect délicat d'un changement dans les pratiques de la recherche concerne
-l'acceptation par le groupe ou la communauté. Si vous êtes à la tête d'un
-groupe d'un recherche, vous pouriez être tenté d'imposer ces nouvelles
-pratiques, mais si elles ne sont ni motivées, ni comprises, il y a un risque
-d'échec. Mieux vaux faire preuve de pédagogie et évangeliser vos collègues et
-vos étudiants sur l'intérêt d'une recherche reproductible, ce que ce livre
-contribue à faire. De la même façon, si vous faites partie d'un groupe dont
-vous souhaitez transformer la pratique, la première chose à faire sans aucun
-doute de discuter afin d'identifier les problèmes et les améliorations
-potentielles, puis de leur passer ce livre ;)
-
-## Que changer en pratique ?
-
-La réponse dépend à la question de ce qu'il faut changer dépend largement de
-vos pratiques et de votre expérience, car il est peu probable que votre
-recherche soit entièrement non-reproductible. Vous avez probablement déjà mis
-en place un certain nombre de techniques qui vous permet de vous assurer d'un
-certain niveau de reproductibilité, car en dehors des sciences
-observationelles, il parait de difficile de tirer des conclusions d'une
-epxérience qui ne pourrait être fait qu'une seule fois. A partir de ce
-constant, vous pouvez agir sur la collecte et la gestion des données, le code
-et sa robustesse, les environnements logiciels, les sauvegardes, les versions et
-les archives et enfin les licenses.
-
-## Par quoi on commence ?
-
-Les chapitres qui suivent cette introduction sont liés tout en étant largement
-indépendants. Selon l'état de vos pratiques actuelles, ils peuvent donc être
-lus dans l'ordre qui vous conviendra le mieux, même si nous conseillons au final de tous les lire.
-
-
----
-
-### Idées à garder en tête
-* Solutions : Classer selon difficulté de mise en oeuvre
-* Solution : Cout / Methodo
-* Difficulté de savoir quand il faut changer
-### Introduction
-* Que changer ?
-* Quand changer ?
-
+Bonne nouvelle bis : le présent ouvrage a été conçu pour être hautement "cherry picking proof". Selon l'état de vos pratiques actuelles, les chapitres peuvent donc être lus dans l'ordre qui vous conviendra le mieux, même si nous conseillons bien sûr de tous les lire, voire de diffuser cet ouvrage auprès de vos collègues et étudiants.
