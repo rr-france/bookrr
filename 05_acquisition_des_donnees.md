@@ -1,4 +1,4 @@
-# (PART) Symptomes de la non-reproductibilité {-}
+# (PART) Sources de non reproductibilité {-}
 
 # Acquisition de l'information {#B-data-acquisition}
 
