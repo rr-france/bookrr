@@ -1,60 +1,49 @@
 # Problèmes liés aux données
 
 La perte de données à tous les niveaux d'un processus de recherche est une
-cause majeure de non-reproductibilité. Cela peut aller du simple accident,
-comme par exemple le crash d'un disque, aggravé par une négligence telle que
-l'absence de sauvegarde récente et l'ignorance des règles élementaires de
-documentation (méta-données).
+cause majeure de non reproductibilité. Cela peut aller du simple accident matériel,
+comme par exemple le crash d'un disque, au problème de méthode, comme l'absence d'une politique de sauvegarde ou de règles élementaires de documentation (méta-données). 
 
 
-## Intégrité
+## Intégrité et curation des données
 
-Lorsque l'on évoque l'intégrité des données, la première chose qui vient à
-l'esprit est le scénario catastrophe où les données associées auraient été
-effacées ou égarées alors que, par exemple, un éditeur pointilleux vous demande
-justement de mettre à disposition les données brutes sinon votre article qui
-vient pourtant d'être accepté ne sera pas publié.  L'absence de sauvegarde des
-données est considéré commenune négligence professionnelle et être incapable de
-retrouver/fournir les données associées à une étude est une situation
-potentiellement dommageable, notamment à la réputation du responsable de
-l'étude, si des doutes sont émis a posteriori sur la validité de ces données.
+Scénario catastrophe classique quand il est question d'intégrité des données : 
+alors qu'un éditeur vous demande de mettre à disposition les données brutes sous peine de ne pas publier votre article pourtant accepté, les données associées ont été effacées ou égarées. 
+Quel que soit le degré d'intégrité scientifique du chercheur, si des doutes sur la validité des données émergent, ne pas être en mesure de fournir les données constitue pour lui un handicap difficilement surmontable. 
+Par ailleurs, l'absence de sauvegarde des données est considérée comme une négligence professionnelle.
 
-Mais il existe pourtant bien d'autres situations où l'intégrité des vos données
-peut être compromise sans que vous vous en rendiez compte. Par exemple, lorsque
-vous recevez vos données avec une certaine précision mais que vous sauvez ces
-données avec une précision moindre, vous aurez alors une perte d'information
-qui est de plus irréversible, de l'information s'est littéralement évaporée.
+Il existe des *scenari* encore plus insidieux où l'intégrité des données
+peut être compromise sans que vous vous en rendiez compte. Par exemple :
+vous recevez vos données avec une certaine précision mais vous sauvegardez ces
+données avec une précision moindre. Vous serez alors confronté à une perte d'information
+irréversible : une partie de l'information s'est littéralement évaporée.
 De même, dans le cas de résultats produisant un déluge de données (comme par
 exemple le Large Hydron Collider) et devant l'impossibilité de tout
-sauvegarder, il faut faire des choix sur les données à sauvegarder, sachant que
-les autres seront irrémiadblement perdues. Une mauvaise décision initiale peut
+sauvegarder, il faut sélectionner les données à sauvegarder, sachant que
+les autres seront irrémédiablement perdues. Une mauvaise décision initiale peut
 se révéler catastrophique pour peu que vous ayez besoin de ces données
 manquantes.
 
 Enfin, si vous ne vous êtes pas assuré du contrôle d'accès sur vos données,
 quelqu'un peut venir les modifier par inadvertance et à votre insu, changeant
-ainsi les conclusion des vos analyses.
+ainsi les conclusions de vos analyses.
 
 
-## Indexation et Méta-données
+## Indexation et Métadonnées
 
-Quand bien même l'intégrité des données aurait été assuré, l'absence
-d'information sur ces données (notice ou méta-données) peut-être la source de
-nombreux problèmes.  Vos données sont là mais vous ne dsavez plus ce qu'elles
-représentent exactement. Par exemple, pour des données collectées dans la
-littérature, l'absence de la provenance des références bibliographiques est un
-manque de traçabilité qui va nuire à la reproductibilité.
+Quand bien même l'intégrité des données aurait été assurée, l'absence
+d'information descriptive sur ces données (notices ou métadonnées) peut causer de
+nombreux problèmes. Vos données sont disponibles mais impossible de comprendre ce qu'elles
+représentent exactement. Par exemple : des données sont collectées dans la
+littérature, mais les références bibliographiques ne sont pas mentionnées ou s'avèrent lacunaires. Un problème pouvant être perçu comme formel constitue en réalité un manque de traçabilité portant atteinte à la reproductibilité.
 
 
-## Indexation
+## Indexation des données
 
-Lorsque vous manipulez de très large volume de données (en terme de nombre
+Lorsque vous manipulez de très larges volumes de données (en termes de nombre
 d'échantillons) il devient tout à fait possible de perdre, non pas les données,
-mais l'accès à ces données. Imaginez par exemple la situation où vous avez
-utilisé un nommage particulier des fichiers (pour par exemple indiquer la
-nature de la donnée) mais que vous ayez égaré le fichier expliquant les règles
-de nommages. Vous êtes alors dans une situation tout à fait particulière où
-vous possédez l'intégralité de vos données tout en étant incapable les
+mais l'accès à ces données. Imaginez : vous avez utilisé un nommage particulier des fichiers (par exemple, pour indiquer la nature de la donnée : well done!) mais vous avez égaré le fichier expliquant les règles
+de nommages (too bad). Alors que vous possédez l'intégralité de vos données, vous vous trouvez incapable les
 utiliser.
 
 
@@ -62,39 +51,37 @@ utiliser.
 
 Lorsque vous sauvegardez des données sur un support informatique, il est
 important de comprendre qu'un certain nombre de choix sont effectués de façon
-automatique (et sans possibilité de contrôle de votre part) et ces choix sont
-intimement liés à l'architecture matérielle de votre ordinateur. Par exemple,
+automatique (et sans possibilité de contrôle de votre part). Ces choix dépendent
+étroitement de l'architecture matérielle de votre ordinateur. Par exemple,
 en ce qui concerne la représentation des nombres en virgule flottante,
-certaines machine vont lire la représentation binaire de gauche à droite alors
-d'autres le feront de droite à gauche (endianess). Si vous travaillez toujours
+certaines machines vont lire la représentation binaire de gauche à droite alors
+que d'autres le feront de droite à gauche (*endianess*). Si vous travaillez toujours
 avec le même type de machine, vous n'aurez pas de problème jusqu'au jour où
 vous changerez de machine et observerez alors des valeurs complètement
 erratiques, vous laissant à penser que vos données auront été compromises.
 
 Plus généralement, stocker des données numériques sans en préciser les unités
-ni les conventions de codages asociées est une invitation à la catastrophe,
-notamment pour un tiers désirant les réutiliser. Cela a été le cas pour la
-sonde "Mars Climate orbiter" qui s'est désintégrée à la surface de Mars en
+ni les conventions de codages asociées constitue un vecteur important de risques,
+notamment si un tiers désire les réutiliser. Cela fut le cas pour la
+sonde "Mars Climate Orbiter" qui s'est désintégrée à la surface de Mars en
 raison d'une communication entre un système de mesure anglo-saxon (émission) et
 un système métrique (réception).
 
 
 ## Obsolescence des données
- 
-Les données sont généralement sauvegardées avec un format qui peut-être ouvert
-ou fermé (propriétaire). Or si le format est fermé, vous n'avez aucun moyen de
-contrôle sur l'évolution de ce format. Prenez par exemple un fichier Word créé
-il y aune vingtaine d'années, pouvez-vous encore le lire aujourd'hui ? Est-ce
-que la version de Word que vous possédez vous assure une compatibilité avec ce
-vieux format? Si la réponse est négative, les données deviennent
-inutilisables. Elles ont pourtant été sauvegardées, leur intégrité est
-parfaite, on peut les retrouver très facilement et pourtant, elles sont
-inutilisables.
+Dans certains cas, les données ont été sauvegardées, leur intégrité est
+parfaite, on peut les retrouver très facilement et pourtant, elles s'avèrent
+inutilisables. Comment expliquer ce paradoxe? 
+Les données sont généralement sauvegardées dans un format pouvant être ouvert
+ou fermé (propriétaire). 
+Or si le format est fermé, vous ne pouvez pas contrôler l'évolution de ce format. Prenez par exemple un fichier Word créé il y aune vingtaine d'années, pouvez-vous encore le lire aujourd'hui ? 
+Votre version de Word vous assure-t-elle une compatibilité avec ce
+format obsolète ? Vous avez répondu par la négative à ces items? Considérez alors les données comme inutilisables. 
 
 
 ## Que faire ?
 
-Un archivage pérenne des données de la recherche avec les métadonnées
-pertinentes sur des serveurs institutionnels ou publics est la meilleur façon
+Un archivage pérenne des données, leur associer des métadonnées
+pertinentes sur des serveurs institutionnels ou publics constitue actuellement l'une des meilleures manières
 de se prémunir contre la perte de données (cf. Chap. **"Outils de gestion de
 version / Archivage"**).
