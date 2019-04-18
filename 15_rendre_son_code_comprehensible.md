@@ -1,4 +1,4 @@
-# Rendre son code compréhensible
+# Rendre son code compréhensible {#C:code:good}
 
 > “Programs must be written for people to read, and only incidentally for machines to execute.” 
 >
@@ -17,7 +17,7 @@ Il existe là encore différents degrés de complexité permettant de faciliter
 la compréhension de son code : 
 
  1. nommer ses variables et ses fonctions de manière informative
- 2. expliciter son code
+ 2. être explicite
  3. commenter son code
  4. documenter son code
  5. utiliser des documents computationnels
@@ -85,7 +85,7 @@ Nous parlerons dans le chapitre suivant des différentes techniques et conseils
 pour rendre son code plus robuste. 
 Mais avant même cette étape, nous pouvons déjà agir sur le processus d'écriture.
 
-## Expliciter son code
+## Etre explicite
 
 Tim Peters a écrit "The Zen of Python" (que vous pouvez lire en écrivant
 `import this` dans une session Python) qui donne un ensemble de règles qu'il
