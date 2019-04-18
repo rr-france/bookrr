@@ -77,72 +77,62 @@ est maintenant en mesure de comprendre et de reproduire ces traitements,
 ## Le choix des armes
 
 Apprendre à programmer n'est pas tout à fait équivalent à apprendre un langage
-de programmation. 
-Il est nécessaire de comprendre au préalable ce que l'on peut attendre d'un 
-programme et comment exprimer ce que l'on souhaite faire de façon non ambigüe 
-car l'ordinateur est extrèmement bête et ne fera que ce que vous lui demandez 
-de faire, ni plus, ni moins. 
-L'apprentissage de la programmation passe donc par la découverte d'un nombre limité de concepts que l'on va retrouver dans (à peu près) l'ensemble des langages de programmation. 
-Notez que nous parlons de " langages " au pluriel pour refléter leur diversité. 
-Les raisons de l'existence de tant de langages différents sont multiples. 
-Heureusement pour nous, au cours de ces dernières années, deux langages 
-se sont quasiment imposés dans le monde de la recherche : Python et R. 
-Entendons-nous bien : nous ne disons pas que ce sont les seuls langages utilisables
-dans ce contexte (loin de là) mais néanmoins, ils ont su traverser les frontières 
-de tous les champs disciplinaires. Il y a aujourd'hui des conférences 
-scientifiques qui leur sont entièrement dédiées et où l'on peut voir un physicien 
-théorique discuter avec un sociologue ou bien un doctorant enseigner à un professeur.
+de programmation.  Il est nécessaire de comprendre au préalable ce que l'on
+peut attendre d'un programme et comment exprimer ce que l'on souhaite faire de
+façon non ambigüe car l'ordinateur est extrèmement bête et ne fera que ce que
+vous lui demandez de faire, ni plus, ni moins.  L'apprentissage de la
+programmation passe donc par la découverte d'un nombre limité de concepts que
+l'on va retrouver dans (à peu près) l'ensemble des langages de programmation.
+Notez que nous parlons de " langages " au pluriel pour refléter leur diversité.
+Les raisons de l'existence de tant de langages différents sont multiples.
+Heureusement pour nous, au cours de ces dernières années, deux langages se sont
+quasiment imposés dans le monde de la recherche : Python et R.  Entendons-nous
+bien : nous ne disons pas que ce sont les seuls langages utilisables dans ce
+contexte (loin de là) mais néanmoins, ils ont su traverser les frontières de
+tous les champs disciplinaires. Il y a aujourd'hui des conférences
+scientifiques qui leur sont entièrement dédiées et où l'on peut voir un
+physicien théorique discuter avec un sociologue ou bien un doctorant enseigner
+à un professeur.
 
-Pour commencer à programmer, nous ne saurions trop vous conseiller de
-commencer par apprendre un de ces deux langages. 
-Le choix entre les deux vous appartient, sachant que vous avez tout intèrêt 
-à observer les pratiques dans votre domaine ou bien encore à regarder les 
-programmes des conférences telles que Scipy (http://conference.scipy.org), 
-EuroScipy (https://www.euroscipy.org), useR! (http://www.user2019.fr), 
-Les Rencontres R(https://r2018-rennes.sciencesconf.org) ...
+Pour commencer à programmer, nous ne saurions trop vous conseiller de commencer
+par apprendre un de ces deux langages.  Le choix entre les deux vous
+appartient, sachant que vous avez tout intèrêt à observer les pratiques dans
+votre domaine ou bien encore à regarder les programmes des conférences telles
+que Scipy (http://conference.scipy.org), EuroScipy (https://www.euroscipy.org),
+useR! (http://www.user2019.fr), Les Rencontres
+R(https://r2018-rennes.sciencesconf.org) ...
 
 
 ## Pour en savoir plus
 
 Il existe une multitude de ressources pour apprendre à programmer en R ou en
-Python, notamment les formations continues proposées par les institutions (services de formation des personnels, écoles doctorales, mais aussi formations internes à votre unité de recherche). 
-En raison de cette multitude de ressources, il est difficile de choisir
-lesquelles sont les plus pertinentes. 
-C'est la raison pour laquelle nous donnons ci-dessous une liste très restreinte 
+Python, notamment les formations continues proposées par les institutions
+(services de formation des personnels, écoles doctorales, mais aussi formations
+internes à votre unité de recherche).  En raison de cette multitude de
+ressources, il est difficile de choisir lesquelles sont les plus pertinentes.
+C'est la raison pour laquelle nous donnons ci-dessous une liste très restreinte
 de ressources accessibles en ligne que nous jugeons de qualité.
 
 ### MOOCs
 
-* _Introduction à la statistique avec R_ (https://www.fun-mooc.fr/courses/UPSUD/42001S06/session06/about)
-
-* _Python : des fondamentaux à l'utilisation du langage_ (https://www.fun-mooc.fr/courses/inria/41001S03/session03/about)
+* [Introduction à la statistique avec R](https://www.fun-mooc.fr/courses/UPSUD/42001S06/session06/about)
+* [Python : des fondamentaux à l'utilisation du langage](https://www.fun-mooc.fr/courses/inria/41001S03/session03/about)
 
 
 ### Tutoriels
 
-* _Begin’R_ (http://beginr.u-bordeaux.fr)
-
-* _Le tutoriel Python_ (https://docs.python.org/fr/3/tutorial)
+* [Begin’R](http://beginr.u-bordeaux.fr)
+* [Le tutoriel Python] (https://docs.python.org/fr/3/tutorial)
 
 
 ### Livres
 
-* _R for Data Science_ (https://r4ds.had.co.nz)
-
-* _Dive into Python_ (https://www.diveinto.org/python3)
+* [R for Data Science](https://r4ds.had.co.nz)
+* [Dive into Python](https://www.diveinto.org/python3)
 
 ### Ateliers en ligne "Software Carpentry"
 
-* _Programming with R_ (http://swcarpentry.github.io/r-novice-inflammation)
-
-* _R for Reproducible Scientific Analysis_ (http://swcarpentry.github.io/r-novice-gapminder)
-
-* _Programming with Python_ (http://swcarpentry.github.io/python-novice-inflammation)
-
-* _Plotting and Programming in Python_ (http://swcarpentry.github.io/python-novice-gapminder)
-
-<!--
-
-Les logiciels basés sur une interface graphique sont pléthores en informatique
-
-
+* [Programming with R](http://swcarpentry.github.io/r-novice-inflammation)
+* [R for Reproducible Scientific Analysis](http://swcarpentry.github.io/r-novice-gapminder)
+* [Programming with Python](http://swcarpentry.github.io/python-novice-inflammation)
+* [Plotting and Programming in Python](http://swcarpentry.github.io/python-novice-gapminder)
