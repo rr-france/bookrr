@@ -1,21 +1,9 @@
-# Format et structure des informations {#C:data:format}
+# Formatter et structurer l'information {#C:data:format}
 
-L'enjeu autour du format pour la recherche reproductible est double : 
+Dans ce chapitre nous allons traiter des formats et structures 
+de fichiers numériques, bien que ces concepts aient aussi leur importance
+en dehors de l'outils numérique. 
 
- - assurer l'interopérabilité
- - minimiser les risques d'erreur de manipulation
- 
-Il est particulièrement sensible pour les données, mais joue également un rôle 
-pour les codes et les résultats produits.
-
-Dans ce chapitre nous allons traiter principalement des formats de fichiers numérique,
-bien que le format ait sont importance y compris en dehors de l'outils numérique.
-En outre, le  noms des fichiers est également un point important du formattage, et
-sera abordé dans le chapitre \@ref(C:versionning).
-
-[***BH*** : relire ce qui suit qui était dans "résumé" avant] Le chercheur doit donc avoir en tête les bonnes pratiques établies dans sa communauté, et 
-tenter de s'assurer que son choix de représentation permette (voire facilite)
-la réutilisation de ses données et de ses résultats.
 
 ## Comment structurer mes informations ?
 
@@ -56,7 +44,19 @@ informations en fonction du traitement que vous allez vouloir réaliser
 car cela risque de considérablemnt affecter ce que vous allez pouvoir
 faire de vos données.
 
+
 ## Quel format choisir pour enregistrer et stocker des informations ?
+
+L'enjeu autour du format pour la recherche reproductible est double : 
+
+ - assurer l'interopérabilité
+ - minimiser les risques d'erreur de manipulation
+ 
+Le chercheur doit donc avoir en tête les bonnes pratiques établies dans sa communauté, et 
+tenter de s'assurer que son choix de représentation permette (voire facilite)
+la réutilisation de ses données et de ses résultats. Le nom des fichiers est également 
+un point important du formattage, et sera abordé dans le chapitre \@ref(C:versionning).
+
 
 La recherche reproductible est largement basée sur une minimisation des interventions 
 manuelles dans le flot de production des résultats. L'objectif dans ce choix d'un 
@@ -93,6 +93,7 @@ de sa communauté plutôt que des formats exotiques.
 Pour des données plus complexes, hétérogènes, de type hiérarchique, des formats adaptés, 
 ouverts, et interopérable existe (comme par exemple YAML, JSON, ou XML pour des
 formats textes et HDF5 ou FITS ou pour des formats binaires).
+
 
 ## La présentation des résultats numériques
 
@@ -135,6 +136,7 @@ uncertainty in measurement" – Extension to any number of output quantities JCG
 (https://www.bipm.org/utils/common/documents/jcgm/JCGM_102_2011_E.pdf)]
 
 
+
 ## Pour en savoir plus
 
 En ce qui concerne la structuration des données, une approche assez
@@ -142,4 +144,3 @@ populaire consiste à utiliser un maximum une structure de tableau et
 vous voudrez certainement lire ce document:
 [*SG*] tidy data [Ref Wickham, Hadley. "Tidy data". *Journal of Statistical Software* 59(10) (2014): 1-23]
 
-TODO ??
