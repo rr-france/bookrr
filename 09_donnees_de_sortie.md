@@ -30,7 +30,7 @@ devez resaisir dans votre article les sorties résultats du logiciel. Une erreur
 de frappe est si facilement arrivée!
 
 Un deuxième exemple de transformation des résultats est celui de l’amélioration
-d’une figure.  Si vous trouvez que la figure que vous obtenez à partir d'un
+d’une figure. Si vous trouvez que la figure que vous obtenez à partir d'un
 logiciel n’est pas satisfaisante, vous pouvez décider de la retravailler
 manuellement, par exemple en ajoutant une courbe interpolant des points, alors
 que les valeurs intermédiaires n'ont pas de sens. Cette manipulation est
@@ -41,7 +41,7 @@ n’êtes pas infaillible.
 Une transformation involontaire des résultats peut aussi se produire si vous
 collaborez sur une étude, et si vous devez intégrer les résultats d’analyses
 réalisées par votre collaborateur, mais dont vous ne comprenez pas toutes les
-subtilités.  Un exemple que l’on rencontre malheureusement fréquemment dans la
+subtilités. Un exemple que l’on rencontre malheureusement fréquemment dans la
 litérature concerne les résultats d’analyses statistiques. Vous avez demandé à
 votre collègue, spécialiste des statistiques, de traiter certaines de vos
 données, et il vous envoie ses résultats que vous ne comprenez pas dans le
@@ -61,9 +61,8 @@ comparaison de résultats, ou bien l'absence de matrice de corrélation entre le
 paramètres incertains d'une étude empêche leur réutilisation.
 
 Même lorsque des efforts ont été faits pour publier les informations adéquates,
-des problèmes d'arrondi peuvent anéantir la réutilisabilité des données.
-
-Une mauvaise sélection du nombre de chiffres significatifs à reporter dans un
+des problèmes d'arrondi peuvent anéantir la réutilisabilité des données. Une
+mauvaise sélection du nombre de chiffres significatifs à reporter dans un
 résultat numérique peut tout à fait se produire. Vous pourriez juger qu’un seul
 chiffre significatif peut suffire, pour une question de *présentation* (taille
 d'une table de résultats). Mais si vos résultats sont nécessaires à la
