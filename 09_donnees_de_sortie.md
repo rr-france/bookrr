@@ -1,6 +1,6 @@
 # Communication des résultats
 
-Nous allons voir dans ce chapitre qu’une recherche peut devenir non-reproductible 
+Nous allons voir dans ce chapitre qu’une recherche peut devenir non reproductible 
 s’il existe une mauvaise utilisation des résulats de l'étude au moment de la rédaction 
 d’un article: il peut s’agir d’une mauvaise sélection de votre part des résultats, 
 d'un choix inapproprié du format de présentation ou d'une transformation 
@@ -21,12 +21,12 @@ Si cette information est encore complexe et difficilement compréhensible
 par vos collaborateurs parce que vous êtes spécialiste dans le domaine, 
 et/ou qu'on vous fait totalement confiance, alors cette erreur de sélection 
 sera présente dans l’article, et persistera après le processus de reviewing 
-si les reviewers ratent l’erreur.
+si les relecteurs ratent l’erreur.
 
 ## Transformation des résultats
 
-Une autre erreur pouvant survenir à partir des données 
-fournies par un logiciel est celle d’une « transformation » 
+Une autre erreur pouvant survenir à partir des résultats 
+fournis ***arrêt ici*** par un logiciel est celle d’une « transformation » 
 (bien entendu involontaire) de ces données. 
 Cette modification délétère peut très facilement se produire 
 si vous devez resaisir dans votre article les sorties
