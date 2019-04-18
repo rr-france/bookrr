@@ -1,4 +1,4 @@
-# Aspects juridiques
+# Aspects juridiques {#C:licences}
 
 >"Au fait, ai-je le droit ?"
 
