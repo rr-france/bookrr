@@ -12,6 +12,7 @@ MD_FILE_LIST=index.md \
      11_collecte_des_donnees.md \
      12_format_des_donnees.md \
      13_outils_de_gestion_de_version.md \
+     13.5_partage_et_archivage.md \
      14_apprendre_a_programmer.md \
      15_rendre_son_code_comprehensible.md \
      16_eviter_les_bugs.md \
