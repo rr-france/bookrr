@@ -90,3 +90,9 @@ Cette licence permet aux autres de remixer, arranger, et adapter l'œuvre, sous 
 * 19_annexes.md                        -> `{#D-appendix}`  
 * 20_Conventions_ecriture.md           -> `{#D-convention}`
   
+## Pour compiler le bookdown
+
+Afin de créer les fichier .Rmd symbolique nécessaires, la première fois que le répertoire est forké/téléchargé, il faut executer la commande suivante dans le terminal :
+```
+make -f Makefile_Rmd Rmd
+```
