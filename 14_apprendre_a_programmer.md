@@ -134,7 +134,7 @@ de ressource accessibles en ligne que nous jugeons de qualité.
 
 ### Livres
 
-* _R for Data Science_ (http://shop.oreilly.com/product/0636920034407.do)
+* _R for Data Science_ (https://r4ds.had.co.nz)
 
 * _Dive into Python_ (https://www.diveinto.org/python3)
 
