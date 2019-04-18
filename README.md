@@ -36,57 +36,57 @@ Cette licence permet aux autres de remixer, arranger, et adapter l'œuvre, sous 
 **Syntaxe**:
 
 * déclaration: `{#clef}`
-* citation:    `\@ref(#clef)`
+* citation:    `\@ref(clef)`
 
 ---
 * **Chroniques de la non reproductibilité**
-* 01_preambule.Rmd                      -> `{#A:preambule}`  
+* 01_preambule.Rmd                      -> `{#A-preambule}`  
   Préambule
-* 02_RR_kezako.Rmd                      -> `{#A:introduction}`  
+* 02_RR_kezako.Rmd                      -> `{#A-introduction}`  
   Etat des Lieux
-* 03_vis_ma_vie.Rmd                     -> `{#A:personas}`  
+* 03_vis_ma_vie.Rmd                     -> `{#A-personas}`  
   Retours d'expériences
-* 04_questions_cauchemars_recurrents.md -> `{#A:cauchermars}`  
+* 04_questions_cauchemars_recurrents.md -> `{#A-cauchermars}`  
   Symptômes d'une rechercher non reproductible
 
 ---
 
 * **Sources de non reproductibilité**
-* 05_acquisition_des_donnees.md      -> `{#B:data:acquisition}`  
+* 05_acquisition_des_donnees.md      -> `{#B-data-acquisition}`  
   Acquisition de l'information
-* 07_donnees_d_entree.md             -> `{#B:data:input}`  
+* 07_donnees_d_entree.md             -> `{#B-data-input}`  
   Gestion des données
-* 08_aspects_computationnels.md      -> `{#B:code:aspect}`  
+* 08_aspects_computationnels.md      -> `{#B-code-aspect}`  
   Programmation et calcul
-* 09_donnees_de_sortie.md            -> `{#B:data:output}`  
+* 09_donnees_de_sortie.md            -> `{#B-data-output}`  
   Communication des résultats
 
 ---
 
 * **Solutions de la recherche reproductible**
-* 10_introduction_partie_3.md          -> `{#C:intro}`  
+* 10_introduction_partie_3.md          -> `{#C-intro}`  
   Le temps des changements ?
-* 11_collecte_des_donnees.md           -> `{#C:data:acquisition}`  
+* 11_collecte_des_donnees.md           -> `{#C-data-acquisition}`  
   Documenter ses pratiques
-* 12_format_des_donnees.md             -> `{#C:data:format}`  
+* 12_format_des_donnees.md             -> `{#C-data-format}`  
   Formater et structurer l'information
-* 13.5_partage_et_archivage.md         -> `{#C:data:share}`  
+* 13.5_partage_et_archivage.md         -> `{#C-data-share}`  
   Partager ses données, codes et résultats
-* 13_outils_de_gestion_de_version.md   -> `{#C:versioning}`  
+* 13_outils_de_gestion_de_version.md   -> `{#C-versioning}`  
   Versionner, versionner, versionner 
-* 14_apprendre_a_programmer.md         -> `{#C:code:learn}`  
+* 14_apprendre_a_programmer.md         -> `{#C-code-learn}`  
   Appendre à programmer
-* 15_rendre_son_code_comprehensible.md -> `{#C:code:good}`  
+* 15_rendre_son_code_comprehensible.md -> `{#C-code-good}`  
   Rendre son code compréhensible
-* 16_eviter_les_bugs.md                -> `{#C:code:bugs}`  
+* 16_eviter_les_bugs.md                -> `{#C-code-bugs}`  
   Chasser les erreurs de programmation
-* 17_environnement_logiciel.md         -> `{#C:code:env}`  
+* 17_environnement_logiciel.md         -> `{#C-code-env}`  
   Identifier et partager son environnement logiciel
-* 18_licence_et_privacy.md             -> `{#C:licences}`  
+* 18_licence_et_privacy.md             -> `{#C-licences}`  
   Sortez couverts!
 
 ---
 
-* 19_annexes.md                        -> `{#D:appendix}`  
-* 20_Conventions_ecriture.md           -> `{#D:convention}`
+* 19_annexes.md                        -> `{#D-appendix}`  
+* 20_Conventions_ecriture.md           -> `{#D-convention}`
   

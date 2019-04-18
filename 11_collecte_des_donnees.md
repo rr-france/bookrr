@@ -1,12 +1,12 @@
-# Documenter ses pratiques {#C:data:acquisition}
+# Documenter ses pratiques {#C-data-acquisition}
 
 Cette partie expose une sélection de solutions aux problèmes soulevés
-dans le chapitre \@ref{B:data:acquisition}.
+dans le chapitre \@ref(B-data-acquisition).
 
 ## Rédiger un protocole de collecte des informations
 
-Comme nous l'avons vu plus haut (Chapitres \@ref{B:data:acquisition} et
-\@ref{B:data:input}), il convient de s'assurer que l'information est collectée
+Comme nous l'avons vu plus haut (Chapitres \@ref(B-data-acquisition) et
+\@ref(B-data-input)), il convient de s'assurer que l'information est collectée
 de façon "standardisée".  Cela implique de rédiger un protocole décrivant la
 façon dont l'information est collectée, et ce, donnée par donnée. Par exemple :
 chez une personne atteinte d'un diabète, vous recueillez la concentration du
@@ -51,7 +51,7 @@ trace.
 
 Le protocole de collecte d'une information doit être défini de telle sorte
 qu'elle soit "répétable" et "reproductible" au sens du *VIM* (_cf._ Chapitre
-\@ref{B:data:acquisition}). Tout d'abord, si vous collectez une information
+\@ref(B-data-acquisition)). Tout d'abord, si vous collectez une information
 deux fois sur un individu dans un intervalle de temps restreint, les deux
 valeurs de l'information doivent être les mêmes, ou du moins être suffisamment
 voisines pour être " considérées " comme identiques (condition de

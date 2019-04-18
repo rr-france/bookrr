@@ -1,4 +1,4 @@
-# Des problèmes de calcul ? {#B:code:aspect}
+# Des problèmes de calcul ? {#B-code-aspect}
 
 Les problèmes inhérents au calcul et aux codes associés partagent des similarités avec les problèmes liés aux données (par exemple la non disponibilité). Toutefois, les questions de calcul ont leurs spécificités du fait de leur nature opératoire : il s'agit d'exécuter ce code afin d'obtenir un résultat. Or, c'est lors de cette étape d'exécution que vont surgir un certain nombre de problèmes que l'on peut classer en deux grandes catégories : 
 - d'une part, ceux qui empêchent d'obtenir un résultat 
@@ -212,4 +212,4 @@ vous pouvez aussi vouloir regarder ce
 
 ## Que faire ?
 
-Pour résoudre ces problèmes, des solutions sont abordées aux chapitres \@ref{#C:versioning}, \@ref{#C:code:good}, \@ref{C:code:bugs} et \@ref{#C:code:env}.
+Pour résoudre ces problèmes, des solutions sont abordées aux chapitres \@ref(C-versioning), \@ref(C-code-good), \@ref(C-code-bugs) et \@ref(C-code-env).

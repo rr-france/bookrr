@@ -1,8 +1,8 @@
 # (PART) Les solutions de la recherche reproductible {-}
 
-# Le temps des changements ? {#C:intro}
+# Le temps des changements ? {#C-intro}
 
-Nous espérons que les anecdotes du chapitre @\ref(A:personas) vous ont semblé
+Nous espérons que les anecdotes du chapitre \@ref(A-personas) vous ont semblé
 vraisemblables, mais vous souhaitons de ne pas trop vous reconnaître dans ces
 situations de crise ! Nous essayons de vous proposer d'intervenir de manière
 curative, mais aussi préventive.

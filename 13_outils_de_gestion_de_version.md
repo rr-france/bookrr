@@ -1,4 +1,4 @@
-# Versionner, versionner, versionner {#C:versioning}
+# Versionner, versionner, versionner {#C-versioning}
 
 La sauvegarde des étapes successives du développement de documents (textes,
 bases de données, codes, etc.) est une des briques fondamentales de la
@@ -102,7 +102,7 @@ systématiquement disposer du lien vers la version des données ou des codes
 informatiques utilisés dans un article. Pour cela, il est conseillé d'activer
 en plus un archivage pérenne des versions importantes du projet sur un dépôt
 fournissant un identifiant pérenne. Ce sujet sera abordé dans le chapitre
-\@ref(C:data:share). Dans tous les cas, avant de choisir une solution, il est
+\@ref(C-data-share). Dans tous les cas, avant de choisir une solution, il est
 essentiel de se renseigner sur les pratiques en cours dans votre communauté de
 recherche.
 

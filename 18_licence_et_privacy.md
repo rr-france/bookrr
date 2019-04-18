@@ -1,4 +1,4 @@
-# Sortez couverts! {#C:licences}
+# Sortez couverts! {#C-licences}
 
 >" Au fait, ai-je le droit ? "
 >-- Anonyme
@@ -29,7 +29,7 @@ permettent de choisir une licence logicielle ou non logicielle
 
 ## Confidentialité et protection des données, respect de la vie privée
 
-Dans le chapitre \@ref(C:data:share), nous avons vu que le partage des données était une des
+Dans le chapitre \@ref(C-data-share), nous avons vu que le partage des données était une des
 composantes de la recherche reproductible. Or il existe certains domaines (tels
 que la santé) où le partage des données n'est pas toujours possible pour : 
 - des raisons éthiques, 

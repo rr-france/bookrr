@@ -1,4 +1,4 @@
-# Environnement logiciel {#C:code:env}
+# Environnement logiciel {#C-code-env}
 
 ***Attention : ce chapitre traite de sujets appelant des compétences techniques avancées. Nous vous proposons d'aborder la (complexe) question de l'environnement (ça pique mais ça compte).***
 
@@ -63,7 +63,7 @@ partager un environnement logiciel à l'identique est de " figer " l'ensemble du
 
 La façon la plus simple d'éviter les problèmes de versions des dépendances logicielles, consiste à installer sur une machine tous les programmes dont on a besoin. Ce *scenario* exclut toute mise à jour : l'environnement est installé une bonne fois pour toute. 
 
-C'est le cas de figure décrit en section \@ref{#1:personna:ingenieur}. 
+C'est le cas de figure décrit en section \@ref(1:personna:ingenieur). 
 Chacun des membres de l'équipe peut alors se connecter sur cette machine 
 pour y faire ses calculs (ce qui peut d'ailleurs parfois être source de disputes). Sur le long terme, isoler une machine s'avèrera problématique car si la machine continue (normalement) 
 de calculer la même chose, elle conserve ses vieux *bugs* qui peuvent 

@@ -1,4 +1,4 @@
-# Formater et structurer l'information {#C:data:format}
+# Formater et structurer l'information {#C-data-format}
 
 Dans ce chapitre, nous allons traiter des formats et structures 
 de fichiers numériques, bien que ces concepts aient aussi leur importance
@@ -80,7 +80,7 @@ On distingue 3 grand types de formats :
  - les formats texte (tels que .csv pour les tables) qui sont lisibles par les
  humains comme par les machines, qui sont très interopérables, et dont les
  modifications peuvent être enregistrées par les outils de suivi de version
- (voir le chapitre @\ref(C:versionning)).
+ (voir le chapitre \@ref(C:versionning)).
 
 Par exemple, pour des tables de données simples, les formats .csv ou .tsv sont
 recommandés, plutôt que les versions plus ou moins propriétaires ou spécifiques

@@ -1,4 +1,4 @@
-# Rendre son code compréhensible {#C:code:good}
+# Rendre son code compréhensible {#C-code-good}
 
 > " *Programs must be written for people to read, and only incidentally for machines to execute*. " 
 >

@@ -1,6 +1,6 @@
 # (PART) Symptomes de la non-reproductibilité {-}
 
-# Problèmes se produisant lors de l’acquisition de l'information {#B:data:acquisition}
+# Problèmes se produisant lors de l’acquisition de l'information {#B-data-acquisition}
 
 Dans une démarche de recherche, la première étape est bien souvent l'aquisition
 d'information, que ce soit à partir de la collecte de nouvelles mesures expérimentales 
@@ -41,7 +41,7 @@ moyen de revenir aux informations initiales et/ou de savoir quelles sont les inf
 qui ont été modifiées, votre recherche devient par conséquent non reproductible.
 
 Les solutions pour éviter de perdre ainsi la trace de la modification
-sont évoquées dans le chapitre \@ref{#C:data:acquisition}.
+sont évoquées dans le chapitre \@ref(C-data-acquisition).
 
 ## Une collecte d’informations non répétable ou non reproductible
 
@@ -133,12 +133,12 @@ Les solutions pour faire face aux problèmes évoqués dans ce chapitre,
 dépendent du collecteur de données, mais également de l'émetteur. 
 
 Le collecteur de données pourra se reporter aux solutions présentées dans les chapitres 
-\@ref{#C:data:acquisition} et \@ref{#C:code:learn}
+\@ref(C-data-acquisition) et \@ref(C-code-learn)
 pour automatiser et tracer au maximum le processus de collecte (d'autant plus que le volume 
 de données est important et/ou si la tâche est répétitive).
  
 L'emetteur de données pourra se reporter aux solutions présentées dans les chapitres 
-\@ref{#C:data:format} et \@ref{#C:data:share}
+\@ref(C-data-format) et \@ref(C-data-share)
 sur les règles de bonne pratique quant à l'archivage des données dans des formats 
 ouverts et lisibles par la machine.
 

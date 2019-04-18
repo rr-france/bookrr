@@ -1,5 +1,5 @@
 
-# Apprendre à programmer {#C:code:learn}
+# Apprendre à programmer {#C-code-learn}
 
 Dans ce chapitre, nous mettons en évidence les limitations des interfaces
 graphiques en termes d'efficacité et de reproductibilité ; nous expliquons

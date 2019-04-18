@@ -1,4 +1,4 @@
-# Problèmes de communication des résultats {#B:data:output}
+# Problèmes de communication des résultats {#B-data-output}
 
 Nous allons voir dans ce chapitre qu’une recherche peut devenir non
 reproductible s’il existe une mauvaise utilisation des résultats de l'étude au
@@ -70,7 +70,7 @@ réalisation d’autres recherches (comme par exemple la réalisation de
 simulations basées entre autres sur vos résultats), les erreurs générées dans
 ces autres recherches pourront être amplifiées (une petite erreur initiale peut
 conduire à une erreur très importante en bout de course – _cf._ « Chaos numérique
-» dans le chapitre \@ref{#B:code:aspect}).
+» dans le chapitre \@ref(B-code-aspect)).
 
 A titre d'illustration, la matrice de variance-covariance publiée par le CODATA
 en 2002 pour l'ajustement des constantes fondamentales, arrondie pour être
@@ -83,7 +83,7 @@ Status https://arxiv.org/abs/physics/0409117]
 
 La réutilisabilité des résultats d'une étude doit être une priorité. Pour
 cela, les données doivent être mises à disposition de futurs utilisateurs 
-(Chapitre \@ref{#C:data:share}) 
-dans un format lisible par la machine (Chapitre \@ref{#C:data:format}), 
+(Chapitre \@ref(C-data-share)) 
+dans un format lisible par la machine (Chapitre \@ref(C-data-format)), 
 en utilisant un processus automatisé limitant les interventions manuelles
-(Chapitre \@ref{#C:code:learn}).
+(Chapitre \@ref(C-code-learn)).
