@@ -5,8 +5,7 @@ participe à ce que certains identifient comme une "crise de la reproductibilit�
 de la recherche".
 
 Cet ouvrage considère un ensemble de situations et de pratiques potentiellement
-dangereuses afin d'illustrer et de mettre en évidence les symptômes de la la
-non-reproductibilité dans la recherche. À chaque fois, il propose un éventail
+dangereuses afin d'illustrer et de mettre en évidence les symptômes de la non-reproductibilité dans la recherche. À chaque fois, il propose un éventail
 de solutions allant de bonnes pratiques faciles et rapides à implémenter
 jusqu'à des outils plus techniques, tous gratuits et mis à l'épreuve par les
 auteurs eux-mêmes.
@@ -18,9 +17,9 @@ reproductible.
 
 
 For a researcher, there is nothing more frustrating than the failure to
-reproduce major results obtained a few months back. The causes of such a
-disappointment can be multiple and insidious. This phenomenon plays an
-important part in the so-called "research reproducibility crisis".
+reproduce major results obtained a few months back. The causes of such
+disappointments can be multiple and insidious. This phenomenon plays an
+important role in the so-called "research reproducibility crisis".
 
 This book takes a current perspective onto a number of potentially dangerous
 situations and practices, to examplify and highlight the symptoms of
