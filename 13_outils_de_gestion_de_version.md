@@ -1,4 +1,4 @@
-# Outils de gestion de versions
+# Gestion de versions {#C:versionning}
 
 La sauvegarde des étapes successives du développement de documents
 (textes, bases de données, codes, etc.) est une des briques fondamentales
@@ -23,7 +23,7 @@ règles de nommage de fichiers évitant les ambiguïtés et facilitant
 l'exploration des versions. 
 
 Dans ce contexte, il est souvent recommandé de créer un nom de fichier constitué de plusieurs
-éléments *SG* [@REF: (http://qualite-en-recherche.cnrs.fr/spip.php?article315)] [@REF JennyBrian]:
+éléments *SG* [@REF: (http://qualite-en-recherche.cnrs.fr/spip.php?article315)] [@Ref Jenny Bryan https://speakerdeck.com/jennybc/how-to-name-files ??]
 
 * la date de sauvegarde, sous format AAAAMMJJ ou AAAA_MM_JJ
 (permettant un tri des dates par ordre alphabétique)
@@ -36,7 +36,8 @@ remarquables de l'évolution du document (v01, v02...)
 Ces informations sont une forme appauvrie de métadonnées que l'on
 indique directement dans le nom du fichier lorsque le format de
 données ou le système de fichiers utilisé ne permet pas de les
-conserver de façon pérenne. Cette information est assez rudimentaire : dans le cas où plusieurs personnes ont travaillé sur un même
+conserver de façon pérenne. Cette information est assez rudimentaire : dans 
+le cas où plusieurs personnes ont travaillé sur un même
 fichier, on a du mal à savoir qui a fait quoi et pourquoi.
 
 Pour des raisons de compatibilité, il est également recommandé d'éviter l'utilisation de :
@@ -61,7 +62,7 @@ La chronologie du nommage de fichiers successifs de scripts R pourrait être:
 
 
 
-## Versionnage différentiel
+## Outils de versionnage différentiel
 
 Le stockage des versions successives de fichiers entraîne un gaspillage
 d'espace de stockage, et peut devenir très incommode pour la gestion de
@@ -71,20 +72,22 @@ qui gère automatiquement le stockage de versions différentielles des
 fichiers, les métadonnées de type " qui, quoi, quand, pourquoi ",
 et permet de figer des versions du projet à des étapes cruciales du développement.
 
-Ces outils peuvent être intégrés à des logiciels (éditeurs de texte, de code, d'images, etc.)
-ou se présenter comme des solutions autonomes (Git, Subversion, SVN, etc.), avec
-des interfaces en ligne de commande ou des interfaces graphiques.
+Ces outils peuvent être intégrés à des logiciels (par exemple des éditeurs de texte 
+tels que Word ou LibreOffice) ou se présenter comme des solutions autonomes (comme 
+par exemple le logiciel Git) avec des interfaces en ligne de commande ou des 
+interfaces graphiques (parfois intégrés directement dans les éditeurs de code tels que 
+RStudio ou emacs).
 
 Si un logiciel de gestion de versions est installé sur l'ordinateur de l'utilisateur,
 il est prudent, voire impératif, de mettre en œuvre une synchronisation vers
-un dépôt distant, qui peut être sur une plateforme institutionnelle
+un dépôt distant, ce qui présente plusieurs avantages à la fois : sauvegarder les travaux,
+les partager, et de collaborer. Ce dépot distant peut être sur une plateforme institutionnelle
 *SG* (par exemple le [GitLab de
 l'Inria](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/gitlab)
 ou de [l'IN2P3](https://gitlab.in2p3.fr/CTA-LAPP/HiPeCTA) ou encore un
-plateforme privée comme [GitHub](https://github.com/)). En outre, ces
-plateformes permettent le travail collaboratif sur un projet ou de mettre le projet à disposition 
+plateforme privée comme [GitHub](https://github.com/)). En outre, ces plateformes permettent le travail collaboratif sur un projet ou de mettre le projet à disposition 
 du public dans des versions bien définies des documents. 
-(sabrina : à repdre)
+(sabrina : à repdre)[*SG*]
 Pour que la recherche soit reproductible, le lecteur devrait systématiquement disposer du lien vers la version des données ou des codes informatiques utilisés dans un article. Pour cela, il est conseillé d'activer en plus un archivage pérenne des 
 versions importantes du projet sur un dépôt fournissant un identifiant pérenne. Ce sujet sera abordé dans le Chapitre \@ref(partage-archivage). Dans tous les cas, avant de choisir une
 solution, il est essentiel de se renseigner sur les pratiques en cours dans votre
@@ -114,7 +117,7 @@ d'obtenir aisément une recherche reproductible:
 > 
 > Lorsque je soumets l'article, je fige une version du projet, et je
 > l'archive sur un dépôt pérenne pour obtenir un identifiant (DOI) que
-> j'insère dans la section "Supplementary Materials" de l'article.
+> je référence dans l'article.
 > Ainsi, les relecteurs peuvent s'assurer de la reproductibilité de mon
 > étude et j'ai la garantie de disposer de la bonne version des
 > fichiers s'ils me demandent des modifications, même si j'ai continué
@@ -133,12 +136,17 @@ proposent une très bonne intégration via une interface graphique des
 interactions avec Git. Il est également possible d'utiliser la ligne de
 commandes pour bénéficier de toutes les fonctionnalités de Git.
 
-Voici quelques moyens d'apprendre à utiliser Git et d'aller un peu
-plus loin :
-- Le [[http://swcarpentry.github.io/git-novice/][Software Carpentry Git tutorial]]
-- Le livre Pro Git (gratuit) en [[https://git-scm.com/book/en/v2][englais]] ou en [[https://git-scm.com/book/fr/v2][français]]. Les deux
-  premiers chapitres suffisent pour bien commencer. 
-- Le site [[https://learngitbranching.js.org/][Apprenez Git Branching]] permet d'apprendre Git
+
+## Pour en savoir plus
+
+Voici quelques moyens d'apprendre à utiliser *git* et d'aller un peu plus loin :
+
+ - *Happy Git With R* de *Jenny Bryan et al.* (https://happygitwithr.com/)
+ - Le [Software Carpentry Git tutorial](http://swcarpentry.github.io/git-novice/)
+ - Le livre Pro Git (gratuit) en [anglais](https://git-scm.com/book/en/v2) ou en 
+ [français](https://git-scm.com/book/fr/v2) (Les deux premiers chapitres suffisent 
+ pour bien commencer)
+ - Le site [Apprenez Git Branching](https://learngitbranching.js.org/) permet d'apprendre Git
   interactivement et de comprendre les branches. 
 
-> FIXME: Puisqu'on en parle, ref Git Rstudio ?
+
