@@ -1,14 +1,15 @@
 # Outils de gestion de versions
 
-La sauvegarde des étapes successives de developpement de documents
+La sauvegarde des étapes successives du développement de documents
 (textes, bases de données, codes...) est une des briques fondamentales
 de la recherche reproductible. Elle permet en effet de retrouver
-ou reconstituer facilement des versions spécifiques et datées des documents.
-La mise en oeuvre va de la simple sauvegarde de versions des fichiers,
+ou de reconstituer facilement des versions spécifiques et datées des documents.
+La mise en œuvre va de la simple sauvegarde de versions des fichiers,
 à des sauvegardes différentielles n'enregistrant que les modifications.
 
-La mise en oeuvre d'une stratégie de gestion de version doit permettre
-d'éviter les cauchemars du type "je ne retrouve pas mon code / mes données".
+La mise en œuvre d'une stratégie de gestion de version doit permettre
+d'éviter les cauchemars du type "je ne retrouve pas mon code / mes
+données" et permet de répondre aux questions:
 
  - Quand ?
  - Qui ?
@@ -16,12 +17,12 @@ d'éviter les cauchemars du type "je ne retrouve pas mon code / mes données".
 
 ## Versionnage par nommage de fichiers
 
-Au cours des modifications d'un document, des étapes importantes
+Au cours des modifications d'un document, les étapes importantes
 devraient être sauvées explicitement. Cette approche nécessite des
 règles de nommage de fichier évitant les ambiguïtés et facilitant
 l'exploration des versions. 
 
-Il est recommandé de constituer un nom de fichier de plusieurs
+Dans ce contexte, Il est souvent recommandé de constituer un nom de fichier de plusieurs
 éléments [@REF: (http://qualite-en-recherche.cnrs.fr/spip.php?article315)] [@REF JennyBrian]:
 
 * la date de sauvegarde, sous format AAAAMMJJ ou AAAA_MM_JJ
@@ -34,11 +35,21 @@ Il est recommandé de constituer un nom de fichier de plusieurs
 * un numéro de version du document qui sera incrémenté aux étapes
 remarquables de l'évolution du document (v01, v02...)
 
-Il est également recommandé d'éviter l'utilisation de signes diacritiques,
-de caractères spéciaux et d'espaces. La longueur du titre ne devrait
-pas dépasser 31 caractères, extension comprise.
+Ces informations sont une forme appauvrie de *méta-données* que l'on
+indique directement dans le nom du fichier lorsque le format de
+données ou le système de fichiers utilisé ne permet pas de les
+conserver de façon pérenne. Cette information est assez grossière
+puisque dans le cas où plusieurs personnes ont travaillé sur un même
+fichier, on a du mal à savoir qui a fait quoi et pourquoi.
 
-### Exemple
+Mais pour des raisons de compatibilité, il est également recommandé
+d'éviter l'utilisation de signes diacritiques, de caractères spéciaux
+et d'espaces. La longueur du titre ne devrait pas dépasser 31
+caractères, extension comprise. Conserver des méta-données importantes
+de cette façon est donc une bonne habitude mais c'est une approche
+assez limitée.
+
+### Exemple {-}
 
 La chronologie de développement d'un script R pourrait être:
 
@@ -53,21 +64,26 @@ La chronologie de développement d'un script R pourrait être:
 
 ## Versionnage différentiel
 
-Le stockage des versions successives de fichiers entraine un gaspillage
+Le stockage des versions successives de fichiers entraîne un gaspillage
 d'espace de stockage, et peut devenir très incommode pour la gestion de
-projets comportants de nombreux fichiers évoluant à des vitesses différentes.
+projets comportant de nombreux fichiers évoluant à des vitesses différentes.
 Il est en général plus efficace de passer par un logiciel de gestion de version 
-qui gére automatiquement le stockage de versions différentielles des fichiers,
+qui gère automatiquement le stockage de versions différentielles des
+fichiers, les méta-données de type *qui, quoi, quand, pourquoi*,
 et permet de figer des versions du projet à des étapes cruciales du développement.
 
 Ces outils peuvent être intégrés à des logiciels (éditeurs de texte, de code, d'images...)
 ou se présenter comme des solutions autonomes (git, subversion, svn...), avec
-des interfaces "ligne de commande" ou des interfaces graphiques.
+des interfaces en ligne de commande ou des interfaces graphiques.
 
 Si le logiciel de gestion de version est installé sur l'ordinateur de l'utilisateur,
 il est prudent, voire impératif, de mettre en oeuvre une synchronisation vers
-un dépôt distant, qui peut être sur une plateforme institutionnelle (gitlab) 
-ou sur une plateforme privée (gitHub). Ces plateformes permettent en outre
+un dépôt distant, qui peut être sur une plateforme institutionnelle
+(par exemple le [GitLab de
+l'Inria](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/gitlab)
+ou de [l'IN2P3](https://gitlab.in2p3.fr/CTA-LAPP/HiPeCTA) ou encore un
+plateforme privée comme [GitHub](https://github.com/)). Ces
+plates-formes permettent en outre
 le travail collaboratif sur un projet, ou de mettre le projet à disposition 
 du public dans des versions bien définies des documents. 
 
