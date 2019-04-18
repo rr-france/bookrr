@@ -40,34 +40,34 @@ Syntaxe:
 
 ---
 
-* 01_preambule.Rmd                      -> {#A:preambule}
-* 02_RR_kezako.Rmd                      -> {#A:introduction}
-* 03_vis_ma_vie.Rmd                     -> {#A:personas}
-* 04_questions_cauchemars_recurrents.md -> {#A:cauchermars}
+* 01_preambule.Rmd                      -> `{#A:preambule}`
+* 02_RR_kezako.Rmd                      -> `{#A:introduction}`
+* 03_vis_ma_vie.Rmd                     -> `{#A:personas}`
+* 04_questions_cauchemars_recurrents.md -> `{#A:cauchermars}`
 
 ---
 
-* 05_acquisition_des_donnees.md      -> {#B:data-acquisition}
-* 07_donnees_d_entree.md             -> {#B:data-input}
-* 08_aspects_computationnels.md      -> {#B:data-output}
+* 05_acquisition_des_donnees.md      -> `{#B:data-acquisition}`
+* 07_donnees_d_entree.md             -> `{#B:data-input}`
+* 08_aspects_computationnels.md      -> `{#B:data-output}`
 * 09_donnees_de_sortie.md            ->
 
 ---
 
-10_introduction_partie_3.md          -> {#C:intro}
-11_collecte_des_donnees.md           -> {#C:data-acquisition}
-12_format_des_donnees.md             -> {#C:data-format}
-13.5_partage_et_archivage.md         -> {#C:data-share}
-13_outils_de_gestion_de_version.md   -> {#C:versioning}
-14_apprendre_a_programmer.md         -> {#C:code-learn}
-15_rendre_son_code_comprehensible.md -> {#C:code-code}
-16_eviter_les_bugs.md                -> {#C:code-bugs}
-17_environnement_logiciel.md         -> {#C:code-env}
-18_licence_et_privacy.md             -> {#C:licences}
+* 10_introduction_partie_3.md          -> `{#C:intro}`
+* 11_collecte_des_donnees.md           -> `{#C:data-acquisition}`
+* 12_format_des_donnees.md             -> `{#C:data-format}`
+* 13.5_partage_et_archivage.md         -> `{#C:data-share}`
+* 13_outils_de_gestion_de_version.md   -> `{#C:versioning}`
+* 14_apprendre_a_programmer.md         -> `{#C:code-learn}`
+* 15_rendre_son_code_comprehensible.md -> `{#C:code-code}`
+* 16_eviter_les_bugs.md                -> `{#C:code-bugs}`
+* 17_environnement_logiciel.md         -> `{#C:code-env}`
+* 18_licence_et_privacy.md             -> `{#C:licences}`
 
 ---
 
-19_annexes.md                        -> {#D:appendix}
-20_Conventions_ecriture.md           -> {#D:convention}
+* 19_annexes.md                        -> `{#D:appendix}`
+* 20_Conventions_ecriture.md           -> `{#D:convention}`
   
 
