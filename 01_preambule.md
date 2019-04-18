@@ -2,7 +2,7 @@
 
 Ce livre s'adresse à tout acteur de la recherche scientifique qui : 
 - se pose des questions sur la recherche reproductible ou 
-- souhaite améliorer ses pratiques
+- souhaite améliorer ses pratiques.
 
 L'objectif de cet ouvrage est de donner les outils pour comprendre les enjeux de la recherche reproductible et permettre à un chercheur de vérifier ou d'obtenir de nouveau les résultats d'un autre chercheur (cet autre chercheur pouvant être lui-même plus tard). Notre ambition est d'apporter des solutions avec un niveau de technicité varié, permettant à chacun d'améliorer sa pratique dans son domaine et selon ses moyens.
 
