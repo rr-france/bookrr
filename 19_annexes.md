@@ -74,9 +74,9 @@ En 2015, il a co-fondé avec [Konrad Hinsen](https://github.com/khinsen), la rev
 
 ## Facilitatrice
 
-Elisa de Castro Guerra, Active Design
+Elisa de Castro Guerra, ActivDesign
 
-Graphiste, membre de l’[AFGRAL](https://afgral.org/) (association francophone des graphistes libres) et présidente de [FlossManuals](https://www.flossmanualsfr.net/), Elisa de Castro Guerra est spécialiste du dessin vectoriel et des stratégies en ligne. Elle a travaillé sur le développement d’applications web pendant plusieurs années. E. de Castro Guerra **milite pour l’utilisation des logiciels libres**, en particulier par **la facilitation d’écriture de documentations en langue française**. E. de Castro Guerra anime ainsi régulièrement des book sprints pour des associations, des entreprises.
+Formatrice à [Activdesign] (https://activdesign.eu) et présidente de [Floss Manuals Francophone](https://www.flossmanualsfr.net/), Elisa de Castro Guerra est spécialisée en création numérique et web. Elle travaille sur le développement d’applications web depuis plusieurs années. E. de Castro Guerra **milite pour l’utilisation des logiciels libres**, en particulier par **la facilitation d’écriture de documentations en langue française**. E. de Castro Guerra anime ainsi régulièrement des book sprints pour des associations, des entreprises.
 
 ## Coordinatrice du projet, co-facilitatrice
 
