@@ -44,7 +44,7 @@ recherche ainsi que les doublons de versions successives). Elle
 correspond à la l'ensemble du schéma ci-dessous (donc à tout le système 
 d'exploitation).
 
-![Schéma des différents environnements logiciel](img/schemaEnvirLogi.png)
+![Schéma des différents environnements logiciel](img/schemaEnvirLogi2.png)
 
 Cette description est donc soit trop partielle et pas assez précise,
 ou au contraire trop étendue (et il existe d'ailleurs un continuum 
