@@ -26,77 +26,86 @@ pour certains formats.
 On distingue 3 grand types de formats :
 
  - les formats fermés/propriétaires pour lesquels le risque de perte de lisibilité 
- n'est pas maîtrisé par l'utilisateur et qui nécessite que d'autres dispose du logiciel
- nécessaire (parfois couteux) pour pour réutiliser les données.
+ n'est pas maîtrisé par l'utilisateur, et qui nécessitent que d'autres disposent 
+ également du logiciel nécessaire (parfois couteux) pour pouvoir réutiliser les données.
   
  - les formats illisible par l'humain (tel que les formats binaires ou de description de 
  page tel que le pdf) qui nécessitent une étape de décodage, et qui peuvent parfois mal 
  supporter la transition entre les systèmes d'exploitation et les architectures matérielles. 
  
- - les formats texte (tels que .csv)
+ - les formats texte (tels que .csv) qui sont lisibles par les humains comme par les 
+ machines, qui sont très interopérables, et qui dont les modifications peuvent être 
+ enregistrées par les outils de suivi de version (voir le chapitre 13 " outils de gestion 
+ de versions ")
 
-Par exemple, pour des tables de données simples, le format .csv est recommandé, et on évitera les versions plus ou moins 
-propriétaires ou spécifiques à un tableur (.dot, .xsl, .xslx...).
+Par exemple, pour des tables de données simples, les formats .csv ou .tsv sont recommandé, 
+plutôt que les versions plus ou moins propriétaires ou spécifiques à un tableur (.dot, .xsl, 
+.xslx, ...) qui peuvent parfois contenir des informations très difficile à lire pour la machine
+(cellules colorées, cellules fusionnées, etc).
 
-À noté que certains formats de fichier prévus à cet effet permettent l'archivage en binaire de manière transparente (hdf5).
+Dans la mesure du possible, les bonnes pratiques sont de privilégier ces formats textes qui sont 
+lisibles à la fois par l'humain et par la machine, et d'éviter les formats propriétaires et codé.
+Ce n'est cependant pas toujours possible. Dans ce cas, il est préférable d'utiliser les standards
+de sa communauté plutôt que des formats exotiques.
+
+Pour des données plus complexes, de type hiérarchique, des formats adaptés, 
+ouverts, et interopérable existe (comme par exemple hdf5 ou xml). [REF *AL* ou *NR*]
 
 
-
-TODO Pour des données plus complexes, de type hiérarchique, des formats ouverts et adaptés doivent être envisagées (hdf5, xml).
-[*NR* ou *AL*]
+## Pour en savoir plus
+[*SG*] tidy data [Ref Wickham, Hadley. "Tidy data". *Journal of Statistical Software* 59(10) (2014): 1-23]
 
 
 # redondance avec collecte ?
 
 ## La présentation des résultats numériques
 
-Lors du stockage de données numériques il est primordial 
-d'éviter la perte ou l'érosion d'information afin de garantir
-la réutilisabilité des données. 
-Ceci implique, outre une documentation exhaustive précisant
-les unités et la provenance des résultats, de gérer 
-correctement leur représentation numérique. *SG*
-[Wilkinson, M. D. et al. The FAIR Guiding Principles for scientific
+Lors du stockage de données numériques il est primordial d'éviter la perte ou l'érosion 
+de l'information. Ceci implique, outre une documentation exhaustive précisant
+les unités et la provenance des résultats, de gérer correctement leur représentation 
+numérique. [*SG*] [REF Wilkinson, M. D. et al. The FAIR Guiding Principles for scientific
 data management and stewardship. Sci. Data 3:160018 doi:
 10.1038/sdata.2016.18 (2016).]
 
-**Nombre de chiffres significatifs et incertitudes**
-Cela concerne en particulier le choix du nombre de chiffres
-significatifs à reporter dans une table de données.
+### Nombre de chiffres significatifs
 
-Il est tentant, dans un fichier de données d'inclure tous 
-les chiffres significatifs donnés par le logiciel, mais
-cela peut conduire à une inflation inutile des tailles de 
-fichiers, diminuant l'efficacité énergétique du projet.
+Les calculs numériques sont effectués avec une précision arbitraire, et il faut donc 
+choisir du nombre de chiffres significatifs à reporter dans une table de données ou de 
+résultats. Il est tentant, dans un fichier de résultat d'inclure tous les chiffres 
+significatifs dont on dispose, mais cela n'est ni necessairement souhaitable (peut conduire 
+à une inflation inutile des tailles de fichiers) ni nécessairement la précision réelle
+dont on dispose (par exemple, R n'affiche pas tous ses chiffres significatifs avec 
+sa commande `print()`). 
 
-Les résultats de mesure, physique ou virtuelle, devraient
-idéalement être accompagnés d'une incertitude [@GUM].
-Dans ce cas, la recommendation en métrologie est d'arrondir
-(par excès) l'incertitude à deux chiffres significatifs,
-et de reporter le résultat au même niveau décimal.
-Par exemple, si le résultat de mesure vaut 1.23456789 et
-l'incertitude vaut 0.00456, on reportera 1.2346 
-avec une incertitude de 0.0046. On évitera dans un tableau
-les notations du type 1.2346(46) ou 1.2346 ± 0.0046,
-qui peuvent fragiliser la lecture automatique.
 
-Une exception à cette règle concerne les matrices de 
-variance/covariance dont les éléments doivent être
-arrondis de manière à assurer qu'elles restent définies 
-positives, en exigeant par exemple que la plus petite
-valeur propre de la matrice garde deux chiffres 
-significatifs? [Evaluation of measurement data – 
-Supplement 2 to the "Guide to the expression of 
-uncertainty in measurement" – Extension to any number 
-of output quantities JCGM 102:2011, Definition 3.21  
+### Incertitude
+
+Les informations devrait idéalement toujours être accompagnés d'une incertitude. Cela 
+s'applique à la fois aux mesures, (qu'elles soient physiques ou virtuelles), ainsi qu'aux 
+résultats d'analyse (par exemple des estimations) [@GUM].
+
+Par exemple la recommendation en métrologie est d'arrondir (par excès) l'incertitude à 
+deux chiffres significatifs, et de reporter le résultat au même niveau décimal. Par exemple, 
+si le résultat de mesure vaut 1.23456789 et l'incertitude vaut 0.00456, on reportera 1.2346 
+avec une incertitude de 0.0046. On évitera dans un tableau les notations du type $1.2346(46)$ 
+ou $1.2346 \pm 0.0046$, qui peuvent fragiliser la lecture automatique par une machine.
+
+Une attention particulière doit être porter à certains objets afin de respecter leurs propriétés
+intrinsèques. Par exemple, les éléments d'une matrice de variance/covariance doivent être
+arrondis de manière à s'assurer que celle-ci reste définies positives (en exigeant par exemple 
+que la plus petite valeur propre de la matrice garde deux chiffres significatifs) [*SG*] 
+[REF Evaluation of measurement data – Supplement 2 to the "Guide to the expression of 
+uncertainty in measurement" – Extension to any number of output quantities JCGM 102:2011, Definition 3.21  
 (https://www.bipm.org/utils/common/documents/jcgm/JCGM_102_2011_E.pdf)]
 
-Idéalement, l'auteur du jeu de données devrait se conformer
-aux pratiques établies de sa communauté, et sinon, s'assurer
-que son choix de représentation n'affecte pas les résultats
-pour un scénario plausible de réutilisation des données.
+
+## Résumé 
+
+Le chercheur doit donc avoir en tête les bonnes pratiques établies dans sa communauté, et 
+tenter de s'assurer que son choix de représentation permette (voire facilite)
+la réutilisation de ses données et de ses résultats.
 
 
 ## Pour en savoir plus
 
-
+TODO ??
