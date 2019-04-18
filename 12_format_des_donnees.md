@@ -123,9 +123,15 @@ sa commande `print()`).
 
 Les informations devrait idéalement toujours être accompagnés d'une incertitude. Cela 
 s'applique à la fois aux mesures, (qu'elles soient physiques ou virtuelles), ainsi qu'aux 
-résultats d'analyse (par exemple des estimations) [@GUM].
+résultats d'analyse (par exemple des estimations) *SG* [@GUM: Évaluation des données de mesure – 
+Guide pour l'expression de l'incertitude de mesure, JCGM 100:2008 
+(https://www.bipm.org/utils/common/documents/jcgm/JCGM_100_2008_F.pdf)].
 
-Par exemple la recommendation en métrologie est d'arrondir (par excès) l'incertitude à 
+Par exemple la recommendation en métrologie 
+*SG* [@GUM: Évaluation des données de mesure – 
+Guide pour l'expression de l'incertitude de mesure, JCGM 100:2008 
+(https://www.bipm.org/utils/common/documents/jcgm/JCGM_100_2008_F.pdf)]
+est d'arrondir (par excès) l'incertitude à 
 deux chiffres significatifs, et de reporter le résultat au même niveau décimal. Par exemple, 
 si le résultat de mesure vaut 1.23456789 et l'incertitude vaut 0.00456, on reportera 1.2346 
 avec une incertitude de 0.0046. On évitera dans un tableau les notations du type $1.2346(46)$ 
