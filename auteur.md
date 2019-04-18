@@ -1,7 +1,7 @@
 
 # Portraits des auteurs
 
-Ce livre a été rédigé de manière collaborative.
+Ce livre a été rédigé de manière collaborative par plusieurs auteurs. Qui sont nos auteurs ?
 
 ## Loïc Desquilbet
 
