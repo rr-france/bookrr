@@ -1,3 +1,5 @@
+# Quatrième de couverture  {-}
+
 Pour un chercheur, il n'y a rien de plus frustrant que l'impossibilité de
 reproduire des résultats majeurs obtenus quelques mois auparavant. Les causes
 de ce type de déconvenues sont multiples, et parfois pernicieuses. Ce phénomène
@@ -14,7 +16,7 @@ Avec ce livre, étudiants et chercheurs devraient tous trouver des moyens
 efficaces et à leur portée pour améliorer leurs pratiques de la recherche
 reproductible.
 
-
+-----
 
 For a researcher, there is nothing more frustrating than the failure to
 reproduce major results obtained a few months back. The causes of such
