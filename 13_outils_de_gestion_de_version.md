@@ -87,32 +87,63 @@ plates-formes permettent en outre
 le travail collaboratif sur un projet, ou de mettre le projet à disposition 
 du public dans des versions bien définies des documents. 
 
-Pour une recherche reproductible, il devrait devenir automatique de fournir 
+Pour que la recherche soit reproductible, il devrait devenir systématique de fournir 
 au lecteur un lien vers la versions des données/codes utilisés dans un article.
 Pour cela, il est conseillé d'activer en plus un archivage pérenne des 
-versions importantes du projet sur un dépot dournissant un identifiant 
-pérenne (doi). Par exemple Zenodo (public) ou Figshare (privé). 
+versions importantes du projet sur un dépôt fournissant un identifiant 
+pérenne. Ce sujet sera abordé dans le Chapitre \@ref(partage-archivage). Dans tous les cas, avant de choisir une
+solution, il est essentiel se renseigner sur les pratiques en cours dans votre
+communauté de recherche.
 
-Avant de choisir une solutions, il peut être intéressant de se 
-renseigner sur les pratiques dans la communauté de recherche.
+### Exemple {-}
 
-### Exemple
+Voici un témoignage d'un chercheur dont la pratique quotidienne permet
+d'obtenir aisément une recherche reproductible:
 
-Lors de l'élaboration d'une étude statistique, je développe des codes en R
-pour traiter les données, générer des tableaux de résultats en latex et
-des figures en png. En parallèle, je rédige l'article en latex.
+> Lors de l'élaboration de mes analyses statistiques, je développe des
+> codes en R pour traiter les données, générer des tableaux de
+> résultats en LaTeX et des figures en png. En parallèle, je rédige
+> l'article en LaTeX.
+> 
+> Tous les codes et l'article sont suivis dans un gestionnaire de
+> version local (j'utilise git). Les tableaux et les figures sont des
+> résultats secondaires que je peux regénérer facilement. À chaque
+> étape de modification d'un document, j'effectue un "commit" qui met
+> à jour la base de version locale. Après un certain nombres de
+> "commit", je me synchronise avec le dépôt distant en y propageant
+> mes modifications locales, m'assurant ainsi d'une sauvegarde
+> régulière. Réaliser régulièrement ces opérations est l'occasion pour
+> moi de bien réfléchir à ce que je fais, de vérifier que j'ai bien
+> sauvegardé tout ce qu'il fallait, et d'en profiter pour expliquer
+> dans les messages de commits ce que je fais.
+> 
+> Lorsque je soumets l'article, je fige une version du projet, et je
+> l'archive sur un dépôt pérenne pour obtenir un identifiant (DOI) que
+> j'insère dans la section "Supplementary Materials" de l'article.
+> Ainsi, les reviewers peuvent s'assurer de la reproductibilité de mon
+> étude et j'ai la garantie de disposer de la bonne version des
+> fichiers s'ils me demandent des modifications, même si j'ai continué
+> à développer mes codes en attendant leur retour.
 
-Tous les codes et l'article sont suivis dans un gestionnaire de version local
-(les tableaux et figures sont des résultats secondaires que je peux 
-regénérer facilement): à chaque étape de modification d'un document,
-j'effectue un "commit" qui met à jour la base de version locale.
-Après un certain nombres de "commit", je pousse/"push" les modifications
-vers le dépôt distant, m'assurant d'une sauvegarde régulière.
+Pour en savoir davantage sur la gestion de version, vous pouvez vous
+rapporter au module 1 du [MOOC sur la recherche
+reproductible](https://learninglab.inria.fr/mooc-recherche-reproductible-principes-methodologiques-pour-une-science-transparente/)
+qui vous permettra de vous familiariser avec GitLab via une mise en
+condition réelle. 
 
-Lorsque je soumets l'article, je fige une version du projet, 
-et je l'archive sur le dépôt pérenne pour obtenir un doi que
-j'insère dans la section "Supplementary Materials" de l'article.
-Ainsi, les reviewers peuvent s'assurer de la reproductibilité
-de mon étude et j'ai la garantie de disposer de la bonne version
-des fichiers s'ils me demandent des modifications, même si j'ai 
-continué à développer mes codes en attendant leur retour.
+GitLab et GitHub sont des sur-couches Web au logiciel Git qui
+permettent une utilisation simplifiée mais ne donnent pas accès à
+l'ensemble de ses fonctionnalités. Les éditeurs comme Rstudio
+proposent une très bonne intégration via une interface graphique des
+interaction avec Git. Il est également possible d'utiliser la ligne de
+commandes pour bénéficier de toutes les fonctionnalités de Git.
+
+Voici quelques moyens d'apprendre à utiliser Git et d'aller un peu
+plus loin :
+- Le [[http://swcarpentry.github.io/git-novice/][Software Carpentry Git tutorial]]
+- Le livre Pro Git (gratuit) en [[https://git-scm.com/book/en/v2][englais]] ou en [[https://git-scm.com/book/fr/v2][français]]. Les deux
+  premiers chapitres suffisent pour bien commencer. 
+- Le site [[https://learngitbranching.js.org/][Apprenez Git Branching]] permet d'apprendre Git
+  interactivement et de comprendre les branches. 
+
+> FIXME: Puisqu'on en parle, ref Git Rstudio ?
