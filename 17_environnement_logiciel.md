@@ -58,7 +58,7 @@ reproduire ce dernier en pratique.
 
 ## Pour en savoir plus 
 Pour vous former un peu plus, vous pouvez vouloir vous rapporter au
-module 4 sur [MOOC sur la recherche
+module 4 du [MOOC sur la recherche
 reproductible](https://learninglab.inria.fr/mooc-recherche-reproductible-principes-methodologiques-pour-une-science-transparente/)
 et aux ressources correspondantes
 ([slides](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module4/slides/C028AL_slides_module4-fr-gz.pdf),
