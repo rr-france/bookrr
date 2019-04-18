@@ -43,15 +43,13 @@ Arnaud Legrand co-pilote [le Mooc "Recherche reproductible"](https://www.fun-moo
 - [suivre A. Legrand sur Twitter](http://twitter.com/arnaudlegrand17)
 
 ## Pascal Pernot
-Enseignant-chercheur, Pascal Pernot est 
-physico-chimiste théoricien et directeur de recherche au CNRS. 
+Pascal Pernot est physico-chimiste théoricien et directeur de recherche au CNRS. 
 Ses thématiques principales sont la gestion des incertitudes en modélisation physico-chimique, 
-et notamment la quantification des incertitudes de prédiction des méthodes de chimie quantique (DFT…) 
-et moléculaire (simulation moléculaire…). 
-Il assure des formations en lien avec les méthodes standardisées de propagation des incertitudes, 
-ce qui l’a sensibilisé au vocabulaire international de métrologie, et à l’intérêt de ce type de vocabulaire. 
-Il utilise des notebooks Rmarkdown et de 
-l’environnement Rstudio/Github/Zenodo pour accompagner ses publications des données et codes nécessaires à la reproduction des résultats.
+et notamment la quantification des incertitudes de prédiction des méthodes de chimie quantique
+et moléculaire. 
+Il assure des formations en lien avec les méthodes standardisées de propagation des incertitudes. 
+Il utilise l’environnement Rstudio/Github/Zenodo pour accompagner 
+ses publications des données et codes nécessaires à la reproduction des résultats.
 
 - [page web](http://pagesperso.lcp.u-psud.fr/pernot/) 
 - [GitHub « Reproducible Research »](https://github.com/ppernot/Reproducible-Research)
@@ -90,45 +88,6 @@ Ses différents postes l’ont amenée à travailler dans les domaines de l’in
 la communication en BU et les services aux chercheurs. 
 S. Granger est co-pilote du collège « Compétences et formations » 
 du [Comité pour la Science Ouverte](https://www.ouvrirlascience.fr/presentation-du-comite/).
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
