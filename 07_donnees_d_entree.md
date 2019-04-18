@@ -18,7 +18,7 @@ vous recevez vos données avec une certaine précision mais vous sauvegardez ces
 données avec une précision moindre. Vous serez alors confronté à une perte d'information
 irréversible : une partie de l'information s'est littéralement évaporée.
 De même, dans le cas de résultats produisant un déluge de données (comme par
-exemple le Large Hydron Collider) et devant l'impossibilité de tout
+exemple le *Large Hydron Collider*) et devant l'impossibilité de tout
 sauvegarder, il faut sélectionner les données à sauvegarder, sachant que
 les autres seront irrémédiablement perdues. Une mauvaise décision initiale peut
 se révéler catastrophique pour peu que vous ayez besoin de ces données
@@ -29,10 +29,10 @@ quelqu'un peut venir les modifier par inadvertance et à votre insu, changeant
 ainsi les conclusions de vos analyses.
 
 
-## Indexation et Métadonnées
+## Traçabilité de la source des données 
 
 Quand bien même l'intégrité des données aurait été assurée, l'absence
-d'information descriptive sur ces données (notices ou métadonnées) peut causer de
+d'information descriptive sur la source des données (métadonnées) peut causer de
 nombreux problèmes. Vos données sont disponibles mais impossible de comprendre ce qu'elles
 représentent exactement. Par exemple : des données sont collectées dans la
 littérature, mais les références bibliographiques ne sont pas mentionnées ou s'avèrent lacunaires. Un problème pouvant être perçu comme formel constitue en réalité un manque de traçabilité portant atteinte à la reproductibilité.
@@ -42,8 +42,8 @@ littérature, mais les références bibliographiques ne sont pas mentionnées ou
 
 Lorsque vous manipulez de très larges volumes de données (en termes de nombre
 d'échantillons) il devient tout à fait possible de perdre, non pas les données,
-mais l'accès à ces données. Imaginez : vous avez utilisé un nommage particulier des fichiers (par exemple, pour indiquer la nature de la donnée : well done!) mais vous avez égaré le fichier expliquant les règles
-de nommages (too bad). Alors que vous possédez l'intégralité de vos données, vous vous trouvez incapable les
+mais l'accès à ces données. Imaginez : vous avez utilisé un nommage particulier des fichiers (par exemple, pour indiquer la nature de la donnée : *well done*!) mais vous avez égaré le fichier expliquant les règles
+de nommages (*too bad*). Alors que vous possédez l'intégralité de vos données, vous vous trouvez incapable les
 utiliser.
 
 
@@ -61,9 +61,9 @@ vous changerez de machine et observerez alors des valeurs complètement
 erratiques, vous laissant à penser que vos données auront été compromises.
 
 Plus généralement, stocker des données numériques sans en préciser les unités
-ni les conventions de codages asociées constitue un vecteur important de risques,
+ni les conventions de codages associées constitue un vecteur important de risques,
 notamment si un tiers désire les réutiliser. Cela fut le cas pour la
-sonde "Mars Climate Orbiter" qui s'est désintégrée à la surface de Mars en
+sonde "*Mars Climate Orbiter*" qui s'est désintégrée à la surface de Mars en
 raison d'une communication entre un système de mesure anglo-saxon (émission) et
 un système métrique (réception).
 
@@ -74,14 +74,14 @@ parfaite, on peut les retrouver très facilement et pourtant, elles s'avèrent
 inutilisables. Comment expliquer ce paradoxe? 
 Les données sont généralement sauvegardées dans un format pouvant être ouvert
 ou fermé (propriétaire). 
-Or si le format est fermé, vous ne pouvez pas contrôler l'évolution de ce format. Prenez par exemple un fichier Word créé il y aune vingtaine d'années, pouvez-vous encore le lire aujourd'hui ? 
+Or si le format est fermé, vous ne pouvez pas contrôler l'évolution de ce format. Prenez par exemple un fichier Word créé il y a une vingtaine d'années, pouvez-vous encore le lire aujourd'hui ? 
 Votre version de Word vous assure-t-elle une compatibilité avec ce
 format obsolète ? Vous avez répondu par la négative à ces items? Considérez alors les données comme inutilisables. 
 
 
 ## Que faire ?
 
-Un archivage pérenne des données, leur associer des métadonnées
+Privilégier des formats ouverts, assurer un archivage pérenne des données et leur associer des métadonnées
 pertinentes sur des serveurs institutionnels ou publics constitue actuellement l'une des meilleures manières
 de se prémunir contre la perte de données (cf. Chap. **"Outils de gestion de
 version / Archivage"**).
