@@ -34,18 +34,6 @@ Je n'ai jamais pu reproduire cet événement.
 En faisant de la bibliographie, j'ai réalisé que ce type de simulation
 était affecté par du "chaos numérique". Je n'ai plus confiance dans mes résultats."
 
----
-QUID DE CETTE PORTION???
-- Utilisation de super-calculateurs, serveurs partagés sans
-  réservation de l'allocation mémoire et du coup ça swappe
-  - ou bien les difficultés liées à l'utilisation d'un
-    supercalculateur (mouvements de données, 1 vs. 12. vs. 1000
-    machines)
-  - c'est lourd donc pas de prise de notes
-- Instabilité quand on passe en parallèle
-- Différence de résultats dans maximisation de vraissemblance entre
-  single/double/quadruple precision
----
 
 ## *Mohammed B., ingénieur d'étude en calcul scientifique*  {1:personna:ingenieur}
 >"En tant qu'ingénieur du labo, je suis reponsable de la maintenance du logiciel **TODO**, développé il y a 15 ans par un post-doctorant très doué. Il a depuis quitté le labo et personne ne sait vraiment comment modifier le code de ce logiciel alors qu'une bonne partie de notre activité de recherche repose sur son utilisation. J'ai collé pas mal de rustines qui nous ont permis de tenir un certain temps face à l'évolution de nos infrastructures et de nos systèmes. Mais depuis la mise à jour de notre parc informatique il y a 6 mois, ce n'est plus possible. J'ai été obligé de garder une machine sous l'ancien OS pour pouvoir continuer à faire tourner le logiciel. Mes collègues n'ont pas l'air trop inquiets, mais ça m'angoisse parce que nous avons cumulé une grosse dette technique. Je ne sais pas ce qui va se passer quand cette vieille bécane va nous lâcher ! "
