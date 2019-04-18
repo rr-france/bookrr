@@ -1,3 +1,5 @@
+# (PART) Nonsence {-}
+
 # Le temps des changements?
 
 Nous espérons que les anecdotes du chapitre **XX** vous ont semblé vraisemblables, mais vous souhaitons de ne pas trop vous reconnaître dans ces situations de crise ! Nous essayons de vous proposer d'intervenir de manière curative, mais aussi préventive. 

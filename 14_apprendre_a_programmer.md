@@ -70,9 +70,10 @@ print(mean(table_tri[1:(nrow(table_tri) / 2), 1])))
 
 En faisant abstration de la syntaxe particulière (il s'agit ici du langage R)
 de ce programme simple, on comprend néanmoins à la lecture ce qu'il fait:
-charger les données, les trier puis calculer la moyenne. On a de fait
-simplement traduit notre pensée (le traitement que l'on souhaitait réaliser) en
-jeu d'instructions. L'énorme avantage (par rapport à Excel) est que ce
+(1) charger les données, (2) les trier,  puis (3) calculer la moyenne. 
+On a de fait simplement traduit notre pensée (le traitement que l'on 
+souhaitait réaliser) en jeu d'instructions. 
+L'énorme avantage de cette approche (par rapport à Excel) est que ce
 programme réalise deux objectifs, il effectue d'une part les traitements et
 d'autre part il documente cette chaîne de traitements, si bien que quiconque
 est maintenant en mesure de comprendre et de reproduire ces traitements,
@@ -82,66 +83,76 @@ est maintenant en mesure de comprendre et de reproduire ces traitements,
 ## Le choix des armes
 
 Apprendre à programmer n'est pas tout à fait équivalent à apprendre un langage
-de programmation. Il est nécessaire de comprendre au préalable ce que l'on peut
-attendre d'un programme et comment exprimer ce que l'on souhaite faire de façon
-non ambigue car l'ordinateur est extrèmement bête et ne fera que ce que vous
-lui demandez de faire, ni plus, ni moins. L'apprentissage de la programmation
-passe donc par la découverte d'un petit nombre de concepts que l'on va
-retrouver dans (à peu près) l'ensemble des langages de programmation. Notez que
-nous parlons de langages au pluriel car il existe bien plus de langages de
-programmations que de langues parlées sur Terre. Les raisons de l'existence de
-tant de langages différents sont multiples, mais heureusement pour nous, nous
-avons vu ces dernières deux langages devenir les langages de références en
-Science, à savoir: Python et R. Entendons-nous bien, nous ne disons pas que ce
-sont les seuls langages de la Science (loin de là) mais néamoins, ces deux
-langages ont su traverser les frontières de tous les champs disciplinaires si
-bien qu'il y a aujourd'hui des conférences scientifiques qui leur sont
-entièrmeent dédiés où l'on peut voir un physicien théorique discuter avec un
-sociologue ou bien un doctorant enseigner à un professeur.
+de programmation. 
+Il est nécessaire de comprendre au préalable ce que l'on peut attendre d'un 
+programme et comment exprimer ce que l'on souhaite faire de façon non ambigüe 
+car l'ordinateur est extrèmement bête et ne fera que ce que vous lui demandez 
+de faire, ni plus, ni moins. 
+L'apprentissage de la programmation passe donc par la découverte d'un petit 
+nombre de concepts que l'on va retrouver dans (à peu près) l'ensemble des langages 
+de programmation. 
+Notez que nous parlons de langages au pluriel car il existe bien plus de langages de
+programmation que de langues parlés sur Terre. 
+Les raisons de l'existence de tant de langages différents sont multiples, 
+mais heureusement pour nous, nous avons vu ces dernières années deux langages 
+devenir les langages de références en science des données, à savoir: Python et R. 
+Entendons-nous bien, nous ne disons pas que ce sont les seuls langages utilisables
+dans ce contexte (loin de là) mais néamoins, ils ont su traverser les frontières 
+de tous les champs disciplinaires, si bien qu'il y a aujourd'hui des conférences 
+scientifiques qui leur sont entièrement dédiées et où l'on peut voir un physicien 
+théorique discuter avec un sociologue ou bien un doctorant enseigner à un professeur.
 
-Pour commencer à programmer, nous ne saurions donc trop conseiller que de
-commncer par apprendre un de ces deux langages, le choix entre les deux vous
-appartenant. Pour faire ce choix, vous avez tout intèrêt à observer les
-pratiques dans votre domaine ou bien encore à regarder les programmes des
-conférences telles que Scipy, EuroScipy, useR!, Les Rencontres R.
+Pour commencer à programmer, nous ne saurions donc trop vous conseiller de
+commencer par apprendre un de ces deux langages. 
+Le choix entre les deux vous appartient, sachant que vous avez tout intèrêt 
+à observer les pratiques dans votre domaine ou bien encore à regarder les 
+programmes des conférences telles que Scipy (http://conference.scipy.org), 
+EuroScipy (https://www.euroscipy.org), useR! (http://www.user2019.fr), 
+Les Rencontres R(https://r2018-rennes.sciencesconf.org) ...
 
 
 ## Ressources
 
 Il existe une multitude de ressources pour apprendre à programmer en R ou en
-Python. En raison de cette multitude de ressources, il est difficile de choisir
-lesquelles sont pertinentes. C'est la raison pour laquelle nous donnons
-ci-dessous une liste restreinte de ressource que nous jugeons de qualité.
+Python, notamment les formations continues proposées par les institutions. 
+En raison de cette multitude de ressources, il est difficile de choisir
+lesquelles sont les plus pertinentes. 
+C'est la raison pour laquelle nous donnons ci-dessous une liste très restreinte 
+de ressource accessibles en ligne que nous jugeons de qualité.
 
-### MOOC
+### MOOCs
 
-* R: ?
-* Python: ?
+* _Introduction à la statistique avec R_ (https://www.fun-mooc.fr/courses/UPSUD/42001S06/session06/about)
+
+* _Python : des fondamentaux à l'utilisation du langage_ (https://www.fun-mooc.fr/courses/inria/41001S03/session03/about)
 
 
 ### Tutoriels
 
-* R: ?
-* Python: Tutoriel du site officiel de Python 
+* _Begin’R_ (http://beginr.u-bordeaux.fr)
+
+* _Le tutoriel Python_ (https://docs.python.org/fr/3/tutorial)
 
 
 ### Livres
 
-* R: ?
-* Python: Dive into Python
+* _R for Data Science_ (https://r4ds.had.co.nz)
 
-### Bootcamps
+* _Dive into Python_ (https://www.diveinto.org/python3)
 
-* R: Software Carpentry
-* Python: Software Carpentry
+### Ateliers en ligne "Software Carpentry"
 
+* _Programming with R_ (http://swcarpentry.github.io/r-novice-inflammation)
 
+* _R for Reproducible Scientific Analysis_ (http://swcarpentry.github.io/r-novice-gapminder)
 
+* _Programming with Python_ (http://swcarpentry.github.io/python-novice-inflammation)
 
----
+* _Plotting and Programming in Python_ (http://swcarpentry.github.io/python-novice-gapminder)
+
+<!--
 
 Les logiciels basés sur une interface graphique sont pléthores en informatique
-
 
 * Limitation de manipulations via des GUI
   * Non reproductible 
@@ -160,9 +171,8 @@ Les logiciels basés sur une interface graphique sont pléthores en informatique
   (formations doctorales et conférences)
 * 
 
-
---- 
-
 ### Abandonner les GUI et apprendre à programmer
 * quel langage
 * quelle formation
+
+-->
