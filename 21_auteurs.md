@@ -1,9 +1,12 @@
 
-# Portraits des auteurs
+# Portraits {-}
+
+## Auteurs {-}
 
 Ce livre a été rédigé de manière collaborative par plusieurs auteurs. Qui sont nos auteurs ?
 
-## Loïc Desquilbet
+
+### Loïc Desquilbet {-}
 
 Enseignant-chercheur en biostatistique et en épidémiologie clinique à
 [l’Ecole nationale vétérinaire d’Alfort](https://www.vet-alfort.fr/), 
@@ -13,7 +16,9 @@ compte les variables quantitatives dans un modèle multivarié. Ses enseignement
 - [site web](https://loicdesquilbet.wixsite.com/biostat-epidemio) 
 
 
-## Boris Hejblum
+
+### Boris Hejblum {-}
+
 Enseignant-chercheur en biostatistique à [l’Institut de Santé Publique d'Épidémiologie et de Développement](http://www.isped.u-bordeaux.fr/) 
 (ISPED, Université de Bordeaux), 
 Boris Hejblum est membre de l’équipe [SISTM dans le centre Inserm U1219 Bordeaux Population Health et Inria Bordeaux Sud-Ouest](https://www.inria.fr/equipes/sistm).
@@ -27,7 +32,9 @@ sous forme de paquets R open-source permettant leur réutilisation, et la reprod
 - [site web](https://borishejblum.science/) 
 - [suivre B. Hejblum sur Twitter](https://twitter.com/borishej)
 
-## Arnaud Legrand
+
+### Arnaud Legrand  {-}
+
 Chercheur au [Laboratoire d'informatique de Grenoble](http://www.liglab.fr/), 
 Arnaud Legrand pilote [l'équipe Polaris (Inria)](https://team.inria.fr/polaris/). 
 Il s'est spécialisé dans l'évaluation (simulation, observation, statistiques, analyse de traces) 
@@ -42,7 +49,9 @@ Arnaud Legrand co-pilote [le Mooc "Recherche reproductible"](https://www.fun-moo
 - [site web](http://mescal.imag.fr/membres/arnaud.legrand/) 
 - [suivre A. Legrand sur Twitter](http://twitter.com/arnaudlegrand17)
 
-## Pascal Pernot
+
+### Pascal Pernot {-}
+
 Pascal Pernot est physico-chimiste théoricien et directeur de recherche au CNRS. 
 Ses thématiques principales sont la gestion des incertitudes en modélisation physico-chimique, 
 et notamment la quantification des incertitudes de prédiction des méthodes de chimie quantique
@@ -54,7 +63,9 @@ ses publications des données et codes nécessaires à la reproduction des résu
 - [page web](http://pagesperso.lcp.u-psud.fr/pernot/) 
 - [GitHub « Reproducible Research »](https://github.com/ppernot/Reproducible-Research)
 
-## Nicolas Rougier
+
+### Nicolas Rougier {-}
+
 Nicolas P. Rougier est chercheur à l'Inria et 
 membre de l'équipe [Mnemosyne project](https://mnemosyne-proj.org/) 
 dont l'approche se situe à la frontière entre les neurosciences intégratives et computationnelles en association avec [l'Institut des maladies neurodégénératives](https://www.imn-bordeaux.org/), 
@@ -66,9 +77,10 @@ Il anime régulièrement des formations pour des doctorants, des chercheurs, des
 - [site web](http://www.labri.fr/perso/nrougier/) 
 - [suivre N. Rougier sur Twitter](https://twitter.com/NPRougier?lang=fr)
 
-# Facilitatrice
+## Facilitatrice {-}
 
-## Elisa de Castro Guerra, ActivDesign
+### Elisa de Castro Guerra, ActivDesign {-}
+
 Formatrice à [Activdesign](https://activdesign.eu/) et 
 présidente de [Floss Manuals Francophone](https://www.flossmanualsfr.net/), 
 Elisa de Castro Guerra est spécialisée en création numérique et web. 
@@ -78,9 +90,11 @@ en particulier par la facilitation
 d’écriture de documentations en langue française. 
 E. de Castro Guerra anime ainsi régulièrement des book sprints pour des associations, des entreprises.
 
-# Coordinatrice du projet
 
-## Sabrina Granger
+## Coordinatrice du projet  {-}
+
+### Sabrina Granger {-}
+
 Conservateur des bibliothèques, Urfist de Bordeaux, Université de Bordeaux
 Docteur en langue et littérature françaises (allocataire de recherche à Grenoble III), 
 S. Granger est conservateur des bibliothèques. 
@@ -90,4 +104,7 @@ S. Granger est co-pilote du collège « Compétences et formations »
 du [Comité pour la Science Ouverte](https://www.ouvrirlascience.fr/presentation-du-comite/).
 
 
+## Contribuer {-}
 
+Vous aussi lecteurs, vous pouvez contribuer en proposant une *pull-request* sur 
+le repertoire contenant les sources de ce livre à l'adresse : https://github.com/alegrand/bookrr/pulls
