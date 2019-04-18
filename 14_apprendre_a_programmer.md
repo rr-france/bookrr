@@ -1,5 +1,5 @@
 
-# Apprendre à programmer
+# Apprendre à programmer {#C:code:learn}
 
 Dans ce chapitre, nous mettons en évidence les limitations des interfaces
 graphiques en termes d'efficacité et de reproductibilité ; nous expliquons
@@ -28,7 +28,7 @@ Certes, mais entre le moment où vous avez chargé vos données initiales et
 le moment ou vous avez sauvé vos résultats, un certain nombre de
 manipulations que vous avez faites n'a pas été enregistré. 
 
-Par exemple, si vous avez trié vos données selon une certaine colonne, 
+Par exemple, si vous devez trier vos données selon une certaine colonne, 
 les données dans la feuille sauvegardée seront triées mais vous aurez 
 perdu la trace de cette opération de tri et il vous sera facile d'oublier
 de la répéter si vous devez recommencer le traitement avec un autre jeu de données 
