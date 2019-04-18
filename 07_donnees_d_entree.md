@@ -9,29 +9,31 @@ documentation (méta-données).
 
 ## Intégrité
 
-Lorsque l'on pense à l'intégrité des données, la première chose qui vient à
-l'esprit est le scénario catastrophe où les données ont été effacés. Il existe
-pourtant bien d'autres situations qui sont bien pires puisque l'intégrité des
-vos données a été compromises sans que vous vous en rendiez compte.
+Lorsque l'on évoque l'intégrité des données, la première chose qui vient à
+l'esprit est le scénario catastrophe où les données associées auraient été
+effacées ou égarées alors que, par exemple, un éditeur pointilleux vous demande
+justement de mettre à disposition les données brutes sinon votre article qui
+vient pourtant d'être accepté ne sera pas publié.  L'absence de sauvegarde des
+données est considéré commenune négligence professionnelle et être incapable de
+retrouver/fournir les données associées à une étude est une situation
+potentiellement dommageable, notamment à la réputation du responsable de
+l'étude, si des doutes sont émis a posteriori sur la validité de ces données.
 
+Mais il existe pourtant bien d'autres situations où l'intégrité des vos données
+peut être compromise sans que vous vous en rendiez compte. Par exemple, lorsque
+vous recevez vos données avec une certaine précision mais que vous sauvez ces
+données avec une précision moindre, vous aurez alors une perte d'information
+qui est de plus irréversible, de l'information s'est littéralement évaporée.
+De même, dans le cas de résultats produisant un déluge de données (comme par
+exemple le Large Hydron Collider) et devant l'impossibilité de tout
+sauvegarder, il faut faire des choix sur les données à sauvegarder, sachant que
+les autres seront irrémiadblement perdues. Une mauvaise décision initiale peut
+se révéler catastrophique pour peu que vous ayez besoin de ces données
+manquantes.
 
-Perte information / perte précision / MD5 hash / Contrôle d'accès
-Qui a accès aux données ? écriture / lecture ?
-
-L'absence de sauvegarde des données est une négligence professionnelle.  Etre
-incapable de retrouver/fournir les données associées à une étude est une
-situation potentiellement dommageable, notamment à la réputation du responsable
-de l'étude, si des doutes sont émis a posteriori sur la validité de ces
-données.
-
-Dans le cas de résultats de simulations, les temps de calcul peuvent être
-tellement énormes que ces données doivent être considérées comme
-irreproductibles en pratique et traitées comme des données primaires.
-
-Même des données archivées sur le site web d'un chercheur peuvent devenir
-inaccessibles à la communauté du jour au lendemain, par exemple si
-l'institution hébergeante refond son site web sans prendre garde à assurer la
-pérennité des urls ([URL decay](https://www.spinellis.gr/sw/url-decay/)).
+Enfin, si vous ne vous êtes pas assuré du contrôle d'accès sur vos données,
+quelqu'un peut venir les modifier par inadvertance et à votre insu, changeant
+ainsi les conclusion des vos analyses.
 
 
 ## Indexation et Méta-données
@@ -56,7 +58,7 @@ vous possédez l'intégralité de vos données tout en étant incapable les
 utiliser.
 
 
-## Conventions de codages
+## Codages et unités
 
 Lorsque vous sauvegardez des données sur un support informatique, il est
 important de comprendre qu'un certain nombre de choix sont effectués de façon
@@ -67,13 +69,14 @@ certaines machine vont lire la représentation binaire de gauche à droite alors
 d'autres le feront de droite à gauche (endianess). Si vous travaillez toujours
 avec le même type de machine, vous n'aurez pas de problème jusqu'au jour où
 vous changerez de machine et observerez alors des valeurs complètement
-erratiques, vous laissant à penser que vos données auront été compromises. Plus
-généralement, stocker des données numériques sans en préciser les unités ni les
-conventions de codages asociées est une invitation à la catastrophe, notamment
-pour un tiers désirant les réutiliser. Cela a été le cas pour la sonde "Mars
-Climate orbiter" qui s'est désintégrée à la surface de Mars en raison d'une
-communication entre un système de mesure anglo-saxon (émission) et un système
-métrique (réception).
+erratiques, vous laissant à penser que vos données auront été compromises.
+
+Plus généralement, stocker des données numériques sans en préciser les unités
+ni les conventions de codages asociées est une invitation à la catastrophe,
+notamment pour un tiers désirant les réutiliser. Cela a été le cas pour la
+sonde "Mars Climate orbiter" qui s'est désintégrée à la surface de Mars en
+raison d'une communication entre un système de mesure anglo-saxon (émission) et
+un système métrique (réception).
 
 
 ## Obsolescence des données
@@ -89,18 +92,9 @@ parfaite, on peut les retrouver très facilement et pourtant, elles sont
 inutilisables.
 
 
----
-
-Nous considérons ci-dessous quelques cas de figure typiques.
-
-## Perte d'information et de précision
-
-## Perte des données 
-
-
 ## Que faire ?
 
 Un archivage pérenne des données de la recherche avec les métadonnées
-pertinentes sur des serveurs institutionnels ou publics est la
-meilleur façon de se prémunir contre la perte de données 
-(cf. Chap. "Outils de gestion de version / Archivage").
+pertinentes sur des serveurs institutionnels ou publics est la meilleur façon
+de se prémunir contre la perte de données (cf. Chap. **"Outils de gestion de
+version / Archivage"**).
