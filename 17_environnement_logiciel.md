@@ -1,6 +1,6 @@
 # Environnement logiciel
 
-***Attention : ce chapitre aborde des sujets relativement techniques, et il eiste de nombreuses solutions pour une recherche plus reproductible avant d'aborder la question de complexe de l'environnement (qui a néanmoins son importance)***
+***Attention : ce chapitre aborde des sujets relativement techniques, et il existe de nombreuses solutions pour une recherche plus reproductible avant d'aborder la question de complexe de l'environnement (qui a néanmoins son importance)***
 
 L'environnement désigne l'ensemble exhaustif des logiciels assurant la 
 gestion de l'ordinateur et mis à contribution pour réaliser la recherche. 
@@ -100,15 +100,19 @@ de machine réelle-machine virtuelle. Une solution très populaire pour
 utiliser les containers est [Docker](https://www.docker.com/).
 
 Il existe d'ailleurs des outils permettant d'identifier et capturer automatiquement 
-un tel environnement minimum tels que [CDE](http://www.pgbovine.net/cde.html) ou [ReproZip](https://vida-nyu.github.io/reprozip/).
+un tel environnement minimum pour pouvoir le partager avec d'autres: [CDE](http://www.pgbovine.net/cde.html) ou [ReproZip](https://vida-nyu.github.io/reprozip/). Ces approches 
+automatiques sont efficaces et très pratiques mais peuvent passer à côté de
+certaines dépendances et ne permettent pas de variation. En effet, on obtient un
+environnement "binaire" figé sans sa recette de construction et il est très difficile de
+de changer une bibliothèque particulière ou de le faire évoluer.
 
 ## Les systèmes de gestion de paquets
 
-L'aproche la plus aboutie pour la reproduction de l'environnement logiciel 
-s'appuie sur les systèmes de gestions de paquets tels que NIX et GUIX [REF]. 
-Il s'agit d'outils permettant d'identifier et d'isoler très précisement 
+L'approche la plus aboutie pour la reproduction de l'environnement logiciel 
+s'appuie sur les systèmes de gestions de paquets fonctionnels tels que et [GUIX](https://www.gnu.org/software/guix/) et [NIX](https://nixos.org/).
+Il s'agit d'outils permettant de décrire et d'isoler très précisement 
 l'environnement nécessaire pour la recherche reproductible, de le partager 
 avec d'autres pour qu'ils puissent le mettre en oeuvre, et même d'y 
-apporter des modifications très précisément contrôlée afin d'évaluer l'impact
-de tels changements.
+apporter des modifications très précisément contrôlées afin d'évaluer l'impact
+de tel ou tel changement.
 
