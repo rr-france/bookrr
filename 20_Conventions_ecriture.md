@@ -8,7 +8,8 @@ Quelques conventions d'écriture pour aider à la collaboration
 ## Vocabulaire :
 
  - relecteur, rapporteur, *referee* ou *reviewer* : essaie-t-on de s'en tenir au même terme tout du long ou n'est-ce pas utile ?
- - programme/code/logiciels : quelles distinctions ?
+ - programme/code/logiciels : quelles distinctions ? -> remplacer "programme" par "code" dès que "programme" renvoit à un script ou à du code
+ - Préférer "rendre robuste" à "robustifier" ?
 
 ## Mémo ponctuation et autres sujets merveilleux :
 
