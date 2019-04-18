@@ -39,7 +39,7 @@ Cette licence permet aux autres de remixer, arranger, et adapter l'œuvre, sous 
 * citation:    `\@ref(#clef)`
 
 ---
-* Chroniques de la non reproductibilité
+* **Chroniques de la non reproductibilité**
 * 01_preambule.Rmd                      -> `{#A:preambule}`  
   Préambule
 * 02_RR_kezako.Rmd                      -> `{#A:introduction}`  
@@ -51,7 +51,7 @@ Cette licence permet aux autres de remixer, arranger, et adapter l'œuvre, sous 
 
 ---
 
-* Sources de non reproductibilité
+* **Sources de non reproductibilité**
 * 05_acquisition_des_donnees.md      -> `{#B:data:acquisition}`  
   Acquisition de l'information
 * 07_donnees_d_entree.md             -> `{#B:data:input}`  
@@ -63,7 +63,7 @@ Cette licence permet aux autres de remixer, arranger, et adapter l'œuvre, sous 
 
 ---
 
-* Solutions de la recherche reproductible
+* **Solutions de la recherche reproductible**
 * 10_introduction_partie_3.md          -> `{#C:intro}`  
   Le temps des changements ?
 * 11_collecte_des_donnees.md           -> `{#C:data:acquisition}`  
@@ -75,7 +75,7 @@ Cette licence permet aux autres de remixer, arranger, et adapter l'œuvre, sous 
 * 13_outils_de_gestion_de_version.md   -> `{#C:versioning}`  
   Versionner, versionner, versionner 
 * 14_apprendre_a_programmer.md         -> `{#C:code:learn}`  
-  Appendre à prtogrammer
+  Appendre à programmer
 * 15_rendre_son_code_comprehensible.md -> `{#C:code:good}`  
   Rendre son code compréhensible
 * 16_eviter_les_bugs.md                -> `{#C:code:bugs}`  
