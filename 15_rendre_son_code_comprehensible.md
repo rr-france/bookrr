@@ -4,12 +4,12 @@
 >
 > -- Harold Abelson
   
-Les chapitres précédents (et en particulier dans 
+Les chapitres précédents (et en particulier 
 le chap.8 "des problèmes de calculs" [bien mettre le renvoi vers ce chap.8]) 
 ont souligné l'importance des questions de diffusion, de partage de ses codes informatiques. 
 Une étape préalable à cette démarche est de rendre son code facilement 
 compréhensible par un lecteur externe. 
-Ce premier lecteur peut être un collègue, mais il suffit que quelques semaines s'écoulent pour que vous soyez votre propre pubic. 
+Ce premier lecteur peut être un collègue, comme vous-même : ce qui était clair au moment de la rédaction l'est nettement moins après quelques semaines. 
 
 Il existe là encore différents degrés de complexité permettant de faciliter 
 la compréhension de son code : 
@@ -62,7 +62,7 @@ Dans le code qui précède, le nom des variables est parfaitement clair
 et le code se passe alors de commentaire.
 
 Une autre manière de rendre son code plus lisible est de le modulariser en créant 
-des fonctions (aux noms explicites), qui permettent  :
+des fonctions aux noms explicites qui permettent  :
 - à la fois de le rendre robuste, en évitant les répétitions d'instructions et minimisant ainsi le nombre d'erreurs, 
 - mais aussi de le condenser et donc de le rendre plus lisible
 <!-- Cette approche de *Don't Repeat Yourself* est un principe qui s'oppose à *Write Everything Twice*. -->
@@ -70,63 +70,59 @@ des fonctions (aux noms explicites), qui permettent  :
 à la portée de vos variables (variable locale ou globale)
 et aux paramètres de vos fonctions afin d'éviter autant que possible les variables 
 globales, les effets de bord étant une source de confusion et d'erreur inépuisable. 
-SG à repdre
+
 Pour limiter au maximum les erreurs dans un code, il faut donc essayer de l'écrire
 de façon à la fois claire, non ambigüe, commentée et concise. 
-C'est étonnamment difficile à faire lorsqu'on débute en programmation
+Lorsqu'on débute en programmation, c'est étonnamment difficile à faire 
 car il faut s'adapter au style du langage utilisé. 
 Il faut en effet intégrer les concepts essentiels du langage de programmation 
-pour exprimer ce que l'on souhaite faire de la façon la plus élégante possible, 
-ce qu'il devient possible de faire essentiellement avec l'expérience. 
-Nous parlerons dans le chapitre suivant des différentes techniques et conseils 
+pour exprimer ce que l'on souhaite faire de la manière la plus élégante possible. 
+
+Nous parlerons dans le chapitre suivant de techniques et conseils 
 pour rendre son code plus robuste. 
 Mais avant même cette étape, nous pouvons déjà agir sur le processus d'écriture.
 
 ## Etre explicite
 
-Tim Peters a écrit "The Zen of Python" (que vous pouvez lire en écrivant
+Tim Peters a écrit *The Zen of Python* (que vous pouvez lire en écrivant
 `import this` dans une session Python) qui donne un ensemble de règles qu'il
 faut garder en tête lorsqu'on écrit un programme. 
 Les six premières lignes sont :
 
-> Beautiful is better than ugly.
+> *Beautiful is better than ugly*
 >  
-> Explicit is better than implicit.
+> *Explicit is better than implicit*
 >  
-> Simple is better than complex.
+> *Simple is better than complex*
 >  
-> Complex is better than complicated.
+> *Complex is better than complicated*
 >  
-> Flat is better than nested.
+> *Flat is better than nested*
 >  
-> Sparse is better than dense.
+> *Sparse is better than dense*
 
-Ces six conseils peuvent paraître plus ou moins évidents à mettre en oeuvre pour un
+Ces six conseils peuvent paraître plus ou moins évidents à mettre en œuvre pour un
 débutant, mais focalisons-nous sur le deuxième. Il peut être mis en
-oeuvre très simplement en refusant par exemple l'usage des *arguments par
-défaut*. "Arguments par défaut" signifie que lorsque vous appelez une fonction qui
+œuvre très simplement en refusant par exemple l'usage des " arguments par
+défaut ". " Arguments par défaut " signifie que lorsque vous appelez une fonction qui
 nécessite normalement $n$ paramètres, vous appelez celle-ci avec
 un nombre réduit *k* < *n* paramètres, et les valeurs des *n-k* paramètres manquants 
 sont complétées automatiquement avec celles définies par défaut dans la fonction. 
-C'est bien pratique (car vous économisez de l'écriture de code), mais en vous 
-reposant sur cette fonctionnalité, vous laissez implicitement le soin à la bibliothèque
-que vous utilisez de définir la valeur des paramètres à votre place. 
+C'est bien pratique : vous économisez de l'écriture de code, mais en vous 
+reposant sur cette fonctionnalité, vous laissez implicitement à la bibliothèque
+utilisée le soin de définir la valeur des paramètres à votre place. 
 Déléguer votre responsabilité à un tiers peut bien se passer la plupart du temps. 
 Enfin, jusqu'au jour où, après une mise à jour, la valeur d'un de ces *n-k* 
 paramètres par défaut est changée ! 
 Vos résultats changent, alors que votre programme n'a pas changé d'un bit. 
-Si vous aviez explicité l'ensemble de vos *n* paramètres 
-(y compris donc ceux non obligatoires car disposant d'une valeur par défaut), 
-le problème n'aurait pas eu lieu.
+Le problème aurait pu être évité : vous auriez pu expliciter l'ensemble de vos *n* paramètres, y compris les éléments non obligatoires car disposant d'une valeur par défaut.
 
 ## Commenter son code
 
-Si commenter son code peut paraître le b.a.-ba de l’écriture d'un code, 
-ce n'est pas une tâche si facile à réaliser.
-Bien commenter son code ne consiste pas à répéter dans une langue naturelle 
-ce que le programme effectue. 
-Nous allons voir en quoi cela consiste. 
-Considèrons le programme suivant:
+Commenter son code de manière pertinente est une tâche moins évidente qu'il n'y paraît.
+Il ne s'agit pas de décrire dans une langue comprise par les humains 
+ce que le programme effectue, comme nous allons le voir. 
+Considérons le programme suivant :
 
 ```R
 ninja = 100    # This is the mass. It is expressed in kilograms.
@@ -138,34 +134,31 @@ bluE_Pizza = a * ninja * turtle ** XX
 print(bluE_Pizza) # Now, let's print it on the screen
 ```
 
-Il est clair que les commentaires ci-dessus n'aident pas vraiment à comprendre
-de quoi il est question, et que la version du code avec des noms de variable
-clairs est bien plus simple à comprendre. Si un code est bien écrit,
-il se passe de presque de commentaires. 
-Donc à quoi servent les commentaires ?
-
-Les commentaires laissés par l'auteur du code s'adressent au lecteur du code 
-(qui est censé connaître le langage utilisé et un minimum le contexte du logiciel) 
-et servent par exemple à signaler les unités ou le domaine de définition
-d'une variable (toujours positive par exemple), une ruse de calcul ou
-un point un peu délicat qui devrait être amélioré, les conditions
-particulières dans lesquelles une fonction doit ou ne doit pas être
-utilisée, la raison de l'assignation d'une nouvelle valeur à une variable 
+Les commentaires ci-dessus n'aident pas vraiment à comprendre
+de quoi il retourne ; la version du code avec des noms de variable
+explicites est bien plus simple à comprendre. 
+On pourrait toutefois objecter cet argument : un code bien écrit se passe de commentaires. 
+Il s'avère que les commentaires de l'auteur du code s'adressent à son lecteur, 
+censé connaître à la fois le langage utilisé et le contexte du logiciel. 
+Les commentaires servent par exemple à signaler : 
+- les unités ou le domaine de définition d'une variable toujours positive, 
+- une ruse de calcul,
+- un point un peu délicat qui devrait être amélioré, 
+- les conditions particulières dans lesquelles une fonction doit ou ne doit pas être
+utilisée, 
+- la raison de l'assignation d'une nouvelle valeur à une variable 
 dans les données, etc. 
-Les commentaires attirent l'attention du lecteur et apportent les réponses 
-aux questions qu'il pourrait se poser en lisant ce code.
 
-Enfin, il est important de rappeler que commenter du code est une
-tâche ingrate et que la façon la plus agréable de procéder consiste à
-commenter son code au fur et à mesure qu'on l'écrit. 
-On se rend parfaitement compte de l'utilité de cette tâche importante 
-lorsqu'on reprend un code écrit plusieurs semaines ou plusieurs mois auparavant !
+Les commentaires attirent l'attention du lecteur et répondent de manière anticipée à une partie de ses questions.
+
+Enfin, il est possible d'atténuer l'austérité de cette tâche en commentant son code au fur et à mesure de sa rédaction. 
+Si commenter du code peut sembler à peu près aussi attractif que de se faire un tatouage sur le visage quand on ne souhaite pas embrasser une carrière dans le hip hop, on se rend pourtant compte de l'utilité de cette tâche une fois face à des lignes écrites plusieurs mois, voire plusieurs semaines auparavant. 
 
 ## Documenter son code
 
-Nous distinguons ici le commentaire, qui s'adresse au programmeur qui
-va chercher à comprendre ou à faire évoluer le code (_cf._ ci-dessus), 
-de la documentation, qui s'adresse quant à elle aux utilisateurs du logiciel. 
+Le commentaire s'adresse au programmeur qui
+va chercher à comprendre ou à faire évoluer le code (_cf._ ci-dessus).
+La documentation s'adresse quant à elle aux utilisateurs du logiciel. 
 Cela commence en général par un fichier `README` expliquant succinctement
 l'objectif du logiciel, comment l'installer, comment l'exécuter. 
 Au fur et à mesure que le code évolue, sa documentation peut devenir plus
@@ -173,93 +166,86 @@ conséquente et, dans ces cas, cette documentation s'intègrera souvent directem
 dans le code source grâce à des outils comme Sphynx (pour Python) ou Roxygen (pour R). 
 Il est donc important de bien faire la distinction entre ces deux
 types d'annotations (commentaire et documentation) qui peuvent se retrouver 
-tous les deux à l'intérieur du code.
+à l'intérieur du code.
 
-## Utiliser des document computationnels
+## Utiliser des document computationnels (*notebooks*)
 
 La programmation lettrée a été conceptualisée en 1984 par Donald Knuth
-[@knuth1984literate] et propose de grands principes pour produire un
+[@knuth1984literate] *SG* et propose des principes pour produire un
 code compréhensible. Il s'agit principalement de
-considérer l'écriture d'un code avant tout comme un
+considérer l'écriture d'un code comme un
 moyen d'expliquer à d'autres personnes les tâches demandées à
 l'ordinateur. 
 À l'époque, l'objectif était d'autoriser les développeurs
 à s'affranchir de l'ordonnancement imposé par l'ordinateur et de se
 concentrer sur leur pensée.
 
-Dans le cas des scientifiques, autour de l'exécution du code se
-trouvent des données d'entrées et des résultats qui sont indispensables à 
-sa compréhension du phénomène qu'il étudie. Les documents computationnels 
-ou *notebooks* sont d'une certaine façon inspirés de la programmation lettrée 
-et  proposent une façon de travailler qui est devenue très populaire chez 
-les scientifiques. 
+Dans le cas d'un chercheur, l'enjeu se concentre sur l'exécution du code : 
+les données d'entrées et les résultats obtenus permettent d'enrichir la compréhension du phénomène étudié. 
 
-Les documents computationnels permettent d'intégrer, dans un même 
-document, à la fois du texte rédactionnel, du code informatique, 
+Les documents computationnels 
+ou *notebooks* s'inspirent d'une certaine façon de la programmation lettrée 
+et proposent une manière de travailler devenue très populaire parmi les chercheurs. 
+
+Les documents computationnels permettent d'intégrer dans un même 
+document : du texte rédactionnel, du code informatique, 
 et les résultats de ce code. 
 La partie narrative, rédigée dans un langage de balisage très léger 
 (tels que *Markdown* (https://daringfireball.net/projects/markdown)), 
 est régulièrement agrémentée de fragments de codes exécutables 
-(par exemple en R ou en python) et dont les résultats (textuels ou graphiques) 
+(par exemple en R ou en Python) dont les résultats textuels ou graphiques 
 sont automatiquement accolés. 
-Cette structure correspond assez bien à la démarche suivi quotidiennement par
-les scientifiques: 
-  1. je propose une hypothèse que je décris (partie narrative)
-  2. je réalise une expérience/analyse (j'exécute mon programme)
-  3. j'inspecte le résultat de mon expérience/analyse (le résultat du programme)
-  4. j'interprète les résultats et je décris mon interprétation
-     (partie narrative) avant de proposer une nouvelle hypothèse
+Cette structure correspond assez bien à la démarche suivie quotidiennement par
+les chercheurs : 
+  1. " je propose une hypothèse que je décris " = partie narrative
+  2. " je réalise une expérience/analyse " = j'exécute mon programme
+  3. " j'inspecte le résultat de mon expérience/analyse " = le résultat du programme
+  4. " j'interprète les résultats et je décris mon interprétation " = partie narrative avant de proposer une nouvelle hypothèse
 
 > FIXME: On pourrait peut-être insérer ici une illustration tirée du  [slide 37](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module2/slides/C028AL_slides_module2-fr-gz.pdf)
 > [SVG](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module2/slides/img/example_pi_full.svg)
 
-Ce procédé permet ainsi de documenter chaque étape de la recherche en
-isolant chaque partie du code pour la lier à sa finalité directe. Il
-existe différents outils permettant d'écrire de tels documents, les
+Ce procédé permet ainsi de documenter chaque étape de la recherche : chaque partie du code est gérée de manière indépendante et de fait, liée à sa finalité directe.
+Différents outils permettent d'écrire de tels documents, les
 plus matures étant :
 
  - Jupyter (https://jupyter.org)
  - Rmarkdown (https://rmarkdown.rstudio.com)
  - Org-mode (https://www.orgmode.org/fr)
  
-Les avantages de tels documents computationnels pour une recherche reproductible 
-sont multiples : d'une part ils permettent une meilleure transparence du code 
-effectivement exécuté, et d'autre part ils facilitent grandement sa compréhension 
-en le rendant partie intégrante d'une narration de la recherche 
-(pour parfois s'approcher très fortement de la forme d'un article). 
-Enfin, leur caractère très dynamique les rend particulièrement adaptés à la traçabilité
-des petits morceaux de codes prototypes quotidiennement réécris et réexécutés
-avec des paramètres différents.
+De tels documents computationnels offrent de nombreux avantages : 
+- d'une part ils permettent une meilleure transparence du code 
+effectivement exécuté, 
+- et d'autre part, ils facilitent sa compréhension car le code devient une partie intégrante d'une trame narrative.
+Certains *notebooks* peuvent ainsi quasiment s'apparenter à des articles. 
+Enfin, ces documents peuvent répondre à des besoins de traçabilité en raison de leur caractère dynamique : on obtient en effet des cellules de codes prototypes qu'il est possible de réécrire et de réexécuter avec des paramètres différents.  
 
 Pour en savoir davantage sur les documents computationels, vous pouvez vous rapporter aux
 module 2 et 3 du [MOOC sur la recherche
 reproductible](https://learninglab.inria.fr/mooc-recherche-reproductible-principes-methodologiques-pour-une-science-transparente/).
-
-## Restructurer et automatiser l'exécution du code avec un workflow
+*SG*
+## Restructurer et automatiser l'exécution du code avec un *workflow*
 
 Nous avons déjà évoqué l'importance de modulariser son code pour le
-rendre plus compréhensible et plus simple à faire évoluer. 
+rendre plus compréhensible et plus facile à faire évoluer. 
 Il existe de nombreux concepts pour vous permettre d'y arriver: 
 la programmation fonctionnelle, la programmation orientée objet, 
 les *design patterns*, etc. 
 
-Il y a un concept qui mérite particulièrement d'être signalé car il
-trouve tout son sens dans notre contexte où l'on transforme des
-quantités importantes de données par des calculs complexes. 
-Il s'agit des [systèmes de workflows scientifiques](https://en.wikipedia.org/wiki/Scientific_workflow_system).
-Il en existe de nombreux, chacun étant utilisé préférentiellement par différentes communautés scientifiques
-(astrophysique, génétique, etc.). 
+Dès lors qu'il est question de transformer des
+quantités importantes de données par des calculs complexes, le concept de [systèmes de workflows scientifiques](https://en.wikipedia.org/wiki/Scientific_workflow_system) *SG* trouve toute sa pertinence. 
+Il existe de nombreux *workflows* répondant aux besoins de 
+différentes communautés scientifiques : astrophysique, génétique, etc. 
 
-Lorsque votre notebook (qui est un objet assez monolithique) 
-se stabilise mais devient trop long, trop complexe, il sera 
+Lorsque votre *notebook* se stabilise mais devient trop long et trop complexe, il sera 
 certainement temps de le restructurer. 
-Les workflows peuvent vous y aider et vous permettre de passer 
+Les *workflows* peuvent vous y aider et vous permettre de passer 
 par la même occasion à une étape supérieure d'automatisation de 
-son exécution (c'est d'ailleurs souvent la motivation principale 
-des utilisateurs de workflows).
+son exécution : c'est d'ailleurs souvent la motivation principale 
+des utilisateurs de *workflows*.
 
-Les workflows sont également des éléments à archiver pour rendre
-une étude reproductible.
+Les *workflows* sont également des éléments à archiver pour rendre
+ses travaux reproductibles.
 
 ## Pour en savoir plus
 
