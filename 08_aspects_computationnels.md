@@ -152,7 +152,8 @@ donné et une différence, même insignifiante, de cet environnement peut condui
 à des résultates différents, c'est à dire à des problèmes de non
 reproductibilité.
 
-Si cette question vous intéresse, vous pouvez lire *SG* [@gronenschild_effects_2012]
+Si vous pensez que ce problème n'est que théorique, nous vous invitons
+à lire *SG* [@gronenschild_effects_2012]
 qui étudient l'influence de la version de MacOSX et de FreeSurfer, un logiciel
 permettant de mesurer l'épaisseur corticale et le volume de structures
 neuroanatomiques.
