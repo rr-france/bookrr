@@ -9,9 +9,9 @@ Il est particulièrement sensible pour les données, mais joue également un rô
 pour les codes et les résultats produits.
  
 Dans ce chapitre nous allons traiter principalement des formats de fichiers numérique,
-bien que le format ait soit importance y compris en dehors de l'outils numérique.
-
-TODO noms des fichiers, comme nous le verrons par la suite [Chap. 13]
+bien que le format ait sont importance y compris en dehors de l'outils numérique.
+En outre, le  noms des fichiers est également un point important du formattage, et
+sera abordé dans le chapitre \@ref(C:versionning).
 
 
 ## Quel format choisir pour enregistrer et stocker des informations ?
