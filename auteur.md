@@ -18,7 +18,7 @@ compte les variables quantitatives dans un modèle multivarié.
 Enseignant-chercheur en biostatistique à [l’Institut de Santé Publique d'Épidémiologie et de Développement](http://www.isped.u-bordeaux.fr/) 
 (ISPED, Université de Bordeaux), 
 Boris Hejblum est membre de l’équipe [SISTM dans le centre Inserm U1219 Bordeaux Population Health et Inria Bordeaux Sud-Ouest](https://www.inria.fr/equipes/sistm).
-Il travaille sur l’analyse de données biomédicales répétée de grande dimension, 
+Il travaille sur l’analyse de données biomédicales répétées de grande dimension, 
 en particulier la statistique génomique dans le cadre de la recherche vaccinale 
 ainsi que sur le traitement de dossiers médicaux informatisés par des approches de machine learning.
 Il développe de nouvelles méthodologies statistiques implémentées 
