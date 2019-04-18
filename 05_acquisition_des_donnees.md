@@ -114,7 +114,7 @@ afficher le fichier pdf). Les plus fréquemment rencontrées peuvent être :
 
  - la présence de renvois bibliographiques sur certains éléments du tableau ;
 
- - la gestion du signe moins (" - "), qui est souvent récupéré comme un tiret (" — ") 
+ - la gestion du signe moins ( " - " ), qui est souvent récupéré comme un tiret ( " — " ) 
    ou demi-tiret, ne pouvant alors pas être interprété par les codes de calcul.
 
 Après extraction des données, une étape de correction manuelle est donc souvent indispensable,

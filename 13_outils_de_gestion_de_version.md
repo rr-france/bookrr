@@ -27,7 +27,7 @@ règles de nommage de fichiers évitant les ambiguïtés et facilitant
 l'exploration des versions. 
 
 Dans ce contexte, il est souvent recommandé de créer un nom de fichier constitué de plusieurs
-éléments *SG* [@REF: (http://qualite-en-recherche.cnrs.fr/spip.php?article315)] [@Ref Jenny Bryan https://speakerdeck.com/jennybc/how-to-name-files ??]
+éléments *SG* [@REF: (http://qualite-en-recherche.cnrs.fr/spip.php?article315)] [@REF Jenny Bryan https://speakerdeck.com/jennybc/how-to-name-files ??]
 
 * la date de sauvegarde, sous format AAAAMMJJ ou AAAA_MM_JJ
 (permettant un tri des dates par ordre alphabétique)
