@@ -1,4 +1,4 @@
-# Problèmes liés aux données
+# Problèmes liés aux données {#B:data-input}
 
 La perte de données à tous les niveaux d'un processus de recherche est une
 cause majeure de non reproductibilité. Cela peut aller du simple accident matériel,
