@@ -1,5 +1,5 @@
 --- 
-title: "Vers une recherche reproductible : Faire évoluer ses pratiques"
+title: "Vers une recherche reproductible : <br> faire évoluer ses pratiques"
 author: "Loïc Desquilbet, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot, Nicolas Rougier"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
