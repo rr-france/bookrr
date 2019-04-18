@@ -38,7 +38,7 @@ moyen de revenir aux informations initiales et/ou de savoir quelles sont les inf
 qui ont été modifiées, votre recherche devient par conséquent non reproductible.
 
 Les solutions pour éviter de perdre ainsi la trace de la modification
-sont évoquées dans le chapitre \@ref(collecte-infos).
+sont évoquées dans le chapitre \@ref(collecte-infos) TODO.
 
 
 
@@ -54,19 +54,19 @@ du *Vocabulaire International de Métrologie (VIM)* car elles représentent l’
 récent de normalisation dans ce domaine *SG*(téléchargeable ici : 
 https://www.bipm.org/en/publications/guides/).
 
-La **fidélité** de mesure s'entend comme : "l’étroitesse de l'accord entre les indications ou les 
+La **fidélité** de mesure s'entend comme : " l’étroitesse de l'accord entre les indications ou les 
 valeurs mesurées obtenues par des mesurages répétés du même objet ou d'objets similaires 
-dans des conditions spécifiées."
+dans des conditions spécifiées. "
 
 La **répétabilité** est la fidélité de mesure dans les conditions de mesures suivantes : 
-"conditions qui comprennent la même procédure de mesure, les mêmes opérateurs, le même 
+" conditions qui comprennent la même procédure de mesure, les mêmes opérateurs, le même 
 système de mesure, les mêmes conditions de fonctionnement et le même lieu, ainsi que des 
 mesurages répétés sur le même objet ou des objets similaires pendant une courte période 
-de temps."
+de temps. "
 
 La **reproductibilité** est la fidélité de mesure dans les conditions de mesures suivantes : 
-"conditions qui comprennent des lieux, des opérateurs et des systèmes de mesure différents, 
-ainsi que des mesurages répétés sur le même objet ou des objets similaires."
+" conditions qui comprennent des lieux, des opérateurs et des systèmes de mesure différents, 
+ainsi que des mesurages répétés sur le même objet ou des objets similaires. "
 
 
 ### Impact d’une absence de répétabilité ou de reproductibilité dans la collecte des informations
