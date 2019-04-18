@@ -54,11 +54,11 @@ de la première colonne.
 Un façon de l'écrire est :
 
 ``` r
-table = read.csv(file = 'data.csv')     # Charger les données en mémoire
-table_tri = table[order(table[, 2]), ]  # Réordonne toutes les lignes du tableau
+table <- read.csv(file = 'data.csv') # Charger les données en mémoire
+table_tri <- table[order(table$age), ] # Réordonne toutes les lignes du tableau
 # Sélectionne la première moitié des lignes de la première colonne
 # pour en faire la moyenne
-print(mean(table_tri[1:(nrow(table_tri) / 2), 1])))
+mean(table_tri$IMC[1:(nrow(table_tri)/2)])
 ```
 
 En faisant abstraction de la syntaxe particulière (il s'agit ici du langage R)

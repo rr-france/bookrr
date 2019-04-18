@@ -1,4 +1,4 @@
-# (PART) Nonsence {-}
+# (PART) Les solutions de la recherche reproductible {-}
 
 # Le temps des changements?
 

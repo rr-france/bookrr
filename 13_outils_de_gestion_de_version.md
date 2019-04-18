@@ -15,6 +15,10 @@ données " et permet de répondre aux questions :
  - Qui ?
  - Pourquoi ?
 
+Nous présentons deux solutions dans ce chapitre, la première s'appuyant sur la 
+mise en place de convention de nommage des dossiers et fichiers, la seconde plus 
+technique présentant les outils de versionnage différentiel.
+
 ## Versionnage par nommage de fichiers
 
 Au cours des modifications d'un document, les étapes importantes
@@ -33,24 +37,17 @@ Dans ce contexte, il est souvent recommandé de créer un nom de fichier constit
 * un numéro de version du document qui sera incrémenté aux étapes
 remarquables de l'évolution du document (v01, v02...)
 
-Ces informations sont une forme appauvrie de métadonnées que l'on
-indique directement dans le nom du fichier lorsque le format de
-données ou le système de fichiers utilisé ne permet pas de les
-conserver de façon pérenne. Cette information est assez rudimentaire : dans 
-le cas où plusieurs personnes ont travaillé sur un même
-fichier, on a du mal à savoir qui a fait quoi et pourquoi.
+Le titre ne devrait pas être trop long (sous certains système d'exploitation,
+il doit se limiter à dépasser 31 caractères, extension comprise. Egalement pour 
+des raisons de compatibilité, il est recommandé d'éviter l'utilisation de :
 
-Pour des raisons de compatibilité, il est également recommandé d'éviter l'utilisation de :
 - signes diacritiques : accents, trémas, cédilles par exemple, 
 - de caractères spéciaux
 - d'espaces
+- ...
 
-La longueur du titre ne devrait pas dépasser 31 caractères, extension comprise. 
 
-Conserver ces métadonnées appauvries mais importantes de cette façon est une bonne habitude à prendre, mais il s'agit d'une approche
-assez limitée.
-
-### Exemple {-}
+#### Exemple {-}
 
 La chronologie du nommage de fichiers successifs de scripts R pourrait être:
 
@@ -59,6 +56,20 @@ La chronologie du nommage de fichiers successifs de scripts R pourrait être:
 * 20190417_analyse_donnees_v01.R
 
 * 20190509_analyse_donnees_v02.R
+
+
+Ces informations sont une forme appauvrie de métadonnées que l'on
+indique directement dans le nom du fichier lorsque le format de
+données ou le système de fichiers utilisé ne permet pas de les
+conserver de façon pérenne. Cette information est assez rudimentaire : dans 
+le cas où plusieurs personnes ont travaillé sur un même
+fichier, on a du mal à savoir qui a fait quoi et pourquoi.
+Conserver ces métadonnées appauvries mais importantes de 
+cette façon est une bonne habitude à prendre, mais il s'agit d'une approche
+qui a ses limites.
+
+La section suivante présente une approche plus aboutie de la gestion de version, 
+mais plus technique à mettre en oeuvre.
 
 
 
@@ -93,7 +104,7 @@ versions importantes du projet sur un dépôt fournissant un identifiant pérenn
 solution, il est essentiel de se renseigner sur les pratiques en cours dans votre
 communauté de recherche.
 
-### Exemple {-}
+#### Exemple {-}
 
 Voici un témoignage d'un chercheur dont la pratique quotidienne permet
 d'obtenir aisément une recherche reproductible:

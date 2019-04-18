@@ -1,4 +1,4 @@
-# Problèmes de communication des résultats
+# Problèmes de communication des résultats {#B:data:output}
 
 Nous allons voir dans ce chapitre qu’une recherche peut devenir non
 reproductible s’il existe une mauvaise utilisation des résultats de l'étude au
@@ -17,7 +17,8 @@ sélectionner l’information pertinente (votre sélection à la souris a oubli�
 quelques caractères en début ou en fin de séquence à sélectionner, par
 exemple). Si cette information est encore complexe et difficilement
 compréhensible par vos collaborateurs parce que vous êtes spécialiste dans le
-domaine, alors cette erreur de sélection sera présente dans l’article et persistera après le processus de
+domaine, alors cette erreur de sélection sera présente dans l’article et 
+persistera après le processus de
 revue, si les relecteurs ne répèrent pas cette erreur.
 
 ## Transformation des résultats
@@ -25,8 +26,8 @@ revue, si les relecteurs ne répèrent pas cette erreur.
 Une autre erreur pouvant survenir à partir des résultats fournis par un
 logiciel est celle d’une "transformation" (bien entendu involontaire) de ces
 données. Cette modification délétère peut très facilement se produire si vous
-devez saisir de nouveau dans votre article les sorties résultats du logiciel. Une erreur
-de frappe est si facilement arrivée !
+devez saisir de nouveau dans votre article les sorties résultats du logiciel. 
+Une erreur de frappe est si facilement arrivée !
 
 Un deuxième exemple de transformation des résultats est celui de l’amélioration
 d’une figure. Si vous trouvez que la figure que vous obtenez à partir d'un
@@ -68,8 +69,8 @@ d'une table de résultats). Mais si vos résultats sont nécessaires à la
 réalisation d’autres recherches (comme par exemple la réalisation de
 simulations basées entre autres sur vos résultats), les erreurs générées dans
 ces autres recherches pourront être amplifiées (une petite erreur initiale peut
-conduire à une erreur très importante en bout de course – cf. « Chaos numérique
-» dans le chapitre ***XX*** [à remplacer]).
+conduire à une erreur très importante en bout de course – _cf._ « Chaos numérique
+» dans le chapitre \@ref{#B:code:aspect}).
 
 A titre d'illustration, la matrice de variance-covariance publiée par le CODATA
 en 2002 pour l'ajustement des constantes fondamentales, arrondie pour être
@@ -81,6 +82,8 @@ Status https://arxiv.org/abs/physics/0409117]
 # Que faire ?
 
 La réutilisabilité des résultats d'une étude doit être une priorité. Pour
-cela, les données doivent être mises à disposition de futurs utilisateurs dans
-un format lisible par la machine, en utilisant un processus automatisé limitant
-les interventions manuelles.
+cela, les données doivent être mises à disposition de futurs utilisateurs 
+(Chapitre \@ref{#C:data:share}) 
+dans un format lisible par la machine (Chapitre \@ref{#C:data:format}), 
+en utilisant un processus automatisé limitant les interventions manuelles
+(Chapitre \@ref{#C:code:learn}).
