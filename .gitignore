@@ -6,3 +6,4 @@ _book/*
 *.Rproj
 *.Rmd
 *~
+*.log

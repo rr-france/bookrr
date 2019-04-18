@@ -32,3 +32,8 @@ the authors themselves.
 
 With this book, both students and researchers should find efficient and
 accessible ways leading them to improve their reproducible research practices.
+
+`r if(knitr::is_latex_output()){ '
+\\addcontentsline{toc}{chapter}{Bibliographie}
+'}`
+
