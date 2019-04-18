@@ -1,15 +1,15 @@
 # Outils de gestion de versions
 
 La sauvegarde des étapes successives du développement de documents
-(textes, bases de données, codes...) est une des briques fondamentales
+(textes, bases de données, codes, etc.) est une des briques fondamentales
 de la recherche reproductible. Elle permet en effet de retrouver
 ou de reconstituer facilement des versions spécifiques et datées des documents.
 La mise en œuvre va de la simple sauvegarde de versions des fichiers,
 à des sauvegardes différentielles n'enregistrant que les modifications.
 
 La mise en œuvre d'une stratégie de gestion de version doit permettre
-d'éviter les cauchemars du type "je ne retrouve pas mon code / mes
-données" et permet de répondre aux questions:
+d'éviter les cauchemars du type " Je ne retrouve pas mon code / mes
+données " et permet de répondre aux questions :
 
  - Quand ?
  - Qui ?
@@ -23,30 +23,30 @@ règles de nommage de fichiers évitant les ambiguïtés et facilitant
 l'exploration des versions. 
 
 Dans ce contexte, il est souvent recommandé de créer un nom de fichier constitué de plusieurs
-éléments [@REF: (http://qualite-en-recherche.cnrs.fr/spip.php?article315)] [@REF JennyBrian]:
+éléments *SG* [@REF: (http://qualite-en-recherche.cnrs.fr/spip.php?article315)] [@REF JennyBrian]:
 
 * la date de sauvegarde, sous format AAAAMMJJ ou AAAA_MM_JJ
 (permettant un tri des dates par ordre alphabétique)
 
-* le titre du fichier, évitant les mots "vides" (article défini, indéfini, etc.)
+* le titre du fichier, évitant les mots " vides " (article défini, indéfini, etc.)
 
 * un numéro de version du document qui sera incrémenté aux étapes
 remarquables de l'évolution du document (v01, v02...)
 
-Ces informations sont une forme appauvrie de *méta-données* que l'on
+Ces informations sont une forme appauvrie de métadonnées que l'on
 indique directement dans le nom du fichier lorsque le format de
 données ou le système de fichiers utilisé ne permet pas de les
-conserver de façon pérenne. Cette information est assez grossière
-puisque dans le cas où plusieurs personnes ont travaillé sur un même
+conserver de façon pérenne. Cette information est assez rudimentaire : dans le cas où plusieurs personnes ont travaillé sur un même
 fichier, on a du mal à savoir qui a fait quoi et pourquoi.
 
-Pour des raisons de compatibilité, il est également recommandé
-d'éviter l'utilisation de signes diacritiques (accents, trémas, cédilles par exemple), de caractères spéciaux
-et d'espaces. La longueur du titre ne devrait pas dépasser 31
-caractères, extension comprise. 
+Pour des raisons de compatibilité, il est également recommandé d'éviter l'utilisation de :
+- signes diacritiques : accents, trémas, cédilles par exemple, 
+- de caractères spéciaux
+- d'espaces
 
-Conserver ces méta-données appauvries mais importantes
-de cette façon est donc une bonne habitude à prendre, mais c'est une approche
+La longueur du titre ne devrait pas dépasser 31 caractères, extension comprise. 
+
+Conserver ces métadonnées appauvries mais importantes de cette façon est une bonne habitude à prendre, mais il s'agit d'une approche
 assez limitée.
 
 ### Exemple {-}
@@ -68,28 +68,25 @@ d'espace de stockage, et peut devenir très incommode pour la gestion de
 projets comportant de nombreux fichiers évoluant à des vitesses différentes.
 Il est en général plus efficace de passer par un logiciel de gestion de versions 
 qui gère automatiquement le stockage de versions différentielles des
-fichiers, les méta-données de type *qui, quoi, quand, pourquoi*,
+fichiers, les métadonnées de type " qui, quoi, quand, pourquoi ",
 et permet de figer des versions du projet à des étapes cruciales du développement.
 
 Ces outils peuvent être intégrés à des logiciels (éditeurs de texte, de code, d'images, etc.)
-ou se présenter comme des solutions autonomes (git, subversion, svn, etc.), avec
+ou se présenter comme des solutions autonomes (Git, Subversion, SVN, etc.), avec
 des interfaces en ligne de commande ou des interfaces graphiques.
 
 Si un logiciel de gestion de versions est installé sur l'ordinateur de l'utilisateur,
-il est prudent, voire impératif, de mettre en oeuvre une synchronisation vers
+il est prudent, voire impératif, de mettre en œuvre une synchronisation vers
 un dépôt distant, qui peut être sur une plateforme institutionnelle
-(par exemple le [GitLab de
+*SG* (par exemple le [GitLab de
 l'Inria](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/gitlab)
 ou de [l'IN2P3](https://gitlab.in2p3.fr/CTA-LAPP/HiPeCTA) ou encore un
-plateforme privée comme [GitHub](https://github.com/)). Ces
-plates-formes permettent en outre
-le travail collaboratif sur un projet, ou de mettre le projet à disposition 
+plateforme privée comme [GitHub](https://github.com/)). En outre, ces
+plateformes permettent le travail collaboratif sur un projet ou de mettre le projet à disposition 
 du public dans des versions bien définies des documents. 
-
-Pour que la recherche soit reproductible, il devrait devenir systématique de fournir 
-au lecteur un lien vers la version des données ou des codes informatiques utilisés dans un article. Pour cela, il est conseillé d'activer en plus un archivage pérenne des 
-versions importantes du projet sur un dépôt fournissant un identifiant 
-pérenne. Ce sujet sera abordé dans le Chapitre \@ref(partage-archivage). Dans tous les cas, avant de choisir une
+(sabrina : à repdre)
+Pour que la recherche soit reproductible, le lecteur devrait systématiquement disposer du lien vers la version des données ou des codes informatiques utilisés dans un article. Pour cela, il est conseillé d'activer en plus un archivage pérenne des 
+versions importantes du projet sur un dépôt fournissant un identifiant pérenne. Ce sujet sera abordé dans le Chapitre \@ref(partage-archivage). Dans tous les cas, avant de choisir une
 solution, il est essentiel de se renseigner sur les pratiques en cours dans votre
 communauté de recherche.
 
