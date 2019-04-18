@@ -25,6 +25,8 @@ l'intelligibilité d'un code et il convient de procéder étape par étape :
 > FIXME diagramme à refaire 
 
 
+> FIXME Il manque dans ce chapitre des sous-sections "Pour en savoir Plus {-}"
+
 ## Nommer les choses de manière informative
 
 > There are only two hard things in Computer Science: cache invalidation and naming things.
