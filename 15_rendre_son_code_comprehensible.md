@@ -18,9 +18,13 @@ la compréhension de son code :
  3. commenter son code
  4. documenter son code
  5. utiliser des documents computationnels
- 6. gestion de *workflow*
+ 6. restructurer et automatiser avec un *workflow*
 
 ![Outils d'amélioration pour la compréhension du code](img/testdiagramch15.png)
+
+> FIXME diagramme à refaire en plus joli et à améliorer *ECG*
+
+> FIXME Il manque dans ce chapitre des sous-sections "Pour en savoir Plus {-}"
 
 ## Nommer ses variables et ses fonctions de manière informative
 
@@ -47,7 +51,6 @@ tous déjà rencontré des codes bien pire que ça. Ces quelques lignes sont pou
 rigoureusement équivalentes au code suivant :
 
 ```R
-#+begin_src R :results output :session *R* :exports both
 mass = 100
 speed = 3.2
 energy = 1/2 * mass * speed^2
