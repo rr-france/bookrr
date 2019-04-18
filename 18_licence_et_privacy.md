@@ -1,8 +1,7 @@
 # Sortez couverts! {#C-licences}
 
->" Au fait, ai-je le droit ? "
->-- Anonyme
-
+>" Au fait, ai-je le droit ? "  
+>-- Anonyme    
 > Variante : " *Oops, I dit it again* " 
 
 Il est primordial de se poser la question du droit avant de partager des
@@ -38,7 +37,7 @@ que la santé) où le partage des données n'est pas toujours possible pour :
 - de protection des personnes... 
 Il est donc indispensable de se poser la question du droit,
 notamment dans le cadre du Réglement Général sur la Protection des Données
-(RGPD)[^un certain nombre de textes officiels et de documents sont disponibles
+(RGPD)^[un certain nombre de textes officiels et de documents sont disponibles
 sur [le site de la
 CNIL](https://www.cnil.fr/fr/textes-officiels-europeens-protection-donnees)]. 
 
@@ -47,10 +46,10 @@ peuvent être mises en œuvre : on peut citer la mise à disposition sur
 demande *via* une charte de confidentialité.
 
 ## Pour en savoir plus
-Comité pour la science ouverte. n.d. ‘Ouvrir La Science - Ressources : Guides Juridiques’. Ouvrir La Science. Accessed 18 April 2019. https://www.ouvrirlascience.fr/category/ressources/?type=guides_juridiques.
+Comité pour la science ouverte. n.d. ‘Ouvrir La Science - Ressources : Guides Juridiques’. Ouvrir La Science. [Accessed 18 April 2019](https://www.ouvrirlascience.fr/category/ressources/?type=guides_juridiques).
 
 Consulter les vidéos de l'intervention de L. Maurel sur le RGPD : 
-Maurel, Lionel. 2018. ‘Données personnelles et vie privée : ce qui va changer avec le RGPD (support d’intervention et vidéo)’. S.I.Lex (blog). 29 May 2018. https://scinfolex.com/2018/05/29/donnees-personnelles-et-vie-privee-ce-qui-va-changer-avec-le-rgpd-support-dintervention-et-video/.
+Maurel, Lionel. 2018. ‘Données personnelles et vie privée : ce qui va changer avec le RGPD (support d’intervention et vidéo)’. [S.I.Lex (blog). 29 May 2018](https://scinfolex.com/2018/05/29/donnees-personnelles-et-vie-privee-ce-qui-va-changer-avec-le-rgpd-support-dintervention-et-video).
 
     Introduction générale ;
     Rappel sur les origines de la législation relative à la protection des données personnelles ;
@@ -68,6 +67,3 @@ Maurel, Lionel. 2018. ‘Données personnelles et vie privée : ce qui va chan
     Prochaine étape : le règlement ePrivacy ;
     Le RGPD et la surveillance étatique.
 
- 
- - 
- -
