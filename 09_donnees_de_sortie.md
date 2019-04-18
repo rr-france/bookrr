@@ -1,4 +1,4 @@
-# Communication des résultats
+# Problèmes de communication des résultats
 
 Nous allons voir dans ce chapitre qu’une recherche peut devenir non
 reproductible s’il existe une mauvaise utilisation des résultats de l'étude au
