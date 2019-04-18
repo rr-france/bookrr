@@ -102,7 +102,7 @@ EuroScipy (https://www.euroscipy.org), useR! (http://www.user2019.fr),
 Les Rencontres R(https://r2018-rennes.sciencesconf.org) ...
 
 
-## Ressources
+## Pour en savoir plus
 
 Il existe une multitude de ressources pour apprendre à programmer en R ou en
 Python, notamment les formations continues proposées par les institutions (services de formation des personnels, écoles doctorales, mais aussi formations internes à votre unité de recherche). 
