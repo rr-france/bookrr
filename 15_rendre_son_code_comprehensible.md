@@ -1,7 +1,6 @@
 # Rendre son code compréhensible {#C-code-good}
 
-> " *Programs must be written for people to read, and only incidentally for machines to execute*. " 
->
+> " *Programs must be written for people to read, and only incidentally for machines to execute*. "   
 > -- Harold Abelson
   
 Les chapitres précédents (et en particulier 
@@ -32,8 +31,7 @@ la compréhension de son code :
 
 ## Nommer ses variables et ses fonctions de manière informative
 
-> " *There are only two hard things in Computer Science: cache invalidation and naming things*. "
->
+> " *There are only two hard things in Computer Science: cache invalidation and naming things*. "  
 > -- Phil Karlton
 
 Une manière d'obtenir un code plus facile à comprendre par un observateur extérieur 
@@ -92,16 +90,11 @@ Tim Peters a écrit *The Zen of Python* (que vous pouvez lire en écrivant
 faut garder en tête lorsqu'on écrit un programme. 
 Les six premières lignes sont :
 
-> *Beautiful is better than ugly*
->  
-> *Explicit is better than implicit*
->  
-> *Simple is better than complex*
->  
-> *Complex is better than complicated*
->  
-> *Flat is better than nested*
->  
+> *Beautiful is better than ugly*  
+> *Explicit is better than implicit*  
+> *Simple is better than complex*  
+> *Complex is better than complicated*  
+> *Flat is better than nested*  
 > *Sparse is better than dense*
 
 Ces six conseils peuvent paraître plus ou moins évidents à mettre en œuvre pour un
@@ -145,6 +138,7 @@ On pourrait toutefois objecter cet argument : un code bien écrit se passe de co
 Il s'avère que les commentaires de l'auteur du code s'adressent à son lecteur, 
 censé connaître à la fois le langage utilisé et le contexte du logiciel. 
 Les commentaires servent par exemple à signaler : 
+
 - les unités ou le domaine de définition d'une variable toujours positive, 
 - une ruse de calcul,
 - un point un peu délicat qui devrait être amélioré, 
@@ -176,8 +170,7 @@ types d'annotations (commentaire et documentation) qui peuvent se retrouver
 
 La programmation lettrée a été conceptualisée en 1984 par Donald Knuth
 [@knuth1984literate] *SG* et propose des principes pour produire un
-code compréhensible. Il s'agit principalement de
-considérer l'écriture d'un code comme un
+code compréhensible. Il s'agit principalement de considérer l'écriture d'un code comme un
 moyen d'expliquer à d'autres personnes les tâches demandées à
 l'ordinateur. 
 À l'époque, l'objectif était d'autoriser les développeurs
@@ -201,6 +194,7 @@ est régulièrement agrémentée de fragments de codes exécutables
 sont automatiquement accolés. 
 Cette structure correspond assez bien à la démarche suivie quotidiennement par
 les chercheurs : 
+
   1. " je propose une hypothèse que je décris " = partie narrative
   2. " je réalise une expérience/analyse " = j'exécute mon programme
   3. " j'inspecte le résultat de mon expérience/analyse " = le résultat du programme
@@ -218,6 +212,7 @@ Différents outils permettent d'écrire de tels documents, les plus matures éta
  - [Org-mode](https://www.orgmode.org/fr)
  
 De tels documents computationnels offrent de nombreux avantages : 
+
 - d'une part ils permettent une meilleure transparence du code 
 effectivement exécuté, 
 - et d'autre part, ils facilitent sa compréhension car le code devient une partie intégrante d'une trame narrative.
