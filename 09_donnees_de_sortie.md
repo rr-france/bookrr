@@ -79,7 +79,7 @@ travaux ultérieurs. *SG* [V.V. Ezhela, Yu.V. Kuyanov, V.N. Larin, A.S. Siver
 (2004) The Inconstancy of the Fundamental Physical Constants: Computational
 Status https://arxiv.org/abs/physics/0409117]
 
-# Que faire ?
+## Que faire ?
 
 La réutilisabilité des résultats d'une étude doit être une priorité. Pour
 cela, les données doivent être mises à disposition de futurs utilisateurs 
