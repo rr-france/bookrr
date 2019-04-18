@@ -1,8 +1,11 @@
 # (PART) Les solutions de la recherche reproductible {-}
 
-# Le temps des changements? {#C:intro}
+# Le temps des changements ? {#C:intro}
 
-Nous espérons que les anecdotes du chapitre **XX** vous ont semblé vraisemblables, mais vous souhaitons de ne pas trop vous reconnaître dans ces situations de crise ! Nous essayons de vous proposer d'intervenir de manière curative, mais aussi préventive. 
+Nous espérons que les anecdotes du chapitre @\ref(A:personas) vous ont semblé
+vraisemblables, mais vous souhaitons de ne pas trop vous reconnaître dans ces
+situations de crise ! Nous essayons de vous proposer d'intervenir de manière
+curative, mais aussi préventive.
 
 ## Quand mettre en œuvre les bonne pratiques ?
 Il existe des solutions applicables à court comme à plus long terme. Si le déploiement de certaines solutions nécessitent des compétences techniques avancées, la reproductibilité de la recherche demeure peut-être avant tout une question culturelle dans la mesure où il s'agit de faire évoluer des pratiques parfois solidement ancrées. La crainte de perdre du temps en perdant ses repères est une problématique majeure, d'où l'approche pragmatique du présent ouvrage. 
