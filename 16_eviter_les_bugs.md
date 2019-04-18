@@ -27,23 +27,22 @@ pensez avoir écrit est une bonne façon de détecter vos erreurs.
 >
 >-- Karl Broman
 
-
 Une deuxième façon rendre votre code plus robuste est bien entendu de le tester
 sur des cas concrets dont on connait par avance le résultat. Par exemple, si je
 souhaite écrire une fonction qui fait la somme de deux nombres, je peux
-vérifier que la somme de 1 et 2 me retourne bien 3, que la somme de a et -a est
-bioen zéro, etc. Ces tests peuvent être plus ou moins formels et le cadre
+vérifier que la somme de 1 et 2 me retourne bien 3, que la somme de `a` et `-a`
+est bien zéro, etc. Ces tests peuvent être plus ou moins formels et le cadre
 conceptuel des **tests unitaires** permet de mettre en place cette pratique de
 manière rigoureuse. Il s'agit alors d'envisager des cas d'usage
 caractéristiques de chaque partie (unité) et fonctionnalité du code, afin de
 tester que ce dernier adopte bien le bon comportement face à des situations
 variées (par exemple que des erreurs sont bien renvoyées lorsque les arguments
 n'ont pas de sens, ou encore que le bon résultat est obtenu sur un exemple
-jouet controllé). La difficulté dans l'écriture de ces test étant de prévoir
-les cas singuliers auquel on ne pense pas forcément. Par exemple, dans le cas
-de l'addition nous venons d'expliquer de nous pourrions vérifier que la somme
-de a et -a fait bien 0, mais que se passe t'il si `a = inf` ? La réponse est
-que la somme doit alors être non définie (`NaN`).
+jouet controllé). La difficulté dans l'écriture de ces test est de prévoir les
+cas singuliers auquel on ne pense pas forcément. Par exemple, dans le cas de
+l'addition que nous venons d'expliquer, nous avons proposé de vérifier que la
+somme de `a` et `-a` faisait bien 0, mais que se passe t'il si `a = inf` ? (la
+réponse est que la somme est alors être non définie (`NaN`))
 
 Une autre façon de tester un code et de le diffuser à vos collègues et à la
 communauté. Ceux-ci ne manqueront pas de vous faire des retours sur tel ou tel
