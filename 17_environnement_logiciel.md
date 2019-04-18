@@ -1,4 +1,4 @@
-# Environnement logiciel
+# Environnement logiciel {#C:code:env}
 
 ***Attention : ce chapitre traite de sujets appelant des compétences techniques avancées. Nous vous proposons d'aborder la (complexe) question de l'environnement (ça pique mais ça compte).***
 
