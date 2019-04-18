@@ -1,63 +1,74 @@
-# Collecte des informations {#collecte-infos}
+# Collecte des informations {#C:data:acquisition}
 
 Cette partie expose une sélection de solutions aux problèmes soulevés
-dans le chapitre **acquisition des données** [ou **Problèmes émergeant dans
-l’'acquisition des informations**].
+dans le chapitre \@ref{#B:data:acquisition}.
 
-## Rédiger d'un protocole de collecte des informations
+## Rédiger un protocole de collecte des informations
 
-Comme nous l'avons vu dans la partie **Problèmes émergeant dans l'acquisition
-des informations** et **Absence de standardisation de la collecte des
-informations**, il convient de s'assurer que l'information est collectée de
-façon " standardisée ". Cela implique de rédiger un protocole
-décrivant la façon dont l'information est collectée, et ce, donnée par
+Comme nous l'avons vu plus haut (Chapitres \@ref{#B:data:acquisition} 
+et \@ref{#B:data:input}), il convient de s'assurer que l'information 
+est collectée de façon " standardisée ". 
+Cela implique de rédiger un protocole décrivant la façon 
+dont l'information est collectée, et ce, donnée par
 donnée. Par exemple : chez une personne atteinte d'un
-diabète, vous recueillez la concentration du glucose dans le sang. Vous devez dès lors rédiger le
+diabète, vous recueillez la concentration du glucose dans le sang. 
+Vous devez dès lors rédiger le
 protocole permettant d'obtenir la valeur de la concentration en glucose,
 en précisant notamment dans le protocole le volume de sang prélevé, à quel
 moment de la journée est-il prélevé, etc. Ce protocole doit non seulement être
 rédigé mais il doit par ailleurs être approuvé par votre équipe de recherche,
-ou *a minima*, par les personnes de votre équipe disposant des compétences pour juger de la
-qualité de ce protocole.
+ou *a minima*, par les personnes de votre équipe disposant des compétences 
+pour juger de la qualité de ce protocole.
 
 ## Partager le protocole de collecte des données
 
-Idéalement, le protocole de collecte des informations 
-devrait faire partie de l'article publié qui relate les résultats de votre recherche. 
+Idéalement, le protocole de collecte des informations devrait faire partie 
+de l'article publié qui relate les résultats de votre recherche. 
 Dans un monde idéal encore, les revues devraient
 systématiquement demander aux auteurs de rédiger une telle partie dans l'article
 afin que d'autres chercheurs puissent éventuellement confirmer les résultats de
 votre étude. A noter : il ne s'agit pas forcément
 de rédiger *in extenso* le protocole de collecte des informations
-dans l'article. Il s'agit plutôt de se demander si, sur la base de votre descriptif, un tiers pourrait appliquer votre protocole de collecte de données et obtenir *in fine*  des résultats similaires aux vôtres. 
+dans l'article. Il s'agit plutôt de se demander si, sur la base de votre descriptif, 
+un tiers pourrait appliquer votre protocole de collecte de données 
+et obtenir *in fine*  des résultats similaires aux vôtres. 
 
 ## Tenir un cahier de laboratoire
 
-Modifier des informations ne constitue pas en soi un problème. Les difficultés surviennent lorsque ces modifications n'ont pas été documentées, tracées. 
-Une solution pour pallier ce problème consiste à rédiger un cahier de laboratoire. A l'origine, un cahier de laboratoire est un document physique dans lequel on consigne toute modification d'information au stylo (indélébile) : on indique
+Modifier des informations ne constitue pas en soi un problème. 
+Les difficultés surviennent lorsque ces modifications n'ont pas été documentées, tracées. 
+Une solution pour pallier ce problème consiste à rédiger un cahier de laboratoire. 
+A l'origine, un cahier de laboratoire est un document physique dans lequel on consigne 
+toute modification d'information au stylo (indélébile) : on indique
 la raison de la modification de la valeur d'une information, la date de la
 modification, et l'auteur de la modification. Même si le cahier physique a
 tendance à disparaître des laboratoires au profit de carnets de laboratoire
 numériques, la logique reste la même : toute modification des informations
 initiales doit être renseignée, en indiquant la raison de la modification, la
 date, et l'auteur de la modification. 
-Le tableur est-il mon ami pour effectuer ce type de tâche ? Pas vraiment. Plutôt pas du tout dans la mesure où la modification d'une valeur dans une cellule peut être réalisée sans laisser de trace.
+Le tableur est-il mon ami pour effectuer ce type de tâche ? Pas vraiment. 
+Plutôt pas du tout, dans la mesure où la modification d'une valeur dans 
+une cellule peut être réalisée sans laisser de trace.
 
 ## Collecter les données de façon répétable ET reproductible
 
 Le protocole de collecte d'une information doit être défini de telle sorte
-qu'elle soit " répétable " et " reproductible " au sens du *VIM* (cf. **XX (chap
-5)**). 
+qu'elle soit " répétable " et " reproductible " au sens du *VIM* 
+(_cf._ Chapitre \@ref{#B:data:acquisition}). 
 Tout d'abord, si vous collectez une information deux
 fois sur un individu dans un intervalle de temps restreint, les deux valeurs de
 l'information doivent être les mêmes, ou du moins être suffisamment voisines
 pour être " considérées " comme identiques (condition de répétabilité). La
 collecte des informations doit être reproductible entre opérateurs (on parle de
-" reproductibilité inter-opérateurs " ). Pour garantir une bonne répétabilité et
-reproductibilité inter-opérateurs, il faut donc avoir standardisé au maximum le
-protocole de collecte des données, en s'appuyant sur un instrument de mesure capable de recueillir les informations avec le minimum d'erreurs possibles. Des indicateurs statistiques, tels que les coefficients de concordance, permettent de quantifier la " répétabilité " (ou la " reproductibilité inter-opérateurs " d'une méthode de mesure).
+" reproductibilité inter-opérateurs " ). 
+Pour garantir une bonne répétabilité et reproductibilité inter-opérateurs,
+il faut donc avoir standardisé au maximum le protocole de collecte des données, 
+en s'appuyant sur un instrument de mesure capable de recueillir les informations 
+avec le minimum d'erreurs possibles. Des indicateurs statistiques, tels que les 
+coefficients de concordance, permettent de quantifier la " répétabilité " 
+(ou la " reproductibilité inter-opérateurs " d'une méthode de mesure).
 
 ## Pour en savoir plus
 
 Pour en savoir plus sur les cahiers de laboratoire, nous vous invitons à aller sur le site du CNRS [ici](http://www.cnrs.fr/infoslabos/cahier-laboratoire/).
-Pour en savoir plus sur la quantification de la répétabilité et de la reproductibilité de la collecte des données, vous pouvez cliquez [ici](https://wixlabs-pdf-dev.appspot.com/assets/libs/pdfjs/web/viewer.html?file=%2Fpdfproxy%3Finstance%3DKDf9L508Xn2xJRMJOWyZswoWY30CfsoKGHjB8T131xQ.eyJpbnN0YW5jZUlkIjoiOTQ0MWMzYzItMzdhNC00NDk4LWEzNmUtM2I3MjA4OTQ2MWMyIiwiYXBwRGVmSWQiOiIxM2VlMTBhMy1lY2I5LTdlZmYtNDI5OC1kMmY5ZjM0YWNmMGQiLCJtZXRhU2l0ZUlkIjoiNzcwMDgzYTgtN2ZjMy00ODA3LTk0NDctMTQ0MGEyODAxZWIwIiwic2lnbkRhdGUiOiIyMDE5LTA0LTE4VDEzOjI4OjE0Ljc0MloiLCJ1aWQiOm51bGwsImlwQW5kUG9ydCI6Ijg2LjIzNC41Mi4yMy82MDM1MiIsInZlbmRvclByb2R1Y3RJZCI6bnVsbCwiZGVtb01vZGUiOmZhbHNlLCJhaWQiOiI4Y2QwNzMzNi1jYzIwLTQ4YzMtYjEzZC0wMDI4YTU4ODMyMDQiLCJiaVRva2VuIjoiZTM0MTQwNmEtNDg2Ny0wYzlmLTM3MjktMmYzMmFhMTQ3ZjcyIiwic2l0ZU93bmVySWQiOiI2MDJhNTdiNy05NGEwLTQ3OGMtODQxNC1iNzg1NGRlNDliYmMifQ%26compId%3Dcomp-jto1zpdt%26url%3Dhttps%3A%2F%2Fdocs.wixstatic.com%2Fugd%2F602a57_1db4a443deb04b31b7af42d1a5aef9ed.pdf#page=1&links=true&originalFileName=Concordance%20sur%20series%20mesures%20v12.7&allowDownload=true&allowPrinting=true).
+Pour en savoir plus sur la quantification de la répétabilité et de la reproductibilité de la façon dont on collecte les données, vous pouvez cliquez [ici](https://wixlabs-pdf-dev.appspot.com/assets/libs/pdfjs/web/viewer.html?file=%2Fpdfproxy%3Finstance%3DKDf9L508Xn2xJRMJOWyZswoWY30CfsoKGHjB8T131xQ.eyJpbnN0YW5jZUlkIjoiOTQ0MWMzYzItMzdhNC00NDk4LWEzNmUtM2I3MjA4OTQ2MWMyIiwiYXBwRGVmSWQiOiIxM2VlMTBhMy1lY2I5LTdlZmYtNDI5OC1kMmY5ZjM0YWNmMGQiLCJtZXRhU2l0ZUlkIjoiNzcwMDgzYTgtN2ZjMy00ODA3LTk0NDctMTQ0MGEyODAxZWIwIiwic2lnbkRhdGUiOiIyMDE5LTA0LTE4VDEzOjI4OjE0Ljc0MloiLCJ1aWQiOm51bGwsImlwQW5kUG9ydCI6Ijg2LjIzNC41Mi4yMy82MDM1MiIsInZlbmRvclByb2R1Y3RJZCI6bnVsbCwiZGVtb01vZGUiOmZhbHNlLCJhaWQiOiI4Y2QwNzMzNi1jYzIwLTQ4YzMtYjEzZC0wMDI4YTU4ODMyMDQiLCJiaVRva2VuIjoiZTM0MTQwNmEtNDg2Ny0wYzlmLTM3MjktMmYzMmFhMTQ3ZjcyIiwic2l0ZU93bmVySWQiOiI2MDJhNTdiNy05NGEwLTQ3OGMtODQxNC1iNzg1NGRlNDliYmMifQ%26compId%3Dcomp-jto1zpdt%26url%3Dhttps%3A%2F%2Fdocs.wixstatic.com%2Fugd%2F602a57_1db4a443deb04b31b7af42d1a5aef9ed.pdf#page=1&links=true&originalFileName=Concordance%20sur%20series%20mesures%20v12.7&allowDownload=true&allowPrinting=true).
