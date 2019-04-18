@@ -1,17 +1,15 @@
 # Rendre son code compréhensible {#C:code:good}
 
-> “Programs must be written for people to read, and only incidentally for machines to execute.” 
+> " *Programs must be written for people to read, and only incidentally for machines to execute*. " 
 >
 > -- Harold Abelson
   
-Nous avons vu dans les chapitres précédents (et en particulier dans 
-le chap.8 "des problèmes de calculs" *SG* [bien mettre le renvoi vers ce chap.8]) 
-que la diffusion ou le partage de ses codes informatiques était un pivot 
-de la recherche reproductible. 
-Une étape préalable dans cette démarche est de rendre son code facilement 
+Les chapitres précédents (et en particulier dans 
+le chap.8 "des problèmes de calculs" [bien mettre le renvoi vers ce chap.8]) 
+ont souligné l'importance des questions de diffusion, de partage de ses codes informatiques. 
+Une étape préalable à cette démarche est de rendre son code facilement 
 compréhensible par un lecteur externe. 
-Le premier de ces lecteurs se trouve bien souvent être soi-même 
-quelques mois plus tard, ou bien un proche collaborateur.
+Ce premier lecteur peut être un collègue, mais il suffit que quelques semaines s'écoulent pour que vous soyez votre propre pubic. 
 
 Il existe là encore différents degrés de complexité permettant de faciliter 
 la compréhension de son code : 
@@ -27,19 +25,18 @@ la compréhension de son code :
 
 > FIXME diagramme à refaire en plus joli et à améliorer *ECG*
 
-> FIXME Il manque dans ce chapitre des sous-sections "Pour en savoir Plus {-}"
+> FIXME Il manque dans ce chapitre des sous-sections "Pour en savoir plus {-}"
 
 ## Nommer ses variables et ses fonctions de manière informative
 
-> There are only two hard things in Computer Science: cache invalidation and naming things.
+> " *There are only two hard things in Computer Science: cache invalidation and naming things*. "
 >
 > -- Phil Karlton
 
-Une manière d'obtenir un code plus facile à comprendre pour un observateur extérieur 
+Une manière d'obtenir un code plus facile à comprendre par un observateur extérieur 
 est d'utiliser des noms informatifs qui explicitent directement ce que represente une 
 variable ou une fonction. C'est une tâche qui peut se révéler étonnamment ardue !
-Nous vous invitons par exemple à lire le code suivant et essayer de comprendre 
-ce à quoi il peut bien servir.
+Lisez le code suivant et essayez de comprendre ce à quoi il peut bien servir par exemple : 
 
 ```R
 ninja = 100
@@ -64,16 +61,16 @@ print(energy)
 Dans le code qui précède, le nom des variables est parfaitement clair 
 et le code se passe alors de commentaire.
 
-Une autre manière de rendre son code plus lisible est de le modulariser, en créant 
-des fonctions (aux noms explicites), qui permettent à la fois de rendre robuste
-le code (en évitant les répétitions d'instructions et minimisant ainsi le nombre d'erreurs), 
-mais aussi de le condenser et donc de le rendre plus lisible. 
+Une autre manière de rendre son code plus lisible est de le modulariser en créant 
+des fonctions (aux noms explicites), qui permettent  :
+- à la fois de le rendre robuste, en évitant les répétitions d'instructions et minimisant ainsi le nombre d'erreurs, 
+- mais aussi de le condenser et donc de le rendre plus lisible
 <!-- Cette approche de *Don't Repeat Yourself* est un principe qui s'oppose à *Write Everything Twice*. -->
 À l'occasion de cette modularisation, il vous faudra également bien réfléchir 
 à la portée de vos variables (variable locale ou globale)
 et aux paramètres de vos fonctions afin d'éviter autant que possible les variables 
-globales, les effets de bords étant une source de confusion et d'erreur inépuisable. 
-
+globales, les effets de bord étant une source de confusion et d'erreur inépuisable. 
+SG à repdre
 Pour limiter au maximum les erreurs dans un code, il faut donc essayer de l'écrire
 de façon à la fois claire, non ambigüe, commentée et concise. 
 C'est étonnamment difficile à faire lorsqu'on débute en programmation
