@@ -7,12 +7,11 @@ Ce livre a été rédigé de manière collaborative par plusieurs auteurs. Qui s
 
 Enseignant-chercheur en biostatistique et en épidémiologie clinique à
 [l’Ecole nationale vétérinaire d’Alfort](https://www.vet-alfort.fr/), 
-Loïc Desquilbet travaille dans le domaine de la recherche clinique vétérinaire 
-(principalement sur animaux de compagnie). Il conduit également des travaux dédiés à 
-la gérontologie canine. Il travaille sur SAS et a conçu une macro SAS pour prendre en 
-compte les variables quantitatives dans un modèle multivarié. 
+Loïc Desquilbet travaille dans le domaine de la recherche clinique vétérinaire, incluant la validation de méthodes de mesure (répétabilité, reproductibilité, et concordance de méthodes). Il travaille sur SAS et a conçu une macro SAS pour prendre en 
+compte les variables quantitatives dans un modèle multivarié. Ses enseignements visent à former les étudiants à l’analyse critique d’article.
 
-- [son compte Orcid](https://orcid.org/0000-0002-7044-2205)
+- [site web](https://loicdesquilbet.wixsite.com/biostat-epidemio) 
+
 
 ## Boris Hejblum
 Enseignant-chercheur en biostatistique à [l’Institut de Santé Publique d'Épidémiologie et de Développement](http://www.isped.u-bordeaux.fr/) 
