@@ -35,8 +35,9 @@ Il s'est spécialisé dans l'évaluation (simulation, observation, statistiques,
 et l'optimisation de performance de grandes infrastructures de calcul 
 (supercalculateurs, grille, calcul bénévole, clouds, …). 
 L’axe optimisation porte sur la proposition ou l’évaluation de méthodes 
-souvent sophistiquées où il est également important de conserver les détails pour comprendre leur performance, 
-comment les améliorer et dans quel cadre les utiliser. 
+souvent sophistiquées et où il est important de conserver 
+tous les détails pour comprendre leur performance et
+comment les améliorer.
 Arnaud Legrand co-pilote [le Mooc "Recherche reproductible"](https://www.fun-mooc.fr/courses/course-v1:inria+41016+session01bis/about).
 
 - [site web](http://mescal.imag.fr/membres/arnaud.legrand/) 
