@@ -104,5 +104,11 @@ un tel environnement minimum tels que [CDE](http://www.pgbovine.net/cde.html) ou
 
 ## Les systèmes de gestion de paquets
 
-NIX et GUIX
+L'aproche la plus aboutie pour la reproduction de l'environnement logiciel 
+s'appuie sur les systèmes de gestions de paquets tels que NIX et GUIX [REF]. 
+Il s'agit d'outils permettant d'identifier et d'isoler très précisement 
+l'environnement nécessaire pour la recherche reproductible, de le partager 
+avec d'autres pour qu'ils puissent le mettre en oeuvre, et même d'y 
+apporter des modifications très précisément contrôlée afin d'évaluer l'impact
+de tels changements.
 
