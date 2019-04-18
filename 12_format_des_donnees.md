@@ -55,7 +55,7 @@ L'enjeu autour du format pour la recherche reproductible est double :
 Le chercheur doit donc avoir en tête les bonnes pratiques établies dans sa communauté, et 
 tenter de s'assurer que son choix de représentation permette (voire facilite)
 la réutilisation de ses données et de ses résultats. Le nom des fichiers est également 
-un point important du formattage, et sera abordé dans le chapitre \@ref(C:versionning).
+un point important du formattage, et sera abordé dans le chapitre \@ref(C:versioning).
 
 
 La recherche reproductible est largement basée sur une minimisation des interventions 
@@ -80,7 +80,7 @@ On distingue 3 grand types de formats :
  - les formats texte (tels que .csv pour les tables) qui sont lisibles par les
  humains comme par les machines, qui sont très interopérables, et dont les
  modifications peuvent être enregistrées par les outils de suivi de version
- (voir le chapitre \@ref(C:versionning)).
+ (voir le chapitre \@ref(C:versioning)).
 
 Par exemple, pour des tables de données simples, les formats .csv ou .tsv sont
 recommandés, plutôt que les versions plus ou moins propriétaires ou spécifiques
