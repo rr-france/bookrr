@@ -1,4 +1,4 @@
-# Problèmes de communication des résultats {#B-data-output}
+# Communication des résultats {#B-data-output}
 
 Nous allons voir dans ce chapitre qu’une recherche peut devenir non
 reproductible s’il existe une mauvaise utilisation des résultats de l'étude au
