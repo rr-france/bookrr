@@ -263,3 +263,7 @@ des utilisateurs de workflows).
 
 Les workflows sont également des éléments à archiver pour rendre
 une étude reproductible.
+
+## Pour en savoir plus
+
+>FIXME
