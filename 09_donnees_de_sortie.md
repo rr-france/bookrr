@@ -26,24 +26,23 @@ si les relecteurs ratent l’erreur.
 ## Transformation des résultats
 
 Une autre erreur pouvant survenir à partir des résultats 
-fournis ***LDT arrêt ici*** par un logiciel est celle d’une « transformation » 
+fournis par un logiciel est celle d’une "transformation" 
 (bien entendu involontaire) de ces données. 
 Cette modification délétère peut très facilement se produire 
-si vous devez resaisir dans votre article les sorties
+si vous devez resaisir dans votre article les sorties résultats
 du logiciel. Une erreur de frappe est si facilement arrivée! 
 
 Un deuxième exemple de transformation des résultats est celui 
 de l’amélioration d’une figure. 
 Si vous trouvez que la figure que vous obtenez à partir d'un 
 logiciel n’est pas satisfaisante, vous pouvez décider de la 
-retravailler « à la main », par exemple en ajoutant une courbe 
+retravailler "à la main", par exemple en ajoutant une courbe 
 interpolant des points, alors que les valeurs intermédiaires 
-n'ont pas de sens.
-Ceci est dangereux, car le traitement de l’information 
+n'ont pas de sens. Cette manipulation est dangereuse, car le traitement de l’information 
 n’est plus produit par une chaine d'instructions validée et
 automatisée, mais par vous-même – et vous n’êtes pas infaillible. 
 
-Une transformation involontaire des données peut aussi
+Une transformation involontaire des résultats peut aussi
 se produire si vous collaborez sur une étude, et si vous 
 devez intégrer les résultats d’analyses réalisées par 
 votre collaborateur, mais dont vous ne comprenez pas 
@@ -51,20 +50,20 @@ toutes les subtilités.
 Un exemple que l’on rencontre malheureusement fréquemment 
 dans la litérature concerne les résultats d’analyses statistiques. 
 Vous avez demandé à votre collègue spécialiste des statistiques 
-de traiter certaines de vos données, et il vous envoie ses résultats, 
+de traiter certaines de vos données, et il vous envoie ses résultats 
 que vous ne comprenez pas dans le détail. 
-Il peut alors facilement arriver que par défaut de compréhension
+Il peut alors facilement arriver que, par défaut de compréhension,
 vous retranscriviez mal ou partiellement les résultats dans l’article. 
 De telles erreurs de saisie peuvent passer totalement inaperçues 
-si les reviewers n’ont pas non plus les compétences statistiques 
+si les relecteurs n’ont pas non plus les compétences statistiques 
 requises pour interpréter ces résultats.
 
 ## Présentation des résultats
 
 Une forme très courante de perte d'information est liée à
 l'absence ou à la forme inappropriée des incertitudes associées
-aux résultats d'une mesure physique ou virtuelle ou d'une étude statistique.
-Très souvent, l'absence d'incertitude empêche une comparaison de résultats,
+aux résultats d'une mesure physique ou virtuelle, ou d'une étude statistique.
+Très souvent, l'absence d'incertitude (par exemple, l'absence de valeur d'écart-type) empêche une comparaison de résultats,
 ou bien l'absence de matrice de corrélation entre les paramètres
 incertains d'une étude empêche leur réutilisation.
 
@@ -73,17 +72,15 @@ adéquates, des problèmes d'arrondi peuvent anéantir la réutilisabilité
 des données. 
 
 Une mauvaise sélection du nombre de chiffres significatifs à reporter 
-dans un résultat numérique peut tout à fait se produire. 
-Vous pourriez juger qu’un seul chiffre significatif peut suffire, 
-pour une question de *présentation* (taille d'une table de résultats). 
-Mais si vos résultats sont nécessaires à la réalisation d’autres recherches 
+dans un résultat numérique peut tout à fait se produire. Vous pourriez juger qu’un seul chiffre significatif peut suffire, 
+pour une question de *présentation* (taille d'une table de résultats). Mais si vos résultats sont nécessaires à la réalisation d’autres recherches 
 (comme par exemple la réalisation de simulations basées entre autres 
 sur vos résultats), les erreurs générées dans ces autres recherches 
 pourront être amplifiées (une petite erreur initiale peut conduire 
 à une erreur très importante en bout de course – cf. « chaos numérique » 
 dans le chapitre *SG* ***XX*** [à remplacer]). 
 
-Ainsi, la matrice de variance-covariance publiée par le CODATA en 2002 pour 
+A titre d'illustration, la matrice de variance-covariance publiée par le CODATA en 2002 pour 
 l'ajustement des constantes fondamentales, arrondie pour être présentable 
 dans les annexes de l'article, s'est avérée inutilisable pour des travaux 
 ultérieurs. *SG* [V.V. Ezhela, Yu.V. Kuyanov, V.N. Larin, A.S. Siver  (2004)
