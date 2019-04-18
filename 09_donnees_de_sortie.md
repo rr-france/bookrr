@@ -9,7 +9,7 @@ ou d'une transformation de ces données.
 ## Une mauvaise sélection des résultats
 
 Il est tout à fait possible que la sortie des résultats fournis par un logiciel
-contienne un nombre élevé d’informations, et qu’il faille sélectionner celles
+contienne un nombre élevé d’informations et qu’il faille sélectionner celles
 pertinentes pour la question de recherche dont fait l’objet votre article.
 
 Devant cet amas d’information, il peut tout à fait vous arriver de mal
@@ -17,17 +17,16 @@ sélectionner l’information pertinente (votre sélection à la souris a oubli�
 quelques caractères en début ou en fin de séquence à sélectionner, par
 exemple). Si cette information est encore complexe et difficilement
 compréhensible par vos collaborateurs parce que vous êtes spécialiste dans le
-domaine, et/ou qu'on vous fait totalement confiance, alors cette erreur de
-sélection sera présente dans l’article, et persistera après le processus de
+domaine, alors cette erreur de sélection sera présente dans l’article et persistera après le processus de
 revue, si les relecteurs ne répèrent pas cette erreur.
 
 ## Transformation des résultats
 
 Une autre erreur pouvant survenir à partir des résultats fournis par un
 logiciel est celle d’une "transformation" (bien entendu involontaire) de ces
-données.  Cette modification délétère peut très facilement se produire si vous
-devez resaisir dans votre article les sorties résultats du logiciel. Une erreur
-de frappe est si facilement arrivée!
+données. Cette modification délétère peut très facilement se produire si vous
+devez saisir de nouveau dans votre article les sorties résultats du logiciel. Une erreur
+de frappe est si facilement arrivée !
 
 Un deuxième exemple de transformation des résultats est celui de l’amélioration
 d’une figure. Si vous trouvez que la figure que vous obtenez à partir d'un
@@ -35,7 +34,7 @@ logiciel n’est pas satisfaisante, vous pouvez décider de la retravailler
 manuellement, par exemple en ajoutant une courbe interpolant des points, alors
 que les valeurs intermédiaires n'ont pas de sens. Cette manipulation est
 dangereuse, car le traitement de l’information n’est plus produit par une
-chaine d'instructions validée et automatisée, mais par vous-même – et vous
+chaîne d'instructions validée et automatisée, mais par vous-même – et vous
 n’êtes pas infaillible.
 
 Une transformation involontaire des résultats peut aussi se produire si vous
@@ -64,13 +63,13 @@ Même lorsque des efforts ont été faits pour publier les informations adéquat
 des problèmes d'arrondi peuvent anéantir la réutilisabilité des données. Une
 mauvaise sélection du nombre de chiffres significatifs à reporter dans un
 résultat numérique peut tout à fait se produire. Vous pourriez juger qu’un seul
-chiffre significatif peut suffire, pour une question de *présentation* (taille
+chiffre significatif peut suffire, pour une question de " présentation " (taille
 d'une table de résultats). Mais si vos résultats sont nécessaires à la
 réalisation d’autres recherches (comme par exemple la réalisation de
 simulations basées entre autres sur vos résultats), les erreurs générées dans
 ces autres recherches pourront être amplifiées (une petite erreur initiale peut
-conduire à une erreur très importante en bout de course – cf. « chaos numérique
-» dans le chapitre *SG* ***XX*** [à remplacer]).
+conduire à une erreur très importante en bout de course – cf. « Chaos numérique
+» dans le chapitre ***XX*** [à remplacer]).
 
 A titre d'illustration, la matrice de variance-covariance publiée par le CODATA
 en 2002 pour l'ajustement des constantes fondamentales, arrondie pour être
@@ -81,7 +80,7 @@ Status https://arxiv.org/abs/physics/0409117]
 
 # Que faire ?
 
-La réutilisabilité des résultats d'une étude doit être une priorité.  Pour
+La réutilisabilité des résultats d'une étude doit être une priorité. Pour
 cela, les données doivent être mises à disposition de futurs utilisateurs dans
 un format lisible par la machine, en utilisant un processus automatisé limitant
 les interventions manuelles.
