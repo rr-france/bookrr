@@ -26,7 +26,7 @@ si les relecteurs ratent l’erreur.
 ## Transformation des résultats
 
 Une autre erreur pouvant survenir à partir des résultats 
-fournis ***arrêt ici*** par un logiciel est celle d’une « transformation » 
+fournis ***LDT arrêt ici*** par un logiciel est celle d’une « transformation » 
 (bien entendu involontaire) de ces données. 
 Cette modification délétère peut très facilement se produire 
 si vous devez resaisir dans votre article les sorties
