@@ -1,4 +1,4 @@
-# (PART) Les solutions de la recherche reproductible {-}
+# (PART) Solutions de la recherche reproductible {-}
 
 # Le temps des changements ? {#C-intro}
 
