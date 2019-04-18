@@ -19,14 +19,15 @@ Si la méthode s’est popularisée dans les pays anglo-saxons, et particulière
 ## Que peut apporter un book sprint à des chercheurs.euses?
 
 La méthode du book sprint est peu diffusée en France, dans le milieu de la recherche mais :
-- **les modalités de diffusion du livrable sont adaptées au milieu académique** : archive ouverte, plateformes scientifiques (ex. : [Open Science Framework](https://osf.io/)) 
+- **les modalités de diffusion du livrable sont adaptées au milieu académique** : archive ouverte, plateformes scientifiques 
 - **la méthode est transposable à d’autres activités de rédaction** : documentation technique, appels à projets, supports pédagogiques, white papers, etc. 
 
 Ce n’est pas un cadre pour faire surgir des idées totalement nouvelles : la très forte contrainte temporelle fait qu’il ne faut pas surestimer la capacité à faire surgir des idées complètement innovantes sur un sujet. 
 En revanche, **le book sprint permet de confronter et de tester ses idées avec des auteurs issus d’autres disciplines, ayant d’autres expertises**, voire de modifier son point de vue sur certains sujet au fil des échanges. 
 
 Le book sprint peut aussi être l’occasion de **formaliser des idées dans un cadre plus souple que les formats de publication classiques. Un travail préparatoire de la part des organisateurs permet aux auteurs de se projeter sans pour autant rédiger à l’avance leur partie : la table des matières est conçue grâce aux échanges**.
-La qualité du livrable n’est pas du niveau d’un article ou d’un chapitre d’ouvrage : il n’est pas réaliste d’attendre le même degré de qualité qu’une production académique compte tenu du cadre imparti, mais : 
+
+La qualité du livrable ne peut pas être du niveau d’un article ou d’un chapitre d’ouvrage : il n’est pas réaliste d’attendre le même degré de qualité qu’une production académique compte tenu du cadre imparti, mais : 
 - cette méthode permet de réaliser des travaux qui auraient peu de chances de voir le jour dans des conditions de travail plus traditionnelles. La contrainte temporelle agit comme un levier puissant pour se concentrer sur l’essentiel. Il s’agit de considérer le livrable comme le draft le plus abouti possible d’un contenu amené à évoluer.
 - la plateforme de diffusion permettra le versionnage. 
 - les attentes concernant un guide pratique ne sont pas les mêmes que celles qui portent sur un article.
