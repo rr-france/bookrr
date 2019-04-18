@@ -57,3 +57,7 @@ collecte des informations doit être reproductible entre opérateurs (on parle d
 reproductibilité inter-opérateurs, il faut donc avoir standardisé au maximum le
 protocole de collecte des données, en s'appuyant sur un instrument de mesure capable de recueillir les informations avec le minimum d'erreurs possibles. Des indicateurs statistiques, tels que les coefficients de concordance, permettent de quantifier la " répétabilité " (ou la " reproductibilité inter-opérateurs " d'une méthode de mesure).
 
+## Pour en savoir plus
+
+Pour en savoir plus sur les cahiers de laboratoire, nous vous invitons à aller sur le site du CNRS [ici](http://www.cnrs.fr/infoslabos/cahier-laboratoire/).
+Pour en savoir plus sur la quantification de la répétabilité et de la reproductibilité de la façon dont on collecte les données, vous pouvez cliquez [ici](https://loicdesquilbet.wixsite.com/biostat-epidemio/documents)
