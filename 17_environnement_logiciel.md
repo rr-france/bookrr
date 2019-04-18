@@ -52,15 +52,6 @@ Fournir une description *ad hoc* ne peut être une opération manuelle tant cett
 Il s'agit donc d'une solution informative sur son environnement, mais qui ne permet pas de 
 le reproduire en pratique.
 
-
-### Pour en savoir plus 
-Aller plus loin : 
-Module 4 du *SG* [MOOC sur la recherche
-reproductible](https://learninglab.inria.fr/mooc-recherche-reproductible-principes-methodologiques-pour-une-science-transparente/)
-et aux ressources correspondantes
-*SG*([slides](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module4/slides/C028AL_slides_module4-fr-gz.pdf),
-*SG*[ressources](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module4/ressources/resources_environment_fr.org)).
-
 ## Préserver le désordre (*aka "Preserve the mess"*)
 
 L'identification des dépendances permet de décrire son environnement,
@@ -84,12 +75,17 @@ C'est donc certainement la solution la plus simple à mettre en œuvre
 
 ### Isoler un environnement à l'aide d'un conteneur
 
-Un conteneur est un outil permettant d'émuler un système d'exploitation
-particulier avec un certain nombre d'applications installées. 
+Un conteneur est un outil permettant d'émuler un système
+d'exploitation particulier avec un certain nombre d'applications
+installées. Une solution très populaire pour utiliser les conteneurs
+est [Docker](https://www.docker.com/).
 
- - avantage par rapport à une machine virtuelle : le conteneur ne reproduit pas l'ensemble du système d'exploitation (en se passant du kernel). 
+- avantage par rapport à une machine virtuelle : le conteneur ne
+  reproduit pas l'ensemble du système d'exploitation (en se passant du
+  kernel); Il est donc plus léger (moins gros et plus rapide).
 
-- inconvénient : il ne fonctionne pas pour toutes les combinaisons de machine réelle - machine virtuelle. Une solution très populaire pour utiliser les conteneurs est [Docker](https://www.docker.com/).
+- inconvénient : il ne fonctionne pas pour toutes les combinaisons de
+  machine réelle - machine virtuelle.
 
 Il existe d'ailleurs des outils permettant d'identifier et de capturer automatiquement 
 un tel environnement logiciel minimum pour pouvoir le partager avec d'autres: *SG* [CDE](http://www.pgbovine.net/cde.html) ou [ReproZip](https://vida-nyu.github.io/reprozip/). Ces approches automatiques sont efficaces et très pratiques mais peuvent passer à côté de
@@ -107,6 +103,12 @@ apporter des modifications très précisément contrôlées afin d'évaluer l'im
 de tel ou tel changement.
 
 ## Pour en savoir plus
+Au sujet de l'identification des dépendances, vous pouvez vous référer
+au module 4 du *SG* [MOOC sur la recherche
+reproductible](https://learninglab.inria.fr/mooc-recherche-reproductible-principes-methodologiques-pour-une-science-transparente/)
+et aux ressources correspondantes
+*SG*([slides](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module4/slides/C028AL_slides_module4-fr-gz.pdf),
+*SG*[ressources](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module4/ressources/resources_environment_fr.org)).
 
->FIXME: TODO
-
+Pour une présentation plus complète, vous pouvez vouloir regarder ce 
+[séminaire sur ce sujet](https://github.com/alegrand/RR_webinars/blob/master/2_controling_your_environment/index.org)
