@@ -110,5 +110,5 @@ et aux ressources correspondantes
 *SG*([slides](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module4/slides/C028AL_slides_module4-fr-gz.pdf),
 *SG*[ressources](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module4/ressources/resources_environment_fr.org)).
 
-Pour une présentation plus complète, vous pouvez vouloir regarder ce 
-[séminaire sur ce sujet](https://github.com/alegrand/RR_webinars/blob/master/2_controling_your_environment/index.org)
+Vous  pouvez également vouloir regarder ce 
+[séminaire sur les workflows scientifiques en biinformatique](https://github.com/alegrand/RR_webinars/blob/master/2_controling_your_environment/index.org).
