@@ -90,12 +90,12 @@ Si un logiciel de gestion de versions est installé sur l'ordinateur de
 l'utilisateur, il est prudent, voire impératif, de mettre en œuvre une
 synchronisation vers un dépôt distant, ce qui présente plusieurs avantages à la
 fois : sauvegarder les travaux, les partager, et de collaborer. Ce dépot
-distant peut être sur une plateforme institutionnelle *SG* (par exemple le
+distant peut être sur une plate-forme institutionnelle *SG* (par exemple le
 [GitLab de
 l'Inria](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/gitlab)
 ou de [l'IN2P3](https://gitlab.in2p3.fr/CTA-LAPP/HiPeCTA) ou encore un
-plateforme privée comme [GitHub](https://github.com/)). En outre, ces
-plateformes permettent le travail collaboratif sur un projet ou de mettre le
+plate-forme privée comme [GitHub](https://github.com/)). En outre, ces
+plates-formes permettent le travail collaboratif sur un projet ou de mettre le
 projet à disposition du public dans des versions bien définies des documents.
 *SG* Pour que la recherche soit reproductible, le lecteur devrait
 systématiquement disposer du lien vers la version des données ou des codes

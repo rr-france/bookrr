@@ -19,7 +19,7 @@ Si la méthode s’est popularisée dans les pays anglo-saxons, et particulière
 ## Que peut apporter un book sprint à des chercheurs.euses?
 
 La méthode du book sprint est peu diffusée en France, dans le milieu de la recherche mais :
-- **les modalités de diffusion du livrable sont adaptées au milieu académique** : archive ouverte, plateformes scientifiques 
+- **les modalités de diffusion du livrable sont adaptées au milieu académique** : archive ouverte, plates-formes scientifiques 
 - **la méthode est transposable à d’autres activités de rédaction** : documentation technique, appels à projets, supports pédagogiques, white papers, etc. 
 
 Ce n’est pas un cadre pour faire surgir des idées totalement nouvelles : la très forte contrainte temporelle fait qu’il ne faut pas surestimer la capacité à faire surgir des idées complètement innovantes sur un sujet. 
@@ -29,14 +29,14 @@ Le book sprint peut aussi être l’occasion de **formaliser des idées dans un 
 
 La qualité du livrable ne peut pas être du niveau d’un article ou d’un chapitre d’ouvrage : il n’est pas réaliste d’attendre le même degré de qualité qu’une production académique compte tenu du cadre imparti, mais : 
 - cette méthode permet de réaliser des travaux qui auraient peu de chances de voir le jour dans des conditions de travail plus traditionnelles. La contrainte temporelle agit comme un levier puissant pour se concentrer sur l’essentiel. Il s’agit de considérer le livrable comme le draft le plus abouti possible d’un contenu amené à évoluer.
-- la plateforme de diffusion permettra le versionnage. 
+- la plate-forme de diffusion permettra le versionnage. 
 - les attentes concernant un guide pratique ne sont pas les mêmes que celles qui portent sur un article.
 
 Le book sprint n’est pas conçu pour améliorer les techniques rédactionnelles des auteurs. En revanche, la présence d’un éditeur permet d’homogénéiser les disparités rédactionnelles, de délester les auteurs des vérifications syntaxiques et orthographiques. 
 
 La notion de 1er auteur n’existe pas, mais :
 
-- le droit de paternité est respecté le livrable est déposé dans une plateforme permettant de rendre le livrable citable la validation des contenus est collégiale car la philosophie du book sprint met l’accent sur la collaboration. 
+- le droit de paternité est respecté le livrable est déposé dans une plate-forme permettant de rendre le livrable citable la validation des contenus est collégiale car la philosophie du book sprint met l’accent sur la collaboration. 
 - le facilitateur conduit les échanges et permet aux auteurs de conserver une dynamique adaptée au rythme du sprint. Si la nature fortement collaborative du travail fait émerger une part d'imprévu, il s'agit toutefois d'un exercice cadré, fondé sur une méthodologie. 
 
 Il est difficile de travailler avec des co-auteurs qu’on ne connaît pas, a fortiori s’ils ne sont pas spécialistes du même domaine que soi ; pour le bon déroulement du book sprint, certains rôles sont définis à l’avance : le facilitateur aide les auteurs à coordonner leurs idées. la rencontre avec des co-auteurs inhabituels enrichit les échanges 
