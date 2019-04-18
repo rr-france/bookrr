@@ -43,7 +43,7 @@ recherche ainsi que les doublons de versions successives). Elle
 correspond à l'ensemble du schéma ci-dessous (donc à tout le système 
 d'exploitation).
 
-![Schéma des différents environnements logiciel](img/schemaEnvirLogi.png)
+![Schéma des différents environnements logiciel](img/schemaEnvirLogi2.png)
 
 Cette identification des dépendances [*BHM* : modif à confirmer] est donc soit trop partielle et pas assez précise (façon n°1 ci-dessus),
 ou au contraire trop étendue (façon n°2 ci-dessus). Il existe cependant un continuum de façon d'identifier ces dépendances
