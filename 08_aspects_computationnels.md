@@ -3,6 +3,7 @@
 Les problèmes inhérents au calcul et aux codes associés partagent des similarités avec les problèmes liés aux données (par exemple la non disponibilité). Toutefois, les questions de calcul ont leurs spécificités du fait de leur nature opératoire : il s'agit d'exécuter ce code afin d'obtenir un résultat. Or, c'est lors de cette étape d'exécution que vont surgir un certain nombre de problèmes que l'on peut classer en deux grandes catégories : 
 - d'une part, ceux qui empêchent d'obtenir un résultat 
 - d'autre part, ceux qui rendent un résultat différent voire faux. 
+
 Si le premier type de problème est ennuyeux, le second type de problème est d'autant plus grave qu'il est difficile à détecter.
 
 <!-- Dans le pire des cas, le programme plante avec un message d'erreur -->
@@ -22,7 +23,7 @@ En guise de préambule, débutons par une liste non exhaustive des cas où l'on 
 
 * **Les logiciels propriétaires et le "licence d'exploitation" bingo** : votre équipe/structure a cessé de payer la licence. Variante : ce logiciel est disponible dans l'université d'un collègue mais pas dans l'établissement où vous travaillez actuellement. Autre variante : vous avez accès au logiciel, mais seul un nombre restreint de personnes peut y accéder en même temps, via un système de jetons. De fait, vous vous retrouvez à devoir attendre un bon moment avant d'y arriver.
 
-* ** Un seul code vous manque et tout est dépeuplé** : le code a été développé "en interne". Il arrive (trop souvent) qu'à la suite d'un crash disque, d'un vol d'ordinateur portable, du départ du développeur principal, ... que l'on n'ait simplement plus accès au logiciel. C'est souvent le résultat d'une politique (ou d'une absence de politique) de sauvegardes ou de partage d'informations au sein d'une équipe.
+* **Un seul code vous manque et tout est dépeuplé** : le code a été développé "en interne". Il arrive (trop souvent) qu'à la suite d'un crash disque, d'un vol d'ordinateur portable, du départ du développeur principal, ... que l'on n'ait simplement plus accès au logiciel. C'est souvent le résultat d'une politique (ou d'une absence de politique) de sauvegarde ou de partage d'informations au sein d'une équipe.
 
 * **Le numéro que vous avez demandé n'est plus attribué** : assez souvent, il s'agit d'un code développé "en externe" (dans une autre équipe de recherche par exemple) que l'on souhaite ré-exécuter, par exemple pour s'y comparer ou bien pour vérifier si on obtient bien des résultats similaires avec une autre méthode. En général, on cherche alors le code sur le web mais il est assez courant que l'URL indiquée dans l'article ne soit plus accessible car le développeur (doctorant/postdoctorant) a depuis quitté l'équipe où il travaillait et que sa page web a été supprimée ou complètement
   restructurée. Ce problème est connu sous le nom d'[*URL decay*](https://www.spinellis.gr/sw/url-decay/) ou de [*Link
@@ -67,8 +68,8 @@ programmation que vous connaissez).
   la documentation au fur et à mesure) sinon ces commentaires risquent plus de
   vous fourvoyer que de vous aider.
 
-* Il y a un dicton célèbre en informatique qui dit “Programs must be written
-  for people to read, and only incidentally for machines to execute.” C'est une
+* Il y a un dicton célèbre en informatique qui dit “*Programs must be written
+  for people to read, and only incidentally for machines to execute*.” C'est une
   citation d'[Harold Abelson](https://en.wikipedia.org/wiki/Hal_Abelson) tirée
   de son livre *Structure and Interpretation of Computer Programs* publié en
   1979 *SG*. Commenter, c'est une chose, mais lorsque l'on cherche à comprendre un
@@ -93,14 +94,14 @@ provienne de la version d'un logiciel actuellement installé sur la
 machine. Pour corriger ce *bug*, on peut vouloir mettre à jour le logiciel. Mais
 quelle version a été utilisée dans le passé et quelle est la version actuelle ?
 Et comment savoir si c'est effectivement la cause de la différence observée ?
-La mise à jour n'introduirait-elle pas de nouveaux bugs ? L'idéal serait
+La mise à jour n'introduirait-elle pas de nouveaux *bugs* ? L'idéal serait
 peut-être de revenir à une version plus ancienne mais comment faire ? Quelle
 est la version la plus récente que je puisse utiliser ?
 
 Enfin, cette nouvelle version sera-t-elle toujours compatible avec mon
 ordinateur ? Et si je repars du code source, arriverai-je à le recompiler ?
 
-## L'environnement de calcul ou les poupées russes diaboliques
+## L'environnement de calcul ou le paradigme des poupées russes diaboliques
 
 Plus le langage que vous utilisez est de haut niveau, plus il est probable
 qu'il dissimule une grande complexité. Même le script le plus anodin dépend (en
@@ -131,7 +132,7 @@ python3-cycler (>= 0.10.0), python3:any (>= 3.3.2-2~), libc6 (>=
 
 C'est ici la version 2.1.1-2 qui est présente et, pour l'installer, il a fallu
 installer les paquets `python3-dateutil`, `python-matplotlib-data`,
-`python3-pyparsing`, etc. C'est ce qu'on appelle les *dépendances*. Mais pour
+`python3-pyparsing`, etc. C'est ce qu'on appelle les "dépendances". Mais pour
 ces paquets dépendent eux-mêmes d'autres paquets. Lorsque l'on récupère
 l'ensemble des paquets nécessaire avec leurs dépendances, voici ce qu'on
 obtient:
@@ -140,7 +141,7 @@ obtient:
 
 Vous remarquerez dans les dépendances que la version n'est pas précisément
 indiquée mais qu'il faut par exemple une version supérieure de
-`python3-pyparsing` qui soit au moins 1.5.6. Mais si des bugs peuvent être
+`python3-pyparsing` qui soit au moins 1.5.6. Mais si des *bugs* peuvent être
 introduits, comment être sûr que votre code fonctionnera de la même façon avec
 les versions `1.5.6`, `1.5.7`, ..., sachant que nous en sommes maintenant au
 moins à la version `2.2.0`.
