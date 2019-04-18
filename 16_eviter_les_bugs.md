@@ -63,6 +63,6 @@ chapitre suivant)
 
 ## Pour en savoir plus 
 
- - https://www.wikihow.com/Pair-Program
- - [Wickham H. testthat: Get started with testing. The R Journal. 2011 Jun 1;3(1):5-10. https://journal.r-project.org/archive/2011/RJ-2011-002/RJ-2011-002.pdf]
- - https://juliasilge.com/blog/beginners-guide-to-travis
+ - [How to Pair Program](https://www.wikihow.com/Pair-Program)
+ - [Wickham H. testthat: Get started with testing. The R Journal. 2011 Jun 1;3(1):5-10.](https://journal.r-project.org/archive/2011/RJ-2011-002/RJ-2011-002.pdf)
+ - [Beginner Guide to Travis](https://juliasilge.com/blog/beginners-guide-to-travis)
