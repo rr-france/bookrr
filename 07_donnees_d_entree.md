@@ -9,6 +9,12 @@ documentation (méta-données).
 
 ## Intégrité
 
+Lorsque l'on pense à l'intégrité des données, la première chose qui vient à
+l'esprit est le scénario catastrophe où les données ont été effacés. Il existe
+pourtant bien d'autres situations qui sont bien pires puisque l'intégrité des
+vos données a été compromises sans que vous vous en rendiez compte.
+
+
 Perte information / perte précision / MD5 hash / Contrôle d'accès
 Qui a accès aux données ? écriture / lecture ?
 
@@ -28,7 +34,7 @@ l'institution hébergeante refond son site web sans prendre garde à assurer la
 pérennité des urls ([URL decay](https://www.spinellis.gr/sw/url-decay/)).
 
 
-## Méta-données
+## Indexation et Méta-données
 
 Quand bien même l'intégrité des données aurait été assuré, l'absence
 d'information sur ces données (notice ou méta-données) peut-être la source de
