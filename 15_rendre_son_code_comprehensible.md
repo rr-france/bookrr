@@ -21,11 +21,14 @@ la compréhension de son code :
  5. utiliser des documents computationnels
  6. restructurer et automatiser avec un *workflow*
 
+<!--
 ![Outils d'amélioration pour la compréhension du code](img/testdiagramch15.png)
 
 > FIXME diagramme à refaire en plus joli et à améliorer *ECG*
 
 > FIXME Il manque dans ce chapitre des sous-sections "Pour en savoir plus {-}"
+
+-->
 
 ## Nommer ses variables et ses fonctions de manière informative
 
@@ -115,7 +118,8 @@ Déléguer votre responsabilité à un tiers peut bien se passer la plupart du t
 Enfin, jusqu'au jour où, après une mise à jour, la valeur d'un de ces *n-k* 
 paramètres par défaut est changée ! 
 Vos résultats changent, alors que votre programme n'a pas changé d'un bit. 
-Le problème aurait pu être évité : vous auriez pu expliciter l'ensemble de vos *n* paramètres, y compris les éléments non obligatoires car disposant d'une valeur par défaut.
+Le problème aurait pu être évité : vous auriez pu expliciter l'ensemble de vos *n* paramètres, 
+y compris les éléments non obligatoires car disposant d'une valeur par défaut.
 
 ## Commenter son code
 
@@ -135,7 +139,7 @@ print(bluE_Pizza) # Now, let's print it on the screen
 ```
 
 Les commentaires ci-dessus n'aident pas vraiment à comprendre
-de quoi il retourne ; la version du code avec des noms de variable
+de quoi il retourne ; la version du code avec des noms de variables
 explicites est bien plus simple à comprendre. 
 On pourrait toutefois objecter cet argument : un code bien écrit se passe de commentaires. 
 Il s'avère que les commentaires de l'auteur du code s'adressent à son lecteur, 
@@ -205,9 +209,9 @@ les chercheurs :
 > FIXME: On pourrait peut-être insérer ici une illustration tirée du  [slide 37](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module2/slides/C028AL_slides_module2-fr-gz.pdf)
 > [SVG](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module2/slides/img/example_pi_full.svg)
 
-Ce procédé permet ainsi de documenter chaque étape de la recherche : chaque partie du code est gérée de manière indépendante et de fait, liée à sa finalité directe.
-Différents outils permettent d'écrire de tels documents, les
-plus matures étant :
+Ce procédé permet ainsi de documenter chaque étape de la recherche : chaque partie du code 
+est gérée de manière indépendante et de fait, liée à sa finalité directe.
+Différents outils permettent d'écrire de tels documents, les plus matures étant :
 
  - Jupyter (https://jupyter.org)
  - Rmarkdown (https://rmarkdown.rstudio.com)
@@ -224,6 +228,7 @@ Pour en savoir davantage sur les documents computationels, vous pouvez vous rapp
 module 2 et 3 du [MOOC sur la recherche
 reproductible](https://learninglab.inria.fr/mooc-recherche-reproductible-principes-methodologiques-pour-une-science-transparente/).
 *SG*
+
 ## Restructurer et automatiser l'exécution du code avec un *workflow*
 
 Nous avons déjà évoqué l'importance de modulariser son code pour le
@@ -233,7 +238,9 @@ la programmation fonctionnelle, la programmation orientée objet,
 les *design patterns*, etc. 
 
 Dès lors qu'il est question de transformer des
-quantités importantes de données par des calculs complexes, le concept de [systèmes de workflows scientifiques](https://en.wikipedia.org/wiki/Scientific_workflow_system) *SG* trouve toute sa pertinence. 
+quantités importantes de données par des calculs complexes, le concept de 
+[systèmes de workflows scientifiques](https://en.wikipedia.org/wiki/Scientific_workflow_system) *SG* 
+trouve toute sa pertinence. 
 Il existe de nombreux *workflows* répondant aux besoins de 
 différentes communautés scientifiques : astrophysique, génétique, etc. 
 
@@ -249,4 +256,5 @@ ses travaux reproductibles.
 
 ## Pour en savoir plus
 
->FIXME
+Le sujet des workflows est développé dans un webinar [Reproducible Science in Bioinformatics: Current Status, Solutions and Research Opportunities](https://github.com/alegrand/RR_webinars/blob/master/6_reproducibility_bioinformatics/index.org)
+
