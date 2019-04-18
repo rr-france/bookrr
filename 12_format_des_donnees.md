@@ -1,4 +1,4 @@
-# Formatter et structurer l'information {#C:data:format}
+# Formater et structurer l'information {#C:data:format}
 
 Dans ce chapitre, nous allons traiter des formats et structures 
 de fichiers numériques, bien que ces concepts aient aussi leur importance
