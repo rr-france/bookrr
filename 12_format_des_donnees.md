@@ -13,6 +13,10 @@ bien que le format ait sont importance y compris en dehors de l'outils numériqu
 En outre, le  noms des fichiers est également un point important du formattage, et
 sera abordé dans le chapitre \@ref(C:versionning).
 
+[***BH*** : relire ce qui suit qui était dans "résumé" avant] Le chercheur doit donc avoir en tête les bonnes pratiques établies dans sa communauté, et 
+tenter de s'assurer que son choix de représentation permette (voire facilite)
+la réutilisation de ses données et de ses résultats.
+
 ## Comment structurer mes informations ?
 
 Les chercheurs peuvent être amenés à travailler sur des données de
@@ -129,13 +133,6 @@ que la plus petite valeur propre de la matrice garde deux chiffres significatifs
 [REF Evaluation of measurement data – Supplement 2 to the "Guide to the expression of 
 uncertainty in measurement" – Extension to any number of output quantities JCGM 102:2011, Definition 3.21  
 (https://www.bipm.org/utils/common/documents/jcgm/JCGM_102_2011_E.pdf)]
-
-
-## Résumé 
-
-Le chercheur doit donc avoir en tête les bonnes pratiques établies dans sa communauté, et 
-tenter de s'assurer que son choix de représentation permette (voire facilite)
-la réutilisation de ses données et de ses résultats.
 
 
 ## Pour en savoir plus
