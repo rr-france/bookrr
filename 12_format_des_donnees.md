@@ -1,38 +1,54 @@
-# Format des données
+# Format 
 
-La recherche reproductible est largement basée sur une minimisation des
-interventions manuelles dans le flot de production des résultats à
-partir des données d'entrée. Le maître mot dans le choix d'un format
-de stockage des informations est "lisibles par la machine". 
-On devrait dire "lisible par toutes les machines", pour éviter les
-idiosyncrasies des différents système d'exploitation.
-Cette règle s'applique aux données, mais également aux noms des
-fichiers, comme nous le verrons par la suite [Chap. 13].
+L'enjeu autour du format pour la recherche reproductible est double : 
 
-De cette démarche seront donc exclus, si possible:
-
-* les formats fermés/propriétaires pour lesquels le risque de perte
-  de lisibilité n'est pas maîtrisé par l'utilisateur; 
-  
-* le format binaire, nécessitant une étape de décodage, 
-  et qui supporte mal la transition entre les
-  systèmes d'exploitation et les architectures matérielles.
-  Certains formats de fichier prévus à cet effet permettent
-  l'archivage en binaire de manière transparente (hdf5);
+ - assurer l'interopérabilité
+ - minimiser les risques d'erreur de manipulation
  
-* les formats de description de page (postscript, pdf...),
-  notamment comme "Supplementary Material" d'articles.
+Il est particulièrement sensible pour les données, mais joue également un rôle 
+pour les codes et les résultats produits.
+ 
+Dans ce chapitre nous allons traiter principalement des formats de fichiers numérique,
+bien que le format ait soit importance y compris en dehors de l'outils numérique.
 
-Par exemple, pour des tables de données simples, le format .csv 
-est recommandé, et on évitera les versions plus ou moins 
+TODO noms des fichiers, comme nous le verrons par la suite [Chap. 13]
+
+
+## Quel format choisir pour enregistrer et stocker des informations ?
+
+La recherche reproductible est largement basée sur une minimisation des interventions 
+manuelles dans le flot de production des résultats. L'objectif dans ce choix d'un 
+format d'enregistrement et de stockage des informations est de garantir la "lisibilité
+par la machine". On devrait donc dire "lisible par toutes les machines" avec  en tête
+les spécificités des différents système d'exploitation qui peuvent devenir problématiques
+pour certains formats. 
+
+On distingue 3 grand types de formats :
+
+ - les formats fermés/propriétaires pour lesquels le risque de perte de lisibilité 
+ n'est pas maîtrisé par l'utilisateur et qui nécessite que d'autres dispose du logiciel
+ nécessaire (parfois couteux) pour pour réutiliser les données.
+  
+ - les formats illisible par l'humain (tel que les formats binaires ou de description de 
+ page tel que le pdf) qui nécessitent une étape de décodage, et qui peuvent parfois mal 
+ supporter la transition entre les systèmes d'exploitation et les architectures matérielles. 
+ 
+ - les formats texte (tels que .csv)
+
+Par exemple, pour des tables de données simples, le format .csv est recommandé, et on évitera les versions plus ou moins 
 propriétaires ou spécifiques à un tableur (.dot, .xsl, .xslx...).
 
-> Pour des données plus complexes, de type hiérarchique, 
-des formats ouverts et adaptés doivent être envisagées
-(hdf5, xml).
-A DEVELOPPER...
+À noté que certains formats de fichier prévus à cet effet permettent l'archivage en binaire de manière transparente (hdf5).
 
-## Présentation et stockage de résultats numériques
+
+
+TODO Pour des données plus complexes, de type hiérarchique, des formats ouverts et adaptés doivent être envisagées (hdf5, xml).
+[*NR* ou *AL*]
+
+
+# redondance avec collecte ?
+
+## La présentation des résultats numériques
 
 Lors du stockage de données numériques il est primordial 
 d'éviter la perte ou l'érosion d'information afin de garantir
@@ -44,7 +60,7 @@ correctement leur représentation numérique. *SG*
 data management and stewardship. Sci. Data 3:160018 doi:
 10.1038/sdata.2016.18 (2016).]
 
-### Nombre de chiffres significatifs et incertitudes
+**Nombre de chiffres significatifs et incertitudes**
 Cela concerne en particulier le choix du nombre de chiffres
 significatifs à reporter dans une table de données.
 
@@ -80,5 +96,7 @@ aux pratiques établies de sa communauté, et sinon, s'assurer
 que son choix de représentation n'affecte pas les résultats
 pour un scénario plausible de réutilisation des données.
 
+
+## Pour en savoir plus
 
 
