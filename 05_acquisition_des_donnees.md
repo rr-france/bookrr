@@ -1,8 +1,9 @@
-# Acquisition des données
+# Problèmes émergeant lors de l’acquisition de l'information
 
-[suggestion de titre de chapitre : "Problèmes émergeant dans l’acquisition des informations"]
+Dans une démarche de recherche, la première étape est bien souvent l'aquisition
+d'information, que cela soit à partir de la collecte de nouvelles mesures expérimentales 
+ou à partir de données déjà publieés.
 
-[*BH*] [Merci de prévoir un paragraphe introductif]
 
 
 ## Absence de standardisation de la collecte des informations
@@ -17,7 +18,7 @@ glucose d’une personne atteinte de diabète, ou bien encore son âge, son poid
 [*BH*] [solution partielle ci-dessous : à déplacer ?]
 Un point fondamental pour assurer une recherche reproductible est de standardiser la collecte 
 des informations. En effet, si cette collecte n’est pas standardisée, la personne qui collecte 
-des informations sur un individu un jour n°1 ne le fera potentiellement pas de la même façon le 
+des informations sur un individu/unité un jour n°1 ne le fera potentiellement pas de la même façon le 
 jour n°2 si elle devait le refaire. Et si elle ne le fait pas de la même façon, alors la valeur 
 de l’information du jour n°2 serait différente de celle du jour n°1, non pas parce que l’information 
 a changé au cours du temps (ce qui est possible, et éventuellement acceptable – cf. ci-dessous), 
@@ -30,7 +31,7 @@ façon qui n’est pas fixée pendant toute la durée de l’étude ?
 ## Modification des données après une collecte originale
 
 Un autre problème conduisant à une recherche non reproductible se produit lorsque des 
-informations recueillies sur un individu sont modifiées après une première collecte, 
+informations recueillies sur une unité sont modifiées après une première collecte, 
 sans que ces modifications ne soient tracées. Dans ce cas-là, les analyses statistiques 
 qui seront conduites sur les informations modifiées ne fourniront évidemment pas les 
 mêmes résultats que celles conduites sur les informations initiales. S’il n’y a aucun 
@@ -48,6 +49,7 @@ Dans cette section nous allons utiliser une définition particulièrement préci
 termes " reproductibilité " et " répétabilité ", en utilisant les définition métrologique 
 de ces termes (dont l'acception peut parfois varier d'un domaine spécifique à l'autre). Ces 
 définitions vont nous servir à discuter de l'impact
+
 
 ### Quelques définitions issues du Vocabulaire International de Métrologie
 
@@ -75,61 +77,77 @@ ainsi que des mesurages répétés sur le même objet ou des objets similaires. 
 
 Si la collecte d’une information n’est pas " répétable " au sens du VIM défini ci-dessus, les 
 conditions d’une recherche reproductible ne peuvent alors pas être remplies : vous n’obtiendriez 
-pas les mêmes résultats à partir d’informations collectées sur des individus identiques, évalués 
+pas les mêmes résultats à partir d’informations collectées sur des unités identiques, évalués 
 dans les mêmes conditions par un même opérateur. Si la collecte des données n’est pas " reproductible " 
-d’un opérateur à un autre au sens du VIM, les conditions d’une recherche reproductible ne sont pas non plus remplies : personne d’autre que vous ne pourrait obtenir les mêmes résultats sur des individus identiques évalués dans les mêmes conditions.
+d’un opérateur à un autre au sens du VIM, les conditions d’une recherche reproductible ne sont pas non 
+plus remplies : personne d’autre que vous ne pourrait obtenir les mêmes résultats sur des unités 
+identiques évaluées dans les mêmes conditions.
 
 
 
 ## Collecte des données à plusieurs
 
-Supposons que vous ne soyez pas la seule ou le seul à collecter les informations pour votre étude. Deux questions se posent. La première a déjà été abordée ci-dessus, et concerne la standardisation de la collecte des informations. Si cette collecte n’est pas standardisée, votre collègue et vous n’obtiendrez potentiellement pas les mêmes valeurs des informations collectées si vous évaluiez pourtant les mêmes individus. La seconde question qui se pose est la suivante : dans quel document, sur quel support allez-vous collecter les données de telle sorte que vous et votre collègue n’allez pas écraser les informations collectées par l’autre ?
-
-
+Supposons que vous ne soyez pas la seule ou le seul à collecter les informations pour votre étude. 
+Deux questions se posent alors. La première, déjà abordée ci-dessus, concerne la standardisation 
+de la collecte des informations : si cette collecte n’est pas standardisée, votre collègue et vous 
+n’obtiendrez potentiellement pas les mêmes valeurs des informations collectées lorsque vous évaluez 
+pourtant les mêmes unités. La seconde concerne l'outils de partage de l'information : dans quel 
+document, sur quel support, allez-vous collecter les données, pour garantir que vous et votre 
+collègue n’allez pas effacer les informations collectées par l’autre ?
 
 
 
 ## Numérisation
 
-Lorsqu'une étude dépend de données collectées dans la littérature,
-une intervention manuelle est souvent nécessaire pour constituer
-la base de données. 
-Considérons d'abord le cas, fréquent et a priori favorable, 
-où les données convoitées sont dans le fichier pdf d'un article 
-ou de son supplément. 
-Lorsqu'on effectue un copier/coller d'une partie de fichier pdf 
-vers un éditeur de texte, les sources de contrariété sont multiples, 
-et dépendent largement du logiciel utilisé pour afficher le fichier pdf:
+Nous envisageons maintenant le cas d'une étude qui dépend de données collectées dans 
+la littérature. Dnas ce genre de cas, une intervention manuelle est souvent nécessaire 
+pour constituer la base de données. 
+
+Considérons d'abord le cas, fréquent dans certains domaines (et *a priori* favorable), 
+où les données d'intérêt sont dans le fichier pdf d'un article ou de son supplément. 
+
+Lorsqu'on effectue un copier/coller d'une partie de fichier pdf vers un éditeur de texte, 
+les sources de contrariété sont multiples, et dépendent largement du logiciel utilisé pour 
+afficher le fichier pdf :
   
-  * impossibilité éventuelle de gérer correctement des tables complexes 
+ - impossibilité éventuelle de gérer correctement des tables complexes 
 (avec des cellules vides ou table pivotée);
 
-* présence de renvois bibliographiques sur certains éléments du tableau;
+ - présence de renvois bibliographiques sur certains éléments du tableau;
 
-* gestion du signe moins "-", qui est souvent récupéré comme un tiret 
-ou demi-tiret "–", ne pouvant être interprété par les codes de calcul
+ - gestion du signe moins (" - "), qui est souvent récupéré comme un tiret (" — ") 
+ou demi-tiret, ne pouvant alors pas être interprété par les codes de calcul.
 
 * ...
 
-Aprés extraction des données, une étape de correction manuelle
-est indispensable, qui constitue en elle-même une source d'erreur.
-La récupération de données à partir d'images (OCR) présente des 
-problèmes similaires.
-Pour le chercheur aventureux, coller les données collectées
-dans un tableur peut introduire une couche supplémentaire
-de surprises (transformation de nombres en dates, par exemple) [@REF].
+Aprés extraction des données, une étape de correction manuelle est donc indispensable,
+qui constitue en elle-même une source d'erreur (en plus de ne pas toujours être 
+effectuée de façon traçable). La récupération de données à partir d'images (OCR) 
+présente des problèmes similaires.
+
+Et pour le chercheur aventureux, copier-coller les données collectées dans un tableur peut 
+introduire une couche supplémentaire de surprises (transformation de nombres ou 
+d'identifiants en dates, par exemple) [@REF https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1044-7].
+
 
 ## Que faire ?
 
-La solution dans ce cas, outre d'attendre la création de logiciels de conversion
-"intelligents", ne dépend pas du collecteur de données, mais de l'émetteur,
-et repose sur les règles de bonne pratique quant à l'archivage
-des données dans des formats ouverts et lisibles par la machine 
-(csv, xml...).
+Les solutions pour faire face aux problèmes évoqués dans ce chapitre, 
+dépend du collecteur de données, mais également de l'émetteur. 
 
-Du côté du collecteur, si le volume de données est important
-et/ou si la tâche est répétitive, l'élaboration d'un code 
-automatisant au maximum le processus
-devrait être envisagé.
+ - le collecteur de données pourra se reporter aux solutions présentées dans les chapitres [TODO] 
+pour automatiser et tracer au maximum le processus de collecte (d'autant plus que le volume 
+de données est important et/ou si la tâche est répétitive)
+ 
+ - l'emetteur de données pourra se reporter aux solutions présentées dans les chapitres [TODO]
+sur les règles de bonne pratique quant à l'archivage des données dans des formats 
+ouverts et lisibles par la machine (csv, xml...).
+
+[*BH* : xml lisible par la machine ?]
+
+**NB :** en tant que chercheur, nous sommes souvent l'emetteur de données d'un autre,
+et il faut intégrer cela dans nos bonnes pratiques de partage de nos résultats
+
+
 
 
