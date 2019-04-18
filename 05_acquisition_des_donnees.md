@@ -1,9 +1,8 @@
-# Problèmes émergeant lors de l’acquisition de l'information
+# Problèmes se produisant lors de l’acquisition de l'information
 
 Dans une démarche de recherche, la première étape est bien souvent l'aquisition
-d'information, que cela soit à partir de la collecte de nouvelles mesures expérimentales 
+d'information, que ce soit à partir de la collecte de nouvelles mesures expérimentales 
 ou à partir de données déjà publieés.
-
 
 
 ## Absence de standardisation de la collecte des informations
@@ -19,16 +18,16 @@ glucose d’une personne atteinte de diabète, ou bien encore son âge, son poid
 Un point fondamental pour assurer une recherche reproductible est de standardiser la collecte 
 des informations. En effet, si cette collecte n’est pas standardisée, la personne qui collecte 
 des informations sur un individu/unité un jour n°1 ne le fera potentiellement pas de la même façon le 
-jour n°2 si elle devait le refaire. Et si elle ne le fait pas de la même façon, alors la valeur 
+jour n°2 si elle devait le faire de nouveau. Et si elle ne procède pas de la même façon, alors la valeur 
 de l’information du jour n°2 serait différente de celle du jour n°1, non pas parce que l’information 
 a changé au cours du temps (ce qui est possible, et éventuellement acceptable – cf. ci-dessous), 
-mais parce que la méthode a changé. Ainsi, comment s’assurer d’une recherche reproductible si elle 
-est fondée sur des informations dont la valeur dépend de la façon dont elle est collectée, avec une 
-façon qui n’est pas fixée pendant toute la durée de l’étude ? 
+mais parce que la méthode a changé. 
+
+Ainsi, comment s’assurer d’une recherche reproductible si celle-ci
+se fonde sur des informations dont la valeur varie en fonction des modalités de collecte appliquées ? Quelle peut-être la valeur, voire la fiabilité, des données issues d'un mode de collecte qui n’est pas stabilisé pendant toute la durée de l’étude ? 
 
 
-
-## Modification des données après une collecte originale
+## Modification des données après une première collecte
 
 Un autre problème conduisant à une recherche non reproductible se produit lorsque des 
 informations recueillies sur une unité sont modifiées après une première collecte, 
@@ -45,41 +44,38 @@ sont évoquées dans le chapitre \@ref(collecte-infos).
 
 ## Une collecte d’informations non répétable ou non reproductible
 
-Dans cette section nous allons utiliser une définition particulièrement précise des 
-termes " reproductibilité " et " répétabilité ", en utilisant les définition métrologique 
-de ces termes (dont l'acception peut parfois varier d'un domaine spécifique à l'autre). Ces 
-définitions vont nous servir à discuter de l'impact
+Dans cette section, en vue d'examiner les impacts de l'étape de la collecte de données, nous allons utiliser une définition particulièrement précise des termes " reproductibilité " et " répétabilité ", en utilisant les définitions métrologiques de ces termes (dont l'acception peut parfois varier d'un domaine spécifique à l'autre). 
 
 
-### Quelques définitions issues du Vocabulaire International de Métrologie
+### Quelques définitions issues du *Vocabulaire International de Métrologie*
 
 Nous avons décidé de choisir les définitions proposées en 2012 dans la dernière version 
-du Vocabulaire International de Métrologie (VIM) car elles représentent l’effort le plus 
-récent de normalisation dans ce domaine (téléchargeable ici : 
+du *Vocabulaire International de Métrologie (VIM)* car elles représentent l’effort le plus 
+récent de normalisation dans ce domaine *SG*(téléchargeable ici : 
 https://www.bipm.org/en/publications/guides/).
 
-La **fidélité** de mesure est " l’étroitesse de l'accord entre les indications ou les 
+La **fidélité** de mesure s'entend comme : "l’étroitesse de l'accord entre les indications ou les 
 valeurs mesurées obtenues par des mesurages répétés du même objet ou d'objets similaires 
-dans des conditions spécifiées. "
+dans des conditions spécifiées."
 
 La **répétabilité** est la fidélité de mesure dans les conditions de mesures suivantes : 
-" conditions qui comprennent la même procédure de mesure, les mêmes opérateurs, le même 
+"conditions qui comprennent la même procédure de mesure, les mêmes opérateurs, le même 
 système de mesure, les mêmes conditions de fonctionnement et le même lieu, ainsi que des 
 mesurages répétés sur le même objet ou des objets similaires pendant une courte période 
-de temps. "
+de temps."
 
 La **reproductibilité** est la fidélité de mesure dans les conditions de mesures suivantes : 
-" conditions qui comprennent des lieux, des opérateurs et des systèmes e mesure différents, 
-ainsi que des mesurages répétés sur le même objet ou des objets similaires. "
+"conditions qui comprennent des lieux, des opérateurs et des systèmes de mesure différents, 
+ainsi que des mesurages répétés sur le même objet ou des objets similaires."
 
 
 ### Impact d’une absence de répétabilité ou de reproductibilité dans la collecte des informations
 
-Si la collecte d’une information n’est pas " répétable " au sens du VIM défini ci-dessus, les 
+Si la collecte d’une information n’est pas " répétable " au sens du *VIM* défini ci-dessus, les 
 conditions d’une recherche reproductible ne peuvent alors pas être remplies : vous n’obtiendriez 
 pas les mêmes résultats à partir d’informations collectées sur des unités identiques, évalués 
 dans les mêmes conditions par un même opérateur. Si la collecte des données n’est pas " reproductible " 
-d’un opérateur à un autre au sens du VIM, les conditions d’une recherche reproductible ne sont pas non 
+d’un opérateur à un autre au sens du *VIM*, les conditions d’une recherche reproductible ne sont pas non 
 plus remplies : personne d’autre que vous ne pourrait obtenir les mêmes résultats sur des unités 
 identiques évaluées dans les mêmes conditions.
 
@@ -88,19 +84,16 @@ identiques évaluées dans les mêmes conditions.
 ## Collecte des données à plusieurs
 
 Supposons que vous ne soyez pas la seule ou le seul à collecter les informations pour votre étude. 
-Deux questions se posent alors. La première, déjà abordée ci-dessus, concerne la standardisation 
-de la collecte des informations : si cette collecte n’est pas standardisée, votre collègue et vous 
-n’obtiendrez potentiellement pas les mêmes valeurs des informations collectées lorsque vous évaluez 
-pourtant les mêmes unités. La seconde concerne l'outils de partage de l'information : dans quel 
-document, sur quel support, allez-vous collecter les données, pour garantir que vous et votre 
-collègue n’allez pas effacer les informations collectées par l’autre ?
+Deux questions se posent alors : 
+- la première, déjà abordée ci-dessus, concerne la standardisation de la collecte des informations : si cette collecte n’est pas standardisée, votre collègue et vous n’obtiendrez potentiellement pas les mêmes valeurs des informations collectées lorsque vous évaluez pourtant les mêmes unités. 
+- la seconde concerne l'outils de partage de l'information : dans quel document, sur quel support, allez-vous collecter les données, pour garantir que vous et votre collègue n’allez pas effacer les informations collectées par l’autre ?
 
 
 
 ## Numérisation
 
 Nous envisageons maintenant le cas d'une étude qui dépend de données collectées dans 
-la littérature. Dnas ce genre de cas, une intervention manuelle est souvent nécessaire 
+la littérature. Dans ce genre de cas, une intervention manuelle est souvent nécessaire 
 pour constituer la base de données. 
 
 Considérons d'abord le cas, fréquent dans certains domaines (et *a priori* favorable), 
@@ -113,7 +106,7 @@ afficher le fichier pdf :
  - impossibilité éventuelle de gérer correctement des tables complexes 
 (avec des cellules vides ou table pivotée);
 
- - présence de renvois bibliographiques sur certains éléments du tableau;
+ - présence de renvois bibliographiques sur certains éléments du tableau ;
 
  - gestion du signe moins (" - "), qui est souvent récupéré comme un tiret (" — ") 
 ou demi-tiret, ne pouvant alors pas être interprété par les codes de calcul.
@@ -127,13 +120,13 @@ présente des problèmes similaires.
 
 Et pour le chercheur aventureux, copier-coller les données collectées dans un tableur peut 
 introduire une couche supplémentaire de surprises (transformation de nombres ou 
-d'identifiants en dates, par exemple) [@REF https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1044-7].
+d'identifiants en dates, par exemple) *SG* [@REF https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1044-7].
 
 
 ## Que faire ?
 
 Les solutions pour faire face aux problèmes évoqués dans ce chapitre, 
-dépend du collecteur de données, mais également de l'émetteur. 
+dépendent du collecteur de données, mais également de l'émetteur. 
 
  - le collecteur de données pourra se reporter aux solutions présentées dans les chapitres [TODO] 
 pour automatiser et tracer au maximum le processus de collecte (d'autant plus que le volume 
@@ -145,8 +138,8 @@ ouverts et lisibles par la machine (csv, xml...).
 
 [*BH* : xml lisible par la machine ?]
 
-**NB :** en tant que chercheur, nous sommes souvent l'emetteur de données d'un autre,
-et il faut intégrer cela dans nos bonnes pratiques de partage de nos résultats
+**NB :** en tant que chercheur, nous sommes souvent l'émetteur de données d'un autre,
+et il faut intégrer cela dans nos bonnes pratiques de partage de nos résultats. 
 
 
 
