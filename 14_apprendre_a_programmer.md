@@ -122,14 +122,16 @@ de ressource accessibles en ligne que nous jugeons de qualité.
 
 ### MOOCs
 
-* R: (https://www.fun-mooc.fr/courses/UPSUD/42001S06/session06/about)
-* Python: (https://www.fun-mooc.fr/courses/inria/41001S03/session03/about)
+* _Introduction à la statistique avec R_ (https://www.fun-mooc.fr/courses/UPSUD/42001S06/session06/about)
+
+* _Python : des fondamentaux à l'utilisation du langage_ (https://www.fun-mooc.fr/courses/inria/41001S03/session03/about)
 
 
 ### Tutoriels
 
-* R: (http://beginr.u-bordeaux.fr)
-* Python: (https://docs.python.org/fr/3/tutorial)
+* _Begin’R_ (http://beginr.u-bordeaux.fr)
+
+* _Le tutoriel Python_ (https://docs.python.org/fr/3/tutorial)
 
 
 ### Livres
@@ -168,8 +170,6 @@ Les logiciels basés sur une interface graphique sont pléthores en informatique
 * Beaucoup de resources en lignes (Softxware Carpentry), en présentiel
   (formations doctorales et conférences)
 * 
-
---- 
 
 ### Abandonner les GUI et apprendre à programmer
 * quel langage
