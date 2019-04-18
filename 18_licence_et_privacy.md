@@ -1,6 +1,7 @@
-# Aspects juridiques {#C:licences}
+# Sortez couverts! {#C:licences}
 
 >"Au fait, ai-je le droit ?"
+>-- Anonyme
 
 Il est primordial de se poser la question du droit avant de partager des
 documents, *a fortiori* sur Internet.
@@ -35,7 +36,7 @@ permettent de choisir simplement une licence logicielle ou non-logicielle
 
 ## Confidentialité et protection des données, respect de la vie privée
 
-Nous avons vu au chapitre \@ref{#TODO} que le partage des données était une des
+Nous avons vu au chapitre \@ref(C:data:share) que le partage des données était une des
 composantes de la recherche reproductible. Or il existe certains domaines (tels
 que la santé) où le partage des données n'est pas toujours possible, pour des
 raisons éthiques, de confidentialité, de secret industriel, de protection des
@@ -53,5 +54,8 @@ demande avec une charte de confidentialité et le dépôt d'un protocole de
 recherche préalablement à l'accès au données.
 
 ## Pour en savoir plus
-
->FIXME TODO
+ 
+ >FIXME: TODO
+ 
+ - 
+ -
