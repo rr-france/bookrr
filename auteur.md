@@ -1,6 +1,8 @@
 
 # Portraits des auteurs
 
+Ce livre a été rédigé de manière collaborative.
+
 ## Loïc Desquilbet
 
 Enseignant-chercheur en biostatistique et en épidémiologie clinique à
@@ -79,7 +81,9 @@ d’écriture de documentations en langue française.
 E. de Castro Guerra anime ainsi régulièrement des book sprints pour des associations, des entreprises.
 
 # Coordinatrice du projet
-Sabrina Granger, conservateur des bibliothèques, Urfist de Bordeaux, Université de Bordeaux
+
+## Sabrina Granger
+Conservateur des bibliothèques, Urfist de Bordeaux, Université de Bordeaux
 Docteur en langue et littérature françaises (allocataire de recherche à Grenoble III), 
 S. Granger est conservateur des bibliothèques. 
 Ses différents postes l’ont amenée à travailler dans les domaines de l’informatique documentaire, 
