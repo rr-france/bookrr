@@ -2,7 +2,7 @@
 
 Nous avons recueilli ci-dessous plusieurs témoignages fictifs de *personas* incarnant différents acteurs de la recherche. Il s'agit de personnages fictifs mais néanmoins vraisemblables car basés sur des expériences réelles. Parce qu'ils se présentent sous une forme narrativisée, les personas permettent : 
 - à des chercheurs, d'appréhender concrètement différentes questions de recherche reproductible, de contextualiser ces enjeux dans un cadre quotidien
-- à des personnels de soutien à la recherche, de mieux comprendre les questions auxquelles sont confrontés les chercheurs
+- à des personnels de soutien à la recherche, de mieux comprendre les questions auxquelles sont confrontés les chercheurs.
 
 ## *Charles P., doctorant en sociologie*
 > "J'interroge des personnes en situation de précarité économique afin de recueillir leurs témoignages. Je consigne toutes mes notes dans un carnet relié et je retranscris les informations démographiques dans un tableur Calc afin de compiler quelques statistiques : pyramide des âges, répartition des sexes, etc. Dans le cadre de ce projet, je collabore étroitement avec un autre doctorant qui a le même directeur de thèse que moi. Il alimente lui aussi ce fichier Calc, que nous nous échangeons régulièrement par clé USB."

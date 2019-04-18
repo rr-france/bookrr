@@ -5,8 +5,6 @@ prémunir autant que possible des problèmes liés au code. Ces solutions ne
 pourront certifier la justesse de votre code, mais pourront néanmoins garantir
 un minimum d'exactitude.
  
-[TODO schéema difficulté croissante : 1 2 3]
- 
 ## Programmation en binôme
 
 Une technique de programmation (agile) relativement facile à mettre en œuvre (pour peu que vous ayez des amis adeptes de programmation) consiste à coder en binôme ("*pair
