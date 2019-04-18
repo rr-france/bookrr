@@ -207,3 +207,6 @@ vouloir lire le classique *SG* [What Every Computer Scientist Should Know About 
 Reproduciblity: An Astrophysical Exemple of Computationnal Uncertainty in the
 HPC context/](http://web.stanford.edu/~vcs/talks/ResCuESC2018-STODDEN.pdf).
 
+## Que faire ?
+
+Pour résoudre ces problèmes, des solutions sont abordés aux chapitres \@ref{C:versionning}, \@ref{C:code-good}, \@ref{C:code-bugs} et \@ref{C:code-env}.
