@@ -67,32 +67,36 @@ pour certains formats.
 
 On distingue 3 grand types de formats :
 
- - les formats fermés/propriétaires pour lesquels le risque de perte de lisibilité 
- n'est pas maîtrisé par l'utilisateur, et qui nécessitent que d'autres disposent 
- également du logiciel nécessaire (parfois coûteux) pour pouvoir réutiliser les données.
+ - les formats fermés/propriétaires pour lesquels le risque de perte de
+ lisibilité n'est pas maîtrisé par l'utilisateur, et qui nécessitent que
+ d'autres disposent également du logiciel nécessaire (parfois coûteux) pour
+ pouvoir réutiliser les données.
   
- - les formats illisible par l'humain (tel que les formats binaires ou de description de 
- page tel que le pdf) qui nécessitent une étape de décodage, et qui peuvent parfois mal 
- supporter la transition entre les systèmes d'exploitation et les architectures matérielles. 
+ - les formats illisible par l'humain (tel que les formats binaires ou de
+ description de page tel que le pdf) qui nécessitent une étape de décodage, et
+ qui peuvent parfois mal supporter la transition entre les systèmes
+ d'exploitation et les architectures matérielles.
  
- - les formats texte (tels que .csv pour les tables) qui sont lisibles par les humains comme par les 
- machines, qui sont très interopérables, et qui dont les modifications peuvent être 
- enregistrées par les outils de suivi de version (voir le chapitre 13 " outils de gestion 
- de versions ")
+ - les formats texte (tels que .csv pour les tables) qui sont lisibles par les
+ humains comme par les machines, qui sont très interopérables, et qui dont les
+ modifications peuvent être enregistrées par les outils de suivi de version
+ (voir le chapitre @\ref{C:versionning)
 
-Par exemple, pour des tables de données simples, les formats .csv ou .tsv sont recommandé, 
-plutôt que les versions plus ou moins propriétaires ou spécifiques à un tableur (.dot, .xls, 
-.xslx, ...) qui peuvent parfois contenir des informations très difficile à lire pour la machine
-(cellules colorées, cellules fusionnées, etc).
+Par exemple, pour des tables de données simples, les formats .csv ou .tsv sont
+recommandé, plutôt que les versions plus ou moins propriétaires ou spécifiques
+à un tableur (.dot, .xls, .xslx, ...) qui peuvent parfois contenir des
+informations très difficile à lire pour la machine (cellules colorées, cellules
+fusionnées, etc).
 
-Dans la mesure du possible, les bonnes pratiques sont de privilégier ces formats textes qui sont 
-lisibles à la fois par l'humain et par la machine, et d'éviter les formats propriétaires et codé.
-Ce n'est cependant pas toujours possible. Dans ce cas, il est préférable d'utiliser les standards
-de sa communauté plutôt que des formats exotiques.
+Dans la mesure du possible, les bonnes pratiques sont de privilégier ces
+formats textes qui sont lisibles à la fois par l'humain et par la machine, et
+d'éviter les formats propriétaires et codé.  Ce n'est cependant pas toujours
+possible. Dans ce cas, il est préférable d'utiliser les standards de sa
+communauté plutôt que des formats exotiques.
 
-Pour des données plus complexes, hétérogènes, de type hiérarchique, des formats adaptés, 
-ouverts, et interopérable existe (comme par exemple YAML, JSON, ou XML pour des
-formats textes et HDF5 ou FITS ou pour des formats binaires).
+Pour des données plus complexes, hétérogènes, de type hiérarchique, des formats
+adaptés, ouverts, et interopérable existe (comme par exemple YAML, JSON, ou XML
+pour des formats textes et HDF5 ou FITS ou pour des formats binaires).
 
 
 ## La présentation des résultats numériques
