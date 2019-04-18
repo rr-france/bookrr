@@ -2,8 +2,7 @@
 
 >" Au fait, ai-je le droit ? "
 >-- Anonyme
-Variante :
-" *Oops, I dit it again* " 
+> Variante : " *Oops, I dit it again* " 
 
 Il est primordial de se poser la question du droit avant de partager des
 documents, *a fortiori* sur internet.
