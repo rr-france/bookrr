@@ -60,4 +60,4 @@ protocole de collecte des données, en s'appuyant sur un instrument de mesure ca
 ## Pour en savoir plus
 
 Pour en savoir plus sur les cahiers de laboratoire, nous vous invitons à aller sur le site du CNRS [ici](http://www.cnrs.fr/infoslabos/cahier-laboratoire/).
-Pour en savoir plus sur la quantification de la répétabilité et de la reproductibilité de la façon dont on collecte les données, vous pouvez cliquez [ici](https://loicdesquilbet.wixsite.com/biostat-epidemio/documents)
+Pour en savoir plus sur la quantification de la répétabilité et de la reproductibilité de la façon dont on collecte les données, vous pouvez cliquez [ici](https://loicdesquilbet.wixsite.com/biostat-epidemio/documents).
