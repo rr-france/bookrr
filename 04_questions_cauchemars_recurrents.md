@@ -1,4 +1,4 @@
-# Questions recurrentes : les symptômes d'une recherche non reproductible {#A-cauchermars}
+# Symptômes d'une recherche non reproductible {#A-cauchermars}
 
 Il existe de nombreuses situations où l'on souhaite reproduire ses résultats de recherche :
 - on peut vouloir vérifier que la méthode mise en œuvre il y a quelques mois par un stagiaire, par un doctorant, ou par soi-même, donne les mêmes résultats avant de poursuivre l'étude

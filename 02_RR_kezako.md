@@ -1,6 +1,6 @@
 # (PART) Chroniques de la non reproductibilité {-}
 
-# Introduction {#A-introduction}
+# État des lieux {#A-introduction}
 
 ## La crise de la reproductibilité de la science
 

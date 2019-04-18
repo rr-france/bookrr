@@ -1,4 +1,4 @@
-# Vis ma vie de chercheur : quelques retours d'expériences (traumatiques) de personas {#A-personas}
+# Retours d'expériences (traumatiques) {#A-personas}
 
 Nous avons recueilli ci-dessous plusieurs témoignages fictifs de *personas* incarnant différents acteurs de la recherche. Il s'agit de personnages fictifs mais néanmoins vraisemblables car basés sur des expériences réelles. Parce qu'ils se présentent sous une forme narrativisée, les personas permettent : 
 - à des chercheurs, d'appréhender concrètement différentes questions de recherche reproductible, de contextualiser ces enjeux dans un cadre quotidien
