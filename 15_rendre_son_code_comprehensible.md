@@ -11,15 +11,19 @@ compréhensible par un observateur/lecteur externe. Le premier de ces lecteurs s
 trouve bien souvent être soi-même quelques mois plus tard, ou bien un proche collaborateur 
 avec qui la recherche se fait conjointement.
 
-Il existe là encore différents degrés de complexité permettant de faciliter 
-la compréhension de son code : 
+Là encore, il existe encore différents niveaux de complexité pour améliorer 
+l'intelligibilité d'un code et il convient de procéder étape par étape : 
 
  1. bien nommer ses variables et ses fonctions
- 2. commenter son code
- 3. utiliser des documents computationnels
- 5. gestion de *workflow*
+ 2. être le plus explicite possible
+ 3. commenter son code
+ 4. documenter son code
+ 5. utiliser des documents computationnels
+ 6. restructurer et automatiser avec un *workflow*
 
 ![Outils d'amélioration pour la compréhension du code](img/testdiagramch15.png)
+> FIXME diagramme à refaire 
+
 
 ## Nommer les choses de manière informative
 
@@ -45,7 +49,6 @@ Vous avez trouvé ? Pas encore ? Cet exemple est créé de toute pièce mais nou
 tous déjà rencontré des codes bien pire que ça. Ces quelques lignes sont pourtant
 rigoureusement équivalentes au code suivant:
 ```R
-#+begin_src R :results output :session *R* :exports both
 mass = 100
 speed = 3.2
 energy = 1/2 * mass * speed^2
@@ -215,7 +218,7 @@ Pour vous former un peu plus, vous pouvez vouloir vous rapporter aux
 module 2 et 3 du [MOOC sur la recherche
 reproductible](https://learninglab.inria.fr/mooc-recherche-reproductible-principes-methodologiques-pour-une-science-transparente/).
 
-## Restructurer et automatiser avec un workflow
+## Restructurer et automatiser avec un *workflow*
 
 Nous avons déjà évoqué l'importance de modulariser son code pour le
 rendre plus compréhensible et plus simple à faire évoluer. Il existe
