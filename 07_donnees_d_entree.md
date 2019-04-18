@@ -1,16 +1,22 @@
-# Problèmes liés aux données {#B:data-input}
+# Problèmes liés aux données {#B:data:input}
 
 La perte de données à tous les niveaux d'un processus de recherche est une
 cause majeure de non reproductibilité. Cela peut aller du simple accident matériel,
-comme par exemple le crash d'un disque, au problème de méthode, comme l'absence d'une politique de sauvegarde ou de règles élementaires de documentation (méta-données). 
+comme par exemple le crash d'un disque, au problème de méthode, comme l'absence 
+d'une politique de sauvegarde ou de règles élementaires de documentation (méta-données). 
 
 
 ## Intégrité et curation des données
 
-Scénario catastrophe classique quand il est question d'intégrité des données : 
-alors qu'un éditeur vous demande de mettre à disposition les données brutes sous peine de ne pas publier votre article pourtant accepté, les données associées ont été effacées ou égarées. 
-Quel que soit le degré d'intégrité scientifique du chercheur, si des doutes sur la validité des données émergent, ne pas être en mesure de fournir les données constitue pour lui un handicap difficilement surmontable. 
-Par ailleurs, l'absence de sauvegarde des données est considérée comme une négligence professionnelle.
+Voici un scénario catastrophe classique quand il est question d'intégrité des données : 
+alors qu'un éditeur vous demande de mettre à disposition les données brutes 
+sous peine de ne pas publier votre article pourtant accepté, les données 
+associées ont été effacées ou égarées. 
+Quel que soit le degré d'intégrité scientifique du chercheur, si des doutes 
+sur la validité des données émergent, ne pas être en mesure de fournir les 
+données constitue pour lui un handicap difficilement surmontable. 
+Par ailleurs, l'absence de sauvegarde des données est considérée 
+comme une négligence professionnelle.
 
 Il existe des *scenari* encore plus insidieux où l'intégrité des données
 peut être compromise sans que vous vous en rendiez compte. Par exemple :
@@ -28,24 +34,25 @@ Enfin, si vous ne vous êtes pas assuré du contrôle d'accès sur vos données,
 quelqu'un peut venir les modifier par inadvertance et à votre insu, changeant
 ainsi les conclusions de vos analyses.
 
-
 ## Traçabilité de la source des données 
 
 Quand bien même l'intégrité des données aurait été assurée, l'absence
 d'information descriptive sur la source des données (métadonnées) peut causer de
 nombreux problèmes. Vos données sont disponibles mais impossible de comprendre ce qu'elles
 représentent exactement. Par exemple : des données sont collectées dans la
-littérature, mais les références bibliographiques ne sont pas mentionnées ou s'avèrent lacunaires. Un problème pouvant être perçu comme formel constitue en réalité un manque de traçabilité portant atteinte à la reproductibilité.
-
+littérature, mais les références bibliographiques ne sont pas mentionnées ou s'avèrent lacunaires. 
+Un problème pouvant être perçu comme formel constitue en réalité un manque de traçabilité 
+portant atteinte à la reproductibilité.
 
 ## Indexation des données
 
 Lorsque vous manipulez de très larges volumes de données (en termes de nombre
 d'échantillons) il devient tout à fait possible de perdre, non pas les données,
-mais l'accès à ces données. Imaginez : vous avez utilisé un nommage particulier des fichiers (par exemple, pour indiquer la nature de la donnée : *well done*!) mais vous avez égaré le fichier expliquant les règles
-de nommages (*too bad*). Alors que vous possédez l'intégralité de vos données, vous vous trouvez incapable les
-utiliser.
-
+mais l'accès à ces données. Imaginez : vous avez utilisé un nommage particulier 
+des fichiers (par exemple, pour indiquer la nature de la donnée : *well done*!) 
+mais vous avez égaré le fichier expliquant les règles
+de nommages (*too bad*). Alors que vous possédez l'intégralité de vos données, 
+vous vous trouvez incapable les utiliser.
 
 ## Codages et unités
 
@@ -69,19 +76,26 @@ un système métrique (réception).
 
 
 ## Obsolescence des données
+
 Dans certains cas, les données ont été sauvegardées, leur intégrité est
 parfaite, on peut les retrouver très facilement et pourtant, elles s'avèrent
 inutilisables. Comment expliquer ce paradoxe? 
 Les données sont généralement sauvegardées dans un format pouvant être ouvert
 ou fermé (propriétaire). 
-Or si le format est fermé, vous ne pouvez pas contrôler l'évolution de ce format. Prenez par exemple un fichier Word créé il y a une vingtaine d'années, pouvez-vous encore le lire aujourd'hui ? 
+Or si le format est fermé, vous ne pouvez pas contrôler l'évolution de ce format. 
+Prenez par exemple un fichier Word créé il y a une vingtaine d'années, 
+pouvez-vous encore le lire aujourd'hui ? 
 Votre version de Word vous assure-t-elle une compatibilité avec ce
-format obsolète ? Vous avez répondu par la négative à ces items? Considérez alors les données comme inutilisables. 
+format obsolète ? Vous avez répondu par la négative à ces items? 
+Considérez alors les données comme inutilisables. 
 
 
 ## Que faire ?
 
-Privilégier des formats ouverts, assurer un archivage pérenne des données et leur associer des métadonnées
-pertinentes sur des serveurs institutionnels ou publics constitue actuellement l'une des meilleures manières
-de se prémunir contre la perte de données (cf. Chap. **"Outils de gestion de
-version / Archivage"**).
+Privilégier des formats ouverts (Chapitre \@ref{#C:data:format}), 
+assurer un archivage pérenne des données et leur associer des métadonnées 
+pertinentes sur des serveurs institutionnels ou publics 
+(Chapitres \@ref{#C:data:share} et \@ref{#C:licences})
+constitue actuellement l'une des meilleures manières de se prémunir 
+contre la perte de données.
+
