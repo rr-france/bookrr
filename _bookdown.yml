@@ -1,5 +1,6 @@
-book_filename: "booktest"
+book_filename: "booksprintrr"
 delete_merged_file: true
 language:
   ui:
+    edit: Editer
     chapter_name: "Chapitre "
