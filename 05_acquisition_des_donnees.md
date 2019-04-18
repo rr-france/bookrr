@@ -24,7 +24,10 @@ a changé au cours du temps (ce qui est possible, et éventuellement acceptable 
 mais parce que la méthode a changé. 
 
 Ainsi, comment s’assurer d’une recherche reproductible si celle-ci
-se fonde sur des informations dont la valeur varie en fonction des modalités de collecte appliquées ? Quelle peut-être la valeur, voire la fiabilité, des données issues d'un mode de collecte qui n’est pas stabilisé pendant toute la durée de l’étude ? 
+se fonde sur des informations dont la valeur varie en fonction des 
+modalités de collecte appliquées ? Quelle peut-être la valeur, 
+voire la fiabilité, des données issues d'un mode de collecte
+qui n’est pas stabilisé pendant toute la durée de l’étude ? 
 
 
 ## Modification des données après une première collecte
@@ -38,11 +41,15 @@ moyen de revenir aux informations initiales et/ou de savoir quelles sont les inf
 qui ont été modifiées, votre recherche devient par conséquent non reproductible.
 
 Les solutions pour éviter de perdre ainsi la trace de la modification
-sont évoquées dans le chapitre \@ref(collecte-infos) TODO.
+sont évoquées dans le chapitre \@ref{#C:data:acquisition}.
 
 ## Une collecte d’informations non répétable ou non reproductible
 
-Dans cette section, en vue d'examiner les impacts de l'étape de la collecte de données, nous allons utiliser une définition particulièrement précise des termes " reproductibilité " et " répétabilité ", en utilisant les définitions métrologiques de ces termes (dont l'acception peut parfois varier d'un domaine spécifique à l'autre). 
+Dans cette section, en vue d'examiner les impacts de l'étape 
+de la collecte de données, nous allons utiliser une définition 
+particulièrement précise des termes " reproductibilité " et " répétabilité ", 
+en utilisant les définitions métrologiques de ces termes 
+(dont l'acception peut parfois varier d'un domaine spécifique à l'autre). 
 
 ### Quelques définitions issues du *Vocabulaire International de Métrologie*
 
@@ -82,12 +89,15 @@ identiques évaluées dans les mêmes conditions.
 
 Supposons que vous ne soyez pas la seule ou le seul à collecter les informations pour votre étude. 
 Deux questions se posent alors : 
-- la première, déjà abordée ci-dessus, concerne la standardisation de la collecte des informations : si cette collecte n’est pas standardisée, votre collègue et vous n’obtiendrez potentiellement pas les mêmes valeurs des informations collectées lorsque vous évaluez pourtant les mêmes unités. 
-- la seconde concerne l'outils de partage de l'information : dans quel document, sur quel support, allez-vous collecter les données, pour garantir que vous et votre collègue n’allez pas effacer les informations collectées par l’autre ?
+- la première, déjà abordée ci-dessus, concerne la standardisation de la collecte des informations : 
+si cette collecte n’est pas standardisée, votre collègue et vous n’obtiendrez potentiellement 
+pas les mêmes valeurs des informations collectées lorsque vous évaluez pourtant les mêmes unités. 
+- la seconde concerne l'outils de partage de l'information : dans quel document, sur quel support, 
+allez-vous collecter les données, pour garantir que vous et votre collègue n’allez pas effacer 
+les informations collectées par l’autre ?
 
 
-
-## Numérisation
+## Collecte des données de la littérature
 
 Nous envisageons maintenant le cas d'une étude qui dépend d'informations collectées dans 
 la littérature. Dans ce genre de cas, une intervention manuelle est souvent nécessaire 
@@ -95,23 +105,22 @@ pour constituer la base de données.
 
 Considérons d'abord le cas, fréquent dans certains domaines (et *a priori* favorable), 
 où les données d'intérêt sont dans le fichier pdf d'un article ou de son supplément. 
-
 Lorsqu'on effectue un copier/coller d'une partie de fichier pdf vers un éditeur de texte, 
 les sources de contrariété sont multiples (et dépendent largement du logiciel utilisé pour 
 afficher le fichier pdf). Les plus fréquemment rencontrées peuvent être : 
   
  - une impossibilité éventuelle de gérer correctement des tables complexes 
-(avec des cellules vides ou table pivotée);
+  (avec des cellules vides ou une table pivotée);
 
  - la présence de renvois bibliographiques sur certains éléments du tableau ;
 
  - la gestion du signe moins (" - "), qui est souvent récupéré comme un tiret (" — ") 
-ou demi-tiret, ne pouvant alors pas être interprété par les codes de calcul.
+   ou demi-tiret, ne pouvant alors pas être interprété par les codes de calcul.
 
-Après extraction des données, une étape de correction manuelle est donc indispensable,
-qui constitue en elle-même une source d'erreur (en plus de ne pas toujours être 
-effectuée de façon traçable). La récupération de données à partir d'images (OCR) 
-présente des problèmes similaires.
+Après extraction des données, une étape de correction manuelle est donc souvent indispensable,
+qui constitue en elle-même une source potentielle d'erreur (en plus de ne pas toujours être 
+effectuée de façon traçable). 
+La récupération de données à partir d'images (OCR) présente des problèmes similaires.
 
 Et pour le chercheur aventureux, copier/coller les données collectées dans un tableur peut 
 introduire une couche supplémentaire de surprises (transformation de nombres ou 
@@ -123,18 +132,19 @@ d'identifiants en dates, par exemple) *SG* [@REF https://genomebiology.biomedcen
 Les solutions pour faire face aux problèmes évoqués dans ce chapitre, 
 dépendent du collecteur de données, mais également de l'émetteur. 
 
-Le collecteur de données pourra se reporter aux solutions présentées dans les chapitres [TODO] 
+Le collecteur de données pourra se reporter aux solutions présentées dans les chapitres 
+\@ref{#C:data:acquisition} et \@ref{#C:code:learn}
 pour automatiser et tracer au maximum le processus de collecte (d'autant plus que le volume 
 de données est important et/ou si la tâche est répétitive).
  
-L'emetteur de données pourra se reporter aux solutions présentées dans les chapitres [TODO]
+L'emetteur de données pourra se reporter aux solutions présentées dans les chapitres 
+\@ref{#C:data:format} et \@ref{#C:data:share}
 sur les règles de bonne pratique quant à l'archivage des données dans des formats 
-ouverts et lisibles par la machine (csv, xml...).
+ouverts et lisibles par la machine.
 
-[*BH* : xml lisible par la machine ?]
-
-**NB :** en tant que chercheur, nous sommes souvent l'émetteur de données d'un autre,
-et il faut intégrer cela dans nos bonnes pratiques de partage de nos résultats. 
+**NB :** en tant que chercheur, nous sommes souvent l'émetteur de données 
+pour un autre chercheur, et il faut intégrer cela dans nos bonnes pratiques 
+de partage de nos résultats. 
 
 
 
