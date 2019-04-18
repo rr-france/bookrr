@@ -1,4 +1,4 @@
-# Recherche reproductible : Faire évoluer ses pratiques
+# Vers une recherche reproductible : Faire évoluer ses pratiques
 Livre sur la recherche reproductible rédigé à l'occasion d'un booksprint
 
 ## Auteurs
