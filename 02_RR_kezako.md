@@ -73,5 +73,5 @@ Ainsi, nous n’allons pas traiter des solutions à des problèmes qui nuisent �
 - générer une hypothèse de recherche *a posteriori*, c’est-à-dire après avoir obtenu un résultat significatif (« harking ») [Kerr NL. HARKing: hypothesizing after the results are known. Pers Soc Psychol Rev 1998,2:196-217.], 
 - sur-interpréter le résultat statistique qui est significatif (« Probability That a Positive Report is False ») [Wacholder S, Chanock S, Garcia-Closas M, El Ghormli L, Rothman N. Assessing the probability that a positive report is false: an approach for molecular epidemiology studies. J Natl Cancer Inst 2004,96:434-442.] 
 
-Non, pour tous ces sujets cités *supra*, nous invitons le lecteur à se documenter : [Munafo MR, Nosek BA, Bishop DVM, Button KS, Chambers CD, Sert NPd, Simonsohn U, Wagenmakers E-J, Ware JJ, Ioannidis JPA. A manifesto for reproducible science. Nature Human Behav 2017,1:0021.]
+Pour tous ces sujets cités *supra*, nous invitons le lecteur à se documenter : [Munafo MR, Nosek BA, Bishop DVM, Button KS, Chambers CD, Sert NPd, Simonsohn U, Wagenmakers E-J, Ware JJ, Ioannidis JPA. A manifesto for reproducible science. Nature Human Behav 2017,1:0021.]
 
