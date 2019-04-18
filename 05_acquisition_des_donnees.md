@@ -14,9 +14,7 @@ unité pouvant être une pièce mécanique, un être vivant, etc.). Ce que l’o
 recherche (par exemple : la résistance à la traction d’un matériau, la concentration en 
 glucose d’une personne atteinte de diabète, ou bien encore son âge, son poids, etc.). 
 
-[*BH*] [solution partielle ci-dessous : à déplacer ?]
-Un point fondamental pour assurer une recherche reproductible est de standardiser la collecte 
-des informations. En effet, si cette collecte n’est pas standardisée, la personne qui collecte 
+Si cette collecte des informations n’est pas standardisée, la personne qui collecte 
 des informations sur un individu/unité un jour n°1 ne le fera potentiellement pas de la même façon le 
 jour n°2 si elle devait le faire de nouveau. Et si elle ne procède pas de la même façon, alors la valeur 
 de l’information du jour n°2 serait différente de celle du jour n°1, non pas parce que l’information 
@@ -40,12 +38,9 @@ qui ont été modifiées, votre recherche devient par conséquent non reproducti
 Les solutions pour éviter de perdre ainsi la trace de la modification
 sont évoquées dans le chapitre \@ref(collecte-infos) TODO.
 
-
-
 ## Une collecte d’informations non répétable ou non reproductible
 
 Dans cette section, en vue d'examiner les impacts de l'étape de la collecte de données, nous allons utiliser une définition particulièrement précise des termes " reproductibilité " et " répétabilité ", en utilisant les définitions métrologiques de ces termes (dont l'acception peut parfois varier d'un domaine spécifique à l'autre). 
-
 
 ### Quelques définitions issues du *Vocabulaire International de Métrologie*
 
@@ -92,7 +87,7 @@ Deux questions se posent alors :
 
 ## Numérisation
 
-Nous envisageons maintenant le cas d'une étude qui dépend de données collectées dans 
+Nous envisageons maintenant le cas d'une étude qui dépend d'informations collectées dans 
 la littérature. Dans ce genre de cas, une intervention manuelle est souvent nécessaire 
 pour constituer la base de données. 
 
@@ -100,25 +95,23 @@ Considérons d'abord le cas, fréquent dans certains domaines (et *a priori* fav
 où les données d'intérêt sont dans le fichier pdf d'un article ou de son supplément. 
 
 Lorsqu'on effectue un copier/coller d'une partie de fichier pdf vers un éditeur de texte, 
-les sources de contrariété sont multiples, et dépendent largement du logiciel utilisé pour 
-afficher le fichier pdf :
+les sources de contrariété sont multiples (et dépendent largement du logiciel utilisé pour 
+afficher le fichier pdf). Les plus fréquemment rencontrées peuvent être : 
   
- - impossibilité éventuelle de gérer correctement des tables complexes 
+ - une impossibilité éventuelle de gérer correctement des tables complexes 
 (avec des cellules vides ou table pivotée);
 
- - présence de renvois bibliographiques sur certains éléments du tableau ;
+ - la présence de renvois bibliographiques sur certains éléments du tableau ;
 
- - gestion du signe moins (" - "), qui est souvent récupéré comme un tiret (" — ") 
+ - la gestion du signe moins (" - "), qui est souvent récupéré comme un tiret (" — ") 
 ou demi-tiret, ne pouvant alors pas être interprété par les codes de calcul.
 
-* ...
-
-Aprés extraction des données, une étape de correction manuelle est donc indispensable,
+Après extraction des données, une étape de correction manuelle est donc indispensable,
 qui constitue en elle-même une source d'erreur (en plus de ne pas toujours être 
 effectuée de façon traçable). La récupération de données à partir d'images (OCR) 
 présente des problèmes similaires.
 
-Et pour le chercheur aventureux, copier-coller les données collectées dans un tableur peut 
+Et pour le chercheur aventureux, copier/coller les données collectées dans un tableur peut 
 introduire une couche supplémentaire de surprises (transformation de nombres ou 
 d'identifiants en dates, par exemple) *SG* [@REF https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1044-7].
 
@@ -128,11 +121,11 @@ d'identifiants en dates, par exemple) *SG* [@REF https://genomebiology.biomedcen
 Les solutions pour faire face aux problèmes évoqués dans ce chapitre, 
 dépendent du collecteur de données, mais également de l'émetteur. 
 
- - le collecteur de données pourra se reporter aux solutions présentées dans les chapitres [TODO] 
+Le collecteur de données pourra se reporter aux solutions présentées dans les chapitres [TODO] 
 pour automatiser et tracer au maximum le processus de collecte (d'autant plus que le volume 
-de données est important et/ou si la tâche est répétitive)
+de données est important et/ou si la tâche est répétitive).
  
- - l'emetteur de données pourra se reporter aux solutions présentées dans les chapitres [TODO]
+L'emetteur de données pourra se reporter aux solutions présentées dans les chapitres [TODO]
 sur les règles de bonne pratique quant à l'archivage des données dans des formats 
 ouverts et lisibles par la machine (csv, xml...).
 
