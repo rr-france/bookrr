@@ -75,18 +75,3 @@ Ainsi, nous n’allons pas traiter des solutions à des problèmes qui nuisent �
 
 Non, pour tous ces sujets cités *supra*, nous invitons le lecteur à se documenter : [Munafo MR, Nosek BA, Bishop DVM, Button KS, Chambers CD, Sert NPd, Simonsohn U, Wagenmakers E-J, Ware JJ, Ioannidis JPA. A manifesto for reproducible science. Nature Human Behav 2017,1:0021.]
 
-
-
----
-
-* Plein de sources d'erreurs possibles
-    * reproductibilité numérique
-    * misconduct
-    * sloppy
-* Apporter des réponses à un certain nombre de problèmes. . RR = méthodes basée sur la transparence permettant d'identifier, d'éviter, de corriger des erreurs
-
-* [ok, traité] On ne parle pas de la qualité/vérité de la recherche ni de la pertinence des questions. Il n'est pas question de prévenir une "mauvaise" recherche. Il est possible de faire une très mauvaise reproductible mais ça se voit.
-    * On a décidé de ne pas traiter 
-        * p-hacking
-        * harking
-        * Stats (une partie)
