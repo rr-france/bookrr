@@ -74,7 +74,6 @@ sonde "*Mars Climate Orbiter*" qui s'est désintégrée à la surface de Mars en
 raison d'une communication entre un système de mesure anglo-saxon (émission) et
 un système métrique (réception).
 
-
 ## Obsolescence des données
 
 Dans certains cas, les données ont été sauvegardées, leur intégrité est
