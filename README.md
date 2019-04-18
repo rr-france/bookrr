@@ -81,7 +81,7 @@ Cette licence permet aux autres de remixer, arranger, et adapter l'œuvre, sous 
 * 16_eviter_les_bugs.md                -> `{#C:code:bugs}`  
   Chasser les erreurs de programmation
 * 17_environnement_logiciel.md         -> `{#C:code:env}`  
-  Identifier et partager son environnement
+  Identifier et partager son environnement logiciel
 * 18_licence_et_privacy.md             -> `{#C:licences}`  
   Sortez couvert!
 
