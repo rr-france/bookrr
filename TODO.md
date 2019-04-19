@@ -6,7 +6,8 @@ Dans le _output.yml : problème avec `%s` qui renvoie au .Rmd non gité...
 
 # PDF
 - [ ] Améliorer un minimum le style
-- [ ] Fix bibtex
+- [ ] Déplacer la bibliographie avant les annexes
+- [ ] Revoir la numérotation des annexes
 
 # GitHub
 - [ ] Déplacer les fichiers dans un répertoire
