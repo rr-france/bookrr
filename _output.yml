@@ -1,5 +1,5 @@
 bookdown::gitbook:
-  css: style.css
+  css: css/style.css
   config:
     toc:
       collapse: section
@@ -9,9 +9,16 @@ bookdown::gitbook:
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Compilé avec bookdown</a></li>
     download: ["pdf", "epub"]
     edit: https://github.com/alegrand/bookrr/edit/master/%s
+    sharing:
+      github: yes
+      facebook: no
+bookdown::html_chapters:
+  css: [css/style.css, css/toc.css]
 bookdown::pdf_book:
   includes:
-    in_header: preamble.tex
+    in_header: latex/preamble.tex
+    before_body: latex/before_body.tex
+    after_body: latex/after_body.tex
   latex_engine: xelatex
   citation_package: natbib
   keep_tex: yes
