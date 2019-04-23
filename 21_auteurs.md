@@ -3,7 +3,7 @@
 
 ## Auteurs {-}
 
-Ce livre a été rédigé de manière collaborative par plusieurs auteurs. Qui sont nos auteurs ?
+Ce livre a été rédigé de manière collaborative par plusieurs auteurs. Qui sont nos auteurs ?
 
 
 ### Loïc Desquilbet {-}
@@ -107,4 +107,4 @@ du [Comité pour la Science Ouverte](https://www.ouvrirlascience.fr/presentation
 ## Contribuer {-}
 
 Vous aussi lecteurs, vous pouvez contribuer en proposant une *pull-request* sur 
-le repertoire contenant les sources de ce livre à l'adresse : https://github.com/alegrand/bookrr/pulls
+le repertoire contenant les sources de ce livre à l'adresse : https://github.com/alegrand/bookrr/pulls

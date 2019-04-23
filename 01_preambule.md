@@ -1,13 +1,13 @@
 # Préambule {-#A-preambule}
 
-Ce livre s'adresse à tout acteur de la recherche scientifique qui : 
+Ce livre s'adresse à tout acteur de la recherche scientifique qui : 
 
 - se pose des questions sur la recherche reproductible ou 
 - souhaite améliorer ses pratiques.
 
 L'objectif de cet ouvrage est de donner les outils pour comprendre les enjeux de la recherche reproductible et permettre à un chercheur de vérifier ou d'obtenir de nouveau les résultats d'un autre chercheur (cet autre chercheur pouvant être lui-même plus tard). Notre ambition est d'apporter des solutions avec un niveau de technicité varié, permettant à chacun d'améliorer sa pratique dans son domaine et selon ses moyens.
 
-Le livre se structure en trois grandes parties :
+Le livre se structure en trois grandes parties :
 
 - la première partie traite de la notion même de recherche reproductible selon différentes perspectives. Il s'agit de prendre pour point de départ des expériences "traumatiques" engendrées par des pratiques plus ou moins (moins en fait) propices à une recherche reproductible. 
 - la deuxième partie explicite les causes et les origines des différents problèmes auxquels chaque chercheur, quel que soit son degré d'expertise dans son domaine, peut être confronté un jour ou l'autre. 

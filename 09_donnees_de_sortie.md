@@ -2,7 +2,7 @@
 
 Nous allons voir dans ce chapitre qu’une recherche peut devenir non
 reproductible s’il existe une mauvaise utilisation des résultats de l'étude au
-moment de la rédaction d’un article : il peut s’agir d’une mauvaise sélection
+moment de la rédaction d’un article : il peut s’agir d’une mauvaise sélection
 de votre part des résultats, d'un choix inapproprié du format de présentation
 ou d'une transformation de ces données.
 
@@ -27,7 +27,7 @@ Une autre erreur pouvant survenir à partir des résultats fournis par un
 logiciel est celle d’une "transformation" (bien entendu involontaire) de ces
 données. Cette modification délétère peut très facilement se produire si vous
 devez saisir de nouveau dans votre article les sorties résultats du logiciel. 
-Une erreur de frappe est si facilement arrivée !
+Une erreur de frappe est si facilement arrivée !
 
 Un deuxième exemple de transformation des résultats est celui de l’amélioration
 d’une figure. Si vous trouvez que la figure que vous obtenez à partir d'un
@@ -79,7 +79,7 @@ travaux ultérieurs. *SG* [V.V. Ezhela, Yu.V. Kuyanov, V.N. Larin, A.S. Siver
 (2004) The Inconstancy of the Fundamental Physical Constants: Computational
 Status https://arxiv.org/abs/physics/0409117]
 
-## Que faire ?
+## Que faire ?
 
 La réutilisabilité des résultats d'une étude doit être une priorité. Pour
 cela, les données doivent être mises à disposition de futurs utilisateurs 

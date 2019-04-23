@@ -1,6 +1,6 @@
 # Sortez couverts! {#C-licences}
 
->" Au fait, ai-je le droit ? "  
+>" Au fait, ai-je le droit ? "  
 >-- Anonyme    
 
 > " *Oops, I dit it again* "  
@@ -21,7 +21,7 @@ employeur ou ses organismes de tutelle.
 
 À noter cependant que les licences utilisées pour le partage des données sont
 le plus souvent différentes de celles couvrant les programmes et les
-logiciels : 
+logiciels : 
 *SG* [https://choosealicense.com/](https://choosealicense.com/) et
 [https://creativecommons.org/choose/](https://creativecommons.org/choose/)
 permettent de choisir une licence logicielle ou non logicielle
@@ -32,7 +32,7 @@ permettent de choisir une licence logicielle ou non logicielle
 
 Dans le chapitre \@ref(C-data-share), nous avons vu que le partage des données était une des
 composantes de la recherche reproductible. Or il existe certains domaines (tels
-que la santé) où le partage des données n'est pas toujours possible pour : 
+que la santé) où le partage des données n'est pas toujours possible pour : 
 - des raisons éthiques, 
 - de confidentialité, 
 - de secret industriel, 
@@ -44,13 +44,13 @@ sur [le site de la
 CNIL](https://www.cnil.fr/fr/textes-officiels-europeens-protection-donnees)]. 
 
 Des solutions alternatives au partage totalement libre des données
-peuvent être mises en œuvre : on peut citer la mise à disposition sur
+peuvent être mises en œuvre : on peut citer la mise à disposition sur
 demande *via* une charte de confidentialité.
 
 ## Pour en savoir plus
 Comité pour la science ouverte. n.d. ‘Ouvrir La Science - Ressources : Guides Juridiques’. Ouvrir La Science. [Accessed 18 April 2019](https://www.ouvrirlascience.fr/category/ressources/?type=guides_juridiques).
 
-Consulter les vidéos de l'intervention de L. Maurel sur le RGPD : 
+Consulter les vidéos de l'intervention de L. Maurel sur le RGPD : 
 Maurel, Lionel. 2018. ‘Données personnelles et vie privée : ce qui va changer avec le RGPD (support d’intervention et vidéo)’. [S.I.Lex (blog). 29 May 2018](https://scinfolex.com/2018/05/29/donnees-personnelles-et-vie-privee-ce-qui-va-changer-avec-le-rgpd-support-dintervention-et-video).
 
     Introduction générale ;
@@ -66,6 +66,6 @@ Maurel, Lionel. 2018. ‘Données personnelles et vie privée : ce qui va chan
     Les droits RGPD des personnes vis-à-vis des données ;
     Les actions de groupe ouvertes par le RGPD ;
     Le nouveau principe d’accountability et la conformité au RGPD ;
-    Prochaine étape : le règlement ePrivacy ;
+    Prochaine étape : le règlement ePrivacy ;
     Le RGPD et la surveillance étatique.
 

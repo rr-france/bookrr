@@ -8,7 +8,7 @@ d'une politique de sauvegarde ou de règles élementaires de documentation (mét
 
 ## Intégrité et curation des données
 
-Voici un scénario catastrophe classique quand il est question d'intégrité des données : 
+Voici un scénario catastrophe classique quand il est question d'intégrité des données : 
 alors qu'un éditeur vous demande de mettre à disposition les données brutes 
 sous peine de ne pas publier votre article pourtant accepté, les données 
 associées ont été effacées ou égarées. 
@@ -19,10 +19,10 @@ Par ailleurs, l'absence de sauvegarde des données est considérée
 comme une négligence professionnelle.
 
 Il existe des *scenari* encore plus insidieux où l'intégrité des données
-peut être compromise sans que vous vous en rendiez compte. Par exemple :
+peut être compromise sans que vous vous en rendiez compte. Par exemple :
 vous recevez vos données avec une certaine précision mais vous sauvegardez ces
 données avec une précision moindre. Vous serez alors confronté à une perte d'information
-irréversible : une partie de l'information s'est littéralement évaporée.
+irréversible : une partie de l'information s'est littéralement évaporée.
 De même, dans le cas de résultats produisant un déluge de données (comme par
 exemple le *Large Hydron Collider*) et devant l'impossibilité de tout
 sauvegarder, il faut sélectionner les données à sauvegarder, sachant que
@@ -39,7 +39,7 @@ ainsi les conclusions de vos analyses.
 Quand bien même l'intégrité des données aurait été assurée, l'absence
 d'information descriptive sur la source des données (métadonnées) peut causer de
 nombreux problèmes. Vos données sont disponibles mais impossible de comprendre ce qu'elles
-représentent exactement. Par exemple : des données sont collectées dans la
+représentent exactement. Par exemple : des données sont collectées dans la
 littérature, mais les références bibliographiques ne sont pas mentionnées ou s'avèrent lacunaires. 
 Un problème pouvant être perçu comme formel constitue en réalité un manque de traçabilité 
 portant atteinte à la reproductibilité.
@@ -48,8 +48,8 @@ portant atteinte à la reproductibilité.
 
 Lorsque vous manipulez de très larges volumes de données (en termes de nombre
 d'échantillons) il devient tout à fait possible de perdre, non pas les données,
-mais l'accès à ces données. Imaginez : vous avez utilisé un nommage particulier 
-des fichiers (par exemple, pour indiquer la nature de la donnée : *well done*!) 
+mais l'accès à ces données. Imaginez : vous avez utilisé un nommage particulier 
+des fichiers (par exemple, pour indiquer la nature de la donnée : *well done*!) 
 mais vous avez égaré le fichier expliquant les règles
 de nommages (*too bad*). Alors que vous possédez l'intégralité de vos données, 
 vous vous trouvez incapable les utiliser.
@@ -83,13 +83,13 @@ Les données sont généralement sauvegardées dans un format pouvant être ouve
 ou fermé (propriétaire). 
 Or si le format est fermé, vous ne pouvez pas contrôler l'évolution de ce format. 
 Prenez par exemple un fichier Word créé il y a une vingtaine d'années, 
-pouvez-vous encore le lire aujourd'hui ? 
+pouvez-vous encore le lire aujourd'hui ? 
 Votre version de Word vous assure-t-elle une compatibilité avec ce
-format obsolète ? Vous avez répondu par la négative à ces items? 
+format obsolète ? Vous avez répondu par la négative à ces items? 
 Considérez alors les données comme inutilisables. 
 
 
-## Que faire ?
+## Que faire ?
 
 Privilégier des formats ouverts (Chapitre \@ref(C-data-format)), 
 assurer un archivage pérenne des données et leur associer des métadonnées 

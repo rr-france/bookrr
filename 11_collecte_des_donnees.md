@@ -8,7 +8,7 @@ dans le chapitre \@ref(B-data-acquisition).
 Comme nous l'avons vu plus haut (Chapitres \@ref(B-data-acquisition) et
 \@ref(B-data-input)), il convient de s'assurer que l'information est collectée
 de façon "standardisée".  Cela implique de rédiger un protocole décrivant la
-façon dont l'information est collectée, et ce, donnée par donnée. Par exemple :
+façon dont l'information est collectée, et ce, donnée par donnée. Par exemple :
 chez une personne atteinte d'un diabète, vous recueillez la concentration du
 glucose dans le sang.  Vous devez dès lors rédiger le protocole permettant
 d'obtenir la valeur de la concentration en glucose, en précisant notamment dans
@@ -24,7 +24,7 @@ Idéalement, le protocole de collecte des informations devrait faire partie de
 l'article publié qui relate les résultats de votre recherche.  Dans un monde
 idéal encore, les revues devraient systématiquement demander aux auteurs de
 rédiger une telle partie dans l'article afin que d'autres chercheurs puissent
-éventuellement confirmer les résultats de votre étude. A noter : il ne s'agit
+éventuellement confirmer les résultats de votre étude. A noter : il ne s'agit
 pas forcément de rédiger *in extenso* le protocole de collecte des informations
 dans l'article. Il s'agit plutôt de se demander si, sur la base de votre
 descriptif, un tiers pourrait appliquer votre protocole de collecte de données
@@ -36,14 +36,14 @@ Modifier des informations ne constitue pas en soi un problème.  Les difficulté
 surviennent lorsque ces modifications n'ont pas été documentées, tracées.  Une
 solution pour pallier ce problème consiste à rédiger un cahier de laboratoire.
 A l'origine, un cahier de laboratoire est un document physique dans lequel on
-consigne toute modification d'information au stylo (indélébile) : on indique la
+consigne toute modification d'information au stylo (indélébile) : on indique la
 raison de la modification de la valeur d'une information, la date de la
 modification, et l'auteur de la modification. Même si le cahier physique a
 tendance à disparaître des laboratoires au profit de carnets de laboratoire
-numériques, la logique reste la même : toute modification des informations
+numériques, la logique reste la même : toute modification des informations
 initiales doit être renseignée, en indiquant la raison de la modification, la
 date, et l'auteur de la modification.  Le tableur est-il mon ami pour effectuer
-ce type de tâche ? Pas vraiment.  Plutôt pas du tout, dans la mesure où la
+ce type de tâche ? Pas vraiment.  Plutôt pas du tout, dans la mesure où la
 modification d'une valeur dans une cellule peut être réalisée sans laisser de
 trace.
 

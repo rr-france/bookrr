@@ -1,18 +1,18 @@
-# Vers une recherche reproductible : Faire évoluer ses pratiques
+# Vers une recherche reproductible : Faire évoluer ses pratiques
 Livre sur la recherche reproductible rédigé à l'occasion d'un booksprint
 
 ## Auteurs
 Loïc Desquilbet, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot, Nicolas Rougier
 
-Facilitatrice : Elisa de Castro Guerra
+Facilitatrice : Elisa de Castro Guerra
 
 ## Est-il possible de contribuer, de proposer de nouveaux contenus? 
-Ce livre est ouvert aux nouveaux contenus : proposition d'ajout de chapitre, complément de chapitre, références complémentaires, mais aussi questions.
+Ce livre est ouvert aux nouveaux contenus : proposition d'ajout de chapitre, complément de chapitre, références complémentaires, mais aussi questions.
 Le livre ayant été rédigé collaborativement, les propositions sont étudiées par le collectif des auteurs. 
 En fonction de la nature de vos propositions, vous pourrez être amené.e à être cité.e comme [contributeur, ou co-auteur](https://publicationethics.org/authorship). 
-Vous pouvez soumettre vos propositions via :
+Vous pouvez soumettre vos propositions via :
 - GitHub (issue)
-- email : urfist@u-bordeaux.fr
+- email : urfist@u-bordeaux.fr
 
 ## Licence
 [CC-BY NC](https://creativecommons.org/licenses/by-nc/4.0/)
@@ -65,7 +65,7 @@ Cette licence permet aux autres de remixer, arranger, et adapter l'œuvre, sous 
 
 * **Solutions de la recherche reproductible**
 * 10_introduction_partie_3.md          -> `{#C-intro}`  
-  Le temps des changements ?
+  Le temps des changements ?
 * 11_collecte_des_donnees.md           -> `{#C-data-acquisition}`  
   Documenter ses pratiques
 * 12_format_des_donnees.md             -> `{#C-data-format}`  

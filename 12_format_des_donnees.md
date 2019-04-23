@@ -5,7 +5,7 @@ de fichiers numériques, bien que ces concepts aient aussi leur importance
 en dehors de l'outils numérique. 
 
 
-## Comment structurer mes informations ?
+## Comment structurer mes informations ?
 
 Les chercheurs peuvent être amenés à travailler sur des données de
 nature très variée. Si on peut spontanément penser à des nombres, les chercheurs peuvent aussi
@@ -32,7 +32,7 @@ cette représentation inadaptée.
 Un dernier exemple d'information dont la conservation est primordiale
 est celle du protocole expérimental que l'on consigne généralement
 dans un cahier de laboratoire. On structure souvent cette information
-de façon chronologique avec des annotations sémantiques (qui ? quand ?
+de façon chronologique avec des annotations sémantiques (qui ? quand ?
 où? pourquoi? dans quel contexte? ...). Dans tous les cas, la question
 de la relation entre ce cahier et les données doit être posée et
 résolue.
@@ -45,9 +45,9 @@ car cela risque de considérablemnt affecter ce que vous allez pouvoir
 faire de vos données.
 
 
-## Quel format choisir pour enregistrer et stocker des informations ?
+## Quel format choisir pour enregistrer et stocker des informations ?
 
-L'enjeu autour du format pour la recherche reproductible est double : 
+L'enjeu autour du format pour la recherche reproductible est double : 
 
  - assurer l'interopérabilité
  - minimiser les risques d'erreur de manipulation
@@ -65,7 +65,7 @@ par la machine". On devrait donc dire "lisible par toutes les machines" avec en 
 les spécificités des différents systèmes d'exploitation qui peuvent devenir problématiques
 pour certains formats. 
 
-On distingue 3 grand types de formats :
+On distingue 3 grand types de formats :
 
  - les formats fermés/propriétaires pour lesquels le risque de perte de
  lisibilité n'est pas maîtrisé par l'utilisateur, et qui nécessitent que

@@ -8,12 +8,12 @@ un minimum d'exactitude.
 ## Programmation en binôme
 
 Une technique de programmation (agile) relativement facile à mettre en œuvre (pour peu que vous ayez des amis adeptes de programmation) consiste à coder en binôme ("*pair
-coding*"). Il s'agit de s'asseoir à deux en face d'une machine : l'une des
+coding*"). Il s'agit de s'asseoir à deux en face d'une machine : l'une des
 personnes conduit le développement en ayant le contrôle du clavier ;
 l'autre observe et commente ce qu'écrit l'autre afin de corriger
 d'éventuelles erreurs ou simplement, questionner la pertinence de telle ou telle
 ligne de code. Les deux personnes doivent changer de rôle fréquemment. Cette
-pratique permet de réduire les erreurs : d'une part, vous êtes deux à relire
+pratique permet de réduire les erreurs : d'une part, vous êtes deux à relire
 le code et d'autre part, vous devez être en mesure d'expliquer à votre
 partenaire ce que vous êtes en train de faire. 
 
@@ -34,11 +34,11 @@ conceptuel des **tests unitaires** permet de mettre en place cette pratique de
 manière rigoureuse. Il s'agit alors d'envisager des cas d'usage
 caractéristiques de chaque partie (unité) et fonctionnalité du code, afin de
 tester que ce dernier adopte bien le bon comportement face à des situations
-variées : par exemple, les erreurs sont bien renvoyées lorsque les arguments
+variées : par exemple, les erreurs sont bien renvoyées lorsque les arguments
 n'ont pas de sens. La difficulté dans l'écriture de ces test est de prévoir les
 cas singuliers auxquels on ne pense pas forcément. Par exemple, dans le cas de
 l'addition que nous venons d'expliquer, nous avons proposé de vérifier que la
-somme de `a` et `-a` faisait bien 0, mais que se passe-t-il si `a = inf` ? (la
+somme de `a` et `-a` faisait bien 0, mais que se passe-t-il si `a = inf` ? (la
 réponse est que la somme est alors être non définie (`NaN`))
 
 Une autre modalité pour tester un code est de le diffuser au sein de votre communauté. Vos collègues ne manqueront pas de vous faire des retours sur tel ou tel cas limite et il faudra dans un premier temps modifier votre code, puis ajouter ce test spéficique à votre collection de tests unitaires.
@@ -46,10 +46,10 @@ Une autre modalité pour tester un code est de le diffuser au sein de votre comm
 ## Intégration continue
 
 Idéalement, aucune modification de votre code ne doit empêcher de réaliser
-les tests unitaires. Par exemple, le code passe les 100 tests unitaires. Problème : après une modification, il n'en passe plus que 80.  
-On parle alors de " régression " : votre nouveau code est moins bon que la version d'avant.
+les tests unitaires. Par exemple, le code passe les 100 tests unitaires. Problème : après une modification, il n'en passe plus que 80.  
+On parle alors de " régression " : votre nouveau code est moins bon que la version d'avant.
 Il existe aujourd'hui des outils qui permettent d'automatiser la vérification
-des tests unitaires, en les évaluant : 
+des tests unitaires, en les évaluant : 
 
 - à chaque nouvelle version du code, ou 
 - à intervalles de temps réguliers (chaque nuit par exemple). 

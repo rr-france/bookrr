@@ -8,10 +8,10 @@ le chap.8 "des problèmes de calculs" [bien mettre le renvoi vers ce chap.8])
 ont souligné l'importance des questions de diffusion, de partage de ses codes informatiques. 
 Une étape préalable à cette démarche est de rendre son code facilement 
 compréhensible par un lecteur externe. 
-Ce premier lecteur peut être un collègue, comme vous-même : ce qui était clair au moment de la rédaction l'est nettement moins après quelques semaines. 
+Ce premier lecteur peut être un collègue, comme vous-même : ce qui était clair au moment de la rédaction l'est nettement moins après quelques semaines. 
 
 Il existe là encore différents degrés de complexité permettant de faciliter 
-la compréhension de son code : 
+la compréhension de son code : 
 
  1. nommer ses variables et ses fonctions de manière informative
  2. être explicite
@@ -36,8 +36,8 @@ la compréhension de son code :
 
 Une manière d'obtenir un code plus facile à comprendre par un observateur extérieur 
 est d'utiliser des noms informatifs qui explicitent directement ce que represente une 
-variable ou une fonction. C'est une tâche qui peut se révéler étonnamment ardue !
-Lisez le code suivant et essayez de comprendre ce à quoi il peut bien servir par exemple : 
+variable ou une fonction. C'est une tâche qui peut se révéler étonnamment ardue !
+Lisez le code suivant et essayez de comprendre ce à quoi il peut bien servir par exemple : 
 
 ```R
 ninja = 100
@@ -48,9 +48,9 @@ bluE_Pizza = a * ninja * turtle ** XX
 print(bluE_Pizza)
 ```
 
-Vous avez trouvé ? Pas encore ? Cet exemple est créé de toute pièce mais nous avons 
+Vous avez trouvé ? Pas encore ? Cet exemple est créé de toute pièce mais nous avons 
 tous déjà rencontré des codes bien pires que ça. Ces quelques lignes sont pourtant
-rigoureusement équivalentes au code suivant :
+rigoureusement équivalentes au code suivant :
 
 ```R
 mass = 100
@@ -63,7 +63,7 @@ Dans le code qui précède, le nom des variables est parfaitement clair
 et le code se passe alors de commentaire.
 
 Une autre manière de rendre son code plus lisible est de le modulariser en créant 
-des fonctions aux noms explicites qui permettent  :
+des fonctions aux noms explicites qui permettent  :
 
 - à la fois de le rendre robuste, en évitant les répétitions d'instructions et minimisant ainsi le nombre d'erreurs, 
 - mais aussi de le condenser et donc de le rendre plus lisible
@@ -90,7 +90,7 @@ Mais avant même cette étape, nous pouvons déjà agir sur le processus d'écri
 Tim Peters a écrit *The Zen of Python* (que vous pouvez lire en écrivant
 `import this` dans une session Python) qui donne un ensemble de règles qu'il
 faut garder en tête lorsqu'on écrit un programme. 
-Les six premières lignes sont :
+Les six premières lignes sont :
 
 > *Beautiful is better than ugly*  
 > *Explicit is better than implicit*  
@@ -106,14 +106,14 @@ défaut ". " Arguments par défaut " signifie que lorsque vous appelez une fonct
 nécessite normalement *n* paramètres, vous appelez celle-ci avec
 un nombre réduit *k* < *n* paramètres, et les valeurs des *n-k* paramètres manquants 
 sont complétées automatiquement avec celles définies par défaut dans la fonction. 
-C'est bien pratique : vous économisez de l'écriture de code, mais en vous 
+C'est bien pratique : vous économisez de l'écriture de code, mais en vous 
 reposant sur cette fonctionnalité, vous laissez implicitement à la bibliothèque
 utilisée le soin de définir la valeur des paramètres à votre place. 
 Déléguer votre responsabilité à un tiers peut bien se passer la plupart du temps. 
 Enfin, jusqu'au jour où, après une mise à jour, la valeur d'un de ces *n-k* 
-paramètres par défaut est changée ! 
+paramètres par défaut est changée ! 
 Vos résultats changent, alors que votre programme n'a pas changé d'un bit. 
-Le problème aurait pu être évité : vous auriez pu expliciter l'ensemble de vos *n* paramètres, 
+Le problème aurait pu être évité : vous auriez pu expliciter l'ensemble de vos *n* paramètres, 
 y compris les éléments non obligatoires car disposant d'une valeur par défaut.
 
 ## Commenter son code
@@ -121,7 +121,7 @@ y compris les éléments non obligatoires car disposant d'une valeur par défaut
 Commenter son code de manière pertinente est une tâche moins évidente qu'il n'y paraît.
 Il ne s'agit pas de décrire dans une langue comprise par les humains 
 ce que le programme effectue, comme nous allons le voir. 
-Considérons le programme suivant :
+Considérons le programme suivant :
 
 ```R
 ninja = 100    # This is the mass. It is expressed in kilograms.
@@ -136,10 +136,10 @@ print(bluE_Pizza) # Now, let's print it on the screen
 Les commentaires ci-dessus n'aident pas vraiment à comprendre
 de quoi il retourne ; la version du code avec des noms de variables
 explicites est bien plus simple à comprendre. 
-On pourrait toutefois objecter cet argument : un code bien écrit se passe de commentaires. 
+On pourrait toutefois objecter cet argument : un code bien écrit se passe de commentaires. 
 Il s'avère que les commentaires de l'auteur du code s'adressent à son lecteur, 
 censé connaître à la fois le langage utilisé et le contexte du logiciel. 
-Les commentaires servent par exemple à signaler : 
+Les commentaires servent par exemple à signaler : 
 
 - les unités ou le domaine de définition d'une variable toujours positive, 
 - une ruse de calcul,
@@ -179,7 +179,7 @@ l'ordinateur.
 à s'affranchir de l'ordonnancement imposé par l'ordinateur et de se
 concentrer sur leur pensée.
 
-Dans le cas d'un chercheur, l'enjeu se concentre sur l'exécution du code : 
+Dans le cas d'un chercheur, l'enjeu se concentre sur l'exécution du code : 
 les données d'entrées et les résultats obtenus permettent d'enrichir la compréhension du phénomène étudié. 
 
 Les documents computationnels 
@@ -187,7 +187,7 @@ ou *notebooks* s'inspirent d'une certaine façon de la programmation lettrée
 et proposent une manière de travailler devenue très populaire parmi les chercheurs. 
 
 Les documents computationnels permettent d'intégrer dans un même 
-document : du texte rédactionnel, du code informatique, 
+document : du texte rédactionnel, du code informatique, 
 et les résultats de ce code. 
 La partie narrative, rédigée dans un langage de balisage très léger 
 (tels que [Markdown](https://daringfireball.net/projects/markdown)), 
@@ -195,7 +195,7 @@ est régulièrement agrémentée de fragments de codes exécutables
 (par exemple en R ou en Python) dont les résultats textuels ou graphiques 
 sont automatiquement accolés. 
 Cette structure correspond assez bien à la démarche suivie quotidiennement par
-les chercheurs : 
+les chercheurs : 
 
   1. " je propose une hypothèse que je décris " = partie narrative
   2. " je réalise une expérience/analyse " = j'exécute mon programme
@@ -205,21 +205,21 @@ les chercheurs :
 > FIXME: On pourrait peut-être insérer ici une illustration tirée du  [slide 37](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module2/slides/C028AL_slides_module2-fr-gz.pdf)
 > [SVG](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module2/slides/img/example_pi_full.svg)
 
-Ce procédé permet ainsi de documenter chaque étape de la recherche : chaque partie du code 
+Ce procédé permet ainsi de documenter chaque étape de la recherche : chaque partie du code 
 est gérée de manière indépendante et de fait, liée à sa finalité directe.
-Différents outils permettent d'écrire de tels documents, les plus matures étant :
+Différents outils permettent d'écrire de tels documents, les plus matures étant :
 
  - [Jupyter](https://jupyter.org)
  - [Rmarkdown](https://rmarkdown.rstudio.com)
  - [Org-mode](https://www.orgmode.org/fr)
  
-De tels documents computationnels offrent de nombreux avantages : 
+De tels documents computationnels offrent de nombreux avantages : 
 
 - d'une part ils permettent une meilleure transparence du code 
 effectivement exécuté, 
 - et d'autre part, ils facilitent sa compréhension car le code devient une partie intégrante d'une trame narrative.
 Certains *notebooks* peuvent ainsi quasiment s'apparenter à des articles. 
-Enfin, ces documents peuvent répondre à des besoins de traçabilité en raison de leur caractère dynamique : on obtient en effet des cellules de codes prototypes qu'il est possible de réécrire et de réexécuter avec des paramètres différents.  
+Enfin, ces documents peuvent répondre à des besoins de traçabilité en raison de leur caractère dynamique : on obtient en effet des cellules de codes prototypes qu'il est possible de réécrire et de réexécuter avec des paramètres différents.  
 
 Pour en savoir davantage sur les documents computationels, vous pouvez vous rapporter aux
 module 2 et 3 du [MOOC sur la recherche
@@ -239,13 +239,13 @@ quantités importantes de données par des calculs complexes, le concept de
 [systèmes de workflows scientifiques](https://en.wikipedia.org/wiki/Scientific_workflow_system)
 trouve toute sa pertinence. 
 Il existe de nombreux *workflows* répondant aux besoins de 
-différentes communautés scientifiques : astrophysique, génétique, etc. 
+différentes communautés scientifiques : astrophysique, génétique, etc. 
 
 Lorsque votre *notebook* se stabilise mais devient trop long et trop complexe, il sera 
 certainement temps de le restructurer. 
 Les *workflows* peuvent vous y aider et vous permettre de passer 
 par la même occasion à une étape supérieure d'automatisation de 
-son exécution : c'est d'ailleurs souvent la motivation principale 
+son exécution : c'est d'ailleurs souvent la motivation principale 
 des utilisateurs de *workflows*.
 
 Les *workflows* sont également des éléments à archiver pour rendre

@@ -4,7 +4,7 @@
 * À qui s'adresse ce livre
 * Objectif/contexte traité: Permettre à un chercheur de vérifier/réobtenir les résultats d'un autre
 * Structure du livre
-### Recherche reproductible: de quoi est-il question ?
+### Recherche reproductible: de quoi est-il question ?
 * Plein de sources d'erreurs possibles
     * reproductibilité numérique
     * misconduct
@@ -24,10 +24,10 @@
 * l'ingénieur
 * PI
 ### Les questions/cauchemars récurrents
-* Ou sont mes donnes, mon code ?
+* Ou sont mes donnes, mon code ?
 * Mes résultats ont changé
 * Mon code ne marche plus
-* Comment repartir du travail de mes prédécesseurs ? (mon doctorant est parti)
+* Comment repartir du travail de mes prédécesseurs ? (mon doctorant est parti)
 ## Partie 2: Origine des problèmes
 ### Acquisition des données
 * protocole de collecte des données
@@ -47,7 +47,7 @@
     * individuel
     * collectif
 ### Aspect computationnel
-* Ecueil : je n'obtiens plus rien /mes résultats changent, 
+* Ecueil : je n'obtiens plus rien /mes résultats changent, 
 * Commenter/documenter son programme
 * Perte de la version
 * Perte du code
@@ -69,16 +69,16 @@
 * traitement des données
 ## Partie 3: Les solutions de la recherche reproductible
 ### Idées à garder en tête
-* Solutions : Classer selon difficulté de mise en oeuvre
-* Solution : Cout / Methodo
+* Solutions : Classer selon difficulté de mise en oeuvre
+* Solution : Cout / Methodo
 * Difficulté de savoir quand il faut changer
 ### Introduction
-* Que changer ?
-* Quand changer ?
+* Que changer ?
+* Quand changer ?
 ### collecte des données
 * rédiger son protocole de mesure
 * Rendre la collecte des données réplicables / reproductible
-* Le cahier de labo ???
+* Le cahier de labo ???
 ### Format des données
 * formats binaires
 * formats propriétaire
@@ -104,7 +104,7 @@
 * lister environnement
 * docker
 * figer
-### Est-ce que j'ai le droit ?
+### Est-ce que j'ai le droit ?
 * Les licences
 * data-privacy
 ## Annexe
@@ -116,7 +116,7 @@
 * Lister les pb
 * Discours pour convaincre PI 
 ### id vrac
-* Intro : Liste cauchemard
+* Intro : Liste cauchemar
 * Intro panorama pour s'adresser au PI auquel le doctorant est concerné
 * Vis ma vie de PI (+ constructif)
 * Contexte de l'ouvrage Definir science reproductible
@@ -130,7 +130,7 @@
     * Les solutions
     * Convaincre son PI
     * Vis ma vie de pi
-    * Conclusion : Science Reproductible
+    * Conclusion : Science Reproductible
 ### Partie 2
 
 *XMind: ZEN - Trial Version*

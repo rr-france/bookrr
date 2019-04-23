@@ -1,6 +1,6 @@
 # Programmation et calcul {#B-code-aspect}
 
-Les problèmes inhérents au calcul et aux codes associés partagent des similarités avec les problèmes liés aux données (par exemple la non disponibilité). Toutefois, les questions de calcul ont leurs spécificités du fait de leur nature opératoire : il s'agit d'exécuter ce code afin d'obtenir un résultat. Or, c'est lors de cette étape d'exécution que vont surgir un certain nombre de problèmes que l'on peut classer en deux grandes catégories : 
+Les problèmes inhérents au calcul et aux codes associés partagent des similarités avec les problèmes liés aux données (par exemple la non disponibilité). Toutefois, les questions de calcul ont leurs spécificités du fait de leur nature opératoire : il s'agit d'exécuter ce code afin d'obtenir un résultat. Or, c'est lors de cette étape d'exécution que vont surgir un certain nombre de problèmes que l'on peut classer en deux grandes catégories : 
 
 - d'une part, ceux qui empêchent d'obtenir un résultat 
 - d'autre part, ceux qui rendent un résultat différent voire faux. 
@@ -20,21 +20,21 @@ Si le premier type de problème est ennuyeux, le second type de problème est d'
 
 ## Le code n'est pas disponible
 
-En guise de préambule, débutons par une liste non exhaustive des cas où l'on n'a tout simplement pas ou plus accès au programme à exécuter : 
+En guise de préambule, débutons par une liste non exhaustive des cas où l'on n'a tout simplement pas ou plus accès au programme à exécuter : 
 
-* **Les logiciels propriétaires et le "licence d'exploitation" bingo** : votre équipe/structure a cessé de payer la licence. Variante : ce logiciel est disponible dans l'université d'un collègue mais pas dans l'établissement où vous travaillez actuellement. Autre variante : vous avez accès au logiciel, mais seul un nombre restreint de personnes peut y accéder en même temps, via un système de jetons. De fait, vous vous retrouvez à devoir attendre un bon moment avant d'y arriver.
+* **Les logiciels propriétaires et le "licence d'exploitation" bingo** : votre équipe/structure a cessé de payer la licence. Variante : ce logiciel est disponible dans l'université d'un collègue mais pas dans l'établissement où vous travaillez actuellement. Autre variante : vous avez accès au logiciel, mais seul un nombre restreint de personnes peut y accéder en même temps, via un système de jetons. De fait, vous vous retrouvez à devoir attendre un bon moment avant d'y arriver.
 
-* **Un seul code vous manque et tout est dépeuplé** : le code a été développé "en interne". Il arrive (trop souvent) qu'à la suite d'un crash disque, d'un vol d'ordinateur portable, du départ du développeur principal, ... que l'on n'ait simplement plus accès au logiciel. C'est souvent le résultat d'une politique (ou d'une absence de politique) de sauvegarde ou de partage d'informations au sein d'une équipe.
+* **Un seul code vous manque et tout est dépeuplé** : le code a été développé "en interne". Il arrive (trop souvent) qu'à la suite d'un crash disque, d'un vol d'ordinateur portable, du départ du développeur principal, ... que l'on n'ait simplement plus accès au logiciel. C'est souvent le résultat d'une politique (ou d'une absence de politique) de sauvegarde ou de partage d'informations au sein d'une équipe.
 
-* **Le numéro que vous avez demandé n'est plus attribué** : assez souvent, il s'agit d'un code développé "en externe" (dans une autre équipe de recherche par exemple) que l'on souhaite ré-exécuter, par exemple pour s'y comparer ou bien pour vérifier si on obtient bien des résultats similaires avec une autre méthode. En général, on cherche alors le code sur le web mais il est assez courant que l'URL indiquée dans l'article ne soit plus accessible car le développeur (doctorant/postdoctorant) a depuis quitté l'équipe où il travaillait et que sa page web a été supprimée ou complètement
+* **Le numéro que vous avez demandé n'est plus attribué** : assez souvent, il s'agit d'un code développé "en externe" (dans une autre équipe de recherche par exemple) que l'on souhaite ré-exécuter, par exemple pour s'y comparer ou bien pour vérifier si on obtient bien des résultats similaires avec une autre méthode. En général, on cherche alors le code sur le web mais il est assez courant que l'URL indiquée dans l'article ne soit plus accessible car le développeur (doctorant/postdoctorant) a depuis quitté l'équipe où il travaillait et que sa page web a été supprimée ou complètement
   restructurée. Ce problème est connu sous le nom d'[*URL decay*](https://www.spinellis.gr/sw/url-decay/) ou de [*Link
   Rot*](https://en.wikipedia.org/wiki/Link_rot). *SG*
 
-* **Cachez ce code que je ne saurais voir** : enfin, les auteurs du code peuvent tout simplement ne pas souhaiter partager ce code, par exemple parce qu'ils jugent qu'il n'est pas montrable en l'état (pas ou peu commentaires, structure horrible cachant des erreurs) ou encore pour conserver ce qu'ils considèrent comme un avantage compétitif.
+* **Cachez ce code que je ne saurais voir** : enfin, les auteurs du code peuvent tout simplement ne pas souhaiter partager ce code, par exemple parce qu'ils jugent qu'il n'est pas montrable en l'état (pas ou peu commentaires, structure horrible cachant des erreurs) ou encore pour conserver ce qu'ils considèrent comme un avantage compétitif.
 
-Si cette question vous intéresse, vous pouvez lire les travaux de Collberg et Proebsting *SG*[@10.1145/2812803] qui étudient les causes d'incapacité à réexécuter du code dans la communauté de recherche *Computer Systems*, pourtant très au fait des aspects logiciels. Vous y trouverez de nombreux témoignages (assez drôles si c'était sans conséquences !) issus d'une étude de terrain ; vous pourrez notamment lire les excuses les plus couramment utilisées pour justifier une incapacité à mettre à donner accès au code derrière une publication.
+Si cette question vous intéresse, vous pouvez lire les travaux de Collberg et Proebsting *SG*[@10.1145/2812803] qui étudient les causes d'incapacité à réexécuter du code dans la communauté de recherche *Computer Systems*, pourtant très au fait des aspects logiciels. Vous y trouverez de nombreux témoignages (assez drôles si c'était sans conséquences !) issus d'une étude de terrain ; vous pourrez notamment lire les excuses les plus couramment utilisées pour justifier une incapacité à mettre à donner accès au code derrière une publication.
 
-## Comment lance-t-on ce code ? ("Allô Houston")
+## Comment lance-t-on ce code ? ("Allô Houston")
 
 Lorsque l'on fait de la recherche, il est courant de devoir développer soi-même
 un code pour répondre à un besoin spécifique. Que ce soit un "gros" code ou un
@@ -45,13 +45,13 @@ revient quelques mois plus tard, pour ré-exécuter un de ses propres calculs ou
 bien que l'on essaye de repartir du travail de quelqu'un d'autre (qui a quitté
 le laboratoire ou n'y a même jamais travaillé), il est courant de ne pas (ou
 plus) savoir comment il avait été lancé. Avec quels paramètres, quels fichiers
-d'entrées, quelles variables d'environnement, etc. ? La moindre erreur sur les
+d'entrées, quelles variables d'environnement, etc. ? La moindre erreur sur les
 paramètres conduira à des résultats différents voire à un crash. Et
 malheureusement pour vous, le "vous" d'il y a 6 mois ne répond pas au mail.
 Enfin, et comme nous le verrons par la suite, il existe bien d'autres raisons
 qui peuvent conduire à ces deux symptômes.
 
-## Comment fonctionne ce code ? Lost in translation
+## Comment fonctionne ce code ? Lost in translation
 
 Si on n'est plus sûr des paramètres utilisés, on peut vouloir chercher à
 comprendre d'où vient le problème en inspectant le code ... si tant est qu'on
@@ -86,22 +86,22 @@ programmation que vous connaissez).
   
 * Enfin, même si le code est relativement compréhensible, il est possible que
   des *bugs* (des erreurs de programmation) soient à l'origine de vos malheurs
-  mais comment les trouver ?
+  mais comment les trouver ?
 
-## Quelle version du code ?
+## Quelle version du code ?
 
 Nul n'est parfait et les *bugs* sont donc courants, même chez les programmeurs
 les plus chevronnés. Il se peut que le *bug* à l'origine de vos problèmes
 provienne de la version d'un logiciel actuellement installé sur la
 machine. Pour corriger ce *bug*, on peut vouloir mettre à jour le logiciel. Mais
-quelle version a été utilisée dans le passé et quelle est la version actuelle ?
-Et comment savoir si c'est effectivement la cause de la différence observée ?
-La mise à jour n'introduirait-elle pas de nouveaux *bugs* ? L'idéal serait
-peut-être de revenir à une version plus ancienne mais comment faire ? Quelle
-est la version la plus récente que je puisse utiliser ?
+quelle version a été utilisée dans le passé et quelle est la version actuelle ?
+Et comment savoir si c'est effectivement la cause de la différence observée ?
+La mise à jour n'introduirait-elle pas de nouveaux *bugs* ? L'idéal serait
+peut-être de revenir à une version plus ancienne mais comment faire ? Quelle
+est la version la plus récente que je puisse utiliser ?
 
 Enfin, cette nouvelle version sera-t-elle toujours compatible avec mon
-ordinateur ? Et si je repars du code source, arriverai-je à le recompiler ?
+ordinateur ? Et si je repars du code source, arriverai-je à le recompiler ?
 
 ## L'environnement de calcul ou le paradigme des poupées russes diaboliques
 
@@ -196,7 +196,7 @@ n'allant pas toujours exactement à la même vitesse, un code un peu optimisé
 ajustera la taille des sommes partielles pour terminer le calcul le plus
 rapidement possible et le résultat du calcul variera donc d'une exécution sur
 l'autre alors que rien n'a changé! Mais alors, comment décider lequel de ces
-différents résultats de calculs est le "bon" ?
+différents résultats de calculs est le "bon" ?
 
 Toutes ces petites imprécisions de calcul peuvent hélas rapidement devenir très
 problématiques lorsque le système sous-jacent correspond par exemple à la
@@ -213,6 +213,6 @@ Pour une présentation de ces problématiques et de quelques solutions,
 vous pouvez aussi vouloir regarder ce 
 [séminaire sur la reproductibilité numérique](https://github.com/alegrand/RR_webinars/blob/master/2_controling_your_environment/index.org).
 
-## Que faire ?
+## Que faire ?
 
 Pour résoudre ces problèmes, des solutions sont abordées aux chapitres \@ref(C-versioning), \@ref(C-code-good), \@ref(C-code-bugs) et \@ref(C-code-env).

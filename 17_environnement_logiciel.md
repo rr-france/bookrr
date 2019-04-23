@@ -1,12 +1,12 @@
 # Environnement logiciel {#C-code-env}
 
-***Attention : ce chapitre traite de sujets appelant des compétences techniques avancées. Nous vous proposons d'aborder la (complexe) question de l'environnement (ça pique mais ça compte).***
+***Attention : ce chapitre traite de sujets appelant des compétences techniques avancées. Nous vous proposons d'aborder la (complexe) question de l'environnement (ça pique mais ça compte).***
 
 L'environnement logiciel désigne l'intégralité des logiciels qui assurent la 
 gestion de l'ordinateur et qui sont utilisés pour réaliser la recherche. 
 Les chercheurs peuvent avoir tendance à sous-estimer l'impact de l'environnement 
 logiciel sur leurs résultats. Pour une recherche reproductible, il existe trois
-enjeux importants autour de l'environnement logiciel :
+enjeux importants autour de l'environnement logiciel :
 
 1. identifier et décrire son environnement
 2. permettre à quelqu'un d'autre d'utiliser un environnement **exactement identique**
@@ -14,12 +14,12 @@ enjeux importants autour de l'environnement logiciel :
 
 Il n'existe ni solution simple, ni solution unique pour répondre à ces enjeux. Ce chapitre a pour vocation de fournir une description critique de ces solutions en évoquant notamment leurs limites respectives.
 
-## Identifier les dépendances : dessine-moi une dépendance
+## Identifier les dépendances : dessine-moi une dépendance
 
-La façon la ~~plus simple~~ moins complexe de décrire son environnement logiciel est d'identifier les dépendances de son environnement. Mais cette simplicité n'est qu'apparente car l'arbre cache la forêt : chaque dépendance a 
+La façon la ~~plus simple~~ moins complexe de décrire son environnement logiciel est d'identifier les dépendances de son environnement. Mais cette simplicité n'est qu'apparente car l'arbre cache la forêt : chaque dépendance a 
 elle-même une dépendance, qui a elle-même une dépendance, et ainsi de suite... Cette tâche peut donc 
 rapidement devenir difficile. On peut distinguer deux façons d'obtenir
-une telle identification :
+une telle identification :
 
 1. À partir d'un langage interprété (tel que R ou Python), on peut
 effectuer cette " intro-spection " et lister les différentes dépendances, la liste 
@@ -61,7 +61,7 @@ partager un environnement logiciel à l'identique est de " figer " l'ensemble du
 
 ### Isoler une machine
 
-La façon la plus simple d'éviter les problèmes de versions des dépendances logicielles, consiste à installer sur une machine tous les programmes dont on a besoin. Ce *scenario* exclut toute mise à jour : l'environnement est installé une bonne fois pour toute. 
+La façon la plus simple d'éviter les problèmes de versions des dépendances logicielles, consiste à installer sur une machine tous les programmes dont on a besoin. Ce *scenario* exclut toute mise à jour : l'environnement est installé une bonne fois pour toute. 
 
 C'est le cas de figure décrit en section \@ref(A-personas-ingenieur). 
 Chacun des membres de l'équipe peut alors se connecter sur cette machine 
@@ -80,11 +80,11 @@ d'exploitation particulier avec un certain nombre d'applications
 installées. Une solution très populaire pour utiliser les conteneurs
 est [Docker](https://www.docker.com/).
 
-- avantage par rapport à une machine virtuelle : le conteneur ne
+- avantage par rapport à une machine virtuelle : le conteneur ne
   reproduit pas l'ensemble du système d'exploitation (en se passant du
   kernel); Il est donc plus léger (moins gros et plus rapide).
 
-- inconvénient : il ne fonctionne pas pour toutes les combinaisons de
+- inconvénient : il ne fonctionne pas pour toutes les combinaisons de
   machine réelle - machine virtuelle.
 
 Il existe d'ailleurs des outils permettant d'identifier et de capturer automatiquement 

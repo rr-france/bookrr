@@ -9,13 +9,13 @@ différentielles n'enregistrant que les modifications.
 
 La mise en œuvre d'une stratégie de gestion de version doit permettre d'éviter
 les cauchemars du type " Je ne retrouve pas mon code / mes données " et permet
-de répondre aux questions :
+de répondre aux questions :
 
- - quand ?
- - qui ?
- - pourquoi ?
+ - quand ?
+ - qui ?
+ - pourquoi ?
 
-Nous présentons deux solutions dans ce chapitre :
+Nous présentons deux solutions dans ce chapitre :
 - la première s'appuyant sur la mise en place de convention de nommage des dossiers et fichiers, 
 - la seconde, plus technique présentant les outils de versionnage différentiel
 
@@ -27,7 +27,7 @@ règles de nommage de fichiers évitant les ambiguïtés et facilitant
 l'exploration des versions. 
 
 Dans ce contexte, il est souvent recommandé de créer un nom de fichier constitué de plusieurs
-éléments *SG* [@REF: (http://qualite-en-recherche.cnrs.fr/spip.php?article315)] [@REF Jenny Bryan https://speakerdeck.com/jennybc/how-to-name-files ??]
+éléments *SG* [@REF: (http://qualite-en-recherche.cnrs.fr/spip.php?article315)] [@REF Jenny Bryan https://speakerdeck.com/jennybc/how-to-name-files ??]
 
 * la date de sauvegarde, sous format AAAAMMJJ ou AAAA_MM_JJ
 (permettant un tri des dates par ordre alphabétique)
@@ -39,9 +39,9 @@ remarquables de l'évolution du document (v01, v02...)
 
 Le titre ne devrait pas être trop long (sous certains système d'exploitation,
 il doit se limiter à dépasser 31 caractères, extension comprise. Egalement pour 
-des raisons de compatibilité, il est recommandé d'éviter l'utilisation de :
+des raisons de compatibilité, il est recommandé d'éviter l'utilisation de :
 
-- signes diacritiques : accents, trémas, cédilles par exemple, 
+- signes diacritiques : accents, trémas, cédilles par exemple, 
 - de caractères spéciaux
 - d'espaces
 - etc.
@@ -58,9 +58,9 @@ La chronologie du nommage de fichiers successifs de scripts R pourrait être:
 * 20190509_analyse_donnees_v02.R
 
 
-Ces informations sont une forme appauvrie de métadonnées : lorsque le format de
+Ces informations sont une forme appauvrie de métadonnées : lorsque le format de
 données ou le système de fichiers utilisé ne permet pas de les
-conserver de façon pérenne, on indique directement les métadonnées dans le nom du fichier. Cette méthode fournit des informations rudimentaires : dans le cas où plusieurs personnes ont travaillé sur un même
+conserver de façon pérenne, on indique directement les métadonnées dans le nom du fichier. Cette méthode fournit des informations rudimentaires : dans le cas où plusieurs personnes ont travaillé sur un même
 fichier, on a en effet du mal à savoir qui a fait quoi et pourquoi.
 Conserver les métadonnées de base *via* cette méthode est une bonne habitude à prendre, mais il s'agit d'une approche
 qui a ses limites.
@@ -89,7 +89,7 @@ RStudio ou Emacs).
 Si un logiciel de gestion de versions est installé sur l'ordinateur de
 l'utilisateur, il est prudent, voire impératif, de mettre en œuvre une
 synchronisation vers un dépôt distant, ce qui présente plusieurs avantages à la
-fois : sauvegarder les travaux, les partager, et de collaborer. Ce dépot
+fois : sauvegarder les travaux, les partager, et de collaborer. Ce dépot
 distant peut être sur une plate-forme institutionnelle *SG* (par exemple le
 [GitLab de
 l'Inria](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/gitlab)
@@ -152,7 +152,7 @@ commandes pour bénéficier de toutes les fonctionnalités de Git.
 
 ## Pour en savoir plus
 
-Voici quelques moyens d'apprendre à utiliser git et d'aller un peu plus loin :
+Voici quelques moyens d'apprendre à utiliser git et d'aller un peu plus loin :
 
  - [Happy Git With R](https://happygitwithr.com/) par *Jenny Bryan et al.*
  - Le [Software Carpentry Git tutorial](http://swcarpentry.github.io/git-novice/)

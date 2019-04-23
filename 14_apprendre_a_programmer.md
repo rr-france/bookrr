@@ -23,7 +23,7 @@ Or, si dans un premier temps cet outil peut simplifier les traitements, dès que
 ou des tâches répétitives, il va rapidement constituer un obstacle. Si vous effectuez des calculs exotiques, vous serez alors contraint d'entrer des formules de calcul complexes dans les cellules. 
 La bonne nouvelle est que, en faisant cela, vous avez commencé à programmer. 
 La mauvaise est que votre calcul n'est pas reproductible. 
-" Mais j'ai sauvé ma feuille Excel pourtant ! ". 
+" Mais j'ai sauvé ma feuille Excel pourtant ! ". 
 Certes, mais entre le moment où vous avez chargé vos données initiales et 
 le moment ou vous avez sauvé vos résultats, un certain nombre de
 manipulations que vous avez faites n'a pas été enregistré. 
@@ -51,7 +51,7 @@ Plus le langage utilisé sera de haut niveau et moins il y aura à écrire.
 Reprenons notre exemple où je dois charger des données, les trier selon la 
 deuxième colonne et faire la moyenne sur la première moitié des données
 de la première colonne. 
-Un façon de l'écrire est :
+Un façon de l'écrire est :
 
 ``` r
 table <- read.csv(file = 'data.csv') # Charger les données en mémoire
@@ -62,12 +62,12 @@ mean(table_tri$IMC[1:(nrow(table_tri)/2)])
 ```
 
 En faisant abstraction de la syntaxe particulière (il s'agit ici du langage R)
-de ce programme simple, on comprend néanmoins à la lecture ce qu'il fait :
+de ce programme simple, on comprend néanmoins à la lecture ce qu'il fait :
 (1) charger les données, (2) les trier,  puis (3) calculer la moyenne. 
 On a de fait simplement traduit notre pensée (le traitement que l'on 
 souhaitait réaliser) en jeu d'instructions. 
 L'avantage majeur de cette approche (par rapport à Excel) est que ce
-programme réalise deux objectifs : 
+programme réalise deux objectifs : 
 
 - d'une part, il effectue les traitements,
 - d'autre part, il documente cette chaîne de traitements, si bien que
@@ -88,8 +88,8 @@ l'on va retrouver dans (à peu près) l'ensemble des langages de programmation.
 Notez que nous parlons de " langages " au pluriel pour refléter leur diversité.
 Les raisons de l'existence de tant de langages différents sont multiples.
 Heureusement pour nous, au cours de ces dernières années, deux langages se sont
-quasiment imposés dans le monde de la recherche : Python et R.  Entendons-nous
-bien : nous ne disons pas que ce sont les seuls langages utilisables dans ce
+quasiment imposés dans le monde de la recherche : Python et R.  Entendons-nous
+bien : nous ne disons pas que ce sont les seuls langages utilisables dans ce
 contexte (loin de là) mais néanmoins, ils ont su traverser les frontières de
 tous les champs disciplinaires. Il y a aujourd'hui des conférences
 scientifiques qui leur sont entièrement dédiées et où l'on peut voir un
@@ -118,7 +118,7 @@ de ressources accessibles en ligne que nous jugeons de qualité.
 ### MOOCs
 
 * [Introduction à la statistique avec R](https://www.fun-mooc.fr/courses/UPSUD/42001S06/session06/about)
-* [Python : des fondamentaux à l'utilisation du langage](https://www.fun-mooc.fr/courses/inria/41001S03/session03/about)
+* [Python : des fondamentaux à l'utilisation du langage](https://www.fun-mooc.fr/courses/inria/41001S03/session03/about)
 
 
 ### Tutoriels
