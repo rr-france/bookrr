@@ -1,6 +1,7 @@
 # Programmation et calcul {#B-code-aspect}
 
 Les problèmes inhérents au calcul et aux codes associés partagent des similarités avec les problèmes liés aux données (par exemple la non disponibilité). Toutefois, les questions de calcul ont leurs spécificités du fait de leur nature opératoire : il s'agit d'exécuter ce code afin d'obtenir un résultat. Or, c'est lors de cette étape d'exécution que vont surgir un certain nombre de problèmes que l'on peut classer en deux grandes catégories : 
+
 - d'une part, ceux qui empêchent d'obtenir un résultat 
 - d'autre part, ceux qui rendent un résultat différent voire faux. 
 
@@ -30,6 +31,7 @@ En guise de préambule, débutons par une liste non exhaustive des cas où l'on 
   Rot*](https://en.wikipedia.org/wiki/Link_rot). *SG*
 
 * **Cachez ce code que je ne saurais voir** : enfin, les auteurs du code peuvent tout simplement ne pas souhaiter partager ce code, par exemple parce qu'ils jugent qu'il n'est pas montrable en l'état (pas ou peu commentaires, structure horrible cachant des erreurs) ou encore pour conserver ce qu'ils considèrent comme un avantage compétitif.
+
 Si cette question vous intéresse, vous pouvez lire les travaux de Collberg et Proebsting *SG*[@10.1145/2812803] qui étudient les causes d'incapacité à réexécuter du code dans la communauté de recherche *Computer Systems*, pourtant très au fait des aspects logiciels. Vous y trouverez de nombreux témoignages (assez drôles si c'était sans conséquences !) issus d'une étude de terrain ; vous pourrez notamment lire les excuses les plus couramment utilisées pour justifier une incapacité à mettre à donner accès au code derrière une publication.
 
 ## Comment lance-t-on ce code ? ("Allô Houston")

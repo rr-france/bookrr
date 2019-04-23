@@ -1,6 +1,7 @@
 # Symptômes d'une recherche non reproductible {#A-cauchermars}
 
 Il existe de nombreuses situations où l'on souhaite reproduire ses résultats de recherche :
+
 - on peut vouloir vérifier que la méthode mise en œuvre il y a quelques mois par un stagiaire, par un doctorant, ou par soi-même, donne les mêmes résultats avant de poursuivre l'étude
 - on doit obéir (et oui, c'est bien la dure vie de chercheur) aux demandes d'un relecteur de modifier une figure ou de tester l'impact de paramètres non-envisagés dans l'étude initiale
 - on souhaite vérifier que les méthodes "maison" font aussi bien, voire mieux, que celles des équipes concurrentes. 
@@ -12,6 +13,7 @@ Nous sommes persuadés que vous avez d'autres situations en tête. Le point comm
 Après la publication d'un des mes articles, un collègue souhaite collaborer 
 avec moi pour tester de nouvelles hypothèses sur le jeu de données 
 que j'ai présenté. Malheureusement :
+
 - le disque dur sur lequel j'archivais les données brutes a crashé, ou bien, 
 - j'ai effacé (vous repassez par la case départ) les données qui prenaient beaucoup de place sur mon ordinateur, 
 puisque l'article était publié. 
@@ -35,7 +37,8 @@ Dois-je annoncer au reviewer qu'une partie des résultats a changé ?
 Ayant réussi à décrocher une ANR, je m'offre un nouvel ordinateur,
 avec la version la plus récente du système et des logiciels. 
 Pour profiter au mieux des performances de cette machine, je 
-recompile avec enthousiasme mon code de simulation : ma simulation prendra dix fois moins de temps qu'avec ma précédente machine, me dis-je. Mon excitation retombe subitement en voyant :  
+recompile avec enthousiasme mon code de simulation : ma simulation prendra dix fois moins de temps qu'avec ma précédente machine, me dis-je. Mon excitation retombe subitement en voyant :
+
 - que le compilateur génère des erreurs, ou bien 
 - que le code recompilé démarre et se plante après quelques secondes. 
 

@@ -89,6 +89,7 @@ identiques évaluées dans les mêmes conditions.
 
 Supposons que vous ne soyez pas la seule ou le seul à collecter les informations pour votre étude. 
 Deux questions se posent alors : 
+
 - la première, déjà abordée ci-dessus, concerne la standardisation de la collecte des informations : 
 si cette collecte n’est pas standardisée, votre collègue et vous n’obtiendrez potentiellement 
 pas les mêmes valeurs des informations collectées lorsque vous évaluez pourtant les mêmes unités. 

@@ -50,6 +50,7 @@ les tests unitaires. Par exemple, le code passe les 100 tests unitaires. Problè
 On parle alors de " régression " : votre nouveau code est moins bon que la version d'avant.
 Il existe aujourd'hui des outils qui permettent d'automatiser la vérification
 des tests unitaires, en les évaluant : 
+
 - à chaque nouvelle version du code, ou 
 - à intervalles de temps réguliers (chaque nuit par exemple). 
 

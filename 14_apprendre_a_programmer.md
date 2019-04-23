@@ -68,10 +68,12 @@ On a de fait simplement traduit notre pensée (le traitement que l'on
 souhaitait réaliser) en jeu d'instructions. 
 L'avantage majeur de cette approche (par rapport à Excel) est que ce
 programme réalise deux objectifs : 
+
 - d'une part, il effectue les traitements,
-- d'autre part, il documente cette chaîne de traitements, si bien que quiconque
-est maintenant en mesure de comprendre et de reproduire ces traitements,
-éventuellement à l'aide d'un autre de langage de programmation.
+- d'autre part, il documente cette chaîne de traitements, si bien que
+  quiconque est maintenant en mesure de comprendre et de reproduire
+  ces traitements, éventuellement à l'aide d'un autre de langage de
+  programmation.
 
 
 ## Le choix des armes

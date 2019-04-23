@@ -64,9 +64,11 @@ et le code se passe alors de commentaire.
 
 Une autre manière de rendre son code plus lisible est de le modulariser en créant 
 des fonctions aux noms explicites qui permettent  :
+
 - à la fois de le rendre robuste, en évitant les répétitions d'instructions et minimisant ainsi le nombre d'erreurs, 
 - mais aussi de le condenser et donc de le rendre plus lisible
 <!-- Cette approche de *Don't Repeat Yourself* est un principe qui s'oppose à *Write Everything Twice*. -->
+
 À l'occasion de cette modularisation, il vous faudra également bien réfléchir 
 à la portée de vos variables (variable locale ou globale)
 et aux paramètres de vos fonctions afin d'éviter autant que possible les variables 
