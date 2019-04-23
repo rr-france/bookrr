@@ -1,6 +1,7 @@
 # Préambule {-#A-preambule}
 
 Ce livre s'adresse à tout acteur de la recherche scientifique qui : 
+
 - se pose des questions sur la recherche reproductible ou 
 - souhaite améliorer ses pratiques.
 
