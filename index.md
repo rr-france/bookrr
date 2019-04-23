@@ -13,5 +13,5 @@ fontsize: 12pt
 description: "Livre d'introduction à la recherche reproductible rédigé lors booksprint."
 url: 'https\://bookdown.org/alegrand/bookdown/'
 github-repo: alegrand/bookrr
-cover-image: img/a_tuin_qwertee.jpg
+
 ---
