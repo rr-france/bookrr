@@ -10,8 +10,10 @@ biblio-style: apalike
 link-citations: yes
 colorlinks: yes
 fontsize: 12pt
-description: "Livre d'introduction à la recherche reproductible rédigé lors booksprint."
+description: "Livre d'introduction à la recherche reproductible rédigé lors d'un booksprint."
 url: 'https\://bookdown.org/alegrand/bookdown/'
 github-repo: alegrand/bookrr
 
 ---
+
+# {-}
