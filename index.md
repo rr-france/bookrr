@@ -5,7 +5,7 @@ author: "Loïc Desquilbet, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pasca
          <br> Facilitatrice : Elisa de Castro Guerra"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
-documentclass: krantz
+documentclass: book
 bibliography: [refs.bib]
 biblio-style: apalike
 link-citations: yes
