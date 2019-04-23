@@ -103,7 +103,7 @@ Ces six conseils peuvent paraître plus ou moins évidents à mettre en œuvre p
 débutant, mais focalisons-nous sur le deuxième. Il peut être mis en
 œuvre très simplement en refusant par exemple l'usage des " arguments par
 défaut ". " Arguments par défaut " signifie que lorsque vous appelez une fonction qui
-nécessite normalement $n$ paramètres, vous appelez celle-ci avec
+nécessite normalement *n* paramètres, vous appelez celle-ci avec
 un nombre réduit *k* < *n* paramètres, et les valeurs des *n-k* paramètres manquants 
 sont complétées automatiquement avec celles définies par défaut dans la fonction. 
 C'est bien pratique : vous économisez de l'écriture de code, mais en vous 
