@@ -3,7 +3,7 @@
 >" Au fait, ai-je le droit ? "  
 >-- Anonyme    
 
-> " *Oops, I dit it again* " 
+> " *Oops, I dit it again* "  
 >-- Britney S.
 
 Il est primordial de se poser la question du droit avant de partager des
