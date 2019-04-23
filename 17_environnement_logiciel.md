@@ -111,4 +111,4 @@ et aux ressources correspondantes
 *SG*[ressources](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module4/ressources/resources_environment_fr.org)).
 
 Vous  pouvez également vouloir regarder ce 
-[séminaire sur les workflows scientifiques en bioinformatique](https://github.com/alegrand/RR_webinars/blob/master/2_controling_your_environment/index.org).
+[séminaire présentant quelques solutions pour contrôler son environnement](https://github.com/alegrand/RR_webinars/blob/master/2_controling_your_environment/index.org).
