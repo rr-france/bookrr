@@ -1,0 +1,623 @@
+# -*- coding: utf-8 -*-
+# -*- mode: org -*-
+#+STARTUP: overview indent inlineimages logdrawer hidestars
+#+TITLE: Various useful scripts
+
+This document gathers various minor scripts/regexps we used to clean
+refs and typos
+
+* Fixing refs
+
+The correct citation style is:
+- déclaration: ~{#clef}~
+- citation: ~\@ref(clef)~
+Furthermorht, it seems that several characters are forbidden in the
+~clef~ (~#~, ~_~, ~:~, ...). Our first attempts with refs were quite
+unsuccessful so we went for a rather free style and fixed them
+afterward.
+
+** Invalid reference syntax detection
+ Here is simple regexp trying to detect wrongly formated expressions:
+ #+begin_src shell :results output :exports both
+grep -e '[^a-zA-Z ]ref' *.md | grep -v -e '\@ref([^)]*)'
+ #+end_src
+
+ #+RESULTS:
+ : 18_zbis_biblio.md:<div id="refs"></div>
+ : Conventions_ecriture.md: - relecteur, rapporteur, *referee* ou *reviewer* : essaie-t-on de s'en tenir au même terme tout du long ou n'est-ce pas utile ?
+ : README.md:- [Les références d'un chapitre à l'autre](https://bookdown.org/yihui/bookdown/cross-references.html)
+ : index.md:bibliography: [refs.bib]
+
+** Semi-automatic fix
+ The following sequence of sed commands was used to automatically
+ transform most refs with an incorrect syntax into good ones. We keep
+ it here only for the record as there should not bee too much need for
+ it now.
+
+ #+name: fixref
+ #+begin_src shell :results output :exports both
+git stash
+# grep 'ref(' *.md
+sed -i 's|ref{#\([^}]*\)}|ref(\1)|g' *.md  
+sed -i 's|ref{@\([^}]*\)}|ref(\1)|g' *.md  
+sed -i 's|ref(#\([^}]*\))|ref(\1)|g' *.md  
+sed -i 's|@\\ref(|\\@ref(|g' *.md  
+sed -i 's|\\ref(|\\@ref(|g' *.md  
+sed -i 's|ref{\([^}]*\)}|ref(\1)|g' *.md  
+grep 'ref' *.md | grep -v '@ref('
+ #+end_src
+
+ #+RESULTS: fixref
+ #+begin_example
+Saved working directory and index state WIP on master: 9252acc Update 12_format_des_donnees.md
+04_questions_cauchemars_recurrents.md:l'informaticienne du labo l'a déjà reformaté pour le
+12_format_des_donnees.md:Bref, même si une table, une hiérarchie ou un texte libre peut
+13.5_partage_et_archivage.md:adaptée (chapitre @\ref(C:licences)), un format adapté (chapitre
+13.5_partage_et_archivage.md:@\ref(C:data:format)), d'élaborer une documentation extensive levant les
+13.5_partage_et_archivage.md:ambiguïtés d'interprétation (chapitre @\ref(C:code:good)), et enfin de choisir
+13.5_partage_et_archivage.md:@\ref(C:versioning) des solutions pour le suivi de version (GitLab, GitHub,
+14_apprendre_a_programmer.md:Notez que nous parlons de " langages " au pluriel pour refléter leur diversité.
+15_rendre_son_code_comprehensible.md:> FIXME diagramme à refaire en plus joli et à améliorer *ECG*
+15_rendre_son_code_comprehensible.md:œuvre très simplement en refusant par exemple l'usage des " arguments par
+20_Conventions_ecriture.md: - relecteur, rapporteur, *referee* ou *reviewer* : essaie-t-on de s'en tenir au même terme tout du long ou n'est-ce pas utile ?
+README.md:- [Les références d'un chapitre à l'autre](https://bookdown.org/yihui/bookdown/cross-references.html)
+index.md:bibliography: [refs.bib]
+ #+end_example
+
+** Key syntax
+ Now, this script changes the key convention to replace ~:~ by ~-~ as this
+ bookdown does not seem to like keys with ~:~.
+ #+name: semicolon
+ #+begin_src shell :results output :exports both :var dep=fixref
+LABELS="A:preambule 
+     A:introduction 
+     A:personas 
+     A:cauchermars 
+     B:data:acquisition 
+     B:data:input 
+     B:code:aspect 
+     B:data:output 
+     C:intro 
+     C:data:acquisition 
+     C:data:format 
+     C:data:share 
+     C:versioning 
+     C:code:learn 
+     C:code:good 
+     C:code:bugs 
+     C:code:env 
+     C:licences 
+     D:appendix 
+     D:convention";
+
+#grep "C:code:learn" *.md;
+for l in $LABELS ; do 
+    nl=`echo $l | sed 's|:|-|g'`; 
+    sed -i "s|$l|$nl|g" *.md;
+done
+#grep "C:code:learn" *.md;
+ #+end_src
+
+ #+RESULTS: semicolon
+
+ #+RESULTS:
+
+** Checking for invalid keys
+The goal of this script is to list keys whose syntax seems
+spurious. The first script can safely be ignored and was just a
+shorthand used to create the second one.
+
+ #+begin_src shell :results output :exports both 
+LABELS="A:preambule 
+     A:introduction 
+     A:personas 
+     A:cauchermars 
+     B:data:acquisition 
+     B:data:input 
+     B:code:aspect 
+     B:data:output 
+     C:intro 
+     C:data:acquisition 
+     C:data:format 
+     C:data:share 
+     C:versioning 
+     C:code:learn 
+     C:code:good 
+     C:code:bugs 
+     C:code:env 
+     C:licences 
+     D:appendix 
+     D:convention";
+
+echo $LABELS | sed -e 's| | -e |g'  -e 's|:|-|g'
+ #+end_src     
+
+ #+RESULTS:
+ : A-preambule -e A-introduction -e A-personas -e A-cauchermars -e B-data-acquisition -e B-data-input -e B-code-aspect -e B-data-output -e C-intro -e C-data-acquisition -e C-data-format -e C-data-share -e C-versioning -e C-code-learn -e C-code-good -e C-code-bugs -e C-code-env -e C-licences -e D-appendix -e D-convention
+
+I assume here that references are correctly formated.xs
+ #+begin_src shell :results output :exports both :var dep=semicolon
+grep -e @ref *.md | grep -v -e A-preambule -e A-introduction -e A-personas -e A-cauchermars -e B-data-acquisition -e B-data-input -e B-code-aspect -e B-data-output -e C-intro -e C-data-acquisition -e C-data-format -e C-data-share -e C-versioning -e C-code-learn -e C-code-good -e C-code-bugs -e C-code-env -e C-licences -e D-appendix -e D-convention 
+ #+end_src
+
+ #+RESULTS:
+ : README.md:* citation:    `\@ref(clef)`
+
+Looks good.
+
+* Spell checking
+
+** Plateforme
+#+begin_src shell :results output :exports both
+grep -e plateforme *.md
+#+end_src
+
+#+RESULTS:
+
+** Space before commas, question marks, ...
+Here is the regexp to detext possibly invalid syntax:
+#+begin_src shell :results output :exports both
+grep -e '[^ ][:?!]' *.md
+#+end_src
+
+#+RESULTS:
+#+begin_example
+01_preambule.md:Ce livre s'adresse à tout acteur de la recherche scientifique qui : 
+01_preambule.md:Le livre se structure en trois grandes parties :
+02_RR_kezako.md:du monde de la recherche *SG* [Baker M. 1,500 scientists lift the lid on reproducibility. Nature 2016,533:452-454.]. Le sujet est ancien, mais la situation semble avoir atteint un point critique. Des études ont par exemple démontré qu'il n'était pas possible d'obtenir de nouveau les résultats d'études pré-cliniques ou cliniques *SG*[Begley CG, Ellis LM. Drug development: Raise standards for preclinical cancer research. Nature 2012,483:531-533.] [Perrin S. Preclinical research: Make mouse studies work. Nature 2014,507:423-425.] Si la reproductibilité des résultats ne peut être considérée comme seul critère de la scientificité d'une recherche, cette crise suscite des interrogations au sein même de la communauté scientifique.
+02_RR_kezako.md:## Définition(s) de "recherche reproductible" ?
+02_RR_kezako.md:résultat bit pour bit. L'expression "recherche reproductible" apparaît dès 1992, lors du congrès de la "Society of Exploration Geophysics" [*SG* : trouver la traduction]. De nombreuses définitions de "recherche reproductible" sont fournies par Barba. [Barba, Lorena A. 2018. ‘Terminologies for Reproducible Research’. ArXiv:1802.03311 [Cs], February. http://arxiv.org/abs/1802.03311.] Parmi celles-ci, nous retiendrons la suivante, issue de l'article de Vandewalle et al.[https://ieeexplore.ieee.org/document/4815541] : 
+02_RR_kezako.md:## Pourquoi la question de la reproductibilité est-elle devenue centrale dans les débats actuels?
+02_RR_kezako.md:investi tous les champs de la science et l'outil informatique occupe une place incontournable : stockage, formatage,
+02_RR_kezako.md:Quel peut être le point commun entre : un archéologue en train d'effectuer une campagne de fouille, 
+02_RR_kezako.md:un numéricien finalisant une simulation de grande ampleur? 
+02_RR_kezako.md:des connaissances dans leurs domaines respectifs : 
+02_RR_kezako.md:La liste pourrait s'allonger : 
+02_RR_kezako.md:ne vous êtes-vous jamais posé les questions suivantes : "Suis-je vraiment sûr de mon analyse statistique ?", "Suis-je capable de recréer une figure conçue il y a 6 mois ?" Outre votre équipe de recherche, votre communauté scientifique et *in fine* le monde non académique, le premier bénéficiaire d'une recherche reproductible, c'est d'abord *vous*. Une recherche
+02_RR_kezako.md:scientifique. Cela peut-il constituer un gage de qualité de la recherche ? Non. Cela y
+02_RR_kezako.md:recherche : une mauvaise recherche peut tout à fait être
+02_RR_kezako.md:reproductible (spoiler alert : don't try at work!).
+02_RR_kezako.md:D'autres causes s'avèrent plus difficiles à détecter : par exemple, le chaos numérique, aussi subtil à identifier que vecteur de troubles majeurs. 
+02_RR_kezako.md:## La minute théologie négative : ce que vous ne trouverez pas dans cet ouvrage
+02_RR_kezako.md:Il n’est pas question dans cet ouvrage de traiter toutes les solutions pour garantir la reproductibilité de la recherche au sens de Randall et Welser : ainsi, la question de la qualité de la recherche est hors périmètre du présent ouvrage. En effet, nous vous proposons plutôt de nous focaliser sur les solutions qui permettent communiquer des résultats pouvant être reproduits de façon exhaustive. 
+02_RR_kezako.md:Ainsi, nous n’allons pas traiter des solutions à des problèmes qui nuisent à la qualité de la recherche, et en particulier : 
+02_RR_kezako.md:- aller à la "pêche" aux résultats significatifs parmi tous les tests statistiques réalisés ("p-hacking") [Nuzzo R. Scientific method: statistical errors. Nature 2014,506:150-152.], 
+02_RR_kezako.md:- générer une hypothèse de recherche *a posteriori*, c’est-à-dire après avoir obtenu un résultat significatif (« harking ») [Kerr NL. HARKing: hypothesizing after the results are known. Pers Soc Psychol Rev 1998,2:196-217.], 
+02_RR_kezako.md:- sur-interpréter le résultat statistique qui est significatif (« Probability That a Positive Report is False ») [Wacholder S, Chanock S, Garcia-Closas M, El Ghormli L, Rothman N. Assessing the probability that a positive report is false: an approach for molecular epidemiology studies. J Natl Cancer Inst 2004,96:434-442.] 
+02_RR_kezako.md:Pour tous ces sujets cités *supra*, nous invitons le lecteur à se documenter : [Munafo MR, Nosek BA, Bishop DVM, Button KS, Chambers CD, Sert NPd, Simonsohn U, Wagenmakers E-J, Ware JJ, Ioannidis JPA. A manifesto for reproducible science. Nature Human Behav 2017,1:0021.]
+03_vis_ma_vie.md:Nous avons recueilli ci-dessous plusieurs témoignages fictifs de *personas* incarnant différents acteurs de la recherche. Il s'agit de personnages fictifs mais néanmoins vraisemblables car basés sur des expériences réelles. Parce qu'ils se présentent sous une forme narrativisée, les personas permettent : 
+03_vis_ma_vie.md:> "J'interroge des personnes en situation de précarité économique afin de recueillir leurs témoignages. Je consigne toutes mes notes dans un carnet relié et je retranscris les informations démographiques dans un tableur Calc afin de compiler quelques statistiques : pyramide des âges, répartition des sexes, etc. Dans le cadre de ce projet, je collabore étroitement avec un autre doctorant qui a le même directeur de thèse que moi. Il alimente lui aussi ce fichier Calc, que nous nous échangeons régulièrement par clé USB."
+03_vis_ma_vie.md:> "J'ai terminé mon Master 2 l'année dernière. Dans ce cadre, j'ai été formée à conduire des analyses statistiques sous R. J'analyse régulièrement des jeux de données fournis par des cliniciens qui travaillent au CHU. Les données sont au format Excel et me sont fournies directement par mail. Je travaille de manière relativement isolée pour effectuer ma tâche d'analyse de données : mes collègues sont en effet tous médecins ou biologistes.   
+03_vis_ma_vie.md:>J'ai récemment participé à la rédaction d'un article scientifique et nous venons de recevoir les commentaires des relecteurs : je dois modifier les couleurs d'une figure afin que celle-ci soit lisible en noir et blanc. Comme je n'arrivais pas à remettre la main sur mon *script* R ayant généré la figure en question, j'ai ré-écrit le programme correspondant. Le seul problème, c'est que cette nouvelle figure est un peu différente de la précédente et remet en cause les conclusions de l’article. Je ne comprends pas ce qui a pu se passer. J'aimerais changer mes pratiques pour rendre ma recherche plus reproductible, mais je ne sais pas par où commencer."
+03_vis_ma_vie.md:>"Il y a 3 semaines, j'ai commencé mon stage de Master 2. En fait, j'ai plutôt l'impression d'avoir pris l'autoroute de la souffrance. Ma principale occupation a été d'extraire des données à partir d'une série d'articles, qui donnait les points de caractéristique dans les *.pdf* en fichiers supplémentaires : du fun à tous les étages. Je les copie-colle directement dans Excel. Fun². Dans le tableur, je dois ensuite transformer les "." en ",". Comme je ne dispose pas des incertitudes d'estimation pour tous les articles (seuls certains articles les incluent dans leurs résultats), je n'en tiens pas compte et ne rentre que les estimations. 
+03_vis_ma_vie.md:>"En tant qu'ingénieur du labo, je suis reponsable de la maintenance du logiciel *pytR*, développé il y a 15 ans par un post-doctorant très doué. Il a depuis quitté le labo et personne ne sait vraiment comment modifier le code de ce logiciel alors qu'une bonne partie de notre activité de recherche repose sur son utilisation. J'ai collé pas mal de rustines qui nous ont permis de tenir un certain temps face à l'évolution de nos infrastructures et de nos systèmes. Mais depuis la mise à jour de notre parc informatique il y a 6 mois, ce n'est plus possible. J'ai été obligé de garder une machine sous l'ancien OS pour pouvoir continuer à faire tourner le logiciel. Mes collègues n'ont pas l'air trop inquiets, mais ça m'angoisse parce que nous avons cumulé une grosse dette technique. Je ne sais pas ce qui va se passer quand cette vieille bécane va nous lâcher ! "
+03_vis_ma_vie.md:> " Je dirige une équipe de recherche depuis 3 ans et j'encadre actuellement 2 doctorants et 3 post-doctorants. Je suis un peu inquiète car l'un de mes doctorants a soutenu sa thèse la semaine dernière et part en post-doc aux États-Unis à la fin du mois. Ses derniers écrits sont très prometteurs, mais il reste encore 50% du travail à faire et l'article n'est pas encore rédigé. J'ai prévu de recruter un stagiaire pour prendre la suite mais cela risque de prendre énormément de temps : alors que l'exploitation des résultats est particulièrement délicate sur ce projet, ce doctorant documente très peu les étapes de son travail en dehors de ses manips. Pour aggraver la situation, tout doit être bouclé d'ici la fin de l'année car le financement du projet arrive à échéance.
+03_vis_ma_vie.md:> Récemment, j'ai aussi aussi reçu des nouvelles d'un ancien camarade de thèse dont un article important s'est fait rétracter. Certaines conclusions de son papier ont été attaquées. Il n'a pas pu fournir les données expérimentales qu'il avait utilisées : l'article date d'il y a 5 ans et il a perdu toute trace du doctorant qui avait conduit les manips. L'éditeur de la revue a rétracté l'article, faute d'éléments tangibles pour faire valoir un éventuel droit de réponse. La réputation de mon ancien camarade en a pris un coup." 
+04_questions_cauchemars_recurrents.md:Il existe de nombreuses situations où l'on souhaite reproduire ses résultats de recherche :
+04_questions_cauchemars_recurrents.md:## J'ai perdu mes données ou mon code de programmation !
+04_questions_cauchemars_recurrents.md:que j'ai présenté. Malheureusement :
+04_questions_cauchemars_recurrents.md:Que pourrais-je répondre à ce collègue tout en gardant un semblant de dignité ? Non reproductibilité : 1 / Tranquillité d'esprit : 0
+04_questions_cauchemars_recurrents.md:## Mes résultats ont changé !
+04_questions_cauchemars_recurrents.md:Dois-je annoncer au reviewer qu'une partie des résultats a changé ?
+04_questions_cauchemars_recurrents.md:## Mon code ne marche plus !
+04_questions_cauchemars_recurrents.md:recompile avec enthousiasme mon code de simulation : ma simulation prendra dix fois moins de temps qu'avec ma précédente machine, me dis-je. Mon excitation retombe subitement en voyant :
+04_questions_cauchemars_recurrents.md:passer à un stagiaire. Et là je me dis : "Mais pourquoi moi ?"
+04_questions_cauchemars_recurrents.md:## Mon nouveau doctorant n'observe pas les mêmes effets que son prédécesseur !
+04_questions_cauchemars_recurrents.md:rétracter l'article de son prédécesseur car tout d'un coup pris d'un certain doute ?
+04_questions_cauchemars_recurrents.md:## Mais fallait-il vraiment écrire toute cette tartine ?
+04_questions_cauchemars_recurrents.md:Pour mon stage de M2, je souhaite montrer un lien la délétion d'un gène chez la souris et la survenue de problèmes neurolocomoteurs. J'ai vu de nombreux articles évaluer la présence de ces problèmes chez la souris, mais aucun ne m'a particulièrement attiré. En revanche, toute cette revue de la littérature m'a donné une super idée pour une telle évaluation comportementale, reposant sur un protocole d'observations certes complexe mais que je jugeais génial. Je n'ai pas voulu perdre de temps (nous ne pouvions bénéficier de ce lot de souris que pendant un mois). J'ai obtenu d'excellents résultats et les ai présentés en réunion d'équipe, tout excité à l'idée de rédiger mon premier article que j'allais soumettre dans une excellente revue. Après ma présentation, mon chef d'équipe m'a demandé de lui montrer le descriptif rédigé de mon protocole si "génial". Je lui ai répondu que je n'avais pas voulu prendre le temps de rédiger quelque chose qui était dans ma tête : quel intérêt d'écrire toute cette tartine pour soi, quand tout est si clair dans sa tête ? Il m'a répondu "ok, donc tu peux oublier ton premier papier sur tes souris".
+05_acquisition_des_donnees.md:recherche (par exemple : la résistance à la traction d’un matériau, la concentration en 
+05_acquisition_des_donnees.md:modalités de collecte appliquées ? Quelle peut-être la valeur, 
+05_acquisition_des_donnees.md:qui n’est pas stabilisé pendant toute la durée de l’étude ? 
+05_acquisition_des_donnees.md:récent de normalisation dans ce domaine *SG*(téléchargeable ici : 
+05_acquisition_des_donnees.md:https://www.bipm.org/en/publications/guides/).
+05_acquisition_des_donnees.md:La **fidélité** de mesure s'entend comme : " l’étroitesse de l'accord entre les indications ou les 
+05_acquisition_des_donnees.md:La **répétabilité** est la fidélité de mesure dans les conditions de mesures suivantes : 
+05_acquisition_des_donnees.md:La **reproductibilité** est la fidélité de mesure dans les conditions de mesures suivantes : 
+05_acquisition_des_donnees.md:conditions d’une recherche reproductible ne peuvent alors pas être remplies : vous n’obtiendriez 
+05_acquisition_des_donnees.md:plus remplies : personne d’autre que vous ne pourrait obtenir les mêmes résultats sur des unités 
+05_acquisition_des_donnees.md:Deux questions se posent alors : 
+05_acquisition_des_donnees.md:- la première, déjà abordée ci-dessus, concerne la standardisation de la collecte des informations : 
+05_acquisition_des_donnees.md:- la seconde concerne l'outils de partage de l'information : dans quel document, sur quel support, 
+05_acquisition_des_donnees.md:les informations collectées par l’autre ?
+05_acquisition_des_donnees.md:afficher le fichier pdf). Les plus fréquemment rencontrées peuvent être : 
+05_acquisition_des_donnees.md:d'identifiants en dates, par exemple) *SG* [@REF https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1044-7].
+05_acquisition_des_donnees.md:## Que faire ?
+05_acquisition_des_donnees.md:**NB :** en tant que chercheur, nous sommes souvent l'émetteur de données 
+07_donnees_d_entree.md:Voici un scénario catastrophe classique quand il est question d'intégrité des données : 
+07_donnees_d_entree.md:peut être compromise sans que vous vous en rendiez compte. Par exemple :
+07_donnees_d_entree.md:irréversible : une partie de l'information s'est littéralement évaporée.
+07_donnees_d_entree.md:représentent exactement. Par exemple : des données sont collectées dans la
+07_donnees_d_entree.md:mais l'accès à ces données. Imaginez : vous avez utilisé un nommage particulier 
+07_donnees_d_entree.md:des fichiers (par exemple, pour indiquer la nature de la donnée : *well done*!) 
+07_donnees_d_entree.md:inutilisables. Comment expliquer ce paradoxe? 
+07_donnees_d_entree.md:pouvez-vous encore le lire aujourd'hui ? 
+07_donnees_d_entree.md:format obsolète ? Vous avez répondu par la négative à ces items? 
+07_donnees_d_entree.md:## Que faire ?
+08_aspects_computationnels.md:Les problèmes inhérents au calcul et aux codes associés partagent des similarités avec les problèmes liés aux données (par exemple la non disponibilité). Toutefois, les questions de calcul ont leurs spécificités du fait de leur nature opératoire : il s'agit d'exécuter ce code afin d'obtenir un résultat. Or, c'est lors de cette étape d'exécution que vont surgir un certain nombre de problèmes que l'on peut classer en deux grandes catégories : 
+08_aspects_computationnels.md:<!-- Dans le pire des cas, le programme plante avec un message d'erreur -->
+08_aspects_computationnels.md:<!-- cryptique du genre `Un problème a fait que le programme a cessé de -->
+08_aspects_computationnels.md:<!-- fonctionner correctement. [Oui] [Non] [Annuler]`, `segmentation fault -->
+08_aspects_computationnels.md:<!-- Core dumped`, ou encore `java.lang.ExceptionInInitializerError: null`. -->
+08_aspects_computationnels.md:<!-- Plus subtil voire fourbe, il se peut que le programme s'exécute à première vue -->
+08_aspects_computationnels.md:<!-- normalement mais qu'en y regardant de plus près, on s'aperçoive que -->
+08_aspects_computationnels.md:<!-- le résultat (valeur numérique, caractères illisibles, mise en page -->
+08_aspects_computationnels.md:<!-- d'une figure, ...) ait changé. -->
+08_aspects_computationnels.md:En guise de préambule, débutons par une liste non exhaustive des cas où l'on n'a tout simplement pas ou plus accès au programme à exécuter : 
+08_aspects_computationnels.md:* **Les logiciels propriétaires et le "licence d'exploitation" bingo** : votre équipe/structure a cessé de payer la licence. Variante : ce logiciel est disponible dans l'université d'un collègue mais pas dans l'établissement où vous travaillez actuellement. Autre variante : vous avez accès au logiciel, mais seul un nombre restreint de personnes peut y accéder en même temps, via un système de jetons. De fait, vous vous retrouvez à devoir attendre un bon moment avant d'y arriver.
+08_aspects_computationnels.md:* **Un seul code vous manque et tout est dépeuplé** : le code a été développé "en interne". Il arrive (trop souvent) qu'à la suite d'un crash disque, d'un vol d'ordinateur portable, du départ du développeur principal, ... que l'on n'ait simplement plus accès au logiciel. C'est souvent le résultat d'une politique (ou d'une absence de politique) de sauvegarde ou de partage d'informations au sein d'une équipe.
+08_aspects_computationnels.md:* **Le numéro que vous avez demandé n'est plus attribué** : assez souvent, il s'agit d'un code développé "en externe" (dans une autre équipe de recherche par exemple) que l'on souhaite ré-exécuter, par exemple pour s'y comparer ou bien pour vérifier si on obtient bien des résultats similaires avec une autre méthode. En général, on cherche alors le code sur le web mais il est assez courant que l'URL indiquée dans l'article ne soit plus accessible car le développeur (doctorant/postdoctorant) a depuis quitté l'équipe où il travaillait et que sa page web a été supprimée ou complètement
+08_aspects_computationnels.md:  restructurée. Ce problème est connu sous le nom d'[*URL decay*](https://www.spinellis.gr/sw/url-decay/) ou de [*Link
+08_aspects_computationnels.md:  Rot*](https://en.wikipedia.org/wiki/Link_rot). *SG*
+08_aspects_computationnels.md:* **Cachez ce code que je ne saurais voir** : enfin, les auteurs du code peuvent tout simplement ne pas souhaiter partager ce code, par exemple parce qu'ils jugent qu'il n'est pas montrable en l'état (pas ou peu commentaires, structure horrible cachant des erreurs) ou encore pour conserver ce qu'ils considèrent comme un avantage compétitif.
+08_aspects_computationnels.md:Si cette question vous intéresse, vous pouvez lire les travaux de Collberg et Proebsting *SG*[@10.1145/2812803] qui étudient les causes d'incapacité à réexécuter du code dans la communauté de recherche *Computer Systems*, pourtant très au fait des aspects logiciels. Vous y trouverez de nombreux témoignages (assez drôles si c'était sans conséquences !) issus d'une étude de terrain ; vous pourrez notamment lire les excuses les plus couramment utilisées pour justifier une incapacité à mettre à donner accès au code derrière une publication.
+08_aspects_computationnels.md:## Comment lance-t-on ce code ? ("Allô Houston")
+08_aspects_computationnels.md:d'entrées, quelles variables d'environnement, etc. ? La moindre erreur sur les
+08_aspects_computationnels.md:## Comment fonctionne ce code ? Lost in translation
+08_aspects_computationnels.md:  citation d'[Harold Abelson](https://en.wikipedia.org/wiki/Hal_Abelson) tirée
+08_aspects_computationnels.md:  mais comment les trouver ?
+08_aspects_computationnels.md:## Quelle version du code ?
+08_aspects_computationnels.md:quelle version a été utilisée dans le passé et quelle est la version actuelle ?
+08_aspects_computationnels.md:Et comment savoir si c'est effectivement la cause de la différence observée ?
+08_aspects_computationnels.md:La mise à jour n'introduirait-elle pas de nouveaux *bugs* ? L'idéal serait
+08_aspects_computationnels.md:peut-être de revenir à une version plus ancienne mais comment faire ? Quelle
+08_aspects_computationnels.md:est la version la plus récente que je puisse utiliser ?
+08_aspects_computationnels.md:ordinateur ? Et si je repars du code source, arriverai-je à le recompiler ?
+08_aspects_computationnels.md:simple:
+08_aspects_computationnels.md:plus sur ce paquet, voilà ce que nous obtenons:
+08_aspects_computationnels.md:Package: python3-matplotlib
+08_aspects_computationnels.md:Version: 2.1.1-2
+08_aspects_computationnels.md:Depends: python3-dateutil, python-matplotlib-data (>= 2.1.1-2),
+08_aspects_computationnels.md:libjs-jquery, libjs-jquery-ui, python3-numpy (>= 1:1.13.1),
+08_aspects_computationnels.md:python3-cycler (>= 0.10.0), python3:any (>= 3.3.2-2~), libc6 (>=
+08_aspects_computationnels.md:2.14), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:3.0), libpng16-16 (>=
+08_aspects_computationnels.md:1.6.2-1), libstdc++6 (>= 5.2), zlib1g (>= 1:1.1.4)
+08_aspects_computationnels.md:obtient:
+08_aspects_computationnels.md:l'autre alors que rien n'a changé! Mais alors, comment décider lequel de ces
+08_aspects_computationnels.md:différents résultats de calculs est le "bon" ?
+08_aspects_computationnels.md:Failure](http://www-users.math.umn.edu/~arnold/disasters/patriot.html))
+08_aspects_computationnels.md:Reproduciblity: An Astrophysical Exemple of Computationnal Uncertainty in the
+08_aspects_computationnels.md:HPC context/](http://web.stanford.edu/~vcs/talks/ResCuESC2018-STODDEN.pdf).
+08_aspects_computationnels.md:[séminaire sur la reproductibilité numérique](https://github.com/alegrand/RR_webinars/blob/master/2_controling_your_environment/index.org).
+08_aspects_computationnels.md:## Que faire ?
+09_donnees_de_sortie.md:moment de la rédaction d’un article : il peut s’agir d’une mauvaise sélection
+09_donnees_de_sortie.md:Une erreur de frappe est si facilement arrivée !
+09_donnees_de_sortie.md:(2004) The Inconstancy of the Fundamental Physical Constants: Computational
+09_donnees_de_sortie.md:Status https://arxiv.org/abs/physics/0409117]
+09_donnees_de_sortie.md:## Que faire ?
+10_introduction_partie_3.md:# Le temps des changements ? {#C-intro}
+10_introduction_partie_3.md:situations de crise ! Nous essayons de vous proposer d'intervenir de manière
+10_introduction_partie_3.md:## Quand mettre en œuvre les bonne pratiques ?
+10_introduction_partie_3.md:En outre, comment accompagner l'adoption de nouvelles pratiques à l'échelle collective, qu'il s'agisse d'un laboratoire ou d'une communauté disciplinaire? 
+10_introduction_partie_3.md:## Concrètement, que changer et comment s'y prendre ?
+10_introduction_partie_3.md:Bonne nouvelle : il est très peu probable que votre recherche soit à 100% non reproductible. La palette des solutions à votre disposition est variée ; en fonction de vos compétences et de vos urgences, vous pouvez choisir d'agir sur : 
+10_introduction_partie_3.md:Bonne nouvelle bis : le présent ouvrage a été conçu pour être hautement "cherry picking proof". Selon l'état de vos pratiques actuelles, les chapitres peuvent donc être lus dans l'ordre qui vous conviendra le mieux, même si nous conseillons bien sûr de tous les lire, voire de diffuser cet ouvrage auprès de vos collègues et étudiants.
+11_collecte_des_donnees.md:façon dont l'information est collectée, et ce, donnée par donnée. Par exemple :
+11_collecte_des_donnees.md:éventuellement confirmer les résultats de votre étude. A noter : il ne s'agit
+11_collecte_des_donnees.md:consigne toute modification d'information au stylo (indélébile) : on indique la
+11_collecte_des_donnees.md:numériques, la logique reste la même : toute modification des informations
+11_collecte_des_donnees.md:ce type de tâche ? Pas vraiment.  Plutôt pas du tout, dans la mesure où la
+11_collecte_des_donnees.md:sur le site du CNRS [ici](http://www.cnrs.fr/infoslabos/cahier-laboratoire/).
+11_collecte_des_donnees.md:[ici](https://hal.archives-ouvertes.fr/hal-02103716).
+12_format_des_donnees.md:## Comment structurer mes informations ?
+12_format_des_donnees.md:de façon chronologique avec des annotations sémantiques (qui ? quand ?
+12_format_des_donnees.md:où? pourquoi? dans quel contexte? ...). Dans tous les cas, la question
+12_format_des_donnees.md:## Quel format choisir pour enregistrer et stocker des informations ?
+12_format_des_donnees.md:L'enjeu autour du format pour la recherche reproductible est double : 
+12_format_des_donnees.md:On distingue 3 grand types de formats :
+12_format_des_donnees.md:data management and stewardship. Sci. Data 3:160018 doi:
+12_format_des_donnees.md:résultats d'analyse (par exemple des estimations) *SG* [@GUM: Évaluation des données de mesure – 
+12_format_des_donnees.md:Guide pour l'expression de l'incertitude de mesure, JCGM 100:2008 
+12_format_des_donnees.md:(https://www.bipm.org/utils/common/documents/jcgm/JCGM_100_2008_F.pdf)].
+12_format_des_donnees.md:*SG* [@GUM: Évaluation des données de mesure – 
+12_format_des_donnees.md:Guide pour l'expression de l'incertitude de mesure, JCGM 100:2008 
+12_format_des_donnees.md:(https://www.bipm.org/utils/common/documents/jcgm/JCGM_100_2008_F.pdf)]
+12_format_des_donnees.md:uncertainty in measurement" – Extension to any number of output quantities JCGM 102:2011, Definition 3.21  
+12_format_des_donnees.md:(https://www.bipm.org/utils/common/documents/jcgm/JCGM_102_2011_E.pdf)]
+12_format_des_donnees.md:populaire consiste à utiliser le plus possible une structure de tableau. Nous vous recommandons de lire ce document sur le sujet:
+12_format_des_donnees.md:[*SG*] tidy data [Ref Wickham, Hadley. "Tidy data". *Journal of Statistical Software* 59(10) (2014): 1-23]
+13.5_partage_et_archivage.md:pairs. Pour un partage efficace, il est important de choisir :
+13.5_partage_et_archivage.md:American Statistician, 72:1, 80-88, DOI: 10.1080/00031305.2017.1375986]()
+13.5_partage_et_archivage.md:proposent la structure suivante :
+13.5_partage_et_archivage.md:comme par exemple l'[Open Science Framework (OSF)](https://osf.io/).
+13.5_partage_et_archivage.md:plus populaire étant [Dropbox](https://www.dropbox.com/) ou son équivalent
+13.5_partage_et_archivage.md:libre [Framadrive](https://framadrive.org/login). La granularité à laquelle ils
+13.5_partage_et_archivage.md:populaire est [Google Spreadsheet](https://spreadsheets.google.com/)
+13.5_partage_et_archivage.md:(resp. [Google Docs](https://docs.google.com/)) ou (mieux) son équivalent libre
+13.5_partage_et_archivage.md:[Framacalc](https://framacalc.org/) (resp. [Framapad](https://framapad.org/)).
+13.5_partage_et_archivage.md:certain nombre de problèmes dans un contexte recherche :
+13.5_partage_et_archivage.md:  vous assurer que vous disposez d'une solution d'archivage en complément : 
+13.5_partage_et_archivage.md:[Figshare](https://figshare.com), ou publiques comme
+13.5_partage_et_archivage.md:[Zenodo](https://zenodo.org) offrent un archivage sur le long terme et fournissent 
+13.5_partage_et_archivage.md:Pour les logiciels, une archive existe :
+13.5_partage_et_archivage.md:[Software Heritage](https://www.softwareheritage.org). En tandem avec un
+13.5_partage_et_archivage.md:CNRS](http://qualite-en-recherche.cnrs.fr/spip.php?article315) concernant la
+13.5_partage_et_archivage.md:Accessible, Interoperable, Reusable)](https://www.go-fair.org/fair-principles/)
+13.5_partage_et_archivage.md:Cosmo](https://github.com/alegrand/RR_webinars/blob/master/5_archiving_software_and_data/index.org)
+13_outils_de_gestion_de_version.md:de répondre aux questions :
+13_outils_de_gestion_de_version.md: - quand ?
+13_outils_de_gestion_de_version.md: - qui ?
+13_outils_de_gestion_de_version.md: - pourquoi ?
+13_outils_de_gestion_de_version.md:Nous présentons deux solutions dans ce chapitre :
+13_outils_de_gestion_de_version.md:éléments *SG* [@REF: (http://qualite-en-recherche.cnrs.fr/spip.php?article315)] [@REF Jenny Bryan https://speakerdeck.com/jennybc/how-to-name-files ??]
+13_outils_de_gestion_de_version.md:des raisons de compatibilité, il est recommandé d'éviter l'utilisation de :
+13_outils_de_gestion_de_version.md:- signes diacritiques : accents, trémas, cédilles par exemple, 
+13_outils_de_gestion_de_version.md:La chronologie du nommage de fichiers successifs de scripts R pourrait être:
+13_outils_de_gestion_de_version.md:Ces informations sont une forme appauvrie de métadonnées : lorsque le format de
+13_outils_de_gestion_de_version.md:conserver de façon pérenne, on indique directement les métadonnées dans le nom du fichier. Cette méthode fournit des informations rudimentaires : dans le cas où plusieurs personnes ont travaillé sur un même
+13_outils_de_gestion_de_version.md:fois : sauvegarder les travaux, les partager, et de collaborer. Ce dépot
+13_outils_de_gestion_de_version.md:l'Inria](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/gitlab)
+13_outils_de_gestion_de_version.md:ou de [l'IN2P3](https://gitlab.in2p3.fr/CTA-LAPP/HiPeCTA) ou encore un
+13_outils_de_gestion_de_version.md:plate-forme privée comme [GitHub](https://github.com/)). En outre, ces
+13_outils_de_gestion_de_version.md:d'obtenir aisément une recherche reproductible:
+13_outils_de_gestion_de_version.md:reproductible](https://learninglab.inria.fr/mooc-recherche-reproductible-principes-methodologiques-pour-une-science-transparente/)
+13_outils_de_gestion_de_version.md:Voici quelques moyens d'apprendre à utiliser git et d'aller un peu plus loin :
+13_outils_de_gestion_de_version.md: - [Happy Git With R](https://happygitwithr.com/) par *Jenny Bryan et al.*
+13_outils_de_gestion_de_version.md: - Le [Software Carpentry Git tutorial](http://swcarpentry.github.io/git-novice/)
+13_outils_de_gestion_de_version.md: - Le livre Pro Git (gratuit) en [anglais](https://git-scm.com/book/en/v2) ou
+13_outils_de_gestion_de_version.md: en [français](https://git-scm.com/book/fr/v2) (Les deux premiers chapitres
+13_outils_de_gestion_de_version.md: - Le site [Apprenez Git Branching](https://learngitbranching.js.org/) permet
+14_apprendre_a_programmer.md:qu'il peut être nécessaire d'apprendre à programmer en conseillant deux langages devenus incontournables en traitement et analyse des données: Python et R.
+14_apprendre_a_programmer.md:" Mais j'ai sauvé ma feuille Excel pourtant ! ". 
+14_apprendre_a_programmer.md:Un façon de l'écrire est :
+14_apprendre_a_programmer.md:mean(table_tri$IMC[1:(nrow(table_tri)/2)])
+14_apprendre_a_programmer.md:de ce programme simple, on comprend néanmoins à la lecture ce qu'il fait :
+14_apprendre_a_programmer.md:programme réalise deux objectifs : 
+14_apprendre_a_programmer.md:quasiment imposés dans le monde de la recherche : Python et R.  Entendons-nous
+14_apprendre_a_programmer.md:bien : nous ne disons pas que ce sont les seuls langages utilisables dans ce
+14_apprendre_a_programmer.md:que Scipy (http://conference.scipy.org), EuroScipy (https://www.euroscipy.org),
+14_apprendre_a_programmer.md:useR! (http://www.user2019.fr), Les Rencontres
+14_apprendre_a_programmer.md:R(https://r2018-rennes.sciencesconf.org) ...
+14_apprendre_a_programmer.md:* [Introduction à la statistique avec R](https://www.fun-mooc.fr/courses/UPSUD/42001S06/session06/about)
+14_apprendre_a_programmer.md:* [Python : des fondamentaux à l'utilisation du langage](https://www.fun-mooc.fr/courses/inria/41001S03/session03/about)
+14_apprendre_a_programmer.md:* [Begin’R](http://beginr.u-bordeaux.fr)
+14_apprendre_a_programmer.md:* [Le tutoriel officiel de Python](https://docs.python.org/fr/3/tutorial)
+14_apprendre_a_programmer.md:* [R for Data Science](https://r4ds.had.co.nz)
+14_apprendre_a_programmer.md:* [Dive into Python](https://www.diveinto.org/python3)
+14_apprendre_a_programmer.md:* [Programming with R](http://swcarpentry.github.io/r-novice-inflammation)
+14_apprendre_a_programmer.md:* [R for Reproducible Scientific Analysis](http://swcarpentry.github.io/r-novice-gapminder)
+14_apprendre_a_programmer.md:* [Programming with Python](http://swcarpentry.github.io/python-novice-inflammation)
+14_apprendre_a_programmer.md:* [Plotting and Programming in Python](http://swcarpentry.github.io/python-novice-gapminder)
+15_rendre_son_code_comprehensible.md:Ce premier lecteur peut être un collègue, comme vous-même : ce qui était clair au moment de la rédaction l'est nettement moins après quelques semaines. 
+15_rendre_son_code_comprehensible.md:la compréhension de son code : 
+15_rendre_son_code_comprehensible.md:<!--
+15_rendre_son_code_comprehensible.md:> " *There are only two hard things in Computer Science: cache invalidation and naming things*. "  
+15_rendre_son_code_comprehensible.md:variable ou une fonction. C'est une tâche qui peut se révéler étonnamment ardue !
+15_rendre_son_code_comprehensible.md:Lisez le code suivant et essayez de comprendre ce à quoi il peut bien servir par exemple : 
+15_rendre_son_code_comprehensible.md:Vous avez trouvé ? Pas encore ? Cet exemple est créé de toute pièce mais nous avons 
+15_rendre_son_code_comprehensible.md:rigoureusement équivalentes au code suivant :
+15_rendre_son_code_comprehensible.md:des fonctions aux noms explicites qui permettent  :
+15_rendre_son_code_comprehensible.md:<!-- Cette approche de *Don't Repeat Yourself* est un principe qui s'oppose à *Write Everything Twice*. -->
+15_rendre_son_code_comprehensible.md:Les six premières lignes sont :
+15_rendre_son_code_comprehensible.md:C'est bien pratique : vous économisez de l'écriture de code, mais en vous 
+15_rendre_son_code_comprehensible.md:paramètres par défaut est changée ! 
+15_rendre_son_code_comprehensible.md:Le problème aurait pu être évité : vous auriez pu expliciter l'ensemble de vos *n* paramètres, 
+15_rendre_son_code_comprehensible.md:Considérons le programme suivant :
+15_rendre_son_code_comprehensible.md:On pourrait toutefois objecter cet argument : un code bien écrit se passe de commentaires. 
+15_rendre_son_code_comprehensible.md:Les commentaires servent par exemple à signaler : 
+15_rendre_son_code_comprehensible.md:Dans le cas d'un chercheur, l'enjeu se concentre sur l'exécution du code : 
+15_rendre_son_code_comprehensible.md:document : du texte rédactionnel, du code informatique, 
+15_rendre_son_code_comprehensible.md:(tels que [Markdown](https://daringfireball.net/projects/markdown)), 
+15_rendre_son_code_comprehensible.md:les chercheurs : 
+15_rendre_son_code_comprehensible.md:> FIXME: On pourrait peut-être insérer ici une illustration tirée du  [slide 37](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module2/slides/C028AL_slides_module2-fr-gz.pdf)
+15_rendre_son_code_comprehensible.md:> [SVG](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module2/slides/img/example_pi_full.svg)
+15_rendre_son_code_comprehensible.md:Ce procédé permet ainsi de documenter chaque étape de la recherche : chaque partie du code 
+15_rendre_son_code_comprehensible.md:Différents outils permettent d'écrire de tels documents, les plus matures étant :
+15_rendre_son_code_comprehensible.md: - [Jupyter](https://jupyter.org)
+15_rendre_son_code_comprehensible.md: - [Rmarkdown](https://rmarkdown.rstudio.com)
+15_rendre_son_code_comprehensible.md: - [Org-mode](https://www.orgmode.org/fr)
+15_rendre_son_code_comprehensible.md:De tels documents computationnels offrent de nombreux avantages : 
+15_rendre_son_code_comprehensible.md:Enfin, ces documents peuvent répondre à des besoins de traçabilité en raison de leur caractère dynamique : on obtient en effet des cellules de codes prototypes qu'il est possible de réécrire et de réexécuter avec des paramètres différents.  
+15_rendre_son_code_comprehensible.md:reproductible](https://learninglab.inria.fr/mooc-recherche-reproductible-principes-methodologiques-pour-une-science-transparente/).
+15_rendre_son_code_comprehensible.md:Il existe de nombreux concepts pour vous permettre d'y arriver: 
+15_rendre_son_code_comprehensible.md:[systèmes de workflows scientifiques](https://en.wikipedia.org/wiki/Scientific_workflow_system)
+15_rendre_son_code_comprehensible.md:différentes communautés scientifiques : astrophysique, génétique, etc. 
+15_rendre_son_code_comprehensible.md:son exécution : c'est d'ailleurs souvent la motivation principale 
+15_rendre_son_code_comprehensible.md:Le sujet des workflows est développé dans un webinar [Reproducible Science in Bioinformatics: Current Status, Solutions and Research Opportunities](https://github.com/alegrand/RR_webinars/blob/master/6_reproducibility_bioinformatics/index.org).
+16_eviter_les_bugs.md:coding*"). Il s'agit de s'asseoir à deux en face d'une machine : l'une des
+16_eviter_les_bugs.md:pratique permet de réduire les erreurs : d'une part, vous êtes deux à relire
+16_eviter_les_bugs.md:variées : par exemple, les erreurs sont bien renvoyées lorsque les arguments
+16_eviter_les_bugs.md:somme de `a` et `-a` faisait bien 0, mais que se passe-t-il si `a = inf` ? (la
+16_eviter_les_bugs.md:les tests unitaires. Par exemple, le code passe les 100 tests unitaires. Problème : après une modification, il n'en passe plus que 80.  
+16_eviter_les_bugs.md:On parle alors de " régression " : votre nouveau code est moins bon que la version d'avant.
+16_eviter_les_bugs.md:des tests unitaires, en les évaluant : 
+16_eviter_les_bugs.md:Ces solutions peuvent être locales, telles que Jenkins, ou deportées, telles que Travis CI^[https://travis-ci.org/] ou Appveyor^[https://www.appveyor.com/].
+16_eviter_les_bugs.md: - [How to Pair Program](https://www.wikihow.com/Pair-Program)
+16_eviter_les_bugs.md: - [Wickham H. testthat: Get started with testing. The R Journal. 2011 Jun 1;3(1):5-10.](https://journal.r-project.org/archive/2011/RJ-2011-002/RJ-2011-002.pdf)
+16_eviter_les_bugs.md: - [Beginner Guide to Travis](https://juliasilge.com/blog/beginners-guide-to-travis)
+17_environnement_logiciel.md:***Attention : ce chapitre traite de sujets appelant des compétences techniques avancées. Nous vous proposons d'aborder la (complexe) question de l'environnement (ça pique mais ça compte).***
+17_environnement_logiciel.md:enjeux importants autour de l'environnement logiciel :
+17_environnement_logiciel.md:## Identifier les dépendances : dessine-moi une dépendance
+17_environnement_logiciel.md:La façon la ~~plus simple~~ moins complexe de décrire son environnement logiciel est d'identifier les dépendances de son environnement. Mais cette simplicité n'est qu'apparente car l'arbre cache la forêt : chaque dépendance a 
+17_environnement_logiciel.md:une telle identification :
+17_environnement_logiciel.md:`devtools::session_info()`]. Mais cette méthode relativement
+17_environnement_logiciel.md:La façon la plus simple d'éviter les problèmes de versions des dépendances logicielles, consiste à installer sur une machine tous les programmes dont on a besoin. Ce *scenario* exclut toute mise à jour : l'environnement est installé une bonne fois pour toute. 
+17_environnement_logiciel.md:est [Docker](https://www.docker.com/).
+17_environnement_logiciel.md:- avantage par rapport à une machine virtuelle : le conteneur ne
+17_environnement_logiciel.md:- inconvénient : il ne fonctionne pas pour toutes les combinaisons de
+17_environnement_logiciel.md:un tel environnement logiciel minimum pour pouvoir le partager avec d'autres: *SG* [CDE](http://www.pgbovine.net/cde.html) ou [ReproZip](https://vida-nyu.github.io/reprozip/). Ces approches automatiques sont efficaces et très pratiques mais peuvent passer à côté de
+17_environnement_logiciel.md:s'appuie sur les systèmes de gestion de paquets fonctionnels tels que *SG* [GUIX](https://www.gnu.org/software/guix/) et [NIX](https://nixos.org/). Il s'agit d'outils permettant de décrire et d'isoler très précisément 
+17_environnement_logiciel.md:reproductible](https://learninglab.inria.fr/mooc-recherche-reproductible-principes-methodologiques-pour-une-science-transparente/)
+17_environnement_logiciel.md:*SG*([slides](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module4/slides/C028AL_slides_module4-fr-gz.pdf),
+17_environnement_logiciel.md:*SG*[ressources](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module4/ressources/resources_environment_fr.org)).
+17_environnement_logiciel.md:[séminaire présentant quelques solutions pour contrôler son environnement](https://github.com/alegrand/RR_webinars/blob/master/2_controling_your_environment/index.org).
+18_licence_et_privacy.md:# Sortez couverts! {#C-licences}
+18_licence_et_privacy.md:>" Au fait, ai-je le droit ? "  
+18_licence_et_privacy.md:logiciels : 
+18_licence_et_privacy.md:*SG* [https://choosealicense.com/](https://choosealicense.com/) et
+18_licence_et_privacy.md:[https://creativecommons.org/choose/](https://creativecommons.org/choose/)
+18_licence_et_privacy.md:que la santé) où le partage des données n'est pas toujours possible pour : 
+18_licence_et_privacy.md:CNIL](https://www.cnil.fr/fr/textes-officiels-europeens-protection-donnees)]. 
+18_licence_et_privacy.md:peuvent être mises en œuvre : on peut citer la mise à disposition sur
+18_licence_et_privacy.md:Comité pour la science ouverte. n.d. ‘Ouvrir La Science - Ressources : Guides Juridiques’. Ouvrir La Science. [Accessed 18 April 2019](https://www.ouvrirlascience.fr/category/ressources/?type=guides_juridiques).
+18_licence_et_privacy.md:Consulter les vidéos de l'intervention de L. Maurel sur le RGPD : 
+18_licence_et_privacy.md:Maurel, Lionel. 2018. ‘Données personnelles et vie privée : ce qui va changer avec le RGPD (support d’intervention et vidéo)’. [S.I.Lex (blog). 29 May 2018](https://scinfolex.com/2018/05/29/donnees-personnelles-et-vie-privee-ce-qui-va-changer-avec-le-rgpd-support-dintervention-et-video).
+18_licence_et_privacy.md:    Prochaine étape : le règlement ePrivacy ;
+18_zbis_biblio.md:`r if (knitr::is_html_output()){ '
+18_zbis_biblio.md:`r if (knitr::is_latex_output()){ '
+19_annexes.md:Dans la forme traditionnelle du book sprint, les auteurs conçoivent la **table des matières à partir de rien** : il n’y a pas de séance de travail préparatoire. **C’est le travail collaboratif qui permet de faire émerger les contenus et leurs publics cibles**. 
+19_annexes.md:## Que peut apporter un book sprint à des chercheurs.euses?
+19_annexes.md:La méthode du book sprint est peu diffusée en France, dans le milieu de la recherche mais :
+19_annexes.md:- **les modalités de diffusion du livrable sont adaptées au milieu académique** : archive ouverte, plates-formes scientifiques 
+19_annexes.md:- **la méthode est transposable à d’autres activités de rédaction** : documentation technique, appels à projets, supports pédagogiques, white papers, etc. 
+19_annexes.md:Ce n’est pas un cadre pour faire surgir des idées totalement nouvelles : la très forte contrainte temporelle fait qu’il ne faut pas surestimer la capacité à faire surgir des idées complètement innovantes sur un sujet. 
+19_annexes.md:Le book sprint peut aussi être l’occasion de **formaliser des idées dans un cadre plus souple que les formats de publication classiques. Un travail préparatoire de la part des organisateurs permet aux auteurs de se projeter sans pour autant rédiger à l’avance leur partie : la table des matières est conçue grâce aux échanges**.
+19_annexes.md:La qualité du livrable ne peut pas être du niveau d’un article ou d’un chapitre d’ouvrage : il n’est pas réaliste d’attendre le même degré de qualité qu’une production académique compte tenu du cadre imparti, mais : 
+19_annexes.md:La notion de 1er auteur n’existe pas, mais :
+19_annexes.md:Il est difficile de travailler avec des co-auteurs qu’on ne connaît pas, a fortiori s’ils ne sont pas spécialistes du même domaine que soi ; pour le bon déroulement du book sprint, certains rôles sont définis à l’avance : le facilitateur aide les auteurs à coordonner leurs idées. la rencontre avec des co-auteurs inhabituels enrichit les échanges 
+21_auteurs.md:Ce livre a été rédigé de manière collaborative par plusieurs auteurs. Qui sont nos auteurs ?
+21_auteurs.md:[l’Ecole nationale vétérinaire d’Alfort](https://www.vet-alfort.fr/), 
+21_auteurs.md:- [site web](https://loicdesquilbet.wixsite.com/biostat-epidemio) 
+21_auteurs.md:Enseignant-chercheur en biostatistique à [l’Institut de Santé Publique d'Épidémiologie et de Développement](http://www.isped.u-bordeaux.fr/) 
+21_auteurs.md:Boris Hejblum est membre de l’équipe [SISTM dans le centre Inserm U1219 Bordeaux Population Health et Inria Bordeaux Sud-Ouest](https://www.inria.fr/equipes/sistm).
+21_auteurs.md:- [packages](https://borishejblum.science/software/) 
+21_auteurs.md:- [site web](https://borishejblum.science/) 
+21_auteurs.md:- [suivre B. Hejblum sur Twitter](https://twitter.com/borishej)
+21_auteurs.md:Chercheur au [Laboratoire d'informatique de Grenoble](http://www.liglab.fr/), 
+21_auteurs.md:Arnaud Legrand pilote [l'équipe Polaris (Inria)](https://team.inria.fr/polaris/). 
+21_auteurs.md:Arnaud Legrand co-pilote [le Mooc "Recherche reproductible"](https://www.fun-mooc.fr/courses/course-v1:inria+41016+session01bis/about).
+21_auteurs.md:- [site web](http://mescal.imag.fr/membres/arnaud.legrand/) 
+21_auteurs.md:- [suivre A. Legrand sur Twitter](http://twitter.com/arnaudlegrand17)
+21_auteurs.md:- [page web](http://pagesperso.lcp.u-psud.fr/pernot/) 
+21_auteurs.md:- [GitHub « Reproducible Research »](https://github.com/ppernot/Reproducible-Research)
+21_auteurs.md:membre de l'équipe [Mnemosyne project](https://mnemosyne-proj.org/) 
+21_auteurs.md:dont l'approche se situe à la frontière entre les neurosciences intégratives et computationnelles en association avec [l'Institut des maladies neurodégénératives](https://www.imn-bordeaux.org/), 
+21_auteurs.md:[le Laboratoire Bordelais de Recherche en Informatique](https://www.labri.fr/), l'Université de Bordeaux et le CNRS. 
+21_auteurs.md:En 2015, il a co-fondé avec [Konrad Hinsen](https://github.com/khinsen), 
+21_auteurs.md:la revue *[ReScience](http://rescience.github.io/)* spécialisée dans la publication d'études de réplication computationnelles. 
+21_auteurs.md:- [site web](http://www.labri.fr/perso/nrougier/) 
+21_auteurs.md:- [suivre N. Rougier sur Twitter](https://twitter.com/NPRougier?lang=fr)
+21_auteurs.md:Formatrice à [Activdesign](https://activdesign.eu/) et 
+21_auteurs.md:présidente de [Floss Manuals Francophone](https://www.flossmanualsfr.net/), 
+21_auteurs.md:du [Comité pour la Science Ouverte](https://www.ouvrirlascience.fr/presentation-du-comite/).
+21_auteurs.md:le repertoire contenant les sources de ce livre à l'adresse : https://github.com/alegrand/bookrr/pulls
+22_quatrieme_de_couv.md:`r if(knitr::is_latex_output()){ '
+Conventions_ecriture.md: - profondeur de chaque fichier .md : ne pas dépasser 3 niveau de sous-titres
+Conventions_ecriture.md:## Vocabulaire :
+Conventions_ecriture.md: - relecteur, rapporteur, *referee* ou *reviewer* : essaie-t-on de s'en tenir au même terme tout du long ou n'est-ce pas utile ?
+Conventions_ecriture.md: - programme/code/logiciels : quelles distinctions ? -> remplacer "programme" par "code" dès que "programme" renvoit à un script ou à du code
+Conventions_ecriture.md: - Préférer "rendre robuste" à "robustifier" ?
+Conventions_ecriture.md:## Mémo ponctuation et autres sujets merveilleux :
+Conventions_ecriture.md:https://www.sciencespo.fr/ecole-doctorale/sites/sciencespo.fr.ecole-doctorale/files/CNRStypo.pdf 
+Conventions_ecriture.md: - espace : espace
+Conventions_ecriture.md: - espace ! espace
+Conventions_ecriture.md: - espace ? espace
+Conventions_ecriture.md: - pas de capitale après un point d'interrogation si le segment ne clôt pas la phrase. Ex. : 
+Conventions_ecriture.md: >Et alors ? en quoi cela peut-il vous importer ?
+Conventions_ecriture.md: - les termes anglais sont composés avec des capitales. Ex. :
+Conventions_ecriture.md: - fin des inter-titres : pas de point, de virgule ou de point virgule ,car la typo signale directement la rupture avec le corps du texte
+README.md:# Vers une recherche reproductible : Faire évoluer ses pratiques
+README.md:Facilitatrice : Elisa de Castro Guerra
+README.md:## Est-il possible de contribuer, de proposer de nouveaux contenus? 
+README.md:Ce livre est ouvert aux nouveaux contenus : proposition d'ajout de chapitre, complément de chapitre, références complémentaires, mais aussi questions.
+README.md:En fonction de la nature de vos propositions, vous pourrez être amené.e à être cité.e comme [contributeur, ou co-auteur](https://publicationethics.org/authorship). 
+README.md:Vous pouvez soumettre vos propositions via :
+README.md:- email : urfist@u-bordeaux.fr
+README.md:[CC-BY NC](https://creativecommons.org/licenses/by-nc/4.0/)
+README.md:- [La syntaxe](https://guides.github.com/features/mastering-markdown/)
+README.md:- [Les citations](https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html)
+README.md:- [Images, footnotes et autres](https://github.com/fletcher/MultiMarkdown/wiki/MultiMarkdown-Syntax-Guide)
+README.md:- [Les références d'un chapitre à l'autre](https://bookdown.org/yihui/bookdown/cross-references.html)
+README.md:- [bookdown](https://bookdown.org/)
+README.md:- [Avoir des parties en plus des chapitres](https://github.com/rstudio/bookdown/issues/221)
+README.md:- [Des chapitres non numérotés](https://github.com/rstudio/bookdown/issues/218)
+README.md:- [Comment visualiser le livre avec Rstudio](https://bookdown.org/home/about/)
+README.md:## Clef de références pour les chapitres:
+README.md:**Syntaxe**:
+README.md:* déclaration: `{#clef}`
+README.md:* citation:    `\@ref(clef)`
+README.md:  Le temps des changements ?
+README.md:  Sortez couverts!
+README.md:Afin de créer les fichier .Rmd symbolique nécessaires, la première fois que le répertoire est forké/téléchargé, il faut executer la commande suivante dans le terminal :
+TODO.md:Dans le _output.yml : problème avec `%s` qui renvoie au .Rmd non gité...
+TODO.md:- [ ] Espaces insécables devant les ?, les :, et les !
+brainstorm.md:## Partie 1: La recherche en pratique
+brainstorm.md:* Objectif/contexte traité: Permettre à un chercheur de vérifier/réobtenir les résultats d'un autre
+brainstorm.md:### Recherche reproductible: de quoi est-il question ?
+brainstorm.md:* Ou sont mes donnes, mon code ?
+brainstorm.md:* Comment repartir du travail de mes prédécesseurs ? (mon doctorant est parti)
+brainstorm.md:## Partie 2: Origine des problèmes
+brainstorm.md:* Ecueil : je n'obtiens plus rien /mes résultats changent, 
+brainstorm.md:## Partie 3: Les solutions de la recherche reproductible
+brainstorm.md:* Solutions : Classer selon difficulté de mise en oeuvre
+brainstorm.md:* Solution : Cout / Methodo
+brainstorm.md:* Que changer ?
+brainstorm.md:* Quand changer ?
+brainstorm.md:* Le cahier de labo ???
+brainstorm.md:### Est-ce que j'ai le droit ?
+brainstorm.md:* Intro : Liste cauchemard
+brainstorm.md:    * Conclusion : Science Reproductible
+brainstorm.md:*XMind: ZEN - Trial Version*
+index.md:title: "Vers une recherche reproductible"
+index.md:subtitle: "Faire évoluer ses pratiques"
+index.md:author: "Loïc Desquilbet, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot, Nicolas Rougier,
+index.md:         <br> Facilitatrice : Elisa de Castro Guerra"
+index.md:date: "`r Sys.Date()`"
+index.md:site: bookdown::bookdown_site
+index.md:documentclass: book
+index.md:bibliography: [refs.bib]
+index.md:biblio-style: apalike
+index.md:link-citations: yes
+index.md:description: "Livre sur la recherche reproductible rédigé à l'occasion d'un booksprint."
+index.md:<!-- # Prerequisites -->
+index.md:<!-- This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports, e.g., a math equation $a^2 + b^2 = c^2$. -->
+index.md:<!-- The **bookdown** package can be installed from CRAN or Github: -->
+index.md:<!-- ```{r eval=FALSE} -->
+index.md:<!-- install.packages("bookdown") -->
+index.md:<!-- # or the development version -->
+index.md:<!-- # devtools::install_github("rstudio/bookdown") -->
+index.md:<!-- ``` -->
+index.md:<!-- Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading `#`. -->
+index.md:<!-- To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): <https://yihui.name/tinytex/>. -->
+index.md:<!-- ```{r include=FALSE} -->
+index.md:<!-- # automatically create a bib database for R packages -->
+index.md:<!-- knitr::write_bib(c( -->
+index.md:<!--   .packages(), 'bookdown', 'knitr', 'rmarkdown' -->
+index.md:<!-- ), 'packages.bib') -->
+index.md:<!-- ``` -->
+#+end_example
+
+* Code cruft
+** Ninja
+ In the text, we have a simple ninja obfuscated code example. This is
+ just to check for its correctness.
+ #+begin_src R :results output :session *R* :exports both
+mass = 100
+speed = 3.2
+E = 1/2 * mass * speed^2
+print(E)
+ #+end_src
+
+ #+RESULTS:
+ : [1] 512
+
+ #+begin_src R :results output :session *R* :exports both 
+ninja = 100
+XX = 2.0000
+a = 0.5
+turtle = 3.2
+bluE_Pizza = a * ninja * turtle ** XX
+print(bluE_Pizza)
+ #+end_src
+
+ #+RESULTS:
+ : [1] 512
+** Has my computer gone mad ?
+ #+begin_src R :results output :session *R* :exports both
+1  +  1 == 2          # Who needs a computer anyway ?
+.1 + .1 == .2         # So far so good.
+.1 + .1 + .1          # Well, that's obvious.
+.1 + .1 + .1 == .3    # What ?
+.2 + .1 == .3         # Uuh ?
+.1*3    == 0.3        # WTF!
+3-2.9   == 0.1        # OK, I've just lost faith. Who broke my computer ?
+ #+end_src
+
+ #+RESULTS:
+ : [1] TRUE
+ : [1] TRUE
+ : [1] 0.3
+ : [1] FALSE
+ : [1] FALSE
+ : [1] FALSE
+ : [1] FALSE
