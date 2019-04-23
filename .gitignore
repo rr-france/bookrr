@@ -2,8 +2,10 @@
 .Rhistory
 .RData
 .Ruserdata
-_book/*
+_book/
 *.Rproj
 *.Rmd
 *~
 *.log
+packages.bib
+bookdown_example/

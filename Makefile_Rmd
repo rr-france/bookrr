@@ -7,12 +7,12 @@ all: Rmd
 Rmd: $(RMD_FILE_LIST)
 
 %.Rmd: %.md
-	rm -f *.Rmd;  ln -sf $^ $@
+	ln -sf $^ $@
 
-html:
+html: Rmd
 	Rscript -e "rmarkdown::render_site(output_format = 'bookdown::gitbook', encoding = 'UTF-8')"
 
-pdf:
+pdf: Rmd
 	Rscript -e "rmarkdown::render_site(output_format = 'bookdown::pdf_book', encoding = 'UTF-8')" || true;
 	sed -i -e 's/\\BREAKME//g'  \
 	    -e 's|documentclass\(.*\){book}|documentclass\1{krantz}|g' \
@@ -29,5 +29,5 @@ pdf:
 	xelatex booksprintrr.tex
 
 clean:
-	rm -rf booksprintrr.* _book/
+	rm -rf booksprintrr.* _book/ rm -f *.Rmd;
 
