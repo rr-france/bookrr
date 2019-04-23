@@ -3,7 +3,7 @@
 
 Dans ce chapitre, nous mettons en évidence les limitations des interfaces
 graphiques en termes d'efficacité et de reproductibilité ; nous expliquons
-qu'il peut être nécessaire d'apprendre à programmer en conseillant deux langages devenus incontournables en traitement et analyse des données: Python et R.
+qu'il peut être nécessaire d'apprendre à programmer en conseillant deux langages devenus incontournables en traitement et analyse des données : Python et R.
 
 
 ## Limiter le recours aux interfaces graphiques

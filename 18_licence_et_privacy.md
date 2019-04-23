@@ -1,6 +1,6 @@
-# Sortez couverts! {#C-licences}
+# Sortez couverts ! {#C-licences}
 
->" Au fait, ai-je le droit ? "  
+> " Au fait, ai-je le droit ? "  
 >-- Anonyme    
 
 > " *Oops, I dit it again* "  

@@ -18,7 +18,7 @@ la signifiance d'un effet, pour les autres, il s'agit d'obtenir le même
 résultat bit pour bit. L'expression "recherche reproductible" apparaît dès 1992, lors du congrès de la "Society of Exploration Geophysics" [*SG* : trouver la traduction]. De nombreuses définitions de "recherche reproductible" sont fournies par Barba. [Barba, Lorena A. 2018. ‘Terminologies for Reproducible Research’. ArXiv:1802.03311 [Cs], February. http://arxiv.org/abs/1802.03311.] Parmi celles-ci, nous retiendrons la suivante, issue de l'article de Vandewalle et al.[https://ieeexplore.ieee.org/document/4815541] : 
 "un travail de recherche est dit reproductible si toutes les informations qui concernent ce travail, incluant, mais n'étant pas limitées, le texte, les données, et le code de programmation, sont rendues disponibles de telle sorte que n'importe quel chercheur indépendant peut reproduire les résultats." *SG* prendre texte original et citer correctement traduction en FR --< signaler qu'il s'agit d'une traduction des auteurs
 
-## Pourquoi la question de la reproductibilité est-elle devenue centrale dans les débats actuels?
+## Pourquoi la question de la reproductibilité est-elle devenue centrale dans les débats actuels ?
 
 Le fait que les problèmes de reproductibilité occupent une telle place dans les débats actuels n'est
 pas tout à fait un hasard. Le numérique, sous des formes multiples, a largement
@@ -34,7 +34,7 @@ situent les plus graves dangers pour la recherche.
 
 Quel peut être le point commun entre : un archéologue en train d'effectuer une campagne de fouille, 
 un biologiste en train de préparer une nouvelle expérience dans son laboratoire,
-un numéricien finalisant une simulation de grande ampleur? 
+un numéricien finalisant une simulation de grande ampleur ?
 Tous sont exposés aux risques ~~drames~~ suivants, indépendamment de leur volonté de contribuer à l'accroissement
 des connaissances dans leurs domaines respectifs : 
 
@@ -51,7 +51,7 @@ l'exactitude des méthodes et de documenter l'ensemble de la pratique
 scientifique. Cela peut-il constituer un gage de qualité de la recherche ? Non. Cela y
 participe, mais ne suffit pas. En effet, une recherche reproductible (au sens de l'ouvrage, "une recherche dont les résultats publiés peuvent être reproduits") n'est pas synonyme de "bonne"
 recherche : une mauvaise recherche peut tout à fait être
-reproductible (spoiler alert : don't try at work!).
+reproductible (spoiler alert : don't try at work !).
 
 ## Aperçu (très rapide) des causes d'une recherche non reproductible
 

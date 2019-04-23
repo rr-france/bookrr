@@ -49,7 +49,7 @@ portant atteinte à la reproductibilité.
 Lorsque vous manipulez de très larges volumes de données (en termes de nombre
 d'échantillons) il devient tout à fait possible de perdre, non pas les données,
 mais l'accès à ces données. Imaginez : vous avez utilisé un nommage particulier 
-des fichiers (par exemple, pour indiquer la nature de la donnée : *well done*!) 
+des fichiers (par exemple, pour indiquer la nature de la donnée : *well done* !) 
 mais vous avez égaré le fichier expliquant les règles
 de nommages (*too bad*). Alors que vous possédez l'intégralité de vos données, 
 vous vous trouvez incapable les utiliser.
@@ -78,14 +78,14 @@ un système métrique (réception).
 
 Dans certains cas, les données ont été sauvegardées, leur intégrité est
 parfaite, on peut les retrouver très facilement et pourtant, elles s'avèrent
-inutilisables. Comment expliquer ce paradoxe? 
+inutilisables. Comment expliquer ce paradoxe ? 
 Les données sont généralement sauvegardées dans un format pouvant être ouvert
 ou fermé (propriétaire). 
 Or si le format est fermé, vous ne pouvez pas contrôler l'évolution de ce format. 
 Prenez par exemple un fichier Word créé il y a une vingtaine d'années, 
 pouvez-vous encore le lire aujourd'hui ? 
 Votre version de Word vous assure-t-elle une compatibilité avec ce
-format obsolète ? Vous avez répondu par la négative à ces items? 
+format obsolète ? Vous avez répondu par la négative à ces items ? 
 Considérez alors les données comme inutilisables. 
 
 

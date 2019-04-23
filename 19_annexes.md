@@ -16,7 +16,7 @@ Le book sprint n’est ni un séminaire, ni une retraite, mais en présente cert
 Dans les années 2000, les book sprints se sont développés sur les modèles des sprints informatiques pour produire rapidement de la documentation sur les logiciels libres. Adam Hyde, fondateur de FlossManuals a été pionnier dans le domaine. 
 Si la méthode s’est popularisée dans les pays anglo-saxons, et particulièrement dans le secteur de l’entreprise et le monde associatif, cette technique de rédaction reste moins utilisée par les publics académiques, même si elle tend à être progressivement adoptée. Elle appelle en effet des adaptations pour être applicable, mais offre des potentialités variées aux auteurs, une fois la méthode testée.
 
-## Que peut apporter un book sprint à des chercheurs.euses?
+## Que peut apporter un book sprint à des chercheurs.euses ?
 
 La méthode du book sprint est peu diffusée en France, dans le milieu de la recherche mais :
 

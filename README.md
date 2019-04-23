@@ -6,7 +6,7 @@ Loïc Desquilbet, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot,
 
 Facilitatrice : Elisa de Castro Guerra
 
-## Est-il possible de contribuer, de proposer de nouveaux contenus? 
+## Est-il possible de contribuer, de proposer de nouveaux contenus ? 
 Ce livre est ouvert aux nouveaux contenus : proposition d'ajout de chapitre, complément de chapitre, références complémentaires, mais aussi questions.
 Le livre ayant été rédigé collaborativement, les propositions sont étudiées par le collectif des auteurs. 
 En fonction de la nature de vos propositions, vous pourrez être amené.e à être cité.e comme [contributeur, ou co-auteur](https://publicationethics.org/authorship). 
@@ -31,7 +31,7 @@ Cette licence permet aux autres de remixer, arranger, et adapter l'œuvre, sous 
 - [Comment visualiser le livre avec Rstudio](https://bookdown.org/home/about/)
 
 
-## Clef de références pour les chapitres:
+## Clef de références pour les chapitres :
 
 **Syntaxe**:
 

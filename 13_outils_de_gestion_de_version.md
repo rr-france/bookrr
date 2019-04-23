@@ -49,7 +49,7 @@ des raisons de compatibilité, il est recommandé d'éviter l'utilisation de :
 
 #### Exemple {-}
 
-La chronologie du nommage de fichiers successifs de scripts R pourrait être:
+La chronologie du nommage de fichiers successifs de scripts R pourrait être :
 
 * 20190417_analyse_donnees_v00.R
 
@@ -109,7 +109,7 @@ recherche.
 #### Exemple {-}
 
 Voici un témoignage d'un chercheur dont la pratique quotidienne permet
-d'obtenir aisément une recherche reproductible:
+d'obtenir aisément une recherche reproductible :
 
 > Lors de l'élaboration de mes analyses statistiques, je développe des
 > codes en R pour traiter les données, générer des tableaux de

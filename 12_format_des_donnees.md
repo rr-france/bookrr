@@ -33,7 +33,7 @@ Un dernier exemple d'information dont la conservation est primordiale
 est celle du protocole expérimental que l'on consigne généralement
 dans un cahier de laboratoire. On structure souvent cette information
 de façon chronologique avec des annotations sémantiques (qui ? quand ?
-où? pourquoi? dans quel contexte? ...). Dans tous les cas, la question
+où ? pourquoi ? dans quel contexte ? ...). Dans tous les cas, la question
 de la relation entre ce cahier et les données doit être posée et
 résolue.
 
@@ -150,6 +150,6 @@ uncertainty in measurement" – Extension to any number of output quantities JCG
 ## Pour en savoir plus
 
 En ce qui concerne la structuration des données, une approche assez
-populaire consiste à utiliser le plus possible une structure de tableau. Nous vous recommandons de lire ce document sur le sujet:
+populaire consiste à utiliser le plus possible une structure de tableau. Nous vous recommandons de lire ce document sur le sujet :
 [*SG*] tidy data [Ref Wickham, Hadley. "Tidy data". *Journal of Statistical Software* 59(10) (2014): 1-23]
 

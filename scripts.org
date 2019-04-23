@@ -154,28 +154,19 @@ grep -e plateforme *.md
 
 #+RESULTS:
 
-** Space before commas, question marks, ...
+** Space before commas, question marks, etc.
 Here is the regexp to detext possibly invalid syntax:
 #+begin_src shell :results output :exports both
-grep -e '[^ ][:?!]' *.md
+grep -e '[^ ][:?!]' *.md | grep -v -e 'http:' -e 'https:'
 #+end_src
 
 #+RESULTS:
 #+begin_example
 02_RR_kezako.md:du monde de la recherche *SG* [Baker M. 1,500 scientists lift the lid on reproducibility. Nature 2016,533:452-454.]. Le sujet est ancien, mais la situation semble avoir atteint un point critique. Des études ont par exemple démontré qu'il n'était pas possible d'obtenir de nouveau les résultats d'études pré-cliniques ou cliniques *SG*[Begley CG, Ellis LM. Drug development: Raise standards for preclinical cancer research. Nature 2012,483:531-533.] [Perrin S. Preclinical research: Make mouse studies work. Nature 2014,507:423-425.] Si la reproductibilité des résultats ne peut être considérée comme seul critère de la scientificité d'une recherche, cette crise suscite des interrogations au sein même de la communauté scientifique.
-02_RR_kezako.md:résultat bit pour bit. L'expression "recherche reproductible" apparaît dès 1992, lors du congrès de la "Society of Exploration Geophysics" [*SG* : trouver la traduction]. De nombreuses définitions de "recherche reproductible" sont fournies par Barba. [Barba, Lorena A. 2018. ‘Terminologies for Reproducible Research’. ArXiv:1802.03311 [Cs], February. http://arxiv.org/abs/1802.03311.] Parmi celles-ci, nous retiendrons la suivante, issue de l'article de Vandewalle et al.[https://ieeexplore.ieee.org/document/4815541] : 
-02_RR_kezako.md:## Pourquoi la question de la reproductibilité est-elle devenue centrale dans les débats actuels?
-02_RR_kezako.md:un numéricien finalisant une simulation de grande ampleur? 
-02_RR_kezako.md:reproductible (spoiler alert : don't try at work!).
 02_RR_kezako.md:- aller à la "pêche" aux résultats significatifs parmi tous les tests statistiques réalisés ("p-hacking") [Nuzzo R. Scientific method: statistical errors. Nature 2014,506:150-152.], 
 02_RR_kezako.md:- générer une hypothèse de recherche *a posteriori*, c’est-à-dire après avoir obtenu un résultat significatif (« harking ») [Kerr NL. HARKing: hypothesizing after the results are known. Pers Soc Psychol Rev 1998,2:196-217.], 
 02_RR_kezako.md:- sur-interpréter le résultat statistique qui est significatif (« Probability That a Positive Report is False ») [Wacholder S, Chanock S, Garcia-Closas M, El Ghormli L, Rothman N. Assessing the probability that a positive report is false: an approach for molecular epidemiology studies. J Natl Cancer Inst 2004,96:434-442.] 
 02_RR_kezako.md:Pour tous ces sujets cités *supra*, nous invitons le lecteur à se documenter : [Munafo MR, Nosek BA, Bishop DVM, Button KS, Chambers CD, Sert NPd, Simonsohn U, Wagenmakers E-J, Ware JJ, Ioannidis JPA. A manifesto for reproducible science. Nature Human Behav 2017,1:0021.]
-05_acquisition_des_donnees.md:https://www.bipm.org/en/publications/guides/).
-05_acquisition_des_donnees.md:d'identifiants en dates, par exemple) *SG* [@REF https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1044-7].
-07_donnees_d_entree.md:des fichiers (par exemple, pour indiquer la nature de la donnée : *well done*!) 
-07_donnees_d_entree.md:inutilisables. Comment expliquer ce paradoxe? 
-07_donnees_d_entree.md:format obsolète ? Vous avez répondu par la négative à ces items? 
 08_aspects_computationnels.md:<!-- Dans le pire des cas, le programme plante avec un message d'erreur -->
 08_aspects_computationnels.md:<!-- cryptique du genre `Un problème a fait que le programme a cessé de -->
 08_aspects_computationnels.md:<!-- fonctionner correctement. [Oui] [Non] [Annuler]`, `segmentation fault -->
@@ -184,11 +175,6 @@ grep -e '[^ ][:?!]' *.md
 08_aspects_computationnels.md:<!-- normalement mais qu'en y regardant de plus près, on s'aperçoive que -->
 08_aspects_computationnels.md:<!-- le résultat (valeur numérique, caractères illisibles, mise en page -->
 08_aspects_computationnels.md:<!-- d'une figure, ...) ait changé. -->
-08_aspects_computationnels.md:  restructurée. Ce problème est connu sous le nom d'[*URL decay*](https://www.spinellis.gr/sw/url-decay/) ou de [*Link
-08_aspects_computationnels.md:  Rot*](https://en.wikipedia.org/wiki/Link_rot). *SG*
-08_aspects_computationnels.md:  citation d'[Harold Abelson](https://en.wikipedia.org/wiki/Hal_Abelson) tirée
-08_aspects_computationnels.md:simple:
-08_aspects_computationnels.md:plus sur ce paquet, voilà ce que nous obtenons:
 08_aspects_computationnels.md:Package: python3-matplotlib
 08_aspects_computationnels.md:Version: 2.1.1-2
 08_aspects_computationnels.md:Depends: python3-dateutil, python-matplotlib-data (>= 2.1.1-2),
@@ -196,155 +182,43 @@ grep -e '[^ ][:?!]' *.md
 08_aspects_computationnels.md:python3-cycler (>= 0.10.0), python3:any (>= 3.3.2-2~), libc6 (>=
 08_aspects_computationnels.md:2.14), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:3.0), libpng16-16 (>=
 08_aspects_computationnels.md:1.6.2-1), libstdc++6 (>= 5.2), zlib1g (>= 1:1.1.4)
-08_aspects_computationnels.md:obtient:
-08_aspects_computationnels.md:l'autre alors que rien n'a changé! Mais alors, comment décider lequel de ces
-08_aspects_computationnels.md:Failure](http://www-users.math.umn.edu/~arnold/disasters/patriot.html))
 08_aspects_computationnels.md:Reproduciblity: An Astrophysical Exemple of Computationnal Uncertainty in the
-08_aspects_computationnels.md:HPC context/](http://web.stanford.edu/~vcs/talks/ResCuESC2018-STODDEN.pdf).
-08_aspects_computationnels.md:[séminaire sur la reproductibilité numérique](https://github.com/alegrand/RR_webinars/blob/master/2_controling_your_environment/index.org).
 09_donnees_de_sortie.md:(2004) The Inconstancy of the Fundamental Physical Constants: Computational
-09_donnees_de_sortie.md:Status https://arxiv.org/abs/physics/0409117]
-10_introduction_partie_3.md:En outre, comment accompagner l'adoption de nouvelles pratiques à l'échelle collective, qu'il s'agisse d'un laboratoire ou d'une communauté disciplinaire? 
-11_collecte_des_donnees.md:sur le site du CNRS [ici](http://www.cnrs.fr/infoslabos/cahier-laboratoire/).
-11_collecte_des_donnees.md:[ici](https://hal.archives-ouvertes.fr/hal-02103716).
-12_format_des_donnees.md:où? pourquoi? dans quel contexte? ...). Dans tous les cas, la question
 12_format_des_donnees.md:data management and stewardship. Sci. Data 3:160018 doi:
 12_format_des_donnees.md:résultats d'analyse (par exemple des estimations) *SG* [@GUM: Évaluation des données de mesure – 
 12_format_des_donnees.md:Guide pour l'expression de l'incertitude de mesure, JCGM 100:2008 
-12_format_des_donnees.md:(https://www.bipm.org/utils/common/documents/jcgm/JCGM_100_2008_F.pdf)].
 12_format_des_donnees.md:*SG* [@GUM: Évaluation des données de mesure – 
 12_format_des_donnees.md:Guide pour l'expression de l'incertitude de mesure, JCGM 100:2008 
-12_format_des_donnees.md:(https://www.bipm.org/utils/common/documents/jcgm/JCGM_100_2008_F.pdf)]
 12_format_des_donnees.md:uncertainty in measurement" – Extension to any number of output quantities JCGM 102:2011, Definition 3.21  
-12_format_des_donnees.md:(https://www.bipm.org/utils/common/documents/jcgm/JCGM_102_2011_E.pdf)]
-12_format_des_donnees.md:populaire consiste à utiliser le plus possible une structure de tableau. Nous vous recommandons de lire ce document sur le sujet:
 12_format_des_donnees.md:[*SG*] tidy data [Ref Wickham, Hadley. "Tidy data". *Journal of Statistical Software* 59(10) (2014): 1-23]
 13.5_partage_et_archivage.md:American Statistician, 72:1, 80-88, DOI: 10.1080/00031305.2017.1375986]()
-13.5_partage_et_archivage.md:comme par exemple l'[Open Science Framework (OSF)](https://osf.io/).
-13.5_partage_et_archivage.md:plus populaire étant [Dropbox](https://www.dropbox.com/) ou son équivalent
-13.5_partage_et_archivage.md:libre [Framadrive](https://framadrive.org/login). La granularité à laquelle ils
-13.5_partage_et_archivage.md:populaire est [Google Spreadsheet](https://spreadsheets.google.com/)
-13.5_partage_et_archivage.md:(resp. [Google Docs](https://docs.google.com/)) ou (mieux) son équivalent libre
-13.5_partage_et_archivage.md:[Framacalc](https://framacalc.org/) (resp. [Framapad](https://framapad.org/)).
-13.5_partage_et_archivage.md:[Figshare](https://figshare.com), ou publiques comme
-13.5_partage_et_archivage.md:[Zenodo](https://zenodo.org) offrent un archivage sur le long terme et fournissent 
-13.5_partage_et_archivage.md:[Software Heritage](https://www.softwareheritage.org). En tandem avec un
-13.5_partage_et_archivage.md:CNRS](http://qualite-en-recherche.cnrs.fr/spip.php?article315) concernant la
-13.5_partage_et_archivage.md:Accessible, Interoperable, Reusable)](https://www.go-fair.org/fair-principles/)
-13.5_partage_et_archivage.md:Cosmo](https://github.com/alegrand/RR_webinars/blob/master/5_archiving_software_and_data/index.org)
-13_outils_de_gestion_de_version.md:éléments *SG* [@REF: (http://qualite-en-recherche.cnrs.fr/spip.php?article315)] [@REF Jenny Bryan https://speakerdeck.com/jennybc/how-to-name-files ??]
 13_outils_de_gestion_de_version.md:La chronologie du nommage de fichiers successifs de scripts R pourrait être:
-13_outils_de_gestion_de_version.md:l'Inria](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/gitlab)
-13_outils_de_gestion_de_version.md:ou de [l'IN2P3](https://gitlab.in2p3.fr/CTA-LAPP/HiPeCTA) ou encore un
-13_outils_de_gestion_de_version.md:plate-forme privée comme [GitHub](https://github.com/)). En outre, ces
 13_outils_de_gestion_de_version.md:d'obtenir aisément une recherche reproductible:
-13_outils_de_gestion_de_version.md:reproductible](https://learninglab.inria.fr/mooc-recherche-reproductible-principes-methodologiques-pour-une-science-transparente/)
-13_outils_de_gestion_de_version.md: - [Happy Git With R](https://happygitwithr.com/) par *Jenny Bryan et al.*
-13_outils_de_gestion_de_version.md: - Le [Software Carpentry Git tutorial](http://swcarpentry.github.io/git-novice/)
-13_outils_de_gestion_de_version.md: - Le livre Pro Git (gratuit) en [anglais](https://git-scm.com/book/en/v2) ou
-13_outils_de_gestion_de_version.md: en [français](https://git-scm.com/book/fr/v2) (Les deux premiers chapitres
-13_outils_de_gestion_de_version.md: - Le site [Apprenez Git Branching](https://learngitbranching.js.org/) permet
 14_apprendre_a_programmer.md:qu'il peut être nécessaire d'apprendre à programmer en conseillant deux langages devenus incontournables en traitement et analyse des données: Python et R.
 14_apprendre_a_programmer.md:mean(table_tri$IMC[1:(nrow(table_tri)/2)])
-14_apprendre_a_programmer.md:que Scipy (http://conference.scipy.org), EuroScipy (https://www.euroscipy.org),
-14_apprendre_a_programmer.md:useR! (http://www.user2019.fr), Les Rencontres
-14_apprendre_a_programmer.md:R(https://r2018-rennes.sciencesconf.org) ...
-14_apprendre_a_programmer.md:* [Introduction à la statistique avec R](https://www.fun-mooc.fr/courses/UPSUD/42001S06/session06/about)
-14_apprendre_a_programmer.md:* [Python : des fondamentaux à l'utilisation du langage](https://www.fun-mooc.fr/courses/inria/41001S03/session03/about)
-14_apprendre_a_programmer.md:* [Begin’R](http://beginr.u-bordeaux.fr)
-14_apprendre_a_programmer.md:* [Le tutoriel officiel de Python](https://docs.python.org/fr/3/tutorial)
-14_apprendre_a_programmer.md:* [R for Data Science](https://r4ds.had.co.nz)
-14_apprendre_a_programmer.md:* [Dive into Python](https://www.diveinto.org/python3)
-14_apprendre_a_programmer.md:* [Programming with R](http://swcarpentry.github.io/r-novice-inflammation)
-14_apprendre_a_programmer.md:* [R for Reproducible Scientific Analysis](http://swcarpentry.github.io/r-novice-gapminder)
-14_apprendre_a_programmer.md:* [Programming with Python](http://swcarpentry.github.io/python-novice-inflammation)
-14_apprendre_a_programmer.md:* [Plotting and Programming in Python](http://swcarpentry.github.io/python-novice-gapminder)
 15_rendre_son_code_comprehensible.md:<!--
 15_rendre_son_code_comprehensible.md:> " *There are only two hard things in Computer Science: cache invalidation and naming things*. "  
 15_rendre_son_code_comprehensible.md:<!-- Cette approche de *Don't Repeat Yourself* est un principe qui s'oppose à *Write Everything Twice*. -->
-15_rendre_son_code_comprehensible.md:(tels que [Markdown](https://daringfireball.net/projects/markdown)), 
-15_rendre_son_code_comprehensible.md:> FIXME: On pourrait peut-être insérer ici une illustration tirée du  [slide 37](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module2/slides/C028AL_slides_module2-fr-gz.pdf)
-15_rendre_son_code_comprehensible.md:> [SVG](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module2/slides/img/example_pi_full.svg)
-15_rendre_son_code_comprehensible.md: - [Jupyter](https://jupyter.org)
-15_rendre_son_code_comprehensible.md: - [Rmarkdown](https://rmarkdown.rstudio.com)
-15_rendre_son_code_comprehensible.md: - [Org-mode](https://www.orgmode.org/fr)
-15_rendre_son_code_comprehensible.md:reproductible](https://learninglab.inria.fr/mooc-recherche-reproductible-principes-methodologiques-pour-une-science-transparente/).
 15_rendre_son_code_comprehensible.md:Il existe de nombreux concepts pour vous permettre d'y arriver: 
-15_rendre_son_code_comprehensible.md:[systèmes de workflows scientifiques](https://en.wikipedia.org/wiki/Scientific_workflow_system)
-15_rendre_son_code_comprehensible.md:Le sujet des workflows est développé dans un webinar [Reproducible Science in Bioinformatics: Current Status, Solutions and Research Opportunities](https://github.com/alegrand/RR_webinars/blob/master/6_reproducibility_bioinformatics/index.org).
-16_eviter_les_bugs.md:Ces solutions peuvent être locales, telles que Jenkins, ou deportées, telles que Travis CI^[https://travis-ci.org/] ou Appveyor^[https://www.appveyor.com/].
-16_eviter_les_bugs.md: - [How to Pair Program](https://www.wikihow.com/Pair-Program)
-16_eviter_les_bugs.md: - [Wickham H. testthat: Get started with testing. The R Journal. 2011 Jun 1;3(1):5-10.](https://journal.r-project.org/archive/2011/RJ-2011-002/RJ-2011-002.pdf)
-16_eviter_les_bugs.md: - [Beginner Guide to Travis](https://juliasilge.com/blog/beginners-guide-to-travis)
 17_environnement_logiciel.md:`devtools::session_info()`]. Mais cette méthode relativement
-17_environnement_logiciel.md:est [Docker](https://www.docker.com/).
-17_environnement_logiciel.md:un tel environnement logiciel minimum pour pouvoir le partager avec d'autres: *SG* [CDE](http://www.pgbovine.net/cde.html) ou [ReproZip](https://vida-nyu.github.io/reprozip/). Ces approches automatiques sont efficaces et très pratiques mais peuvent passer à côté de
-17_environnement_logiciel.md:s'appuie sur les systèmes de gestion de paquets fonctionnels tels que *SG* [GUIX](https://www.gnu.org/software/guix/) et [NIX](https://nixos.org/). Il s'agit d'outils permettant de décrire et d'isoler très précisément 
-17_environnement_logiciel.md:reproductible](https://learninglab.inria.fr/mooc-recherche-reproductible-principes-methodologiques-pour-une-science-transparente/)
-17_environnement_logiciel.md:*SG*([slides](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module4/slides/C028AL_slides_module4-fr-gz.pdf),
-17_environnement_logiciel.md:*SG*[ressources](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module4/ressources/resources_environment_fr.org)).
-17_environnement_logiciel.md:[séminaire présentant quelques solutions pour contrôler son environnement](https://github.com/alegrand/RR_webinars/blob/master/2_controling_your_environment/index.org).
 18_licence_et_privacy.md:# Sortez couverts! {#C-licences}
-18_licence_et_privacy.md:*SG* [https://choosealicense.com/](https://choosealicense.com/) et
-18_licence_et_privacy.md:[https://creativecommons.org/choose/](https://creativecommons.org/choose/)
-18_licence_et_privacy.md:CNIL](https://www.cnil.fr/fr/textes-officiels-europeens-protection-donnees)]. 
-18_licence_et_privacy.md:Comité pour la science ouverte. n.d. ‘Ouvrir La Science - Ressources : Guides Juridiques’. Ouvrir La Science. [Accessed 18 April 2019](https://www.ouvrirlascience.fr/category/ressources/?type=guides_juridiques).
-18_licence_et_privacy.md:Maurel, Lionel. 2018. ‘Données personnelles et vie privée : ce qui va changer avec le RGPD (support d’intervention et vidéo)’. [S.I.Lex (blog). 29 May 2018](https://scinfolex.com/2018/05/29/donnees-personnelles-et-vie-privee-ce-qui-va-changer-avec-le-rgpd-support-dintervention-et-video).
 18_zbis_biblio.md:`r if (knitr::is_html_output()){ '
 18_zbis_biblio.md:`r if (knitr::is_latex_output()){ '
 19_annexes.md:## Que peut apporter un book sprint à des chercheurs.euses?
-21_auteurs.md:[l’Ecole nationale vétérinaire d’Alfort](https://www.vet-alfort.fr/), 
-21_auteurs.md:- [site web](https://loicdesquilbet.wixsite.com/biostat-epidemio) 
-21_auteurs.md:Enseignant-chercheur en biostatistique à [l’Institut de Santé Publique d'Épidémiologie et de Développement](http://www.isped.u-bordeaux.fr/) 
-21_auteurs.md:Boris Hejblum est membre de l’équipe [SISTM dans le centre Inserm U1219 Bordeaux Population Health et Inria Bordeaux Sud-Ouest](https://www.inria.fr/equipes/sistm).
-21_auteurs.md:- [packages](https://borishejblum.science/software/) 
-21_auteurs.md:- [site web](https://borishejblum.science/) 
-21_auteurs.md:- [suivre B. Hejblum sur Twitter](https://twitter.com/borishej)
-21_auteurs.md:Chercheur au [Laboratoire d'informatique de Grenoble](http://www.liglab.fr/), 
-21_auteurs.md:Arnaud Legrand pilote [l'équipe Polaris (Inria)](https://team.inria.fr/polaris/). 
-21_auteurs.md:Arnaud Legrand co-pilote [le Mooc "Recherche reproductible"](https://www.fun-mooc.fr/courses/course-v1:inria+41016+session01bis/about).
-21_auteurs.md:- [site web](http://mescal.imag.fr/membres/arnaud.legrand/) 
-21_auteurs.md:- [suivre A. Legrand sur Twitter](http://twitter.com/arnaudlegrand17)
-21_auteurs.md:- [page web](http://pagesperso.lcp.u-psud.fr/pernot/) 
-21_auteurs.md:- [GitHub « Reproducible Research »](https://github.com/ppernot/Reproducible-Research)
-21_auteurs.md:membre de l'équipe [Mnemosyne project](https://mnemosyne-proj.org/) 
-21_auteurs.md:dont l'approche se situe à la frontière entre les neurosciences intégratives et computationnelles en association avec [l'Institut des maladies neurodégénératives](https://www.imn-bordeaux.org/), 
-21_auteurs.md:[le Laboratoire Bordelais de Recherche en Informatique](https://www.labri.fr/), l'Université de Bordeaux et le CNRS. 
-21_auteurs.md:En 2015, il a co-fondé avec [Konrad Hinsen](https://github.com/khinsen), 
-21_auteurs.md:la revue *[ReScience](http://rescience.github.io/)* spécialisée dans la publication d'études de réplication computationnelles. 
-21_auteurs.md:- [site web](http://www.labri.fr/perso/nrougier/) 
-21_auteurs.md:- [suivre N. Rougier sur Twitter](https://twitter.com/NPRougier?lang=fr)
-21_auteurs.md:Formatrice à [Activdesign](https://activdesign.eu/) et 
-21_auteurs.md:présidente de [Floss Manuals Francophone](https://www.flossmanualsfr.net/), 
-21_auteurs.md:du [Comité pour la Science Ouverte](https://www.ouvrirlascience.fr/presentation-du-comite/).
-21_auteurs.md:le repertoire contenant les sources de ce livre à l'adresse : https://github.com/alegrand/bookrr/pulls
 22_quatrieme_de_couv.md:`r if(knitr::is_latex_output()){ '
-Conventions_ecriture.md:https://www.sciencespo.fr/ecole-doctorale/sites/sciencespo.fr.ecole-doctorale/files/CNRStypo.pdf 
 README.md:## Est-il possible de contribuer, de proposer de nouveaux contenus? 
-README.md:En fonction de la nature de vos propositions, vous pourrez être amené.e à être cité.e comme [contributeur, ou co-auteur](https://publicationethics.org/authorship). 
-README.md:[CC-BY NC](https://creativecommons.org/licenses/by-nc/4.0/)
-README.md:- [La syntaxe](https://guides.github.com/features/mastering-markdown/)
-README.md:- [Les citations](https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html)
-README.md:- [Images, footnotes et autres](https://github.com/fletcher/MultiMarkdown/wiki/MultiMarkdown-Syntax-Guide)
-README.md:- [Les références d'un chapitre à l'autre](https://bookdown.org/yihui/bookdown/cross-references.html)
-README.md:- [bookdown](https://bookdown.org/)
-README.md:- [Avoir des parties en plus des chapitres](https://github.com/rstudio/bookdown/issues/221)
-README.md:- [Des chapitres non numérotés](https://github.com/rstudio/bookdown/issues/218)
-README.md:- [Comment visualiser le livre avec Rstudio](https://bookdown.org/home/about/)
 README.md:## Clef de références pour les chapitres:
 README.md:**Syntaxe**:
 README.md:* déclaration: `{#clef}`
 README.md:* citation:    `\@ref(clef)`
 README.md:  Sortez couverts!
-README.md:Ce document a été rédigé à l'aide de [bookdown](https://bookdown.org)
-README.md:Le paquet **[bookdown](https://bookdown.org)** peut s'installer à
 README.md:partir de CRAN ou de  Github:
 README.md:# devtools::install_github("rstudio/bookdown")
 README.md:Pour compiler ce livre au format html, il vous suffit de faire:
 README.md:ou bien en R:
 README.md:rmarkdown::render_site(output_format = 'bookdown::gitbook', encoding = 'UTF-8')
 README.md:Pour compiler ce livre au format pdf, il vous suffit de faire:
-README.md:ou bien en R:
+README.md:ou bien en R (ou presque...):
 README.md:rmarkdown::render_site(output_format = 'bookdown::pdf_book', encoding = 'UTF-8')
 brainstorm.md:## Partie 1: La recherche en pratique
 brainstorm.md:* Objectif/contexte traité: Permettre à un chercheur de vérifier/réobtenir les résultats d'un autre
@@ -355,14 +229,18 @@ brainstorm.md:* Le cahier de labo ???
 brainstorm.md:*XMind: ZEN - Trial Version*
 index.md:title: "Vers une recherche reproductible"
 index.md:subtitle: "Faire évoluer ses pratiques"
-index.md:author: "Loïc Desquilbet, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot, Nicolas Rougier,
+index.md:author: "Loïc Desquilbet, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot, Nicolas Rougier <br> Facilitatrice : Elisa de Castro Guerra"
 index.md:date: "`r Sys.Date()`"
 index.md:site: bookdown::bookdown_site
 index.md:documentclass: book
 index.md:bibliography: [refs.bib]
 index.md:biblio-style: apalike
 index.md:link-citations: yes
-index.md:description: "Livre sur la recherche reproductible rédigé à l'occasion d'un booksprint."
+index.md:colorlinks: yes
+index.md:fontsize: 12pt
+index.md:description: "Livre d'introduction à la recherche reproductible rédigé lors booksprint."
+index.md:url: 'https\://bookdown.org/alegrand/bookdown/'
+index.md:github-repo: alegrand/bookrr
 #+end_example
 
 Here is the (conservative) sed command to use unsplitable space almost

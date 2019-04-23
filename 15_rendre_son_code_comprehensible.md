@@ -230,7 +230,7 @@ reproductible](https://learninglab.inria.fr/mooc-recherche-reproductible-princip
 
 Nous avons déjà évoqué l'importance de modulariser son code pour le
 rendre plus compréhensible et plus facile à faire évoluer. 
-Il existe de nombreux concepts pour vous permettre d'y arriver: 
+Il existe de nombreux concepts pour vous permettre d'y arriver :
 la programmation fonctionnelle, la programmation orientée objet, 
 les *design patterns*, etc. 
 

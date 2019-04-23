@@ -110,7 +110,7 @@ qu'il dissimule une grande complexité. Même le script le plus anodin dépend (
 général) d'une large hiérarchie de bibliothèques que l'on a du mal à
 imaginer. À titre d'exemple, lorsqu'en Python vous souhaitez faire un petit
 graphique, il est courant de charger la bibliothèque `matplotlib` avec un
-simple:
+simple :
 
 ```python
 import matplotlib
@@ -118,7 +118,7 @@ import matplotlib
 
 Or cette bibliothèque est fournie par un *paquet* qui, sur la machine d'un des
 auteurs s'appelle, `python3-matplotlib`. Lorsque nous cherchons à en savoir
-plus sur ce paquet, voilà ce que nous obtenons:
+plus sur ce paquet, voilà ce que nous obtenons :
 
 ```
 Package: python3-matplotlib
@@ -137,7 +137,7 @@ installer les paquets `python3-dateutil`, `python-matplotlib-data`,
 `python3-pyparsing`, etc. C'est ce qu'on appelle les "dépendances". Mais pour
 ces paquets dépendent eux-mêmes d'autres paquets. Lorsque l'on récupère
 l'ensemble des paquets nécessaire avec leurs dépendances, voici ce qu'on
-obtient:
+obtient :
 
 ![Dépendances de Matplotlibs sous debian obtenues avec debtree](img/python3-matplotlib.png "debtree output")
 
@@ -195,7 +195,7 @@ le même environnement, peut donc changer le résultat. Les cœurs d'un ordinate
 n'allant pas toujours exactement à la même vitesse, un code un peu optimisé
 ajustera la taille des sommes partielles pour terminer le calcul le plus
 rapidement possible et le résultat du calcul variera donc d'une exécution sur
-l'autre alors que rien n'a changé! Mais alors, comment décider lequel de ces
+l'autre alors que rien n'a changé ! Mais alors, comment décider lequel de ces
 différents résultats de calculs est le "bon" ?
 
 Toutes ces petites imprécisions de calcul peuvent hélas rapidement devenir très
