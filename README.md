@@ -92,7 +92,40 @@ Cette licence permet aux autres de remixer, arranger, et adapter l'œuvre, sous 
   
 ## Pour compiler le bookdown
 
-Afin de créer les fichier .Rmd symbolique nécessaires, la première fois que le répertoire est forké/téléchargé, il faut executer la commande suivante dans le terminal :
-```
+Ce document a été rédigé à l'aide de [bookdown](https://bookdown.org)
+mais entièremnt rédigé en markdown (nous n'avions pas besoin
+d'éxécuter du code R, ce pourquoi bookdown est originellement
+conçu). Néenmoins, pour conserver la prévisualisation de github, nous
+avons conservé l'extension `.md` plutôt que `.Rmd`.
+
+Afin de créer les liens symboliques avec l'extension `.Rmd` nécessaires, la première fois que le répertoire est forké/téléchargé, il faut executer la commande suivante dans le terminal :
+```{sh}
 make -f Makefile_Rmd Rmd
+```
+
+Le paquet **[bookdown](https://bookdown.org)** peut s'installer à
+partir de CRAN ou de  Github:
+
+```{r eval=FALSE}
+install.packages("bookdown")
+# or the development version
+# devtools::install_github("rstudio/bookdown")
+```
+
+Pour compiler ce livre au format html, il vous suffit de faire:
+```{sh}
+make html
+```
+ou bien en R:
+```{R}
+rmarkdown::render_site(output_format = 'bookdown::gitbook', encoding = 'UTF-8')
+```
+
+Pour compiler ce livre au format pdf, il vous suffit de faire:
+xo```{sh}
+make pdf
+```
+ou bien en R:
+```{R}
+rmarkdown::render_site(output_format = 'bookdown::pdf_book', encoding = 'UTF-8')
 ```

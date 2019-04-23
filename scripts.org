@@ -374,6 +374,58 @@ sed -i 's/ \([:?!]\)/ \1/g' *.md
 
 #+RESULTS:
 
+* Compiling
+These scripts have now moved into the main Makefile
+** HTML
+#+begin_src R :results output :session *R* :exports both
+library(bookdown)
+rmarkdown::render_site(output_format = 'bookdown::gitbook', encoding = 'UTF-8')
+#+end_src
+
+#+RESULTS:
+#+begin_example
+
+
+processing file: booksprintrr.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |.................................................................| 100%
+   inline R code fragments
+
+
+output file: booksprintrr.knit.md
+
+/usr/bin/X11/pandoc +RTS -K512m -RTS booksprintrr.utf8.md --to html4 --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash+smart --output booksprintrr.html --email-obfuscation none --wrap preserve --standalone --section-divs --table-of-contents --toc-depth 3 --template /home/alegrand/R/x86_64-pc-linux-gnu-library/3.5/bookdown/templates/gitbook.html --highlight-style pygments --number-sections --css style.css --include-in-header /tmp/RtmpOzSigs/rmarkdown-str113f7b65abc9.html --mathjax --filter /usr/bin/X11/pandoc-citeproc 
+pandoc-citeproc: reference REF not found
+pandoc-citeproc: reference GUM not found
+pandoc-citeproc: reference GUM not found
+pandoc-citeproc: reference REF not found
+pandoc-citeproc: reference REF not found
+
+Output created: _book/A-preambule.html
+Warning message:
+In split_chapters(output, gitbook_page, number_sections, split_by,  :
+  You have 23 Rmd input file(s) but only 22 first-level heading(s). Did you forget first-level headings in certain Rmd files?
+#+end_example
+** LaTeX
+#+begin_src R :results output :session *R* :exports both
+library(bookdown)
+rmarkdown::render_site(output_format = 'bookdown::pdf_book', encoding = 'UTF-8')
+#+end_src
+
+#+RESULTS:
+#+begin_example
+
+
+processing file: booksprintrr.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |.................................................................| 100%
+   inline R code fragments
+
+
+output file: booksprintrr.knit.md
+
+/usr/bin/X11/pandoc +RTS -K512m -RTS booksprintrr.utf8.md --to latex --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output booksprintrr.tex --table-of-contents --toc-depth 2 --template /home/alegrand/R/x86_64-pc-linux-gnu-library/3.5/rmarkdown/rmd/latex/default-1.17.0.2.tex --number-sections --highlight-style tango --pdf-engine xelatex --natbib --include-in-header preamble.tex --variable graphics=yes --wrap preserve --variable 'geometry:margin=1in' --variable 'compact-title:yes' --variable tables=yes --standalone 
+
+Output created: _book/booksprintrr.pdf
+#+end_example
 
 * Code cruft
 ** Ninja
