@@ -13,7 +13,20 @@ html:
 	Rscript -e "rmarkdown::render_site(output_format = 'bookdown::gitbook', encoding = 'UTF-8')"
 
 pdf:
-	Rscript -e "rmarkdown::render_site(output_format = 'bookdown::pdf_book', encoding = 'UTF-8')"
+	Rscript -e "rmarkdown::render_site(output_format = 'bookdown::pdf_book', encoding = 'UTF-8')" || true;
+	sed -i -e 's/\\BREAKME//g'  \
+	    -e 's|documentclass\(.*\){book}|documentclass\1{krantz}|g' \
+	    -e 's|^.*usepackage.*geometry.*$$||g' \
+	    -e 's|begin{center}\\large#1\\end{center}|begin{center}\\Large#1\\end{center}|g' \
+	    -e 's|\\addcontentsline{toc}{chapter}{.*}||g' \
+	    -e 's|author{\(.*\)Facilitatrice|author{\1\\\\\\medskip Facilitratice|g' \
+	    booksprintrr.tex
+	cp booksprintrr.tex booksprintrr.tex.bak
+	cat booksprintrr.tex.bak | perl -e 'while(<>) { if($$_=~/Redefines \\(sub\\)paragraphs/) {foreach $$i (1..8) {<>;}; next}; print($$_);}' > booksprintrr.tex
+	xelatex booksprintrr.tex
+	bibtex booksprintrr.aux
+	xelatex booksprintrr.tex
+	xelatex booksprintrr.tex
 
 clean:
 	rm -rf booksprintrr.* _book/

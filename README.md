@@ -114,7 +114,7 @@ install.packages("bookdown")
 
 Pour compiler ce livre au format html, il vous suffit de faire:
 ```{sh}
-make html
+make -f Makefile_Rmd html
 ```
 ou bien en R:
 ```{R}
@@ -122,10 +122,10 @@ rmarkdown::render_site(output_format = 'bookdown::gitbook', encoding = 'UTF-8')
 ```
 
 Pour compiler ce livre au format pdf, il vous suffit de faire:
-xo```{sh}
-make pdf
+```{sh}
+make -f Makefile_Rmd pdf
 ```
-ou bien en R:
+ou bien en R (ou presque...):
 ```{R}
 rmarkdown::render_site(output_format = 'bookdown::pdf_book', encoding = 'UTF-8')
 ```
