@@ -25,6 +25,7 @@ eprint = {https://science.sciencemag.org/content/354/6308/142.full.pdf},
 journal = {Science}
 }
 De fait, une approche très progressive qui valorise l'implication directe des individus a davantage de chances d'aboutir (ou moins de risques d'être rejetée, selon que vous voyez le verre à moitié plein ou à moitié vide). 
+
 Au fil de l'ouvrage, nous décrivons des situations de crise, moins par goût pour les histoires d'horreur que par conviction que l'identification des problèmes couramment rencontrés constitue l'une des meilleures options pour aborder la question de la reproductibilité. 
 
 ## Concrètement, que changer et comment s'y prendre ?
