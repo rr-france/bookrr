@@ -18,7 +18,7 @@ html: Rmd
 pdf: Rmd
 	Rscript -e "rmarkdown::render_site(output_format = 'bookdown::pdf_book', encoding = 'UTF-8')" || true;
 	sed -i -e 's/\\BREAKME//g'  \
-	    -e 's|documentclass\(.*\){book}|documentclass\1{krantz}|g' \
+	    -e 's|documentclass\(.*\){book}|documentclass\1{latex/krantz}|g' \
 	    -e 's|^.*usepackage.*geometry.*$$||g' \
 	    -e 's|begin{center}\\large#1\\end{center}|begin{center}\\Large#1\\end{center}|g' \
 	    -e 's|\\addcontentsline{toc}{chapter}{.*}||g' \
