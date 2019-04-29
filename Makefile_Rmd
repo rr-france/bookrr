@@ -25,7 +25,10 @@ pdf: Rmd
 	    -e 's|author{\(.*\)Facilitatrice|author{\1\\\\\\medskip Facilitratice|g' \
 	    booksprintrr.tex
 	cp booksprintrr.tex booksprintrr.tex.bak
-	cat booksprintrr.tex.bak | perl -e 'while(<>) { if($$_=~/Redefines \\(sub\\)paragraphs/) {foreach $$i (1..8) {<>;}; next}; print($$_);}' > booksprintrr.tex
+	cat booksprintrr.tex.bak |   \
+	     perl -e 'while(<>) { if($$_=~/Redefines \\(sub\\)paragraphs/) {foreach $$i (1..8) {<>;}; next}; print($$_);}' |   \
+	     perl -e 'while(<>) { if($$_=~/hypertarget{section}/) {<>; next}; print($$_);}'  \
+	    > booksprintrr.tex
 	xelatex booksprintrr.tex
 	bibtex booksprintrr.aux
 	xelatex booksprintrr.tex
