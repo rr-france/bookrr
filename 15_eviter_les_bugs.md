@@ -7,9 +7,7 @@ un minimum d'exactitude.
  
 ## Programmation en binôme
 
-Une technique de programmation (agile) relativement facile à mettre en œuvre (pour peu que vous ayez des amis adeptes de programmation) consiste à coder en binôme ("*pair
-coding*"). Il s'agit de s'asseoir à deux en face d'une machine : l'une des
-personnes conduit le développement en ayant le contrôle du clavier ;
+Vous avez des amis adeptes de la ligne de commande, vous souhaitez animer une soirée ou un repas familial? Une technique de programmation relativement facile à mettre en œuvre consiste à coder en binôme : on parle de *pair coding*. Le *pair coding* est issu des méthodes dites "agiles". Il s'agit de s'asseoir à deux en face d'une machine : l'une des personnes conduit le développement en ayant le contrôle du clavier ;
 l'autre observe et commente ce qu'écrit l'autre afin de corriger
 d'éventuelles erreurs ou simplement, questionner la pertinence de telle ou telle
 ligne de code. Les deux personnes doivent changer de rôle fréquemment. Cette
@@ -35,7 +33,7 @@ manière rigoureuse. Il s'agit alors d'envisager des cas d'usage
 caractéristiques de chaque partie (unité) et fonctionnalité du code, afin de
 tester que ce dernier adopte bien le bon comportement face à des situations
 variées : par exemple, les erreurs sont bien renvoyées lorsque les arguments
-n'ont pas de sens. La difficulté dans l'écriture de ces test est de prévoir les
+n'ont pas de sens. La difficulté dans l'écriture de ces tests est de prévoir les
 cas singuliers auxquels on ne pense pas forcément. Par exemple, dans le cas de
 l'addition que nous venons d'expliquer, nous avons proposé de vérifier que la
 somme de `a` et `-a` faisait bien 0, mais que se passe-t-il si `a = inf` ? (la
@@ -47,20 +45,21 @@ Une autre modalité pour tester un code est de le diffuser au sein de votre comm
 
 Idéalement, aucune modification de votre code ne doit empêcher de réaliser
 les tests unitaires. Par exemple, le code passe les 100 tests unitaires. Problème : après une modification, il n'en passe plus que 80.  
-On parle alors de " régression " : votre nouveau code est moins bon que la version d'avant.
+On parle alors de "régression" : votre nouveau code est moins bon que la version d'avant.
 Il existe aujourd'hui des outils qui permettent d'automatiser la vérification
 des tests unitaires, en les évaluant : 
 
 - à chaque nouvelle version du code, ou 
 - à intervalles de temps réguliers (chaque nuit par exemple). 
 
-Ces solutions peuvent être locales, telles que Jenkins, ou deportées, telles que Travis CI^[https://travis-ci.org/] ou Appveyor^[https://www.appveyor.com/].
+Ces solutions peuvent être locales, telles que Jenkins, ou deportées, telles que Travis CI^[https://travis-ci.org/] ou Appveyor^[https://www.appveyor.com/]. *SG*
 
 Ces outils d'intégration continue peuvent en outre servir à vérifier que le
 code se comporte correctement sous différents environnements logiciels (voir le
 chapitre suivant)
 
 ## Pour en savoir plus 
+*SG*
 
  - [How to Pair Program](https://www.wikihow.com/Pair-Program)
  - [Wickham H. testthat: Get started with testing. The R Journal. 2011 Jun 1;3(1):5-10.](https://journal.r-project.org/archive/2011/RJ-2011-002/RJ-2011-002.pdf)
