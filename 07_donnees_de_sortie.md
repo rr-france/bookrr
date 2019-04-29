@@ -8,18 +8,17 @@ ou d'une transformation de ces données.
 
 ## Une mauvaise sélection des résultats
 
-Il est tout à fait possible que la sortie des résultats fournis par un logiciel
-contienne un nombre élevé d’informations et qu’il faille sélectionner celles
-pertinentes pour la question de recherche dont fait l’objet votre article.
+Les résultats fournis par un logiciel peuvent contenir de si nombreuses informations qu'il faille opérer une sélection parmi elles. En d'autres termes, vous pouvez être amené à devoir identifier les informations pertinentes pour la question de recherche faisant l'objet de votre article.
 
-Devant cet amas d’information, il peut tout à fait vous arriver de mal
-sélectionner l’information pertinente (votre sélection à la souris a oublié
+Confronté à cet amoncèlement, il peut vous arriver de mal
+sélectionner l’information pertinente : votre sélection à la souris a "oublié"
 quelques caractères en début ou en fin de séquence à sélectionner, par
-exemple). Si cette information est encore complexe et difficilement
-compréhensible par vos collaborateurs parce que vous êtes spécialiste dans le
-domaine, alors cette erreur de sélection sera présente dans l’article et 
+exemple. 
+En outre, si cette information est complexe et difficilement
+compréhensible par vos collaborateurs parce que vous êtes seul spécialiste du
+domaine, alors cette erreur de sélection sera répercutée dans l’article et 
 persistera après le processus de
-revue, si les relecteurs ne répèrent pas cette erreur.
+revue si les relecteurs ne la répèrent pas.
 
 ## Transformation des résultats
 
@@ -58,19 +57,26 @@ forme inappropriée des incertitudes associées aux résultats d'une mesure
 physique ou virtuelle, ou d'une étude statistique. Très souvent, l'absence
 d'incertitude (par exemple, l'absence de valeur d'écart-type) empêche une
 comparaison de résultats, ou bien l'absence de matrice de corrélation entre les
-paramètres incertains d'une étude empêche leur réutilisation.
+paramètres incertains d'une étude empêche leur réutilisation. *SG* *cf.* @Article{Hebrard2009,Title = {How measurements of rate coefficients at low temperature increase the predictivity of photochemical models of {Titan}'s atmosphere},
+Author = {H'ebrard, E and Pernot, P and Dobrijevic, M and Carrasco, N and Bergeat, A and Hickson, K M and Canosa, A and Picard, S D Le and Sims, I R},
+Journal = {J. Phys. Chem. A},
+Year = {2009},
+Pages = {11227--11237},
+Volume = {113},
+Doi = {10.1021/jp905524e},
+}
 
 Même lorsque des efforts ont été faits pour publier les informations adéquates,
 des problèmes d'arrondi peuvent anéantir la réutilisabilité des données. Une
 mauvaise sélection du nombre de chiffres significatifs à reporter dans un
 résultat numérique peut tout à fait se produire. Vous pourriez juger qu’un seul
-chiffre significatif peut suffire, pour une question de " présentation " (taille
+chiffre significatif peut suffire, pour une question de "présentation" (taille
 d'une table de résultats). Mais si vos résultats sont nécessaires à la
-réalisation d’autres recherches (comme par exemple la réalisation de
-simulations basées entre autres sur vos résultats), les erreurs générées dans
-ces autres recherches pourront être amplifiées (une petite erreur initiale peut
+réalisation d’autres recherches, comme par exemple la réalisation de
+simulations basées entre autres sur vos résultats, les erreurs générées dans
+ces autres recherches pourront être amplifiées : une petite erreur initiale peut
 conduire à une erreur très importante en bout de course – _cf._ « Chaos numérique
-» dans le chapitre \@ref(B-code-aspect)).
+» dans le chapitre \@ref(B-code-aspect).
 
 A titre d'illustration, la matrice de variance-covariance publiée par le CODATA
 en 2002 pour l'ajustement des constantes fondamentales, arrondie pour être
@@ -83,7 +89,7 @@ Status https://arxiv.org/abs/physics/0409117]
 
 La réutilisabilité des résultats d'une étude doit être une priorité. Pour
 cela, les données doivent être mises à disposition de futurs utilisateurs 
-(Chapitre \@ref(C-data-share)) 
+(Chapitre \@ref(C-data-share)), 
 dans un format lisible par la machine (Chapitre \@ref(C-data-format)), 
 en utilisant un processus automatisé limitant les interventions manuelles
 (Chapitre \@ref(C-code-learn)).
