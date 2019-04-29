@@ -7,12 +7,14 @@ facilement des versions spécifiques et datées des documents. La mise en œuvre
 va de la simple sauvegarde de versions des fichiers, à des sauvegardes
 différentielles n'enregistrant que les modifications.
 
-La mise en œuvre d'une stratégie de gestion de version doit permettre d'éviter
+La mise en œuvre d'une stratégie de gestion de versions doit permettre d'éviter
 les cauchemars du type "Je ne retrouve pas mon code / mes données" et permet
 de répondre aux questions : quand ? qui ? pourquoi ?
 
 Nous présentons deux solutions dans ce chapitre :
+
 - la première s'appuyant sur la mise en place de convention de nommage des dossiers et fichiers, 
+
 - la seconde, plus technique présentant les outils de versionnage différentiel.
 
 ## Versionnage par nommage de fichiers
@@ -38,8 +40,8 @@ il ne doit pas dépasser 31 caractères, extension comprise. Egalement pour
 des raisons de compatibilité, il est recommandé d'éviter l'utilisation de :
 
 - signes diacritiques ; ex. : accents, trémas, cédilles,  
-- de caractères spéciaux,
-- d'espaces,
+- caractères spéciaux,
+- espaces,
 - etc.
 
 
