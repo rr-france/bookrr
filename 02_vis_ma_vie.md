@@ -1,10 +1,9 @@
-# Retours d'expériences (traumatiques) {#A-personas}
+# Retours d'expériences {#A-personas}
 
 Nous avons recueilli ci-dessous plusieurs témoignages fictifs de
 *personas* incarnant différents acteurs de la recherche. Il s'agit de
-personnages fictifs mais néanmoins vraisemblables car basés sur des
-expériences réelles. Parce qu'ils se présentent sous une forme
-narrativisée, les personas permettent :
+personnages inventés mais néanmoins vraisemblables car inspirés d'expériences réelles. Parce qu'ils se présentent sous une forme
+narrativisée, les *personas* permettent :
 
 - à des chercheurs, d'appréhender concrètement différentes questions
   de recherche reproductible, de contextualiser ces enjeux dans un
@@ -49,7 +48,7 @@ narrativisée, les personas permettent :
 > j'ai plutôt l'impression d'avoir pris l'autoroute de la
 > souffrance. Ma principale occupation a été d'extraire des données à
 > partir d'une série d'articles, qui donnait les points de
-> caractéristique dans les *.pdf* en fichiers supplémentaires : du fun
+> caractéristique dans les PDF en fichiers supplémentaires : du fun
 > à tous les étages. Je les copie-colle directement dans
 > Excel. Fun². Dans le tableur, je dois ensuite transformer les "." en
 > ",". Comme je ne dispose pas des incertitudes d'estimation pour tous
@@ -57,7 +56,7 @@ narrativisée, les personas permettent :
 > résultats), je n'en tiens pas compte et ne rentre que les
 > estimations.
 >
-> C'est assez un travail assez rébarbatif (faites un stage qu'ils
+> C'est un travail assez rébarbatif (faites un stage qu'ils
 > disaient), mais c'est le seul moyen de pouvoir ensuite analyser les
 > données de la littérature. Lorsque ma collecte sera terminée,~~je
 > fête ça avec des amis~~ je calculerai le coefficient R² pour mes
@@ -65,8 +64,8 @@ narrativisée, les personas permettent :
 > 
 
 ## *Long N., enseignant-chercheur en biologie*
->"Pour interpréter mes données expérimentales sur les protéines
-> fluorescentes, je me suis lancé dans la simulation molécaulaire et
+> "Pour interpréter mes données expérimentales sur les protéines
+> fluorescentes, je me suis lancé dans la simulation moléculaire et
 > j'ai installé un code réputé dans la littérature.  La fluorescence
 > est en compétition avec des mouvements intramoléculaires assez
 > rares. Pour avoir une chance de les observer et de faire une
@@ -100,11 +99,11 @@ narrativisée, les personas permettent :
 > 
 
 ## *Christina Z., directrice de recherche*
-> " Je dirige une équipe de recherche depuis 3 ans et j'encadre
+> "Je dirige une équipe de recherche depuis 3 ans et j'encadre
 > actuellement 2 doctorants et 3 post-doctorants. Je suis un peu
 > inquiète car l'un de mes doctorants a soutenu sa thèse la semaine
 > dernière et part en post-doc aux États-Unis à la fin du mois. Ses
-> derniers écrits sont très prometteurs, mais il reste encore 50% du
+> derniers écrits sont très prometteurs, mais il reste 50% du
 > travail à faire et l'article n'est pas encore rédigé. J'ai prévu de
 > recruter un stagiaire pour prendre la suite mais cela risque de
 > prendre énormément de temps : alors que l'exploitation des résultats
