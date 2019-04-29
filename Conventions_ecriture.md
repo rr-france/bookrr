@@ -22,7 +22,7 @@ https://www.sciencespo.fr/ecole-doctorale/sites/sciencespo.fr.ecole-doctorale/fi
  - espace ! espace
  - espace ? espace
  - espace (pas d'espace) idem pour les parenthèses fermantes, les crochets
- - espace " espace
+ - PAS d'espace"PAS espace : pb de rendu avec les guillemets anglo-saxons sinon
  - ...espace
 
 
