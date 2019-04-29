@@ -16,16 +16,16 @@ Il n'existe ni solution simple, ni solution unique pour répondre à ces enjeux.
 
 ## Identifier les dépendances : dessine-moi une dépendance
 
-La façon la ~~plus simple~~ moins complexe de décrire son environnement logiciel est d'identifier les dépendances de son environnement. Mais cette simplicité n'est qu'apparente car l'arbre cache la forêt : chaque dépendance a 
+La manière la ~~plus simple~~ moins complexe de décrire son environnement logiciel est d'en identifier les dépendances. Mais cette simplicité n'est qu'apparente car l'arbre cache la forêt : chaque dépendance a 
 elle-même une dépendance, qui a elle-même une dépendance, et ainsi de suite... Cette tâche peut donc 
-rapidement devenir difficile. On peut distinguer deux façons d'obtenir
+rapidement devenir difficile. On peut distinguer deux méthodes d'obtenir
 une telle identification :
 
 1. À partir d'un langage interprété (tel que R ou Python), on peut
-effectuer cette " intro-spection " et lister les différentes dépendances, la liste 
-des bibliothèques chargées avec leur numéro de version[en R, on peut 
-par exemple utiliser la commande `sessionInfo()` (ou encore 
-`devtools::session_info()`]. Mais cette méthode relativement
+effectuer cette "intro-spection" et lister les différentes dépendances, la liste 
+des bibliothèques chargées avec leur numéro de version [en R, on peut 
+par exemple utiliser la commande `sessionInfo` (ou encore 
+`devtools::session_info`]. Mais cette méthode relativement
 simple est surtout limitée et assez peu précise car elle ne signale que quelques
 unes des dépendances système de plus bas niveau. Elle correspond à
 la zone verte dans le schéma ci-dessous. Cependant, il est très 
@@ -42,8 +42,8 @@ d'exploitation).
 
 ![Schéma des différents environnements logiciel](img/schemaEnvirLogi2.png)
 
-L'identification des dépendances est donc soit lacunaire et imprécise (façon n°1 ci-dessus),
-soit au contraire, illisible car trop étendue (façon n°2 ci-dessus). 
+L'identification des dépendances est donc soit lacunaire et imprécise (méthode n°1 ci-dessus),
+soit au contraire, illisible car trop étendue (méthode n°2 ci-dessus). 
 
 Entre ces deux extrêmes, il existe cependant un moyen d'identifier ces dépendances, notamment *via* des gestionnaires de paquets de langages interprétés tels que Packrat pour R. 
 
@@ -57,15 +57,15 @@ le reproduire en pratique.
 L'identification des dépendances permet de décrire son environnement,
 mais ne permet que très difficilement de le conserver ou le partager 
 en pratique. Une façon de s'assurer de pouvoir conserver et 
-partager un environnement logiciel à l'identique est de " figer " l'ensemble du système. 
+partager un environnement logiciel à l'identique est de "figer" l'ensemble du système. 
 
 ### Isoler une machine
 
-La façon la plus simple d'éviter les problèmes de versions des dépendances logicielles, consiste à installer sur une machine tous les programmes dont on a besoin. Ce *scenario* exclut toute mise à jour : l'environnement est installé une bonne fois pour toute. 
+La façon la plus simple d'éviter les problèmes de versions des dépendances logicielles, consiste à installer sur une machine tous les programmes dont on a besoin. Ce *scenario* exclut toute mise à jour : l'environnement est installé une bonne fois pour toutes. 
 
 C'est le cas de figure décrit en section \@ref(A-personas-ingenieur). 
 Chacun des membres de l'équipe peut alors se connecter sur cette machine 
-pour y faire ses calculs (ce qui peut d'ailleurs parfois être source de disputes). Sur le long terme, isoler une machine s'avèrera problématique car si la machine continue (normalement) 
+pour y faire ses calculs, ce qui peut d'ailleurs parfois être source de tensions : or, personne ne souhaite découvrir à cette occasion les talents en *free fight* de ses collègues. Sur le long terme, isoler une machine s'avèrera problématique car si la machine continue (normalement) 
 de calculer la même chose, elle conserve ses vieux *bugs* qui peuvent 
 affecter vos résultats. D'autre part, elle finira un jour par mourir 
 de sa belle mort et s'exposera entre-temps à des failles de sécurité. 
@@ -77,20 +77,15 @@ C'est donc certainement la solution la plus simple à mettre en œuvre
 
 Un conteneur est un outil permettant d'émuler un système
 d'exploitation particulier avec un certain nombre d'applications
-installées. Une solution très populaire pour utiliser les conteneurs
-est [Docker](https://www.docker.com/).
-
-- avantage par rapport à une machine virtuelle : le conteneur ne
-  reproduit pas l'ensemble du système d'exploitation (en se passant du
-  kernel); Il est donc plus léger (moins gros et plus rapide).
-
-- inconvénient : il ne fonctionne pas pour toutes les combinaisons de
-  machine réelle - machine virtuelle.
+installées. 
+Une solution très populaire pour utiliser les conteneurs
+est [Docker](https://www.docker.com/). Par rapport à une machine virtuelle, le conteneur a pour avantage de ne
+pas reproduire l'ensemble du système d'exploitation, en se passant du kernel. Le conteneur est donc plus léger, moins gros et plus rapide. L'inconvénient est que le conteneur ne fonctionne pas pour toutes les combinaisons de machine réelle - machine virtuelle.
 
 Il existe d'ailleurs des outils permettant d'identifier et de capturer automatiquement 
 un tel environnement logiciel minimum pour pouvoir le partager avec d'autres: *SG* [CDE](http://www.pgbovine.net/cde.html) ou [ReproZip](https://vida-nyu.github.io/reprozip/). Ces approches automatiques sont efficaces et très pratiques mais peuvent passer à côté de
 certaines dépendances et ne permettent pas de variation. En effet, on obtient un
-environnement " binaire " figé sans sa recette de construction, et il est donc très difficile de
+environnement "binaire" figé sans sa recette de construction et il est donc très difficile de
 de changer une bibliothèque particulière ou de faire évoluer cet environnement.
 
 ## Les systèmes de gestion de paquets
@@ -111,4 +106,4 @@ et aux ressources correspondantes
 *SG*[ressources](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module4/ressources/resources_environment_fr.org)).
 
 Vous  pouvez également vouloir regarder ce 
-[séminaire présentant quelques solutions pour contrôler son environnement](https://github.com/alegrand/RR_webinars/blob/master/2_controling_your_environment/index.org).
+[séminaire en ligne présentant quelques solutions pour contrôler son environnement](https://github.com/alegrand/RR_webinars/blob/master/2_controling_your_environment/index.org).
