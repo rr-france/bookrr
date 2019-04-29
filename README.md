@@ -6,6 +6,9 @@ Loïc Desquilbet, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot,
 
 Facilitatrice : Elisa de Castro Guerra
 
+## Citer l'ouvrage
+*SG* introduire ref vers la 1re éd avec l'ISBN
+
 ## Est-il possible de contribuer, de proposer de nouveaux contenus ? 
 Ce livre est ouvert aux nouveaux contenus : proposition d'ajout de chapitre, complément de chapitre, références complémentaires, mais aussi questions.
 Le livre ayant été rédigé collaborativement, les propositions sont étudiées par le collectif des auteurs. 
@@ -25,7 +28,7 @@ Cette licence permet aux autres de remixer, arranger, et adapter l'œuvre, sous 
 - [Les références d'un chapitre à l'autre](https://bookdown.org/yihui/bookdown/cross-references.html)
 
 ## Quelques liens utiles sur Bookdown
-- [bookdown](https://bookdown.org/)
+- [Bookdown](https://bookdown.org/)
 - [Avoir des parties en plus des chapitres](https://github.com/rstudio/bookdown/issues/221)
 - [Des chapitres non numérotés](https://github.com/rstudio/bookdown/issues/218)
 - [Comment visualiser le livre avec Rstudio](https://bookdown.org/home/about/)
