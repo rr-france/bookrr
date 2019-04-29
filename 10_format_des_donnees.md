@@ -8,8 +8,10 @@ en dehors de l'outil numérique.
 ## Comment structurer mes informations ?
 
 Les chercheurs peuvent être amenés à travailler sur des données de
-natures très variées. Si on peut spontanément penser à des nombres, les chercheurs peuvent aussi
-travailler sur des images ou du texte. Le plus souvent, les chercheurs travaillent en fait sur une "collection" de données liées les unes aux autres. La relation entre ces données est essentielle. 
+natures très variées. Si on peut spontanément penser à des nombres, les 
+chercheurs peuvent aussi travailler sur des images ou du texte. Le plus 
+souvent, les chercheurs travaillent en fait sur une "collection" de données 
+liées les unes aux autres. La relation entre ces données est essentielle. 
 
 Par exemple, il peut être commode de rassembler des informations sur
 des patients sous forme d'une "table" comportant une ligne pour chaque
@@ -22,11 +24,14 @@ d'information. On pourrait préférer avoir une entrée (une ligne) pour chaque
 mesure (et non pour chaque patient) en ajoutant une colonne indiquant
 quand la mesure a été réalisée, et une autre indiquant par qui elle a été réalisée. 
 
-Un autre exemple de structure est celui d'un arbre généalogique. Au prime abord, il semblerait naturel d'utiliser une
-"hiérarchie", mais la vie étant faite de surprises, cette représentation va rapidement s'avérer inadaptée pour concevoir un arbre généalogique clair.
+Un autre exemple de structure est celui d'un arbre généalogique. Au prime abord, 
+il semblerait naturel d'utiliser une "hiérarchie", mais la vie étant faite de 
+surprises, cette représentation va rapidement s'avérer inadaptée pour concevoir un 
+arbre généalogique clair.
 
 Un dernier exemple d'information dont la conservation est primordiale : 
-il s'agit du protocole expérimental généralement consigné dans un cahier de laboratoire. On structure souvent cette information
+il s'agit du protocole expérimental généralement consigné dans un cahier de 
+laboratoire. On structure souvent cette information
 de façon chronologique avec des annotations sémantiques : qui ? quand ?
 où ? pourquoi ? dans quel contexte ? etc. Dans tous les cas, la question
 du lien entre ce cahier et les données archivées doit être posée et
@@ -53,8 +58,9 @@ la réutilisation de ses données et de ses résultats. Le nom des fichiers est 
 un point important du formatage et sera abordé dans le chapitre \@ref(C-versioning).
 
 
-La recherche reproductible vise à limiter drastiquement les interventions manuelles dans le flux de production des résultats. 
-Dans le choix d'un format d'enregistrement et de stockage des informations, l'objectif est de garantir la "lisibilité
+La recherche reproductible vise à limiter drastiquement les interventions manuelles dans 
+le flux de production des résultats. Dans le choix d'un format d'enregistrement et de 
+stockage des informations, l'objectif est de garantir la "lisibilité
 par la machine". On devrait donc dire "lisible par toutes les machines" avec en tête,
 les spécificités des différents systèmes d'exploitation qui peuvent devenir problématiques
 pour certains formats. 
@@ -76,9 +82,10 @@ On distingue 3 grands types de formats :
  modifications peuvent être enregistrées par les outils de suivi de version
  (voir le chapitre \@ref(C-versioning)).
 
-Par exemple, pour des tables de données simples, mieux vaut privilégier les formats .csv ou .tsv plutôt que les versions plus ou moins propriétaires ou spécifiques à un tableur (.dot, .xls, .xslx, ...) qui peuvent parfois contenir des
-informations très difficiles à lire pour la machine (cellules colorées, cellules
-fusionnées, etc.).
+Par exemple, pour des tables de données simples, mieux vaut privilégier les formats .csv 
+ou .tsv plutôt que les versions plus ou moins propriétaires ou spécifiques à un tableur 
+(.dot, .xls, .xslx, ...) qui peuvent parfois contenir des informations très difficiles 
+à lire pour la machine (cellules colorées, cellules fusionnées, etc.).
 
 Dans la mesure du possible, nous préconisons de privilégier les
 formats texte lisibles à la fois par l'humain et par la machine et
@@ -126,8 +133,8 @@ Guide pour l'expression de l'incertitude de mesure, JCGM 100:2008
 est d'arrondir (par excès) l'incertitude à 
 deux chiffres significatifs, et de reporter le résultat au même niveau décimal. Par exemple, 
 si le résultat de mesure vaut 1.23456789 et l'incertitude vaut 0.00456, on reportera 1.2346 
-avec une incertitude de 0.0046. En outre, on évitera dans un tableau les notations du type $1.2346(46)$ 
-ou $1.2346 \pm 0.0046$, qui peuvent fragiliser la lecture automatique par une machine.
+avec une incertitude de 0.0046. En outre, on évitera dans un tableau les notations du type 
+1.2346(46) ou 1.2346 ± 0.0046, qui peuvent fragiliser la lecture automatique par une machine.
 
 Une attention particulière doit être portée à certains objets afin de respecter leurs propriétés
 intrinsèques. Par exemple, les éléments d'une matrice de variance/co-variance doivent être
