@@ -6,7 +6,7 @@ dans le chapitre \@ref(B-data-acquisition).
 ## Rédiger un protocole de collecte des informations
 
 Comme nous l'avons vu plus haut (Chapitres \@ref(B-data-acquisition) et
-\@ref(B-data-input)), il convient de s'assurer que l'information est collectée
+\@ref(B-data-input)), l'information doit être collectée
 de façon "standardisée".  Cela implique de rédiger un protocole décrivant la
 façon dont l'information est collectée, et ce, donnée par donnée. Par exemple :
 chez une personne atteinte d'un diabète, vous recueillez la concentration du
@@ -42,32 +42,32 @@ modification, et l'auteur de la modification. Même si le cahier physique a
 tendance à disparaître des laboratoires au profit de carnets de laboratoire
 numériques, la logique reste la même : toute modification des informations
 initiales doit être renseignée, en indiquant la raison de la modification, la
-date, et l'auteur de la modification.  Le tableur est-il mon ami pour effectuer
-ce type de tâche ? Pas vraiment.  Plutôt pas du tout, dans la mesure où la
+date, et l'auteur de la modification.  
+Le tableur est-il mon ami pour effectuer ce type de tâche ? Pas vraiment.  Plutôt pas du tout, dans la mesure où la
 modification d'une valeur dans une cellule peut être réalisée sans laisser de
 trace.
 
 ## Collecter les données de façon répétable ET reproductible
 
 Le protocole de collecte d'une information doit être défini de telle sorte
-qu'elle soit "répétable" et "reproductible" au sens du *VIM* (_cf._ Chapitre
+qu'elle soit "répétable" et "reproductible" au sens du *VIM* *SG* (_cf._ Chapitre
 \@ref(B-data-acquisition)). Tout d'abord, si vous collectez une information
 deux fois sur un individu dans un intervalle de temps restreint, les deux
 valeurs de l'information doivent être les mêmes, ou du moins être suffisamment
-voisines pour être " considérées " comme identiques (condition de
+voisines pour être "considérées" comme identiques (condition de
 répétabilité). La collecte des informations doit être reproductible entre
 opérateurs (on parle de "reproductibilité inter-opérateurs" ).  Pour garantir
 une bonne répétabilité et reproductibilité inter-opérateurs, il faut donc avoir
 standardisé au maximum le protocole de collecte des données, en s'appuyant sur
 un instrument de mesure capable de recueillir les informations avec le minimum
 d'erreurs possibles. Des indicateurs statistiques, tels que les coefficients de
-concordance, permettent de quantifier la "répétabilité" (ou la
-"reproductibilité inter-opérateurs" d'une méthode de mesure).
+concordance, permettent de quantifier la "répétabilité" ou la
+"reproductibilité inter-opérateurs" d'une méthode de mesure.
 
 ## Pour en savoir plus
 
-Pour en savoir plus sur les cahiers de laboratoire, nous vous invitons à aller
-sur le site du CNRS [ici](http://www.cnrs.fr/infoslabos/cahier-laboratoire/).
+Pour en savoir plus sur les cahiers de laboratoire, nous vous invitons à consulter
+le site du CNRS *SG*(http://www.cnrs.fr/infoslabos/cahier-laboratoire/).
 Pour en savoir plus sur la quantification de la répétabilité et de la
-reproductibilité de la façon dont on collecte les données, vous pouvez cliquez
-[ici](https://hal.archives-ouvertes.fr/hal-02103716).
+reproductibilité de la façon dont on collecte les données, vous pouvez consulter le document suivant : 
+(https://hal.archives-ouvertes.fr/hal-02103716). *SG*
