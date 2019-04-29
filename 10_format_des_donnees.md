@@ -26,8 +26,7 @@ quand la mesure a été réalisée, et une autre indiquant par qui elle a été 
 
 Un autre exemple de structure est celui d'un arbre généalogique. Au prime abord, 
 il semblerait naturel d'utiliser une "hiérarchie", mais la vie étant faite de 
-surprises, cette représentation va rapidement s'avérer inadaptée pour concevoir un 
-arbre généalogique clair.
+surprises (décès, divorces, re-mariages, voire mariages entre cousins), cette représentation va rapidement s'avérer inadaptée pour concevoir un arbre généalogique clair.
 
 Un dernier exemple d'information dont la conservation est primordiale : 
 il s'agit du protocole expérimental généralement consigné dans un cahier de 
