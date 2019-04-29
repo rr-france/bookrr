@@ -3,7 +3,7 @@
 La perte de données à tous les niveaux d'un processus de recherche est une
 cause majeure de non reproductibilité. Cela peut aller du simple accident matériel,
 comme par exemple le crash d'un disque, au problème de méthode, comme l'absence 
-d'une politique de sauvegarde ou de règles élementaires de documentation (méta-données). 
+d'une politique de sauvegarde ou de règles élementaires de documentation (métadonnées). 
 
 
 ## Intégrité et curation des données
@@ -27,8 +27,7 @@ De même, dans le cas de résultats produisant un déluge de données (comme par
 exemple le *Large Hydron Collider*) et devant l'impossibilité de tout
 sauvegarder, il faut sélectionner les données à sauvegarder, sachant que
 les autres seront irrémédiablement perdues. Une mauvaise décision initiale peut
-se révéler catastrophique pour peu que vous ayez besoin de ces données
-manquantes.
+se révéler catastrophique pour peu que vous ayez besoin, à une étape ultérieure, de ces données.
 
 Enfin, si vous ne vous êtes pas assuré du contrôle d'accès sur vos données,
 quelqu'un peut venir les modifier par inadvertance et à votre insu, changeant
@@ -49,7 +48,7 @@ portant atteinte à la reproductibilité.
 Lorsque vous manipulez de très larges volumes de données (en termes de nombre
 d'échantillons) il devient tout à fait possible de perdre, non pas les données,
 mais l'accès à ces données. Imaginez : vous avez utilisé un nommage particulier 
-des fichiers (par exemple, pour indiquer la nature de la donnée : *well done* !) 
+des fichiers pour indiquer par exemple la nature de la donnée (*well done* !) 
 mais vous avez égaré le fichier expliquant les règles
 de nommages (*too bad*). Alors que vous possédez l'intégralité de vos données, 
 vous vous trouvez incapable les utiliser.
@@ -58,7 +57,7 @@ vous vous trouvez incapable les utiliser.
 
 Lorsque vous sauvegardez des données sur un support informatique, il est
 important de comprendre qu'un certain nombre de choix sont effectués de façon
-automatique (et sans possibilité de contrôle de votre part). Ces choix dépendent
+automatique et sans possibilité de contrôle de votre part. Ces choix dépendent
 étroitement de l'architecture matérielle de votre ordinateur. Par exemple,
 en ce qui concerne la représentation des nombres en virgule flottante,
 certaines machines vont lire la représentation binaire de gauche à droite alors
@@ -67,12 +66,12 @@ avec le même type de machine, vous n'aurez pas de problème jusqu'au jour où
 vous changerez de machine et observerez alors des valeurs complètement
 erratiques, vous laissant à penser que vos données auront été compromises.
 
-Plus généralement, stocker des données numériques sans en préciser les unités
+Plus généralement, stocker ou transmettre des données numériques sans en préciser les unités
 ni les conventions de codages associées constitue un vecteur important de risques,
 notamment si un tiers désire les réutiliser. Cela fut le cas pour la
 sonde "*Mars Climate Orbiter*" qui s'est désintégrée à la surface de Mars en
 raison d'une communication entre un système de mesure anglo-saxon (émission) et
-un système métrique (réception).
+un système métrique (réception). *SG* https://www.jpl.nasa.gov/missions/mars-climate-orbiter/
 
 ## Obsolescence des données
 
@@ -85,7 +84,7 @@ Or si le format est fermé, vous ne pouvez pas contrôler l'évolution de ce for
 Prenez par exemple un fichier Word créé il y a une vingtaine d'années, 
 pouvez-vous encore le lire aujourd'hui ? 
 Votre version de Word vous assure-t-elle une compatibilité avec ce
-format obsolète ? Vous avez répondu par la négative à ces items ? 
+format obsolète ? Vous avez répondu par la négative à ces questions ? 
 Considérez alors les données comme inutilisables. 
 
 
