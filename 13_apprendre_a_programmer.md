@@ -16,14 +16,14 @@ cliquant sur le bouton correspondant.
 Ce type d'interface intuitive est omniprésent dans les logiciels et 
 simplifie la vie de nombreux utilisateurs. 
 
-Ce type d'interface dans de nombreux logiciels scientifiques existe aussi, 
+Dans de nombreux logiciels scientifiques, ce type d'interface est également disponible, 
 par exemple pour traiter les données ou concevoir des figures. 
-L'exemple le plus célèbre est très certainement le tableur Excel, très utilisé pour faire des traitements statistiques pouvant être relativement compliqués. 
-Or, si dans un premier temps cet outil peut simplifier les traitements, dès que vous souhaiterez effectuer des tâches plus subtiles,
-ou des tâches répétitives, il va rapidement constituer un obstacle. Si vous effectuez des calculs exotiques, vous serez alors contraint d'entrer des formules de calcul complexes dans les cellules. 
+L'exemple le plus célèbre est très certainement le tableur Excel, très utilisé pour faire des traitements statistiques relativement compliqués. 
+Dans un premier temps, cet outil peut simplifier les traitements mais dès que vous souhaiterez effectuer des tâches plus subtiles,
+ou des tâches répétitives, il va rapidement devenir un obstacle. Si vous effectuez des calculs exotiques, vous serez alors contraint d'entrer des formules de calcul complexes dans les cellules. 
 La bonne nouvelle est que, en faisant cela, vous avez commencé à programmer. 
 La mauvaise est que votre calcul n'est pas reproductible. 
-" Mais j'ai sauvé ma feuille Excel pourtant ! ". 
+"Mais j'ai sauvé ma feuille Excel pourtant !". 
 Certes, mais entre le moment où vous avez chargé vos données initiales et 
 le moment ou vous avez sauvé vos résultats, un certain nombre de
 manipulations que vous avez faites n'a pas été enregistré. 
@@ -32,14 +32,14 @@ Par exemple, si vous devez trier vos données selon une certaine colonne,
 les données dans la feuille sauvegardée seront triées mais vous aurez 
 perdu la trace de cette opération de tri et il vous sera facile d'oublier
 de la répéter si vous devez recommencer le traitement avec un autre jeu de données 
-(sauf si vous êtes précautionneux et tenez à jour un cahier de laboratoire).
+(sauf si vous êtes précautionneux et tenez scrupuleusement à jour votre cahier de laboratoire).
 
 
 ## De l'intérêt de la programmation
 
 Pour surmonter les difficultés liées aux interfaces graphiques, il est
 nécessaire de pouvoir exprimer d'une façon claire, documentée et non ambigüe
-ce que l'on souhaite faire. 
+ce que l'on souhaite faire faire au logiciel. 
 C'est ici que la programmation entre en jeu. 
 Plutôt que de cliquer à droite ou à gauche, on va expliquer textuellement,
 à l'aide d'un jeu d'instructions (relativement restreint), ce que l'on souhaite
@@ -64,12 +64,11 @@ mean(table_tri$IMC[1:(nrow(table_tri)/2)])
 En faisant abstraction de la syntaxe particulière (il s'agit ici du langage R)
 de ce programme simple, on comprend néanmoins à la lecture ce qu'il fait :
 (1) charger les données, (2) les trier,  puis (3) calculer la moyenne. 
-On a de fait simplement traduit notre pensée (le traitement que l'on 
-souhaitait réaliser) en jeu d'instructions. 
-L'avantage majeur de cette approche (par rapport à Excel) est que ce
-programme réalise deux objectifs : 
+On a de fait simplement traduit le traitement que l'on 
+souhaitait réaliser en jeu d'instructions. 
+Par rapport à Excel, le programme offre deux avantages majeurs : 
 
-- d'une part, il effectue les traitements,
+- d'une part, il effectue les traitements de manière reproductible,
 - d'autre part, il documente cette chaîne de traitements, si bien que
   quiconque est maintenant en mesure de comprendre et de reproduire
   ces traitements, éventuellement à l'aide d'un autre de langage de
@@ -81,12 +80,12 @@ programme réalise deux objectifs :
 Apprendre à programmer n'est pas tout à fait équivalent à apprendre un langage
 de programmation.  Il est nécessaire de comprendre au préalable ce que l'on
 peut attendre d'un programme et comment exprimer ce que l'on souhaite faire de
-façon non ambigüe car l'ordinateur est extrèmement bête et ne fera que ce que
+façon non ambigüe car l'ordinateur est extrêmement bête (si, si) et ne fera que ce que
 vous lui demandez de faire, ni plus, ni moins.  L'apprentissage de la
 programmation passe donc par la découverte d'un nombre limité de concepts que
-l'on va retrouver dans (à peu près) l'ensemble des langages de programmation.
-Notez que nous parlons de " langages " au pluriel pour refléter leur diversité.
-Les raisons de l'existence de tant de langages différents sont multiples.
+l'on va retrouver dans la plupart des langages de programmation.
+Notez que nous parlons de "langages" au pluriel pour refléter leur diversité.
+Les raisons de l'existence d'une telle variété de langages sont multiples.
 Heureusement pour nous, au cours de ces dernières années, deux langages se sont
 quasiment imposés dans le monde de la recherche : Python et R.  Entendons-nous
 bien : nous ne disons pas que ce sont les seuls langages utilisables dans ce
@@ -98,11 +97,11 @@ physicien théorique discuter avec un sociologue ou bien un doctorant enseigner
 
 Pour commencer à programmer, nous ne saurions trop vous conseiller de commencer
 par apprendre un de ces deux langages.  Le choix entre les deux vous
-appartient, sachant que vous avez tout intèrêt à observer les pratiques dans
+appartient, sachant que vous avez tout intérêt à observer les pratiques dans
 votre domaine ou bien encore à regarder les programmes des conférences telles
 que Scipy (http://conference.scipy.org), EuroScipy (https://www.euroscipy.org),
 useR! (http://www.user2019.fr), Les Rencontres
-R(https://r2018-rennes.sciencesconf.org) ...
+R(https://r2018-rennes.sciencesconf.org) ... *SG*
 
 
 ## Pour en savoir plus
@@ -116,6 +115,7 @@ C'est la raison pour laquelle nous donnons ci-dessous une liste très restreinte
 de ressources accessibles en ligne que nous jugeons de qualité.
 
 ### MOOCs
+*SG*
 
 * [Introduction à la statistique avec R](https://www.fun-mooc.fr/courses/UPSUD/42001S06/session06/about)
 * [Python : des fondamentaux à l'utilisation du langage](https://www.fun-mooc.fr/courses/inria/41001S03/session03/about)
