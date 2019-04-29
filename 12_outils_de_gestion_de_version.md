@@ -3,21 +3,17 @@
 La sauvegarde des étapes successives du développement de documents (textes,
 bases de données, codes, etc.) est une des briques fondamentales de la
 recherche reproductible. Elle permet en effet de retrouver ou de reconstituer
-facilement des versions spécifiques et datées des documents.  La mise en œuvre
+facilement des versions spécifiques et datées des documents. La mise en œuvre
 va de la simple sauvegarde de versions des fichiers, à des sauvegardes
 différentielles n'enregistrant que les modifications.
 
 La mise en œuvre d'une stratégie de gestion de version doit permettre d'éviter
-les cauchemars du type " Je ne retrouve pas mon code / mes données " et permet
-de répondre aux questions :
-
- - quand ?
- - qui ?
- - pourquoi ?
+les cauchemars du type "Je ne retrouve pas mon code / mes données" et permet
+de répondre aux questions : quand ? qui ? pourquoi ?
 
 Nous présentons deux solutions dans ce chapitre :
 - la première s'appuyant sur la mise en place de convention de nommage des dossiers et fichiers, 
-- la seconde, plus technique présentant les outils de versionnage différentiel
+- la seconde, plus technique présentant les outils de versionnage différentiel.
 
 ## Versionnage par nommage de fichiers
 
@@ -32,18 +28,18 @@ Dans ce contexte, il est souvent recommandé de créer un nom de fichier constit
 * la date de sauvegarde, sous format AAAAMMJJ ou AAAA_MM_JJ
 (permettant un tri des dates par ordre alphabétique)
 
-* le titre du fichier, évitant les mots " vides " (article défini, indéfini, etc.)
+* le titre du fichier, évitant les mots "vides" (article défini, indéfini, etc.)
 
 * un numéro de version du document qui sera incrémenté aux étapes
 remarquables de l'évolution du document (v01, v02...)
 
-Le titre ne devrait pas être trop long (sous certains système d'exploitation,
-il doit se limiter à dépasser 31 caractères, extension comprise. Egalement pour 
+Le titre ne devrait pas être trop long : sous certains système d'exploitation,
+il ne doit pas dépasser 31 caractères, extension comprise. Egalement pour 
 des raisons de compatibilité, il est recommandé d'éviter l'utilisation de :
 
-- signes diacritiques : accents, trémas, cédilles par exemple, 
-- de caractères spéciaux
-- d'espaces
+- signes diacritiques ; ex. : accents, trémas, cédilles,  
+- de caractères spéciaux,
+- d'espaces,
 - etc.
 
 
@@ -65,7 +61,7 @@ fichier, on a en effet du mal à savoir qui a fait quoi et pourquoi.
 Conserver les métadonnées de base *via* cette méthode est une bonne habitude à prendre, mais il s'agit d'une approche
 qui a ses limites.
 
-La section suivante présente une approche plus aboutie de la gestion de version, 
+La section suivante présente une approche plus aboutie de la gestion de versions, 
 mais plus technique à mettre en œuvre.
 
 
@@ -77,7 +73,7 @@ d'espace de stockage et peut devenir très incommode pour la gestion de
 projets comportant de nombreux fichiers évoluant à des vitesses différentes.
 Il est en général plus efficace de passer par un logiciel de gestion de versions 
 qui gère automatiquement le stockage de versions différentielles des
-fichiers, les métadonnées de type " qui, quoi, quand, pourquoi ",
+fichiers, les métadonnées de type "qui, quoi, quand, pourquoi",
 et permet de figer des versions du projet à des étapes cruciales du développement.
 
 Ces outils peuvent être intégrés à des logiciels (par exemple des éditeurs de texte 
@@ -89,7 +85,7 @@ RStudio ou Emacs).
 Si un logiciel de gestion de versions est installé sur l'ordinateur de
 l'utilisateur, il est prudent, voire impératif, de mettre en œuvre une
 synchronisation vers un dépôt distant, ce qui présente plusieurs avantages à la
-fois : sauvegarder les travaux, les partager, et de collaborer. Ce dépot
+fois : sauvegarder les travaux, les partager, et collaborer. Ce dépot
 distant peut être sur une plate-forme institutionnelle *SG* (par exemple le
 [GitLab de
 l'Inria](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/gitlab)
@@ -97,11 +93,11 @@ ou de [l'IN2P3](https://gitlab.in2p3.fr/CTA-LAPP/HiPeCTA) ou encore un
 plate-forme privée comme [GitHub](https://github.com/)). En outre, ces
 plates-formes permettent le travail collaboratif sur un projet ou de mettre le
 projet à disposition du public dans des versions bien définies des documents.
-*SG* Pour que la recherche soit reproductible, le lecteur devrait
+Pour que la recherche soit reproductible, le lecteur devrait
 systématiquement disposer du lien vers la version des données ou des codes
 informatiques utilisés dans un article. Pour cela, il est conseillé d'activer
 en plus un archivage pérenne des versions importantes du projet sur un dépôt
-fournissant un identifiant pérenne. Ce sujet sera abordé dans le chapitre
+fournissant un identifiant permanent (ex. DOI). Ce sujet sera abordé dans le chapitre
 \@ref(C-data-share). Dans tous les cas, avant de choisir une solution, il est
 essentiel de se renseigner sur les pratiques en cours dans votre communauté de
 recherche.
@@ -134,7 +130,10 @@ d'obtenir aisément une recherche reproductible :
 > Ainsi, les relecteurs peuvent s'assurer de la reproductibilité de mon
 > étude et j'ai la garantie de disposer de la bonne version des
 > fichiers s'ils me demandent des modifications, même si j'ai continué
-> à développer mes codes en attendant leur retour.
+> à développer mes codes durant ce temps.
+
+
+## Pour en savoir plus
 
 Pour en savoir davantage sur la gestion de versions, vous pouvez vous
 rapporter au module 1 du [MOOC sur la recherche
@@ -143,17 +142,13 @@ reproductible](https://learninglab.inria.fr/mooc-recherche-reproductible-princip
 condition réelle. 
 
 GitLab et GitHub sont des sur-couches Web du logiciel Git ; elles
-permettent une utilisation simplifiée mais ne donnent pas accès à
+en permettent une utilisation simplifiée mais ne donnent pas accès à
 l'ensemble de ses fonctionnalités. Les éditeurs comme RStudio
 proposent une très bonne intégration *via* une interface graphique des
 interactions avec Git. Il est également possible d'utiliser la ligne de
 commandes pour bénéficier de toutes les fonctionnalités de Git.
-
-
-## Pour en savoir plus
-
 Voici quelques moyens d'apprendre à utiliser git et d'aller un peu plus loin :
-
+*SG*
  - [Happy Git With R](https://happygitwithr.com/) par *Jenny Bryan et al.*
  - Le [Software Carpentry Git tutorial](http://swcarpentry.github.io/git-novice/)
  - Le livre Pro Git (gratuit) en [anglais](https://git-scm.com/book/en/v2) ou
