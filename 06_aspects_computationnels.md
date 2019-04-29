@@ -138,7 +138,7 @@ installer les paquets `python3-dateutil`, `python-matplotlib-data`,
 ces paquets dépendent eux-mêmes d'autres paquets. Lorsque l'on récupère
 l'ensemble des paquets nécessaires avec leurs dépendances, voici le graphe qu'on obtient, cf. Fig. 6.1 :
 
-![Dépendances de Matplotlib sous Debian obtenues avec Debtree](img/python3-matplotlib.png "debtree output")
+![Dépendances de Matplotlib sous Debian obtenues avec Debtree](img/python3-matplotlib.png "debtree output") *SG*
 
 Vous remarquerez dans les dépendances que la version n'est pas précisément
 indiquée mais qu'il faut par exemple une version supérieure de
