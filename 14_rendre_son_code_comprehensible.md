@@ -1,11 +1,11 @@
 # Rendre son code compréhensible {#C-code-good}
 
-> " *Programs must be written for people to read, and only incidentally for machines to execute*. "   
+> "*Programs must be written for people to read, and only incidentally for machines to execute*."   
 > -- Harold Abelson
   
 Les chapitres précédents (et en particulier 
-le chap.8 "des problèmes de calculs" [bien mettre le renvoi vers ce chap.8]) 
-ont souligné l'importance des questions de diffusion, de partage de ses codes informatiques. 
+le chap.8 "Des problèmes de calculs" [bien mettre le renvoi vers ce chap.8]) 
+ont souligné l'importance des questions de diffusion et de partage des codes informatiques. 
 Une étape préalable à cette démarche est de rendre son code facilement 
 compréhensible par un lecteur externe. 
 Ce premier lecteur peut être un collègue, comme vous-même : ce qui était clair au moment de la rédaction l'est nettement moins après quelques semaines. 
@@ -31,7 +31,7 @@ la compréhension de son code :
 
 ## Nommer ses variables et ses fonctions de manière informative
 
-> " *There are only two hard things in Computer Science: cache invalidation and naming things*. "  
+> "*There are only two hard things in Computer Science: cache invalidation and naming things*."  
 > -- Phil Karlton
 
 Une manière d'obtenir un code plus facile à comprendre par un observateur extérieur 
@@ -69,7 +69,7 @@ des fonctions aux noms explicites qui permettent  :
 - mais aussi de le condenser et donc de le rendre plus lisible
 <!-- Cette approche de *Don't Repeat Yourself* est un principe qui s'oppose à *Write Everything Twice*. -->
 
-À l'occasion de cette modularisation, il vous faudra également bien réfléchir 
+Dans le cadre de cette modularisation, il vous faudra également bien réfléchir 
 à la portée de vos variables (variable locale ou globale)
 et aux paramètres de vos fonctions afin d'éviter autant que possible les variables 
 globales, les effets de bord étant une source de confusion et d'erreur inépuisable. 
@@ -87,7 +87,7 @@ Mais avant même cette étape, nous pouvons déjà agir sur le processus d'écri
 
 ## Etre explicite
 
-Tim Peters a écrit *The Zen of Python* (que vous pouvez lire en écrivant
+Tim Peters a écrit *The Zen of Python* (que vous pouvez lire en saisissant
 `import this` dans une session Python) qui donne un ensemble de règles qu'il
 faut garder en tête lorsqu'on écrit un programme. 
 Les six premières lignes sont :
@@ -101,16 +101,16 @@ Les six premières lignes sont :
 
 Ces six conseils peuvent paraître plus ou moins évidents à mettre en œuvre pour un
 débutant, mais focalisons-nous sur le deuxième. Il peut être mis en
-œuvre très simplement en refusant par exemple l'usage des " arguments par
-défaut ". " Arguments par défaut " signifie que lorsque vous appelez une fonction qui
+œuvre très simplement en refusant par exemple l'usage des "arguments par
+défaut". "Arguments par défaut" signifie que lorsque vous appelez une fonction qui
 nécessite normalement *n* paramètres, vous appelez celle-ci avec
 un nombre réduit *k* < *n* paramètres, et les valeurs des *n-k* paramètres manquants 
 sont complétées automatiquement avec celles définies par défaut dans la fonction. 
 C'est bien pratique : vous économisez de l'écriture de code, mais en vous 
 reposant sur cette fonctionnalité, vous laissez implicitement à la bibliothèque
-utilisée le soin de définir la valeur des paramètres à votre place. 
-Déléguer votre responsabilité à un tiers peut bien se passer la plupart du temps. 
-Enfin, jusqu'au jour où, après une mise à jour, la valeur d'un de ces *n-k* 
+utilisée le soin de définir à votre place la valeur des paramètres. 
+La plupart du temps, déléguer votre responsabilité à un tiers ne pose pas de problème majeur. 
+Jusqu'au jour où, après une mise à jour, la valeur d'un de ces *n-k* 
 paramètres par défaut est changée ! 
 Vos résultats changent, alors que votre programme n'a pas changé d'un bit. 
 Le problème aurait pu être évité : vous auriez pu expliciter l'ensemble de vos *n* paramètres, 
@@ -152,7 +152,7 @@ dans les données, etc.
 Les commentaires attirent l'attention du lecteur et répondent de manière anticipée à une partie de ses questions.
 
 Enfin, il est possible d'atténuer l'austérité de cette tâche en commentant son code au fur et à mesure de sa rédaction. 
-Si commenter du code peut sembler à peu près aussi attractif que de se faire un tatouage sur le visage quand on ne souhaite pas embrasser une carrière dans le hip hop, on se rend pourtant compte de l'utilité de cette tâche une fois face à des lignes écrites plusieurs mois, voire plusieurs semaines auparavant. 
+Si commenter du code peut sembler à peu près aussi attractif que de se faire un tatouage sur le visage quand on ne souhaite pas embrasser une carrière dans le *hip hop*, on se rend pourtant compte de l'utilité de cette tâche une fois face à des lignes écrites plusieurs mois, voire plusieurs semaines auparavant. 
 
 ## Documenter son code
 
@@ -165,7 +165,7 @@ Au fur et à mesure que le code évolue, sa documentation peut devenir plus
 conséquente et, dans ces cas, cette documentation s'intègrera souvent directement 
 dans le code source grâce à des outils comme Sphynx (pour Python) ou Roxygen (pour R). 
 Il est donc important de bien faire la distinction entre ces deux
-types d'annotations (commentaire et documentation) qui peuvent se retrouver 
+types d'annotations (commentaire et documentation) qui peuvent se retrouver simultanément
 à l'intérieur du code.
 
 ## Utiliser des document computationnels (*notebooks*)
@@ -187,7 +187,7 @@ ou *notebooks* s'inspirent d'une certaine façon de la programmation lettrée
 et proposent une manière de travailler devenue très populaire parmi les chercheurs. 
 
 Les documents computationnels permettent d'intégrer dans un même 
-document : du texte rédactionnel, du code informatique, 
+document : du texte rédactionnel, du code informatique
 et les résultats de ce code. 
 La partie narrative, rédigée dans un langage de balisage très léger 
 (tels que [Markdown](https://daringfireball.net/projects/markdown)), 
@@ -197,10 +197,10 @@ sont automatiquement accolés.
 Cette structure correspond assez bien à la démarche suivie quotidiennement par
 les chercheurs : 
 
-  1. " je propose une hypothèse que je décris " = partie narrative
-  2. " je réalise une expérience/analyse " = j'exécute mon programme
-  3. " j'inspecte le résultat de mon expérience/analyse " = le résultat du programme
-  4. " j'interprète les résultats et je décris mon interprétation " = partie narrative avant de proposer une nouvelle hypothèse
+  1. "Je propose une hypothèse que je décris" = partie narrative
+  2. "Je réalise une expérience/analyse" = j'exécute mon programme
+  3. "J'inspecte le résultat de mon expérience/analyse" = le résultat du programme
+  4. "J'interprète les résultats et je décris mon interprétation" = partie narrative avant de proposer une nouvelle hypothèse
 
 > FIXME: On pourrait peut-être insérer ici une illustration tirée du  [slide 37](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module2/slides/C028AL_slides_module2-fr-gz.pdf)
 > [SVG](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module2/slides/img/example_pi_full.svg)
@@ -216,10 +216,9 @@ Différents outils permettent d'écrire de tels documents, les plus matures éta
 De tels documents computationnels offrent de nombreux avantages : 
 
 - d'une part ils permettent une meilleure transparence du code 
-effectivement exécuté, 
-- et d'autre part, ils facilitent sa compréhension car le code devient une partie intégrante d'une trame narrative.
-Certains *notebooks* peuvent ainsi quasiment s'apparenter à des articles. 
-Enfin, ces documents peuvent répondre à des besoins de traçabilité en raison de leur caractère dynamique : on obtient en effet des cellules de codes prototypes qu'il est possible de réécrire et de réexécuter avec des paramètres différents.  
+effectivement exécuté,
+- d'autre part, ils facilitent sa compréhension car le code devient une partie intégrante d'une trame narrative ; certains *notebooks* peuvent ainsi quasiment s'apparenter à des articles,
+- enfin, ces documents peuvent répondre à des besoins de traçabilité en raison de leur caractère dynamique : on obtient en effet des cellules de codes prototypes qu'il est possible de réécrire et de réexécuter avec des paramètres différents.  
 
 Pour en savoir davantage sur les documents computationels, vous pouvez vous rapporter aux
 module 2 et 3 du [MOOC sur la recherche
@@ -236,7 +235,7 @@ les *design patterns*, etc.
 
 Dès lors qu'il est question de transformer des
 quantités importantes de données par des calculs complexes, le concept de 
-[systèmes de workflows scientifiques](https://en.wikipedia.org/wiki/Scientific_workflow_system)
+[systèmes de *workflows* scientifiques](https://en.wikipedia.org/wiki/Scientific_workflow_system)
 trouve toute sa pertinence. 
 Il existe de nombreux *workflows* répondant aux besoins de 
 différentes communautés scientifiques : astrophysique, génétique, etc. 
@@ -253,5 +252,5 @@ ses travaux reproductibles.
 
 ## Pour en savoir plus
 
-Le sujet des workflows est développé dans un webinar [Reproducible Science in Bioinformatics: Current Status, Solutions and Research Opportunities](https://github.com/alegrand/RR_webinars/blob/master/6_reproducibility_bioinformatics/index.org).
+Le sujet des *workflows* est développé dans un webinar [*Reproducible Science in Bioinformatics: Current Status, Solutions and Research Opportunities*](https://github.com/alegrand/RR_webinars/blob/master/6_reproducibility_bioinformatics/index.org).
 
