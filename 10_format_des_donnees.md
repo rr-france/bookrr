@@ -12,7 +12,7 @@ natures très variées. Si on peut spontanément penser à des nombres, les cher
 travailler sur des images ou du texte. Le plus souvent, les chercheurs travaillent en fait sur une "collection" de données liées les unes aux autres. La relation entre ces données est essentielle. 
 
 Par exemple, il peut être commode de rassembler des informations sur
-des patients sous forme d'une *table* comportant une ligne pour chaque
+des patients sous forme d'une "table" comportant une ligne pour chaque
 individu et une colonne pour chaque type d'information (nom, âge,
 sexe, nature du médicament administré, dose, taux de glycémie après 1
 heure, taux de glycémie après 5 heures). Dans ce cas, le nom et le
@@ -25,11 +25,10 @@ quand la mesure a été réalisée, et une autre indiquant par qui elle a été 
 Un autre exemple de structure est celui d'un arbre généalogique. Au prime abord, il semblerait naturel d'utiliser une
 "hiérarchie", mais la vie étant faite de surprises, cette représentation va rapidement s'avérer inadaptée pour concevoir un arbre généalogique clair.
 
-Un dernier exemple d'information dont la conservation est primordiale
-est celle du protocole expérimental que l'on consigne généralement
-dans un cahier de laboratoire. On structure souvent cette information
-de façon chronologique avec des annotations sémantiques (qui ? quand ?
-où ? pourquoi ? dans quel contexte ? ...). Dans tous les cas, la question
+Un dernier exemple d'information dont la conservation est primordiale : 
+il s'agit du protocole expérimental généralement consigné dans un cahier de laboratoire. On structure souvent cette information
+de façon chronologique avec des annotations sémantiques : qui ? quand ?
+où ? pourquoi ? dans quel contexte ? etc. Dans tous les cas, la question
 du lien entre ce cahier et les données archivées doit être posée et
 résolue.
 
