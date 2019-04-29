@@ -7,11 +7,25 @@ vraisemblables, mais vous souhaitons de ne pas trop vous reconnaître dans ces
 situations de crise ! Nous essayons de vous proposer d'intervenir de manière
 curative, mais aussi préventive.
 
-## Quand mettre en œuvre les bonne pratiques ?
-Il existe des solutions applicables à court comme à plus long terme. Si le déploiement de certaines solutions nécessitent des compétences techniques avancées, la reproductibilité de la recherche demeure peut-être avant tout une question culturelle dans la mesure où il s'agit de faire évoluer des pratiques parfois solidement ancrées. La crainte de perdre du temps en perdant ses repères est une problématique majeure, d'où l'approche pragmatique du présent ouvrage. 
+## Quand mettre en œuvre les bonnes pratiques ?
+Il existe des solutions applicables à court comme à plus long terme. Si le déploiement de certaines solutions nécessite des compétences techniques avancées, la reproductibilité de la recherche demeure peut-être avant tout une question culturelle, dans la mesure où il s'agit de faire évoluer des pratiques parfois solidement ancrées. La crainte de perdre du temps en modifiant ses repères est une problématique majeure, d'où l'approche pragmatique du présent ouvrage. 
 En outre, comment accompagner l'adoption de nouvelles pratiques à l'échelle collective, qu'il s'agisse d'un laboratoire ou d'une communauté disciplinaire ?
-Par exemple, pour un directeur d'unité ou d'équipe, il pourrait être tentant d'imposer tout ou partie des méthodes décrites en vue d'une plus grande efficience, mais faire évoluer les pratiques quotidiennes de ses collègues constitue un exercice délicat. 
-De fait, une approche très progressive qui valorise l'implication directe des individus a davantage de chances d'aboutir (ou moins de risques d'être rejetée, selon que vous voyez le verre à moitié plein ou à moitié vide). Au fil de l'ouvrage, nous décrivons des situations de crise, moins par goût pour les histoires d'horreur que par conviction que l'identification des problèmes couramment rencontrés constitue l'une des meilleures options pour aborder la question de la reproductibilité. 
+Par exemple, pour un directeur d'unité ou d'équipe, il pourrait être tentant d'imposer tout ou partie des méthodes décrites en vue d'une plus grande efficience, mais faire évoluer les pratiques quotidiennes de ses collègues constitue un exercice délicat. *SG* @Article {Barba142,
+author = {Barba, Lorena A.},
+title = {The hard road to reproducibility},
+volume = {354},
+number = {6308},
+pages = {142--142},
+year = {2016},
+doi = {10.1126/science.354.6308.142},
+publisher = {American Association for the Advancement of Science},
+issn = {0036-8075},
+URL = {https://science.sciencemag.org/content/354/6308/142},
+eprint = {https://science.sciencemag.org/content/354/6308/142.full.pdf},
+journal = {Science}
+}
+De fait, une approche très progressive qui valorise l'implication directe des individus a davantage de chances d'aboutir (ou moins de risques d'être rejetée, selon que vous voyez le verre à moitié plein ou à moitié vide). 
+Au fil de l'ouvrage, nous décrivons des situations de crise, moins par goût pour les histoires d'horreur que par conviction que l'identification des problèmes couramment rencontrés constitue l'une des meilleures options pour aborder la question de la reproductibilité. 
 
 ## Concrètement, que changer et comment s'y prendre ?
 Bonne nouvelle : il est très peu probable que votre recherche soit à 100% non reproductible. La palette des solutions à votre disposition est variée ; en fonction de vos compétences et de vos urgences, vous pouvez choisir d'agir sur : 
@@ -22,4 +36,4 @@ Bonne nouvelle : il est très peu probable que votre recherche soit à 100% non
 - les versions et les archives, 
 - les licences.
 
-Bonne nouvelle bis : le présent ouvrage a été conçu pour être hautement "cherry picking proof". Selon l'état de vos pratiques actuelles, les chapitres peuvent donc être lus dans l'ordre qui vous conviendra le mieux, même si nous conseillons bien sûr de tous les lire, voire de diffuser cet ouvrage auprès de vos collègues et étudiants.
+Bonne nouvelle bis : le présent ouvrage a été conçu pour être hautement "*cherry-picking-proof*". Selon l'état de vos pratiques actuelles, les chapitres peuvent donc être lus dans l'ordre qui vous conviendra le mieux, même si nous conseillons bien sûr de tous les lire, voire de diffuser cet ouvrage auprès de vos collègues et étudiants.
