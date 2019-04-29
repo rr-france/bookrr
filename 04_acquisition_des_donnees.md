@@ -4,15 +4,15 @@
 
 Dans une démarche de recherche, la première étape est bien souvent l'aquisition
 d'information, que ce soit à partir de la collecte de nouvelles mesures expérimentales 
-ou à partir de données déjà publieés.
+ou à partir de données déjà publiées.
 
 
 ## Absence de standardisation de la collecte des informations
 
 Dans la grande majorité des cas, la production de résultats issus d'une recherche passe par
-la collecte d’informations. Ces informations sont recueillies sur des " unités " (une 
+la collecte d’informations. Ces informations sont recueillies sur des "unités" (une 
 unité pouvant être une pièce mécanique, un être vivant, etc.). Ce que l’on entend par 
-" informations " sont les caractéristiques de chaque unité qui fait l’objet de la 
+"informations" sont les caractéristiques de chaque unité qui fait l’objet de la 
 recherche (par exemple : la résistance à la traction d’un matériau, la concentration en 
 glucose d’une personne atteinte de diabète, ou bien encore son âge, son poids, etc.). 
 
@@ -47,9 +47,8 @@ sont évoquées dans le chapitre \@ref(C-data-acquisition).
 
 Dans cette section, en vue d'examiner les impacts de l'étape 
 de la collecte de données, nous allons utiliser une définition 
-particulièrement précise des termes " reproductibilité " et " répétabilité ", 
-en utilisant les définitions métrologiques de ces termes 
-(dont l'acception peut parfois varier d'un domaine spécifique à l'autre). 
+particulièrement précise des termes "reproductibilité" et "répétabilité", 
+en utilisant leur définition métrologique. 
 
 ### Quelques définitions issues du *Vocabulaire International de Métrologie*
 
@@ -58,27 +57,27 @@ du *Vocabulaire International de Métrologie (VIM)* car elles représentent l’
 récent de normalisation dans ce domaine *SG*(téléchargeable ici : 
 https://www.bipm.org/en/publications/guides/).
 
-La **fidélité** de mesure s'entend comme : " l’étroitesse de l'accord entre les indications ou les 
+La **fidélité** de mesure s'entend comme : "l’étroitesse de l'accord entre les indications ou les 
 valeurs mesurées obtenues par des mesurages répétés du même objet ou d'objets similaires 
-dans des conditions spécifiées. "
+dans des conditions spécifiées."
 
 La **répétabilité** est la fidélité de mesure dans les conditions de mesures suivantes : 
-" conditions qui comprennent la même procédure de mesure, les mêmes opérateurs, le même 
+"conditions qui comprennent la même procédure de mesure, les mêmes opérateurs, le même 
 système de mesure, les mêmes conditions de fonctionnement et le même lieu, ainsi que des 
 mesurages répétés sur le même objet ou des objets similaires pendant une courte période 
-de temps. "
+de temps."
 
 La **reproductibilité** est la fidélité de mesure dans les conditions de mesures suivantes : 
-" conditions qui comprennent des lieux, des opérateurs et des systèmes de mesure différents, 
-ainsi que des mesurages répétés sur le même objet ou des objets similaires. "
+"conditions qui comprennent des lieux, des opérateurs et des systèmes de mesure différents, 
+ainsi que des mesurages répétés sur le même objet ou des objets similaires."
 
 
 ### Impact d’une absence de répétabilité ou de reproductibilité dans la collecte des informations
 
-Si la collecte d’une information n’est pas " répétable " au sens du *VIM* défini ci-dessus, les 
+Si la collecte d’une information n’est pas "répétable" au sens du *VIM* défini ci-dessus, les 
 conditions d’une recherche reproductible ne peuvent alors pas être remplies : vous n’obtiendriez 
 pas les mêmes résultats à partir d’informations collectées sur des unités identiques, évalués 
-dans les mêmes conditions par un même opérateur. Si la collecte des données n’est pas " reproductible " 
+dans les mêmes conditions par un même opérateur. Si la collecte des données n’est pas "reproductible" 
 d’un opérateur à un autre au sens du *VIM*, les conditions d’une recherche reproductible ne sont pas non 
 plus remplies : personne d’autre que vous ne pourrait obtenir les mêmes résultats sur des unités 
 identiques évaluées dans les mêmes conditions.
@@ -94,7 +93,7 @@ Deux questions se posent alors :
 si cette collecte n’est pas standardisée, votre collègue et vous n’obtiendrez potentiellement 
 pas les mêmes valeurs des informations collectées lorsque vous évaluez pourtant les mêmes unités. 
 - la seconde concerne l'outils de partage de l'information : dans quel document, sur quel support, 
-allez-vous collecter les données, pour garantir que vous et votre collègue n’allez pas effacer 
+allez-vous collecter les données, pour garantir que vous et votre collègue n’allez pas effacer ou affecter
 les informations collectées par l’autre ?
 
 
@@ -105,10 +104,10 @@ la littérature. Dans ce genre de cas, une intervention manuelle est souvent né
 pour constituer la base de données. 
 
 Considérons d'abord le cas, fréquent dans certains domaines (et *a priori* favorable), 
-où les données d'intérêt sont dans le fichier pdf d'un article ou de son supplément. 
-Lorsqu'on effectue un copier/coller d'une partie de fichier pdf vers un éditeur de texte, 
+où les données d'intérêt sont dans le fichier PDF d'un article ou de son supplément. 
+Lorsqu'on effectue un copier/coller d'une partie de fichier PDF vers un éditeur de texte, 
 les sources de contrariété sont multiples (et dépendent largement du logiciel utilisé pour 
-afficher le fichier pdf). Les plus fréquemment rencontrées peuvent être : 
+afficher le fichier PDF). Les plus fréquemment rencontrées peuvent être : 
   
  - une impossibilité éventuelle de gérer correctement des tables complexes 
   (avec des cellules vides ou une table pivotée);
@@ -119,8 +118,8 @@ afficher le fichier pdf). Les plus fréquemment rencontrées peuvent être :
    ou demi-tiret, ne pouvant alors pas être interprété par les codes de calcul.
 
 Après extraction des données, une étape de correction manuelle est donc souvent indispensable,
-qui constitue en elle-même une source potentielle d'erreur (en plus de ne pas toujours être 
-effectuée de façon traçable). 
+qui constitue en elle-même une source potentielle d'erreur, en plus de ne pas toujours être 
+effectuée de façon traçable. 
 La récupération de données à partir d'images (OCR) présente des problèmes similaires.
 
 Et pour le chercheur aventureux, copier/coller les données collectées dans un tableur peut 
@@ -134,7 +133,7 @@ Les solutions pour faire face aux problèmes évoqués dans ce chapitre,
 dépendent du collecteur de données, mais également de l'émetteur. 
 
 Le collecteur de données pourra se reporter aux solutions présentées dans les chapitres 
-\@ref(C-data-acquisition) et \@ref(C-code-learn)
+\@ref(C-data-acquisition) et \@ref(C-code-learn) *SG*
 pour automatiser et tracer au maximum le processus de collecte (d'autant plus que le volume 
 de données est important et/ou si la tâche est répétitive).
  
@@ -143,9 +142,9 @@ L'emetteur de données pourra se reporter aux solutions présentées dans les ch
 sur les règles de bonne pratique quant à l'archivage des données dans des formats 
 ouverts et lisibles par la machine.
 
-**NB :** en tant que chercheur, nous sommes souvent l'émetteur de données 
-pour un autre chercheur, et il faut intégrer cela dans nos bonnes pratiques 
-de partage de nos résultats. 
+**NB :** en tant que chercheurs, nous sommes souvent émetteurs de données 
+pour d'autres chercheurs. De fait, nous devrions intégrer cet aspect dans nos bonnes pratiques 
+de partage de résultats. 
 
 
 
