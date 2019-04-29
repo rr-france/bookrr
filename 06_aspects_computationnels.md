@@ -1,9 +1,9 @@
 # Programmation et calcul {#B-code-aspect}
 
-Les problèmes inhérents au calcul et aux codes associés partagent des similarités avec les problèmes liés aux données (par exemple la non disponibilité). Toutefois, les questions de calcul ont leurs spécificités du fait de leur nature opératoire : il s'agit d'exécuter ce code afin d'obtenir un résultat. Or, c'est lors de cette étape d'exécution que vont surgir un certain nombre de problèmes que l'on peut classer en deux grandes catégories : 
+Les problèmes inhérents au calcul et aux codes associés partagent des similarités avec les difficultés liées aux données (par exemple la non disponibilité). Toutefois, les questions de calcul ont leurs spécificités du fait de leur nature opératoire : il s'agit d'exécuter ce code afin d'obtenir un résultat. Or, c'est lors de cette étape d'exécution que vont surgir un certain nombre de complications que l'on peut classer en deux grandes catégories : 
 
-- d'une part, ceux qui empêchent d'obtenir un résultat 
-- d'autre part, ceux qui rendent un résultat différent voire faux. 
+- d'une part, celles qui empêchent d'obtenir un résultat 
+- d'autre part, celles qui rendent un résultat différent voire faux. 
 
 Si le premier type de problème est ennuyeux, le second type de problème est d'autant plus grave qu'il est difficile à détecter.
 
@@ -22,19 +22,19 @@ Si le premier type de problème est ennuyeux, le second type de problème est d'
 
 En guise de préambule, débutons par une liste non exhaustive des cas où l'on n'a tout simplement pas ou plus accès au programme à exécuter : 
 
-* **Les logiciels propriétaires et le "licence d'exploitation" bingo** : votre équipe/structure a cessé de payer la licence. Variante : ce logiciel est disponible dans l'université d'un collègue mais pas dans l'établissement où vous travaillez actuellement. Autre variante : vous avez accès au logiciel, mais seul un nombre restreint de personnes peut y accéder en même temps, via un système de jetons. De fait, vous vous retrouvez à devoir attendre un bon moment avant d'y arriver.
+* **Les logiciels propriétaires ou la loterie de la licence d'exploitation** : votre équipe/structure a cessé de payer la licence. Variante : ce logiciel est disponible dans l'université d'un collègue mais pas dans l'établissement où vous travaillez actuellement. Autre variante : vous avez accès au logiciel, mais seul un nombre restreint de personnes peut y accéder en même temps, via un système de jetons. De fait, vous vous retrouvez à devoir attendre un bon moment avant d'y arriver.
 
 * **Un seul code vous manque et tout est dépeuplé** : le code a été développé "en interne". Il arrive (trop souvent) qu'à la suite d'un crash disque, d'un vol d'ordinateur portable, du départ du développeur principal, ... que l'on n'ait simplement plus accès au logiciel. C'est souvent le résultat d'une politique (ou d'une absence de politique) de sauvegarde ou de partage d'informations au sein d'une équipe.
 
-* **Le numéro que vous avez demandé n'est plus attribué** : assez souvent, il s'agit d'un code développé "en externe" (dans une autre équipe de recherche par exemple) que l'on souhaite ré-exécuter, par exemple pour s'y comparer ou bien pour vérifier si on obtient bien des résultats similaires avec une autre méthode. En général, on cherche alors le code sur le web mais il est assez courant que l'URL indiquée dans l'article ne soit plus accessible car le développeur (doctorant/postdoctorant) a depuis quitté l'équipe où il travaillait et que sa page web a été supprimée ou complètement
+* **Le numéro que vous avez demandé n'est plus attribué** : assez souvent, il s'agit d'un code développé "en externe" (dans une autre équipe de recherche par exemple) que l'on souhaite ré-exécuter, par exemple pour avoir un point de comparaison ou bien pour vérifier si on obtient bien des résultats similaires avec une autre méthode. En général, on cherche alors le code sur le web mais il est assez courant que l'URL indiquée dans l'article ne soit plus accessible car le développeur a depuis quitté l'équipe où il travaillait et que sa page web a été supprimée ou complètement
   restructurée. Ce problème est connu sous le nom d'[*URL decay*](https://www.spinellis.gr/sw/url-decay/) ou de [*Link
   Rot*](https://en.wikipedia.org/wiki/Link_rot). *SG*
 
-* **Cachez ce code que je ne saurais voir** : enfin, les auteurs du code peuvent tout simplement ne pas souhaiter partager ce code, par exemple parce qu'ils jugent qu'il n'est pas montrable en l'état (pas ou peu commentaires, structure horrible cachant des erreurs) ou encore pour conserver ce qu'ils considèrent comme un avantage compétitif.
+* **Cachez ce code que je ne saurais voir** : enfin, les auteurs du code peuvent tout simplement ne pas souhaiter le partager, par exemple parce qu'ils jugent qu'il n'est pas montrable en l'état (pas ou peu commentaires, structure horrible cachant des erreurs) ou encore pour conserver ce qu'ils considèrent comme un avantage compétitif.
 
-Si cette question vous intéresse, vous pouvez lire les travaux de Collberg et Proebsting *SG*[@10.1145/2812803] qui étudient les causes d'incapacité à réexécuter du code dans la communauté de recherche *Computer Systems*, pourtant très au fait des aspects logiciels. Vous y trouverez de nombreux témoignages (assez drôles si c'était sans conséquences !) issus d'une étude de terrain ; vous pourrez notamment lire les excuses les plus couramment utilisées pour justifier une incapacité à mettre à donner accès au code derrière une publication.
+Si cette question vous intéresse, vous pouvez lire les travaux de Collberg et Proebsting *SG*[@10.1145/2812803] qui étudient les causes d'incapacité à réexécuter du code dans la communauté de recherche *Computer Systems*, pourtant très au fait des aspects logiciels. Vous y trouverez de nombreux témoignages (assez drôles si c'était sans conséquences !) issus d'une étude de terrain ; vous pourrez notamment lire les excuses les plus couramment utilisées pour justifier une incapacité à donner accès au code derrière une publication.
 
-## Comment lance-t-on ce code ? ("Allô Houston")
+## Comment lance-t-on ce code ? ("Allô Houston ?")
 
 Lorsque l'on fait de la recherche, il est courant de devoir développer soi-même
 un code pour répondre à un besoin spécifique. Que ce soit un "gros" code ou un
@@ -61,32 +61,32 @@ impossible. Mais admettons que vous ayez réussi à inspecter les sources et que
 vous ayez les compétences pour le comprendre (*a minima*, un langage de
 programmation que vous connaissez).
 
-* Les codes de recherche, développés pour des besoins spécifiques, sont souvent
-  des "prototypes" et il est rare de prendre le temps de rédiger une
-  documentation interne (à destination des développeurs). Et quand bien même il
-  y aurait des commentaires, encore faut-il qu'ils soient compréhensibles (*a
-  minima* en anglais) et qu'ils correspondent à la réalité (quand un code évolue
-  vite, on ne prend pas toujours le temps de mettre à jour les commentaires et
-  la documentation au fur et à mesure) sinon ces commentaires risquent plus de
-  vous fourvoyer que de vous aider.
+Les codes de recherche, développés pour des besoins spécifiques, sont souvent
+des prototypes et il est rare de prendre le temps de rédiger une
+documentation interne (à destination des développeurs). Et quand bien même il
+y aurait des commentaires, encore faut-il qu'ils soient compréhensibles donc *a
+minima* en anglais. Par ailleurs, ils doivent aussi correspondre à la réalité : quand un code évolue
+vite, on ne prend pas toujours le temps d'actualiser au fur et à mesure les commentaires et
+la documentation. Si ces critères ne sont pas réunis, les commentaires risquent davantage de
+vous induire en erreur que de vous aider.
 
-* Il y a un dicton célèbre en informatique qui dit “*Programs must be written
-  for people to read, and only incidentally for machines to execute*.” C'est une
-  citation d'[Harold Abelson](https://en.wikipedia.org/wiki/Hal_Abelson) tirée
-  de son livre *Structure and Interpretation of Computer Programs* publié en
-  1979 *SG*. Commenter, c'est une chose, mais lorsque l'on cherche à comprendre un
-  programme, on se rend vite compte qu'il est indispensable que les noms de
-  variables et de fonctions aient été bien choisis, que le code ait été été
-  bien structuré avec des fonctions au rôle clairement défini, sans quoi le
-  code devient totalement incompréhensible (ce qui est précisemment l'objet du
-  concours "Obfuscted C"). De même, lorsque qu'il s'agit d'un code conséquent
-  réparti dans de nombreux fichiers, une mauvaise convention de nommage des
-  fichiers ou bien l'usage d'une structure de fichiers absconse empêchent
-  toute tentative de compréhension.
+Il y a un dicton célèbre en informatique qui dit “*Programs must be written
+for people to read, and only incidentally for machines to execute*.” C'est une
+citation d'[Harold Abelson](https://en.wikipedia.org/wiki/Hal_Abelson) tirée
+de son livre *Structure and Interpretation of Computer Programs* publié en
+1979 *SG*. Commenter, c'est une chose, mais lorsque l'on cherche à comprendre un
+programme, on se rend vite compte qu'il est indispensable que les noms de
+variables et de fonctions aient été bien choisis, que le code ait été été
+bien structuré avec des fonctions au rôle clairement défini, sans quoi le
+code devient totalement incompréhensible (ce qui est précisemment l'objet du
+concours "Obfuscated C" *SG* http://ioccc.org/). De même, lorsque qu'il s'agit d'un code conséquent
+réparti dans de nombreux fichiers, une mauvaise convention de nommage des
+fichiers ou bien l'usage d'une structure de fichiers absconse empêchent
+toute tentative de compréhension.
   
-* Enfin, même si le code est relativement compréhensible, il est possible que
-  des *bugs* (des erreurs de programmation) soient à l'origine de vos malheurs
-  mais comment les trouver ?
+Enfin, même si le code est relativement compréhensible, il est possible que
+des *bugs* (des erreurs de programmation) soient à l'origine de vos malheurs
+mais comment les trouver ?
 
 ## Quelle version du code ?
 
@@ -136,10 +136,9 @@ C'est ici la version 2.1.1-2 qui est présente et, pour l'installer, il a fallu
 installer les paquets `python3-dateutil`, `python-matplotlib-data`,
 `python3-pyparsing`, etc. C'est ce qu'on appelle les "dépendances". Mais pour
 ces paquets dépendent eux-mêmes d'autres paquets. Lorsque l'on récupère
-l'ensemble des paquets nécessaire avec leurs dépendances, voici ce qu'on
-obtient :
+l'ensemble des paquets nécessaires avec leurs dépendances, voici le graphe qu'on obtient, cf. Fig. 6.1 :
 
-![Dépendances de Matplotlibs sous debian obtenues avec debtree](img/python3-matplotlib.png "debtree output")
+![Dépendances de Matplotlib sous Debian obtenues avec Debtree](img/python3-matplotlib.png "debtree output")
 
 Vous remarquerez dans les dépendances que la version n'est pas précisément
 indiquée mais qu'il faut par exemple une version supérieure de
@@ -151,11 +150,11 @@ moins à la version `2.2.0`.
 En résumé, tout code, aussi petit soit-il, possède tout un arbre de dépendances
 qui sont le plus souvent cachées. Ce code s'exécute donc dans un environnement
 donné et une différence, même insignifiante, de cet environnement peut conduire
-à des résultates différents, c'est à dire à des problèmes de non
+à des résultats différents, c'est-à-dire à des problèmes de non
 reproductibilité.
 
 Si vous pensez que ce problème n'est que théorique, nous vous invitons
-à lire *SG* [@gronenschild_effects_2012]
+à lire Gronenschild et ses co-auteurs *SG* [@gronenschild_effects_2012]
 qui étudient l'influence de la version de MacOSX et de FreeSurfer, un logiciel
 permettant de mesurer l'épaisseur corticale et le volume de structures
 neuroanatomiques.
@@ -163,35 +162,34 @@ neuroanatomiques.
 ## Le chaos numérique
 
 Les nombres manipulés par ordinateur ne sont pas des nombres réels, avec une
-précision infinie, mais des nombres dit *à virgule flottante* qui n'obéissent
+précision infinie, mais des nombres dits "à virgule flottante" qui n'obéissent
 pas exactement aux mêmes règles que celles que l'on nous enseigne à
 l'école. Par exemple, si vous demandez à, à peu près n'importe quel ordinateur
 si `0.1*3==0.3` ou si `3-2.9==0.1` il vous répondra très certainement `FALSE`
 (Faux) dans les deux cas. Cela est dû au fait que la représentation au format
-binaire de ces nombres (en apparence simple) n'est pas exacte. Beaucoup de
-machines à calculer ayant une représentation interne en base 10 un peu
-différente, nous n'avons pas été habitués tôt à ce genre de problème, sauf
-peut-être pour des nombres du genre $1/3\approx 0,3333333$. Il faut donc faire
-très attention lorsque l'on programme à cette subtilité qui joue des tours
+binaire de ces nombres, en apparence simple, n'est pas exacte. Beaucoup de
+machines à calculer ont une représentation interne en base 10 un peu
+différente, or, nous n'avons pas été habitués tôt à ce genre de problème, sauf
+peut-être pour des nombres du genre $1/3\approx 0,3333333$. Lorsque l'on programme, il faut donc faire
+très attention à cette subtilité qui joue des tours
 dès que l'on veut comparer deux nombres.
 
 Un autre problème au prime abord surprenant, mais probablement plus simple à
 comprendre, est la non associativité des opérations. Si avec les nombres réels,
-il va de soit que $(a+b)+c=a+(b+c)$, ce n'est pas le cas avec les nombres en
-virgules flottante. Par exemple, `(1e-10+1e10)-1e10` vaut `0` alors que
+il va de soi que $(a+b)+c=a+(b+c)$, ce n'est pas le cas avec les nombres en
+virgules flottantes. Par exemple, `(1e-10+1e10)-1e10` vaut `0` alors que
 `1e-10+(1e10-1e10)` vaut `1e-10`. Même une simple moyenne peut donc devenir
 problématique et, non, il ne suffit pas de trier les nombres avant de les
 additionner pour résoudre le problème.
 
 Comme vous utilisez vraisemblablement un ordinateur parallèle (même votre
 téléphone a maintenant plusieurs cœurs de calcul), il est possible que la somme
-$a_1 + \dots +a_n$ ne soient pas calculé comme vous l'imaginez (i.e.,
+$a_1 + \dots +a_n$ ne soit pas calculée comme vous l'imaginez (i.e.,
 $(((((((a_1 + a_2) + a_3) + \dots +a_n)$), mais en plusieurs parties (i.e.,
 $((((a_1 + a_2) + \dots +a_{n/2}) + ((((a_{n+1} + a_{n+2}) + \dots +a_n)$),
 chaque cœur de votre processeur réalisant une des sommes partielles, la somme
-finale étant faite à la fin. Le simple fait de passer d'un ordinateur à l'autre
-(qui n'auraient pas exactement le même nombre de cœurs), même avec exactement
-le même environnement, peut donc changer le résultat. Les cœurs d'un ordinateur
+finale étant faite à la fin. Les résultats peuvent changer par le simple fait de passer d'un ordinateur à un autre alors que les machines semblent avoir le même environnement. Les ordinateurs peuvent ne pas avoir exactement le même nombre de cœurs. 
+Les cœurs d'un ordinateur
 n'allant pas toujours exactement à la même vitesse, un code un peu optimisé
 ajustera la taille des sommes partielles pour terminer le calcul le plus
 rapidement possible et le résultat du calcul variera donc d'une exécution sur
@@ -203,9 +201,27 @@ problématiques lorsque le système sous-jacent correspond par exemple à la
 discrétisation d'une équation différentielle. Le calcul est alors très sensible
 aux conditions initiales et l'accumulation des imprécisions peut amener à une
 catastrophe (voir notamment [The Patriot Missile
-Failure](http://www-users.math.umn.edu/~arnold/disasters/patriot.html))
+Failure](http://www-users.math.umn.edu/~arnold/disasters/patriot.html)) *SG*
 
-Il y a de nombreux articles décrivant ce genre de cauchemars. Vous pouvez
+Il y a de nombreux articles décrivant ce genre de cauchemars. *SG* @Article{Feher2012,
+Title = {Numerical Errors in Minimization Based Binding Energy Calculations.},
+Author = {Feher, Miklos and Williams, Christopher I.},
+Journal = {J. Chem. Inf. Model.},
+Year = {2012},
+Volume = {52},
+Pages = {3200–3212},
+Doi = {10.1021/ci300298d}
+}
+@Article{Feher2012a,
+Title = {Numerical errors and chaotic behavior in docking simulations.},
+Author = {Feher, Miklos and Williams, Christopher I.},
+Journal = {J Chem Inf Model},
+Year = {2012},
+Number = {3},
+Pages = {724--738},
+Volume = {52},
+Doi = {10.1021/ci200598m},
+Vous pouvez
 vouloir lire le classique *SG* [What Every Computer Scientist Should Know About Floating-Point Arithmetic David Goldberg, Computing Surveys, 1991](plato.la.asu.edu/MAT420/float2.pdf) ou encore les travaux de Stodden et ses collègues *SG* [/Assessing
 Reproduciblity: An Astrophysical Exemple of Computationnal Uncertainty in the
 HPC context/](http://web.stanford.edu/~vcs/talks/ResCuESC2018-STODDEN.pdf).
