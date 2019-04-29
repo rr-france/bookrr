@@ -3,15 +3,15 @@
 
 ## Auteurs {-}
 
-Ce livre a été rédigé de manière collaborative par plusieurs auteurs. Qui sont nos auteurs ?
+Ce livre a été rédigé de manière collaborative par plusieurs auteurs. Qui sont-ils ?
 
 
 ### Loïc Desquilbet {-}
 
 Enseignant-chercheur en biostatistique et en épidémiologie clinique à
-[l’Ecole nationale vétérinaire d’Alfort](https://www.vet-alfort.fr/), 
-Loïc Desquilbet travaille dans le domaine de la recherche clinique vétérinaire, incluant la validation de méthodes de mesure (répétabilité, reproductibilité, et concordance de méthodes). Il travaille sur SAS et a conçu une macro SAS pour prendre en 
-compte les variables quantitatives dans un modèle multivarié. Ses enseignements visent à former les étudiants à l’analyse critique d’article.
+[l’Ecole Nationale Vétérinaire d’Alfort](https://www.vet-alfort.fr/), Loïc Desquilbet travaille dans le domaine de la recherche clinique vétérinaire, incluant la validation de méthodes de mesure (répétabilité, reproductibilité, et concordance de méthodes). 
+Il travaille sur SAS et a conçu une macro SAS pour prendre en 
+compte les variables quantitatives dans un modèle multivarié. Ses enseignements visent à former les étudiants à l’analyse critique d’articles.
 
 - [site web](https://loicdesquilbet.wixsite.com/biostat-epidemio) 
 
@@ -22,6 +22,7 @@ compte les variables quantitatives dans un modèle multivarié. Ses enseignement
 Enseignant-chercheur en biostatistique à [l’Institut de Santé Publique d'Épidémiologie et de Développement](http://www.isped.u-bordeaux.fr/) 
 (ISPED, Université de Bordeaux), 
 Boris Hejblum est membre de l’équipe [SISTM dans le centre Inserm U1219 Bordeaux Population Health et Inria Bordeaux Sud-Ouest](https://www.inria.fr/equipes/sistm).
+
 Il travaille sur l’analyse de données biomédicales répétées de grande dimension, 
 en particulier la statistique génomique dans le cadre de la recherche vaccinale 
 ainsi que sur le traitement de dossiers médicaux informatisés par des approches de machine learning.
@@ -40,7 +41,7 @@ Arnaud Legrand pilote [l'équipe Polaris (Inria)](https://team.inria.fr/polaris/
 Il s'est spécialisé dans l'évaluation (simulation, observation, statistiques, analyse de traces) 
 et l'optimisation de performance de grandes infrastructures de calcul 
 (supercalculateurs, grille, calcul bénévole, clouds, …). 
-L’axe optimisation porte sur la proposition ou l’évaluation de méthodes 
+L’axe optimisation de ses travaux porte sur la proposition ou l’évaluation de méthodes 
 souvent sophistiquées et où il est important de conserver 
 tous les détails pour comprendre leur performance et
 comment les améliorer.
@@ -52,7 +53,7 @@ Arnaud Legrand co-pilote [le Mooc "Recherche reproductible"](https://www.fun-moo
 
 ### Pascal Pernot {-}
 
-Pascal Pernot est physico-chimiste théoricien et directeur de recherche au CNRS. 
+Physico-chimiste et directeur de recherches au CNRS, Pascal Pernot travaille au Laboratoire de Chimie Physique à l'Université Paris-Sud. 
 Ses thématiques principales sont la gestion des incertitudes en modélisation physico-chimique, 
 et notamment la quantification des incertitudes de prédiction des méthodes de chimie quantique
 et moléculaire. 
@@ -66,8 +67,7 @@ ses publications des données et codes nécessaires à la reproduction des résu
 
 ### Nicolas Rougier {-}
 
-Nicolas P. Rougier est chercheur à l'Inria et 
-membre de l'équipe [Mnemosyne project](https://mnemosyne-proj.org/) 
+Chercheur à l'Inria, Nicolas P. Rougier est membre de l'équipe [Mnemosyne project](https://mnemosyne-proj.org/) 
 dont l'approche se situe à la frontière entre les neurosciences intégratives et computationnelles en association avec [l'Institut des maladies neurodégénératives](https://www.imn-bordeaux.org/), 
 [le Laboratoire Bordelais de Recherche en Informatique](https://www.labri.fr/), l'Université de Bordeaux et le CNRS. 
 En 2015, il a co-fondé avec [Konrad Hinsen](https://github.com/khinsen), 
@@ -95,16 +95,13 @@ E. de Castro Guerra anime ainsi régulièrement des book sprints pour des associ
 
 ### Sabrina Granger {-}
 
-Conservateur des bibliothèques, Urfist de Bordeaux, Université de Bordeaux
 Docteur en langue et littérature françaises (allocataire de recherche à Grenoble III), 
-S. Granger est conservateur des bibliothèques. 
-Ses différents postes l’ont amenée à travailler dans les domaines de l’informatique documentaire, 
-la communication en BU et les services aux chercheurs. 
-S. Granger est co-pilote du collège « Compétences et formations » 
+S. Granger est conservateur des bibliothèques. Ses différents postes l’ont amenée à travailler dans les domaines de l’informatique documentaire, la communication en BU et les services aux chercheurs. S. Granger est co-pilote du collège « Compétences et formations » 
 du [Comité pour la Science Ouverte](https://www.ouvrirlascience.fr/presentation-du-comite/).
 
 
 ## Contribuer {-}
 
-Vous aussi lecteurs, vous pouvez contribuer en proposant une *pull-request* sur 
-le repertoire contenant les sources de ce livre à l'adresse : https://github.com/alegrand/bookrr/pulls
+Vous aussi lecteurs, vous pouvez contribuer en proposant : 
+- une *pull-request* sur le répertoire contenant les sources de ce livre à l'adresse : https://github.com/alegrand/bookrr/pulls
+- en envoyant un message à urfist@u-bordeaux.fr
