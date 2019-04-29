@@ -2,7 +2,7 @@
 
 Pour un chercheur, il n'y a rien de plus frustrant que l'impossibilité de
 reproduire des résultats majeurs obtenus quelques mois auparavant. Les causes
-de ce type de déconvenues sont multiples, et parfois pernicieuses. Ce phénomène
+de ce type de déconvenues sont multiples et parfois pernicieuses. Ce phénomène
 participe à ce que certains identifient comme une "crise de la reproductibilité
 de la recherche".
 
@@ -12,7 +12,7 @@ de solutions allant de bonnes pratiques faciles et rapides à implémenter
 jusqu'à des outils plus techniques, tous gratuits et mis à l'épreuve par les
 auteurs eux-mêmes.
 
-Avec ce livre, étudiants et chercheurs devraient tous trouver des moyens
+Avec ce livre, étudiants, ingénieurs et chercheurs devraient tous trouver des moyens
 efficaces et à leur portée pour améliorer leurs pratiques de la recherche
 reproductible.
 
@@ -30,7 +30,7 @@ ranging from good-practices that are easily and immediately implementable to
 more technical tools, all of which are free and have been put to the test by
 the authors themselves.
 
-With this book, both students and researchers should find efficient and
+With this book, students and engineers and researchers should find efficient and
 accessible ways leading them to improve their reproducible research practices.
 
 `r if(knitr::is_latex_output()){ '
