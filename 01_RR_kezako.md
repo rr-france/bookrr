@@ -6,7 +6,7 @@
 
 La crise de la reproductibilité de la science est aujourd'hui un phénomène mondial et
 largement transdiciplinaire qui concourt à la défiance de la société à l'égard
-du monde de la recherche *SG* [Baker M. 1,500 scientists lift the lid on reproducibility. Nature 2016,533:452-454.]. Le sujet est ancien, mais la situation semble avoir atteint un point critique. Des études ont par exemple démontré qu'il n'était pas possible d'obtenir de nouveau les résultats d'études pré-cliniques ou cliniques *SG*[Begley CG, Ellis LM. Drug development: Raise standards for preclinical cancer research. Nature 2012,483:531-533.] [Perrin S. Preclinical research: Make mouse studies work. Nature 2014,507:423-425.] Si la reproductibilité des résultats ne peut être considérée comme seul critère de la scientificité d'une recherche, cette crise suscite des interrogations au sein même de la communauté scientifique.
+du monde de la recherche *SG* [baker500ScientistsLift2016a]. Le sujet est ancien, mais la situation semble avoir atteint un point critique. Des études ont par exemple démontré qu'il n'était pas possible d'obtenir de nouveau les résultats d'études pré-cliniques ou cliniques *SG*[begleyDrugDevelopmentRaise2012] [perrinPreclinicalResearchMake2014] Si la reproductibilité des résultats ne peut être considérée comme seul critère de la scientificité d'une recherche, cette crise suscite des interrogations au sein même de la communauté scientifique.
 
 ## Définition(s) de "recherche reproductible" ?
 
@@ -16,7 +16,7 @@ définition standard satisfaisante pour toutes les disciplines. De fait, parce q
 résultat" dépend fortement du domaine de recherche. Pour les uns, il suffira de confirmer
 la signifiance d'un effet, pour les autres, il s'agira d'obtenir le même
 résultat numérique bit pour bit. 
-L'expression "recherche reproductible" apparaît dès 1992, lors du congrès de la "*Society of Exploration Geophysics*" [*SG* : trouver la traduction]. De nombreuses définitions de "recherche reproductible" sont fournies par Barba. [Barba, Lorena A. 2018. ‘Terminologies for Reproducible Research’. ArXiv:1802.03311 [Cs], February. http://arxiv.org/abs/1802.03311.] Parmi celles-ci, nous retiendrons la suivante, issue de l'article de Vandewalle et al.[https://ieeexplore.ieee.org/document/4815541] : 
+L'expression "recherche reproductible" apparaît dès 1992, lors du congrès de la "*Society of Exploration Geophysics*" [*SG* : trouver la traduction]. De nombreuses définitions de "recherche reproductible" sont fournies par Barba. [barbaTerminologiesReproducibleResearch2018] Parmi celles-ci, nous retiendrons la suivante, issue de l'article de Vandewalle et al.[vandewalleReproducibleResearchSignal2009] : 
 "un travail de recherche est dit reproductible si toutes les informations qui concernent ce travail incluant, sans s'y limiter, le texte, les données, et le code de programmation, sont rendues disponibles de telle sorte que n'importe quel chercheur indépendant peut reproduire les résultats." *SG* prendre texte original et citer correctement traduction en FR --< signaler qu'il s'agit d'une traduction des auteurs
 
 ## Pourquoi la question de la reproductibilité est-elle devenue centrale dans les débats actuels ?
@@ -71,12 +71,12 @@ D'autres solutions demanderont un peu plus de temps et d'énergie.
 
 ## La minute théologie négative : ce que vous ne trouverez pas dans cet ouvrage
 
-Il n’est pas question dans cet ouvrage de traiter toutes les solutions pour garantir la reproductibilité de la recherche au sens de Randall et Welser *SG*: ainsi, la question de la qualité de la recherche est hors périmètre du présent ouvrage. En effet, nous vous proposons plutôt de nous focaliser sur les solutions qui permettent communiquer des résultats pouvant être reproduits de façon exhaustive. 
+Il n’est pas question dans cet ouvrage de traiter toutes les solutions pour garantir la reproductibilité de la recherche au sens de Randall et Welser *SG* [randallIrreproducibilityCrisisModern2018]: ainsi, la question de la qualité de la recherche est hors périmètre du présent ouvrage. En effet, nous vous proposons plutôt de nous focaliser sur les solutions qui permettent communiquer des résultats pouvant être reproduits de façon exhaustive. 
 Ainsi, nous n’allons pas traiter des solutions à des problèmes qui nuisent à la qualité de la recherche, et en particulier : 
 
-- aller à la "pêche" aux résultats significatifs parmi tous les tests statistiques réalisés ("p-hacking") [Nuzzo R. Scientific method: statistical errors. Nature 2014,506:150-152.], 
-- générer une hypothèse de recherche *a posteriori*, c’est-à-dire après avoir obtenu un résultat significatif (« harking ») [Kerr NL. HARKing: hypothesizing after the results are known. Pers Soc Psychol Rev 1998,2:196-217.], 
-- sur-interpréter le résultat statistique qui est significatif (« Probability That a Positive Report is False ») [Wacholder S, Chanock S, Garcia-Closas M, El Ghormli L, Rothman N. Assessing the probability that a positive report is false: an approach for molecular epidemiology studies. J Natl Cancer Inst 2004,96:434-442.] 
+- aller à la "pêche" aux résultats significatifs parmi tous les tests statistiques réalisés ("p-hacking") [nuzzoScientificMethodStatistical2014], 
+- générer une hypothèse de recherche *a posteriori*, c’est-à-dire après avoir obtenu un résultat significatif (« harking ») [kerrHARKingHypothesizingResults1998], 
+- sur-interpréter le résultat statistique qui est significatif (« Probability That a Positive Report is False ») [wacholderAssessingProbabilityThat2004] 
 
-Pour tous ces sujets cités précédemment, nous invitons le lecteur à se référer à la littérature *SG* : [Munafo MR, Nosek BA, Bishop DVM, Button KS, Chambers CD, Sert NPd, Simonsohn U, Wagenmakers E-J, Ware JJ, Ioannidis JPA. A manifesto for reproducible science. Nature Human Behav 2017,1:0021.]
+Pour tous ces sujets cités précédemment, nous invitons le lecteur à se référer à la littérature *SG* : [munafoManifestoReproducibleScience2017]
 
