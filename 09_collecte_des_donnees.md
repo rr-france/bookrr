@@ -50,7 +50,7 @@ trace.
 ## Collecter les données de façon répétable ET reproductible
 
 Le protocole de collecte d'une information doit être défini de telle sorte
-qu'elle soit "répétable" et "reproductible" au sens du *VIM* *SG* (_cf._ Chapitre
+qu'elle soit "répétable" et "reproductible" au sens du *VIM* [bureauinternationaldespoidsetdesmesuresVocabulaireInternationalMetrologie2012]*SG* (_cf._ Chapitre
 \@ref(B-data-acquisition)). Tout d'abord, si vous collectez une information
 deux fois sur un individu dans un intervalle de temps restreint, les deux
 valeurs de l'information doivent être les mêmes, ou du moins être suffisamment
@@ -67,7 +67,7 @@ concordance, permettent de quantifier la "répétabilité" ou la
 ## Pour en savoir plus
 
 Pour en savoir plus sur les cahiers de laboratoire, nous vous invitons à consulter
-le site du CNRS *SG*(http://www.cnrs.fr/infoslabos/cahier-laboratoire/).
+le site du CNRS *SG* [cnrsCahierLaboratoire].
 Pour en savoir plus sur la quantification de la répétabilité et de la
 reproductibilité de la façon dont on collecte les données, vous pouvez consulter le document suivant : 
-(https://hal.archives-ouvertes.fr/hal-02103716). *SG*
+[desquilbetGuidePratiqueValidation2019]. *SG*
