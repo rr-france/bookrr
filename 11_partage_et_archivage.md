@@ -47,7 +47,7 @@ ouvertes au public.
 Le degré zéro (voire -1) de la mise à disposition des données pour la communauté, 
 est de mentionner dans l'article qu'elles sont disponibles "Sur demande à l'auteur". 
 
-Cette approche permet à l'auteur de garder une forme de contrôle, mais elle s'avère peu adaptée à une gestion sur le long terme (ex. : départ à la retraite de l'auteur, changement d'adresse de courriel, etc.) et tend à disparaître, ne serait-ce que par la politique d'ouverture adoptée par de nombreuses plates-formes éditoriales. 
+Cette approche permet à l'auteur de garder une forme de contrôle, mais elle s'avère peu adaptée à une gestion sur le long terme (ex. : départ à la retraite de l'auteur, changement d'adresse de courriel, etc.) et tend à disparaître. En effet, de nombreuses plates-formes éditoriales adoptent progressivement une politique d'ouverture des données et demandent aux auteurs de les mettre à disposition de leurs pairs.
 
 ### Page web personnelle
 
