@@ -23,9 +23,9 @@ une telle identification :
 
 1. À partir d'un langage interprété (tel que R ou Python), on peut
 effectuer cette "intro-spection" et lister les différentes dépendances, la liste 
-des bibliothèques chargées avec leur numéro de version [en R, on peut 
+des bibliothèques chargées avec leur numéro de version. En R, on peut 
 par exemple utiliser la commande `sessionInfo` (ou encore 
-`devtools::session_info`]. Mais cette méthode relativement
+`devtools::session_info`). Mais cette méthode relativement
 simple est surtout limitée et assez peu précise car elle ne signale que quelques
 unes des dépendances système de plus bas niveau. Elle correspond à
 la zone verte dans le schéma ci-dessous. Cependant, il est très 
