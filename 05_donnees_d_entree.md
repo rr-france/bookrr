@@ -8,7 +8,7 @@ d'une politique de sauvegarde ou de règles élementaires de documentation (mét
 
 ## Intégrité et curation des données
 
-Voici un scénario catastrophe classique quand il est question d'intégrité des données : 
+Voici un *scenario* catastrophe classique quand il est question d'intégrité des données : 
 alors qu'un éditeur vous demande de mettre à disposition les données brutes 
 sous peine de ne pas publier votre article pourtant accepté, les données 
 associées ont été effacées ou égarées. 
