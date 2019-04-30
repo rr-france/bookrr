@@ -4,7 +4,7 @@
 > -- Harold Abelson
   
 Les chapitres précédents (et en particulier 
-le chap.8 "Des problèmes de calculs" [bien mettre le renvoi vers ce chap.8]) 
+le chapitre 8 "Des problèmes de calculs" [bien mettre le renvoi vers ce chap.8]) 
 ont souligné l'importance des questions de diffusion et de partage des codes informatiques. 
 Une étape préalable à cette démarche est de rendre son code facilement 
 compréhensible par un lecteur externe. 
