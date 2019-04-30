@@ -250,5 +250,5 @@ ses travaux reproductibles.
 
 ## Pour en savoir plus
 
-Le sujet des *workflows* est développé dans un webinar [*Reproducible Science in Bioinformatics: Current Status, Solutions and Research Opportunities*](https://github.com/alegrand/RR_webinars/blob/master/6_reproducibility_bioinformatics/index.org).
+Le sujet des *workflows* est développé dans une conférence en ligne [*Reproducible Science in Bioinformatics: Current Status, Solutions and Research Opportunities*](https://github.com/alegrand/RR_webinars/blob/master/6_reproducibility_bioinformatics/index.org).
 
