@@ -100,12 +100,18 @@ du [Comité pour la Science Ouverte](https://www.ouvrirlascience.fr/presentation
 
 ## Contributeurs de la 1re édition
 Ils ont participé à différentes étapes du *book sprint* : 
-Martine Courbin-Coulaud, documentaliste, Information et Edition Scientifique, Centre de recherche Inria Bordeaux Sud-Ouest
-Ludovic Duvaux, bio-informaticien, Unité Mixte de Recherche "Biogeco", Inra
-Pierre Gravier, conservateur des bibliothèques, Direction de la documentation, Université de Bordeaux
-Grégoire Le Campion, ingénieur en traitement et analyse de données, Unité Mixte de Recherche "Passages", CNRS
-Solenne Roux, ingénieure en traitement et analyse de données, Equipe d'Accueil "Laboratoire de Psychologie", Université de Bordeaux
-Frédéric Santos, statisticien, Unité Mixte de Recherche "Pacea", CNRS
+
+- Martine Courbin-Coulaud, documentaliste, Information et Edition Scientifique, Centre de recherche Inria Bordeaux Sud-Ouest
+
+- Ludovic Duvaux, bio-informaticien, Unité Mixte de Recherche "Biogeco", Inra
+
+- Pierre Gravier, conservateur des bibliothèques, Direction de la documentation, Université de Bordeaux
+
+- Grégoire Le Campion, ingénieur en traitement et analyse de données, Unité Mixte de Recherche "Passages", CNRS
+
+- Solenne Roux, ingénieure en traitement et analyse de données, Equipe d'Accueil "Laboratoire de Psychologie", Université de Bordeaux
+
+- Frédéric Santos, statisticien, Unité Mixte de Recherche "Pacea", CNRS
 
 ## Contribuer {-}
 
