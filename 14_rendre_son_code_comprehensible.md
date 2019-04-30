@@ -35,7 +35,7 @@ la compréhension de son code :
 > -- Phil Karlton
 
 Une manière d'obtenir un code plus facile à comprendre par un observateur extérieur 
-est d'utiliser des noms informatifs qui explicitent directement ce que represente une 
+est d'utiliser des noms informatifs qui explicitent directement ce que représente une 
 variable ou une fonction. C'est une tâche qui peut se révéler étonnamment ardue !
 Lisez le code suivant et essayez de comprendre ce à quoi il peut bien servir par exemple : 
 
@@ -48,7 +48,7 @@ bluE_Pizza = a * ninja * turtle ** XX
 print(bluE_Pizza)
 ```
 
-Vous avez trouvé ? Pas encore ? Cet exemple est créé de toute pièce mais nous avons 
+Vous avez trouvé ? Pas encore ? Cet exemple est créé de toutes pièces mais nous avons 
 tous déjà rencontré des codes bien pires que ça. Ces quelques lignes sont pourtant
 rigoureusement équivalentes au code suivant :
 
