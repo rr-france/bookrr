@@ -51,7 +51,7 @@ malheureusement pour vous, le "vous" d'il y a 6 mois ne répond pas au mail.
 Enfin, et comme nous le verrons par la suite, il existe bien d'autres raisons
 qui peuvent conduire à ces deux symptômes.
 
-## Comment fonctionne ce code ? Lost in translation
+## Comment fonctionne ce code ? *Lost in translation*
 
 Si on n'est plus sûr des paramètres utilisés, on peut vouloir chercher à
 comprendre d'où vient le problème en inspectant le code ... si tant est qu'on
