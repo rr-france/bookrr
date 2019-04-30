@@ -10,20 +10,7 @@ curative, mais aussi préventive.
 ## Quand mettre en œuvre les bonnes pratiques ?
 Il existe des solutions applicables à court comme à plus long terme. Si le déploiement de certaines solutions nécessite des compétences techniques avancées, la reproductibilité de la recherche demeure peut-être avant tout une question culturelle, dans la mesure où il s'agit de faire évoluer des pratiques parfois solidement ancrées. La crainte de perdre du temps en modifiant ses repères est une problématique majeure, d'où l'approche pragmatique du présent ouvrage. 
 En outre, comment accompagner l'adoption de nouvelles pratiques à l'échelle collective, qu'il s'agisse d'un laboratoire ou d'une communauté disciplinaire ?
-Par exemple, pour un directeur d'unité ou d'équipe, il pourrait être tentant d'imposer tout ou partie des méthodes décrites en vue d'une plus grande efficience, mais faire évoluer les pratiques quotidiennes de ses collègues constitue un exercice délicat. *SG* @Article {Barba142,
-author = {Barba, Lorena A.},
-title = {The hard road to reproducibility},
-volume = {354},
-number = {6308},
-pages = {142--142},
-year = {2016},
-doi = {10.1126/science.354.6308.142},
-publisher = {American Association for the Advancement of Science},
-issn = {0036-8075},
-URL = {https://science.sciencemag.org/content/354/6308/142},
-eprint = {https://science.sciencemag.org/content/354/6308/142.full.pdf},
-journal = {Science}
-}
+Par exemple, pour un directeur d'unité ou d'équipe, il pourrait être tentant d'imposer tout ou partie des méthodes décrites en vue d'une plus grande efficience, mais faire évoluer les pratiques quotidiennes de ses collègues constitue un exercice délicat [barbaHardRoadReproducibility2016]. *SG*
 De fait, une approche très progressive qui valorise l'implication directe des individus a davantage de chances d'aboutir (ou moins de risques d'être rejetée, selon que vous voyez le verre à moitié plein ou à moitié vide). 
 
 Au fil de l'ouvrage, nous décrivons des situations de crise, moins par goût pour les histoires d'horreur que par conviction que l'identification des problèmes couramment rencontrés constitue l'une des meilleures options pour aborder la question de la reproductibilité. 
