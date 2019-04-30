@@ -89,10 +89,10 @@ Considérez alors les données comme inutilisables.
 
 ## Que faire ?
 
-Privilégier des formats ouverts (Chapitre \@ref(C-data-format)), 
+Privilégier des formats ouverts (chapitre \@ref(C-data-format)), 
 assurer un archivage pérenne des données et leur associer des métadonnées 
 pertinentes sur des serveurs institutionnels ou publics 
-(Chapitres \@ref(C-data-share) et \@ref(C-licences))
+(chapitres \@ref(C-data-share) et \@ref(C-licences))
 constitue actuellement l'une des meilleures manières de se prémunir 
 contre la perte de données.
 
