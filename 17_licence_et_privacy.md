@@ -54,6 +54,7 @@ demande *via* une charte de confidentialité.
 
 ## Pour en savoir plus
 *SG*
+Le droit évoluant constamment, nous vous conseillons de consulter ce site web régulièrement actualisé ; il identifie des ressources de qualité qu'un non-expert peut aisément appréhender : 
 Comité pour la science ouverte. n.d. ‘Ouvrir La Science - Ressources : Guides Juridiques’. Ouvrir La Science. [Accessed 18 April 2019](https://www.ouvrirlascience.fr/category/ressources/?type=guides_juridiques).
 
 Consulter les vidéos de l'intervention de L. Maurel sur le RGPD : 
