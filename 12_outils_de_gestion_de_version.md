@@ -109,7 +109,7 @@ recherche.
 Voici un témoignage d'un chercheur dont la pratique quotidienne permet
 d'obtenir aisément une recherche reproductible :
 
-> Lors de l'élaboration de mes analyses statistiques, je développe des
+> "Lors de l'élaboration de mes analyses statistiques, je développe des
 > codes en R pour traiter les données, générer des tableaux de
 > résultats en LaTeX et des figures en png. En parallèle, je rédige
 > l'article en LaTeX.
@@ -117,14 +117,14 @@ d'obtenir aisément une recherche reproductible :
 > Tous les codes et l'article sont suivis dans un gestionnaire de
 > versions local (j'utilise Git). Les tableaux et les figures sont des
 > résultats secondaires que je peux regénérer facilement. À chaque
-> étape de modification d'un document, j'effectue un "commit" qui met
+> étape de modification d'un document, j'effectue un *commit* qui met
 > à jour la base de version locale. Après un certain nombre de
-> "commit", je me synchronise avec le dépôt distant en y propageant
+> *commits*, je me synchronise avec le dépôt distant en y propageant
 > mes modifications locales, m'assurant ainsi d'une sauvegarde
 > régulière. Réaliser régulièrement ces opérations est l'occasion pour
 > moi de bien réfléchir à ce que je fais, de vérifier que j'ai bien
 > sauvegardé tout ce qu'il fallait, et d'en profiter pour expliquer
-> dans les messages de commits ce que je fais.
+> dans les messages de *commits* ce que je fais.
 > 
 > Lorsque je soumets l'article, je fige une version du projet, et je
 > l'archive sur un dépôt pérenne pour obtenir un identifiant (DOI) que
@@ -132,7 +132,7 @@ d'obtenir aisément une recherche reproductible :
 > Ainsi, les relecteurs peuvent s'assurer de la reproductibilité de mon
 > étude et j'ai la garantie de disposer de la bonne version des
 > fichiers s'ils me demandent des modifications, même si j'ai continué
-> à développer mes codes durant ce temps.
+> à développer mes codes durant ce temps."
 
 
 ## Pour en savoir plus
