@@ -106,7 +106,7 @@ numérique. [*SG*] [wilkinsonFAIRGuidingPrinciples2016]
 
 ### Nombre de chiffres significatifs
 
-Les calculs numériques sont effectués avec une précision arbitraire, et il faut donc 
+Les calculs numériques sont effectués avec une précision finie, et il faut donc 
 choisir du nombre de chiffres significatifs à reporter dans une table de données ou de 
 résultats. Il est tentant, dans un fichier de résultats, d'inclure tous les chiffres 
 significatifs dont on dispose. Mais cela n'est pas necessairement souhaitable (cela peut conduire 
