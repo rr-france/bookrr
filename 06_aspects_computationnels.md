@@ -116,7 +116,7 @@ simple :
 import matplotlib
 ```
 
-Or cette bibliothèque est fournie par un *paquet* qui, sur la machine d'un des
+Or cette bibliothèque est fournie par un "paquet" qui, sur la machine d'un des
 auteurs s'appelle, `python3-matplotlib`. Lorsque nous cherchons à en savoir
 plus sur ce paquet, voilà ce que nous obtenons :
 
