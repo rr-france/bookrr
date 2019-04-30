@@ -18,7 +18,7 @@ Il n'existe ni solution simple, ni solution unique pour répondre à ces enjeux.
 
 La manière la ~~plus simple~~ moins complexe de décrire son environnement logiciel est d'en identifier les dépendances. Mais cette simplicité n'est qu'apparente car l'arbre cache la forêt : chaque dépendance a 
 elle-même une dépendance, qui a elle-même une dépendance, et ainsi de suite... Cette tâche peut donc 
-rapidement devenir difficile. On peut distinguer deux méthodes d'obtenir
+rapidement devenir difficile. Deux méthodes permettent d'aboutir à
 une telle identification :
 
 1. À partir d'un langage interprété (tel que R ou Python), on peut
