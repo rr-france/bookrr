@@ -117,7 +117,7 @@ pérenne et d'indexer les versions successives les artefacts de la recherche.
 Vous pouvez consulter les [recommandations du
 CNRS](http://qualite-en-recherche.cnrs.fr/spip.php?article315) [@reseauqualiteenrechercheTracabiliteActivitesRecherche2018] *SG* concernant la
 traçabilité des activités de recherche, ainsi que les principes [FAIR (Findable,
-Accessible, Interoperable, Reusable)](https://www.go-fair.org/fair-principles/) [gofairFAIRPrinciples]
+Accessible, Interoperable, Reusable)](https://www.go-fair.org/fair-principles/) [@gofairFAIRPrinciples]
 
 Pour une exposition très claire des problèmes de pérennité, vous
 pouvez regarder le [séminaire de Roberto Di

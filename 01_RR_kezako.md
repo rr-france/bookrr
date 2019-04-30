@@ -78,5 +78,5 @@ Ainsi, nous n’allons pas traiter des solutions à des problèmes qui nuisent �
 - générer une hypothèse de recherche *a posteriori*, c’est-à-dire après avoir obtenu un résultat significatif (« harking ») [@kerrHARKingHypothesizingResults1998], 
 - sur-interpréter le résultat statistique qui est significatif (« Probability That a Positive Report is False ») [@wacholderAssessingProbabilityThat2004] 
 
-Pour tous ces sujets cités précédemment, nous invitons le lecteur à se référer à la littérature *SG* : [munafoManifestoReproducibleScience2017]
+Pour tous ces sujets cités précédemment, nous invitons le lecteur à se référer à la littérature *SG* : [@munafoManifestoReproducibleScience2017]
 

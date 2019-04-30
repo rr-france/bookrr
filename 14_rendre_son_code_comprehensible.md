@@ -207,7 +207,7 @@ est gérée de manière indépendante et de fait, liée à sa finalité directe.
 Différents outils permettent d'écrire de tels documents, les plus matures étant :
 
  - [Jupyter](https://jupyter.org)
- - [Rmarkdown](https://rmarkdown.rstudio.com) ; voir aussi [lalanneLangageMarkdown]
+ - [Rmarkdown](https://rmarkdown.rstudio.com) ; voir aussi [@lalanneLangageMarkdown]
  - [Org-mode](https://www.orgmode.org/fr)
  
 De tels documents computationnels offrent de nombreux avantages : 
@@ -232,7 +232,7 @@ les *design patterns*, etc.
 
 Dès lors qu'il est question de transformer des
 quantités importantes de données par des calculs complexes, le concept de 
-[systèmes de *workflows* scientifiques](https://en.wikipedia.org/wiki/Scientific_workflow_system) [wikipediaScientificWorkflowSystem2019]
+[systèmes de *workflows* scientifiques](https://en.wikipedia.org/wiki/Scientific_workflow_system) [@wikipediaScientificWorkflowSystem2019]
 trouve toute sa pertinence. 
 Il existe de nombreux *workflows* répondant aux besoins de 
 différentes communautés scientifiques : astrophysique, génétique, etc. 

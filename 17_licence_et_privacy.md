@@ -23,7 +23,7 @@ employeur ou ses organismes de tutelle.
 le plus souvent différentes de celles couvrant les programmes et les
 logiciels : 
 *SG* [https://choosealicense.com/](https://choosealicense.com/) [@githubChooseOpenSource] et
-[https://creativecommons.org/choose/](https://creativecommons.org/choose/) [creativecommonsChooseLicense]
+[https://creativecommons.org/choose/](https://creativecommons.org/choose/) [@creativecommonsChooseLicense]
 permettent de choisir une licence logicielle ou non logicielle
 (respectivement) en répondant à 2 ou 3 questions.
 
@@ -56,17 +56,17 @@ demande *via* une charte de confidentialité.
 *SG*
 Le droit évolue constamment et les ressources sur le sujet sont pléthoriques. De fait, nous vous indiquons quelques sites web qui opèrent une sélection de contenus : 
 
-- le site web du Comité pour la Science Ouverte [comitepourlascienceouverteRessourcesGuidesJuridiques]
+- le site web du Comité pour la Science Ouverte [@comitepourlascienceouverteRessourcesGuidesJuridiques]
 
-- l'Inra a dédié un site aux questions de partage de données scientifiques [inraDatapartageGestionPartage]
+- l'Inra a dédié un site aux questions de partage de données scientifiques [@inraDatapartageGestionPartage]
 
-- les fiches pratiques du Cirad vous permettent d'aborder facilement les questions juridiques [ciradGererDonneesRecherche]
+- les fiches pratiques du Cirad vous permettent d'aborder facilement les questions juridiques [@ciradGererDonneesRecherche]
 
-- l'essentiel des ressources est en anglais, mais vous trouverez aussi quelques contenus en français sur le site de *Foster Open Science* [fosteropenscienceResourcesLegalIssues]
+- l'essentiel des ressources est en anglais, mais vous trouverez aussi quelques contenus en français sur le site de *Foster Open Science* [@fosteropenscienceResourcesLegalIssues]
 
-Nous vous invitons aussi à consulter les vidéos de l'intervention de L. Maurel sur le RGPD [maurelDonneesPersonnellesVie2018]
+Nous vous invitons aussi à consulter les vidéos de l'intervention de L. Maurel sur le RGPD [@maurelDonneesPersonnellesVie2018]
 
-Enfin, le site WillO, développé par l'Université de Lille, vous permet de mieux comprendre l'impact de la loi pour une République Numérique sur vos travaux de recherche [universitedelilleWillODroitsObligations]
+Enfin, le site WillO, développé par l'Université de Lille, vous permet de mieux comprendre l'impact de la loi pour une République Numérique sur vos travaux de recherche [@universitedelilleWillODroitsObligations]
 
 
 

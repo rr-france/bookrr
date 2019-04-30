@@ -151,14 +151,41 @@ instead of the =[@key]= syntax. Use these regexps carefully...
 
 #+begin_src shell :results output :exports both
 grep -e '\[[^@][^]]*\][^(]' *.md
+echo "    "
+grep -e '\[[^@][^]]*\]$' *.md
+echo "    "
+  grep -e '\[[^@][^]]*\] (' *.md
+echo "    "
 #+end_src
 
 #+RESULTS:
-: 11_partage_et_archivage.md:comme par exemple l'*[@Open Science Framework (OSF)*.(https://osf.io/) [centerforopenscienceOpenScienceFramework]. *SG*
+#+begin_example
+06_aspects_computationnels.md:<!-- fonctionner correctement. [Oui] [Non] [Annuler]`, `segmentation fault -->
+10_format_des_donnees.md:que la plus petite valeur propre de la matrice garde deux chiffres significatifs). [*SG*] 
+13_apprendre_a_programmer.md:table_tri <- table[order(table$age), ] # Réordonne toutes les lignes du tableau
+13_apprendre_a_programmer.md:mean(table_tri$IMC[1:(nrow(table_tri)/2)])
+14_rendre_son_code_comprehensible.md:le chapitre 8 "Des problèmes de calculs" [bien mettre le renvoi vers ce chap.8]) 
+TODO.md:- [ ] Export vers bookdown
+TODO.md:- [ ] Petit crayon pour éditer vers github  
+TODO.md:- [ ] Makefile avec commande qui va bien
+TODO.md:- [ ] Espaces insécables devant les ?, les :, et les !
+TODO.md:- [X] Sauts de lignes avant les listes
+TODO.md:- [ ] Améliorer un minimum le style
+TODO.md:- [ ] Déplacer la bibliographie avant les annexes
+TODO.md:- [ ] Revoir la numérotation des annexes
+TODO.md:- [ ] Déplacer les fichiers dans un répertoire
+TODO.md:- [ ] Renuméroter les fichiers
+TODO.md:- [ ] Effacer les images inutiles
+    
+14_rendre_son_code_comprehensible.md:turtle = 3.2   # This corresponds to the speed at which the ninja is moving [m.s-1]
+    
+    
+#+end_example
 
 #+begin_src shell :results output :exports both
 git checkout *.md
-sed -i 's|\[\([^@][^]]*\)\]\([^(]\)|[@\1]\2|g' *.md
+# sed -i 's|\[\([^@][^]]*\)\]\([^(]\)|[@\1]\2|g' *.md
+sed -i 's|\[\([^@][^]]*\)\]$|[@\1]|g' *.md
 #+end_src
 
 #+RESULTS:

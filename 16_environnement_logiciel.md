@@ -100,7 +100,7 @@ de tel ou tel changement.
 ## Pour en savoir plus
 Au sujet de l'identification des dépendances, vous pouvez vous référer
 au module 4 du *SG* [MOOC sur la recherche
-reproductible](https://learninglab.inria.fr/mooc-recherche-reproductible-principes-methodologiques-pour-une-science-transparente/) [inrialearninglabMOOCRechercheReproductible2018]
+reproductible](https://learninglab.inria.fr/mooc-recherche-reproductible-principes-methodologiques-pour-une-science-transparente/) [@inrialearninglabMOOCRechercheReproductible2018]
 et aux ressources correspondantes
 *SG*([slides](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module4/slides/C028AL_slides_module4-fr-gz.pdf) [@pouzatVersEtudeReproductible],
 *SG*[ressources](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module4/ressources/resources_environment_fr.org)) [@legrandBienControlerSon].

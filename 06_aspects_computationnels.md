@@ -154,7 +154,7 @@ donné et une différence, même insignifiante, de cet environnement peut condui
 reproductibilité.
 
 Si vous pensez que ce problème n'est que théorique, nous vous invitons
-à lire Gronenschild et ses co-auteurs *SG* [gronenschildEffectsFreeSurferVersion2012]
+à lire Gronenschild et ses co-auteurs *SG* [@gronenschildEffectsFreeSurferVersion2012]
 qui étudient l'influence de la version de MacOSX et de FreeSurfer, un logiciel
 permettant de mesurer l'épaisseur corticale et le volume de structures
 neuroanatomiques.
@@ -205,8 +205,8 @@ Failure*[@arnoldPatriotMissileFailure2000]) *SG*
 
 Il y a de nombreux articles décrivant ce genre de cauchemars :
 *SG* 
-[feherNumericalErrorsMinimization2012]
-[feherNumericalErrorsChaotic2012]
+[@feherNumericalErrorsMinimization2012]
+[@feherNumericalErrorsChaotic2012]
 
 Vous pouvez
 vouloir lire le classique *SG* *What Every Computer Scientist Should Know About Floating-point Arithmetic* [@goldbergWhatEveryComputer1991] ou encore les travaux de Stodden et ses collègues *SG* [@stoddenAssessingReproducibilityAstrophysical2018].

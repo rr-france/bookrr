@@ -118,24 +118,24 @@ de ressources accessibles en ligne que nous jugeons de qualité.
 ### MOOCs
 *SG*
 
-* [Introduction à la statistique avec R](https://www.fun-mooc.fr/courses/UPSUD/42001S06/session06/about) [universiteparissudIntroductionStatistiqueAvec]
-* [Python : des fondamentaux à l'utilisation du langage](https://www.fun-mooc.fr/courses/inria/41001S03/session03/about) [inriaPythonFondamentauxUtilisation]
+* [Introduction à la statistique avec R](https://www.fun-mooc.fr/courses/UPSUD/42001S06/session06/about) [@universiteparissudIntroductionStatistiqueAvec]
+* [Python : des fondamentaux à l'utilisation du langage](https://www.fun-mooc.fr/courses/inria/41001S03/session03/about) [@inriaPythonFondamentauxUtilisation]
 
 
 ### Tutoriels
 
-* [Begin’R](http://beginr.u-bordeaux.fr) [arnalBegin]
-* [Le tutoriel officiel de Python](https://docs.python.org/fr/3/tutorial) [pythonsoftwarefoundationTutorielPythonDocumentation]
+* [Begin’R](http://beginr.u-bordeaux.fr) [@arnalBegin]
+* [Le tutoriel officiel de Python](https://docs.python.org/fr/3/tutorial) [@pythonsoftwarefoundationTutorielPythonDocumentation]
 
 
 ### Livres
 
-* [R for Data Science](https://r4ds.had.co.nz) [wickhamDataScienceImport2016]
-* [Dive into Python](https://www.diveinto.org/python3) [pilgrimDivePython2009]
+* [R for Data Science](https://r4ds.had.co.nz) [@wickhamDataScienceImport2016]
+* [Dive into Python](https://www.diveinto.org/python3) [@pilgrimDivePython2009]
 
 ### Ateliers en ligne "Software Carpentry"
 
-* [Programming with R](http://swcarpentry.github.io/r-novice-inflammation) [softwarecarpentryProgramming]
-* [R for Reproducible Scientific Analysis](http://swcarpentry.github.io/r-novice-gapminder) [softwarecarpentryReproducibleScientificAnalysisa]
-* [Programming with Python](http://swcarpentry.github.io/python-novice-inflammation) [softwarecarpentryProgrammingPython]
-* [Plotting and Programming in Python](http://swcarpentry.github.io/python-novice-gapminder) [softwarecarpentryPlottingProgrammingPython]
+* [Programming with R](http://swcarpentry.github.io/r-novice-inflammation) [@softwarecarpentryProgramming]
+* [R for Reproducible Scientific Analysis](http://swcarpentry.github.io/r-novice-gapminder) [@softwarecarpentryReproducibleScientificAnalysisa]
+* [Programming with Python](http://swcarpentry.github.io/python-novice-inflammation) [@softwarecarpentryProgrammingPython]
+* [Plotting and Programming in Python](http://swcarpentry.github.io/python-novice-gapminder) [@softwarecarpentryPlottingProgrammingPython]
