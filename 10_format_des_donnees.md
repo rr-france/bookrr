@@ -136,7 +136,7 @@ avec une incertitude de 0.0046. En outre, on évitera dans un tableau les notati
 1.2346(46) ou 1.2346 ± 0.0046, qui peuvent fragiliser la lecture automatique par une machine.
 
 Une attention particulière doit être portée à certains objets afin de respecter leurs propriétés
-intrinsèques. Par exemple, les éléments d'une matrice de variance/co-variance doivent être
+intrinsèques. Par exemple, les éléments d'une matrice de variance/covariance doivent être
 arrondis de manière à s'assurer que celle-ci reste définie-positive (en exigeant par exemple 
 que la plus petite valeur propre de la matrice garde deux chiffres significatifs) [*SG*] 
 [REF Evaluation of measurement data – Supplement 2 to the "Guide to the expression of 
