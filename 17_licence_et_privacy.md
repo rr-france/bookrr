@@ -22,8 +22,8 @@ employeur ou ses organismes de tutelle.
 À noter cependant que les licences utilisées pour le partage des données sont
 le plus souvent différentes de celles couvrant les programmes et les
 logiciels : 
-*SG* [https://choosealicense.com/](https://choosealicense.com/) et
-[https://creativecommons.org/choose/](https://creativecommons.org/choose/)
+*SG* [https://choosealicense.com/](https://choosealicense.com/) [githubChooseOpenSource] et
+[https://creativecommons.org/choose/](https://creativecommons.org/choose/) [creativecommonsChooseLicense]
 permettent de choisir une licence logicielle ou non logicielle
 (respectivement) en répondant à 2 ou 3 questions.
 
@@ -44,9 +44,9 @@ que la santé) où le partage des données n'est pas toujours possible pour :
 
 Il est donc indispensable de se poser la question du droit,
 notamment dans le cadre du Réglement Général sur la Protection des Données
-(RGPD)^[un certain nombre de textes officiels et de documents sont disponibles
+(RGPD)[un certain nombre de textes officiels et de documents sont disponibles
 sur [le site de la
-CNIL](https://www.cnil.fr/fr/textes-officiels-europeens-protection-donnees)]. 
+CNIL](https://www.cnil.fr/fr/textes-officiels-europeens-protection-donnees)] [cnilTextesOfficiels]. 
 
 Des solutions alternatives au partage totalement libre des données
 peuvent être mises en œuvre : on peut citer la mise à disposition sur
@@ -54,8 +54,19 @@ demande *via* une charte de confidentialité.
 
 ## Pour en savoir plus
 *SG*
-Le droit évoluant constamment, nous vous conseillons de consulter ce site web régulièrement actualisé ; il identifie des ressources de qualité qu'un non-expert peut aisément appréhender : 
-Comité pour la science ouverte. n.d. ‘Ouvrir La Science - Ressources : Guides Juridiques’. Ouvrir La Science. [Accessed 18 April 2019](https://www.ouvrirlascience.fr/category/ressources/?type=guides_juridiques).
+Le droit évolue constamment et les ressources sur le sujet sont pléthoriques. De fait, nous vous indiquons quelques sites web qui opèrent une sélection de contenus : 
 
-Consulter les vidéos de l'intervention de L. Maurel sur le RGPD : 
-Maurel, Lionel. 2018. ‘Données personnelles et vie privée : ce qui va changer avec le RGPD (support d’intervention et vidéo)’. [S.I.Lex (blog). 29 May 2018](https://scinfolex.com/2018/05/29/donnees-personnelles-et-vie-privee-ce-qui-va-changer-avec-le-rgpd-support-dintervention-et-video).
+- le site web du Comité pour la Science Ouverte [comitepourlascienceouverteRessourcesGuidesJuridiques]
+
+- l'Inra a dédié un site aux questions de partage de données scientifiques [inraDatapartageGestionPartage]
+
+- les fiches pratiques du Cirad vous permettent d'aborder facilement les questions juridiques [ciradGererDonneesRecherche]
+
+- l'essentiel des ressources est en anglais, mais vous trouverez aussi quelques contenus en français sur le site de Foster Open Science [fosteropenscienceResourcesLegalIssues]
+
+Nous vous invitons aussi à consulter les vidéos de l'intervention de L. Maurel sur le RGPD [maurelDonneesPersonnellesVie2018]
+
+Enfin, le site WillO, développé par l'Université de Lille, vous permet de mieux comprendre l'impact de la loi pour une République Numérique sur vos travaux de recherche [universitedelilleWillODroitsObligations]
+
+
+
