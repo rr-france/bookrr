@@ -99,9 +99,9 @@ Pour commencer à programmer, nous ne saurions trop vous conseiller de commencer
 par apprendre un de ces deux langages.  Le choix entre les deux vous
 appartient, sachant que vous avez tout intérêt à observer les pratiques dans
 votre domaine ou bien encore à regarder les programmes des conférences telles
-que Scipy (http://conference.scipy.org), EuroScipy (https://www.euroscipy.org),
+que [Scipy] (http://conference.scipy.org/) [scipySciPyConferences], [EuroScipy] (https://www.euroscipy.org) [euroscipyEuroSciPyHome],
 useR! (http://www.user2019.fr), Les Rencontres
-R(https://r2018-rennes.sciencesconf.org) ... *SG*
+R(https://r2018-rennes.sciencesconf.org) [rencontresr7eRencontres2018], *etc*. *SG*
 
 
 ## Pour en savoir plus
@@ -117,24 +117,24 @@ de ressources accessibles en ligne que nous jugeons de qualité.
 ### MOOCs
 *SG*
 
-* [Introduction à la statistique avec R](https://www.fun-mooc.fr/courses/UPSUD/42001S06/session06/about)
-* [Python : des fondamentaux à l'utilisation du langage](https://www.fun-mooc.fr/courses/inria/41001S03/session03/about)
+* [Introduction à la statistique avec R](https://www.fun-mooc.fr/courses/UPSUD/42001S06/session06/about) [universiteparissudIntroductionStatistiqueAvec]
+* [Python : des fondamentaux à l'utilisation du langage](https://www.fun-mooc.fr/courses/inria/41001S03/session03/about) [inriaPythonFondamentauxUtilisation]
 
 
 ### Tutoriels
 
-* [Begin’R](http://beginr.u-bordeaux.fr)
-* [Le tutoriel officiel de Python](https://docs.python.org/fr/3/tutorial)
+* [Begin’R](http://beginr.u-bordeaux.fr) [arnalBegin]
+* [Le tutoriel officiel de Python](https://docs.python.org/fr/3/tutorial) [pythonsoftwarefoundationTutorielPythonDocumentation]
 
 
 ### Livres
 
-* [R for Data Science](https://r4ds.had.co.nz)
-* [Dive into Python](https://www.diveinto.org/python3)
+* [R for Data Science](https://r4ds.had.co.nz) [wickhamDataScienceImport2016]
+* [Dive into Python](https://www.diveinto.org/python3) [pilgrimDivePython2009]
 
 ### Ateliers en ligne "Software Carpentry"
 
-* [Programming with R](http://swcarpentry.github.io/r-novice-inflammation)
-* [R for Reproducible Scientific Analysis](http://swcarpentry.github.io/r-novice-gapminder)
-* [Programming with Python](http://swcarpentry.github.io/python-novice-inflammation)
-* [Plotting and Programming in Python](http://swcarpentry.github.io/python-novice-gapminder)
+* [Programming with R](http://swcarpentry.github.io/r-novice-inflammation) [softwarecarpentryProgramming]
+* [R for Reproducible Scientific Analysis](http://swcarpentry.github.io/r-novice-gapminder) [softwarecarpentryReproducibleScientificAnalysisa]
+* [Programming with Python](http://swcarpentry.github.io/python-novice-inflammation) [softwarecarpentryProgrammingPython]
+* [Plotting and Programming in Python](http://swcarpentry.github.io/python-novice-gapminder) [softwarecarpentryPlottingProgrammingPython]
