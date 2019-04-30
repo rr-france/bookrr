@@ -5,7 +5,7 @@ dans le chapitre \@ref(B-data-acquisition).
 
 ## Rédiger un protocole de collecte des informations
 
-Comme nous l'avons vu plus haut (Chapitres \@ref(B-data-acquisition) et
+Comme nous l'avons vu plus haut (chapitres \@ref(B-data-acquisition) et
 \@ref(B-data-input)), l'information doit être collectée
 de façon "standardisée".  Cela implique de rédiger un protocole décrivant la
 façon dont l'information est collectée, et ce, donnée par donnée. Par exemple :
@@ -50,7 +50,7 @@ trace.
 ## Collecter les données de façon répétable ET reproductible
 
 Le protocole de collecte d'une information doit être défini de telle sorte
-qu'elle soit "répétable" et "reproductible" au sens du *VIM* [bureauinternationaldespoidsetdesmesuresVocabulaireInternationalMetrologie2012]*SG* (_cf._ Chapitre
+qu'elle soit "répétable" et "reproductible" au sens du *VIM* [bureauinternationaldespoidsetdesmesuresVocabulaireInternationalMetrologie2012]*SG* (_cf._ chapitre
 \@ref(B-data-acquisition)). Tout d'abord, si vous collectez une information
 deux fois sur un individu dans un intervalle de temps restreint, les deux
 valeurs de l'information doivent être les mêmes, ou du moins être suffisamment
