@@ -53,9 +53,9 @@ en utilisant leur définition métrologique.
 ### Quelques définitions issues du *Vocabulaire International de Métrologie*
 
 Nous avons décidé de choisir les définitions proposées en 2012 dans la dernière version 
-du *Vocabulaire International de Métrologie (VIM)* car elles représentent l’effort le plus 
+du *Vocabulaire International de Métrologie (VIM)* [bureauinternationaldespoidsetdesmesuresVocabulaireInternationalMetrologie2012]car elles représentent l’effort le plus 
 récent de normalisation dans ce domaine *SG*(téléchargeable ici : 
-https://www.bipm.org/en/publications/guides/).
+[bureauinternationaldespoidsetdesmesuresVocabulaireInternationalMetrologie2012]).
 
 La **fidélité** de mesure s'entend comme : "l’étroitesse de l'accord entre les indications ou les 
 valeurs mesurées obtenues par des mesurages répétés du même objet ou d'objets similaires 
@@ -74,7 +74,7 @@ ainsi que des mesurages répétés sur le même objet ou des objets similaires."
 
 ### Impact d’une absence de répétabilité ou de reproductibilité dans la collecte des informations
 
-Si la collecte d’une information n’est pas "répétable" au sens du *VIM* défini ci-dessus, les 
+Si la collecte d’une information n’est pas "répétable" au sens du *VIM* défini ci-dessus [bureauinternationaldespoidsetdesmesuresVocabulaireInternationalMetrologie2012], les 
 conditions d’une recherche reproductible ne peuvent alors pas être remplies : vous n’obtiendriez 
 pas les mêmes résultats à partir d’informations collectées sur des unités identiques, évalués 
 dans les mêmes conditions par un même opérateur. Si la collecte des données n’est pas "reproductible" 
@@ -124,7 +124,7 @@ La récupération de données à partir d'images (OCR) présente des problèmes 
 
 Et pour le chercheur aventureux, copier/coller les données collectées dans un tableur peut 
 introduire une couche supplémentaire de surprises (transformation de nombres ou 
-d'identifiants en dates, par exemple) *SG* [@REF https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1044-7].
+d'identifiants en dates, par exemple) *SG* [ziemannGeneNameErrors2016].
 
 
 ## Que faire ?
@@ -133,8 +133,7 @@ Les solutions pour faire face aux problèmes évoqués dans ce chapitre,
 dépendent du collecteur de données, mais également de l'émetteur. 
 
 Le collecteur de données pourra se reporter aux solutions présentées dans les chapitres 
-\@ref(C-data-acquisition) et \@ref(C-code-learn) *SG*
-pour automatiser et tracer au maximum le processus de collecte (d'autant plus que le volume 
+\@ref(C-data-acquisition) et \@ref(C-code-learn) pour automatiser et tracer au maximum le processus de collecte (d'autant plus que le volume 
 de données est important et/ou si la tâche est répétitive).
  
 L'emetteur de données pourra se reporter aux solutions présentées dans les chapitres 
