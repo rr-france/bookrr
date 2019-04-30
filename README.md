@@ -1,5 +1,5 @@
 # Vers une recherche reproductible : Faire évoluer ses pratiques
-Livre sur la recherche reproductible rédigé à l'occasion d'un booksprint
+Ce livre sur la recherche reproductible a été rédigé à l'occasion d'un *book sprint* ; en savoir plus : {#D-appendix}.
 
 ## Auteurs
 Loïc Desquilbet, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot, Nicolas Rougier
@@ -7,14 +7,14 @@ Loïc Desquilbet, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot,
 Facilitatrice : Elisa de Castro Guerra
 
 ## Citer l'ouvrage
-*SG* introduire ref vers la 1re éd avec l'ISBN
+*SG* introduire ref vers la 1re éd avec l'ISBN (à faire après dépôt dans HAL)
 
 ## Est-il possible de contribuer, de proposer de nouveaux contenus ? 
 Ce livre est ouvert aux nouveaux contenus : proposition d'ajout de chapitre, complément de chapitre, références complémentaires, mais aussi questions.
 Le livre ayant été rédigé collaborativement, les propositions sont étudiées par le collectif des auteurs. 
 En fonction de la nature de vos propositions, vous pourrez être amené.e à être cité.e comme [contributeur, ou co-auteur](https://publicationethics.org/authorship). 
 Vous pouvez soumettre vos propositions via :
-- GitHub (issue)
+- GitHub (Issue)
 - email : urfist@u-bordeaux.fr
 
 ## Licence
