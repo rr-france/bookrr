@@ -43,7 +43,7 @@ que la santé) où le partage des données n'est pas toujours possible pour :
 - de protection des personnes... 
 
 Il est donc indispensable de se poser la question du droit,
-notamment dans le cadre du Réglement Général sur la Protection des Données
+notamment dans le cadre du Règlement Général sur la Protection des Données
 (RGPD)[un certain nombre de textes officiels et de documents sont disponibles
 sur [le site de la
 CNIL](https://www.cnil.fr/fr/textes-officiels-europeens-protection-donnees)] [cnilTextesOfficiels]. 
@@ -62,7 +62,7 @@ Le droit évolue constamment et les ressources sur le sujet sont pléthoriques. 
 
 - les fiches pratiques du Cirad vous permettent d'aborder facilement les questions juridiques [ciradGererDonneesRecherche]
 
-- l'essentiel des ressources est en anglais, mais vous trouverez aussi quelques contenus en français sur le site de Foster Open Science [fosteropenscienceResourcesLegalIssues]
+- l'essentiel des ressources est en anglais, mais vous trouverez aussi quelques contenus en français sur le site de *Foster Open Science* [fosteropenscienceResourcesLegalIssues]
 
 Nous vous invitons aussi à consulter les vidéos de l'intervention de L. Maurel sur le RGPD [maurelDonneesPersonnellesVie2018]
 
