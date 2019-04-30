@@ -57,14 +57,7 @@ forme inappropriée des incertitudes associées aux résultats d'une mesure
 physique ou virtuelle, ou d'une étude statistique. Très souvent, l'absence
 d'incertitude (par exemple, l'absence de valeur d'écart-type) empêche une
 comparaison de résultats, ou bien l'absence de matrice de corrélation entre les
-paramètres incertains d'une étude empêche leur réutilisation. *SG* *cf.* @Article{Hebrard2009,Title = {How measurements of rate coefficients at low temperature increase the predictivity of photochemical models of {Titan}'s atmosphere},
-Author = {H'ebrard, E and Pernot, P and Dobrijevic, M and Carrasco, N and Bergeat, A and Hickson, K M and Canosa, A and Picard, S D Le and Sims, I R},
-Journal = {J. Phys. Chem. A},
-Year = {2009},
-Pages = {11227--11237},
-Volume = {113},
-Doi = {10.1021/jp905524e},
-}
+paramètres incertains d'une étude empêche leur réutilisation. *SG* *cf.*[hebrardHowMeasurementsRate2009]
 
 Même lorsque des efforts ont été faits pour publier les informations adéquates,
 des problèmes d'arrondi peuvent anéantir la réutilisabilité des données. Une
@@ -81,9 +74,7 @@ conduire à une erreur très importante en bout de course – _cf._ « Chaos num
 A titre d'illustration, la matrice de variance-covariance publiée par le CODATA
 en 2002 pour l'ajustement des constantes fondamentales, arrondie pour être
 présentable dans les annexes de l'article, s'est avérée inutilisable pour des
-travaux ultérieurs. *SG* [V.V. Ezhela, Yu.V. Kuyanov, V.N. Larin, A.S. Siver
-(2004) The Inconstancy of the Fundamental Physical Constants: Computational
-Status https://arxiv.org/abs/physics/0409117]
+travaux ultérieurs. *SG* [ezhelaInconstancyFundamentalPhysical2004]
 
 ## Que faire ?
 
