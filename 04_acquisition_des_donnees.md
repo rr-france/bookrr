@@ -107,7 +107,7 @@ Considérons d'abord le cas, fréquent dans certains domaines (et *a priori* fav
 où les données d'intérêt sont dans le fichier PDF d'un article ou de son supplément. 
 Lorsqu'on effectue un copier/coller d'une partie de fichier PDF vers un éditeur de texte, 
 les sources de contrariété sont multiples (et dépendent largement du logiciel utilisé pour 
-afficher le fichier PDF). Les plus fréquemment rencontrées peuvent être : 
+afficher le fichier PDF). Les désagréments les plus courants sont : 
   
  - une impossibilité éventuelle de gérer correctement des tables complexes 
   (avec des cellules vides ou une table pivotée);
