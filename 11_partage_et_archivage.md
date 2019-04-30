@@ -22,9 +22,7 @@ La façon la plus simple d'élaborer un *compendium* de recherche est de créer 
 répertoire associé au projet, avec des sous-répertoires dans lesquels sont
 répartis les objets. Une convention de nommage explicite des objets et
 répertoires et facilite la réutilisabilité. Par exemple, pour une simple analyse
-statistique d'un jeu de données, *SG*[Ben Marwick, Carl Boettiger & Lincoln Mullen
-(2018) Packaging Data Analytical Work Reproducibly Using R (and Friends), The
-American Statistician, 72:1, 80-88, DOI: 10.1080/00031305.2017.1375986]()
+statistique d'un jeu de données, *SG*[marwickPackagingDataAnalytical2018]()
 proposent la structure suivante :
 
 ![](img/compendium_fr.png)
@@ -33,7 +31,7 @@ proposent la structure suivante :
 
 Ces *compendia* peuvent être alors archivés et référencés comme tout autre objet
 numérique sous forme de dossiers compressés ou sur des plates-formes spécialisées
-comme par exemple l'*[Open Science Framework (OSF)*.(https://osf.io/). *SG*
+comme par exemple l'*[Open Science Framework (OSF)*.(https://osf.io/) [centerforopenscienceOpenScienceFramework]. *SG*
 
 
 ## Modalités de partage
@@ -117,12 +115,12 @@ pérenne et d'indexer les versions successives les artefacts de la recherche.
 ## Pour en savoir plus
 
 Vous pouvez consulter les [recommandations du
-CNRS](http://qualite-en-recherche.cnrs.fr/spip.php?article315) *SG* concernant la
+CNRS](http://qualite-en-recherche.cnrs.fr/spip.php?article315) [reseauqualiteenrechercheTracabiliteActivitesRecherche2018] *SG* concernant la
 traçabilité des activités de recherche, ainsi que les principes [FAIR (Findable,
-Accessible, Interoperable, Reusable)](https://www.go-fair.org/fair-principles/)
+Accessible, Interoperable, Reusable)](https://www.go-fair.org/fair-principles/) [gofairFAIRPrinciples]
 
 Pour une exposition très claire des problèmes de pérennité, vous
 pouvez regarder le [séminaire de Roberto Di
-Cosmo](https://github.com/alegrand/RR_webinars/blob/master/5_archiving_software_and_data/index.org)
-sur ce sujet. *SG*
+Cosmo](https://github.com/alegrand/RR_webinars/blob/master/5_archiving_software_and_data/index.org) sur ce sujet *in* [legrandSeriesWebinarsDocuments2019a].
+ *SG*
  
