@@ -12,7 +12,7 @@ Rmd: $(RMD_FILE_LIST)
 html: Rmd
 	Rscript -e "rmarkdown::render_site(output_format = 'bookdown::gitbook', encoding = 'UTF-8')"
 	rm -rf html;
-	cd _book/; cp A-preambule.html index.html; cd ..
+#	cd _book/; cp A-preambule.html index.html; cd ..
 	mv _book/ html
 
 pdf: Rmd
