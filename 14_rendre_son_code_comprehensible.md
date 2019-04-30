@@ -169,7 +169,7 @@ types d'annotations (commentaire et documentation) qui peuvent se retrouver simu
 ## Utiliser des document computationnels (*notebooks*)
 
 La programmation lettrée a été conceptualisée en 1984 par Donald Knuth
-[@knuth1984literate] *SG* et propose des principes pour produire un
+[knuthLiterateProgramming1992] *SG* et propose des principes pour produire un
 code compréhensible. Il s'agit principalement de considérer l'écriture d'un code comme un
 moyen d'expliquer à d'autres personnes les tâches demandées à
 l'ordinateur. 
@@ -188,7 +188,7 @@ Les documents computationnels permettent d'intégrer dans un même
 document : du texte rédactionnel, du code informatique
 et les résultats de ce code. 
 La partie narrative, rédigée dans un langage de balisage très léger 
-(tels que [Markdown](https://daringfireball.net/projects/markdown)), 
+(tels que [Markdown](https://daringfireball.net/projects/markdown) [gruberMarkdown2004]), 
 est régulièrement agrémentée de fragments de codes exécutables 
 (par exemple en R ou en Python) dont les résultats textuels ou graphiques 
 sont automatiquement accolés. 
@@ -200,15 +200,14 @@ les chercheurs :
   3. "J'inspecte le résultat de mon expérience/analyse" = le résultat du programme
   4. "J'interprète les résultats et je décris mon interprétation" = partie narrative avant de proposer une nouvelle hypothèse
 
-> FIXME: On pourrait peut-être insérer ici une illustration tirée du  [slide 37](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module2/slides/C028AL_slides_module2-fr-gz.pdf)
-> [SVG](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module2/slides/img/example_pi_full.svg)
+Pour compléter, voir diapo n° 37 *in* "La vitrine et l'envers du décor : Le document computationnel", par A. Legrand [legrandVitrineEnversDecor2018].  
 
 Ce procédé permet ainsi de documenter chaque étape de la recherche : chaque partie du code 
 est gérée de manière indépendante et de fait, liée à sa finalité directe.
 Différents outils permettent d'écrire de tels documents, les plus matures étant :
 
  - [Jupyter](https://jupyter.org)
- - [Rmarkdown](https://rmarkdown.rstudio.com)
+ - [Rmarkdown](https://rmarkdown.rstudio.com) ; voir aussi [lalanneLangageMarkdown]
  - [Org-mode](https://www.orgmode.org/fr)
  
 De tels documents computationnels offrent de nombreux avantages : 
@@ -220,7 +219,7 @@ effectivement exécuté,
 
 Pour en savoir davantage sur les documents computationels, vous pouvez vous rapporter aux
 module 2 et 3 du [MOOC sur la recherche
-reproductible](https://learninglab.inria.fr/mooc-recherche-reproductible-principes-methodologiques-pour-une-science-transparente/).
+reproductible](https://learninglab.inria.fr/mooc-recherche-reproductible-principes-methodologiques-pour-une-science-transparente/) [inrialearninglabMOOCRechercheReproductible2018].
 *SG*
 
 ## Restructurer et automatiser l'exécution du code avec un *workflow*
@@ -233,7 +232,7 @@ les *design patterns*, etc.
 
 Dès lors qu'il est question de transformer des
 quantités importantes de données par des calculs complexes, le concept de 
-[systèmes de *workflows* scientifiques](https://en.wikipedia.org/wiki/Scientific_workflow_system)
+[systèmes de *workflows* scientifiques](https://en.wikipedia.org/wiki/Scientific_workflow_system) [wikipediaScientificWorkflowSystem2019]
 trouve toute sa pertinence. 
 Il existe de nombreux *workflows* répondant aux besoins de 
 différentes communautés scientifiques : astrophysique, génétique, etc. 
@@ -250,5 +249,5 @@ ses travaux reproductibles.
 
 ## Pour en savoir plus
 
-Le sujet des *workflows* est développé dans une conférence en ligne [*Reproducible Science in Bioinformatics: Current Status, Solutions and Research Opportunities*](https://github.com/alegrand/RR_webinars/blob/master/6_reproducibility_bioinformatics/index.org).
+Le sujet des *workflows* est développé dans une conférence en ligne [*Reproducible Science in Bioinformatics: Current Status, Solutions and Research Opportunities*](https://github.com/alegrand/RR_webinars/blob/master/6_reproducibility_bioinformatics/index.org) [legrandSeriesWebinarsDocuments2019b].
 
