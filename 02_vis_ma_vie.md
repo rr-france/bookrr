@@ -35,7 +35,7 @@ narrativisée, les *personas* permettent :
 > nous venons de recevoir les commentaires des relecteurs : je dois
 > modifier les couleurs d'une figure afin que celle-ci soit lisible en
 > noir et blanc. Comme je n'arrivais pas à remettre la main sur mon
-> *script* R ayant généré la figure en question, j'ai ré-écrit le
+> script R ayant généré la figure en question, j'ai ré-écrit le
 > programme correspondant. Le seul problème, c'est que cette nouvelle
 > figure est un peu différente de la précédente et remet en cause les
 > conclusions de l’article. Je ne comprends pas ce qui a pu se
