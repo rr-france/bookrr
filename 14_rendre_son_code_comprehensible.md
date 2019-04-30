@@ -109,9 +109,7 @@ sont complétées automatiquement avec celles définies par défaut dans la fonc
 C'est bien pratique : vous économisez de l'écriture de code, mais en vous 
 reposant sur cette fonctionnalité, vous laissez implicitement à la bibliothèque
 utilisée le soin de définir à votre place la valeur des paramètres. 
-La plupart du temps, déléguer votre responsabilité à un tiers ne pose pas de problème majeur. 
-Jusqu'au jour où, après une mise à jour, la valeur d'un de ces *n-k* 
-paramètres par défaut est changée ! 
+La plupart du temps, déléguer votre responsabilité à un tiers ne pose pas de problème majeur... jusqu'au jour où, après une mise à jour, la valeur d'un de ces *n-k* paramètres par défaut est changée ! 
 Vos résultats changent, alors que votre programme n'a pas changé d'un bit. 
 Le problème aurait pu être évité : vous auriez pu expliciter l'ensemble de vos *n* paramètres, 
 y compris les éléments non obligatoires car disposant d'une valeur par défaut.
