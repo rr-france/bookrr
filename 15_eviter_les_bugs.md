@@ -52,7 +52,7 @@ des tests unitaires, en les évaluant :
 - à chaque nouvelle version du code, ou 
 - à intervalles de temps réguliers (chaque nuit par exemple). 
 
-Ces solutions peuvent être locales, telles que Jenkins, ou deportées, telles que Travis CI^[https://travis-ci.org/] ou Appveyor^[https://www.appveyor.com/]. *SG*
+Ces solutions peuvent être locales, telles que Jenkins, ou deportées, telles que [Travis CI] (https://travis-ci.org/) [travisciTestDeployYour]ou [Appveyor](https://www.appveyor.com/). *SG*
 
 Ces outils d'intégration continue peuvent en outre servir à vérifier que le
 code se comporte correctement sous différents environnements logiciels (voir le
@@ -61,6 +61,6 @@ chapitre suivant)
 ## Pour en savoir plus 
 *SG*
 
- - [How to Pair Program](https://www.wikihow.com/Pair-Program)
- - [Wickham H. testthat: Get started with testing. The R Journal. 2011 Jun 1;3(1):5-10.](https://journal.r-project.org/archive/2011/RJ-2011-002/RJ-2011-002.pdf)
- - [Beginner Guide to Travis](https://juliasilge.com/blog/beginners-guide-to-travis)
+ - [brownTenQuickTips2018]
+ - [wickhamTestthatGetStarted2011]
+ - [silgeBeginnerGuideTravisCI2016]
