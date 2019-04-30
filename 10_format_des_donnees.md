@@ -8,7 +8,7 @@ en dehors de l'outil numérique.
 ## Comment structurer mes informations ?
 
 Les chercheurs peuvent être amenés à travailler sur des données de
-natures très variées. Si on peut spontanément penser à des nombres, les 
+nature très variée. Si on peut spontanément penser à des nombres, les 
 chercheurs peuvent aussi travailler sur des images ou du texte. Le plus 
 souvent, les chercheurs travaillent en fait sur une "collection" de données 
 liées les unes aux autres. La relation entre ces données est essentielle. 
