@@ -27,7 +27,7 @@ des bibliothèques chargées avec leur numéro de version. En R, on peut
 par exemple utiliser la commande `sessionInfo` (ou encore 
 `devtools::session_info`). Mais cette méthode relativement
 simple est surtout limitée et assez peu précise car elle ne signale que quelques
-unes des dépendances système de plus bas niveau. Elle correspond à
+unes des dépendances système de plus haut niveau. Elle correspond à
 la zone verte dans le schéma ci-dessous. Cependant, il est très 
 facile d'inclure ces informations descriptives dans vos documents 
 computationnels (cf. chapitre précédent 15 "rendre son code compréhensible"), et nous vous recommandons cette 
