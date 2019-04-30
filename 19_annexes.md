@@ -36,7 +36,7 @@ La qualité du livrable ne peut pas être du niveau d’un article ou d’un cha
 
 Le *book sprint* n’est pas conçu pour améliorer les techniques rédactionnelles des auteurs. En revanche, la présence d’un éditeur permet d’homogénéiser les disparités rédactionnelles, de délester les auteurs des vérifications syntaxiques et orthographiques. 
 
-La notion de 1er auteur n’existe pas, mais :
+La notion de premier auteur n’existe pas, mais :
 
 - le droit de paternité, au sens du code de la propriété intellectuelle, est respecté. Le livrable est déposé dans une plate-forme permettant de rendre le livrable citable la validation des contenus est collégiale car la philosophie du *book sprint* met l’accent sur la collaboration. 
 - le facilitateur conduit les échanges et permet aux auteurs de conserver une dynamique adaptée au rythme du *sprint*. Si la nature fortement collaborative du travail fait émerger une part d'imprévu, il s'agit toutefois d'un exercice cadré, fondé sur une méthodologie. 
