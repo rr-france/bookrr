@@ -25,7 +25,7 @@ règles de nommage de fichiers évitant les ambiguïtés et facilitant
 l'exploration des versions. 
 
 Dans ce contexte, il est souvent recommandé de créer un nom de fichier constitué de plusieurs
-éléments *SG* [reseauqualiteenrechercheTracabiliteActivitesRecherche2018];[bryanHowNameFiles2015]
+éléments *SG* [@reseauqualiteenrechercheTracabiliteActivitesRecherche2018; @bryanHowNameFiles2015]
 
 * la date de sauvegarde, sous format AAAAMMJJ ou AAAA_MM_JJ
 (permettant un tri des dates par ordre alphabétique)
@@ -140,7 +140,7 @@ d'obtenir aisément une recherche reproductible :
 Pour en savoir davantage sur la gestion de versions, vous pouvez vous
 rapporter au module 1 du [MOOC sur la recherche
 reproductible](https://learninglab.inria.fr/mooc-recherche-reproductible-principes-methodologiques-pour-une-science-transparente/)
-[inrialearninglabMOOCRechercheReproductible2018]*SG* qui vous permettra de vous familiariser avec GitLab via une mise en
+[@inrialearninglabMOOCRechercheReproductible2018]*SG* qui vous permettra de vous familiariser avec GitLab via une mise en
 condition réelle. 
 
 GitLab et GitHub sont des sur-couches Web du logiciel Git ; elles
@@ -153,10 +153,10 @@ Voici quelques moyens d'apprendre à utiliser git et d'aller un peu plus loin :
 *SG*
  - [Happy Git With R](https://happygitwithr.com/) par *Jenny Bryan et al.* [hesterHappyGitGitHub]
  - Le [Software Carpentry Git tutorial](http://swcarpentry.github.io/git-novice/) [softwarecarpentryVersionControlGit]
- - Le livre Pro Git (gratuit) en [anglais](https://git-scm.com/book/en/v2) [chaconProGitBook2014] ou
+ - Le livre Pro Git (gratuit) en [anglais](https://git-scm.com/book/en/v2) [@chaconProGitBook2014] ou
  en [français](https://git-scm.com/book/fr/v2) (Les deux premiers chapitres
- suffisent pour bien commencer [chaconProGitTout2019])
- - Le site [Apprenez Git Branching](https://learngitbranching.js.org/) [cottleLearnGitBranching] permet
+ suffisent pour bien commencer [@chaconProGitTout2019])
+ - Le site [Apprenez Git Branching](https://learngitbranching.js.org/) [@cottleLearnGitBranching] permet
   d'apprendre Git interactivement et de comprendre les branches.
 
 

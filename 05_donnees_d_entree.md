@@ -71,7 +71,7 @@ ni les conventions de codages associées constitue un vecteur important de risqu
 notamment si un tiers désire les réutiliser. Cela fut le cas pour la
 sonde "*Mars Climate Orbiter*" qui s'est désintégrée à la surface de Mars en
 raison d'une communication entre un système de mesure anglo-saxon (émission) et
-un système métrique (réception). *SG* [jetpropulsionlaboratory-californiainstituteoftechnologyMarsClimateOrbiter]
+un système métrique (réception). *SG* [@jetpropulsionlaboratory-californiainstituteoftechnologyMarsClimateOrbiter]
 ## Obsolescence des données
 
 Dans certains cas, les données ont été sauvegardées, leur intégrité est

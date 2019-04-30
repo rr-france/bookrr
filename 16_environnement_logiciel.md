@@ -83,7 +83,7 @@ est [Docker](https://www.docker.com/). Par rapport à une machine virtuelle, le 
 pas reproduire l'ensemble du système d'exploitation, en se passant du kernel. Le conteneur est donc plus léger, moins gros et plus rapide. L'inconvénient est que le conteneur ne fonctionne pas pour toutes les combinaisons de machine réelle - machine virtuelle.
 
 Il existe d'ailleurs des outils permettant d'identifier et de capturer automatiquement 
-un tel environnement logiciel minimum pour pouvoir le partager avec d'autres: [CDE](http://www.pgbovine.net/cde.html) ou [ReproZip](https://vida-nyu.github.io/reprozip/). En savoir plus sur Reprozip : [chirigatiReproZipComputationalReproducibility2016]). Ces approches automatiques sont efficaces et très pratiques mais peuvent passer à côté de
+un tel environnement logiciel minimum pour pouvoir le partager avec d'autres: [CDE](http://www.pgbovine.net/cde.html) ou [ReproZip](https://vida-nyu.github.io/reprozip/). En savoir plus sur Reprozip : [@chirigatiReproZipComputationalReproducibility2016]). Ces approches automatiques sont efficaces et très pratiques mais peuvent passer à côté de
 certaines dépendances et ne permettent pas de variation. En effet, on obtient un
 environnement "binaire" figé sans sa recette de construction et il est donc très difficile de
 de changer une bibliothèque particulière ou de faire évoluer cet environnement.
@@ -91,7 +91,7 @@ de changer une bibliothèque particulière ou de faire évoluer cet environnemen
 ## Les systèmes de gestion de paquets
 
 L'approche la plus aboutie pour la reproduction de l'environnement logiciel 
-s'appuie sur les systèmes de gestion de paquets fonctionnels tels que *SG* [GUIX](https://www.gnu.org/software/guix/) (voir aussi [inriaGuixLogicielLibre] et [wurmusReproducibleGenomicsAnalysis2018]) et [NIX](https://nixos.org/). Il s'agit d'outils permettant de décrire et d'isoler très précisément 
+s'appuie sur les systèmes de gestion de paquets fonctionnels tels que *SG* [GUIX](https://www.gnu.org/software/guix/) (voir aussi [@inriaGuixLogicielLibre] et [@wurmusReproducibleGenomicsAnalysis2018]) et [NIX](https://nixos.org/). Il s'agit d'outils permettant de décrire et d'isoler très précisément 
 l'environnement strictement nécessaire à la recherche reproductible, de le partager 
 avec d'autres pour qu'ils puissent le mettre en œuvre, et même d'y 
 apporter des modifications très précisément contrôlées afin d'évaluer l'impact
@@ -102,8 +102,8 @@ Au sujet de l'identification des dépendances, vous pouvez vous référer
 au module 4 du *SG* [MOOC sur la recherche
 reproductible](https://learninglab.inria.fr/mooc-recherche-reproductible-principes-methodologiques-pour-une-science-transparente/) [inrialearninglabMOOCRechercheReproductible2018]
 et aux ressources correspondantes
-*SG*([slides](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module4/slides/C028AL_slides_module4-fr-gz.pdf) [pouzatVersEtudeReproductible],
-*SG*[ressources](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module4/ressources/resources_environment_fr.org)) [legrandBienControlerSon].
+*SG*([slides](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module4/slides/C028AL_slides_module4-fr-gz.pdf) [@pouzatVersEtudeReproductible],
+*SG*[ressources](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module4/ressources/resources_environment_fr.org)) [@legrandBienControlerSon].
 
 Vous  pouvez également vouloir regarder ce 
-[séminaire en ligne présentant quelques solutions pour contrôler son environnement](https://github.com/alegrand/RR_webinars/blob/master/2_controling_your_environment/index.org) [legrandControlingYourEnvironment2019].
+[séminaire en ligne présentant quelques solutions pour contrôler son environnement](https://github.com/alegrand/RR_webinars/blob/master/2_controling_your_environment/index.org) [@legrandControlingYourEnvironment2019].

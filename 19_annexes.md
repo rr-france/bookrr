@@ -11,9 +11,9 @@ Ce document a été conçu dans le cadre d'un *book sprint* organisé par l'Unit
 
 Réunir des profils variés pour mettre à disposition du plus grand nombre, sans barrière de coût, un ouvrage rédigé le temps du *sprint*.
 
-Dans la forme traditionnelle du *book sprint*  *SG* [bakerBookSprints2014], les auteurs conçoivent la **table des matières à partir de rien** : il n’y a pas de séance de travail préparatoire. **C’est le travail collaboratif qui permet de faire émerger les contenus et leurs publics cibles**. 
+Dans la forme traditionnelle du *book sprint*  *SG* [@bakerBookSprints2014], les auteurs conçoivent la **table des matières à partir de rien** : il n’y a pas de séance de travail préparatoire. **C’est le travail collaboratif qui permet de faire émerger les contenus et leurs publics cibles**. 
 Le *book sprint* n’est ni un séminaire, ni une retraite, mais en présente certaines caractéristiques car généralement, les auteurs sont logés dans un même endroit. 
-Dans les années 2000, les *book sprints* se sont développés sur les modèles des sprints informatiques pour produire rapidement de la documentation sur les logiciels libres. Adam Hyde, fondateur de *FlossManuals* [wikipediaFLOSSManualsFoundation2018] a été pionnier dans le domaine. 
+Dans les années 2000, les *book sprints* se sont développés sur les modèles des sprints informatiques pour produire rapidement de la documentation sur les logiciels libres. Adam Hyde, fondateur de *FlossManuals* [@wikipediaFLOSSManualsFoundation2018] a été pionnier dans le domaine. 
 Si la méthode s’est popularisée dans les pays anglo-saxons, et particulièrement dans le secteur de l’entreprise et le monde associatif, cette technique de rédaction reste moins utilisée par les publics académiques, même si elle tend à être progressivement adoptée. Elle appelle en effet des adaptations pour être applicable, mais offre des potentialités variées aux auteurs, une fois la méthode testée.
 
 ## Que peut apporter un book sprint à des chercheurs.euses ?

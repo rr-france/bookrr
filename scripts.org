@@ -145,6 +145,24 @@ grep -e @ref *.md | grep -v -e A-preambule -e A-introduction -e A-personas -e A-
 
 Looks good.
 
+* Citations
+My bad. Most references to keys have been entered with the =[key]= syntax
+instead of the =[@key]= syntax. Use these regexps carefully...
+
+#+begin_src shell :results output :exports both
+grep -e '\[[^@][^]]*\][^(]' *.md
+#+end_src
+
+#+RESULTS:
+: 11_partage_et_archivage.md:comme par exemple l'*[@Open Science Framework (OSF)*.(https://osf.io/) [centerforopenscienceOpenScienceFramework]. *SG*
+
+#+begin_src shell :results output :exports both
+git checkout *.md
+sed -i 's|\[\([^@][^]]*\)\]\([^(]\)|[@\1]\2|g' *.md
+#+end_src
+
+#+RESULTS:
+
 * Spell checking
 
 ** Plateforme
@@ -304,7 +322,6 @@ output file: booksprintrr.knit.md
 
 Output created: _book/booksprintrr.pdf
 #+end_example
-
 * Code cruft
 ** Ninja
  In the text, we have a simple ninja obfuscated code example. This is

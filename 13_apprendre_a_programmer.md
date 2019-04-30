@@ -99,9 +99,10 @@ Pour commencer à programmer, nous ne saurions trop vous conseiller de commencer
 par apprendre un de ces deux langages.  Le choix entre les deux vous
 appartient, sachant que vous avez tout intérêt à observer les pratiques dans
 votre domaine ou bien encore à regarder les programmes des conférences telles
-que [Scipy] (http://conference.scipy.org/) [scipySciPyConferences], [EuroScipy] (https://www.euroscipy.org) [euroscipyEuroSciPyHome],
-useR! (http://www.user2019.fr), Les Rencontres
-R(https://r2018-rennes.sciencesconf.org) [rencontresr7eRencontres2018], *etc*. *SG*
+que [Scipy](http://conference.scipy.org/) [@scipySciPyConferences], [EuroScipy](https://www.euroscipy.org) [@euroscipyEuroSciPyHome],
+[useR!](http://www.user2019.fr), Les [Rencontres
+R](https://r2018-rennes.sciencesconf.org)
+[@rencontresr7eRencontres2018], *etc*. *SG*
 
 
 ## Pour en savoir plus

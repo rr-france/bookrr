@@ -57,7 +57,7 @@ forme inappropriée des incertitudes associées aux résultats d'une mesure
 physique ou virtuelle, ou d'une étude statistique. Très souvent, l'absence
 d'incertitude (par exemple, l'absence de valeur d'écart-type) empêche une
 comparaison de résultats, ou bien l'absence de matrice de corrélation entre les
-paramètres incertains d'une étude empêche leur réutilisation. *SG* *cf.*[hebrardHowMeasurementsRate2009]
+paramètres incertains d'une étude empêche leur réutilisation. *SG* *cf.*[@hebrardHowMeasurementsRate2009]
 
 Même lorsque des efforts ont été faits pour publier les informations adéquates,
 des problèmes d'arrondi peuvent anéantir la réutilisabilité des données. Une
@@ -74,7 +74,7 @@ conduire à une erreur très importante en bout de course – _cf._ « Chaos num
 A titre d'illustration, la matrice de variance-covariance publiée par le CODATA
 en 2002 pour l'ajustement des constantes fondamentales, arrondie pour être
 présentable dans les annexes de l'article, s'est avérée inutilisable pour des
-travaux ultérieurs. *SG* [ezhelaInconstancyFundamentalPhysical2004]
+travaux ultérieurs. *SG* [@ezhelaInconstancyFundamentalPhysical2004]
 
 ## Que faire ?
 
