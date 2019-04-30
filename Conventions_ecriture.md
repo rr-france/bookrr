@@ -1,5 +1,5 @@
-# Convention d'écriture
-Quelques conventions d'écriture pour aider à la collaboration
+# Conventions d'écriture
+Quelques conventions d'écriture pour faciliter la collaboration
 
 ## Structure
 
@@ -7,7 +7,7 @@ Quelques conventions d'écriture pour aider à la collaboration
 
 ## Vocabulaire :
 
- - relecteur, rapporteur, *referee* ou *reviewer* : essaie-t-on de s'en tenir au même terme tout du long ou n'est-ce pas utile ?
+ - relecteur, rapporteur, *referee* ou *reviewer* : les termes peuvent être utilisés indifféremment eu égard au lectorat cible de l'ouvrage, familier avec ces termes
  - programme/code/logiciels : quelles distinctions ? -> remplacer "programme" par "code" dès que "programme" renvoit à un script ou à du code
  - Préférer "rendre robuste" à "robustifier" ?
 
@@ -16,7 +16,7 @@ Quelques conventions d'écriture pour aider à la collaboration
 https://www.sciencespo.fr/ecole-doctorale/sites/sciencespo.fr.ecole-doctorale/files/CNRStypo.pdf 
 (pas de gestion des espaces insécables)
 
-### ponctuation & espacement
+### Ponctuation & espacement
 
  - espace : espace
  - espace ! espace
@@ -25,6 +25,11 @@ https://www.sciencespo.fr/ecole-doctorale/sites/sciencespo.fr.ecole-doctorale/fi
  - PAS d'espace"PAS espace : pb de rendu avec les guillemets anglo-saxons sinon
  - ...espace
 
+### Italique
+Recours à l'italique pour :
+- les expressions, phrases en langue étrangère, dont latin
+- les titres de monographies et de revues
+- l'italique n'est pas utilisé pour mettre en valeur un terme ou signaler un usage spécifique à un contexte ; on préfèrera dans ce cas mettre l'expression entre guillemets
 
 ### Enumérations
 Possibilité d'opter pour **,** ou **;** ou **.** mais néccessité d'harmoniser
