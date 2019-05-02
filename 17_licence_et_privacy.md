@@ -22,7 +22,7 @@ employeur ou ses organismes de tutelle.
 À noter cependant que les licences utilisées pour le partage des données sont
 le plus souvent différentes de celles couvrant les programmes et les
 logiciels : 
-*SG* [https://choosealicense.com/](https://choosealicense.com/) [@githubChooseOpenSource] et
+[https://choosealicense.com/](https://choosealicense.com/) [@githubChooseOpenSource] et
 [https://creativecommons.org/choose/](https://creativecommons.org/choose/) [@creativecommonsChooseLicense]
 permettent de choisir une licence logicielle ou non logicielle
 (respectivement) en répondant à 2 ou 3 questions.
@@ -53,7 +53,7 @@ peuvent être mises en œuvre : on peut citer la mise à disposition sur
 demande *via* une charte de confidentialité.
 
 ## Pour en savoir plus
-*SG*
+
 Le droit évolue constamment et les ressources sur le sujet sont pléthoriques. De fait, nous vous indiquons quelques sites web qui opèrent une sélection de contenus : 
 
 - le site web du Comité pour la Science Ouverte [@comitepourlascienceouverteRessourcesGuidesJuridiques]
