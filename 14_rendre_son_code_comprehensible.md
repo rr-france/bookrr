@@ -169,7 +169,7 @@ types d'annotations (commentaire et documentation) qui peuvent se retrouver simu
 ## Utiliser des document computationnels (*notebooks*)
 
 La programmation lettrée a été conceptualisée en 1984 par Donald Knuth
-[@knuthLiterateProgramming1992] *SG* et propose des principes pour produire un
+[@knuthLiterateProgramming1992] et propose des principes pour produire un
 code compréhensible. Il s'agit principalement de considérer l'écriture d'un code comme un
 moyen d'expliquer à d'autres personnes les tâches demandées à
 l'ordinateur. 
@@ -220,7 +220,6 @@ effectivement exécuté,
 Pour en savoir davantage sur les documents computationels, vous pouvez vous rapporter aux
 module 2 et 3 du [MOOC sur la recherche
 reproductible](https://learninglab.inria.fr/mooc-recherche-reproductible-principes-methodologiques-pour-une-science-transparente/) [@inrialearninglabMOOCRechercheReproductible2018].
-*SG*
 
 ## Restructurer et automatiser l'exécution du code avec un *workflow*
 
