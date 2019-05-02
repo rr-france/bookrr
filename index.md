@@ -6,7 +6,7 @@ date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [refs.bib]
-biblio-style: apalike
+biblio-style: plain
 link-citations: yes
 colorlinks: yes
 fontsize: 12pt

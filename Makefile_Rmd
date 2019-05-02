@@ -27,7 +27,7 @@ pdf: Rmd
 	cp booksprintrr.tex booksprintrr.tex.bak
 	cat booksprintrr.tex.bak |   \
 	     perl -e 'while(<>) { if($$_=~/Redefines \\(sub\\)paragraphs/) {foreach $$i (1..8) {<>;}; next}; print($$_);}' |   \
-	     perl -e 'while(<>) { if($$_=~/hypertarget{section}/) {<>; next}; print($$_);}'  \
+	     perl -e 'while(<>) { if($$_=~/hypertarget\{section\}/) {<>; next}; print($$_);}'  \
 	    > booksprintrr.tex
 	xelatex booksprintrr.tex
 	bibtex booksprintrr.aux
