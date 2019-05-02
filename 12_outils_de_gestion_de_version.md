@@ -25,7 +25,7 @@ règles de nommage de fichiers évitant les ambiguïtés et facilitant
 l'exploration des versions. 
 
 Dans ce contexte, il est souvent recommandé de créer un nom de fichier constitué de plusieurs
-éléments [@reseauqualiteenrechercheTracabiliteActivitesRecherche2018; @bryanHowNameFiles2015]
+éléments [@reseauqualiteenrechercheTracabiliteActivitesRecherche2018; @bryanHowNameFiles2015] : 
 
 * la date de sauvegarde, sous format AAAAMMJJ ou AAAA_MM_JJ
 (permettant un tri des dates par ordre alphabétique)
@@ -138,9 +138,9 @@ d'obtenir aisément une recherche reproductible :
 ## Pour en savoir plus
 
 Pour en savoir davantage sur la gestion de versions, vous pouvez vous
-rapporter au module 1 du [MOOC sur la recherche
+reporter au module 1 du [MOOC sur la recherche
 reproductible](https://learninglab.inria.fr/mooc-recherche-reproductible-principes-methodologiques-pour-une-science-transparente/)
-[@inrialearninglabMOOCRechercheReproductible2018] qui vous permettra de vous familiariser avec GitLab via une mise en
+[@inrialearninglabMOOCRechercheReproductible2018] qui vous permettra de vous familiariser avec GitLab *via* une mise en
 condition réelle. 
 
 GitLab et GitHub sont des sur-couches Web du logiciel Git ; elles
@@ -149,7 +149,7 @@ l'ensemble de ses fonctionnalités. Les éditeurs comme RStudio
 proposent une très bonne intégration *via* une interface graphique des
 interactions avec Git. Il est également possible d'utiliser la ligne de
 commandes pour bénéficier de toutes les fonctionnalités de Git.
-Voici quelques moyens d'apprendre à utiliser git et d'aller un peu plus loin :
+Voici quelques moyens d'apprendre à utiliser Git et d'aller un peu plus loin :
 
 - [Happy Git With R](https://happygitwithr.com/) par *Jenny Bryan et al.* [@hesterHappyGitGitHub]
  - Le [Software Carpentry Git tutorial](http://swcarpentry.github.io/git-novice/) [@softwarecarpentryVersionControlGit]
