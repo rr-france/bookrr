@@ -48,9 +48,9 @@ narrativisée, les *personas* permettent :
 > j'ai plutôt l'impression d'avoir pris l'autoroute de la
 > souffrance. Ma principale occupation a été d'extraire des données à
 > partir d'une série d'articles, qui donnait les points de
-> caractéristique dans les PDF en fichiers supplémentaires : du fun
+> caractéristique dans les PDF en fichiers supplémentaires : du *fun*
 > à tous les étages. Je les copie-colle directement dans
-> Excel. Fun². Dans le tableur, je dois ensuite transformer les "." en
+> Excel. *Fun*². Dans le tableur, je dois ensuite transformer les "." en
 > ",". Comme je ne dispose pas des incertitudes d'estimation pour tous
 > les articles (seuls certains articles les incluent dans leurs
 > résultats), je n'en tiens pas compte et ne rentre que les
