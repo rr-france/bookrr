@@ -83,7 +83,7 @@ est [Docker](https://www.docker.com/). Par rapport à une machine virtuelle, le 
 pas reproduire l'ensemble du système d'exploitation, en se passant du kernel. Le conteneur est donc plus léger, moins gros et plus rapide. L'inconvénient est que le conteneur ne fonctionne pas pour toutes les combinaisons de machine réelle - machine virtuelle.
 
 Il existe d'ailleurs des outils permettant d'identifier et de capturer automatiquement 
-un tel environnement logiciel minimum pour pouvoir le partager avec d'autres : [CDE](http://www.pgbovine.net/cde.html) ou [ReproZip](https://vida-nyu.github.io/reprozip/). En savoir plus sur Reprozip : [@chirigatiReproZipComputationalReproducibility2016]). Ces approches automatiques sont efficaces et très pratiques mais peuvent passer à côté de
+un tel environnement logiciel minimum pour pouvoir le partager avec d'autres : [CDE](http://www.pgbovine.net/cde.html) ou [ReproZip](https://vida-nyu.github.io/reprozip/). En savoir plus sur Reprozip : [@chirigatiReproZipComputationalReproducibility2016]. Ces approches automatiques sont efficaces et très pratiques mais peuvent passer à côté de
 certaines dépendances et ne permettent pas de variation. En effet, on obtient un
 environnement "binaire" figé sans sa recette de construction et il est donc très difficile de
 de changer une bibliothèque particulière ou de faire évoluer cet environnement.
