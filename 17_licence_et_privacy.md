@@ -66,7 +66,7 @@ Le droit évolue constamment et les ressources sur le sujet sont pléthoriques. 
 
 Nous vous invitons aussi à consulter les vidéos de l'intervention de L. Maurel sur le RGPD [@maurelDonneesPersonnellesVie2018]
 
-Enfin, le site WillO, développé par l'Université de Lille, vous permet de mieux comprendre l'impact de la loi pour une République Numérique sur vos travaux de recherche [@universitedelilleWillODroitsObligations]
+Enfin, le site WillO, développé par l'Université de Lille, vous permet de mieux comprendre l'impact de la loi pour une République Numérique sur vos travaux de recherche [@universitedelilleWillODroitsObligations].
 
 
 
