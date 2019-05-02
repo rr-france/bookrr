@@ -28,11 +28,11 @@ En guise de préambule, débutons par une liste non exhaustive des cas où l'on 
 
 * **Le numéro que vous avez demandé n'est plus attribué** : assez souvent, il s'agit d'un code développé "en externe" (dans une autre équipe de recherche par exemple) que l'on souhaite ré-exécuter, par exemple pour avoir un point de comparaison ou bien pour vérifier si on obtient bien des résultats similaires avec une autre méthode. En général, on cherche alors le code sur le web mais il est assez courant que l'URL indiquée dans l'article ne soit plus accessible car le développeur a depuis quitté l'équipe où il travaillait et que sa page web a été supprimée ou complètement
   restructurée. Ce problème est connu sous le nom d'*URL decay* [@spinellisDecayFailuresWeb2003] ou de *Link
-  Rot* [@wikipediaLinkRot2019]. *SG*
+  Rot* [@wikipediaLinkRot2019].
 
 * **Cachez ce code que je ne saurais voir** : enfin, les auteurs du code peuvent tout simplement ne pas souhaiter le partager, par exemple parce qu'ils jugent qu'il n'est pas montrable en l'état (pas ou peu commentaires, structure horrible cachant des erreurs) ou encore pour conserver ce qu'ils considèrent comme un avantage compétitif.
 
-Si cette question vous intéresse, vous pouvez lire les travaux de Collberg et Proebsting *SG*[@collbergRepeatabilityComputerSystems2016] qui étudient les causes d'incapacité à réexécuter du code dans la communauté de recherche *Computer Systems*, pourtant très au fait des aspects logiciels. Vous y trouverez de nombreux témoignages (assez drôles si c'était sans conséquences !) issus d'une étude de terrain ; vous pourrez notamment lire les excuses les plus couramment utilisées pour justifier une incapacité à donner accès au code derrière une publication.
+Si cette question vous intéresse, vous pouvez lire les travaux de Collberg et Proebsting [@collbergRepeatabilityComputerSystems2016] qui étudient les causes d'incapacité à réexécuter du code dans la communauté de recherche *Computer Systems*, pourtant très au fait des aspects logiciels. Vous y trouverez de nombreux témoignages (assez drôles si c'était sans conséquences !) issus d'une étude de terrain ; vous pourrez notamment lire les excuses les plus couramment utilisées pour justifier une incapacité à donner accès au code derrière une publication.
 
 ## Comment lance-t-on ce code ? ("Allô Houston ?")
 
@@ -74,12 +74,12 @@ Il y a un dicton célèbre en informatique qui dit “*Programs must be written
 for people to read, and only incidentally for machines to execute*.” C'est une
 citation d'[Harold Abelson](https://en.wikipedia.org/wiki/Hal_Abelson) tirée
 de son livre *Structure and Interpretation of Computer Programs* publié en
-1979 *SG* [@abelsonStructureInterpretationComputer1996]. Commenter, c'est une chose, mais lorsque l'on cherche à comprendre un
+1979 [@abelsonStructureInterpretationComputer1996]. Commenter, c'est une chose, mais lorsque l'on cherche à comprendre un
 programme, on se rend vite compte qu'il est indispensable que les noms de
 variables et de fonctions aient été bien choisis, que le code ait été été
 bien structuré avec des fonctions au rôle clairement défini, sans quoi le
 code devient totalement incompréhensible (ce qui est précisemment l'objet du
-concours "Obfuscated C" *SG* [@broukhisInternationalObfuscatedCode]). De même, lorsque qu'il s'agit d'un code conséquent
+concours "Obfuscated C" [@broukhisInternationalObfuscatedCode]). De même, lorsque qu'il s'agit d'un code conséquent
 réparti dans de nombreux fichiers, une mauvaise convention de nommage des
 fichiers ou bien l'usage d'une structure de fichiers absconse empêchent
 toute tentative de compréhension.
@@ -154,7 +154,7 @@ donné et une différence, même insignifiante, de cet environnement peut condui
 reproductibilité.
 
 Si vous pensez que ce problème n'est que théorique, nous vous invitons
-à lire Gronenschild et ses co-auteurs *SG* [@gronenschildEffectsFreeSurferVersion2012]
+à lire Gronenschild et ses co-auteurs [@gronenschildEffectsFreeSurferVersion2012]
 qui étudient l'influence de la version de MacOSX et de FreeSurfer, un logiciel
 permettant de mesurer l'épaisseur corticale et le volume de structures
 neuroanatomiques.
@@ -201,15 +201,14 @@ problématiques lorsque le système sous-jacent correspond par exemple à la
 discrétisation d'une équation différentielle. Le calcul est alors très sensible
 aux conditions initiales et l'accumulation des imprécisions peut amener à une
 catastrophe (voir notamment *The Patriot Missile
-Failure*[@arnoldPatriotMissileFailure2000]) *SG*
+Failure*[@arnoldPatriotMissileFailure2000])
 
 Il y a de nombreux articles décrivant ce genre de cauchemars :
-*SG* 
 [@feherNumericalErrorsMinimization2012]
 [@feherNumericalErrorsChaotic2012]
 
 Vous pouvez
-vouloir lire le classique *SG* *What Every Computer Scientist Should Know About Floating-point Arithmetic* [@goldbergWhatEveryComputer1991] ou encore les travaux de Stodden et ses collègues *SG* [@stoddenAssessingReproducibilityAstrophysical2018].
+vouloir lire le classique *What Every Computer Scientist Should Know About Floating-point Arithmetic* [@goldbergWhatEveryComputer1991] ou encore les travaux de Stodden et ses collègues [@stoddenAssessingReproducibilityAstrophysical2018].
 Pour une présentation de ces problématiques et de quelques solutions,
 vous pouvez aussi vouloir regarder ce 
 séminaire sur la reproductibilité numérique [@legrandControlingYourEnvironment2019].
