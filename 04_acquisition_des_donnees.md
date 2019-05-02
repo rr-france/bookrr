@@ -54,7 +54,7 @@ en utilisant leur définition métrologique.
 
 Nous avons décidé de choisir les définitions proposées en 2012 dans la dernière version 
 du *Vocabulaire International de Métrologie (VIM)* [@bureauinternationaldespoidsetdesmesuresVocabulaireInternationalMetrologie2012]car elles représentent l’effort le plus 
-récent de normalisation dans ce domaine *SG*(téléchargeable ici : 
+récent de normalisation dans ce domaine (téléchargeable ici : 
 [@bureauinternationaldespoidsetdesmesuresVocabulaireInternationalMetrologie2012]).
 
 La **fidélité** de mesure s'entend comme : "l’étroitesse de l'accord entre les indications ou les 
@@ -124,7 +124,7 @@ La récupération de données à partir d'images (OCR) présente des problèmes 
 
 Et pour le chercheur aventureux, copier/coller les données collectées dans un tableur peut 
 introduire une couche supplémentaire de surprises (transformation de nombres ou 
-d'identifiants en dates, par exemple) *SG* [@ziemannGeneNameErrors2016].
+d'identifiants en dates, par exemple) [@ziemannGeneNameErrors2016].
 
 
 ## Que faire ?
