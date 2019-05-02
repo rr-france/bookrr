@@ -46,7 +46,7 @@ Il est donc indispensable de se poser la question du droit,
 notamment dans le cadre du Règlement Général sur la Protection des Données
 (RGPD)[un certain nombre de textes officiels et de documents sont disponibles
 sur [le site de la
-CNIL](https://www.cnil.fr/fr/textes-officiels-europeens-protection-donnees)] [@cnilTextesOfficiels]. 
+Commission nationale de l'informatique et des libertés (CNIL)](https://www.cnil.fr/fr/textes-officiels-europeens-protection-donnees)] [@cnilTextesOfficiels]. 
 
 Des solutions alternatives au partage totalement libre des données
 peuvent être mises en œuvre : on peut citer la mise à disposition sur
@@ -64,7 +64,7 @@ Le droit évolue constamment et les ressources sur le sujet sont pléthoriques. 
 
 - l'essentiel des ressources est en anglais, mais vous trouverez aussi quelques contenus en français sur le site de *Foster Open Science* [@fosteropenscienceResourcesLegalIssues]
 
-Nous vous invitons aussi à consulter les vidéos de l'intervention de L. Maurel sur le RGPD [@maurelDonneesPersonnellesVie2018]
+Nous vous invitons aussi à consulter les vidéos de l'intervention de L. Maurel sur le RGPD [@maurelDonneesPersonnellesVie2018].
 
 Enfin, le site WillO, développé par l'Université de Lille, vous permet de mieux comprendre l'impact de la loi pour une République Numérique sur vos travaux de recherche [@universitedelilleWillODroitsObligations].
 
