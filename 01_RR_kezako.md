@@ -79,6 +79,8 @@ Ainsi, nous n’allons pas traiter des solutions à des problèmes qui nuisent �
 - sur-interpréter le résultat statistique qui est significatif (« Probability That a Positive Report is False ») [@gelmanDifferenceSignificantNot2006], [@gelmanFailureNullHypothesis2018], [@lakensJustifyYourAlpha2017], [@pernetRobustCorrelationAnalyses2013], [@wacholderAssessingProbabilityThat2004]
 
 Pour tous ces sujets cités précédemment, nous invitons le lecteur à se référer à la littérature : 
+[@chambersSevenDeadlySins2017]
+
 [@ioannidisWhyMostPublished2005]
 
 [@munafoManifestoReproducibleScience2017]
