@@ -11,6 +11,11 @@ Rmd: $(RMD_FILE_LIST)
 %.Rmd: %.md
 	ln -sf $^ $@
 
+.PHONY: epub
+epub: Rmd
+	Rscript -e "rmarkdown::render_site(output_format = 'bookdown::epub_book', encoding = 'UTF-8')"
+	mv _book/booksprintrr.epub .
+
 .PHONY: html
 html: Rmd
 	Rscript -e "rmarkdown::render_site(output_format = 'bookdown::gitbook', encoding = 'UTF-8')"
@@ -52,9 +57,9 @@ clean::
 	  booksprintrr.blg booksprintrr.out fix-booksprintrr.tex
 
 distclean:: clean
-	rm -rf html booksprintrr.pdf
+	rm -rf html booksprintrr.pdf booksprintrr.epub
 
 .PHONY: zip
-zip: pdf html
-	zip -r bookrr.zip html/ booksprintrr.pdf
+zip: pdf html epub
+	zip -r bookrr.zip html/ booksprintrr.pdf booksprintrr.epub
 
