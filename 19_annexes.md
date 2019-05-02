@@ -4,7 +4,7 @@
 
 ## Modalités de conception de l'ouvrage
 
-Ce document a été conçu dans le cadre d'un *book sprint* organisé par l'Unité régionale de formation à l'information scientifique et technique (Urfist) de Bordeaux en avril 2019. 
+Ce document a été conçu dans le cadre d'un *book sprint* organisé par l'Unité régionale de formation à l'information scientifique et technique (Urfist) de Bordeaux du 15 au 19 avril 2019. 
 *Book sprint* = rédaction collaborative inspirée des *sprints* informatiques.
 
 ## Objectif
