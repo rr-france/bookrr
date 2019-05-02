@@ -17,7 +17,7 @@ résultat" dépend fortement du domaine de recherche. Pour les uns, il suffira d
 la signifiance d'un effet, pour les autres, il s'agira d'obtenir le même
 résultat numérique bit pour bit. 
 L'expression "recherche reproductible" apparaît dès 1992, lors du congrès de la "*Society of Exploration Geophysics*". De nombreuses définitions de "recherche reproductible" sont fournies par Barba. [@barbaTerminologiesReproducibleResearch2018] Parmi celles-ci, nous retiendrons la suivante, issue de l'article de Vandewalle et al.[@vandewalleReproducibleResearchSignal2009] : 
-"un travail de recherche est dit reproductible si toutes les informations qui concernent ce travail incluant, sans s'y limiter, le texte, les données, et le code de programmation, sont rendues disponibles de telle sorte que n'importe quel chercheur indépendant peut reproduire les résultats." 
+"*A research work is called reproducible if all information relevant to the work, including, but not limited to, text, data and code, is made available, such that an independant researcher can reproduce the results*." [@barbaTerminologiesReproducibleResearch2018 ; p.3] (notre traduction : "Un travail de recherche est dit reproductible si toutes les informations qui concernent ce travail incluant, sans s'y limiter, le texte, les données, et le code de programmation, sont rendues disponibles de telle sorte que n'importe quel chercheur indépendant peut reproduire les résultats.") 
 
 ## Pourquoi la question de la reproductibilité est-elle devenue centrale dans les débats actuels ?
 
