@@ -53,14 +53,13 @@ des tests unitaires, en les évaluant :
 - à intervalles de temps réguliers (chaque nuit par exemple). 
 
 Ces solutions peuvent être locales, telles que Jenkins, ou deportées,
-telles que [Travis CI](https://travis-ci.org/) [@travisciTestDeployYour] ou [Appveyor](https://www.appveyor.com/). *SG*
+telles que [Travis CI](https://travis-ci.org/) [@travisciTestDeployYour] ou [Appveyor](https://www.appveyor.com/). 
 
 Ces outils d'intégration continue peuvent en outre servir à vérifier que le
 code se comporte correctement sous différents environnements logiciels (voir le
 chapitre suivant)
 
 ## Pour en savoir plus 
-*SG*
 
  - [@brownTenQuickTips2018]
  - [@wickhamTestthatGetStarted2011]
