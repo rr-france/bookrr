@@ -209,7 +209,7 @@ Il y a de nombreux articles décrivant ce genre de cauchemars :
 [@feherNumericalErrorsChaotic2012]
 
 Vous pouvez
-vouloir lire le classique *What Every Computer Scientist Should Know About Floating-point Arithmetic* [@goldbergWhatEveryComputer1991] ou encore les travaux de Stodden et ses collègues [@stoddenAssessingReproducibilityAstrophysical2018].
+vouloir lire le classique [*What Every Computer Scientist Should Know About Floating-point Arithmetic*] (https://www.itu.dk/~sestoft/bachelor/IEEE754_article.pdf) [@goldbergWhatEveryComputer1991] ou encore les travaux de Stodden et ses collègues [@stoddenAssessingReproducibilityAstrophysical2018].
 Pour une présentation de ces problématiques et de quelques solutions,
 vous pouvez aussi vouloir regarder ce 
 séminaire sur la reproductibilité numérique [@legrandControlingYourEnvironment2019].
