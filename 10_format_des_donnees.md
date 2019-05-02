@@ -102,7 +102,7 @@ pour des formats textes et .hdf5 ou .fits ou pour des formats binaires.
 Lors du stockage de données numériques, il est primordial d'éviter la perte ou l'érosion 
 de l'information. Ceci implique, outre une documentation exhaustive précisant
 les unités et la provenance des résultats, de gérer correctement leur représentation 
-numérique. [@*SG*] [@wilkinsonFAIRGuidingPrinciples2016]
+numérique. [@wilkinsonFAIRGuidingPrinciples2016]
 
 ### Nombre de chiffres significatifs
 
@@ -119,10 +119,10 @@ sa commande `print()`).
 
 Les informations devraient idéalement toujours être accompagnées d'une incertitude. Cela 
 s'applique à la fois aux mesures (qu'elles soient physiques ou virtuelles), ainsi qu'aux 
-résultats d'analyse (par exemple des estimations) *SG* [@bureauinternationaldespoidsetdesmesuresEvaluationDonneesMesure].
+résultats d'analyse (par exemple des estimations) [@bureauinternationaldespoidsetdesmesuresEvaluationDonneesMesure].
 
 L'incertitude peut servir de guide pour choisir le nombre de chiffres significatifs. Par exemple la recommandation en métrologie 
-*SG* [@bureauinternationaldespoidsetdesmesuresEvaluationDonneesMesure] est d'arrondir (par excès) l'incertitude à 
+[@bureauinternationaldespoidsetdesmesuresEvaluationDonneesMesure] est d'arrondir (par excès) l'incertitude à 
 deux chiffres significatifs, et de reporter le résultat au même niveau décimal. Par exemple, 
 si le résultat de mesure vaut 1.23456789 et l'incertitude vaut 0.00456, on reportera 1.2346 
 avec une incertitude de 0.0046. En outre, on évitera dans un tableau les notations du type 
@@ -131,7 +131,7 @@ avec une incertitude de 0.0046. En outre, on évitera dans un tableau les notati
 Une attention particulière doit être portée à certains objets afin de respecter leurs propriétés
 intrinsèques. Par exemple, les éléments d'une matrice de variance/covariance doivent être
 arrondis de manière à s'assurer que celle-ci reste définie-positive (en exigeant par exemple 
-que la plus petite valeur propre de la matrice garde deux chiffres significatifs). [*SG*] 
+que la plus petite valeur propre de la matrice garde deux chiffres significatifs). 
 Voir "Definition" (3.21)[@bureauinternationaldespoidsetdesmesuresEvaluationMeasurementData]
 
 
@@ -140,5 +140,5 @@ Voir "Definition" (3.21)[@bureauinternationaldespoidsetdesmesuresEvaluationMeasu
 
 En ce qui concerne la structuration des données, une approche assez
 populaire consiste à utiliser le plus possible une structure de tableau. Nous vous recommandons de lire ce document sur le sujet :
-[@*SG*] tidy data [@wickhamTidyData2014]
+tidy data [@wickhamTidyData2014]
 
