@@ -61,6 +61,6 @@ chapitre suivant)
 
 ## Pour en savoir plus 
 
- - [@brownTenQuickTips2018]
- - [@wickhamTestthatGetStarted2011]
- - [@silgeBeginnerGuideTravisCI2016]
+ - "Ten quick tips for teaching programming", [@brownTenQuickTips2018]
+ - "testthat: Get Started with Testing", [@wickhamTestthatGetStarted2011]
+ - "A Beginner's Guide to Travis-CI for R", [@silgeBeginnerGuideTravisCI2016]
