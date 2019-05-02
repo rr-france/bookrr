@@ -20,7 +20,14 @@ html: Rmd
 
 .PHONY: pdf
 pdf: Rmd
-	Rscript -e "rmarkdown::render_site(output_format = 'bookdown::pdf_book', encoding = 'UTF-8')" || true;
+	# switch PATH to call latex/xelatex instead of plain xelatex
+	# so that we can fix the tex file (see the next target)
+	env SAVEDPATH="$$PATH" PATH="latex:$$PATH" \
+	Rscript -e "rmarkdown::render_site(output_format = 'bookdown::pdf_book', encoding = 'UTF-8')"
+	mv _book/booksprintrr.pdf .
+
+# called by latex/xelatex to fix tex source file
+fix-booksprintrr.tex: booksprintrr.tex
 	sed -i -e 's/\\BREAKME//g'  \
 	    -e 's|documentclass\(.*\){book}|documentclass\1{latex/krantz}|g' \
 	    -e 's|^.*usepackage.*geometry.*$$||g' \
@@ -33,10 +40,8 @@ pdf: Rmd
 	     perl -e 'while(<>) { if($$_=~/Redefines \\(sub\\)paragraphs/) {foreach $$i (1..8) {<>;}; next}; print($$_);}' |   \
 	     perl -e 'while(<>) { if($$_=~/hypertarget\{section\}/) {<>; next}; print($$_);}'  \
 	    > booksprintrr.tex
-	xelatex booksprintrr.tex
-	bibtex booksprintrr.aux
-	xelatex booksprintrr.tex
-	xelatex booksprintrr.tex
+	rm -f booksprintrr.tex.bak
+	touch $@
 
 .PHONY: clean distclean
 clean::
@@ -44,10 +49,10 @@ clean::
 	Rscript -e "rmarkdown::clean_site(encoding = 'UTF-8')"
 	$(RM) *.Rmd
 	$(RM) booksprintrr.aux booksprintrr.log booksprintrr.toc \
-	  booksprintrr.blg booksprintrr.out booksprintrr.tex.bak
+	  booksprintrr.blg booksprintrr.out fix-booksprintrr.tex
 
 distclean:: clean
-	rm -rf html
+	rm -rf html booksprintrr.pdf
 
 .PHONY: zip
 zip: pdf html
