@@ -151,7 +151,8 @@ interactions avec Git. Il est également possible d'utiliser la ligne de
 commandes pour bénéficier de toutes les fonctionnalités de Git.
 Voici quelques moyens d'apprendre à utiliser git et d'aller un peu plus loin :
 *SG*
- - [Happy Git With R](https://happygitwithr.com/) par *Jenny Bryan et al.* [@hesterHappyGitGitHub]
+
+- [Happy Git With R](https://happygitwithr.com/) par *Jenny Bryan et al.* [@hesterHappyGitGitHub]
  - Le [Software Carpentry Git tutorial](http://swcarpentry.github.io/git-novice/) [@softwarecarpentryVersionControlGit]
  - Le livre Pro Git (gratuit) en [anglais](https://git-scm.com/book/en/v2) [@chaconProGitBook2014] ou
  en [français](https://git-scm.com/book/fr/v2) (Les deux premiers chapitres
