@@ -1,5 +1,5 @@
 # Vers une recherche reproductible : Faire évoluer ses pratiques
-Ce livre sur la recherche reproductible a été rédigé à l'occasion d'un *book sprint* ; en savoir plus : {#D-appendix}.
+Ce livre sur la recherche reproductible a été rédigé à l'occasion d'un *book sprint* ; en savoir plus : chapitre \@ref(D-appendix)
 
 ## Auteurs
 Loïc Desquilbet, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot, Nicolas Rougier
