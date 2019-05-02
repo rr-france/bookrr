@@ -102,7 +102,7 @@ votre domaine ou bien encore à regarder les programmes des conférences telles
 que [Scipy](http://conference.scipy.org/) [@scipySciPyConferences], [EuroScipy](https://www.euroscipy.org) [@euroscipyEuroSciPyHome],
 [useR!](http://www.user2019.fr), Les [Rencontres
 R](https://r2018-rennes.sciencesconf.org)
-[@rencontresr7eRencontres2018], *etc*. *SG*
+[@rencontresr7eRencontres2018], *etc*. 
 
 
 ## Pour en savoir plus
@@ -116,7 +116,6 @@ C'est la raison pour laquelle nous donnons ci-dessous une liste très restreinte
 de ressources accessibles en ligne que nous jugeons de qualité.
 
 ### MOOCs
-*SG*
 
 * [Introduction à la statistique avec R](https://www.fun-mooc.fr/courses/UPSUD/42001S06/session06/about) [@universiteparissudIntroductionStatistiqueAvec]
 * [Python : des fondamentaux à l'utilisation du langage](https://www.fun-mooc.fr/courses/inria/41001S03/session03/about) [@inriaPythonFondamentauxUtilisation]
