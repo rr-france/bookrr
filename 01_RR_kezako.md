@@ -74,9 +74,9 @@ D'autres solutions demanderont un peu plus de temps et d'énergie.
 Il n’est pas question dans cet ouvrage de traiter toutes les solutions pour garantir la reproductibilité de la recherche au sens de Randall et Welser [@randallIrreproducibilityCrisisModern2018]: ainsi, la question de la qualité de la recherche est hors périmètre du présent ouvrage. En effet, nous vous proposons plutôt de nous focaliser sur les solutions qui permettent communiquer des résultats pouvant être reproduits de façon exhaustive. 
 Ainsi, nous n’allons pas traiter des solutions à des problèmes qui nuisent à la qualité de la recherche, et en particulier : 
 
-- aller à la "pêche" aux résultats significatifs parmi tous les tests statistiques réalisés ("p-hacking") [@nuzzoScientificMethodStatistical2014], 
+- aller à la "pêche" aux résultats significatifs parmi tous les tests statistiques réalisés ("p-hacking") [@forstmeierDetectingAvoidingLikely2017], [@nuzzoScientificMethodStatistical2014], [@randallIrreproducibilityCrisisModern2018]
 - générer une hypothèse de recherche *a posteriori*, c’est-à-dire après avoir obtenu un résultat significatif (« harking ») [@kerrHARKingHypothesizingResults1998], 
-- sur-interpréter le résultat statistique qui est significatif (« Probability That a Positive Report is False ») [@wacholderAssessingProbabilityThat2004] 
+- sur-interpréter le résultat statistique qui est significatif (« Probability That a Positive Report is False ») [@gelmanDifferenceSignificantNot2006], [@gelmanFailureNullHypothesis2018], [@lakensJustifyYourAlpha2017], [@wacholderAssessingProbabilityThat2004]
 
 Pour tous ces sujets cités précédemment, nous invitons le lecteur à se référer à la littérature : [@munafoManifestoReproducibleScience2017]
 
