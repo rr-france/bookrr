@@ -132,7 +132,7 @@ Une attention particulière doit être portée à certains objets afin de respec
 intrinsèques. Par exemple, les éléments d'une matrice de variance/covariance doivent être
 arrondis de manière à s'assurer que celle-ci reste définie-positive (en exigeant par exemple 
 que la plus petite valeur propre de la matrice garde deux chiffres significatifs). 
-Voir "Definition" (3.21)[@bureauinternationaldespoidsetdesmesuresEvaluationMeasurementData]
+Voir "Definition" (3.21)[@bureauinternationaldespoidsetdesmesuresEvaluationMeasurementData].
 
 
 
@@ -140,5 +140,5 @@ Voir "Definition" (3.21)[@bureauinternationaldespoidsetdesmesuresEvaluationMeasu
 
 En ce qui concerne la structuration des données, une approche assez
 populaire consiste à utiliser le plus possible une structure de tableau. Nous vous recommandons de lire ce document sur le sujet :
-tidy data [@wickhamTidyData2014]
+tidy data [@wickhamTidyData2014].
 
