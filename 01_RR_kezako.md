@@ -75,12 +75,15 @@ Il n’est pas question dans cet ouvrage de traiter toutes les solutions pour ga
 Ainsi, nous n’allons pas traiter des solutions à des problèmes qui nuisent à la qualité de la recherche, et en particulier : 
 
 - aller à la "pêche" aux résultats significatifs parmi tous les tests statistiques réalisés ("p-hacking") [@forstmeierDetectingAvoidingLikely2017], [@nuzzoScientificMethodStatistical2014], [@randallIrreproducibilityCrisisModern2018]
-- générer une hypothèse de recherche *a posteriori*, c’est-à-dire après avoir obtenu un résultat significatif (« harking ») [@kerrHARKingHypothesizingResults1998], 
+- générer une hypothèse de recherche *a posteriori*, c’est-à-dire après avoir obtenu un résultat significatif (« harking ») [@kerrHARKingHypothesizingResults1998]
 - sur-interpréter le résultat statistique qui est significatif (« Probability That a Positive Report is False ») [@gelmanDifferenceSignificantNot2006], [@gelmanFailureNullHypothesis2018], [@lakensJustifyYourAlpha2017], [@pernetRobustCorrelationAnalyses2013], [@wacholderAssessingProbabilityThat2004]
 
 Pour tous ces sujets cités précédemment, nous invitons le lecteur à se référer à la littérature : 
 [@ioannidisWhyMostPublished2005]
+
 [@munafoManifestoReproducibleScience2017]
+
 [@reinhartStatisticsDoneWrong2015]
+
 [@wilcoxGuideRobustStatistical2018]
 
