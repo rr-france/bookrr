@@ -202,7 +202,7 @@ problématiques lorsque le système sous-jacent correspond par exemple à la
 discrétisation d'une équation différentielle. Le calcul est alors très sensible
 aux conditions initiales et l'accumulation des imprécisions peut amener à une
 catastrophe (voir notamment *The Patriot Missile
-Failure*[@arnoldPatriotMissileFailure2000])
+Failure*[@arnoldPatriotMissileFailure2000]). 
 
 Il y a de nombreux articles décrivant ce genre de cauchemars :
 [@feherNumericalErrorsMinimization2012]
