@@ -101,20 +101,23 @@ du [Comité pour la Science Ouverte](https://www.ouvrirlascience.fr/presentation
 ## Contributeurs de la 1re édition
 Ils ont participé à différentes étapes du *book sprint* : 
 
-- Martine Courbin-Coulaud, documentaliste, Information et Edition Scientifique, Centre de recherche Inria Bordeaux Sud-Ouest
+- **Martine Courbin-Coulaud**, documentaliste, Information et Edition Scientifique, Centre de recherche Inria Bordeaux Sud-Ouest
 
-- Ludovic Duvaux, bio-informaticien, Unité Mixte de Recherche "Biogeco", Inra
+- **Ludovic Duvaux**, bio-informaticien, Unité Mixte de Recherche "Biogeco", Inra
 
-- Pierre Gravier, conservateur des bibliothèques, Direction de la documentation, Université de Bordeaux
+- **Pierre Gravier**, conservateur des bibliothèques, Direction de la documentation, Université de Bordeaux
 
-- Grégoire Le Campion, ingénieur en traitement et analyse de données, Unité Mixte de Recherche "Passages", CNRS
+- **Grégoire Le Campion**, ingénieur en traitement et analyse de données, Unité Mixte de Recherche "Passages", CNRS
 
-- Solenne Roux, ingénieure en traitement et analyse de données, Equipe d'Accueil "Laboratoire de Psychologie", Université de Bordeaux
+- **Solenne Roux**, ingénieure en traitement et analyse de données, Equipe d'Accueil "Laboratoire de Psychologie", Université de Bordeaux
 
-- Frédéric Santos, statisticien, Unité Mixte de Recherche "Pacea", CNRS
+- **Frédéric Santos**, statisticien, Unité Mixte de Recherche "Pacea", CNRS
 
 ## Contribuer {-}
 
 Vous aussi lecteurs, vous pouvez contribuer en proposant : 
 - une *pull-request* sur le répertoire contenant les sources de ce livre à l'adresse : https://github.com/alegrand/bookrr/pulls
 - en envoyant un message à urfist@u-bordeaux.fr
+
+## Remerciements {-}
+Sincères remerciements à **Isabelle Scarpat-Bouvet** pour son implication dans l'organisation du projet. 
