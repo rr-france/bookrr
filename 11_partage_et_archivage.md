@@ -22,8 +22,7 @@ La façon la plus simple d'élaborer un *compendium* de recherche est de créer 
 répertoire associé au projet, avec des sous-répertoires dans lesquels sont
 répartis les objets. Une convention de nommage explicite des objets et
 répertoires et facilite la réutilisabilité. Par exemple, pour une simple analyse
-statistique d'un jeu de données, [marwickPackagingDataAnalytical2018]()
-proposent la structure suivante :
+statistique d'un jeu de données, Marwick et ses co-auteurs proposent la structure suivante [marwickPackagingDataAnalytical2018] :
 
 ![](img/compendium_fr.png)
 
@@ -77,7 +76,7 @@ certain nombre de problèmes dans un contexte recherche :
   donc d'utiliser les équivalents institutionnels et à demander leur déploiement
   s'ils n'existent pas.
   
-* La pérennité sur le long terme des outils comme des services n'est absolument pas garantie. On peut citer les cas de Gitorious et de Google Code, deux services d'hébergement de code. Leur popularité n'a pas empêché leur fermeture. En déléguant la
+* La pérennité sur le long terme des outils comme des services n'est absolument pas garantie. On peut citer les cas de Gitorious et de Google Code, deux services d'hébergement de code dont la popularité n'a pas empêché la fermeture. En déléguant la
   responsabilité du stockage à un hébergeur extérieur, vous prenez un risque
   conséquent. Vous pouvez utiliser ce type de service mais il faut absolument
   vous assurer que vous disposez d'une solution d'archivage en complément.
@@ -116,7 +115,7 @@ pérenne et d'indexer les versions successives les artefacts de la recherche.
 
 Vous pouvez consulter les [recommandations du
 CNRS](http://qualite-en-recherche.cnrs.fr/spip.php?article315) [@reseauqualiteenrechercheTracabiliteActivitesRecherche2018] concernant la traçabilité des activités de recherche, ainsi que les principes [FAIR (Findable,
-Accessible, Interoperable, Reusable)](https://www.go-fair.org/fair-principles/) [@gofairFAIRPrinciples]
+Accessible, Interoperable, Reusable)](https://www.go-fair.org/fair-principles/) [@gofairFAIRPrinciples].
 
 Pour une exposition très claire des problèmes de pérennité, vous
 pouvez regarder le [séminaire de Roberto Di
