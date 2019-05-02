@@ -4,7 +4,7 @@
 > -- Harold Abelson
   
 Les chapitres précédents (et en particulier 
-le chapitre 8 "Des problèmes de calculs" [bien mettre le renvoi vers ce chap.8]) 
+le chapitre 8 "Des problèmes de calculs" (chapitre \@ref(B-code-aspect)) 
 ont souligné l'importance des questions de diffusion et de partage des codes informatiques. 
 Une étape préalable à cette démarche est de rendre son code facilement 
 compréhensible par un lecteur externe. 
@@ -248,5 +248,5 @@ ses travaux reproductibles.
 
 ## Pour en savoir plus
 
-Le sujet des *workflows* est développé dans une conférence en ligne [*Reproducible Science in Bioinformatics: Current Status, Solutions and Research Opportunities*](https://github.com/alegrand/RR_webinars/blob/master/6_reproducibility_bioinformatics/index.org) [@legrandSeriesWebinarsDocuments2019b].
+Le sujet des *workflows* est développé dans la conférence en ligne : [*Reproducible Science in Bioinformatics: Current Status, Solutions and Research Opportunities*](https://github.com/alegrand/RR_webinars/blob/master/6_reproducibility_bioinformatics/index.org) [@legrandSeriesWebinarsDocuments2019b].
 
