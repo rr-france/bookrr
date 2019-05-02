@@ -5,6 +5,7 @@ author: "Loïc Desquilbet, Sabrina Granger, Boris Hejblum, Arnaud Legrand, P
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
+rights: Creative Commons Attribution Non-Commercial 4.0
 bibliography: [refs.bib]
 biblio-style: plain
 link-citations: yes
