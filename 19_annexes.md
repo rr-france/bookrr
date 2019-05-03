@@ -21,7 +21,7 @@ Si la méthode s’est popularisée dans les pays anglo-saxons, et particulière
 La méthode du *book sprint* est actuellement encore peu diffusée en France, dans le milieu de la recherche mais :
 
 - **les modalités de diffusion du livrable sont adaptées au milieu académique** : archive ouverte, plates-formes scientifiques 
-- **la méthode est transposable à d’autres activités de rédaction** : documentation technique, appels à projets, supports pédagogiques, *white papers*, etc. 
+- **la méthode est transposable à d’autres activités de rédaction** : documentation technique, appels à projets, supports pédagogiques, *white papers*, *etc*. 
 
 Ce n’est pas un cadre pour faire surgir des idées totalement nouvelles : la très forte contrainte temporelle fait qu’il ne faut pas surestimer la capacité à faire surgir des idées complètement innovantes sur un sujet. 
 En revanche, **le *book sprint* permet de confronter et de tester ses idées avec des auteurs issus d’autres disciplines, ayant d’autres expertises**, voire de modifier son point de vue sur certains sujet au fil des échanges. 
