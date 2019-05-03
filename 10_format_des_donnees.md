@@ -26,13 +26,13 @@ quand la mesure a été réalisée, et une autre indiquant par qui elle a été 
 
 Un autre exemple de structure est celui d'un arbre généalogique. Au prime abord, 
 il semblerait naturel d'utiliser une "hiérarchie", mais la vie étant faite de 
-surprises (décès, divorces, re-mariages, voire mariages entre cousins, "Luke, je suis ton père", etc.), cette représentation va rapidement s'avérer inadaptée pour concevoir un arbre généalogique clair.
+surprises (décès, divorces, re-mariages, voire mariages entre cousins, "Luke, je suis ton père", *etc*.), cette représentation va rapidement s'avérer inadaptée pour concevoir un arbre généalogique clair.
 
 Un dernier exemple d'information dont la conservation est primordiale : 
 il s'agit du protocole expérimental généralement consigné dans un cahier de 
 laboratoire. On structure souvent cette information
 de façon chronologique avec des annotations sémantiques : qui ? quand ?
-où ? pourquoi ? dans quel contexte ? etc. Dans tous les cas, la question
+où ? pourquoi ? dans quel contexte ? *etc*. Dans tous les cas, la question
 du lien entre ce cahier et les données archivées doit être posée et
 résolue.
 
@@ -84,7 +84,7 @@ On distingue 3 grands types de formats :
 Par exemple, pour des tables de données simples, mieux vaut privilégier les formats .csv 
 ou .tsv plutôt que les versions plus ou moins propriétaires ou spécifiques à un tableur 
 (.dot, .xls, .xslx, ...) qui peuvent parfois contenir des informations très difficiles 
-à lire pour la machine (cellules colorées, cellules fusionnées, etc.).
+à lire pour la machine (cellules colorées, cellules fusionnées, *etc*.).
 
 Dans la mesure du possible, nous préconisons de privilégier les
 formats texte lisibles à la fois par l'humain et par la machine et
