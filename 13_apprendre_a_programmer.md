@@ -18,8 +18,8 @@ simplifie la vie de nombreux utilisateurs.
 
 Dans de nombreux logiciels scientifiques, ce type d'interface est également disponible, 
 par exemple pour traiter les données ou concevoir des figures. 
-L'exemple le plus célèbre est très certainement le tableur Excel, très utilisé pour faire des traitements statistiques relativement compliqués. 
-Dans un premier temps, cet outil peut simplifier les traitements mais dès que vous souhaiterez effectuer des tâches plus subtiles,
+L'exemple le plus célèbre est très certainement le tableur Excel, très utilisé y compris pour faire des traitements statistiques relativement compliqués. 
+Dans un premier temps, cet outil peut simplifier les traitements mais dès que vous souhaiterez effectuer des tâches plus subtiles
 ou des tâches répétitives, il va rapidement devenir un obstacle. Si vous effectuez des calculs exotiques, vous serez alors contraint d'entrer des formules de calcul complexes dans les cellules. 
 La bonne nouvelle est que, en faisant cela, vous avez commencé à programmer. 
 La mauvaise est que votre calcul n'est pas reproductible. 
@@ -42,7 +42,7 @@ nécessaire de pouvoir exprimer d'une façon claire, documentée et non ambigüe
 ce que l'on souhaite faire faire au logiciel. 
 C'est ici que la programmation entre en jeu. 
 Plutôt que de cliquer à droite ou à gauche, on va expliquer textuellement,
-à l'aide d'un jeu d'instructions (relativement restreint), ce que l'on souhaite
+à l'aide d'un jeu d'instructions relativement restreint, ce que l'on souhaite
 faire. 
 Cela veut dire, entre autres choses, qu'un programme peut être simplement
 exprimé en quelques lignes seulement. 
