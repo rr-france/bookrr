@@ -16,7 +16,7 @@ narrativisée, les *personas* permettent :
 > de recueillir leurs témoignages. Je consigne toutes mes notes dans
 > un carnet relié et je retranscris les informations démographiques
 > dans un tableur Calc afin de compiler quelques statistiques :
-> pyramide des âges, répartition des sexes, etc. Dans le cadre de ce
+> pyramide des âges, répartition des sexes, *etc*. Dans le cadre de ce
 > projet, je collabore étroitement avec un autre doctorant qui a le
 > même directeur de thèse que moi. Il alimente lui aussi ce fichier
 > Calc, que nous nous échangeons régulièrement par clé USB."
