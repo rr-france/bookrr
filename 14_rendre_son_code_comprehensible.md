@@ -145,7 +145,7 @@ Les commentaires servent par exemple à signaler :
 - les conditions particulières dans lesquelles une fonction doit ou ne doit pas être
 utilisée, 
 - la raison de l'assignation d'une nouvelle valeur à une variable 
-dans les données, etc. 
+dans les données, *etc*. 
 
 Les commentaires attirent l'attention du lecteur et répondent de manière anticipée à une partie de ses questions.
 
@@ -227,14 +227,14 @@ Nous avons déjà évoqué l'importance de modulariser son code pour le
 rendre plus compréhensible et plus facile à faire évoluer. 
 Il existe de nombreux concepts pour vous permettre d'y arriver :
 la programmation fonctionnelle, la programmation orientée objet, 
-les *design patterns*, etc. 
+les *design patterns*, *etc*. 
 
 Dès lors qu'il est question de transformer des
 quantités importantes de données par des calculs complexes, le concept de 
 [systèmes de *workflows* scientifiques](https://en.wikipedia.org/wiki/Scientific_workflow_system) [@wikipediaScientificWorkflowSystem2019]
 trouve toute sa pertinence. 
 Il existe de nombreux *workflows* répondant aux besoins de 
-différentes communautés scientifiques : astrophysique, génétique, etc. 
+différentes communautés scientifiques : astrophysique, génétique, *etc*. 
 
 Lorsque votre *notebook* se stabilise mais devient trop long et trop complexe, il sera 
 certainement temps de le restructurer. 
