@@ -67,7 +67,7 @@ d'une table de résultats), vous pourriez juger qu’un seul
 chiffre significatif peut suffire. Mais si vos résultats sont nécessaires à la
 réalisation d’autres recherches, pour permettre par exemple des simulations, les erreurs engendrées dans
 ces autres travaux pourront être amplifiées : une petite erreur initiale peut
-conduire à une erreur très importante en bout de course – _cf._ « Chaos numérique
+conduire à une erreur très importante en bout de course – _*cf*._ « Chaos numérique
 » dans le chapitre \@ref(B-code-aspect).
 
 A titre d'illustration, la matrice de variance-covariance publiée par le CODATA
