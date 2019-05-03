@@ -1,11 +1,11 @@
 # Programmation et calcul {#B-code-aspect}
 
-Les problèmes inhérents au calcul et aux codes associés partagent des similarités avec les difficultés liées aux données (par exemple la non disponibilité). Toutefois, les questions de calcul ont leurs spécificités du fait de leur nature opératoire : il s'agit d'exécuter ce code afin d'obtenir un résultat. Or, c'est lors de cette étape d'exécution que vont surgir un certain nombre de complications que l'on peut classer en deux grandes catégories : 
+Les problèmes inhérents au calcul et aux codes associés partagent des similarités avec les difficultés liées aux données, par exemple la non disponibilité. Toutefois, les questions de calcul ont leurs spécificités du fait de leur nature opératoire : il s'agit d'exécuter ce code afin d'obtenir un résultat. Or, c'est lors de cette étape d'exécution que vont surgir un certain nombre de complications que l'on peut classer en deux grandes catégories : 
 
 - d'une part, celles qui empêchent d'obtenir un résultat 
 - d'autre part, celles qui rendent un résultat différent voire faux. 
 
-Si le premier type de problème est ennuyeux, le second type de problème est d'autant plus grave qu'il est difficile à détecter.
+Si le premier type de problème est ennuyeux (euphémisme), le second type de problème est d'autant plus grave qu'il est difficile à détecter (effroi intense).
 
 <!-- Dans le pire des cas, le programme plante avec un message d'erreur -->
 <!-- cryptique du genre `Un problème a fait que le programme a cessé de -->
@@ -22,9 +22,9 @@ Si le premier type de problème est ennuyeux, le second type de problème est d'
 
 En guise de préambule, débutons par une liste non exhaustive des cas où l'on n'a tout simplement pas ou plus accès au programme à exécuter : 
 
-* **Les logiciels propriétaires ou la loterie de la licence d'exploitation** : votre équipe/structure a cessé de payer la licence. Variante : ce logiciel est disponible dans l'université d'un collègue mais pas dans l'établissement où vous travaillez actuellement. Autre variante : vous avez accès au logiciel, mais seul un nombre restreint de personnes peut y accéder en même temps, via un système de jetons. De fait, vous vous retrouvez à devoir attendre un bon moment avant d'y arriver.
+* **Les logiciels propriétaires ou la loterie de la licence d'exploitation** : votre équipe/structure a cessé de payer la licence. Variante : ce logiciel est disponible dans l'université d'un collègue mais pas dans l'établissement où vous travaillez actuellement. Autre variante : vous avez accès au logiciel, mais seul un nombre restreint de personnes peut y accéder en même temps, *via* un système de jetons. De fait, vous vous retrouvez à devoir attendre un bon moment avant d'y arriver.
 
-* **Un seul code vous manque et tout est dépeuplé** : le code a été développé "en interne". Il arrive (trop souvent) qu'à la suite d'un *crash* disque, d'un vol d'ordinateur portable, du départ du développeur principal, que l'on n'ait simplement plus accès au logiciel. C'est souvent le résultat d'une politique (ou d'une absence de politique) de sauvegarde ou de partage d'informations au sein d'une équipe.
+* **Un seul code vous manque et tout est dépeuplé** : le code a été développé "en interne". Il arrive trop souvent qu'à la suite d'un *crash* disque, d'un vol d'ordinateur portable, du départ du développeur principal, que l'on n'ait simplement plus accès au logiciel. C'est souvent le résultat d'une politique (ou d'une absence de politique) de sauvegarde ou de partage d'informations au sein d'une équipe.
 
 * **Le numéro que vous avez demandé n'est plus attribué** : assez souvent, il s'agit d'un code développé "en externe" (dans une autre équipe de recherche par exemple) que l'on souhaite ré-exécuter, par exemple pour avoir un point de comparaison ou bien pour vérifier si on obtient bien des résultats similaires avec une autre méthode. En général, on cherche alors le code sur le web mais il est assez courant que l'URL indiquée dans l'article ne soit plus accessible car le développeur a depuis quitté l'équipe où il travaillait et que sa page web a été supprimée ou complètement
   restructurée. Ce problème est connu sous le nom d'*URL decay* [@spinellisDecayFailuresWeb2003] ou de *Link
@@ -32,14 +32,14 @@ En guise de préambule, débutons par une liste non exhaustive des cas où l'on 
 
 * **Cachez ce code que je ne saurais voir** : enfin, les auteurs du code peuvent tout simplement ne pas souhaiter le partager, par exemple parce qu'ils jugent qu'il n'est pas montrable en l'état (pas ou peu commentaires, structure horrible cachant des erreurs) ou encore pour conserver ce qu'ils considèrent comme un avantage compétitif.
 
-Si cette question vous intéresse, vous pouvez lire les travaux de Collberg, Proebsting et Warren  : [@collbergRepeatabilityComputerSystems2016] [@collbergRepeatabilityBenefactionComputer2015] 
+Si cette question vous intéresse, vous pouvez lire les travaux de Collberg, Proebsting et Warren  : [@collbergRepeatabilityComputerSystems2016] [@collbergRepeatabilityBenefactionComputer2015]. 
 Les auteurs étudient les causes d'incapacité à réexécuter du code dans la communauté de recherche *Computer Systems*, pourtant très au fait des aspects logiciels. Vous y trouverez de nombreux témoignages (assez drôles si c'était sans conséquences !) issus d'une étude de terrain ; vous pourrez notamment lire les excuses les plus couramment utilisées pour justifier une incapacité à donner accès au code derrière une publication.
 
 ## Comment lance-t-on ce code ? ("Allô Houston ?")
 
 Lorsque l'on fait de la recherche, il est courant de devoir développer soi-même
 un code pour répondre à un besoin spécifique. Que ce soit un "gros" code ou un
-petit script, on prend rarement le temps de rédiger une documentation *externe*
+petit script, on prend rarement le temps de rédiger une documentation "externe"
 (à destination des utilisateurs) puisque le code est principalement utilisé par
 les membres de l'équipe que l'on croise tous les jours. Mais lorsque l'on
 revient quelques mois plus tard, pour ré-exécuter un de ses propres calculs ou
@@ -47,8 +47,8 @@ bien que l'on essaye de repartir du travail de quelqu'un d'autre (qui a quitté
 le laboratoire ou n'y a même jamais travaillé), il est courant de ne pas (ou
 plus) savoir comment il avait été lancé. Avec quels paramètres, quels fichiers
 d'entrées, quelles variables d'environnement, etc. ? La moindre erreur sur les
-paramètres conduira à des résultats différents voire à un crash. Et
-malheureusement pour vous, le "vous" d'il y a 6 mois ne répond pas au mail.
+paramètres conduira à des résultats différents voire à un *crash*. Et
+malheureusement pour vous, le "vous" d'il y a 6 mois ne répond pas au *mail*.
 Enfin, et comme nous le verrons par la suite, il existe bien d'autres raisons
 qui peuvent conduire à ces deux symptômes.
 
@@ -64,14 +64,14 @@ programmation que vous connaissez).
 
 Les codes de recherche, développés pour des besoins spécifiques, sont souvent
 des prototypes et il est rare de prendre le temps de rédiger une
-documentation interne (à destination des développeurs). Et quand bien même il
+documentation "interne" (à destination des développeurs). Et quand bien même il
 y aurait des commentaires, encore faut-il qu'ils soient compréhensibles donc *a
 minima* en anglais. Par ailleurs, ils doivent aussi correspondre à la réalité : quand un code évolue
 vite, on ne prend pas toujours le temps d'actualiser au fur et à mesure les commentaires et
 la documentation. Si ces critères ne sont pas réunis, les commentaires risquent davantage de
 vous induire en erreur que de vous aider.
 
-Il y a un dicton célèbre en informatique qui dit “*Programs must be written
+Un célèbre dicton en informatique dit : “*Programs must be written
 for people to read, and only incidentally for machines to execute*.” C'est une
 citation d'[Harold Abelson](https://en.wikipedia.org/wiki/Hal_Abelson) tirée
 de son livre *Structure and Interpretation of Computer Programs* publié en
@@ -107,8 +107,8 @@ ordinateur ? Et si je repars du code source, arriverai-je à le recompiler ?
 ## L'environnement de calcul ou le paradigme des poupées russes diaboliques
 
 Plus le langage que vous utilisez est de haut niveau, plus il est probable
-qu'il dissimule une grande complexité. Même le script le plus anodin dépend (en
-général) d'une large hiérarchie de bibliothèques que l'on a du mal à
+qu'il dissimule une grande complexité. Même le script le plus anodin dépend en
+général d'une large hiérarchie de bibliothèques que l'on a du mal à
 imaginer. À titre d'exemple, lorsqu'en Python vous souhaitez faire un petit
 graphique, il est courant de charger la bibliothèque `matplotlib` avec un
 simple :
@@ -137,7 +137,7 @@ C'est ici la version 2.1.1-2 qui est présente et, pour l'installer, il a fallu
 installer les paquets `python3-dateutil`, `python-matplotlib-data`,
 `python3-pyparsing`, etc. C'est ce qu'on appelle les "dépendances". Mais pour
 ces paquets dépendent eux-mêmes d'autres paquets. Lorsque l'on récupère
-l'ensemble des paquets nécessaires avec leurs dépendances, voici le graphe qu'on obtient, cf. Fig. 6.1 :
+l'ensemble des paquets nécessaires avec leurs dépendances, voici le graphe qu'on obtient, cf. Fig. 6.1 (alerte paracétamol !):
 
 ![Dépendances de Matplotlib sous Debian obtenues avec debtree](img/python3-matplotlib.png "debtree output") 
 
@@ -170,7 +170,7 @@ si `0.1*3==0.3` ou si `3-2.9==0.1` il vous répondra très certainement `FALSE`
 (Faux) dans les deux cas. Cela est dû au fait que la représentation au format
 binaire de ces nombres, en apparence simple, n'est pas exacte. Beaucoup de
 machines à calculer ont une représentation interne en base 10 un peu
-différente, or, nous n'avons pas été habitués tôt à ce genre de problème, sauf
+différente, or, nous n'avons pas été habitués de manière précoce à intégrer ce genre de problème, sauf
 peut-être pour des nombres du genre $1/3\approx 0,3333333$. Lorsque l'on programme, il faut donc faire
 très attention à cette subtilité qui joue des tours
 dès que l'on veut comparer deux nombres.
