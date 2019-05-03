@@ -1,7 +1,7 @@
 # Retours d'expériences {#A-personas}
 
 Nous avons recueilli ci-dessous plusieurs témoignages fictifs de
-*personas* incarnant différents acteurs de la recherche. Il s'agit de
+*personas* [@adlinEssentialPersonaLifecycle2010] incarnant différents acteurs de la recherche. Il s'agit de
 personnages inventés mais néanmoins vraisemblables car inspirés d'expériences réelles. Parce qu'ils se présentent sous une forme
 narrativisée, les *personas* permettent :
 
