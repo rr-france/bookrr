@@ -27,7 +27,7 @@ De même, dans le cas de résultats produisant un déluge de données (comme par
 exemple le *Large Hydron Collider*) et devant l'impossibilité de tout
 sauvegarder, il faut sélectionner les données à sauvegarder, sachant que
 les autres seront irrémédiablement perdues. Une mauvaise décision initiale peut
-se révéler catastrophique pour peu que vous ayez besoin, à une étape ultérieure, de ces données.
+se révéler catastrophique pour peu que vous ayez besoin de ces données à une étape ultérieure.
 
 Enfin, si vous ne vous êtes pas assuré du contrôle d'accès sur vos données,
 quelqu'un peut venir les modifier par inadvertance et à votre insu, changeant
@@ -41,7 +41,7 @@ nombreux problèmes. Vos données sont disponibles mais impossible de comprendre
 représentent exactement. Par exemple : des données sont collectées dans la
 littérature, mais les références bibliographiques ne sont pas mentionnées ou s'avèrent lacunaires. 
 Un problème pouvant être perçu comme formel constitue en réalité un manque de traçabilité 
-portant atteinte à la reproductibilité.
+portant atteinte à la reproductibilité. Le bibliothécaire avait donc raison. 
 
 ## Indexation des données
 
