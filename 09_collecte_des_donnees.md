@@ -69,5 +69,4 @@ concordance, permettent de quantifier la "répétabilité" ou la
 Pour en savoir plus sur les cahiers de laboratoire, nous vous invitons à consulter
 le site du CNRS [@cnrsCahierLaboratoire].
 Pour en savoir plus sur la quantification de la répétabilité et de la
-reproductibilité de la façon dont on collecte les données, vous pouvez consulter le document suivant : 
-[@desquilbetGuidePratiqueValidation2019]. 
+reproductibilité de la façon dont on collecte les données, vous pouvez consulter le document suivant : "Guide pratique de validation statistique de méthodes de mesure : répétabilité, reproductibilité, et concordance" [@desquilbetGuidePratiqueValidation2019]. 
