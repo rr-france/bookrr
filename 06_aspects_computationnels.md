@@ -46,7 +46,7 @@ revient quelques mois plus tard, pour ré-exécuter un de ses propres calculs ou
 bien que l'on essaye de repartir du travail de quelqu'un d'autre (qui a quitté
 le laboratoire ou n'y a même jamais travaillé), il est courant de ne pas (ou
 plus) savoir comment il avait été lancé. Avec quels paramètres, quels fichiers
-d'entrées, quelles variables d'environnement, etc. ? La moindre erreur sur les
+d'entrées, quelles variables d'environnement, *etc*. ? La moindre erreur sur les
 paramètres conduira à des résultats différents voire à un *crash*. Et
 malheureusement pour vous, le "vous" d'il y a 6 mois ne répond pas au *mail*.
 Enfin, et comme nous le verrons par la suite, il existe bien d'autres raisons
@@ -135,7 +135,7 @@ python3-cycler (>= 0.10.0), python3:any (>= 3.3.2-2~), libc6 (>=
 
 C'est ici la version 2.1.1-2 qui est présente et, pour l'installer, il a fallu
 installer les paquets `python3-dateutil`, `python-matplotlib-data`,
-`python3-pyparsing`, etc. C'est ce qu'on appelle les "dépendances". Mais pour
+`python3-pyparsing`, *etc*. C'est ce qu'on appelle les "dépendances". Mais pour
 ces paquets dépendent eux-mêmes d'autres paquets. Lorsque l'on récupère
 l'ensemble des paquets nécessaires avec leurs dépendances, voici le graphe qu'on obtient, cf. Fig. 6.1 (alerte paracétamol !):
 
