@@ -79,14 +79,15 @@ Ainsi, nous n’allons pas traiter des solutions à des problèmes qui nuisent �
 - générer une hypothèse de recherche *a posteriori*, c’est-à-dire après avoir obtenu un résultat significatif (« harking ») [@kerrHARKingHypothesizingResults1998]
 - sur-interpréter le résultat statistique qui est significatif (« Probability That a Positive Report is False ») [@gelmanDifferenceSignificantNot2006], [@gelmanFailureNullHypothesis2018], [@lakensJustifyYourAlpha2017], [@pernetRobustCorrelationAnalyses2013], [@wacholderAssessingProbabilityThat2004]
 
-Pour tous ces sujets cités précédemment, nous invitons le lecteur à se référer à la littérature : 
-[@chambersSevenDeadlySins2017]
+Pour tous ces sujets cités précédemment, nous invitons le lecteur à se référer à la littérature : 
 
-[@ioannidisWhyMostPublished2005]
+*The Seven Deadly Sins of Psychology: A Manifesto for Reforming the Culture of Scientific Practice* [@chambersSevenDeadlySins2017]
 
-[@munafoManifestoReproducibleScience2017]
+"Why Most Published Research Findings Are False"[@ioannidisWhyMostPublished2005]
 
-[@reinhartStatisticsDoneWrong2015]
+"A manifesto for reproducible science"[@munafoManifestoReproducibleScience2017]
 
-[@wilcoxGuideRobustStatistical2018]
+*Statistics Done Wrong*[@reinhartStatisticsDoneWrong2015]
+
+"A Guide to Robust Statistical Methods in Neuroscience"[@wilcoxGuideRobustStatistical2018]
 
