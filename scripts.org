@@ -192,64 +192,51 @@ sed -i 's|\[\([^@][^]]*\)\]$|[@\1]|g' *.md
 
 #+RESULTS:
 
-** Fixing bibtex
+** Fixing bibtex (Recent bibtex export)
+
+First, let's fix the fun-mooc URL plus various cosmetics...
+#+begin_src shell :results output :exports both
+sed -i 's|url = {//www.fun-mooc.fr/|url = {https://www.fun-mooc.fr/|g' refs.bib
+sed -i 's|« |«~|g' refs.bib
+sed -i 's| » |~»|g' refs.bib
+#+end_src
+
+#+RESULTS:
+
+Then make sure urls are visible.
+#+begin_src shell :results output :exports both
+sed -i 's|url\s*=\s*{\(.*\)}|note = {URL:~\\url{\1}}|g' refs.bib
+#+end_src
+
+#+RESULTS:
+
+Make sure dates are visible.
+#+begin_src shell :results output :exports both
+sed -i 's|urldate = {\([0-9]*\)}| year = {\1}|g' refs.bib
+sed -i 's|urldate = {\([0-9]*\)-.*}|year = {\1}|g' refs.bib
+#+end_src
+
+#+RESULTS:
+
+Make sure ISBN is visible.
+#+begin_src shell :results output :exports both
+sed -i 's|isbn\s*=\s*{\(.*\)}|note = {ISBN:~\\textsf{\1}}|g' refs.bib
+#+end_src
+
+#+RESULTS:
+
+** Fixing bibtex OLD (betterbibtex)
+#+begin_src shell :results output :exports both
+grep ' date = ' refs.bib
+#+end_src
+
+#+RESULTS:
+
 #+begin_src shell :results output :exports both
 grep howpublish refs.bib 
 #+end_src
 
 #+RESULTS:
-#+begin_example
-  howpublished = {\url{https://www.inria.fr/centre/bordeaux/actualites/guix-un-logiciel-libre-pour-la-reproductibilite-des-sciences-en-hpc}},
-  howpublished = {\url{https://www.ouvrirlascience.fr/category/ressources/?type=guides\_juridiques}},
-  howpublished = {\url{https://www.jpl.nasa.gov/missions/mars-climate-orbiter/}},
-  howpublished = {\url{http://ioccc.org/}},
-  howpublished = {\url{http://www-users.math.umn.edu/\textasciitilde{}arnold/disasters/patriot.html}},
-  howpublished = {\url{https://github.com/alegrand/RR\_webinars/blob/master/2\_controling\_your\_environment/index.org}},
-  howpublished = {\url{http://www.cnrs.fr/infoslabos/cahier-laboratoire/}},
-  howpublished = {\url{https://www.softwareheritage.org/?lang=fr}},
-  howpublished = {\url{https://www.go-fair.org/fair-principles/}},
-  howpublished = {\url{https://github.com/alegrand/RR\_webinars/blob/master/5\_archiving\_software\_and\_data/index.org}},
-  howpublished = {\url{https://gitlab.inria.fr/users/sign\_in}},
-  howpublished = {\url{https://gitlab.in2p3.fr/users/sign\_in}},
-  howpublished = {\url{https://learninglab.inria.fr/mooc-recherche-reproductible-principes-methodologiques-pour-une-science-transparente/}},
-  howpublished = {\url{https://happygitwithr.com/}},
-  howpublished = {\url{http://swcarpentry.github.io/git-novice/}},
-  howpublished = {\url{https://pcottle.github.io/learnGitBranching/index.html?demo}},
-  howpublished = {\url{http://conference.scipy.org/}},
-  howpublished = {\url{https://www.euroscipy.org/}},
-  howpublished = {\url{http://www.user2019.fr/}},
-  howpublished = {\url{https://r2018-rennes.sciencesconf.org/}},
-  howpublished = {\url{https://www.fun-mooc.fr/courses/UPSUD/42001S06/session06/about}},
-  howpublished = {\url{https://www.fun-mooc.fr/courses/inria/41001S03/session03/about}},
-  howpublished = {\url{http://beginr.u-bordeaux.fr/}},
-  howpublished = {\url{https://docs.python.org/fr/3/tutorial/}},
-  howpublished = {\url{http://swcarpentry.github.io/r-novice-inflammation/}},
-  howpublished = {\url{http://swcarpentry.github.io/r-novice-gapminder/}},
-  howpublished = {\url{http://swcarpentry.github.io/python-novice-inflammation/}},
-  howpublished = {\url{http://swcarpentry.github.io/python-novice-gapminder/}},
-  howpublished = {\url{https://daringfireball.net/projects/markdown/}},
-  howpublished = {\url{https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module2/slides/C028AL\_slides\_module2-fr-gz.pdf}},
-  howpublished = {\url{https://www.jupyter.org}},
-  howpublished = {\url{https://www.fun-mooc.fr/c4x/UPSUD/42001S02/asset/RMarkdown.html}},
-  howpublished = {\url{https://www.orgmode.org/fr/index.html}},
-  howpublished = {\url{https://github.com/alegrand/RR\_webinars}},
-  howpublished = {\url{https://travis-ci.org/}},
-  howpublished = {\url{https://www.appveyor.com/}},
-  howpublished = {\url{https://juliasilge.com/blog/beginners-guide-to-travis/}},
-  howpublished = {\url{https://www.reprozip.org/}},
-  howpublished = {\url{https://www.gnu.org/software/guix/}},
-  howpublished = {\url{https://nixos.org/}},
-  howpublished = {\url{https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module4/slides/C028AL\_slides\_module4-fr-gz.pdf}},
-  howpublished = {\url{https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module4/ressources/resources\_environment\_fr.org}},
-  howpublished = {\url{https://github.com/alegrand/RR\_webinars/blob/master/2\_controling\_your\_environment/index.org}},
-  howpublished = {\url{https://choosealicense.com/}},
-  howpublished = {\url{https://creativecommons.org/choose/}},
-  howpublished = {\url{https://decadoc.typeform.com/to/W2ZZMV}},
-  howpublished = {\url{https://www.cnil.fr/fr/textes-officiels-europeens-protection-donnees}},
-  howpublished = {\url{https://www6.inra.fr/datapartage}},
-  howpublished = {\url{https://coop-ist.cirad.fr/gestion-de-l-information/gerer-les-donnees-de-la-recherche}},
-  howpublished = {\url{https://www.fosteropenscience.eu/resources}},
-#+end_example
 
 #+begin_src shell :results output :exports both
 sed -i 's|howpublished = {//www.fun-mooc.fr/|howpublished = {https://www.fun-mooc.fr/|g' refs.bib
