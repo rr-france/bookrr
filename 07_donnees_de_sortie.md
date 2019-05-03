@@ -57,7 +57,7 @@ forme inappropriée des incertitudes associées aux résultats d'une mesure
 physique ou virtuelle, ou d'une étude statistique. Très souvent, l'absence
 d'incertitude (par exemple, l'absence de valeur d'écart-type) empêche une
 comparaison de résultats, ou bien l'absence de matrice de corrélation entre les
-paramètres incertains d'une étude empêche leur réutilisation. Voir [@hebrardHowMeasurementsRate2009].
+paramètres incertains d'une étude empêche leur réutilisation. Consulter : "How Measurements of Rate Coefficients at Low Temperature Increase the Predictivity of Photochemical Models of Titan’s Atmosphere" [@hebrardHowMeasurementsRate2009].
 
 Même lorsque des efforts ont été faits pour publier les informations adéquates,
 des problèmes d'arrondi peuvent anéantir la réutilisabilité des données. Une
