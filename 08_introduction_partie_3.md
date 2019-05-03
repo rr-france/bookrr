@@ -17,11 +17,17 @@ Au fil de l'ouvrage, nous décrivons des situations de crise, moins par goût po
 
 ## Concrètement, que changer et comment s'y prendre ?
 Bonne nouvelle : il est très peu probable que votre recherche soit à 100% non reproductible. La palette des solutions à votre disposition est variée ; en fonction de vos compétences et de vos urgences, vous pouvez choisir d'agir sur : 
+
 - la collecte et la gestion des données, 
+
 - le code et sa robustesse, 
+
 - les environnements logiciels, 
+
 - les sauvegardes, 
+
 - les versions et les archives, 
+
 - les licences.
 
 Bonne nouvelle bis : le présent ouvrage a été conçu pour être hautement "*cherry-picking-proof*". Selon l'état de vos pratiques actuelles, les chapitres peuvent donc être lus dans l'ordre qui vous conviendra le mieux, même si nous conseillons bien sûr de tous les lire, voire de diffuser cet ouvrage auprès de vos collègues et étudiants (fin de la minute d'autopromotion).
