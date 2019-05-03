@@ -38,10 +38,10 @@ chaîne d'instructions validée et automatisée, mais par vous-même – et vous
 n’êtes pas infaillible.
 
 Une transformation involontaire des résultats peut aussi se produire si vous
-collaborez sur une étude, et si vous devez intégrer les résultats d’analyses
-réalisées par votre collaborateur, mais dont vous ne comprenez pas toutes les
+collaborez sur une étude et si vous devez intégrer les résultats d’analyses
+réalisées par votre collaborateur, sans en comprendre toutes les
 subtilités. Un exemple que l’on rencontre malheureusement fréquemment dans la
-litérature concerne les résultats d’analyses statistiques. Vous avez demandé à
+littérature concerne les résultats d’analyses statistiques. Vous avez demandé à
 votre collègue, spécialiste des statistiques, de traiter certaines de vos
 données, et il vous envoie ses résultats que vous ne comprenez pas dans le
 détail. Il peut alors facilement arriver que, par défaut de compréhension, vous
@@ -62,12 +62,11 @@ paramètres incertains d'une étude empêche leur réutilisation. Voir [@hebrard
 Même lorsque des efforts ont été faits pour publier les informations adéquates,
 des problèmes d'arrondi peuvent anéantir la réutilisabilité des données. Une
 mauvaise sélection du nombre de chiffres significatifs à reporter dans un
-résultat numérique peut tout à fait se produire. Vous pourriez juger qu’un seul
-chiffre significatif peut suffire, pour une question de "présentation" (taille
-d'une table de résultats). Mais si vos résultats sont nécessaires à la
-réalisation d’autres recherches, comme par exemple la réalisation de
-simulations basées entre autres sur vos résultats, les erreurs générées dans
-ces autres recherches pourront être amplifiées : une petite erreur initiale peut
+résultat numérique peut tout à fait se produire. Pour une question de "présentation" (taille
+d'une table de résultats), vous pourriez juger qu’un seul
+chiffre significatif peut suffire. Mais si vos résultats sont nécessaires à la
+réalisation d’autres recherches, pour permettre par exemple des simulations, les erreurs engendrées dans
+ces autres travaux pourront être amplifiées : une petite erreur initiale peut
 conduire à une erreur très importante en bout de course – _cf._ « Chaos numérique
 » dans le chapitre \@ref(B-code-aspect).
 
