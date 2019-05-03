@@ -3,7 +3,9 @@
 La mise à disposition des données de la recherche est un point clé pour leur
 réutilisabilité et pour faciliter la reproductibilité de la recherche par vos
 pairs. Il existe plusieurs façons de les mettre à disposition. Pour un partage efficace, il est important de choisir :
+
 - une licence adaptée (chapitre \@ref(C-licences)), 
+
 - un format *ad hoc* (chapitre \@ref(C-data-format)).
 
 Il convient aussi d'élaborer une documentation extensive levant les
