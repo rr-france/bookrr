@@ -27,7 +27,7 @@ Une deuxième façon de rendre votre code plus robuste est de le tester
 sur des cas concrets dont on connaît par avance le résultat. Par exemple, si je
 souhaite écrire une fonction qui fait la somme de deux nombres, je peux
 vérifier que la somme de 1 et 2 me retourne bien 3, que la somme de `a` et `-a`
-est bien zéro, etc. Ces tests peuvent être plus ou moins formels et le cadre
+est bien zéro, *etc*. Ces tests peuvent être plus ou moins formels et le cadre
 conceptuel des **tests unitaires** permet de mettre en place cette pratique de
 manière rigoureuse. Il s'agit alors d'envisager des cas d'usage
 caractéristiques de chaque partie (unité) et fonctionnalité du code, afin de
