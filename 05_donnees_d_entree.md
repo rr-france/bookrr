@@ -2,7 +2,7 @@
 
 La perte de données à tous les niveaux d'un processus de recherche est une
 cause majeure de non reproductibilité. Cela peut aller du simple accident matériel,
-comme par exemple le crash d'un disque, au problème de méthode, comme l'absence 
+comme par exemple le *crash* d'un disque, au problème de méthode, comme l'absence 
 d'une politique de sauvegarde ou de règles élementaires de documentation (métadonnées). 
 
 
