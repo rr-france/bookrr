@@ -13,7 +13,7 @@ Facilitatrice : Elisa de Castro Guerra
 Ce livre est ouvert aux nouveaux contenus : proposition d'ajout de chapitre, complément de chapitre, références complémentaires, mais aussi questions.
 Le livre ayant été rédigé collaborativement, les propositions sont étudiées par le collectif des auteurs. 
 En fonction de la nature de vos propositions, vous pourrez être amené.e à être cité.e comme [contributeur, ou co-auteur](https://publicationethics.org/authorship). 
-Vous pouvez soumettre vos propositions via :
+Vous pouvez soumettre vos propositions *via* :
 - GitHub (Issue)
 - email : urfist@u-bordeaux.fr
 
