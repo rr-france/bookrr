@@ -118,5 +118,5 @@ Accessible, Interoperable, Reusable)](https://www.go-fair.org/fair-principles/) 
 
 Pour une exposition très claire des problèmes de pérennité, vous
 pouvez regarder le [séminaire de Roberto Di
-Cosmo](https://github.com/alegrand/RR_webinars/blob/master/5_archiving_software_and_data/index.org) sur ce sujet *in* [@legrandSeriesWebinarsDocuments2019a].
+Cosmo](https://github.com/alegrand/RR_webinars/blob/master/5_archiving_software_and_data/index.org) sur ce sujet *in* "*Series of webinars and documents on Reproducible Research - Preserving software: ensuring availability and traceability*" [@legrandSeriesWebinarsDocuments2019a].
  
