@@ -116,7 +116,9 @@ Ils ont participé à différentes étapes du *book sprint* :
 ## Contribuer {-}
 
 Vous aussi lecteurs, vous pouvez contribuer en proposant : 
+
 - une *pull-request* sur le répertoire contenant les sources de ce livre à l'adresse : https://github.com/alegrand/bookrr/pulls
+
 - en envoyant un message à urfist@u-bordeaux.fr
 
 ## Remerciements {-}
