@@ -98,7 +98,7 @@ E. de Castro Guerra anime ainsi régulièrement des book sprints pour des associ
 Docteur en langue et littérature françaises, Sabrina Granger est conservatrice des bibliothèques à l'Unité Régionale de Formation à l'Information Scientifique et Technique de Bordeaux. Ses différents postes l’ont amenée à travailler dans les domaines de l’informatique documentaire, la communication en BU et les services aux chercheurs. S. Granger est co-pilote du collège « Compétences et formations » 
 du [Comité pour la Science Ouverte](https://www.ouvrirlascience.fr/presentation-du-comite/).
 
-## Contributeurs de la 1re édition
+## Contributeurs de la 1re édition {-}
 Ils ont participé à différentes étapes du *book sprint* : 
 
 - **Martine Courbin-Coulaud**, documentaliste, Information et Edition Scientifique, Centre de recherche Inria Bordeaux Sud-Ouest
