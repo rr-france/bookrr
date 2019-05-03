@@ -13,14 +13,14 @@ Dans la grande majorité des cas, la production de résultats issus d'une recher
 la collecte d’informations. Ces informations sont recueillies sur des "unités" (une 
 unité pouvant être une pièce mécanique, un être vivant, etc.). Ce que l’on entend par 
 "informations" sont les caractéristiques de chaque unité qui fait l’objet de la 
-recherche (par exemple : la résistance à la traction d’un matériau, la concentration en 
-glucose d’une personne atteinte de diabète, ou bien encore son âge, son poids, etc.). 
+recherche ; par exemple : la résistance à la traction d’un matériau, la concentration en 
+glucose d’une personne atteinte de diabète, ou bien encore son âge, son poids, *etc*. 
 
 Si cette collecte des informations n’est pas standardisée, la personne qui collecte 
 des informations sur un individu/unité un jour n°1 ne le fera potentiellement pas de la même façon le 
-jour n°2 si elle devait le faire de nouveau. Et si elle ne procède pas de la même façon, alors la valeur 
-de l’information du jour n°2 serait différente de celle du jour n°1, non pas parce que l’information 
-a changé au cours du temps (ce qui est possible, et éventuellement acceptable – cf. ci-dessous), 
+jour n°2 si elle doit réitérer l'opération. Or, si elle ne procède pas à l'identique, la valeur 
+de l’information du jour n°2 sera différente de celle du jour n°1, non pas parce que l’information 
+a changé au cours du temps (ce qui est possible, et éventuellement acceptable – *cf*. ci-dessous), 
 mais parce que la méthode a changé. 
 
 Ainsi, comment s’assurer d’une recherche reproductible si celle-ci
@@ -106,19 +106,18 @@ pour constituer la base de données.
 Considérons d'abord le cas, fréquent dans certains domaines (et *a priori* favorable), 
 où les données d'intérêt sont dans le fichier PDF d'un article ou de son supplément. 
 Lorsqu'on effectue un copier/coller d'une partie de fichier PDF vers un éditeur de texte, 
-les sources de contrariété sont multiples (et dépendent largement du logiciel utilisé pour 
-afficher le fichier PDF). Les désagréments les plus courants sont : 
+les sources de contrariété sont multiples et dépendent largement du logiciel utilisé pour 
+afficher le fichier PDF. Les désagréments les plus courants sont : 
   
- - une impossibilité éventuelle de gérer correctement des tables complexes 
-  (avec des cellules vides ou une table pivotée);
+ - une impossibilité éventuelle de gérer correctement des tables complexes avec des cellules vides ou une table pivotée;
 
  - la présence de renvois bibliographiques sur certains éléments du tableau ;
 
  - la gestion du signe moins ( " - " ), qui est souvent récupéré comme un tiret ( " — " ) 
    ou demi-tiret, ne pouvant alors pas être interprété par les codes de calcul.
 
-Après extraction des données, une étape de correction manuelle est donc souvent indispensable,
-qui constitue en elle-même une source potentielle d'erreur, en plus de ne pas toujours être 
+Après extraction des données, une étape de correction manuelle est donc souvent indispensable
+et constitue en elle-même une source potentielle d'erreur, en plus de ne pas toujours être 
 effectuée de façon traçable. 
 La récupération de données à partir d'images (OCR) présente des problèmes similaires.
 
@@ -133,16 +132,16 @@ Les solutions pour faire face aux problèmes évoqués dans ce chapitre,
 dépendent du collecteur de données, mais également de l'émetteur. 
 
 Le collecteur de données pourra se reporter aux solutions présentées dans les chapitres 
-\@ref(C-data-acquisition) et \@ref(C-code-learn) pour automatiser et tracer au maximum le processus de collecte (d'autant plus que le volume 
-de données est important et/ou si la tâche est répétitive).
+\@ref(C-data-acquisition) et \@ref(C-code-learn) pour automatiser et tracer au maximum le processus de collecte, d'autant plus que le volume 
+de données est important et/ou si la tâche est répétitive.
  
-L'emetteur de données pourra se reporter aux solutions présentées dans les chapitres 
+L'émetteur de données pourra se reporter aux solutions présentées dans les chapitres 
 \@ref(C-data-format) et \@ref(C-data-share)
-sur les règles de bonne pratique quant à l'archivage des données dans des formats 
+dédiés aux bonnes pratiques d'archivage de données dans des formats 
 ouverts et lisibles par la machine.
 
 **NB :** en tant que chercheurs, nous sommes souvent émetteurs de données 
-pour d'autres chercheurs. De fait, nous devrions intégrer cet aspect dans nos bonnes pratiques 
+pour d'autres chercheurs. De fait, nous devrions intégrer autant que possible cet aspect dans nos bonnes pratiques 
 de partage de résultats. 
 
 
