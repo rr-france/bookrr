@@ -13,7 +13,7 @@ chez une personne atteinte d'un diabète, vous recueillez la concentration du
 glucose dans le sang.  Vous devez dès lors rédiger le protocole permettant
 d'obtenir la valeur de la concentration en glucose, en précisant notamment dans
 le protocole le volume de sang prélevé, à quel moment de la journée est-il
-prélevé, etc. Ce protocole doit non seulement être rédigé mais il doit par
+prélevé, *etc*. Ce protocole doit non seulement être rédigé mais il doit par
 ailleurs être approuvé par votre équipe de recherche, ou *a minima*, par les
 personnes de votre équipe disposant des compétences pour juger de la qualité de
 ce protocole.
