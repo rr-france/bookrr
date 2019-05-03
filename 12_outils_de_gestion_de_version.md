@@ -1,7 +1,7 @@
 # Versionner, versionner, versionner {#C-versioning}
 
 La sauvegarde des étapes successives du développement de documents (textes,
-bases de données, codes, etc.) est une des briques fondamentales de la
+bases de données, codes, *etc*.) est une des briques fondamentales de la
 recherche reproductible. Elle permet en effet de retrouver ou de reconstituer
 facilement des versions spécifiques et datées des documents. La mise en œuvre
 va de la simple sauvegarde de versions des fichiers, à des sauvegardes
@@ -30,7 +30,7 @@ Dans ce contexte, il est souvent recommandé de créer un nom de fichier constit
 * la date de sauvegarde, sous format AAAAMMJJ ou AAAA_MM_JJ
 (permettant un tri des dates par ordre alphabétique)
 
-* le titre du fichier, évitant les mots "vides" (article défini, indéfini, etc.)
+* le titre du fichier, évitant les mots "vides" (article défini, indéfini, *etc*.)
 
 * un numéro de version du document qui sera incrémenté aux étapes
 remarquables de l'évolution du document (v01, v02...)
@@ -42,7 +42,7 @@ des raisons de compatibilité, il est recommandé d'éviter l'utilisation de :
 - signes diacritiques ; ex. : accents, trémas, cédilles,  
 - caractères spéciaux,
 - espaces,
-- etc.
+- *etc*.
 
 
 #### Exemple {-}
