@@ -11,7 +11,7 @@ ou à partir de données déjà publiées.
 
 Dans la grande majorité des cas, la production de résultats issus d'une recherche passe par
 la collecte d’informations. Ces informations sont recueillies sur des "unités" (une 
-unité pouvant être une pièce mécanique, un être vivant, etc.). Ce que l’on entend par 
+unité pouvant être une pièce mécanique, un être vivant, *etc*.). Ce que l’on entend par 
 "informations" sont les caractéristiques de chaque unité qui fait l’objet de la 
 recherche ; par exemple : la résistance à la traction d’un matériau, la concentration en 
 glucose d’une personne atteinte de diabète, ou bien encore son âge, son poids, *etc*. 
