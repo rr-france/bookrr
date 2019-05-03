@@ -103,7 +103,7 @@ avons conservé l'extension `.md` plutôt que `.Rmd`.
 
 Afin de créer les liens symboliques avec l'extension `.Rmd` nécessaires, la première fois que le répertoire est forké/téléchargé, il faut executer la commande suivante dans le terminal :
 ```{sh}
-make -f Makefile_Rmd Rmd
+make Rmd
 ```
 
 Le paquet **[bookdown](https://bookdown.org)** peut s'installer à
@@ -117,7 +117,7 @@ install.packages("bookdown")
 
 Pour compiler ce livre au format html, il vous suffit de faire:
 ```{sh}
-make -f Makefile_Rmd html
+make html
 ```
 ou bien en R:
 ```{R}
@@ -126,7 +126,7 @@ rmarkdown::render_site(output_format = 'bookdown::gitbook', encoding = 'UTF-8')
 
 Pour compiler ce livre au format pdf, il vous suffit de faire:
 ```{sh}
-make -f Makefile_Rmd pdf
+make pdf
 ```
 ou bien en R (ou presque...):
 ```{R}
