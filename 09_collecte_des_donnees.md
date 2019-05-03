@@ -50,7 +50,7 @@ trace.
 ## Collecter les données de façon répétable ET reproductible
 
 Le protocole de collecte d'une information doit être défini de telle sorte
-qu'elle soit "répétable" et "reproductible" au sens du *VIM* [@bureauinternationaldespoidsetdesmesuresVocabulaireInternationalMetrologie2012] (_cf._ chapitre
+qu'elle soit "répétable" et "reproductible" au sens du *VIM* [@bureauinternationaldespoidsetdesmesuresVocabulaireInternationalMetrologie2012] (_*cf*._ chapitre
 \@ref(B-data-acquisition)). Tout d'abord, si vous collectez une information
 deux fois sur un individu dans un intervalle de temps restreint, les deux
 valeurs de l'information doivent être les mêmes, ou du moins être suffisamment
