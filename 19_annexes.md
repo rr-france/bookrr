@@ -26,7 +26,7 @@ La méthode du *book sprint* est actuellement encore peu diffusée en France, da
 Ce n’est pas un cadre pour faire surgir des idées totalement nouvelles : la très forte contrainte temporelle fait qu’il ne faut pas surestimer la capacité à faire surgir des idées complètement innovantes sur un sujet. 
 En revanche, **le *book sprint* permet de confronter et de tester ses idées avec des auteurs issus d’autres disciplines, ayant d’autres expertises**, voire de modifier son point de vue sur certains sujet au fil des échanges. 
 
-Le *book sprint* peut aussi être l’occasion de **formaliser des idées dans un cadre plus souple que les formats de publication classiques**. Un travail préparatoire de la part des organisateurs permet aux auteurs de se projeter **sans pour autant rédiger à l’avance** leur partie : la table des matières est conçue grâce aux échanges.
+Le *book sprint* peut aussi être l’occasion de **formaliser des idées dans un cadre plus souple que les formats de publication classiques**. Un *travail préparatoire* de la part des organisateurs permet aux auteurs de se projeter **sans pour autant rédiger à l’avance** leur partie : la table des matières est conçue grâce aux échanges.
 
 La qualité du livrable ne peut pas être d'un niveau égal à celui d’un article ou d’un chapitre d’ouvrage ; il n’est pas réaliste d’attendre le même degré d'aboutissement qu’une production académique compte tenu du cadre imparti, mais : 
 
