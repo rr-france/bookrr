@@ -102,7 +102,7 @@ pour des formats textes et .hdf5 ou .fits ou pour des formats binaires.
 Lors du stockage de données numériques, il est primordial d'éviter la perte ou l'érosion 
 de l'information. Ceci implique, outre une documentation exhaustive précisant
 les unités et la provenance des résultats, de gérer correctement leur représentation 
-numérique. [@wilkinsonFAIRGuidingPrinciples2016]
+numérique [@wilkinsonFAIRGuidingPrinciples2016].
 
 ### Nombre de chiffres significatifs
 
