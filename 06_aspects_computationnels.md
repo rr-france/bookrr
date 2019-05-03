@@ -34,6 +34,7 @@ En guise de préambule, débutons par une liste non exhaustive des cas où l'on 
 
 Si cette question vous intéresse, vous pouvez lire les travaux de Collberg, Proebsting et Warren  : [@collbergRepeatabilityComputerSystems2016] [@collbergRepeatabilityBenefactionComputer2015]. 
 Les auteurs étudient les causes d'incapacité à réexécuter du code dans la communauté de recherche *Computer Systems*, pourtant très au fait des aspects logiciels. Vous y trouverez de nombreux témoignages (assez drôles si c'était sans conséquences !) issus d'une étude de terrain ; vous pourrez notamment lire les excuses les plus couramment utilisées pour justifier une incapacité à donner accès au code derrière une publication.
+Vous pouvez aussi consulter "Re-run, Repeat, Reproduce, Reuse, Replicate: Transforming Code into Scientific Contributions"[@benureauRerunRepeatReproduce2017].
 
 ## Comment lance-t-on ce code ? ("Allô Houston ?")
 
