@@ -81,7 +81,7 @@ certain nombre de problèmes dans un contexte recherche :
   conséquent. Vous pouvez utiliser ce type de service mais il faut absolument
   vous assurer que vous disposez d'une solution d'archivage en complément.
   
-* La gestion de version est automatique mais très peu contrôlée. Dropbox par
+* La gestion de versions est automatique mais très peu contrôlée. Dropbox par
   exemple ne conserve que quelques versions intermédiaires et ce, uniquement
   pendant une durée assez limitée dans le temps (quelques mois). Et comme la
   synchronisation avec votre propre ordinateur est automatique, il n'est 
