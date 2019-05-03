@@ -26,7 +26,7 @@ Le fait que les problèmes de reproductibilité occupent une telle place dans le
 pas tout à fait un hasard. Le numérique, sous des formes multiples, a largement
 investi tous les champs de la science et l'outil informatique occupe une place incontournable : stockage, formatage,
 archivage, indexation, analyse, modélisation, statistiques, 
-environnements, précision, etc. Or, peu de chercheurs ont été 
+environnements, précision, *etc*. Or, peu de chercheurs ont été 
 formés (ou se forment) aux fondamentaux et aux bonnes pratiques liés aux outils informatiques. Cela peut
 bien amener à la publication de résultats fragiles (dans le sens "peu robustes") dans le meilleur
 des cas, et faux dans le pire des cas - mais ce n'est pourtant pas là que se
