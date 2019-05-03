@@ -15,13 +15,13 @@ un mode de partage le plus ouvert et pérenne possible.
 
 Avant de présenter différentes modalités de partage, intéressons-nous à la notion de *compendium* de recherche.
 Il s'agit d'un outil qui facilite la recherche
-reproductible en rassemblant dans un même "lieu" (virtuel) les données, les
+reproductible en rassemblant dans un même "lieu" virtuel les données, les
 codes, les protocoles et la documentation liés à un projet de recherche.
 
 La façon la plus simple d'élaborer un *compendium* de recherche est de créer un
 répertoire associé au projet, avec des sous-répertoires dans lesquels sont
 répartis les objets. Une convention de nommage explicite des objets et
-répertoires et facilite la réutilisabilité. Par exemple, pour une simple analyse
+répertoires peut grandement faciliter la réutilisabilité. Par exemple, pour une simple analyse
 statistique d'un jeu de données, Marwick et ses co-auteurs proposent la structure suivante [marwickPackagingDataAnalytical2018] :
 
 ![](img/compendium_fr.png)
@@ -44,7 +44,7 @@ ouvertes au public.
 Le degré zéro (voire -1) de la mise à disposition des données pour la communauté, 
 est de mentionner dans l'article qu'elles sont disponibles "Sur demande à l'auteur". 
 
-Cette approche permet à l'auteur de garder une forme de contrôle, mais elle s'avère peu adaptée à une gestion sur le long terme (ex. : départ à la retraite de l'auteur, changement d'adresse de courriel, etc.) et tend à disparaître. En effet, de nombreuses plates-formes éditoriales adoptent progressivement une politique d'ouverture des données et demandent aux auteurs de les mettre à disposition de leurs pairs.
+Cette approche permet à l'auteur de garder une forme de contrôle, mais elle s'avère peu adaptée à une gestion sur le long terme (ex. : départ à la retraite de l'auteur, changement d'adresse de courriel, etc.) et tend à disparaître. En effet, de nombreuses plates-formes éditoriales adoptent progressivement une politique d'ouverture des données et demandent aux auteurs de les mettre à disposition de leurs pairs. L'efficacité des dispositifs éditoriaux déployés est variable, comme le soulignent Stodden et ses co-auteurs [@stoddenEmpiricalAnalysisJournal2018], mais on note une évolution progressive des pratiques. 
 
 ### Page web personnelle
 
@@ -98,16 +98,15 @@ Il existe actuellement de nombreuses plates-formes permettant d'héberger
 meilleure qualité que celle des solutions précédentes mais n'est pas parfaite non
 plus. D'autre part ces systèmes, initialement prévus pour héberger du code,
 gèrent assez mal les gros volumes de données et les données de type binaire
-(images bitmap, videogrammes, codes compilés...).
+(images bitmap, vidéogrammes, codes compilés...).
 
-Pour tous ces types de données, des solutions privées de type
-[Figshare](https://figshare.com), ou publiques comme
-[Zenodo](https://zenodo.org) offrent un archivage sur le long terme et fournissent 
-un DOI permettant un référencement stable des données
-dans la littérature. 
+Des solutions privées de type
+[Figshare](https://figshare.com), ou institutionnelles comme
+[Zenodo](https://zenodo.org), offrent un archivage sur le long terme pour tous types de données et fournissent 
+un DOI permettant leur référencement stable dans la littérature. 
 Pour les logiciels, une archive existe :
 [Software Heritage](https://www.softwareheritage.org). En tandem avec un
-système de gestion de version, ces archives permettent de conserver de façon
+système de gestion de versions, ces archives permettent de conserver de façon
 pérenne et d'indexer les versions successives les artefacts de la recherche.
 
 
