@@ -30,7 +30,7 @@ Malheureusement, la version actuelle du code, dans laquelle
 j'ai amélioré les algorithmes, ne donne plus tout à fait 
 les mêmes résultats que ceux de l'article. 
 
-Dois-je annoncer au reviewer qu'une partie des résultats a changé ?
+Dois-je annoncer au *reviewer* qu'une partie des résultats a changé ?
     
 ## Mon code ne marche plus !
 
