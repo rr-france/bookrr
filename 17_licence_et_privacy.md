@@ -27,6 +27,7 @@ logiciels :
 permettent de choisir une licence logicielle ou non logicielle
 (respectivement) en répondant à 2 ou 3 questions.
 
+Sur les licences d'utilisation, vous pourrez lire aussi ce billet de blog [@rougier3615EULA2015].
 
 ## Confidentialité et protection des données, respect de la vie privée
 
