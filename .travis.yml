@@ -1,0 +1,19 @@
+language: r
+pandoc_version: 1.19.2.1
+
+sudo: false
+
+cache:
+  packages: yes
+  directories:
+
+env:
+  global:
+    secure: HYODYvtZN5sUBdInIXluT6nY1ouchkpkTC9sLceYmCxzOltziJRoixKmKHrYbO+cl12KclvupEkaiZvTaGe3j6L0YAXDPOiqMSJJvETsFdEx+KlM3o1+DZu5uVagXOx+uCNe+67j5BD74Apj3LpKLJNSL4xIRHPW39Kzzmqd1uGLKpK5xFox7X6pseojyi7MKQGqRvk3F+Gdxuolf+RFYcu3xyYSUor7O1X7fli6RA5YmyuWHSecPG8Ch0k0rTk716ixr/fLqpET1JQHNxdOvCsjkcXMNiQGeoargo+96mQRHPkQjxOEMzaXI4dxC1df8Fc9ak2YhhpPcCYtI9aAbPa1ZJJ82a4FXr8PX0xieTaAIhKrLfrzXmRZAoslu5m2JFGkM9ox859QLWVSroj7lqNpwrJDLIsXqfYMaSv2QNCTJXPccu6GztZ0+6qnIcsbskF/PD9lVmaCGxXS99JIUUD1kVM9p/8R1T7D1UuSHLQZ3lh/vJC7XPFZTbyJtOYu0dwOj7hT5rF50zJv1t11gVZxX+/d6RSX0EpYTwN8C4698ZjKUgf6jifVwyC1K6yZ1KxXYbFtmn1EGvojFYgGY3BpU05hJOBcdIkcyN3sOVYg71xB44MQBmInMLB4flusVvtjMmzIacbel5t/T7QwqdGKrEN6oJ1hs0avOJl5ohI=
+
+before_script:
+  - chmod +x ./ghpages_script.sh
+
+script:
+  - ./ghpages_script.sh
+
