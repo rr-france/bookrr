@@ -1,5 +1,5 @@
 --- 
-title: "Vers une recherche reproductible"
+title: "Recherche reproductible"
 subtitle: "Faire évoluer ses pratiques"
 author: "Loïc Desquilbet, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot, Nicolas Rougier <br> Facilitatrice : Elisa de Castro Guerra"
 date: "`r Sys.Date()`"
