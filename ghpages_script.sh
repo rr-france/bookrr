@@ -3,8 +3,9 @@
 # git config --global user.name "Your Name"
 
 # clone the repository to the book-output directory
+rm -rf book-output
 git clone -b gh-pages \
-  https://alegrand@github.com/alegrand/bookrr.git \
+  https://git@github.com/alegrand/bookrr.git \
   book-output
 make all
 cd book-output
