@@ -7,6 +7,7 @@ all: html pdf epub
 .PHONY: all Rmd
 
 Rmd: $(RMD_FILE_LIST)
+	./bib-fix.sh
 
 %.Rmd: %.md
 	ln -sf $^ $@

@@ -195,7 +195,7 @@ sed -i 's|\[\([^@][^]]*\)\]$|[@\1]|g' *.md
 ** Fixing bibtex (Recent bibtex export)
 
 First, let's fix the fun-mooc URL plus various cosmetics...
-#+begin_src shell :results output :exports both
+#+begin_src shell :results output :exports both :tangle bib-fix.sh :tangle-mode (identity #o755)
 sed -i 's|url = {//www.fun-mooc.fr/|url = {https://www.fun-mooc.fr/|g' refs.bib
 sed -i 's|« |«~|g' refs.bib
 sed -i 's| » |~»|g' refs.bib
@@ -204,14 +204,14 @@ sed -i 's| » |~»|g' refs.bib
 #+RESULTS:
 
 Then make sure urls are visible.
-#+begin_src shell :results output :exports both
+#+begin_src shell :results output :exports both :tangle bib-fix.sh
 sed -i 's|url\s*=\s*{\(.*\)}|note = {URL:~\\url{\1}}|g' refs.bib
 #+end_src
 
 #+RESULTS:
 
 Make sure dates are visible.
-#+begin_src shell :results output :exports both
+#+begin_src shell :results output :exports both :tangle bib-fix.sh
 sed -i 's|urldate = {\([0-9]*\)}| year = {\1}|g' refs.bib
 sed -i 's|urldate = {\([0-9]*\)-.*}|year = {\1}|g' refs.bib
 #+end_src
@@ -219,7 +219,7 @@ sed -i 's|urldate = {\([0-9]*\)-.*}|year = {\1}|g' refs.bib
 #+RESULTS:
 
 Make sure ISBN is visible.
-#+begin_src shell :results output :exports both
+#+begin_src shell :results output :exports both :tangle bib-fix.sh
 sed -i 's|isbn\s*=\s*{\(.*\)}|note = {ISBN:~\\textsf{\1}}|g' refs.bib
 #+end_src
 
