@@ -3,7 +3,7 @@
 # git config --global user.name "Your Name"
 
 # clone the repository to the book-output directory
-git clone --depth=0 -b gh-pages \
+git clone -b gh-pages \
   https://alegrand@github.com/alegrand/bookrr.git \
   book-output
 make all
