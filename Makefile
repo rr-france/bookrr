@@ -2,7 +2,7 @@ MD_FILE_LIST=index.md $(wildcard [0-9][0-9]*.md)
 RMD_FILE_LIST=$(patsubst %.md,%.Rmd,$(MD_FILE_LIST))
 
 
-all: Rmd
+all: html pdf epub
 
 .PHONY: all Rmd
 
