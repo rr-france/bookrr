@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html >
-
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapitre 7 Communication des résultats | Vers une recherche reproductible</title>
-  <meta name="description" content="Livre d’introduction à la recherche reproductible rédigé lors d’un booksprint.">
-  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+  <meta name="description" content="Livre d’introduction à la recherche reproductible rédigé lors d’un booksprint." />
+  <meta name="generator" content="bookdown  and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapitre 7 Communication des résultats | Vers une recherche reproductible" />
   <meta property="og:type" content="book" />
@@ -22,14 +21,14 @@
   <meta name="twitter:description" content="Livre d’introduction à la recherche reproductible rédigé lors d’un booksprint." />
   
 
-<meta name="author" content="Loïc Desquilbet, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot, Nicolas Rougier   Facilitatrice : Elisa de Castro Guerra">
+<meta name="author" content="Loïc Desquilbet, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot, Nicolas Rougier   Facilitatrice : Elisa de Castro Guerra" />
 
 
-<meta name="date" content="2019-05-05">
+<meta name="date" content="2019-05-05" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
 <link rel="prev" href="B-code-aspect.html">
@@ -51,67 +50,41 @@
 
 
 <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 </style>
 
 <link rel="stylesheet" href="css/style.css" type="text/css" />
@@ -315,83 +288,27 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="B-data-output" class="section level1">
 <h1><span class="header-section-number">Chapitre 7</span> Communication des résultats</h1>
-<p>Nous allons voir dans ce chapitre qu’une recherche peut devenir non
-reproductible s’il existe une mauvaise utilisation des résultats de l’étude au
-moment de la rédaction d’un article : il peut s’agir d’une mauvaise sélection
-de votre part des résultats, d’un choix inapproprié du format de présentation
-ou d’une transformation de ces données.</p>
+<p>Nous allons voir dans ce chapitre qu’une recherche peut devenir non reproductible s’il existe une mauvaise utilisation des résultats de l’étude au moment de la rédaction d’un article : il peut s’agir d’une mauvaise sélection de votre part des résultats, d’un choix inapproprié du format de présentation ou d’une transformation de ces données.</p>
 <div id="une-mauvaise-selection-des-resultats" class="section level2">
 <h2><span class="header-section-number">7.1</span> Une mauvaise sélection des résultats</h2>
 <p>Les résultats fournis par un logiciel peuvent contenir de si nombreuses informations qu’il faille opérer une sélection parmi elles. En d’autres termes, vous pouvez être amené à devoir identifier les informations pertinentes pour la question de recherche faisant l’objet de votre article.</p>
-<p>Confronté à cet amoncèlement, il peut vous arriver de mal
-sélectionner l’information pertinente : votre sélection à la souris a “oublié”
-quelques caractères en début ou en fin de séquence à sélectionner, par
-exemple.
-En outre, si cette information est complexe et difficilement
-compréhensible par vos collaborateurs parce que vous êtes seul spécialiste du
-domaine, alors cette erreur de sélection sera répercutée dans l’article et
-persistera après le processus de
-revue si les relecteurs ne la répèrent pas.</p>
+<p>Confronté à cet amoncèlement, il peut vous arriver de mal sélectionner l’information pertinente : votre sélection à la souris a “oublié” quelques caractères en début ou en fin de séquence à sélectionner, par exemple. En outre, si cette information est complexe et difficilement compréhensible par vos collaborateurs parce que vous êtes seul spécialiste du domaine, alors cette erreur de sélection sera répercutée dans l’article et persistera après le processus de revue si les relecteurs ne la répèrent pas.</p>
 </div>
 <div id="transformation-des-resultats" class="section level2">
 <h2><span class="header-section-number">7.2</span> Transformation des résultats</h2>
-<p>Une autre erreur pouvant survenir à partir des résultats fournis par un
-logiciel est celle d’une “transformation” (bien entendu involontaire) de ces
-données. Cette modification délétère peut très facilement se produire si vous
-devez saisir de nouveau dans votre article les sorties résultats du logiciel.
-Une erreur de frappe est si facilement arrivée !</p>
-<p>Un deuxième exemple de transformation des résultats est celui de l’amélioration
-d’une figure. Si vous trouvez que la figure que vous obtenez à partir d’un
-logiciel n’est pas satisfaisante, vous pouvez décider de la retravailler
-manuellement, par exemple en ajoutant une courbe interpolant des points, alors
-que les valeurs intermédiaires n’ont pas de sens. Cette manipulation est
-dangereuse, car le traitement de l’information n’est plus produit par une
-chaîne d’instructions validée et automatisée, mais par vous-même – et vous
-n’êtes pas infaillible.</p>
-<p>Une transformation involontaire des résultats peut aussi se produire si vous
-collaborez sur une étude et si vous devez intégrer les résultats d’analyses
-réalisées par votre collaborateur, sans en comprendre toutes les
-subtilités. Un exemple que l’on rencontre malheureusement fréquemment dans la
-littérature concerne les résultats d’analyses statistiques. Vous avez demandé à
-votre collègue, spécialiste des statistiques, de traiter certaines de vos
-données, et il vous envoie ses résultats que vous ne comprenez pas dans le
-détail. Il peut alors facilement arriver que, par défaut de compréhension, vous
-retranscriviez mal ou partiellement les résultats dans l’article. De telles
-erreurs de saisie peuvent passer totalement inaperçues si les relecteurs n’ont
-pas non plus les compétences statistiques requises pour interpréter ces
-résultats.</p>
+<p>Une autre erreur pouvant survenir à partir des résultats fournis par un logiciel est celle d’une “transformation” (bien entendu involontaire) de ces données. Cette modification délétère peut très facilement se produire si vous devez saisir de nouveau dans votre article les sorties résultats du logiciel. Une erreur de frappe est si facilement arrivée !</p>
+<p>Un deuxième exemple de transformation des résultats est celui de l’amélioration d’une figure. Si vous trouvez que la figure que vous obtenez à partir d’un logiciel n’est pas satisfaisante, vous pouvez décider de la retravailler manuellement, par exemple en ajoutant une courbe interpolant des points, alors que les valeurs intermédiaires n’ont pas de sens. Cette manipulation est dangereuse, car le traitement de l’information n’est plus produit par une chaîne d’instructions validée et automatisée, mais par vous-même – et vous n’êtes pas infaillible.</p>
+<p>Une transformation involontaire des résultats peut aussi se produire si vous collaborez sur une étude et si vous devez intégrer les résultats d’analyses réalisées par votre collaborateur, sans en comprendre toutes les subtilités. Un exemple que l’on rencontre malheureusement fréquemment dans la littérature concerne les résultats d’analyses statistiques. Vous avez demandé à votre collègue, spécialiste des statistiques, de traiter certaines de vos données, et il vous envoie ses résultats que vous ne comprenez pas dans le détail. Il peut alors facilement arriver que, par défaut de compréhension, vous retranscriviez mal ou partiellement les résultats dans l’article. De telles erreurs de saisie peuvent passer totalement inaperçues si les relecteurs n’ont pas non plus les compétences statistiques requises pour interpréter ces résultats.</p>
 </div>
 <div id="presentation-des-resultats" class="section level2">
 <h2><span class="header-section-number">7.3</span> Présentation des résultats</h2>
-<p>Une forme très courante de perte d’information est liée à l’absence ou à la
-forme inappropriée des incertitudes associées aux résultats d’une mesure
-physique ou virtuelle, ou d’une étude statistique. Très souvent, l’absence
-d’incertitude (par exemple, l’absence de valeur d’écart-type) empêche une
-comparaison de résultats, ou bien l’absence de matrice de corrélation entre les
-paramètres incertains d’une étude empêche leur réutilisation. Consulter : “How Measurements of Rate Coefficients at Low Temperature Increase the Predictivity of Photochemical Models of Titan’s Atmosphere” <span class="citation">(Hébrard et al. <a href="bibliographie.html#ref-hebrardHowMeasurementsRate2009">2009</a>)</span>.</p>
-<p>Même lorsque des efforts ont été faits pour publier les informations adéquates,
-des problèmes d’arrondi peuvent anéantir la réutilisabilité des données. Une
-mauvaise sélection du nombre de chiffres significatifs à reporter dans un
-résultat numérique peut tout à fait se produire. Pour une question de “présentation” (taille
-d’une table de résultats), vous pourriez juger qu’un seul
-chiffre significatif peut suffire. Mais si vos résultats sont nécessaires à la
-réalisation d’autres recherches, pour permettre par exemple des simulations, les erreurs engendrées dans
-ces autres travaux pourront être amplifiées : une petite erreur initiale peut
-conduire à une erreur très importante en bout de course – <em><em>cf</em>.</em> « Chaos numérique
-» dans le chapitre <a href="B-code-aspect.html#B-code-aspect">6</a>.</p>
-<p>A titre d’illustration, la matrice de variance-covariance publiée par le CODATA
-en 2002 pour l’ajustement des constantes fondamentales, arrondie pour être
-présentable dans les annexes de l’article, s’est avérée inutilisable pour des
-travaux ultérieurs <span class="citation">(Ezhela et al. <a href="bibliographie.html#ref-ezhelaInconstancyFundamentalPhysical2004">2004</a>)</span>.</p>
+<p>Une forme très courante de perte d’information est liée à l’absence ou à la forme inappropriée des incertitudes associées aux résultats d’une mesure physique ou virtuelle, ou d’une étude statistique. Très souvent, l’absence d’incertitude (par exemple, l’absence de valeur d’écart-type) empêche une comparaison de résultats, ou bien l’absence de matrice de corrélation entre les paramètres incertains d’une étude empêche leur réutilisation. Consulter : “How Measurements of Rate Coefficients at Low Temperature Increase the Predictivity of Photochemical Models of Titan’s Atmosphere” <span class="citation">(Hébrard et al. <a href="bibliographie.html#ref-hebrardHowMeasurementsRate2009">2009</a>)</span>.</p>
+<p>Même lorsque des efforts ont été faits pour publier les informations adéquates, des problèmes d’arrondi peuvent anéantir la réutilisabilité des données. Une mauvaise sélection du nombre de chiffres significatifs à reporter dans un résultat numérique peut tout à fait se produire. Pour une question de “présentation” (taille d’une table de résultats), vous pourriez juger qu’un seul chiffre significatif peut suffire. Mais si vos résultats sont nécessaires à la réalisation d’autres recherches, pour permettre par exemple des simulations, les erreurs engendrées dans ces autres travaux pourront être amplifiées : une petite erreur initiale peut conduire à une erreur très importante en bout de course – <em><em>cf</em>.</em> « Chaos numérique » dans le chapitre <a href="B-code-aspect.html#B-code-aspect">6</a>.</p>
+<p>A titre d’illustration, la matrice de variance-covariance publiée par le CODATA en 2002 pour l’ajustement des constantes fondamentales, arrondie pour être présentable dans les annexes de l’article, s’est avérée inutilisable pour des travaux ultérieurs <span class="citation">(Ezhela et al. <a href="bibliographie.html#ref-ezhelaInconstancyFundamentalPhysical2004">2004</a>)</span>.</p>
 </div>
 <div id="que-faire-3" class="section level2">
 <h2><span class="header-section-number">7.4</span> Que faire ?</h2>
-<p>La réutilisabilité des résultats d’une étude doit être une priorité. Pour
-cela, les données doivent être mises à disposition de futurs utilisateurs
-(Chapitre <a href="C-data-share.html#C-data-share">11</a>),
-dans un format lisible par la machine (Chapitre <a href="C-data-format.html#C-data-format">10</a>),
-en utilisant un processus automatisé limitant les interventions manuelles
-(Chapitre <a href="C-code-learn.html#C-code-learn">13</a>).</p>
+<p>La réutilisabilité des résultats d’une étude doit être une priorité. Pour cela, les données doivent être mises à disposition de futurs utilisateurs (Chapitre <a href="C-data-share.html#C-data-share">11</a>), dans un format lisible par la machine (Chapitre <a href="C-data-format.html#C-data-format">10</a>), en utilisant un processus automatisé limitant les interventions manuelles (Chapitre <a href="C-code-learn.html#C-code-learn">13</a>).</p>
 
 </div>
 </div>
@@ -454,7 +371,7 @@ gitbook.start({
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    var src = "true";
+    var src = "";
     if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:" && /^https?:/.test(src))
       src = src.replace(/^https?:/, '');

@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html >
-
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Portraits | Vers une recherche reproductible</title>
-  <meta name="description" content="Livre d’introduction à la recherche reproductible rédigé lors d’un booksprint.">
-  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+  <meta name="description" content="Livre d’introduction à la recherche reproductible rédigé lors d’un booksprint." />
+  <meta name="generator" content="bookdown  and GitBook 2.6.7" />
 
   <meta property="og:title" content="Portraits | Vers une recherche reproductible" />
   <meta property="og:type" content="book" />
@@ -22,14 +21,14 @@
   <meta name="twitter:description" content="Livre d’introduction à la recherche reproductible rédigé lors d’un booksprint." />
   
 
-<meta name="author" content="Loïc Desquilbet, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot, Nicolas Rougier   Facilitatrice : Elisa de Castro Guerra">
+<meta name="author" content="Loïc Desquilbet, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot, Nicolas Rougier   Facilitatrice : Elisa de Castro Guerra" />
 
 
-<meta name="date" content="2019-05-05">
+<meta name="date" content="2019-05-05" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
 <link rel="prev" href="annexes.html">
@@ -51,67 +50,41 @@
 
 
 <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 </style>
 
 <link rel="stylesheet" href="css/style.css" type="text/css" />
@@ -320,24 +293,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Ce livre a été rédigé de manière collaborative par plusieurs auteurs. Qui sont-ils ?</p>
 <div id="loic-desquilbet" class="section level3 unnumbered">
 <h3>Loïc Desquilbet</h3>
-<p>Enseignant-chercheur en biostatistique et en épidémiologie clinique à
-<a href="https://www.vet-alfort.fr/">l’Ecole Nationale Vétérinaire d’Alfort</a>, Loïc Desquilbet travaille dans le domaine de la recherche clinique vétérinaire, incluant la validation de méthodes de mesure (répétabilité, reproductibilité, et concordance de méthodes).
-Il travaille sur SAS et a conçu une macro SAS pour prendre en
-compte les variables quantitatives dans un modèle multivarié. Ses enseignements visent à former les étudiants à l’analyse critique d’articles.</p>
+<p>Enseignant-chercheur en biostatistique et en épidémiologie clinique à <a href="https://www.vet-alfort.fr/">l’Ecole Nationale Vétérinaire d’Alfort</a>, Loïc Desquilbet travaille dans le domaine de la recherche clinique vétérinaire, incluant la validation de méthodes de mesure (répétabilité, reproductibilité, et concordance de méthodes). Il travaille sur SAS et a conçu une macro SAS pour prendre en compte les variables quantitatives dans un modèle multivarié. Ses enseignements visent à former les étudiants à l’analyse critique d’articles.</p>
 <ul>
 <li><a href="https://loicdesquilbet.wixsite.com/biostat-epidemio">site web</a></li>
 </ul>
 </div>
 <div id="boris-hejblum" class="section level3 unnumbered">
 <h3>Boris Hejblum</h3>
-<p>Enseignant-chercheur en biostatistique à <a href="http://www.isped.u-bordeaux.fr/">l’Institut de Santé Publique d’Épidémiologie et de Développement</a>
-(ISPED, Université de Bordeaux),
-Boris Hejblum est membre de l’équipe <a href="https://www.inria.fr/equipes/sistm">SISTM dans le centre Inserm U1219 Bordeaux Population Health et Inria Bordeaux Sud-Ouest</a>.</p>
-<p>Il travaille sur l’analyse de données biomédicales répétées de grande dimension,
-en particulier la statistique génomique dans le cadre de la recherche vaccinale
-ainsi que sur le traitement de dossiers médicaux informatisés par des approches de machine learning.
-Il développe de nouvelles méthodologies statistiques implémentées
-sous forme de paquets R open-source permettant leur réutilisation, et la reproductibilité des résultats de ses publications.</p>
+<p>Enseignant-chercheur en biostatistique à <a href="http://www.isped.u-bordeaux.fr/">l’Institut de Santé Publique d’Épidémiologie et de Développement</a> (ISPED, Université de Bordeaux), Boris Hejblum est membre de l’équipe <a href="https://www.inria.fr/equipes/sistm">SISTM dans le centre Inserm U1219 Bordeaux Population Health et Inria Bordeaux Sud-Ouest</a>.</p>
+<p>Il travaille sur l’analyse de données biomédicales répétées de grande dimension, en particulier la statistique génomique dans le cadre de la recherche vaccinale ainsi que sur le traitement de dossiers médicaux informatisés par des approches de machine learning. Il développe de nouvelles méthodologies statistiques implémentées sous forme de paquets R open-source permettant leur réutilisation, et la reproductibilité des résultats de ses publications.</p>
 <ul>
 <li><a href="https://borishejblum.science/software/">packages</a></li>
 <li><a href="https://borishejblum.science/">site web</a></li>
@@ -346,16 +310,7 @@ sous forme de paquets R open-source permettant leur réutilisation, et la reprod
 </div>
 <div id="arnaud-legrand" class="section level3 unnumbered">
 <h3>Arnaud Legrand</h3>
-<p>Chercheur au <a href="http://www.liglab.fr/">Laboratoire d’informatique de Grenoble</a>,
-Arnaud Legrand pilote <a href="https://team.inria.fr/polaris/">l’équipe Polaris (Inria)</a>.
-Il s’est spécialisé dans l’évaluation (simulation, observation, statistiques, analyse de traces)
-et l’optimisation de performance de grandes infrastructures de calcul
-(supercalculateurs, grille, calcul bénévole, clouds, …).
-L’axe optimisation de ses travaux porte sur la proposition ou l’évaluation de méthodes
-souvent sophistiquées et où il est important de conserver
-tous les détails pour comprendre leur performance et
-comment les améliorer.
-Arnaud Legrand co-pilote <a href="https://www.fun-mooc.fr/courses/course-v1:inria+41016+session01bis/about">le Mooc “Recherche reproductible”</a>.</p>
+<p>Chercheur au <a href="http://www.liglab.fr/">Laboratoire d’informatique de Grenoble</a>, Arnaud Legrand pilote <a href="https://team.inria.fr/polaris/">l’équipe Polaris (Inria)</a>. Il s’est spécialisé dans l’évaluation (simulation, observation, statistiques, analyse de traces) et l’optimisation de performance de grandes infrastructures de calcul (supercalculateurs, grille, calcul bénévole, clouds, …). L’axe optimisation de ses travaux porte sur la proposition ou l’évaluation de méthodes souvent sophistiquées et où il est important de conserver tous les détails pour comprendre leur performance et comment les améliorer. Arnaud Legrand co-pilote <a href="https://www.fun-mooc.fr/courses/course-v1:inria+41016+session01bis/about">le Mooc “Recherche reproductible”</a>.</p>
 <ul>
 <li><a href="http://mescal.imag.fr/membres/arnaud.legrand/">site web</a></li>
 <li><a href="http://twitter.com/arnaudlegrand17">suivre A. Legrand sur Twitter</a></li>
@@ -363,13 +318,7 @@ Arnaud Legrand co-pilote <a href="https://www.fun-mooc.fr/courses/course-v1:inri
 </div>
 <div id="pascal-pernot" class="section level3 unnumbered">
 <h3>Pascal Pernot</h3>
-<p>Physico-chimiste et directeur de recherches au CNRS, Pascal Pernot travaille au Laboratoire de Chimie Physique à l’Université Paris-Sud.
-Ses thématiques principales sont la gestion des incertitudes en modélisation physico-chimique,
-et notamment la quantification des incertitudes de prédiction des méthodes de chimie quantique
-et moléculaire.
-Il assure des formations en lien avec les méthodes standardisées de propagation des incertitudes.
-Il utilise l’environnement Rstudio/Github/Zenodo pour accompagner
-ses publications des données et codes nécessaires à la reproduction des résultats.</p>
+<p>Physico-chimiste et directeur de recherches au CNRS, Pascal Pernot travaille au Laboratoire de Chimie Physique à l’Université Paris-Sud. Ses thématiques principales sont la gestion des incertitudes en modélisation physico-chimique, et notamment la quantification des incertitudes de prédiction des méthodes de chimie quantique et moléculaire. Il assure des formations en lien avec les méthodes standardisées de propagation des incertitudes. Il utilise l’environnement Rstudio/Github/Zenodo pour accompagner ses publications des données et codes nécessaires à la reproduction des résultats.</p>
 <ul>
 <li><a href="http://pagesperso.lcp.u-psud.fr/pernot/">page web</a></li>
 <li><a href="https://github.com/ppernot/Reproducible-Research">GitHub « Reproducible Research »</a></li>
@@ -377,12 +326,7 @@ ses publications des données et codes nécessaires à la reproduction des résu
 </div>
 <div id="nicolas-rougier" class="section level3 unnumbered">
 <h3>Nicolas Rougier</h3>
-<p>Chercheur à l’Inria, Nicolas P. Rougier est membre de l’équipe <a href="https://mnemosyne-proj.org/">Mnemosyne project</a>
-dont l’approche se situe à la frontière entre les neurosciences intégratives et computationnelles en association avec <a href="https://www.imn-bordeaux.org/">l’Institut des maladies neurodégénératives</a>,
-<a href="https://www.labri.fr/">le Laboratoire Bordelais de Recherche en Informatique</a>, l’Université de Bordeaux et le CNRS.
-En 2015, il a co-fondé avec <a href="https://github.com/khinsen">Konrad Hinsen</a>,
-la revue <em><a href="http://rescience.github.io/">ReScience</a></em> spécialisée dans la publication d’études de réplication computationnelles.
-Il anime régulièrement des formations pour des doctorants, des chercheurs, des ingénieurs.</p>
+<p>Chercheur à l’Inria, Nicolas P. Rougier est membre de l’équipe <a href="https://mnemosyne-proj.org/">Mnemosyne project</a> dont l’approche se situe à la frontière entre les neurosciences intégratives et computationnelles en association avec <a href="https://www.imn-bordeaux.org/">l’Institut des maladies neurodégénératives</a>, <a href="https://www.labri.fr/">le Laboratoire Bordelais de Recherche en Informatique</a>, l’Université de Bordeaux et le CNRS. En 2015, il a co-fondé avec <a href="https://github.com/khinsen">Konrad Hinsen</a>, la revue <em><a href="http://rescience.github.io/">ReScience</a></em> spécialisée dans la publication d’études de réplication computationnelles. Il anime régulièrement des formations pour des doctorants, des chercheurs, des ingénieurs.</p>
 <ul>
 <li><a href="http://www.labri.fr/perso/nrougier/">site web</a></li>
 <li><a href="https://twitter.com/NPRougier?lang=fr">suivre N. Rougier sur Twitter</a></li>
@@ -393,22 +337,14 @@ Il anime régulièrement des formations pour des doctorants, des chercheurs, des
 <h2>Facilitatrice</h2>
 <div id="elisa-de-castro-guerra-activdesign" class="section level3 unnumbered">
 <h3>Elisa de Castro Guerra, ActivDesign</h3>
-<p>Formatrice à <a href="https://activdesign.eu/">Activdesign</a> et
-présidente de <a href="https://www.flossmanualsfr.net/">Floss Manuals Francophone</a>,
-Elisa de Castro Guerra est spécialisée en création numérique et web.
-Elle travaille sur le développement d’applications web depuis plusieurs années.
-E. de Castro Guerra milite pour l’utilisation des logiciels libres,
-en particulier par la facilitation
-d’écriture de documentations en langue française.
-E. de Castro Guerra anime ainsi régulièrement des book sprints pour des associations, des entreprises.</p>
+<p>Formatrice à <a href="https://activdesign.eu/">Activdesign</a> et présidente de <a href="https://www.flossmanualsfr.net/">Floss Manuals Francophone</a>, Elisa de Castro Guerra est spécialisée en création numérique et web. Elle travaille sur le développement d’applications web depuis plusieurs années. E. de Castro Guerra milite pour l’utilisation des logiciels libres, en particulier par la facilitation d’écriture de documentations en langue française. E. de Castro Guerra anime ainsi régulièrement des book sprints pour des associations, des entreprises.</p>
 </div>
 </div>
 <div id="coordinatrice-du-projet" class="section level2 unnumbered">
 <h2>Coordinatrice du projet</h2>
 <div id="sabrina-granger" class="section level3 unnumbered">
 <h3>Sabrina Granger</h3>
-<p>Docteur en langue et littérature françaises, Sabrina Granger est conservatrice des bibliothèques à l’Unité Régionale de Formation à l’Information Scientifique et Technique de Bordeaux. Ses différents postes l’ont amenée à travailler dans les domaines de l’informatique documentaire, la communication en BU et les services aux chercheurs. S. Granger est co-pilote du collège « Compétences et formations »
-du <a href="https://www.ouvrirlascience.fr/presentation-du-comite/">Comité pour la Science Ouverte</a>.</p>
+<p>Docteur en langue et littérature françaises, Sabrina Granger est conservatrice des bibliothèques à l’Unité Régionale de Formation à l’Information Scientifique et Technique de Bordeaux. Ses différents postes l’ont amenée à travailler dans les domaines de l’informatique documentaire, la communication en BU et les services aux chercheurs. S. Granger est co-pilote du collège « Compétences et formations » du <a href="https://www.ouvrirlascience.fr/presentation-du-comite/">Comité pour la Science Ouverte</a>.</p>
 </div>
 </div>
 <div id="contributeurs-de-la-1re-edition" class="section level2 unnumbered">
@@ -493,7 +429,7 @@ gitbook.start({
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    var src = "true";
+    var src = "";
     if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:" && /^https?:/.test(src))
       src = src.replace(/^https?:/, '');

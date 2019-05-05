@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html >
-
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapitre 13 Apprendre à programmer | Vers une recherche reproductible</title>
-  <meta name="description" content="Livre d’introduction à la recherche reproductible rédigé lors d’un booksprint.">
-  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+  <meta name="description" content="Livre d’introduction à la recherche reproductible rédigé lors d’un booksprint." />
+  <meta name="generator" content="bookdown  and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapitre 13 Apprendre à programmer | Vers une recherche reproductible" />
   <meta property="og:type" content="book" />
@@ -22,14 +21,14 @@
   <meta name="twitter:description" content="Livre d’introduction à la recherche reproductible rédigé lors d’un booksprint." />
   
 
-<meta name="author" content="Loïc Desquilbet, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot, Nicolas Rougier   Facilitatrice : Elisa de Castro Guerra">
+<meta name="author" content="Loïc Desquilbet, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot, Nicolas Rougier   Facilitatrice : Elisa de Castro Guerra" />
 
 
-<meta name="date" content="2019-05-05">
+<meta name="date" content="2019-05-05" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
 <link rel="prev" href="C-versioning.html">
@@ -51,67 +50,41 @@
 
 
 <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 </style>
 
 <link rel="stylesheet" href="css/style.css" type="text/css" />
@@ -315,119 +288,48 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="C-code-learn" class="section level1">
 <h1><span class="header-section-number">Chapitre 13</span> Apprendre à programmer</h1>
-<p>Dans ce chapitre, nous mettons en évidence les limitations des interfaces
-graphiques en termes d’efficacité et de reproductibilité ; nous expliquons
-qu’il peut être nécessaire d’apprendre à programmer en conseillant deux langages devenus incontournables en traitement et analyse des données : Python et R.</p>
+<p>Dans ce chapitre, nous mettons en évidence les limitations des interfaces graphiques en termes d’efficacité et de reproductibilité ; nous expliquons qu’il peut être nécessaire d’apprendre à programmer en conseillant deux langages devenus incontournables en traitement et analyse des données : Python et R.</p>
 <div id="limiter-le-recours-aux-interfaces-graphiques" class="section level2">
 <h2><span class="header-section-number">13.1</span> Limiter le recours aux interfaces graphiques</h2>
-<p>Une interface graphique est un moyen simple et visuel d’indiquer à un logiciel
-ce que l’on souhaite faire. Par exemple, dans un logiciel de traitement de
-texte de type WYSIWIG (<em>What You See Is What You Get</em>), à l’aide de la
-souris, on peut surligner un passage afin de le mettre en italique ou en gras en
-cliquant sur le bouton correspondant.
-Ce type d’interface intuitive est omniprésent dans les logiciels et
-simplifie la vie de nombreux utilisateurs.</p>
-<p>Dans de nombreux logiciels scientifiques, ce type d’interface est également disponible,
-par exemple pour traiter les données ou concevoir des figures.
-L’exemple le plus célèbre est très certainement le tableur Excel, très utilisé y compris pour faire des traitements statistiques relativement compliqués.
-Dans un premier temps, cet outil peut simplifier les traitements mais dès que vous souhaiterez effectuer des tâches plus subtiles
-ou des tâches répétitives, il va rapidement devenir un obstacle. Si vous effectuez des calculs exotiques, vous serez alors contraint d’entrer des formules de calcul complexes dans les cellules.
-La bonne nouvelle est que, en faisant cela, vous avez commencé à programmer.
-La mauvaise est que votre calcul n’est pas reproductible.
-“Mais j’ai sauvé ma feuille Excel pourtant !”.
-Certes, mais entre le moment où vous avez chargé vos données initiales et
-le moment ou vous avez sauvé vos résultats, un certain nombre de
-manipulations que vous avez faites n’a pas été enregistré.</p>
-<p>Par exemple, si vous devez trier vos données selon une certaine colonne,
-les données dans la feuille sauvegardée seront triées mais vous aurez
-perdu la trace de cette opération de tri et il vous sera facile d’oublier
-de la répéter si vous devez recommencer le traitement avec un autre jeu de données
-(sauf si vous êtes précautionneux et tenez scrupuleusement à jour votre cahier de laboratoire).</p>
+<p>Une interface graphique est un moyen simple et visuel d’indiquer à un logiciel ce que l’on souhaite faire. Par exemple, dans un logiciel de traitement de texte de type WYSIWIG (<em>What You See Is What You Get</em>), à l’aide de la souris, on peut surligner un passage afin de le mettre en italique ou en gras en cliquant sur le bouton correspondant. Ce type d’interface intuitive est omniprésent dans les logiciels et simplifie la vie de nombreux utilisateurs.</p>
+<p>Dans de nombreux logiciels scientifiques, ce type d’interface est également disponible, par exemple pour traiter les données ou concevoir des figures. L’exemple le plus célèbre est très certainement le tableur Excel, très utilisé y compris pour faire des traitements statistiques relativement compliqués. Dans un premier temps, cet outil peut simplifier les traitements mais dès que vous souhaiterez effectuer des tâches plus subtiles ou des tâches répétitives, il va rapidement devenir un obstacle. Si vous effectuez des calculs exotiques, vous serez alors contraint d’entrer des formules de calcul complexes dans les cellules. La bonne nouvelle est que, en faisant cela, vous avez commencé à programmer. La mauvaise est que votre calcul n’est pas reproductible. “Mais j’ai sauvé ma feuille Excel pourtant !”. Certes, mais entre le moment où vous avez chargé vos données initiales et le moment ou vous avez sauvé vos résultats, un certain nombre de manipulations que vous avez faites n’a pas été enregistré.</p>
+<p>Par exemple, si vous devez trier vos données selon une certaine colonne, les données dans la feuille sauvegardée seront triées mais vous aurez perdu la trace de cette opération de tri et il vous sera facile d’oublier de la répéter si vous devez recommencer le traitement avec un autre jeu de données (sauf si vous êtes précautionneux et tenez scrupuleusement à jour votre cahier de laboratoire).</p>
 </div>
 <div id="de-linteret-de-la-programmation" class="section level2">
 <h2><span class="header-section-number">13.2</span> De l’intérêt de la programmation</h2>
-<p>Pour surmonter les difficultés liées aux interfaces graphiques, il est
-nécessaire de pouvoir exprimer d’une façon claire, documentée et non ambigüe
-ce que l’on souhaite faire faire au logiciel.
-C’est ici que la programmation entre en jeu.
-Plutôt que de cliquer à droite ou à gauche, on va expliquer textuellement,
-à l’aide d’un jeu d’instructions relativement restreint, ce que l’on souhaite
-faire.
-Cela veut dire, entre autres choses, qu’un programme peut être simplement
-exprimé en quelques lignes seulement.
-Plus le langage utilisé sera de haut niveau et moins il y aura à écrire.</p>
-<p>Reprenons notre exemple où je dois charger des données, les trier selon la
-deuxième colonne et faire la moyenne sur la première moitié des données
-de la première colonne.
-Un façon de l’écrire est :</p>
-<pre class="sourceCode r"><code class="sourceCode r">table &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="dt">file =</span> <span class="st">&#39;data.csv&#39;</span>) <span class="co"># Charger les données en mémoire</span>
+<p>Pour surmonter les difficultés liées aux interfaces graphiques, il est nécessaire de pouvoir exprimer d’une façon claire, documentée et non ambigüe ce que l’on souhaite faire faire au logiciel. C’est ici que la programmation entre en jeu. Plutôt que de cliquer à droite ou à gauche, on va expliquer textuellement, à l’aide d’un jeu d’instructions relativement restreint, ce que l’on souhaite faire. Cela veut dire, entre autres choses, qu’un programme peut être simplement exprimé en quelques lignes seulement. Plus le langage utilisé sera de haut niveau et moins il y aura à écrire.</p>
+<p>Reprenons notre exemple où je dois charger des données, les trier selon la deuxième colonne et faire la moyenne sur la première moitié des données de la première colonne. Un façon de l’écrire est :</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">table &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="dt">file =</span> <span class="st">&#39;data.csv&#39;</span>) <span class="co"># Charger les données en mémoire</span>
 table_tri &lt;-<span class="st"> </span>table[<span class="kw">order</span>(table<span class="op">$</span>age), ] <span class="co"># Réordonne toutes les lignes du tableau</span>
 <span class="co"># Sélectionne la première moitié des lignes de la première colonne</span>
 <span class="co"># pour en faire la moyenne</span>
-<span class="kw">mean</span>(table_tri<span class="op">$</span>IMC[<span class="dv">1</span><span class="op">:</span>(<span class="kw">nrow</span>(table_tri)<span class="op">/</span><span class="dv">2</span>)])</code></pre>
-<p>En faisant abstraction de la syntaxe particulière (il s’agit ici du langage R)
-de ce programme simple, on comprend néanmoins à la lecture ce qu’il fait :
-(1) charger les données, (2) les trier, puis (3) calculer la moyenne.
-On a de fait simplement traduit le traitement que l’on
-souhaitait réaliser en jeu d’instructions.
-Par rapport à Excel, le programme offre deux avantages majeurs :</p>
+<span class="kw">mean</span>(table_tri<span class="op">$</span>IMC[<span class="dv">1</span><span class="op">:</span>(<span class="kw">nrow</span>(table_tri)<span class="op">/</span><span class="dv">2</span>)])</code></pre></div>
+<p>En faisant abstraction de la syntaxe particulière (il s’agit ici du langage R) de ce programme simple, on comprend néanmoins à la lecture ce qu’il fait : (1) charger les données, (2) les trier, puis (3) calculer la moyenne. On a de fait simplement traduit le traitement que l’on souhaitait réaliser en jeu d’instructions. Par rapport à Excel, le programme offre deux avantages majeurs :</p>
 <ul>
 <li>d’une part, il effectue les traitements de manière reproductible,</li>
-<li>d’autre part, il documente cette chaîne de traitements, si bien que
-quiconque est maintenant en mesure de comprendre et de reproduire
-ces traitements, éventuellement à l’aide d’un autre de langage de
-programmation.</li>
+<li>d’autre part, il documente cette chaîne de traitements, si bien que quiconque est maintenant en mesure de comprendre et de reproduire ces traitements, éventuellement à l’aide d’un autre de langage de programmation.</li>
 </ul>
 </div>
 <div id="le-choix-des-armes" class="section level2">
 <h2><span class="header-section-number">13.3</span> Le choix des armes</h2>
-<p>Apprendre à programmer n’est pas tout à fait équivalent à apprendre un langage
-de programmation. Il est nécessaire de comprendre au préalable ce que l’on
-peut attendre d’un programme et comment exprimer ce que l’on souhaite faire de
-façon non ambigüe car l’ordinateur est extrêmement bête (si, si) et ne fera que ce que
-vous lui demandez de faire, ni plus, ni moins. L’apprentissage de la
-programmation passe donc par la découverte d’un nombre limité de concepts que
-l’on va retrouver dans la plupart des langages de programmation.
-Notez que nous parlons de “langages” au pluriel pour refléter leur diversité.
-Les raisons de l’existence d’une telle variété de langages sont multiples.
-Heureusement pour nous, au cours de ces dernières années, deux langages se sont
-quasiment imposés dans le monde de la recherche : Python et R. Entendons-nous
-bien : nous ne disons pas que ce sont les seuls langages utilisables dans ce
-contexte (loin de là) mais néanmoins, ils ont su traverser les frontières de
-tous les champs disciplinaires. Il y a aujourd’hui des conférences
-scientifiques qui leur sont entièrement dédiées et où l’on peut voir un
-physicien théorique discuter avec un sociologue ou bien un doctorant enseigner
-à un professeur.</p>
-<p>Pour commencer à programmer, nous ne saurions trop vous conseiller de commencer
-par apprendre un de ces deux langages. Le choix entre les deux vous
-appartient, sachant que vous avez tout intérêt à observer les pratiques dans
-votre domaine ou bien encore à regarder les programmes des conférences telles
-que <a href="http://conference.scipy.org/">Scipy</a> <span class="citation">(SciPy <a href="bibliographie.html#ref-scipySciPyConferences">n.d.</a>)</span>, <a href="https://www.euroscipy.org">EuroScipy</a> <span class="citation">(EuroSciPy <a href="bibliographie.html#ref-euroscipyEuroSciPyHome">n.d.</a>)</span>,
-<a href="http://www.user2019.fr">useR!</a>, Les <a href="https://r2018-rennes.sciencesconf.org">Rencontres
-R</a>
-<span class="citation">(Rencontres R <a href="bibliographie.html#ref-rencontresr7eRencontres2018">2018</a>)</span>, <em>etc</em>.</p>
+<p>Apprendre à programmer n’est pas tout à fait équivalent à apprendre un langage de programmation. Il est nécessaire de comprendre au préalable ce que l’on peut attendre d’un programme et comment exprimer ce que l’on souhaite faire de façon non ambigüe car l’ordinateur est extrêmement bête (si, si) et ne fera que ce que vous lui demandez de faire, ni plus, ni moins. L’apprentissage de la programmation passe donc par la découverte d’un nombre limité de concepts que l’on va retrouver dans la plupart des langages de programmation. Notez que nous parlons de “langages” au pluriel pour refléter leur diversité. Les raisons de l’existence d’une telle variété de langages sont multiples. Heureusement pour nous, au cours de ces dernières années, deux langages se sont quasiment imposés dans le monde de la recherche : Python et R. Entendons-nous bien : nous ne disons pas que ce sont les seuls langages utilisables dans ce contexte (loin de là) mais néanmoins, ils ont su traverser les frontières de tous les champs disciplinaires. Il y a aujourd’hui des conférences scientifiques qui leur sont entièrement dédiées et où l’on peut voir un physicien théorique discuter avec un sociologue ou bien un doctorant enseigner à un professeur.</p>
+<p>Pour commencer à programmer, nous ne saurions trop vous conseiller de commencer par apprendre un de ces deux langages. Le choix entre les deux vous appartient, sachant que vous avez tout intérêt à observer les pratiques dans votre domaine ou bien encore à regarder les programmes des conférences telles que <a href="http://conference.scipy.org/">Scipy</a> <span class="citation">(SciPy <a href="bibliographie.html#ref-scipySciPyConferences">2019</a>)</span>, <a href="https://www.euroscipy.org">EuroScipy</a> <span class="citation">(EuroSciPy <a href="bibliographie.html#ref-euroscipyEuroSciPyHome">2019</a>)</span>, <a href="http://www.user2019.fr">useR!</a>, Les <a href="https://r2018-rennes.sciencesconf.org">Rencontres R</a> <span class="citation">(Rencontres R <a href="bibliographie.html#ref-rencontresr7eRencontres2018">2018</a>)</span>, <em>etc</em>.</p>
 </div>
 <div id="pour-en-savoir-plus-4" class="section level2">
 <h2><span class="header-section-number">13.4</span> Pour en savoir plus</h2>
-<p>Il existe une multitude de ressources pour apprendre à programmer en R ou en
-Python, notamment les formations continues proposées par les institutions
-(services de formation des personnels, écoles doctorales, mais aussi formations
-internes à votre unité de recherche). En raison de cette multitude de
-ressources, il est difficile de choisir lesquelles sont les plus pertinentes.
-C’est la raison pour laquelle nous donnons ci-dessous une liste très restreinte
-de ressources accessibles en ligne que nous jugeons de qualité.</p>
+<p>Il existe une multitude de ressources pour apprendre à programmer en R ou en Python, notamment les formations continues proposées par les institutions (services de formation des personnels, écoles doctorales, mais aussi formations internes à votre unité de recherche). En raison de cette multitude de ressources, il est difficile de choisir lesquelles sont les plus pertinentes. C’est la raison pour laquelle nous donnons ci-dessous une liste très restreinte de ressources accessibles en ligne que nous jugeons de qualité.</p>
 <div id="moocs" class="section level3">
 <h3><span class="header-section-number">13.4.1</span> MOOCs</h3>
 <ul>
-<li><a href="https://www.fun-mooc.fr/courses/UPSUD/42001S06/session06/about">“Introduction à la statistique avec R”</a> <span class="citation">(Université Paris Sud <a href="bibliographie.html#ref-universiteparissudIntroductionStatistiqueAvec">n.d.</a>)</span></li>
-<li><a href="https://www.fun-mooc.fr/courses/inria/41001S03/session03/about">“Python : des fondamentaux à l’utilisation du langage”</a> <span class="citation">(Inria <a href="bibliographie.html#ref-inriaPythonFondamentauxUtilisation">n.d.</a>)</span></li>
+<li><a href="https://www.fun-mooc.fr/courses/UPSUD/42001S06/session06/about">“Introduction à la statistique avec R”</a> <span class="citation">(Université Paris Sud <a href="bibliographie.html#ref-universiteparissudIntroductionStatistiqueAvec">2019</a>)</span></li>
+<li><a href="https://www.fun-mooc.fr/courses/inria/41001S03/session03/about">“Python : des fondamentaux à l’utilisation du langage”</a> <span class="citation">(Inria <a href="bibliographie.html#ref-inriaPythonFondamentauxUtilisation">2019</a>)</span></li>
 </ul>
 </div>
 <div id="tutoriels" class="section level3">
 <h3><span class="header-section-number">13.4.2</span> Tutoriels</h3>
 <ul>
-<li><a href="http://beginr.u-bordeaux.fr"><em>Begin’R</em></a> <span class="citation">(Arnal et al. <a href="bibliographie.html#ref-arnalBegin">n.d.</a>)</span></li>
-<li><a href="https://docs.python.org/fr/3/tutorial">Le tutoriel officiel de Python</a> <span class="citation">(Python Software Foundation <a href="bibliographie.html#ref-pythonsoftwarefoundationTutorielPythonDocumentation">n.d.</a>)</span></li>
+<li><a href="http://beginr.u-bordeaux.fr"><em>Begin’R</em></a> <span class="citation">(Arnal et al. <a href="bibliographie.html#ref-arnalBegin">2019</a>)</span></li>
+<li><a href="https://docs.python.org/fr/3/tutorial">Le tutoriel officiel de Python</a> <span class="citation">(Python Software Foundation <a href="bibliographie.html#ref-pythonsoftwarefoundationTutorielPythonDocumentation">2019</a>)</span></li>
 </ul>
 </div>
 <div id="livres" class="section level3">
@@ -440,10 +342,10 @@ de ressources accessibles en ligne que nous jugeons de qualité.</p>
 <div id="ateliers-en-ligne-software-carpentry" class="section level3">
 <h3><span class="header-section-number">13.4.4</span> Ateliers en ligne “Software Carpentry”</h3>
 <ul>
-<li><a href="http://swcarpentry.github.io/r-novice-inflammation">“Programming with R”</a> <span class="citation">(Software Carpentry <a href="bibliographie.html#ref-softwarecarpentryProgramming">n.d.</a>)</span></li>
-<li><a href="http://swcarpentry.github.io/r-novice-gapminder">“R for Reproducible Scientific Analysis”</a> <span class="citation">(Software Carpentry <a href="bibliographie.html#ref-softwarecarpentryReproducibleScientificAnalysisa">n.d.</a>)</span></li>
-<li><a href="http://swcarpentry.github.io/python-novice-inflammation">“Programming with Python”</a> <span class="citation">(Software Carpentry <a href="bibliographie.html#ref-softwarecarpentryProgrammingPython">n.d.</a>)</span></li>
-<li><a href="http://swcarpentry.github.io/python-novice-gapminder">“Plotting and Programming in Python”</a> <span class="citation">(Software Carpentry <a href="bibliographie.html#ref-softwarecarpentryPlottingProgrammingPython">n.d.</a>)</span></li>
+<li><a href="http://swcarpentry.github.io/r-novice-inflammation">“Programming with R”</a> <span class="citation">(Software Carpentry <a href="bibliographie.html#ref-softwarecarpentryProgramming">2019</a><a href="bibliographie.html#ref-softwarecarpentryProgramming">c</a>)</span></li>
+<li><a href="http://swcarpentry.github.io/r-novice-gapminder">“R for Reproducible Scientific Analysis”</a> <span class="citation">(Software Carpentry <a href="bibliographie.html#ref-softwarecarpentryReproducibleScientificAnalysisa">2019</a><a href="bibliographie.html#ref-softwarecarpentryReproducibleScientificAnalysisa">d</a>)</span></li>
+<li><a href="http://swcarpentry.github.io/python-novice-inflammation">“Programming with Python”</a> <span class="citation">(Software Carpentry <a href="bibliographie.html#ref-softwarecarpentryProgrammingPython">2019</a><a href="bibliographie.html#ref-softwarecarpentryProgrammingPython">b</a>)</span></li>
+<li><a href="http://swcarpentry.github.io/python-novice-gapminder">“Plotting and Programming in Python”</a> <span class="citation">(Software Carpentry <a href="bibliographie.html#ref-softwarecarpentryPlottingProgrammingPython">2019</a><a href="bibliographie.html#ref-softwarecarpentryPlottingProgrammingPython">a</a>)</span></li>
 </ul>
 
 </div>
@@ -505,7 +407,7 @@ gitbook.start({
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    var src = "true";
+    var src = "";
     if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:" && /^https?:/.test(src))
       src = src.replace(/^https?:/, '');

@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html >
-
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapitre 11 Partager ses données, codes et résultats | Vers une recherche reproductible</title>
-  <meta name="description" content="Livre d’introduction à la recherche reproductible rédigé lors d’un booksprint.">
-  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+  <meta name="description" content="Livre d’introduction à la recherche reproductible rédigé lors d’un booksprint." />
+  <meta name="generator" content="bookdown  and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapitre 11 Partager ses données, codes et résultats | Vers une recherche reproductible" />
   <meta property="og:type" content="book" />
@@ -22,14 +21,14 @@
   <meta name="twitter:description" content="Livre d’introduction à la recherche reproductible rédigé lors d’un booksprint." />
   
 
-<meta name="author" content="Loïc Desquilbet, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot, Nicolas Rougier   Facilitatrice : Elisa de Castro Guerra">
+<meta name="author" content="Loïc Desquilbet, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot, Nicolas Rougier   Facilitatrice : Elisa de Castro Guerra" />
 
 
-<meta name="date" content="2019-05-05">
+<meta name="date" content="2019-05-05" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
 <link rel="prev" href="C-data-format.html">
@@ -51,67 +50,41 @@
 
 
 <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 </style>
 
 <link rel="stylesheet" href="css/style.css" type="text/css" />
@@ -315,112 +288,55 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="C-data-share" class="section level1">
 <h1><span class="header-section-number">Chapitre 11</span> Partager ses données, codes et résultats</h1>
-<p>La mise à disposition des données de la recherche est un point clé pour leur
-réutilisabilité et pour faciliter la reproductibilité de la recherche par vos
-pairs. Il existe plusieurs façons de les mettre à disposition. Pour un partage efficace, il est important de choisir :</p>
+<p>La mise à disposition des données de la recherche est un point clé pour leur réutilisabilité et pour faciliter la reproductibilité de la recherche par vos pairs. Il existe plusieurs façons de les mettre à disposition. Pour un partage efficace, il est important de choisir :</p>
 <ul>
 <li><p>une licence adaptée (chapitre <a href="C-licences.html#C-licences">17</a>),</p></li>
 <li><p>un format <em>ad hoc</em> (chapitre <a href="C-data-format.html#C-data-format">10</a>).</p></li>
 </ul>
-<p>Il convient aussi d’élaborer une documentation extensive levant les
-ambiguïtés d’interprétation (chapitre <a href="C-code-good.html#C-code-good">14</a>), et enfin de choisir
-un mode de partage le plus ouvert et pérenne possible.</p>
+<p>Il convient aussi d’élaborer une documentation extensive levant les ambiguïtés d’interprétation (chapitre <a href="C-code-good.html#C-code-good">14</a>), et enfin de choisir un mode de partage le plus ouvert et pérenne possible.</p>
 <div id="compendium-de-recherche" class="section level2">
 <h2><span class="header-section-number">11.1</span> <em>Compendium</em> de recherche</h2>
-<p>Avant de présenter différentes modalités de partage, intéressons-nous à la notion de <em>compendium</em> de recherche.
-Il s’agit d’un outil qui facilite la recherche
-reproductible en rassemblant dans un même “lieu” virtuel les données, les
-codes, les protocoles et la documentation liés à un projet de recherche.</p>
-<p>La façon la plus simple d’élaborer un <em>compendium</em> de recherche est de créer un
-répertoire associé au projet, avec des sous-répertoires dans lesquels sont
-répartis les objets. Une convention de nommage explicite des objets et
-répertoires peut grandement faciliter la réutilisabilité. Par exemple, pour une simple analyse
-statistique d’un jeu de données, Marwick et ses co-auteurs proposent la structure suivante [marwickPackagingDataAnalytical2018] :</p>
-<p><img src="img/compendium_fr.png" /></p>
+<p>Avant de présenter différentes modalités de partage, intéressons-nous à la notion de <em>compendium</em> de recherche. Il s’agit d’un outil qui facilite la recherche reproductible en rassemblant dans un même “lieu” virtuel les données, les codes, les protocoles et la documentation liés à un projet de recherche.</p>
+<p>La façon la plus simple d’élaborer un <em>compendium</em> de recherche est de créer un répertoire associé au projet, avec des sous-répertoires dans lesquels sont répartis les objets. Une convention de nommage explicite des objets et répertoires peut grandement faciliter la réutilisabilité. Par exemple, pour une simple analyse statistique d’un jeu de données, Marwick et ses co-auteurs proposent la structure suivante [marwickPackagingDataAnalytical2018] :</p>
+<div class="figure">
+<img src="img/compendium_fr.png" />
+
+</div>
 <p><em>Image CC-BY par Ben Marwick, Carl Boettiger &amp; Lincoln Mullen.</em></p>
-<p>Ces <em>compendia</em> peuvent être alors archivés et référencés comme tout autre objet
-numérique sous forme de dossiers compressés ou sur des plates-formes spécialisées
-comme par exemple l’<a href="https://osf.io/"><em>Open Science Framework (OSF)</em></a> <span class="citation">(Center for Open Science <a href="bibliographie.html#ref-centerforopenscienceOpenScienceFramework">n.d.</a>)</span>.</p>
+<p>Ces <em>compendia</em> peuvent être alors archivés et référencés comme tout autre objet numérique sous forme de dossiers compressés ou sur des plates-formes spécialisées comme par exemple l’<a href="https://osf.io/"><em>Open Science Framework (OSF)</em></a> <span class="citation">(Center for Open Science <a href="bibliographie.html#ref-centerforopenscienceOpenScienceFramework">2019</a>)</span>.</p>
 </div>
 <div id="modalites-de-partage" class="section level2">
 <h2><span class="header-section-number">11.2</span> Modalités de partage</h2>
-<p>Nous considérons dans cette partie que vos données peuvent être légalement
-ouvertes au public.</p>
+<p>Nous considérons dans cette partie que vos données peuvent être légalement ouvertes au public.</p>
 <div id="sur-demande" class="section level3">
 <h3><span class="header-section-number">11.2.1</span> Sur demande</h3>
-<p>Le degré zéro (voire -1) de la mise à disposition des données pour la communauté,
-est de mentionner dans l’article qu’elles sont disponibles “Sur demande à l’auteur”.</p>
+<p>Le degré zéro (voire -1) de la mise à disposition des données pour la communauté, est de mentionner dans l’article qu’elles sont disponibles “Sur demande à l’auteur”.</p>
 <p>Cette approche permet à l’auteur de garder une forme de contrôle, mais elle s’avère peu adaptée à une gestion sur le long terme (ex. : départ à la retraite de l’auteur, changement d’adresse de courriel, <em>etc</em>.) et tend à disparaître. En effet, de nombreuses plates-formes éditoriales adoptent progressivement une politique d’ouverture des données et demandent aux auteurs de les mettre à disposition de leurs pairs. L’efficacité des dispositifs éditoriaux déployés est variable, comme le soulignent Stodden et ses co-auteurs <span class="citation">(Stodden, Seiler, and Ma <a href="bibliographie.html#ref-stoddenEmpiricalAnalysisJournal2018">2018</a>)</span>, mais on note une évolution progressive des pratiques.</p>
 </div>
 <div id="page-web-personnelle" class="section level3">
 <h3><span class="header-section-number">11.2.2</span> Page web personnelle</h3>
-<p>Créer une page web personnelle pour faciliter l’accès aux données est une
-solution simple et un premier pas dans la bonne direction, mais ici encore, de
-nombreux aléas risquent de compromettre la continuité de service. Si cette
-solution est envisagée, et nous ne vous la conseillons pas, l’utilisation
-d’une page web institutionnelle, intégrée au site d’un laboratoire offrira
-une visibilité accrue et une meilleure pérennité.</p>
+<p>Créer une page web personnelle pour faciliter l’accès aux données est une solution simple et un premier pas dans la bonne direction, mais ici encore, de nombreux aléas risquent de compromettre la continuité de service. Si cette solution est envisagée, et nous ne vous la conseillons pas, l’utilisation d’une page web institutionnelle, intégrée au site d’un laboratoire offrira une visibilité accrue et une meilleure pérennité.</p>
 </div>
 <div id="hebergement-par-un-tiers" class="section level3">
 <h3><span class="header-section-number">11.2.3</span> Hébergement par un tiers</h3>
-<p>Il existe des solutions permettant de partager un répertoire entier, la
-plus populaire étant <a href="https://www.dropbox.com/">Dropbox</a> ou son équivalent
-libre <a href="https://framadrive.org/login">Framadrive</a>. Le niveau le plus élevé de granularité de ces outils est le fichier. C’est la raison pour laquelle, il existe des solutions
-plus spécifiques selon les formats de fichiers utilisés. Par exemple lorsque
-l’on travaille sur des données de type tableur, une solution
-populaire est <a href="https://spreadsheets.google.com/">Google Spreadsheet</a>
-(resp. <a href="https://docs.google.com/">Google Docs</a>) ou (mieux) son équivalent libre
-<a href="https://framacalc.org/">Framacalc</a> (resp. <a href="https://framapad.org/">Framapad</a>).</p>
-<p>Si ces services sont très pratiques et très faciles à utiliser, ils posent un
-certain nombre de problèmes dans un contexte recherche :</p>
+<p>Il existe des solutions permettant de partager un répertoire entier, la plus populaire étant <a href="https://www.dropbox.com/">Dropbox</a> ou son équivalent libre <a href="https://framadrive.org/login">Framadrive</a>. Le niveau le plus élevé de granularité de ces outils est le fichier. C’est la raison pour laquelle, il existe des solutions plus spécifiques selon les formats de fichiers utilisés. Par exemple lorsque l’on travaille sur des données de type tableur, une solution populaire est <a href="https://spreadsheets.google.com/">Google Spreadsheet</a> (resp. <a href="https://docs.google.com/">Google Docs</a>) ou (mieux) son équivalent libre <a href="https://framacalc.org/">Framacalc</a> (resp. <a href="https://framapad.org/">Framapad</a>).</p>
+<p>Si ces services sont très pratiques et très faciles à utiliser, ils posent un certain nombre de problèmes dans un contexte recherche :</p>
 <ul>
-<li><p>Certaines informations sont confidentielles (données de santé, collaborations
-avec des partenaires industriels, idées ayant vocation à être brevetées,
-<em>etc</em>.). Déléguer la responsabilité du contrôle d’accès à un hébergeur extérieur
-(qu’il soit privé ou associatif) peut poser de sérieux problèmes. Il convient
-donc d’utiliser les équivalents institutionnels et à demander leur déploiement
-s’ils n’existent pas.</p></li>
-<li><p>La pérennité sur le long terme des outils comme des services n’est absolument pas garantie. On peut citer les cas de Gitorious et de Google Code, deux services d’hébergement de code dont la popularité n’a pas empêché la fermeture. En déléguant la
-responsabilité du stockage à un hébergeur extérieur, vous prenez un risque
-conséquent. Vous pouvez utiliser ce type de service mais il faut absolument
-vous assurer que vous disposez d’une solution d’archivage en complément.</p></li>
-<li><p>La gestion de versions est automatique mais très peu contrôlée. Dropbox par
-exemple ne conserve que quelques versions intermédiaires et ce, uniquement
-pendant une durée assez limitée dans le temps (quelques mois). Et comme la
-synchronisation avec votre propre ordinateur est automatique, il n’est
-pas rare de perdre des données au bout de quelques temps avant d’avoir eu le
-temps de réaliser quoi que ce soit. L’exemple le plus classique dans un
-contexte non professionnel est celui du partage d’un dossier : votre beau-père efface un jour les photos dudit dossier afin de faire de la place sur son disque dur personnel. Par ricochet et sans avertissement, les données sont ainsi effacées de votre propre ordinateur.</p></li>
+<li><p>Certaines informations sont confidentielles (données de santé, collaborations avec des partenaires industriels, idées ayant vocation à être brevetées, <em>etc</em>.). Déléguer la responsabilité du contrôle d’accès à un hébergeur extérieur (qu’il soit privé ou associatif) peut poser de sérieux problèmes. Il convient donc d’utiliser les équivalents institutionnels et à demander leur déploiement s’ils n’existent pas.</p></li>
+<li><p>La pérennité sur le long terme des outils comme des services n’est absolument pas garantie. On peut citer les cas de Gitorious et de Google Code, deux services d’hébergement de code dont la popularité n’a pas empêché la fermeture. En déléguant la responsabilité du stockage à un hébergeur extérieur, vous prenez un risque conséquent. Vous pouvez utiliser ce type de service mais il faut absolument vous assurer que vous disposez d’une solution d’archivage en complément.</p></li>
+<li><p>La gestion de versions est automatique mais très peu contrôlée. Dropbox par exemple ne conserve que quelques versions intermédiaires et ce, uniquement pendant une durée assez limitée dans le temps (quelques mois). Et comme la synchronisation avec votre propre ordinateur est automatique, il n’est pas rare de perdre des données au bout de quelques temps avant d’avoir eu le temps de réaliser quoi que ce soit. L’exemple le plus classique dans un contexte non professionnel est celui du partage d’un dossier : votre beau-père efface un jour les photos dudit dossier afin de faire de la place sur son disque dur personnel. Par ricochet et sans avertissement, les données sont ainsi effacées de votre propre ordinateur.</p></li>
 </ul>
 </div>
 <div id="archives-perennes" class="section level3">
 <h3><span class="header-section-number">11.2.4</span> Archives pérennes</h3>
-<p>Il existe actuellement de nombreuses plates-formes permettant d’héberger
-“gratuitement” les données de la recherche. Nous avons évoqué dans le chapitre
-<a href="C-versioning.html#C-versioning">12</a> des solutions pour le suivi de version (GitLab, GitHub,
-…) qui permettent une forme d’archivage. La pérennité de cet archivage est
-meilleure qualité que celle des solutions précédentes mais n’est pas parfaite non
-plus. D’autre part ces systèmes, initialement prévus pour héberger du code,
-gèrent assez mal les gros volumes de données et les données de type binaire
-(images bitmap, vidéogrammes, codes compilés…).</p>
-<p>Des solutions privées de type
-<a href="https://figshare.com">Figshare</a>, ou institutionnelles comme
-<a href="https://zenodo.org">Zenodo</a>, offrent un archivage sur le long terme pour tous types de données et fournissent
-un DOI permettant leur référencement stable dans la littérature.
-Pour les logiciels, une archive existe :
-<a href="https://www.softwareheritage.org">Software Heritage</a>. En tandem avec un
-système de gestion de versions, ces archives permettent de conserver de façon
-pérenne et d’indexer les versions successives les artefacts de la recherche.</p>
+<p>Il existe actuellement de nombreuses plates-formes permettant d’héberger “gratuitement” les données de la recherche. Nous avons évoqué dans le chapitre <a href="C-versioning.html#C-versioning">12</a> des solutions pour le suivi de version (GitLab, GitHub, …) qui permettent une forme d’archivage. La pérennité de cet archivage est meilleure qualité que celle des solutions précédentes mais n’est pas parfaite non plus. D’autre part ces systèmes, initialement prévus pour héberger du code, gèrent assez mal les gros volumes de données et les données de type binaire (images bitmap, vidéogrammes, codes compilés…).</p>
+<p>Des solutions privées de type <a href="https://figshare.com">Figshare</a>, ou institutionnelles comme <a href="https://zenodo.org">Zenodo</a>, offrent un archivage sur le long terme pour tous types de données et fournissent un DOI permettant leur référencement stable dans la littérature. Pour les logiciels, une archive existe : <a href="https://www.softwareheritage.org">Software Heritage</a>. En tandem avec un système de gestion de versions, ces archives permettent de conserver de façon pérenne et d’indexer les versions successives les artefacts de la recherche.</p>
 </div>
 </div>
 <div id="pour-en-savoir-plus-2" class="section level2">
 <h2><span class="header-section-number">11.3</span> Pour en savoir plus</h2>
-<p>Vous pouvez consulter les <a href="http://qualite-en-recherche.cnrs.fr/spip.php?article315">recommandations du
-CNRS</a> <span class="citation">(Réseau Qualité en Recherche et al. <a href="bibliographie.html#ref-reseauqualiteenrechercheTracabiliteActivitesRecherche2018">2018</a>)</span> concernant la traçabilité des activités de recherche, ainsi que les principes <a href="https://www.go-fair.org/fair-principles/">FAIR (Findable,
-Accessible, Interoperable, Reusable)</a> <span class="citation">(GO FAIR <a href="bibliographie.html#ref-gofairFAIRPrinciples">n.d.</a>)</span>.</p>
-<p>Pour une exposition très claire des problèmes de pérennité, vous
-pouvez regarder le <a href="https://github.com/alegrand/RR_webinars/blob/master/5_archiving_software_and_data/index.org">séminaire de Roberto Di
-Cosmo</a> sur ce sujet <em>in</em> “<em>Series of webinars and documents on Reproducible Research - Preserving software: ensuring availability and traceability</em>” <span class="citation">(Legrand <a href="bibliographie.html#ref-legrandSeriesWebinarsDocuments2019a">2019</a><a href="bibliographie.html#ref-legrandSeriesWebinarsDocuments2019a">b</a>)</span>.</p>
+<p>Vous pouvez consulter les <a href="http://qualite-en-recherche.cnrs.fr/spip.php?article315">recommandations du CNRS</a> <span class="citation">(Réseau Qualité en Recherche et al. <a href="bibliographie.html#ref-reseauqualiteenrechercheTracabiliteActivitesRecherche2018">2018</a>)</span> concernant la traçabilité des activités de recherche, ainsi que les principes <a href="https://www.go-fair.org/fair-principles/">FAIR (Findable, Accessible, Interoperable, Reusable)</a> <span class="citation">(GO FAIR <a href="bibliographie.html#ref-gofairFAIRPrinciples">2019</a>)</span>.</p>
+<p>Pour une exposition très claire des problèmes de pérennité, vous pouvez regarder le <a href="https://github.com/alegrand/RR_webinars/blob/master/5_archiving_software_and_data/index.org">séminaire de Roberto Di Cosmo</a> sur ce sujet <em>in</em> “<em>Series of webinars and documents on Reproducible Research - Preserving software: ensuring availability and traceability</em>” <span class="citation">(Legrand <a href="bibliographie.html#ref-legrandSeriesWebinarsDocuments2019a">2019</a><a href="bibliographie.html#ref-legrandSeriesWebinarsDocuments2019a">b</a>)</span>.</p>
 
 </div>
 </div>
@@ -480,7 +396,7 @@ gitbook.start({
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    var src = "true";
+    var src = "";
     if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:" && /^https?:/.test(src))
       src = src.replace(/^https?:/, '');

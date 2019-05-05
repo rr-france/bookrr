@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html >
-
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapitre 16 Environnement logiciel | Vers une recherche reproductible</title>
-  <meta name="description" content="Livre d’introduction à la recherche reproductible rédigé lors d’un booksprint.">
-  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+  <meta name="description" content="Livre d’introduction à la recherche reproductible rédigé lors d’un booksprint." />
+  <meta name="generator" content="bookdown  and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapitre 16 Environnement logiciel | Vers une recherche reproductible" />
   <meta property="og:type" content="book" />
@@ -22,14 +21,14 @@
   <meta name="twitter:description" content="Livre d’introduction à la recherche reproductible rédigé lors d’un booksprint." />
   
 
-<meta name="author" content="Loïc Desquilbet, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot, Nicolas Rougier   Facilitatrice : Elisa de Castro Guerra">
+<meta name="author" content="Loïc Desquilbet, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot, Nicolas Rougier   Facilitatrice : Elisa de Castro Guerra" />
 
 
-<meta name="date" content="2019-05-05">
+<meta name="date" content="2019-05-05" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
 <link rel="prev" href="C-code-bugs.html">
@@ -51,67 +50,41 @@
 
 
 <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 </style>
 
 <link rel="stylesheet" href="css/style.css" type="text/css" />
@@ -316,11 +289,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="C-code-env" class="section level1">
 <h1><span class="header-section-number">Chapitre 16</span> Environnement logiciel</h1>
 <p><strong><em>Attention : ce chapitre traite de sujets appelant des compétences techniques avancées. Nous vous proposons d’aborder la (complexe) question de l’environnement (ça pique mais ça compte).</em></strong></p>
-<p>L’environnement logiciel désigne l’intégralité des logiciels qui assurent la
-gestion de l’ordinateur et qui sont utilisés pour réaliser la recherche.
-Les chercheurs peuvent avoir tendance à sous-estimer l’impact de l’environnement
-logiciel sur leurs résultats. Pour une recherche reproductible, il existe trois
-enjeux importants autour de l’environnement logiciel :</p>
+<p>L’environnement logiciel désigne l’intégralité des logiciels qui assurent la gestion de l’ordinateur et qui sont utilisés pour réaliser la recherche. Les chercheurs peuvent avoir tendance à sous-estimer l’impact de l’environnement logiciel sur leurs résultats. Pour une recherche reproductible, il existe trois enjeux importants autour de l’environnement logiciel :</p>
 <ol style="list-style-type: decimal">
 <li>identifier et décrire son environnement</li>
 <li>permettre à quelqu’un d’autre d’utiliser un environnement <strong>exactement identique</strong></li>
@@ -329,93 +298,41 @@ enjeux importants autour de l’environnement logiciel :</p>
 <p>Il n’existe ni solution simple, ni solution unique pour répondre à ces enjeux. Ce chapitre a pour vocation de fournir une description critique de ces solutions en évoquant notamment leurs limites respectives.</p>
 <div id="identifier-les-dependances-dessine-moi-une-dependance" class="section level2">
 <h2><span class="header-section-number">16.1</span> Identifier les dépendances : dessine-moi une dépendance</h2>
-<p>La manière la <del>plus simple</del> moins complexe de décrire son environnement logiciel est d’en identifier les dépendances. Mais cette simplicité n’est qu’apparente car l’arbre cache la forêt : chaque dépendance a
-elle-même une dépendance, qui a elle-même une dépendance, et ainsi de suite… Cette tâche peut donc
-rapidement devenir difficile. Deux méthodes permettent d’aboutir à
-une telle identification :</p>
+<p>La manière la <del>plus simple</del> moins complexe de décrire son environnement logiciel est d’en identifier les dépendances. Mais cette simplicité n’est qu’apparente car l’arbre cache la forêt : chaque dépendance a elle-même une dépendance, qui a elle-même une dépendance, et ainsi de suite… Cette tâche peut donc rapidement devenir difficile. Deux méthodes permettent d’aboutir à une telle identification :</p>
 <ol style="list-style-type: decimal">
-<li><p>À partir d’un langage interprété (tel que R ou Python), on peut
-effectuer cette “intro-spection” et lister les différentes dépendances, la liste
-des bibliothèques chargées avec leur numéro de version. En R, on peut
-par exemple utiliser la commande <code>sessionInfo</code> (ou encore
-<code>devtools::session_info</code>). Mais cette méthode relativement
-simple est surtout limitée et assez peu précise car elle ne signale que quelques
-unes des dépendances système de plus haut niveau. Elle correspond à
-la zone verte dans le schéma ci-dessous. Cependant, il est très
-facile d’inclure ces informations descriptives dans vos documents
-computationnels (<em>cf</em>. chapitre précédent 15 “rendre son code compréhensible”), et nous vous recommandons cette
-bonne pratique.</p></li>
-<li><p>En utilisant le gestionnaire de paquets du système d’exploitation,
-on obtient la liste exhaustive de l’ensemble des applications
-installées (listant donc des applications non pertinentes pour la
-recherche ainsi que les doublons de versions successives). Elle
-correspond à l’ensemble du schéma ci-dessous (donc à TOUT le système
-d’exploitation).</p></li>
+<li><p>À partir d’un langage interprété (tel que R ou Python), on peut effectuer cette “intro-spection” et lister les différentes dépendances, la liste des bibliothèques chargées avec leur numéro de version. En R, on peut par exemple utiliser la commande <code>sessionInfo</code> (ou encore <code>devtools::session_info</code>). Mais cette méthode relativement simple est surtout limitée et assez peu précise car elle ne signale que quelques unes des dépendances système de plus haut niveau. Elle correspond à la zone verte dans le schéma ci-dessous. Cependant, il est très facile d’inclure ces informations descriptives dans vos documents computationnels (<em>cf</em>. chapitre précédent 15 “rendre son code compréhensible”), et nous vous recommandons cette bonne pratique.</p></li>
+<li><p>En utilisant le gestionnaire de paquets du système d’exploitation, on obtient la liste exhaustive de l’ensemble des applications installées (listant donc des applications non pertinentes pour la recherche ainsi que les doublons de versions successives). Elle correspond à l’ensemble du schéma ci-dessous (donc à TOUT le système d’exploitation).</p></li>
 </ol>
 <div class="figure">
 <img src="img/schemaEnvirLogi2.png" alt="Schéma des différents environnements logiciel" />
 <p class="caption">Schéma des différents environnements logiciel</p>
 </div>
-<p>L’identification des dépendances est donc soit lacunaire et imprécise (méthode n°1 ci-dessus),
-soit au contraire, illisible car trop étendue (méthode n°2 ci-dessus).</p>
+<p>L’identification des dépendances est donc soit lacunaire et imprécise (méthode n°1 ci-dessus), soit au contraire, illisible car trop étendue (méthode n°2 ci-dessus).</p>
 <p>Entre ces deux extrêmes, il existe cependant un moyen d’identifier ces dépendances, notamment <em>via</em> des gestionnaires de paquets de langages interprétés tels que Packrat pour R.</p>
-<p>Ainsi, permettre à un collègue de travailler avec un environnement logiciel similaire au sien s’avère une tâche ardue.
-Fournir une description <em>ad hoc</em> ne peut être une opération manuelle tant cette tâche est fastidieuse. De plus, cette description ne résiterait pas à l’absence de standardisation entre systèmes d’exploitation.
-Il s’agit donc d’une solution informative sur son environnement, mais qui ne permet pas de
-le reproduire en pratique.</p>
+<p>Ainsi, permettre à un collègue de travailler avec un environnement logiciel similaire au sien s’avère une tâche ardue. Fournir une description <em>ad hoc</em> ne peut être une opération manuelle tant cette tâche est fastidieuse. De plus, cette description ne résiterait pas à l’absence de standardisation entre systèmes d’exploitation. Il s’agit donc d’une solution informative sur son environnement, mais qui ne permet pas de le reproduire en pratique.</p>
 </div>
 <div id="preserver-le-desordre-aka-preserve-the-mess" class="section level2">
 <h2><span class="header-section-number">16.2</span> Préserver le désordre (<em>aka “Preserve the mess”</em>)</h2>
-<p>L’identification des dépendances permet de décrire son environnement,
-mais ne permet que très difficilement de le conserver ou le partager
-en pratique. Une façon de s’assurer de pouvoir conserver et
-partager un environnement logiciel à l’identique est de “figer” l’ensemble du système.</p>
+<p>L’identification des dépendances permet de décrire son environnement, mais ne permet que très difficilement de le conserver ou le partager en pratique. Une façon de s’assurer de pouvoir conserver et partager un environnement logiciel à l’identique est de “figer” l’ensemble du système.</p>
 <div id="isoler-une-machine" class="section level3">
 <h3><span class="header-section-number">16.2.1</span> Isoler une machine</h3>
 <p>La façon la plus simple d’éviter les problèmes de versions des dépendances logicielles, consiste à installer sur une machine tous les programmes dont on a besoin. Ce <em>scenario</em> exclut toute mise à jour : l’environnement est installé une bonne fois pour toutes.</p>
-<p>C’est le cas de figure décrit en section <a href="A-personas.html#A-personas-ingenieur">2.5</a>.
-Chacun des membres de l’équipe peut alors se connecter sur cette machine
-pour y faire ses calculs, ce qui peut d’ailleurs parfois être source de tensions : or, personne ne souhaite découvrir à cette occasion les talents en <em>free fight</em> de ses collègues. Sur le long terme, isoler une machine s’avèrera problématique car si la machine continue (normalement)
-de calculer la même chose, elle conserve ses vieux <em>bugs</em> qui peuvent
-affecter vos résultats. D’autre part, elle finira un jour par mourir
-de sa belle mort et s’exposera entre-temps à des failles de sécurité.
-C’est donc certainement la solution la plus simple à mettre en œuvre
-(au début), mais c’est une solution à éviter autant que possible.</p>
+<p>C’est le cas de figure décrit en section <a href="A-personas.html#A-personas-ingenieur">2.5</a>. Chacun des membres de l’équipe peut alors se connecter sur cette machine pour y faire ses calculs, ce qui peut d’ailleurs parfois être source de tensions : or, personne ne souhaite découvrir à cette occasion les talents en <em>free fight</em> de ses collègues. Sur le long terme, isoler une machine s’avèrera problématique car si la machine continue (normalement) de calculer la même chose, elle conserve ses vieux <em>bugs</em> qui peuvent affecter vos résultats. D’autre part, elle finira un jour par mourir de sa belle mort et s’exposera entre-temps à des failles de sécurité. C’est donc certainement la solution la plus simple à mettre en œuvre (au début), mais c’est une solution à éviter autant que possible.</p>
 </div>
 <div id="isoler-un-environnement-a-laide-dun-conteneur" class="section level3">
 <h3><span class="header-section-number">16.2.2</span> Isoler un environnement à l’aide d’un conteneur</h3>
-<p>Un conteneur est un outil permettant d’émuler un système
-d’exploitation particulier avec un certain nombre d’applications
-installées.
-Une solution très populaire pour utiliser les conteneurs
-est <a href="https://www.docker.com/">Docker</a>. Par rapport à une machine virtuelle, le conteneur a pour avantage de ne
-pas reproduire l’ensemble du système d’exploitation, en se passant du kernel. Le conteneur est donc plus léger, moins gros et plus rapide. L’inconvénient est que le conteneur ne fonctionne pas pour toutes les combinaisons de machine réelle - machine virtuelle.</p>
-<p>Il existe d’ailleurs des outils permettant d’identifier et de capturer automatiquement
-un tel environnement logiciel minimum pour pouvoir le partager avec d’autres : <a href="http://www.pgbovine.net/cde.html">CDE</a> ou <a href="https://vida-nyu.github.io/reprozip/">ReproZip</a>. En savoir plus sur Reprozip : <span class="citation">(Chirigati et al. <a href="bibliographie.html#ref-chirigatiReproZipComputationalReproducibility2016">2016</a>)</span>. Ces approches automatiques sont efficaces et très pratiques mais peuvent passer à côté de
-certaines dépendances et ne permettent pas de variation. En effet, on obtient un
-environnement “binaire” figé sans sa recette de construction et il est donc très difficile de
-de changer une bibliothèque particulière ou de faire évoluer cet environnement.</p>
+<p>Un conteneur est un outil permettant d’émuler un système d’exploitation particulier avec un certain nombre d’applications installées. Une solution très populaire pour utiliser les conteneurs est <a href="https://www.docker.com/">Docker</a>. Par rapport à une machine virtuelle, le conteneur a pour avantage de ne pas reproduire l’ensemble du système d’exploitation, en se passant du kernel. Le conteneur est donc plus léger, moins gros et plus rapide. L’inconvénient est que le conteneur ne fonctionne pas pour toutes les combinaisons de machine réelle - machine virtuelle.</p>
+<p>Il existe d’ailleurs des outils permettant d’identifier et de capturer automatiquement un tel environnement logiciel minimum pour pouvoir le partager avec d’autres : <a href="http://www.pgbovine.net/cde.html">CDE</a> ou <a href="https://vida-nyu.github.io/reprozip/">ReproZip</a>. En savoir plus sur Reprozip : <span class="citation">(Chirigati et al. <a href="bibliographie.html#ref-chirigatiReproZipComputationalReproducibility2016">2016</a>)</span>. Ces approches automatiques sont efficaces et très pratiques mais peuvent passer à côté de certaines dépendances et ne permettent pas de variation. En effet, on obtient un environnement “binaire” figé sans sa recette de construction et il est donc très difficile de de changer une bibliothèque particulière ou de faire évoluer cet environnement.</p>
 </div>
 </div>
 <div id="les-systemes-de-gestion-de-paquets" class="section level2">
 <h2><span class="header-section-number">16.3</span> Les systèmes de gestion de paquets</h2>
-<p>L’approche la plus aboutie pour la reproduction de l’environnement logiciel
-s’appuie sur les systèmes de gestion de paquets fonctionnels tels que <a href="https://www.gnu.org/software/guix/">GUIX</a> (voir aussi <span class="citation">(Inria <a href="bibliographie.html#ref-inriaGuixLogicielLibre">n.d.</a>)</span> et <span class="citation">(Wurmus et al. <a href="bibliographie.html#ref-wurmusReproducibleGenomicsAnalysis2018">2018</a>)</span>) et <a href="https://nixos.org/">NIX</a>. Il s’agit d’outils permettant de décrire et d’isoler très précisément
-l’environnement strictement nécessaire à la recherche reproductible, de le partager
-avec d’autres pour qu’ils puissent le mettre en œuvre, et même d’y
-apporter des modifications très précisément contrôlées afin d’évaluer l’impact
-de tel ou tel changement.</p>
+<p>L’approche la plus aboutie pour la reproduction de l’environnement logiciel s’appuie sur les systèmes de gestion de paquets fonctionnels tels que <a href="https://www.gnu.org/software/guix/">GUIX</a> (voir aussi <span class="citation">(Inria <a href="bibliographie.html#ref-inriaGuixLogicielLibre">2017</a>)</span> et <span class="citation">(Wurmus et al. <a href="bibliographie.html#ref-wurmusReproducibleGenomicsAnalysis2018">2018</a>)</span>) et <a href="https://nixos.org/">NIX</a>. Il s’agit d’outils permettant de décrire et d’isoler très précisément l’environnement strictement nécessaire à la recherche reproductible, de le partager avec d’autres pour qu’ils puissent le mettre en œuvre, et même d’y apporter des modifications très précisément contrôlées afin d’évaluer l’impact de tel ou tel changement.</p>
 </div>
 <div id="pour-en-savoir-plus-7" class="section level2">
 <h2><span class="header-section-number">16.4</span> Pour en savoir plus</h2>
-<p>Au sujet de l’identification des dépendances, vous pouvez vous référer
-au module 4 du <a href="https://learninglab.inria.fr/mooc-recherche-reproductible-principes-methodologiques-pour-une-science-transparente/">MOOC sur la recherche
-reproductible</a> <span class="citation">(Inria Learning Lab <a href="bibliographie.html#ref-inrialearninglabMOOCRechercheReproductible2018">2018</a>)</span>
-et aux ressources correspondantes
-(<a href="https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module4/slides/C028AL_slides_module4-fr-gz.pdf">slides</a> <span class="citation">(Pouzat, Legrand, and Hinsen <a href="bibliographie.html#ref-pouzatVersEtudeReproductible">n.d.</a>)</span>,
-<a href="https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module4/ressources/resources_environment_fr.org">ressources</a>) <span class="citation">(Legrand <a href="bibliographie.html#ref-legrandBienControlerSon">n.d.</a>)</span>.</p>
-<p>Vous pouvez également vouloir regarder ce
-<a href="https://github.com/alegrand/RR_webinars/blob/master/2_controling_your_environment/index.org">séminaire en ligne présentant quelques solutions pour contrôler son environnement</a> <span class="citation">(Legrand <a href="bibliographie.html#ref-legrandControlingYourEnvironment2019">2019</a><a href="bibliographie.html#ref-legrandControlingYourEnvironment2019">a</a>)</span>.</p>
+<p>Au sujet de l’identification des dépendances, vous pouvez vous référer au module 4 du <a href="https://learninglab.inria.fr/mooc-recherche-reproductible-principes-methodologiques-pour-une-science-transparente/">MOOC sur la recherche reproductible</a> <span class="citation">(Inria Learning Lab <a href="bibliographie.html#ref-inrialearninglabMOOCRechercheReproductible2018">2018</a>)</span> et aux ressources correspondantes (<a href="https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module4/slides/C028AL_slides_module4-fr-gz.pdf">slides</a> <span class="citation">(Pouzat, Legrand, and Hinsen <a href="bibliographie.html#ref-pouzatVersEtudeReproductible">2019</a>)</span>, <a href="https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module4/ressources/resources_environment_fr.org">ressources</a>) <span class="citation">(Legrand <a href="bibliographie.html#ref-legrandBienControlerSon">2019</a><a href="bibliographie.html#ref-legrandBienControlerSon">d</a>)</span>.</p>
+<p>Vous pouvez également vouloir regarder ce <a href="https://github.com/alegrand/RR_webinars/blob/master/2_controling_your_environment/index.org">séminaire en ligne présentant quelques solutions pour contrôler son environnement</a> <span class="citation">(Legrand <a href="bibliographie.html#ref-legrandControlingYourEnvironment2019">2019</a><a href="bibliographie.html#ref-legrandControlingYourEnvironment2019">a</a>)</span>.</p>
 
 </div>
 </div>
@@ -475,7 +392,7 @@ gitbook.start({
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    var src = "true";
+    var src = "";
     if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:" && /^https?:/.test(src))
       src = src.replace(/^https?:/, '');
