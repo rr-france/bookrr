@@ -7,7 +7,7 @@ site: bookdown::bookdown_site
 documentclass: book
 rights: Creative Commons Attribution Non-Commercial 4.0
 bibliography: [refs.bib]
-biblio-style: apalike-fr
+biblio-style: latex/apalike-fr
 link-citations: yes
 colorlinks: yes
 fontsize: 12pt
