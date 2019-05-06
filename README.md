@@ -62,6 +62,8 @@ Cette licence permet aux autres de remixer, arranger, et adapter l'œuvre, sous 
 * **Sources de non reproductibilité**
 * 05_acquisition_des_donnees.md      -> `{#B-data-acquisition}`  
   Acquisition de l'information
+* 06_aspects_computationnels.md      -> `{#B-code-aspect}`  
+Programmation et calcul
 * 07_donnees_d_entree.md             -> `{#B-data-input}`  
   Gestion des données
 * 08_aspects_computationnels.md      -> `{#B-code-aspect}`  
