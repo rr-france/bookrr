@@ -24,7 +24,7 @@ Que pourrais-je répondre à ce collègue tout en gardant un semblant de dignit�
 
 Il y a quelques mois, j'ai soumis un article au journal. Depuis, 
 j'ai continué de travailler sur mon code de traitement des données.
-Un reviewer me demande de compléter quelques figures, ce qui
+Un *reviewer* me demande de compléter quelques figures, ce qui
 nécessite pour moi de faire de nouveau l'analyse des données. 
 Malheureusement, la version actuelle du code, dans laquelle 
 j'ai amélioré les algorithmes, ne donne plus tout à fait 
