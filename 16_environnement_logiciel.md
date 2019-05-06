@@ -106,4 +106,4 @@ et aux ressources correspondantes
 [ressources](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module4/ressources/resources_environment_fr.org)) [@legrandBienControlerSon].
 
 Vous  pouvez également vouloir regarder ce 
-[séminaire en ligne présentant quelques solutions pour contrôler son environnement](https://github.com/alegrand/RR_webinars/blob/master/2_controling_your_environment/index.org) [@legrandControlingYourEnvironment2019].
+[séminaire en ligne présentant quelques solutions pour contrôler son environnement](https://github.com/alegrand/RR_webinars/blob/master/2_controling_your_environment/index.org) [@legrandControlingYourEnvironment2016].
