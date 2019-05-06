@@ -4,3 +4,7 @@ language:
   ui:
     edit: Editer
     chapter_name: "Chapitre "
+output:
+  bookdown::gitbook:
+    split_by: "chapter"
+    split_bib: ye

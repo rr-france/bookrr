@@ -12,12 +12,12 @@ Nous vous signalons quelques outils pour rechercher de manière légale la versi
 
 - [Scili](https://www.scilit.net/) : https://www.scilit.net/ 
 
-`r if (knitr::is_html_output()){ '
-<div id="refs"></div>
-'}`
+<!-- `r if (knitr::is_html_output()){ ' -->
+<!-- <div id="refs"></div> -->
+<!-- '}` -->
 
-`r if (knitr::is_latex_output()){ '
-\\renewcommand\\bibname{Bibliographie}
-'}
-#\\addcontentsline{toc}{chapter}{Bibliographie}
-`
+<!-- `r if (knitr::is_latex_output()){ ' -->
+<!-- \\renewcommand\\bibname{Bibliographie} -->
+<!-- '} -->
+<!-- #\\addcontentsline{toc}{chapter}{Bibliographie} -->
+<!-- ` -->
