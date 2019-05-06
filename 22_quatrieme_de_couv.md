@@ -23,14 +23,14 @@ reproduce major results obtained a few months back. The causes of such
 disappointments can be multiple and insidious. This phenomenon plays an
 important role in the so-called "research reproducibility crisis".
 
-*This book takes a current perspective onto a number of potentially dangerous
+This book takes a current perspective onto a number of potentially dangerous
 situations and practices, to examplify and highlight the symptoms of
 non-reproducibility in research. Each time, it provides efficient solutions
 ranging from good-practices that are easily and immediately implementable to
 more technical tools, all of which are free and have been put to the test by
 the authors themselves.
 
-*With this book, students and engineers and researchers should find efficient and
+With this book, students and engineers and researchers should find efficient and
 accessible ways leading them to improve their reproducible research practices.*
 
 `r if(knitr::is_latex_output()){ '
