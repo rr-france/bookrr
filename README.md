@@ -1,5 +1,5 @@
 [Versions HTML, PDF et
-EPUB](https://alegrand.github.io/bookrr/bibliographie.html). [![Build
+EPUB](https://alegrand.github.io/bookrr/). [![Build
 Status](https://travis-ci.org/alegrand/bookrr.svg?branch=master)](https://travis-ci.org/alegrand/bookrr)
 
 # Vers une recherche reproductible : Faire évoluer ses pratiques
@@ -101,7 +101,7 @@ Cette licence permet aux autres de remixer, arranger, et adapter l'œuvre, sous 
 ## Pour compiler le bookdown
 
 Normalement, ce livre est [automatiquement compilé et disponible
-ici](https://alegrand.github.io/bookrr/bibliographie.html). [![Build
+ici](https://alegrand.github.io/bookrr/). [![Build
 Status](https://travis-ci.org/alegrand/bookrr.svg?branch=master)](https://travis-ci.org/alegrand/bookrr)
 
 Ce document a été rédigé à l'aide de [bookdown](https://bookdown.org)
