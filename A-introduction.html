@@ -24,7 +24,7 @@
 <meta name="author" content="Loïc Desquilbet, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot, Nicolas Rougier   Facilitatrice : Elisa de Castro Guerra" />
 
 
-<meta name="date" content="2019-05-05" />
+<meta name="date" content="2019-05-06" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -298,11 +298,11 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </div>
 <div id="pourquoi-la-question-de-la-reproductibilite-est-elle-devenue-centrale-dans-les-debats-actuels" class="section level2">
 <h2><span class="header-section-number">1.3</span> Pourquoi la question de la reproductibilité est-elle devenue centrale dans les débats actuels ?</h2>
-<p>Le fait que les problèmes de reproductibilité occupent une telle place dans les débats actuels n’est pas tout à fait un hasard. Le numérique, sous des formes multiples, a largement investi tous les champs de la science et l’outil informatique occupe une place incontournable : stockage, formatage, archivage, indexation, analyse, modélisation, statistiques, environnements, précision, <em>etc</em>. Or, peu de chercheurs ont été formés (ou se forment) aux fondamentaux et aux bonnes pratiques liés aux outils informatiques. Cela peut bien amener à la publication de résultats fragiles (dans le sens “peu robustes”) dans le meilleur des cas, et faux dans le pire des cas - mais ce n’est pourtant pas là que se situent les plus graves dangers pour la recherche.</p>
+<p>Le fait que les problèmes de reproductibilité occupent une telle place dans les débats actuels n’est pas tout à fait un hasard. Le numérique, sous des formes multiples, a largement investi tous les champs de la science et l’outil informatique occupe une place incontournable : stockage, formatage, archivage, indexation, analyse, modélisation, statistiques, environnements, précision, <em>etc</em>. Or, peu de chercheurs ont été formés (ou se forment) aux fondamentaux et aux bonnes pratiques liés aux outils informatiques. Cela peut amener à la publication de résultats fragiles (dans le sens “peu robustes”) dans le meilleur des cas, et faux dans le pire des cas - mais ce n’est pourtant pas là que se situent les plus graves dangers pour la recherche.</p>
 </div>
 <div id="ou-lon-parle-de-recherche-reproductible-de-maniere-pragmatique" class="section level2">
 <h2><span class="header-section-number">1.4</span> Où l’on parle de recherche reproductible de manière pragmatique</h2>
-<p>Quel peut être le point commun entre : un archéologue en train d’effectuer une campagne de fouille, un biologiste en train de préparer une nouvelle expérience dans son laboratoire, un numéricien finalisant une simulation de grande ampleur ? Tous sont exposés aux risques <del>drames</del> suivants, indépendamment de leur volonté de contribuer à l’accroissement des connaissances dans leurs domaines respectifs :</p>
+<p>Quel peut être le point commun entre : un archéologue en train d’effectuer une campagne de fouille, un biologiste préparant une nouvelle expérience dans son laboratoire, un numéricien finalisant une simulation de grande ampleur ? Tous sont exposés aux risques <del>drames</del> suivants, indépendamment de leur volonté de contribuer à l’accroissement des connaissances dans leurs domaines respectifs :</p>
 <ul>
 <li>envoyer à des collègues des données qui ne pourront pas être lues pour des raisons d’incompatibilité de formats,</li>
 <li>réaliser une simulation effectuée sur deux machines différentes et obtenir des résultats radicalement différents,</li>
@@ -313,7 +313,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </div>
 <div id="apercu-tres-rapide-des-causes-dune-recherche-non-reproductible" class="section level2">
 <h2><span class="header-section-number">1.5</span> Aperçu (très rapide) des causes d’une recherche non reproductible</h2>
-<p>Comme nous le verrons dans ce livre, les causes d’une recherche non reproductible sont très nombreuses. Le suspect habituel est la perte de données. D’autres causes s’avèrent plus difficiles à détecter : par exemple, le chaos numérique, aussi subtil à identifier que vecteur de troubles majeurs. Une fois de plus, il ne s’agit pas de développer une vision accusatoire des pratiques de recherche. L’impossibilité même de reproduire des résultats n’est pas engendrée par la malhonnêteté scientifique, mais s’avère bien plus souvent le fruit d’une forme de méconnaissance, de pratiques plus ou moins hasardeuses. Sous des dehors souvent anodins, les petits “braconnages” du quotidien (“ça va passer”) et autres rustines font le lit de la “dette technique” qui à terme, peut devenir insurmontable et peut condamner un laboratoire. Au travers de situations fictives mais hélas réalistes, nous verrons qu’à l’origine des problèmes de reproductibilité se trouve un ensemble de concepts fondamentaux qu’il est nécessaire de connaître. L’objectif n’est pas de les maîtriser totalement. La recherche reproductible n’exige pas d’adopter une logique du “tout ou rien”. Il existe des solutions très simples à mettre en œuvre que tout un chacun peut s’approprier. D’autres solutions demanderont un peu plus de temps et d’énergie.</p>
+<p>Comme nous le verrons dans ce livre, les causes d’une recherche non reproductible sont très nombreuses. Le suspect habituel est la perte de données. D’autres causes s’avèrent plus difficiles à détecter : par exemple, le chaos numérique, aussi subtil à identifier que vecteur de troubles majeurs. Une fois de plus, il ne s’agit pas de développer une vision accusatoire des pratiques de recherche. L’impossibilité même de reproduire des résultats n’est pas engendrée par la malhonnêteté scientifique, mais s’avère bien plus souvent le fruit d’une forme de méconnaissance, de pratiques plus ou moins hasardeuses. Sous des dehors souvent anodins, les petits “braconnages” du quotidien (“Ça va passer”) et autres rustines font le lit de la “dette technique” qui à terme, peut devenir insurmontable et peut condamner un laboratoire. Au travers de situations fictives mais hélas réalistes, nous verrons qu’à l’origine des problèmes de reproductibilité se trouve un ensemble de concepts fondamentaux qu’il est nécessaire de connaître. L’objectif n’est pas de les maîtriser totalement. La recherche reproductible n’exige pas d’adopter une logique du “tout ou rien”. Il existe des solutions très simples à mettre en œuvre que tout un chacun peut s’approprier. D’autres solutions demanderont un peu plus de temps et d’énergie.</p>
 </div>
 <div id="la-minute-theologie-negative-ce-que-vous-ne-trouverez-pas-dans-cet-ouvrage" class="section level2">
 <h2><span class="header-section-number">1.6</span> La minute théologie négative : ce que vous ne trouverez pas dans cet ouvrage</h2>
@@ -325,10 +325,10 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </ul>
 <p>Pour tous ces sujets cités précédemment, nous invitons le lecteur à se référer à la littérature :</p>
 <p><em>The Seven Deadly Sins of Psychology: A Manifesto for Reforming the Culture of Scientific Practice</em> <span class="citation">(Chambers <a href="bibliographie.html#ref-chambersSevenDeadlySins2017">2017</a>)</span></p>
-<p>“Why Most Published Research Findings Are False”<span class="citation">(Ioannidis <a href="bibliographie.html#ref-ioannidisWhyMostPublished2005">2018</a>)</span></p>
-<p>“A manifesto for reproducible science”<span class="citation">(Munafò et al. <a href="bibliographie.html#ref-munafoManifestoReproducibleScience2017">2017</a>)</span></p>
-<p><em>Statistics Done Wrong</em><span class="citation">(Reinhart <a href="bibliographie.html#ref-reinhartStatisticsDoneWrong2015">2019</a>)</span></p>
-<p>“A Guide to Robust Statistical Methods in Neuroscience”<span class="citation">(Wilcox and Rousselet <a href="bibliographie.html#ref-wilcoxGuideRobustStatistical2018">2018</a>)</span></p>
+<p>“Why Most Published Research Findings Are False” <span class="citation">(Ioannidis <a href="bibliographie.html#ref-ioannidisWhyMostPublished2005">2018</a>)</span></p>
+<p>“A manifesto for reproducible science” <span class="citation">(Munafò et al. <a href="bibliographie.html#ref-munafoManifestoReproducibleScience2017">2017</a>)</span></p>
+<p><em>Statistics Done Wrong</em> <span class="citation">(Reinhart <a href="bibliographie.html#ref-reinhartStatisticsDoneWrong2015">2019</a>)</span></p>
+<p>“A Guide to Robust Statistical Methods in Neuroscience” <span class="citation">(Wilcox and Rousselet <a href="bibliographie.html#ref-wilcoxGuideRobustStatistical2018">2018</a>)</span></p>
 
 </div>
 </div>
