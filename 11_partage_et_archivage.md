@@ -27,7 +27,7 @@ répertoires peut grandement faciliter la réutilisabilité. Par exemple, pour u
 statistique d'un jeu de données, Marwick et ses co-auteurs proposent la structure suivante [@marwickPackagingDataAnalytical2018] :
 
 
-![](img/marwick_2018.gif)
+![](img/marwick_2018.png)
 
 *Image CC-BY par Ben Marwick, Carl Boettiger & Lincoln Mullen.*
 
