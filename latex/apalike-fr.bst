@@ -352,7 +352,16 @@ FUNCTION {format.names}
     { namesleft #0 > }
     { s nameptr "{vv~}\bgroup\fonteauteurs\bgroup {ll}\egroup\egroup{{}}{, jj}{, f.}" format.name$ 't :=   % last name first
       nameptr #1 >
-	{ namesleft #1 >
+         {
+          nameptr #3
+          #1 + =
+          numnames #5
+          > and
+            { "al." 't :=
+              #1 'namesleft := }
+            'skip$
+          if$
+          namesleft #1 > 
 	    { ", " * t * }
 	    {   %numnames #2 > namesleft #2 > and
 		%  { "," * }
