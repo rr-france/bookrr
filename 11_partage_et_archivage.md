@@ -24,7 +24,7 @@ La façon la plus simple d'élaborer un *compendium* de recherche est de créer 
 répertoire associé au projet, avec des sous-répertoires dans lesquels sont
 répartis les objets. Une convention de nommage explicite des objets et
 répertoires peut grandement faciliter la réutilisabilité. Par exemple, pour une simple analyse
-statistique d'un jeu de données, Marwick et ses co-auteurs proposent la structure suivante [marwickPackagingDataAnalytical2018] :
+statistique d'un jeu de données, Marwick et ses co-auteurs proposent la structure suivante [@marwickPackagingDataAnalytical2018] :
 
 ![](img/compendium_fr.png)
 
