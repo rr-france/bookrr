@@ -26,6 +26,7 @@ répartis les objets. Une convention de nommage explicite des objets et
 répertoires peut grandement faciliter la réutilisabilité. Par exemple, pour une simple analyse
 statistique d'un jeu de données, Marwick et ses co-auteurs proposent la structure suivante [@marwickPackagingDataAnalytical2018] :
 
+
 ![](img/marwick_2018.gif)
 
 *Image CC-BY par Ben Marwick, Carl Boettiger & Lincoln Mullen.*
