@@ -21,16 +21,6 @@ while(defined(my $line=<>)) {
     } 
     if($bib_head eq "") { next; }
 
-    if($line =~ /^\s*url = \s*{(.*)}/) {
-	$bib_url = $1;
-	$bib_url = "URL~: \\url{$bib_url}";
-	next;
-    }
-    if($line =~ /^\s*isbn = \s*{(.*)}/) {
-	$bib_isbn = $1;
-	$bib_isbn = "ISBN~: $bib_isbn";
-	next;
-    }
     if($line =~ /^\s*year = \s*{(.*)}/) {
 	$bib_year = $1;
 	next;
@@ -74,6 +64,16 @@ while(defined(my $line=<>)) {
 	    next;
 	}
     }    	
+    if($line =~ /^\s*url = \s*{(.*)}/) {
+	$bib_url = $1;
+	$bib_url = "URL~: \\url{$bib_url}";
+#	next;
+    }
+    if($line =~ /^\s*isbn = \s*{(.*)}/) {
+	$bib_isbn = $1;
+	$bib_isbn = "ISBN~: $bib_isbn";
+#	next;
+    }
 
     $line =~ s/\s*,\s*$//g;
     $bib_body .= ",\n".$line;
