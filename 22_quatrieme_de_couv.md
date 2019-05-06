@@ -12,7 +12,7 @@ de solutions allant de bonnes pratiques faciles et rapides à implémenter
 jusqu'à des outils plus techniques, tous gratuits et mis à l'épreuve par les
 auteurs eux-mêmes.
 
-Avec ce livre, étudiants, ingénieurs et chercheurs devraient tous trouver des moyens
+Avec ce livre, étudiants, ingénieurs et chercheurs devraient trouver des moyens
 efficaces et à leur portée pour améliorer leurs pratiques de la recherche
 reproductible.
 
