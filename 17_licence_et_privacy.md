@@ -47,7 +47,7 @@ Il est donc indispensable de se poser la question du droit,
 notamment dans le cadre du Règlement Général sur la Protection des Données
 (RGPD). Un certain nombre de textes officiels et de documents sont disponibles
 sur [le site de la
-Commission nationale de l'informatique et des libertés (CNIL)](https://www.cnil.fr/fr/textes-officiels-europeens-protection-donnees)] [@cnilTextesOfficiels]. 
+Commission nationale de l'informatique et des libertés (CNIL)](https://www.cnil.fr/fr/textes-officiels-europeens-protection-donnees).[@cnilTextesOfficiels]. 
 
 Des solutions alternatives au partage totalement libre des données
 peuvent être mises en œuvre : on peut citer la mise à disposition sur
