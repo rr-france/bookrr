@@ -21,9 +21,6 @@ while(defined(my $line=<>)) {
     } 
     if($bib_head eq "") { next; }
 
-    if($line =~ /^\s*note = \s*{(.*)}/) {
-	next;
-    }    	
     if($line =~ /^\s*url = \s*{(.*)}/) {
 	$bib_url = $1;
 	$bib_url = "URL~: \\url{$bib_url}";
@@ -71,6 +68,12 @@ while(defined(my $line=<>)) {
 	reset_bib();
 	next;
     }
+    
+    if($line =~ /^\s*note = /) {
+	if(!(($line =~ /URL~/) or ($line =~ /ISBN~/))) {
+	    next;
+	}
+    }    	
 
     $line =~ s/\s*,\s*$//g;
     $bib_body .= ",\n".$line;
