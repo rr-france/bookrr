@@ -21,6 +21,7 @@ Vous pouvez soumettre vos propositions *via* :
 [CC-BY NC](https://creativecommons.org/licenses/by-nc/4.0/)
 Cette licence permet aux autres de remixer, arranger, et adapter l'œuvre, sous des conditions éventuellement différentes, mais à des fins non commerciales ; les nouvelles œuvres doivent créditer les auteurs en citant leurs noms. 
 
+# Informations internes
 ## Quelques liens utiles sur Markdown
 - [La syntaxe](https://guides.github.com/features/mastering-markdown/)
 - [Les citations](https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html)
@@ -95,13 +96,20 @@ Cette licence permet aux autres de remixer, arranger, et adapter l'œuvre, sous 
   
 ## Pour compiler le bookdown
 
+Normalement, ce livre est [automatiquement compilé et disponible
+ici](https://alegrand.github.io/bookrr/bibliographie.html). [![Build
+Status](https://travis-ci.org/alegrand/bookrr.svg?branch=master)](https://travis-ci.org/alegrand/bookrr)
+
 Ce document a été rédigé à l'aide de [bookdown](https://bookdown.org)
 mais entièremnt rédigé en markdown (nous n'avions pas besoin
 d'éxécuter du code R, ce pourquoi bookdown est originellement
 conçu). Néenmoins, pour conserver la prévisualisation de github, nous
 avons conservé l'extension `.md` plutôt que `.Rmd`.
 
-Afin de créer les liens symboliques avec l'extension `.Rmd` nécessaires, la première fois que le répertoire est forké/téléchargé, il faut executer la commande suivante dans le terminal :
+Les liens symboliques avec l'extension `.Rmd` nécessaires sont créés
+automatiquement par `make` qui s'occupe de corriger tout un tas de
+petites choses au niveau de la bibilographie. La meilleur façon de
+compiler ce livre est donc d'exécuter la commande suivante dans votre terminal :
 ```{sh}
 make Rmd
 ```
