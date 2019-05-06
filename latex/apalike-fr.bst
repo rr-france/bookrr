@@ -351,7 +351,7 @@ FUNCTION {format.names}
   numnames 'namesleft :=
     { namesleft #0 > }
     { s nameptr "{vv~}\bgroup\fonteauteurs\bgroup {ll}\egroup\egroup{{}}{, jj}{, f.}" format.name$ 't :=   % last name first
-      nameptr #1 >
+      nameptr #1 > % https://tex.stackexchange.com/questions/26575/bibtex-how-to-reduce-long-author-lists-to-firstauthor-et-al
          {
           nameptr #3
           #1 + =
