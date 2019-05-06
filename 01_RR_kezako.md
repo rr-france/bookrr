@@ -27,15 +27,14 @@ pas tout à fait un hasard. Le numérique, sous des formes multiples, a largemen
 investi tous les champs de la science et l'outil informatique occupe une place incontournable : stockage, formatage,
 archivage, indexation, analyse, modélisation, statistiques, 
 environnements, précision, *etc*. Or, peu de chercheurs ont été 
-formés (ou se forment) aux fondamentaux et aux bonnes pratiques liés aux outils informatiques. Cela peut
-bien amener à la publication de résultats fragiles (dans le sens "peu robustes") dans le meilleur
+formés (ou se forment) aux fondamentaux et aux bonnes pratiques liés aux outils informatiques. Cela peut amener à la publication de résultats fragiles (dans le sens "peu robustes") dans le meilleur
 des cas, et faux dans le pire des cas - mais ce n'est pourtant pas là que se
 situent les plus graves dangers pour la recherche. 
 
 ## Où l'on parle de recherche reproductible de manière pragmatique
 
 Quel peut être le point commun entre : un archéologue en train d'effectuer une campagne de fouille, 
-un biologiste en train de préparer une nouvelle expérience dans son laboratoire,
+un biologiste préparant une nouvelle expérience dans son laboratoire,
 un numéricien finalisant une simulation de grande ampleur ?
 Tous sont exposés aux risques ~~drames~~ suivants, indépendamment de leur volonté de contribuer à l'accroissement
 des connaissances dans leurs domaines respectifs : 
@@ -62,7 +61,7 @@ non reproductible sont très nombreuses. Le suspect habituel est la perte de don
 D'autres causes s'avèrent plus difficiles à détecter : par exemple, le chaos numérique, aussi subtil à identifier que vecteur de troubles majeurs. 
 Une fois de plus, il ne s'agit pas de développer une vision accusatoire des pratiques de recherche.
 L'impossibilité même de reproduire des résultats n'est pas engendrée par la malhonnêteté scientifique, mais s'avère bien plus souvent le fruit d'une forme de méconnaissance, de pratiques plus ou moins hasardeuses. 
-Sous des dehors souvent anodins, les petits "braconnages" du quotidien ("ça va passer") et autres rustines font le lit de la "dette technique" qui à terme, peut devenir insurmontable et peut condamner un laboratoire. 
+Sous des dehors souvent anodins, les petits "braconnages" du quotidien ("Ça va passer") et autres rustines font le lit de la "dette technique" qui à terme, peut devenir insurmontable et peut condamner un laboratoire. 
 Au travers de situations fictives mais hélas réalistes, nous verrons qu'à l'origine
 des problèmes de reproductibilité se trouve un ensemble de concepts fondamentaux qu'il
 est nécessaire de connaître. L'objectif n'est pas de les maîtriser totalement. La
@@ -83,11 +82,11 @@ Pour tous ces sujets cités précédemment, nous invitons le lecteur à se réf�
 
 *The Seven Deadly Sins of Psychology: A Manifesto for Reforming the Culture of Scientific Practice* [@chambersSevenDeadlySins2017]
 
-"Why Most Published Research Findings Are False"[@ioannidisWhyMostPublished2005]
+"Why Most Published Research Findings Are False" [@ioannidisWhyMostPublished2005]
 
-"A manifesto for reproducible science"[@munafoManifestoReproducibleScience2017]
+"A manifesto for reproducible science" [@munafoManifestoReproducibleScience2017]
 
-*Statistics Done Wrong*[@reinhartStatisticsDoneWrong2015]
+*Statistics Done Wrong* [@reinhartStatisticsDoneWrong2015]
 
-"A Guide to Robust Statistical Methods in Neuroscience"[@wilcoxGuideRobustStatistical2018]
+"A Guide to Robust Statistical Methods in Neuroscience" [@wilcoxGuideRobustStatistical2018]
 
