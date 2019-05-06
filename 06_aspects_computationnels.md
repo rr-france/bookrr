@@ -81,7 +81,7 @@ programme, on se rend vite compte qu'il est indispensable que les noms de
 variables et de fonctions aient été bien choisis, que le code ait été été
 bien structuré avec des fonctions au rôle clairement défini, sans quoi le
 code devient totalement incompréhensible (ce qui est précisemment l'objet du
-concours "Obfuscated C" [@broukhisInternationalObfuscatedCode]). De même, lorsque qu'il s'agit d'un code conséquent
+concours "Obfuscated C" [@broukhisInternationalObfuscatedCode]. De même, lorsque qu'il s'agit d'un code conséquent
 réparti dans de nombreux fichiers, une mauvaise convention de nommage des
 fichiers ou bien l'usage d'une structure de fichiers absconse empêchent
 toute tentative de compréhension.
@@ -138,7 +138,7 @@ C'est ici la version 2.1.1-2 qui est présente et, pour l'installer, il a fallu
 installer les paquets `python3-dateutil`, `python-matplotlib-data`,
 `python3-pyparsing`, *etc*. C'est ce qu'on appelle les "dépendances". Mais pour
 ces paquets dépendent eux-mêmes d'autres paquets. Lorsque l'on récupère
-l'ensemble des paquets nécessaires avec leurs dépendances, voici le graphe qu'on obtient, *cf*. Fig. 6.1 (alerte paracétamol !):
+l'ensemble des paquets nécessaires avec leurs dépendances, voici le graphe qu'on obtient, *cf*. Fig. 6.1 (alerte paracétamol !).
 
 ![Dépendances de Matplotlib sous Debian obtenues avec debtree](img/python3-matplotlib.png "debtree output") 
 
@@ -203,7 +203,7 @@ problématiques lorsque le système sous-jacent correspond par exemple à la
 discrétisation d'une équation différentielle. Le calcul est alors très sensible
 aux conditions initiales et l'accumulation des imprécisions peut amener à une
 catastrophe (voir notamment *The Patriot Missile
-Failure*[@arnoldPatriotMissileFailure2000]). 
+Failure* [@arnoldPatriotMissileFailure2000]). 
 
 Il y a de nombreux articles décrivant ce genre de cauchemars :
 [@feherNumericalErrorsMinimization2012]
