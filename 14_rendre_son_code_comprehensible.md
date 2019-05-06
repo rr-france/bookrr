@@ -155,7 +155,7 @@ Si commenter du code peut sembler à peu près aussi attractif que de se faire u
 ## Documenter son code
 
 Le commentaire s'adresse au programmeur qui
-va chercher à comprendre ou à faire évoluer le code (_*cf*._ ci-dessus).
+va chercher à comprendre ou à faire évoluer le code (*cf*. ci-dessus).
 La documentation s'adresse quant à elle aux utilisateurs du logiciel. 
 Cela commence en général par un fichier `README` expliquant succinctement
 l'objectif du logiciel, comment l'installer, comment l'exécuter. 
