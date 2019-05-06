@@ -22,8 +22,8 @@ employeur ou ses organismes de tutelle.
 À noter cependant que les licences utilisées pour le partage des données sont
 le plus souvent différentes de celles couvrant les programmes et les
 logiciels : 
-[https://choosealicense.com/](https://choosealicense.com/) [@githubChooseOpenSource] et
-[https://creativecommons.org/choose/](https://creativecommons.org/choose/) [@creativecommonsChooseLicense]
+[le site "Choose a license"](https://choosealicense.com/) [@githubChooseOpenSource] et
+[le site "Creative commons"](https://creativecommons.org/choose/) [@creativecommonsChooseLicense]
 permettent de choisir une licence logicielle ou non logicielle
 (respectivement) en répondant à 2 ou 3 questions.
 
@@ -45,7 +45,7 @@ que la santé) où le partage des données n'est pas toujours possible pour :
 
 Il est donc indispensable de se poser la question du droit,
 notamment dans le cadre du Règlement Général sur la Protection des Données
-(RGPD)[un certain nombre de textes officiels et de documents sont disponibles
+(RGPD). Un certain nombre de textes officiels et de documents sont disponibles
 sur [le site de la
 Commission nationale de l'informatique et des libertés (CNIL)](https://www.cnil.fr/fr/textes-officiels-europeens-protection-donnees)] [@cnilTextesOfficiels]. 
 
