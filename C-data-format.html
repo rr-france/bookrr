@@ -318,23 +318,38 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </div>
 <div id="la-presentation-des-resultats-numeriques" class="section level2">
 <h2><span class="header-section-number">10.3</span> La présentation des résultats numériques</h2>
-<p>Lors du stockage de données numériques, il est primordial d’éviter la perte ou l’érosion de l’information. Ceci implique, outre une documentation exhaustive précisant les unités et la provenance des résultats, de gérer correctement leur représentation numérique <span class="citation">(Wilkinson et al. <a href="bibliographie.html#ref-wilkinsonFAIRGuidingPrinciples2016">2016</a>)</span>.</p>
+<p>Lors du stockage de données numériques, il est primordial d’éviter la perte ou l’érosion de l’information. Ceci implique, outre une documentation exhaustive précisant les unités et la provenance des résultats, de gérer correctement leur représentation numérique <span class="citation">(Wilkinson et al. <a href="#ref-wilkinsonFAIRGuidingPrinciples2016">2016</a>)</span>.</p>
 <div id="nombre-de-chiffres-significatifs" class="section level3">
 <h3><span class="header-section-number">10.3.1</span> Nombre de chiffres significatifs</h3>
 <p>Les calculs numériques sont effectués avec une précision finie, et il faut donc choisir le nombre de chiffres significatifs à reporter dans une table de données ou de résultats. Dans un fichier de résultats, il est tentant d’inclure tous les chiffres significatifs dont on dispose. Mais cela n’est pas necessairement souhaitable (cela peut conduire à une inflation inutile des tailles de fichiers), d’autant plus que ce n’est pas nécessairement la précision dont on dispose réellement : par exemple, R n’affiche pas tous ses chiffres significatifs avec sa commande <code>print()</code>.</p>
 </div>
 <div id="incertitude" class="section level3">
 <h3><span class="header-section-number">10.3.2</span> Incertitude</h3>
-<p>Les informations devraient idéalement toujours être accompagnées d’une incertitude. Cela s’applique à la fois aux mesures (qu’elles soient physiques ou virtuelles), ainsi qu’aux résultats d’analyse (par exemple des estimations) <span class="citation">(Bureau International des Poids et des Mesures <a href="bibliographie.html#ref-bureauinternationaldespoidsetdesmesuresEvaluationDonneesMesure">2019</a><a href="bibliographie.html#ref-bureauinternationaldespoidsetdesmesuresEvaluationDonneesMesure">b</a>)</span>.</p>
-<p>L’incertitude peut servir de guide pour choisir le nombre de chiffres significatifs. Par exemple la recommandation en métrologie <span class="citation">(Bureau International des Poids et des Mesures <a href="bibliographie.html#ref-bureauinternationaldespoidsetdesmesuresEvaluationDonneesMesure">2019</a><a href="bibliographie.html#ref-bureauinternationaldespoidsetdesmesuresEvaluationDonneesMesure">b</a>)</span> est d’arrondir (par excès) l’incertitude à deux chiffres significatifs, et de reporter le résultat au même niveau décimal. Par exemple, si le résultat de mesure vaut 1.23456789 et l’incertitude vaut 0.00456, on reportera 1.2346 avec une incertitude de 0.0046. En outre, on évitera dans un tableau les notations du type 1.2346(46) ou 1.2346 ± 0.0046, qui peuvent fragiliser la lecture automatique par une machine.</p>
-<p>Une attention particulière doit être portée à certains objets afin de respecter leurs propriétés intrinsèques. Par exemple, les éléments d’une matrice de variance-covariance doivent être arrondis de manière à s’assurer que celle-ci reste définie-positive (en exigeant par exemple que la plus petite valeur propre de la matrice garde deux chiffres significatifs). Voir “Definition” (3.21)<span class="citation">(Bureau International des Poids et des Mesures <a href="bibliographie.html#ref-bureauinternationaldespoidsetdesmesuresEvaluationMeasurementData">2019</a><a href="bibliographie.html#ref-bureauinternationaldespoidsetdesmesuresEvaluationMeasurementData">a</a>)</span>.</p>
+<p>Les informations devraient idéalement toujours être accompagnées d’une incertitude. Cela s’applique à la fois aux mesures (qu’elles soient physiques ou virtuelles), ainsi qu’aux résultats d’analyse (par exemple des estimations) <span class="citation">(Bureau International des Poids et des Mesures <a href="#ref-bureauinternationaldespoidsetdesmesuresEvaluationDonneesMesure">2019</a><a href="#ref-bureauinternationaldespoidsetdesmesuresEvaluationDonneesMesure">b</a>)</span>.</p>
+<p>L’incertitude peut servir de guide pour choisir le nombre de chiffres significatifs. Par exemple la recommandation en métrologie <span class="citation">(Bureau International des Poids et des Mesures <a href="#ref-bureauinternationaldespoidsetdesmesuresEvaluationDonneesMesure">2019</a><a href="#ref-bureauinternationaldespoidsetdesmesuresEvaluationDonneesMesure">b</a>)</span> est d’arrondir (par excès) l’incertitude à deux chiffres significatifs, et de reporter le résultat au même niveau décimal. Par exemple, si le résultat de mesure vaut 1.23456789 et l’incertitude vaut 0.00456, on reportera 1.2346 avec une incertitude de 0.0046. En outre, on évitera dans un tableau les notations du type 1.2346(46) ou 1.2346 ± 0.0046, qui peuvent fragiliser la lecture automatique par une machine.</p>
+<p>Une attention particulière doit être portée à certains objets afin de respecter leurs propriétés intrinsèques. Par exemple, les éléments d’une matrice de variance-covariance doivent être arrondis de manière à s’assurer que celle-ci reste définie-positive (en exigeant par exemple que la plus petite valeur propre de la matrice garde deux chiffres significatifs). Voir “Definition” (3.21)<span class="citation">(Bureau International des Poids et des Mesures <a href="#ref-bureauinternationaldespoidsetdesmesuresEvaluationMeasurementData">2019</a><a href="#ref-bureauinternationaldespoidsetdesmesuresEvaluationMeasurementData">a</a>)</span>.</p>
 <p>Les valeurs et les incertitudes devraient être présentées dans des colonnes séparées.</p>
 </div>
 </div>
 <div id="pour-en-savoir-plus-1" class="section level2">
 <h2><span class="header-section-number">10.4</span> Pour en savoir plus</h2>
-<p>En ce qui concerne la structuration des données, une approche assez populaire consiste à utiliser le plus possible une structure de tableau. Nous vous recommandons de lire ce document sur le sujet : <em>Tidy data</em> <span class="citation">(Wickham <a href="bibliographie.html#ref-wickhamTidyData2014">2014</a>)</span>.</p>
+<p>En ce qui concerne la structuration des données, une approche assez populaire consiste à utiliser le plus possible une structure de tableau. Nous vous recommandons de lire ce document sur le sujet : <em>Tidy data</em> <span class="citation">(Wickham <a href="#ref-wickhamTidyData2014">2014</a>)</span>.</p>
 
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-bureauinternationaldespoidsetdesmesuresEvaluationMeasurementData">
+<p>Bureau International des Poids et des Mesures. 2019a. “Evaluation of Measurement Data - Supplement 2 to the ‘Guide to the Expression of Uncertainty in Measurement’ - Extension to Any Number of Output Quantities.” JCGM 102 : 2011. Sèvres: Bureau International des Poids et des Mesures. <a href="https://www.bipm.org/utils/common/documents/jcgm/JCGM_102_2011_E.pdf" class="uri">https://www.bipm.org/utils/common/documents/jcgm/JCGM_102_2011_E.pdf</a>.</p>
+</div>
+<div id="ref-bureauinternationaldespoidsetdesmesuresEvaluationDonneesMesure">
+<p>Bureau International des Poids et des Mesures. 2019b. “Évaluation Des Données de Mesure - Guide Pour L’expression de L’incertitude de Mesure.” JCGM 100:2008(F). Sèvres: Bureau International des Poids et des Mesures. <a href="https://www.bipm.org/utils/common/documents/jcgm/JCGM_100_2008_F.pdf" class="uri">https://www.bipm.org/utils/common/documents/jcgm/JCGM_100_2008_F.pdf</a>.</p>
+</div>
+<div id="ref-wickhamTidyData2014">
+<p>Wickham, Hadley. 2014. “Tidy Data.” <em>Journal of Statistical Software</em> 59 (1): 1–23. doi:<a href="https://doi.org/10.18637/jss.v059.i10">10.18637/jss.v059.i10</a>.</p>
+</div>
+<div id="ref-wilkinsonFAIRGuidingPrinciples2016">
+<p>Wilkinson, Mark D., Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, et al. 2016. “The FAIR Guiding Principles for Scientific Data Management and Stewardship.” <em>Scientific Data</em> 3 (March): sdata201618. doi:<a href="https://doi.org/10.1038/sdata.2016.18">10.1038/sdata.2016.18</a>.</p>
 </div>
 </div>
             </section>
