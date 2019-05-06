@@ -18,7 +18,7 @@ reproductible.
 
 -----
 
-*For a researcher, there is nothing more frustrating than the failure to
+For a researcher, there is nothing more frustrating than the failure to
 reproduce major results obtained a few months back. The causes of such
 disappointments can be multiple and insidious. This phenomenon plays an
 important role in the so-called "research reproducibility crisis".
@@ -31,7 +31,7 @@ more technical tools, all of which are free and have been put to the test by
 the authors themselves.
 
 With this book, students and engineers and researchers should find efficient and
-accessible ways leading them to improve their reproducible research practices.*
+accessible ways leading them to improve their reproducible research practices.
 
 `r if(knitr::is_latex_output()){ '
 \\addcontentsline{toc}{chapter}{Bibliographie}
