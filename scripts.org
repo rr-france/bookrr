@@ -199,19 +199,102 @@ First, let's fix the fun-mooc URL plus various cosmetics...
 sed -i 's|url = {//www.fun-mooc.fr/|url = {https://www.fun-mooc.fr/|g' refs.bib
 sed -i 's|« |«~|g' refs.bib
 sed -i 's| » |~»|g' refs.bib
+mv refs.bib orefs.bib
+bib-fix.pl < orefs.bib > refs.bib
+rm orefs.bib
 #+end_src
 
 #+RESULTS:
 
+#+begin_src perl :results output :exports both :tangle bib-fix.pl :tangle-mode (identity #o755) :shebang "#!/usr/bin/perl -w"
+use strict;
+
+# open(INPUT,"refs.bib");
+
+my($bib_head, $bib_body, $bib_isbn, $bib_url, $bib_year, $bib_urldate);
+
+sub reset_bib {
+    $bib_body = $bib_head = $bib_url = $bib_isbn = $bib_year = $bib_urldate = "";
+}
+
+reset_bib();
+
+while(defined(my $line=<>)) {
+    chomp($line);
+    if($line =~ /^@/){
+	$line =~ s/,\s*//g;
+	$bib_head = $line;
+	$bib_body = $bib_head;
+	next;
+    } 
+    if($bib_head eq "") { next; }
+
+    if($line =~ /^\s*note = \s*{(.*)}/) {
+	next;
+    }    	
+    if($line =~ /^\s*url = \s*{(.*)}/) {
+	$bib_url = $1;
+	$bib_url = "URL~: \\url{$bib_url}";
+	next;
+    }
+    if($line =~ /^\s*isbn = \s*{(.*)}/) {
+	$bib_isbn = $1;
+	$bib_isbn = "ISBN~: $bib_isbn";
+	next;
+    }
+    if($line =~ /^\s*year = \s*{(.*)}/) {
+	$bib_year = $1;
+	next;
+    }
+    if($line =~ /^\s*urldate = \s*{(.*)}/) {
+	$bib_urldate = $1;
+	$bib_urldate =~ s/-.*//g;
+	next;
+    }
+
+    if($line =~/^}$/) {
+	print $bib_body;
+
+	my $bib_suffix = "";
+	
+	#  note (URLS + ISBN)
+	my $bib_note = $bib_url;
+	if($bib_isbn ne "") {
+	    if($bib_note ne "") {
+		$bib_note .= ". ".$bib_isbn;
+	    } else {
+		$bib_note = $bib_isbn;
+	    }
+	}
+	if($bib_note ne "") {$bib_suffix = "    note = {$bib_note},\n"; }
+	#  year
+	if($bib_year eq "") { $bib_year = $bib_urldate; }
+	if($bib_year ne "") { $bib_suffix .= "    year = {$bib_year}\n"; }
+
+	if($bib_suffix ne "") {
+	    print ",\n".$bib_suffix;
+	}
+	
+	print "}\n";
+	reset_bib();
+	next;
+    }
+
+    $line =~ s/\s*,\s*$//g;
+    $bib_body .= ",\n".$line;
+}
+#+end_src
+
+** Fixing bibtex only though sed (deprecated)
 Then make sure urls are visible.
-#+begin_src shell :results output :exports both :tangle bib-fix.sh
+#+begin_src shell :results output :exports both 
 sed -i 's|url\s*=\s*{\(.*\)}|note = {URL:~\\url{\1}}|g' refs.bib
 #+end_src
 
 #+RESULTS:
 
 Make sure dates are visible.
-#+begin_src shell :results output :exports both :tangle bib-fix.sh
+#+begin_src shell :results output :exports both 
 sed -i 's|urldate = {\([0-9]*\)}| year = {\1}|g' refs.bib
 sed -i 's|urldate = {\([0-9]*\)-.*}|year = {\1}|g' refs.bib
 #+end_src
@@ -219,7 +302,7 @@ sed -i 's|urldate = {\([0-9]*\)-.*}|year = {\1}|g' refs.bib
 #+RESULTS:
 
 Make sure ISBN is visible.
-#+begin_src shell :results output :exports both :tangle bib-fix.sh
+#+begin_src shell :results output :exports both 
 sed -i 's|isbn\s*=\s*{\(.*\)}|note = {ISBN:~\\textsf{\1}}|g' refs.bib
 #+end_src
 
