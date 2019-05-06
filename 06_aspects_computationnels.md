@@ -138,7 +138,7 @@ C'est ici la version 2.1.1-2 qui est présente et, pour l'installer, il a fallu
 installer les paquets `python3-dateutil`, `python-matplotlib-data`,
 `python3-pyparsing`, *etc*. C'est ce qu'on appelle les "dépendances". Mais pour
 ces paquets dépendent eux-mêmes d'autres paquets. Lorsque l'on récupère
-l'ensemble des paquets nécessaires avec leurs dépendances, voici le graphe qu'on obtient, *cf*. Fig. 6.1 (alerte paracétamol !).
+l'ensemble des paquets nécessaires avec leurs dépendances, voici le graphe qu'on obtient, *cf*. Fig. 6.1 (alerte paracétamol !) :
 
 ![Dépendances de Matplotlib sous Debian obtenues avec debtree](img/python3-matplotlib.png "debtree output") 
 
