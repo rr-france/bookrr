@@ -26,10 +26,11 @@ https://www.sciencespo.fr/ecole-doctorale/sites/sciencespo.fr.ecole-doctorale/fi
  - ...espace
 
 ### Italique
-Recours à l'italique pour :
+Hors réf. biblio, recours à l'italique pour :
 - les expressions, phrases en langue étrangère, dont latin
 - les titres de monographies et de revues
 - l'italique n'est pas utilisé pour mettre en valeur un terme ou signaler un usage spécifique à un contexte ; on préfèrera dans ce cas mettre l'expression entre guillemets
+Réf biblio : titre de monographie en italique ; titre d'article entre guillemets indépendamment de la langue. 
 
 ### Enumérations
 Possibilité d'opter pour **,** ou **;** ou **.** mais néccessité d'harmoniser
