@@ -104,19 +104,7 @@ Normalement, ce livre est [automatiquement compilé et disponible
 ici](https://alegrand.github.io/bookrr/). [![Build
 Status](https://travis-ci.org/alegrand/bookrr.svg?branch=master)](https://travis-ci.org/alegrand/bookrr)
 
-Ce document a été rédigé à l'aide de [bookdown](https://bookdown.org)
-mais entièremnt rédigé en markdown (nous n'avions pas besoin
-d'éxécuter du code R, ce pourquoi bookdown est originellement
-conçu). Néenmoins, pour conserver la prévisualisation de github, nous
-avons conservé l'extension `.md` plutôt que `.Rmd`.
-
-Les liens symboliques avec l'extension `.Rmd` nécessaires sont créés
-automatiquement par `make` qui s'occupe de corriger tout un tas de
-petites choses au niveau de la bibilographie. La meilleur façon de
-compiler ce livre est donc d'exécuter la commande suivante dans votre terminal :
-```{sh}
-make Rmd
-```
+Ce document a été rédigé à l'aide de [bookdown](https://bookdown.org).
 
 Le paquet **[bookdown](https://bookdown.org)** peut s'installer à
 partir de CRAN ou de  Github:
@@ -125,6 +113,23 @@ partir de CRAN ou de  Github:
 install.packages("bookdown")
 # or the development version
 # devtools::install_github("rstudio/bookdown")
+```
+
+Pour compiler ce document il est également nécessaire d'avoir
+`pandoc`, `pandoc-citeproc` et une installation latex récente (vous
+pouvez jeter un oeil à [`tinytex`](https://yihui.name/tinytex).
+
+Le document est entièremnt rédigé en markdown (nous n'avions pas
+besoin d'éxécuter du code R, ce pourquoi bookdown est originellement
+conçu). Néenmoins, pour conserver la prévisualisation de github, nous
+avons conservé l'extension `.md` plutôt que `.Rmd`.
+Les liens symboliques avec l'extension `.Rmd` nécessaires sont créés
+automatiquement par `make` qui s'occupe de corriger tout un tas de
+petites choses au niveau de la bibilographie. 
+
+La meilleur façon de compiler ce livre est donc d'exécuter la commande suivante dans votre terminal :
+```{sh}
+make Rmd
 ```
 
 Pour compiler ce livre au format html, il vous suffit de faire:
