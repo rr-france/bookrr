@@ -134,7 +134,7 @@ arrondis de manière à s'assurer que celle-ci reste définie-positive (en exige
 que la plus petite valeur propre de la matrice garde deux chiffres significatifs). 
 Voir "Definition" (3.21)[@bureauinternationaldespoidsetdesmesuresEvaluationMeasurementData].
 
-
+Les valeurs et les incertitudes devraient être présentées dans des colonnes séparées.
 
 ## Pour en savoir plus
 
