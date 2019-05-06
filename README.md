@@ -11,9 +11,10 @@ Loïc Desquilbet, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot,
 Facilitatrice : Elisa de Castro Guerra
 
 ## Citer l'ouvrage
-* Desquilbet, Loïc, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot, and Nicolas P. Rougier. Vers Une Recherche Reproductible. Version imprimée. Bordeaux: Urfist de Bordeaux, 2019. ISBN : 979-10-97595-04-3 ; URL HAL (to do)
+* Desquilbet, Loïc, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot, and Nicolas P. Rougier. Vers Une Recherche Reproductible. Version imprimée. Bordeaux: Urfist de Bordeaux, 2019. ISBN : 979-10-97595-04-3 ; URL Sudoc (to do)
 
-* Desquilbet, Loïc, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot, and Nicolas P. Rougier. Vers Une Recherche Reproductible. Ebook. Bordeaux: Urfist de Bordeaux, 2019. ISBN : 979-10-97595-05-0 ; https://bookdown.org/alegrand/bookdown/.
+* Desquilbet, Loïc, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot, and Nicolas P. Rougier. Vers Une Recherche Reproductible. Ebook. Bordeaux: Urfist de Bordeaux, 2019. ISBN : 979-10-97595-05-0 ; https://bookdown.org/alegrand/bookdown/. 
+Version PDF : URL HAL
 
 
 ## Est-il possible de contribuer, de proposer de nouveaux contenus ? 
