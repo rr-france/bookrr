@@ -154,8 +154,8 @@ Voici quelques moyens d'apprendre à utiliser Git et d'aller un peu plus loin :
 - [Happy Git With R](https://happygitwithr.com/) [@hesterHappyGitGitHub]
  - Le [Software Carpentry Git tutorial](http://swcarpentry.github.io/git-novice/) [@softwarecarpentryVersionControlGit]
  - Le livre Pro Git (gratuit) en [anglais](https://git-scm.com/book/en/v2) [@chaconProGitBook2014] ou
- en [français](https://git-scm.com/book/fr/v2) (Les deux premiers chapitres
- suffisent pour bien commencer [@chaconProGitTout2019])
+ en [français](https://git-scm.com/book/fr/v2). Les deux premiers chapitres
+ suffisent pour bien commencer [@chaconProGitTout2019].
  - Le site [Apprenez Git Branching](https://learngitbranching.js.org/) [@cottleLearnGitBranching] permet
   d'apprendre Git interactivement et de comprendre les branches.
 
