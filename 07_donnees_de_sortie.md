@@ -18,7 +18,7 @@ En outre, si cette information est complexe et difficilement
 compréhensible par vos collaborateurs parce que vous êtes seul spécialiste du
 domaine, alors cette erreur de sélection sera répercutée dans l’article et 
 persistera après le processus de
-revue si les relecteurs ne la répèrent pas.
+revue si les relecteurs ne la repèrent pas.
 
 ## Transformation des résultats
 
