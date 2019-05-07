@@ -1,8 +1,3 @@
----
-output:
-  pdf_document: default
-  html_document: default
----
 # (PART) Chroniques de la non reproductibilité {-}
 
 # État des lieux {#A-introduction}
