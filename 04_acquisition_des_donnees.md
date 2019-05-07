@@ -54,8 +54,7 @@ en utilisant leur définition métrologique.
 
 Nous avons décidé de choisir les définitions proposées en 2012 dans la dernière version 
 du *Vocabulaire International de Métrologie (VIM)* [@bureauinternationaldespoidsetdesmesuresVocabulaireInternationalMetrologie2012] car elles représentent l’effort le plus 
-récent de normalisation dans ce domaine ; document téléchargeable ici : 
-[@bureauinternationaldespoidsetdesmesuresVocabulaireInternationalMetrologie2012].
+récent de normalisation dans ce domaine ; le document est téléchargeable. [@bureauinternationaldespoidsetdesmesuresVocabulaireInternationalMetrologie2012].
 
 La **fidélité** de mesure s'entend comme : "l’étroitesse de l'accord entre les indications ou les 
 valeurs mesurées obtenues par des mesurages répétés du même objet ou d'objets similaires 
