@@ -206,7 +206,9 @@ catastrophe (voir notamment *The Patriot Missile
 Failure* [@arnoldPatriotMissileFailure2000]). 
 
 Il y a de nombreux articles décrivant ce genre de cauchemars :
+
 [@feherNumericalErrorsMinimization2012]
+
 [@feherNumericalErrorsChaotic2012]
 
 Vous pouvez
