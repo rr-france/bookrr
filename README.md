@@ -14,11 +14,11 @@ Facilitatrice : Elisa de Castro Guerra
 
 * Version imprimée :
 
-Desquilbet, Loïc, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot, et Nicolas P. Rougier. *Vers Une Recherche Reproductible*. Bordeaux : Urfist de Bordeaux, 2019. ISBN : 979-10-97595-04-3 ; URL Sudoc (to do)
+Desquilbet, Loïc, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot, et Nicolas P. Rougier. *Vers une recherche reproductible : Faire évoluer ses pratiques*. Bordeaux : Urfist de Bordeaux, 2019. ISBN : 979-10-97595-04-3 ; URL Sudoc (to do)
 
 * Version numérique :
 
-Desquilbet, Loïc, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot, et Nicolas P. Rougier. *Vers Une Recherche Reproductible*. Bordeaux : Urfist de Bordeaux, 2019. ISBN : 979-10-97595-05-0 ; URL HAL (to do)
+Desquilbet, Loïc, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot, et Nicolas P. Rougier. *Vers une recherche reproductible : Faire évoluer ses pratiques*. Bordeaux : Urfist de Bordeaux, 2019. ISBN : 979-10-97595-05-0 ; URL HAL (to do)
 
 * Site web : 
 
