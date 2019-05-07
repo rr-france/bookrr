@@ -11,12 +11,18 @@ Loïc Desquilbet, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot,
 Facilitatrice : Elisa de Castro Guerra
 
 ## Citer l'ouvrage
+
 * Version imprimée :
+
 Desquilbet, Loïc, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot, et Nicolas P. Rougier. Vers Une Recherche Reproductible. Version imprimée. Bordeaux: Urfist de Bordeaux, 2019. ISBN : 979-10-97595-04-3 ; URL Sudoc (to do)
 
 * Version numérique :
-Desquilbet, Loïc, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot, et Nicolas P. Rougier. Vers Une Recherche Reproductible. Ebook. Bordeaux: Urfist de Bordeaux, 2019. ISBN : 979-10-97595-05-0 ; https://bookdown.org/alegrand/bookdown/. 
-Version PDF : URL HAL (to do)
+
+Desquilbet, Loïc, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot, et Nicolas P. Rougier. Vers Une Recherche Reproductible. Ebook. Bordeaux: Urfist de Bordeaux, 2019. ISBN : 979-10-97595-05-0 ; URL HAL (to do)
+
+* Site web : 
+
+Le présent ouvrage se décline aussi sous forme d'un [site web évolutif](https://alegrand.github.io/bookrr/), intégrant des montées de version en attendant la prochaine édition du document. Si vous citez cette version évolutive dans des travaux, vous pouvez indiquer la date de consultation du site. 
 
 
 ## Est-il possible de contribuer, de proposer de nouveaux contenus ? 
@@ -27,9 +33,10 @@ Vous pouvez soumettre vos propositions *via* :
 - GitHub (Issue)
 - email : urfist@u-bordeaux.fr
 
+
+
 ## Licence
-[CC-BY NC](https://creativecommons.org/licenses/by-nc/4.0/)
-Cette licence permet aux autres de remixer, arranger, et adapter l'œuvre, sous des conditions éventuellement différentes, mais à des fins non commerciales ; les nouvelles œuvres doivent créditer les auteurs en citant leurs noms. 
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/fr/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/2.0/fr/88x31.png" /></a><br />Ce(tte) œuvre est mise à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/fr/">Licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 2.0 France</a>.
 
 # Informations internes
 ## Quelques liens utiles sur Markdown
