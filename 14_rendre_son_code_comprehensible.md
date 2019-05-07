@@ -4,7 +4,7 @@
 > -- Harold Abelson
   
 Les chapitres précédents (et en particulier 
-le chapitre 6 "Programmation et calcul" (chapitre \@ref(B-code-aspect)) 
+"Programmation et calcul" (chapitre \@ref(B-code-aspect)) 
 ont souligné l'importance des questions de diffusion et de partage des codes informatiques. 
 Une étape préalable à cette démarche est de rendre son code facilement 
 compréhensible par un lecteur externe. 
