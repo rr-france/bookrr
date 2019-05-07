@@ -30,7 +30,7 @@ simple est surtout limitée et assez peu précise car elle ne signale que quelqu
 unes des dépendances système de plus haut niveau. Elle correspond à
 la zone verte dans le schéma ci-dessous. Cependant, il est très 
 facile d'inclure ces informations descriptives dans vos documents 
-computationnels (*cf*. chapitre précédent 15 "rendre son code compréhensible"), et nous vous recommandons cette 
+computationnels (*cf*. chapitre 14 "Rendre son code compréhensible"), et nous vous recommandons cette 
 bonne pratique.
 
 2. En utilisant le gestionnaire de paquets du système d'exploitation, 
