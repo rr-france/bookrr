@@ -117,7 +117,7 @@ Ils ont participé à différentes étapes du *book sprint* :
 
 Vous aussi lecteurs, vous pouvez contribuer, poser des questions : 
 
-- en créant une *issue* 
+- en créant une *issue* dans l'entrepôt GitHub de l'ouvrage
 - en envoyant un message à urfist@u-bordeaux.fr
 
 ## Remerciements {-}
