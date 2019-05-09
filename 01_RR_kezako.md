@@ -38,7 +38,7 @@ Cette proposition est centrée sur le calcul et peut être considérée comme as
 
 Autrement dit: "Un travail de recherche est dit reproductible si toutes les informations qui concernent ce travail incluant, sans s'y limiter, le texte, les données, et le code de programmation, sont rendues disponibles de telle sorte que n'importe quel chercheur indépendant peut reproduire les résultats."
 
-S'il existe des définitions très précises et une littérature abondante, il n'y a pas pour autant de définition standard. C'est pourquoi la reproductibilité des uns peut être par exemple la répétabilité des autres, ou inversement. Notre but dans ce chapitre n'est pas de proposer une définition supplémentaire, qui délimiterait strictement ce qui constitue une recherche reproductible, ni de prendre position pour l'une ou pour l'autre, mais plutôt d'encourager une acceptation large et d'aborder des aspects extrêmement pratiques.
+S'il existe des définitions très précises et une littérature abondante, il n'y a pas pour autant de définition standard. C'est pourquoi la reproductibilité des uns peut être par exemple la répétabilité des autres, ou inversement. Notre but dans ce chapitre n'est pas de proposer une définition supplémentaire, qui délimiterait strictement ce qui constitue une recherche reproductible, ni de prendre position pour l'une ou pour l'autre, mais plutôt d'encourager une acception large et d'aborder des aspects extrêmement pratiques.
 
 ## Où l'on parle de recherche reproductible de manière pragmatique
 
