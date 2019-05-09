@@ -34,7 +34,7 @@ L'expression "recherche reproductible" apparaît pour la première fois en 1992,
 
 Cette proposition est centrée sur le calcul et peut être considérée comme assez "idéalisée" dans la mesure où l'ensemble des résultats peuvent être obtenus en lançant une seule commande. Il existe de nombreuses définitions de "recherche reproductible". Barba [@barbaTerminologiesReproducibleResearch2018] en analyse plusieurs. Parmi celles-ci, nous retiendrons la suivante, issue de l'article de Vandewalle *et al*. [@vandewalleReproducibleResearchSignal2009] : 
 
-> "*A research work is called reproducible if all information relevant to the work, including, but not limited to, text, data and code, is made available, such that an independant researcher can reproduce the results*" [@vandewalleReproducibleResearchSignal2009]
+> "*A research work is called reproducible if all information relevant to the work, including, but not limited to, text, data and code, is made available, such that an independent researcher can reproduce the results*" [@vandewalleReproducibleResearchSignal2009]
 
 Autrement dit: "Un travail de recherche est dit reproductible si toutes les informations qui concernent ce travail incluant, sans s'y limiter, le texte, les données, et le code de programmation, sont rendues disponibles de telle sorte que n'importe quel chercheur indépendant peut reproduire les résultats."
 
