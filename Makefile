@@ -1,4 +1,4 @@
-MD_FILE_LIST=index.md $(wildcard [0-9][0-9]*.md)
+MD_FILE_LIST=index.md $(wildcard [0-9][0-9]*.md) refs-fixed.bib
 RMD_FILE_LIST=$(patsubst %.md,%.Rmd,$(MD_FILE_LIST))
 
 
@@ -7,6 +7,8 @@ all: html pdf epub
 .PHONY: all Rmd
 
 Rmd: $(RMD_FILE_LIST)
+
+refs-fixed.bib: refs.bib
 	./bib-fix.sh
 
 %.Rmd: %.md
