@@ -84,13 +84,13 @@ plus élaborées demanderont un peu plus de temps et d'énergie. Ces solutions n
 ## La minute théologie négative : ce que vous ne trouverez pas dans cet ouvrage
 
 Il n’est pas question dans cet ouvrage de traiter toutes les solutions pour garantir la reproductibilité de la recherche au sens de Randall et Welser [@randallIrreproducibilityCrisisModern2018]. Ainsi, la question de la qualité et de la pertinence de la recherche est hors périmètre du présent ouvrage. Nous vous proposons plutôt de nous focaliser sur les solutions qui permettent communiquer vos résultats de la façon la plus exhaustive/explicite/pérenne possible afin qu'ils aient une chance de pouvoir être reproduits. 
-Nous laisserons volontairement de côté les problèmes qui nuisent à la qualité de la recherche, et en particulier :
+Nous laisserons volontairement de côté les problèmes (tout aussi essentiels) qui nuisent à la qualité de la recherche, et en particulier :
 
 - aller à la "pêche" aux résultats significatifs parmi tous les tests statistiques réalisés ("*p-hacking*") [@forstmeierDetectingAvoidingLikely2017], [@nuzzoScientificMethodStatistical2014], [@randallIrreproducibilityCrisisModern2018]
 - générer une hypothèse de recherche *a posteriori*, c’est-à-dire après avoir obtenu un résultat significatif ("*harking*") [@kerrHARKingHypothesizingResults1998]
 - sur-interpréter le résultat statistique qui est significatif ("Probability That a Positive Report is False") [@gelmanDifferenceSignificantNot2006], [@gelmanFailureNullHypothesis2018], [@lakensJustifyYourAlpha2017], [@pernetRobustCorrelationAnalyses2013], [@wacholderAssessingProbabilityThat2004]
 
-Pour tous ces sujets cités précédemment, nous invitons le lecteur à se référer à la littérature : 
+Il est possible qu'une seconde édition de cet ouvrage aborde ces sujets mais en attendant, nous invitons le lecteur à se référer à la littérature : 
 
 - *The Seven Deadly Sins of Psychology: A Manifesto for Reforming the Culture of Scientific Practice* [@chambersSevenDeadlySins2017]
 
