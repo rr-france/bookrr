@@ -22,7 +22,7 @@ des conduites plus que discutables sur le plan de la déontologie et de l'intég
 Le numérique occupe une place spécifique dans la réflexion sur la reproductibilité de la recherche et dans le présent ouvrage. Sous de multiples formes, le numérique a en effet largement investi tous les champs et aspects de la science : stockage, formatage,
 archivage, indexation, analyse, modélisation, statistiques, 
 environnements, précision, *etc*. Or, peu de chercheurs ont été 
-formés (ou se forment) aux fondamentaux et aux bonnes pratiques liés aux outils informatiques : "*Scientists spend an increasing amount of time building and using software. However, most scientists are never taught how to do this efficiently*" [@wilsonGoodEnoughPractices2017]. Dans le meilleur des cas, cela peut conduire à la publication de résultats fragiles, dans le sens "peu robustes". Dans le pire des cas, les résultats sont faux. Si la reproductibilité des résultats ne peut être considérée comme seul critère de la scientificité d'une recherche, cette crise suscite des interrogations au sein même de la communauté scientifique.
+formés ou continuent de se former, aux fondamentaux et aux bonnes pratiques liés aux outils informatiques : "*Scientists spend an increasing amount of time building and using software. However, most scientists are never taught how to do this efficiently*" [@wilsonGoodEnoughPractices2017]. Dans le meilleur des cas, cela peut conduire à la publication de résultats fragiles, dans le sens "peu robustes". Dans le pire des cas, les résultats sont faux. Si la reproductibilité des résultats ne peut être considérée comme seul critère de la scientificité d'une recherche, cette crise suscite des interrogations au sein même de la communauté scientifique.
 
 ## Définition(s) de "recherche reproductible" ?
 
@@ -32,7 +32,7 @@ L'expression "recherche reproductible" apparaît pour la première fois en 1992,
 
 > "*The first appearance of the phrase “reproducible research” in a scholarly publication appears to be an invited paper presented at the 1992 meeting of the Society of Exploration Geophysics (SEG), from the group of Jon Claerbout at Stanford (Claerbout & Karrenbach, 1992). […] His idea of reproducible research was to leave finished work (an article or a thesis) in a state that allowed colleagues to reproduce the calculation, analysis and final figures by executing a single command. The goal was to merge a publication with its underlying computational analysis*" [@barbaTerminologiesReproducibleResearch2018].
 
-Cette proposition est centrée sur le calcul et peut être considérée comme quasi idéale, voire idéalisée, dans la mesure où l'ensemble des résultats peuvent être obtenus en lançant une seule commande. Il existe de nombreuses définitions de "recherche reproductible". Barba [@barbaTerminologiesReproducibleResearch2018] en analyse plusieurs. Parmi celles-ci, nous retiendrons la suivante, issue de l'article de Vandewalle *et al*. [@vandewalleReproducibleResearchSignal2009] : 
+Cette proposition est centrée sur le calcul et peut être considérée comme quasi idéale, voire idéaliste, dans la mesure où en lançant une seule commande, on obtient tous les résultats. Il existe de nombreuses définitions de "recherche reproductible". Barba [@barbaTerminologiesReproducibleResearch2018] en analyse plusieurs. Parmi celles-ci, nous retiendrons la suivante, issue de l'article de Vandewalle *et al*. [@vandewalleReproducibleResearchSignal2009] : 
 
 > "*A research work is called reproducible if all information relevant to the work, including, but not limited to, text, data and code, is made available, such that an independent researcher can reproduce the results*" [@vandewalleReproducibleResearchSignal2009]
 
@@ -74,10 +74,10 @@ le fruit d'une forme de méconnaissance, de manque de compétences techniques, d
 
 
 
-## Où l'on considère la recherche reproductible comme un sujet non réservé aux seuls amateurs d'équations et de ligne de commande (oui, il y en a)
+## Où l'on considère la recherche reproductible comme un sujet non réservé aux marathoniens adeptes de la ligne de commande
 
 Au travers de situations fictives mais hélas réalistes, nous verrons qu'à l'origine de recherches non reproductibles se trouve un ensemble de concepts fondamentaux qu'il est nécessaire de connaître afin d'en éviter les écueils. L'objectif n'est pas de les maîtriser totalement : améliorer ses pratiques n'exige d'adopter une logique du "tout ou rien", heureusement. Il existe
-des solutions très simples à mettre en œuvre que tout un chacun peut s'approprier, tandis que d'autres solutions 
+des solutions très simples à mettre en œuvre que tout un chacun peut s'approprier graduellement, tandis que d'autres solutions 
 plus élaborées demanderont un peu plus de temps et d'énergie. Même si elles prennent souvent une forme informatique, ces solutions ne sont pas uniquement computationnelles ; elles ne ciblent donc pas exclusivement les chercheurs dans le domaine du calcul, bien au contraire. Le livre s'adresse à tous publics scientifiques. 
 
 
