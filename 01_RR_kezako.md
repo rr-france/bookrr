@@ -44,7 +44,7 @@ Il y a donc plusieurs définitions en cours, parfois contradictoires les unes av
 
 Quel peut être le point commun entre : un archéologue en train d'effectuer une campagne de fouille, 
 un biologiste préparant une nouvelle expérience dans son laboratoire,
-un numéricien finalisant une simulation de grande ampleur ?
+un numéricien finalisant la simulation d'un grand système complexe ?
 Tous sont exposés aux ~~drames~~ risques suivants, indépendamment de leur volonté de contribuer à l'accroissement
 des connaissances dans leurs domaines respectifs : 
 
@@ -76,15 +76,15 @@ le fruit d'une forme de méconnaissance, de manque de compétences techniques, d
 
 ## NOTRE PROJEEEET : vers une recherche reproductible
 
-Au travers de situations fictives mais hélas réalistes, nous verrons qu'à l'origine de recherches non reproductibles se trouve un ensemble de concepts fondamentaux qu'il est nécessaire de connaître afin d'en éviter les écueuils. L'objectif n'est pas de les maîtriser totalement : améliorer ses pratiques n'exige d'adopter une logique du "tout ou rien", heureusement. Il existe
+Au travers de situations fictives mais hélas réalistes, nous verrons qu'à l'origine de recherches non reproductibles se trouve un ensemble de concepts fondamentaux qu'il est nécessaire de connaître afin d'en éviter les écueils. L'objectif n'est pas de les maîtriser totalement : améliorer ses pratiques n'exige d'adopter une logique du "tout ou rien", heureusement. Il existe
 des solutions très simples à mettre en œuvre que tout un chacun peut s'approprier, tandis que d'autres solutions 
 plus élaborées demanderont un peu plus de temps et d'énergie. Ces solutions ne sont pas uniquement computationnelles — même si elles prennent souvent une forme informatique — et s'adresse à tous les chercheurs (pas uniquement à ceux faisant du "calcul").
 
 
 ## La minute théologie négative : ce que vous ne trouverez pas dans cet ouvrage
 
-Il n’est pas question dans cet ouvrage de traiter toutes les solutions pour garantir la reproductibilité de la recherche au sens de Randall et Welser [@randallIrreproducibilityCrisisModern2018]. Ainsi, la question de la qualité et de la pertinence de la recherche est hors périmètre du présent ouvrage. En effet, nous vous proposons plutôt de nous focaliser sur les solutions qui permettent communiquer des résultats pouvant être reproduits de façon exhaustive. 
-Nous n’allons donc pas traiter des solutions à des problèmes qui nuisent à la qualité de la recherche, et en particulier : 
+Il n’est pas question dans cet ouvrage de traiter toutes les solutions pour garantir la reproductibilité de la recherche au sens de Randall et Welser [@randallIrreproducibilityCrisisModern2018]. Ainsi, la question de la qualité et de la pertinence de la recherche est hors périmètre du présent ouvrage. Nous vous proposons plutôt de nous focaliser sur les solutions qui permettent communiquer vos résultats de la façon la plus exhaustive/explicite/pérenne possible afin qu'ils aient une chance de pouvoir être reproduits. 
+Nous laisserons volontairement de côté les problèmes qui nuisent à la qualité de la recherche, et en particulier :
 
 - aller à la "pêche" aux résultats significatifs parmi tous les tests statistiques réalisés ("*p-hacking*") [@forstmeierDetectingAvoidingLikely2017], [@nuzzoScientificMethodStatistical2014], [@randallIrreproducibilityCrisisModern2018]
 - générer une hypothèse de recherche *a posteriori*, c’est-à-dire après avoir obtenu un résultat significatif ("*harking*") [@kerrHARKingHypothesizingResults1998]
