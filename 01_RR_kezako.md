@@ -11,18 +11,18 @@ ancien, mais la situation semble avoir atteint un point critique : des
 études récentes ont par exemple démontré que de nombreux
 résultats d'études pré-cliniques, cliniques ou psychologiques ne
 pouvaient être reproduits et donc confirmés [@begleyDrugDevelopmentRaise2012] [@perrinPreclinicalResearchMake2014] 
-[@opensciencecollaboration2015Estimating].
+[@opensciencecollaboration2015Estimating]. D'autres disciplines sont également concernées : l'économie [@camererEvaluatingReplicabilityLaboratory2016], l'énergétique [@huebnerAreWeHeading2017] par exemple.
 
 
 ## Pourquoi la question de la reproductibilité est-elle devenue centrale dans les débats actuels ?
 
-Si les problèmes de reproductibilité de la science occupent une telle place dans les débats actuels, ce n'est pas tout à fait un hasard. 
-On peut bien sûr évoquer les causes structurelles qui soumettent les chercheurs à une pression accrue et qui peuvent conduire à
-des conduites déviantes sur le plan déontologique mais selon nous la majorité des chercheurs est en général de bonne foi et les causes les plus répandues et les plus insidieuses sont souvent d'ordre méthodologique et technique.
-En particulier le numérique, sous des formes multiples, a largement investi tous les champs de la science et l'outil informatique occupe une place incontournable : stockage, formatage,
+Si les problèmes de reproductibilité de la science occupent une place telle dans les débats actuels, ce n'est pas tout à fait un hasard. 
+On peut bien sûr évoquer les causes structurelles qui soumettent les chercheurs à une pression accrue ("*Funders, publishers, societies, institutions, editors, reviewers and authors all contribute to the cultural norms that create and sustain dysfunctional incentives*". [@munafoManifestoReproducibleScience2017]) et qui peuvent engendrer
+des conduites plus que discutables sur le plan de la déontologie et de l'intégrité scientifiques. Mais selon nous, la majorité des chercheurs est en général de bonne foi. Les "sorties de route" sont la plupart du temps moins imputables à une volonté délibérée de frauder qu'à un défaut de maîtrise des méthodes ou/et des outils. Randall et Welser citent par exemple le problème du *p-hacking* : "*P-hacking may not be as widespread as one might fear, but it appears that many scientists who routinely use p-values and statistical significance testing misunderstand those concepts, and therefore employ them improperly in their research*" [@randallIrreproducibilityCrisisModern2018]. 
+Le numérique occupe dans la réflexion sur la reproductibilité de la recherche (et dans le présent ouvrage) une place spécifique car, sous de multiples formes, il a largement investi tous les champs de la science. L'outil informatique occupe une place incontournable : stockage, formatage,
 archivage, indexation, analyse, modélisation, statistiques, 
 environnements, précision, *etc*. Or, peu de chercheurs ont été 
-formés (ou se forment) aux fondamentaux et aux bonnes pratiques liés aux outils informatiques. Cela peut conduire à la publication de résultats fragiles (dans le sens "peu robustes") dans le meilleur des cas, et faux dans le pire des cas. Si la reproductibilité des résultats ne peut être considérée comme seul critère de la scientificité d'une recherche, cette crise suscite des interrogations au sein même de la communauté scientifique.
+formés (ou se forment) aux fondamentaux et aux bonnes pratiques liés aux outils informatiques : "*Scientists spend an increasing amount of time building and using software. However, most scientists are never taught how to do this efficiently*" [@wilsonGoodEnoughPractices2017]. Cela peut conduire à la publication de résultats fragiles (dans le sens "peu robustes") dans le meilleur des cas, et faux dans le pire des cas. Si la reproductibilité des résultats ne peut être considérée comme seul critère de la scientificité d'une recherche, cette crise suscite des interrogations au sein même de la communauté scientifique.
 
 ## Définition(s) de "recherche reproductible" ?
 
@@ -32,13 +32,13 @@ L'expression "recherche reproductible" apparaît pour la première fois en 1992,
 
 > "*The first appearance of the phrase “reproducible research” in a scholarly publication appears to be an invited paper presented at the 1992 meeting of the Society of Exploration Geophysics (SEG), from the group of Jon Claerbout at Stanford (Claerbout & Karrenbach, 1992). […] His idea of reproducible research was to leave finished work (an article or a thesis) in a state that allowed colleagues to reproduce the calculation, analysis and final figures by executing a single command. The goal was to merge a publication with its underlying computational analysis*" [@barbaTerminologiesReproducibleResearch2018].
 
-Cette proposition est centrée sur le "calcul" et assez idéalisée (l'ensemble des résultats pouvant être obtenus en lançant une seule commande) mais il existe de nombreuses définitions de "recherche reproductible". Barba [@barbaTerminologiesReproducibleResearch2018] en énumère plusieurs et, parmi celles-ci, nous retiendrons la suivante issue de l'article de Vandewalle *et al*. [@vandewalleReproducibleResearchSignal2009] : 
+Cette proposition est centrée sur le calcul et peut être considérée comme assez "idéalisée" dans la mesure où l'ensemble des résultats pouvant être obtenus en lançant une seule commande. Il existe de nombreuses définitions de "recherche reproductible". Barba [@barbaTerminologiesReproducibleResearch2018] en analyse plusieurs. Parmi celles-ci, nous retiendrons la suivante issue de l'article de Vandewalle *et al*. [@vandewalleReproducibleResearchSignal2009] : 
 
 > "*A research work is called reproducible if all information relevant to the work, including, but not limited to, text, data and code, is made available, such that an independant researcher can reproduce the results*" [@vandewalleReproducibleResearchSignal2009]
 
 Autrement dit: "Un travail de recherche est dit reproductible si toutes les informations qui concernent ce travail incluant, sans s'y limiter, le texte, les données, et le code de programmation, sont rendues disponibles de telle sorte que n'importe quel chercheur indépendant peut reproduire les résultats."
 
-Il y a donc plusieurs définitions en cours, parfois contradictoires les unes avec les autres et notre but dans ce chapitre n'est pas d'en proposer une de plus qui délimiterait strictement ce qui constitue une recherche reproductible, ni de prendre position pour l'une ou pour l'autre, mais plutôt d'encourager une acceptation large et d'aborder des aspects extrêmement pratiques.
+S'il existe des définitions très précises et une littérature abondante, il n'y a pas pour autant de définition standard. C'est pourquoi la reproductibilité des uns peut être par exemple la répétabilité des autres, ou inversement. Notre but dans ce chapitre n'est pas de proposer une définition supplémentaire, qui délimiterait strictement ce qui constitue une recherche reproductible, ni de prendre position pour l'une ou pour l'autre, mais plutôt d'encourager une acceptation large et d'aborder des aspects extrêmement pratiques.
 
 ## Où l'on parle de recherche reproductible de manière pragmatique
 
