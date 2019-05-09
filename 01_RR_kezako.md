@@ -74,7 +74,7 @@ le fruit d'une forme de méconnaissance, de manque de compétences techniques, d
 
 
 
-## Où l'on considère la recherche reproductible comme un sujet non réservé aux marathoniens adeptes de la ligne de commande
+## Où l'on considère la recherche reproductible comme un sujet non réservé aux marathoniens de la ligne de commande
 
 Au travers de situations fictives mais hélas réalistes, nous verrons qu'à l'origine de recherches non reproductibles se trouve un ensemble de concepts fondamentaux qu'il est nécessaire de connaître afin d'en éviter les écueils. L'objectif n'est pas de les maîtriser totalement : améliorer ses pratiques n'exige d'adopter une logique du "tout ou rien", heureusement. Il existe
 des solutions très simples à mettre en œuvre que tout un chacun peut s'approprier graduellement, tandis que d'autres solutions 
