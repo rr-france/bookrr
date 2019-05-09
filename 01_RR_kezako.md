@@ -63,7 +63,6 @@ recherche : une mauvaise recherche peut tout à fait être
 reproductible (*spoiler alert* : *do not try this at work* !).
 
 
-
 ## Échantillon choisi parmi les multiples causes d'une recherche non reproductible
 
 Comme nous le verrons dans ce livre, les causes d'une recherche
@@ -72,6 +71,7 @@ D'autres causes, plus difficiles à détecter, existent également : par exempl
 Une fois de plus, il ne s'agit pas de développer une vision accusatoire des pratiques de recherche. L'impossibilité même de reproduire des résultats n'est
 pas engendrée par la malhonnêteté scientifique, mais s'avère bien plus souvent
 le fruit d'une forme de méconnaissance, de manque de compétences techniques, de pratiques plus ou moins hasardeuses. Sous des dehors souvent anodins, les petits "braconnages" du quotidien ("Ça va passer") et autres rustines manuelles font le lit de la "dette technique" qui à terme, peut devenir insurmontable et peut condamner un projet ou un laboratoire. 
+
 
 
 ## NOTRE PROJEEEET : vers une recherche reproductible
