@@ -9,7 +9,7 @@ différentielles n'enregistrant que les modifications.
 
 La mise en œuvre d'une stratégie de gestion de versions doit permettre d'éviter
 les cauchemars du type "Je ne retrouve pas mon code / mes données" et permet
-de répondre aux questions : quand ? qui ? pourquoi ?
+de répondre aux questions : quand ? qui ? pourquoi ?
 
 Nous présentons deux solutions dans ce chapitre :
 
@@ -39,10 +39,10 @@ Le titre ne devrait pas être trop long : sous certains système d'exploitation,
 il ne doit pas dépasser 31 caractères, extension comprise. Egalement pour 
 des raisons de compatibilité, il est recommandé d'éviter l'utilisation de :
 
-- signes diacritiques ; ex. : accents, trémas, cédilles,  
-- caractères spéciaux,
-- espaces,
-- *etc*.
+* signes diacritiques comme les accents, trémas, cédilles,  
+* caractères spéciaux,
+* espaces,
+(la liste peut s'allonger)
 
 
 #### Exemple {-}
