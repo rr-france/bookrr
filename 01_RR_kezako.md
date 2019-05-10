@@ -88,7 +88,7 @@ Le présent ouvrage n'a pas pour objectif de traiter toutes les solutions pour g
 Dans cette édition, afin de proposer aux lecteurs des propositions applicables car suffisamment détaillées, nous laisserons volontairement de côté les problèmes inhérents à la qualité de la recherche et en particulier :
 
 - aller à la "pêche" aux résultats significatifs parmi tous les tests statistiques réalisés ("*p-hacking*") [@forstmeierDetectingAvoidingLikely2017], [@nuzzoScientificMethodStatistical2014], [@randallIrreproducibilityCrisisModern2018]
-- générer une hypothèse de recherche *a posteriori*, c’est-à-dire après avoir obtenu un résultat significatif ("*harking*") [@kerrHARKingHypothesizingResults1998]
+- générer une hypothèse de recherche *a posteriori*, c’est-à-dire après avoir obtenu un résultat significatif ("*HARKing*") [@kerrHARKingHypothesizingResults1998]
 - sur-interpréter le résultat statistique qui est significatif ("Probability That a Positive Report is False") [@gelmanDifferenceSignificantNot2006], [@gelmanFailureNullHypothesis2018], [@lakensJustifyYourAlpha2017], [@pernetRobustCorrelationAnalyses2013], [@wacholderAssessingProbabilityThat2004]
 
 Ces problèmes étant également essentiels, il est possible qu'une deuxième édition de cet ouvrage les traite mais en attendant, nous invitons le lecteur à se référer à la littérature : 
