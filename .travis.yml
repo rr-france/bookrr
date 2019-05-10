@@ -17,5 +17,5 @@ before_script:
   - chmod +x ./ghpages_script.sh
 
 script:
-  - ./ghpages_script.sh
+  - cd src; ./ghpages_script.sh
 
