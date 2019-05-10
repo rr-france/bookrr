@@ -3,7 +3,7 @@ EPUB](https://alegrand.github.io/bookrr/). [![Build
 Status](https://travis-ci.org/alegrand/bookrr.svg?branch=master)](https://travis-ci.org/alegrand/bookrr)
 
 # Vers une recherche reproductible : Faire évoluer ses pratiques
-Ce livre sur la recherche reproductible a été rédigé à l'occasion d'un *book sprint* organisé par l'Unité régionale de formation à l'information scientifique et technique de Bordeaux (Urfist) ; en savoir plus, voir les annexes.
+Ce livre sur la recherche reproductible a été rédigé à l'occasion d'un *book sprint* organisé par l'Unité régionale de formation à l'information scientifique et technique de Bordeaux (Urfist) ; pour en savoir plus, voir les annexes.
 
 ## Auteurs
 Loïc Desquilbet, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot, Nicolas Rougier
