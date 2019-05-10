@@ -108,7 +108,7 @@ R](https://r2018-rennes.sciencesconf.org)
 ## Pour en savoir plus
 
 Il existe une multitude de ressources pour apprendre à programmer en R ou en
-Python, notamment les formations continues proposées par les institutions
+Python, notamment les formations proposées par les institutions
 (services de formation des personnels, écoles doctorales, mais aussi formations
 internes à votre unité de recherche).  En raison de cette multitude de
 ressources, il est difficile de choisir lesquelles sont les plus pertinentes.
@@ -129,7 +129,7 @@ de ressources accessibles en ligne que nous jugeons de qualité.
 
 ### Livres
 
-* [*R for Data Science*](https://r4ds.had.co.nz) [@wickhamDataScienceImport2016]
+* [*R for Data Science*](https://r4ds.had.co.nz) [@wickhamDataScienceImport2016], disponible aussi en français : *R pour les data sciences : importer, classer, transformer, visualiser et modéliser les données* [@wickhamPourDataSciences2018]
 * [*Dive into Python*](https://www.diveinto.org/python3) [@pilgrimDivePython2009]
 
 ### Ateliers en ligne "Software Carpentry"
