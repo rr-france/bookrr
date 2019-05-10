@@ -12,7 +12,7 @@ de solutions allant de bonnes pratiques faciles et rapides à implémenter
 jusqu'à des outils plus techniques, tous gratuits et mis à l'épreuve par les
 auteurs eux-mêmes.
 
-Dans ce livre rédigé dans le cadre d'un *book sprint*, étudiants, ingénieurs et chercheurs devraient trouver des moyens
+Dans ce livre rédigé lors d'un *book sprint*, étudiants, ingénieurs et chercheurs devraient trouver des moyens
 efficaces et à leur portée pour améliorer leurs pratiques de la recherche
 reproductible.
 
