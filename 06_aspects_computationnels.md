@@ -34,7 +34,7 @@ En guise de préambule, débutons par une liste non exhaustive des cas où l'on 
 
 Si cette question vous intéresse, vous pouvez lire les travaux de Collberg, Proebsting et Warren  : [@collbergRepeatabilityComputerSystems2016] [@collbergRepeatabilityBenefactionComputer2015]. 
 Les auteurs étudient les causes d'incapacité à réexécuter du code dans la communauté de recherche *Computer Systems*, pourtant très au fait des aspects logiciels. Vous y trouverez de nombreux témoignages (assez drôles si c'était sans conséquences !) issus d'une étude de terrain ; vous pourrez notamment lire les excuses les plus couramment utilisées pour justifier une incapacité à donner accès au code derrière une publication.
-Vous pouvez aussi consulter "Re-run, Repeat, Reproduce, Reuse, Replicate: Transforming Code into Scientific Contributions"[@benureauRerunRepeatReproduce2017].
+Vous pouvez aussi consulter "Re-run, Repeat, Reproduce, Reuse, Replicate: Transforming Code into Scientific Contributions" [@benureauRerunRepeatReproduce2017].
 
 ## Comment lance-t-on ce code ? ("Allô Houston ?")
 
@@ -200,19 +200,19 @@ Toutes ces petites imprécisions de calcul peuvent hélas rapidement devenir tr�
 problématiques lorsque le système sous-jacent correspond par exemple à la
 discrétisation d'une équation différentielle. Le calcul est alors très sensible
 aux conditions initiales et l'accumulation des imprécisions peut amener à une
-catastrophe (voir notamment *The Patriot Missile
-Failure* [@arnoldPatriotMissileFailure2000]). 
+catastrophe ; voir notamment *The Patriot Missile
+Failure* [@arnoldPatriotMissileFailure2000]. 
 
 Il y a de nombreux articles décrivant ce genre de cauchemars :
 
-[@feherNumericalErrorsMinimization2012]
+* "Numerical Errors in Minimization Based Binding Energy Calculations" [@feherNumericalErrorsMinimization2012]
 
-[@feherNumericalErrorsChaotic2012]
+* "Numerical Errors and Chaotic Behavior in Docking Simulations" [@feherNumericalErrorsChaotic2012]
 
 Vous pouvez
 vouloir lire le classique [*What Every Computer Scientist Should Know About Floating-point Arithmetic*](https://www.itu.dk/~sestoft/bachelor/IEEE754_article.pdf) [@goldbergWhatEveryComputer1991] ou encore les travaux de Stodden et ses collègues [@stoddenAssessingReproducibilityAstrophysical2018].
 Pour une présentation de ces problématiques et de quelques solutions,
-vous pouvez aussi vouloir regarder ce 
+vous pouvez aussi regarder ce 
 séminaire sur la reproductibilité numérique [@legrandControlingYourEnvironment2016].
 
 ## Que faire ?
