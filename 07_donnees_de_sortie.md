@@ -23,7 +23,7 @@ revue si les relecteurs ne la repèrent pas.
 ## Transformation des résultats
 
 Une autre erreur pouvant survenir à partir des résultats fournis par un
-logiciel est celle d’une "transformation" (bien entendu involontaire) de ces
+logiciel est celle d’une "transformation", bien entendu involontaire, de ces
 données. Cette modification délétère peut très facilement se produire si vous
 devez saisir de nouveau dans votre article les sorties résultats du logiciel. 
 Une erreur de frappe est si facilement arrivée !
@@ -67,8 +67,7 @@ d'une table de résultats), vous pourriez juger qu’un seul
 chiffre significatif peut suffire. Mais si vos résultats sont nécessaires à la
 réalisation d’autres recherches, pour permettre par exemple des simulations, les erreurs engendrées dans
 ces autres travaux pourront être amplifiées : une petite erreur initiale peut
-conduire à une erreur très importante en bout de course – _*cf*._ « Chaos numérique
-» dans le chapitre \@ref(B-code-aspect).
+conduire à une erreur très importante en bout de course – _*cf*._ "Chaos numérique" dans le chapitre \@ref(B-code-aspect).
 
 A titre d'illustration, la matrice de variance-covariance publiée par le CODATA
 en 2002 pour l'ajustement des constantes fondamentales, arrondie pour être
