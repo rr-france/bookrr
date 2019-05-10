@@ -39,7 +39,7 @@ Le titre ne devrait pas être trop long : sous certains système d'exploitation,
 il ne doit pas dépasser 31 caractères, extension comprise. Egalement pour 
 des raisons de compatibilité, il est recommandé d'éviter l'utilisation de :
 
-* signes diacritiques comme les accents, trémas, cédilles,  
+* signes diacritiques comme les accents, trémas, cédilles,
 * caractères spéciaux,
 * espaces,
 (la liste peut s'allonger)
