@@ -39,7 +39,7 @@ des raisons de compatibilité, il est recommandé d'éviter l'utilisation de :
 
 * signes diacritiques comme les accents, trémas, cédilles,
 * caractères spéciaux,
-* espaces, (la liste peut s'allonger)
+* espaces et autres plaisirs car la liste peut s'allonger
 
 
 #### Exemple {-}
