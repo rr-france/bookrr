@@ -46,7 +46,7 @@ La proposition du groupe de Claerbout est centrée sur le calcul et peut être c
 
 > "*A research work is called reproducible if all information relevant to the work, including, but not limited to, text, data and code, is made available, such that an independent researcher can reproduce the results*" [@vandewalleReproducibleResearchSignal2009]
 
-Autrement dit: "Un travail de recherche est dit reproductible si toutes les informations qui concernent ce travail incluant, sans s'y limiter, le texte, les données, et le code de programmation, sont rendues disponibles de telle sorte que n'importe quel chercheur indépendant peut reproduire les résultats."
+Autrement dit : "Un travail de recherche est dit reproductible si toutes les informations qui concernent ce travail incluant, sans s'y limiter, le texte, les données, et le code de programmation, sont rendues disponibles de telle sorte que n'importe quel chercheur indépendant peut reproduire les résultats."
 
 S'il existe des définitions très précises et une littérature abondante, il n'y a pas pour autant de définition standard. C'est pourquoi la reproductibilité des uns peut être par exemple la répétabilité des autres, ou inversement. Par ailleurs, les nuances apportées par chaque discipline permettent de nourrir une réflexion plus générale selon Baker : 
 
