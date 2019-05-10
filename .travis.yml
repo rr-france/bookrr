@@ -14,7 +14,7 @@ env:
 # Check https://docs.travis-ci.com/user/installing-dependencies/ for syntax
 
 before_script:
-  - chmod +x ./ghpages_script.sh
+  - chmod +x ./src/ghpages_script.sh
 
 script:
   - cd src; ./ghpages_script.sh
