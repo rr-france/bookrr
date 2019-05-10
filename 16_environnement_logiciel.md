@@ -91,7 +91,12 @@ de changer une bibliothèque particulière ou de faire évoluer cet environnemen
 ## Les systèmes de gestion de paquets
 
 L'approche la plus aboutie pour la reproduction de l'environnement logiciel 
-s'appuie sur les systèmes de gestion de paquets fonctionnels tels que [GUIX](https://www.gnu.org/software/guix/) (voir aussi [@inriaGuixLogicielLibre] et [@wurmusReproducibleGenomicsAnalysis2018]) et [NIX](https://nixos.org/). Il s'agit d'outils permettant de décrire et d'isoler très précisément 
+s'appuie sur les systèmes de gestion de paquets fonctionnels tels que :
+
+* [GUIX](https://www.gnu.org/software/guix/) ; voir aussi [@inriaGuixLogicielLibre] et [@wurmusReproducibleGenomicsAnalysis2018])
+* [NIX](https://nixos.org/)
+
+Il s'agit d'outils permettant de décrire et d'isoler très précisément 
 l'environnement strictement nécessaire à la recherche reproductible, de le partager 
 avec d'autres pour qu'ils puissent le mettre en œuvre, et même d'y 
 apporter des modifications très précisément contrôlées afin d'évaluer l'impact
@@ -101,9 +106,11 @@ de tel ou tel changement.
 Au sujet de l'identification des dépendances, vous pouvez vous référer
 au module 4 du [MOOC sur la recherche
 reproductible](https://learninglab.inria.fr/mooc-recherche-reproductible-principes-methodologiques-pour-une-science-transparente/) [@inrialearninglabMOOCRechercheReproductible2018]
-et aux ressources correspondantes
-([slides](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module4/slides/C028AL_slides_module4-fr-gz.pdf) [@pouzatVersEtudeReproductible],
-[ressources](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module4/ressources/resources_environment_fr.org)) [@legrandBienControlerSon].
+et aux ressources correspondantes : 
+
+* [slides](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module4/slides/C028AL_slides_module4-fr-gz.pdf) [@pouzatVersEtudeReproductible],
+
+* [autres ressources](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/blob/master/module4/ressources/resources_environment_fr.org) [@legrandBienControlerSon].
 
 Vous  pouvez également vouloir regarder ce 
 [séminaire en ligne présentant quelques solutions pour contrôler son environnement](https://github.com/alegrand/RR_webinars/blob/master/2_controling_your_environment/index.org) [@legrandControlingYourEnvironment2016].
