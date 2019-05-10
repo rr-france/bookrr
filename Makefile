@@ -30,6 +30,7 @@ html: Rmd
 pdf: Rmd
 	# switch PATH to call latex/xelatex instead of plain xelatex
 	# so that we can fix the tex file (see the next target)
+	rm -f booksprintrr.aux booksprintrr.blg booksprintrr.bbl
 	env SAVEDPATH="$$PATH" PATH="latex:$$PATH" \
 	Rscript -e "rmarkdown::render_site(output_format = 'bookdown::pdf_book', encoding = 'UTF-8')"
 	mv _book/booksprintrr.pdf .
