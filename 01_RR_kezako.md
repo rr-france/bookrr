@@ -57,7 +57,7 @@ d'incompatibilité de formats,
 - obtenir sur son ordinateur des résultats radicalement différents de ceux qu'un collègue a obtenu sur le sien.
 
 La liste n'est pas exhaustive.
-Ne vous êtes-vous jamais posé les questions suivantes : "Suis-je vraiment sûr de mon analyse statistique ?", "Suis-je capable de recréer cette figure conçue il y a 6 mois ?" Outre votre équipe de recherche, votre communauté scientifique et *in fine* le monde non académique, **le premier bénéficiaire d'une recherche reproductible, c'est d'abord *vous* !** Une recherche reproductible a en effet pour objectif de faciliter les tâches les plus quotidiennes, de garantir l'exactitude des méthodes et de documenter l'ensemble de la pratique scientifique. 
+Ne vous êtes-vous jamais posé les questions suivantes : "Suis-je vraiment sûr de mon analyse statistique ?", "Suis-je capable de recréer cette figure conçue il y a 6 mois ?" Outre votre équipe de recherche, votre communauté scientifique et *in fine* le monde non académique, **le premier bénéficiaire d'une recherche reproductible, c'est d'abord *vous* !** Une recherche reproductible a en effet pour objectifs de faciliter les tâches les plus quotidiennes, de garantir l'exactitude des méthodes et de documenter l'ensemble de la pratique scientifique. 
 
 *Nota Bene* : une recherche reproductible peut-elle constituer un gage de qualité de la recherche ? Non, c'est un gage de transparence. La transparence contribue à la qualité mais ne s'y substitue pas. En effet, une recherche reproductible (au sens de l'ouvrage, "une recherche dont les résultats publiés peuvent être reproduits") n'est pas synonyme de "bonne"
 recherche : une mauvaise recherche peut tout à fait être
