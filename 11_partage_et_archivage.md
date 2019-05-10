@@ -110,7 +110,7 @@ un DOI permettant leur référencement stable dans la littérature.
 Pour les logiciels, une archive existe :
 [Software Heritage](https://www.softwareheritage.org). En tandem avec un
 système de gestion de versions, ces archives permettent de conserver de façon
-pérenne et d'indexer les versions successives les artefacts de la recherche.
+pérenne et d'indexer les versions successives les *artefacts* de la recherche.
 
 
 ## Pour en savoir plus
