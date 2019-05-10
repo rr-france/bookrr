@@ -28,21 +28,18 @@ Dans ce contexte, il est souvent recommandé de créer un nom de fichier constit
 éléments [@reseauqualiteenrechercheTracabiliteActivitesRecherche2018; @bryanHowNameFiles2015] : 
 
 * la date de sauvegarde, sous format AAAAMMJJ ou AAAA_MM_JJ
-(permettant un tri des dates par ordre alphabétique)
-
+  (permettant un tri des dates par ordre alphabétique)
 * le titre du fichier, évitant les mots "vides" (article défini, indéfini, *etc*.)
-
 * un numéro de version du document qui sera incrémenté aux étapes
-remarquables de l'évolution du document (v01, v02...)
+  remarquables de l'évolution du document (v01, v02...)
 
 Le titre ne devrait pas être trop long : sous certains système d'exploitation,
-il ne doit pas dépasser 31 caractères, extension comprise. Egalement pour 
+il ne doit pas dépasser 31 caractères, extension comprise. Également pour
 des raisons de compatibilité, il est recommandé d'éviter l'utilisation de :
 
 * signes diacritiques comme les accents, trémas, cédilles,
 * caractères spéciaux,
-* espaces,
-(la liste peut s'allonger)
+* espaces, (la liste peut s'allonger)
 
 
 #### Exemple {-}
