@@ -1,4 +1,4 @@
-MD_FILE_LIST=index.md $(wildcard [0-9][0-9]*.md)
+MD_FILE_LIST=index.md $(wildcard [0-9][0-9]*.md) refs-fixed.bib
 RMD_FILE_LIST=$(patsubst %.md,%.Rmd,$(MD_FILE_LIST))
 
 
@@ -7,6 +7,8 @@ all: html pdf epub
 .PHONY: all Rmd
 
 Rmd: $(RMD_FILE_LIST)
+
+refs-fixed.bib: refs.bib
 	./bib-fix.sh
 
 %.Rmd: %.md
@@ -28,6 +30,7 @@ html: Rmd
 pdf: Rmd
 	# switch PATH to call latex/xelatex instead of plain xelatex
 	# so that we can fix the tex file (see the next target)
+	rm -f booksprintrr.aux booksprintrr.blg booksprintrr.bbl
 	env SAVEDPATH="$$PATH" PATH="latex:$$PATH" \
 	Rscript -e "rmarkdown::render_site(output_format = 'bookdown::pdf_book', encoding = 'UTF-8')"
 	mv _book/booksprintrr.pdf .
@@ -40,8 +43,9 @@ fix-booksprintrr.tex: booksprintrr.tex
 	    -e 's|begin{center}\\large#1\\end{center}|begin{center}\\Large#1\\end{center}|g' \
 	    -e 's|\\addcontentsline{toc}{chapter}{.*}||g' \
 	    -e 's|author{\(.*\)Facilitatrice|author{\1\\\\\\medskip Facilitratice|g' \
-	    -e 's|^\\bibliography{refs.bib}$$||g' \
-	    -e 's|^\\renewcommand\\bibname{Bibliographie}$$|\\renewcommand\\bibname{Bibliographie}\\bibliography{refs.bib}|g' \
+	    -e 's|^.*usepackage.*natbib.*$$|\\usepackage[sectionbib]{natbib}|g' \
+	    -e 's|^\\bibliography{refs-fixed.bib}$$||g' \
+	    -e 's|^\\renewcommand\\bibname{Bibliographie}$$|\\renewcommand\\bibname{Bibliographie}\\bibliography{refs-fixed.bib}|g' \
 	    booksprintrr.tex
 	cp booksprintrr.tex booksprintrr.tex.bak
 	cat booksprintrr.tex.bak |   \

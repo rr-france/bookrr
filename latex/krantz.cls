@@ -1466,7 +1466,7 @@
 \newdimen\bibindent
 \setlength\bibindent{1.5em}
 \newenvironment{thebibliography}[1]
-     {\chapter*{\bibname}%
+     {\chapter*{\bibname}% Don't bother. This environment is overloaded by natbib...
       \@mkboth{\MakeUppercase\bibname}{\MakeUppercase\bibname}%
 %       \addcontentsline{toc}{chapter}{\bibname}
       \list{\@biblabel{\@arabic\c@enumiv}}%
