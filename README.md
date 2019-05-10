@@ -12,18 +12,11 @@ Facilitatrice : Elisa de Castro Guerra
 
 ## Citer l'ouvrage
 
-* Version imprimée :
+* Version imprimée : Desquilbet, Loïc, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot, et Nicolas P. Rougier. *Vers une recherche reproductible : Faire évoluer ses pratiques*. Bordeaux : Urfist de Bordeaux, 2019. ISBN : 979-10-97595-04-3 ; URL Sudoc (to do)
 
-Desquilbet, Loïc, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot, et Nicolas P. Rougier. *Vers une recherche reproductible : Faire évoluer ses pratiques*. Bordeaux : Urfist de Bordeaux, 2019. ISBN : 979-10-97595-04-3 ; URL Sudoc (to do)
+* Version numérique : Desquilbet, Loïc, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot, et Nicolas P. Rougier. *Vers une recherche reproductible : Faire évoluer ses pratiques*. Bordeaux : Urfist de Bordeaux, 2019. ISBN : 979-10-97595-05-0 ; URL HAL (to do)
 
-* Version numérique :
-
-Desquilbet, Loïc, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot, et Nicolas P. Rougier. *Vers une recherche reproductible : Faire évoluer ses pratiques*. Bordeaux : Urfist de Bordeaux, 2019. ISBN : 979-10-97595-05-0 ; URL HAL (to do)
-
-* Site web : 
-
-Le présent ouvrage se décline aussi sous forme d'un [site web](https://alegrand.github.io/bookrr/), intégrant des montées de version en attendant la prochaine édition du document. Si vous citez cette version évolutive dans des travaux, vous pouvez indiquer la date de consultation du site. 
-
+* Site web : Le présent ouvrage se décline aussi sous forme d'un [site web](https://alegrand.github.io/bookrr/), intégrant des montées de version en attendant la prochaine édition du document. Si vous citez cette version évolutive dans des travaux, vous pouvez indiquer la date de consultation du site. 
 
 ## Est-il possible de contribuer, de proposer de nouveaux contenus ? 
 Ce livre est ouvert aux nouveaux contenus : proposition d'ajout de chapitre, complément de chapitre, références complémentaires, mais aussi questions.
@@ -34,7 +27,7 @@ Vous pouvez soumettre vos propositions *via* :
 - email : urfist@u-bordeaux.fr
 
 Vous pouvez aussi vouloir jeter un œil à [nos notes sur la compilation
-du livre via bookdown](file:INSTALL.md)
+du livre via bookdown](INSTALL.md)
 
 ## Licence
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/fr/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/2.0/fr/88x31.png" /></a><br />Ce(tte) œuvre est mise à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/fr/">Licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 2.0 France</a>.
