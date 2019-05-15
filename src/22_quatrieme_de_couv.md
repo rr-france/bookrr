@@ -16,7 +16,7 @@ Dans ce livre rédigé lors d'un *book sprint*, étudiants, ingénieurs et cherc
 efficaces et à leur portée pour améliorer leurs pratiques de la recherche
 reproductible.
 
-Mots clés : standardisation ; crise de la réplication ; recherche reproductible ; transparence de la recherche ; science ouverte ; *open source* ; *open data* ; *data sharing* ; *book sprint* 
+Mots clés : recherche reproductible ; transparence de la recherche ; science ouverte ; crise de la réplication ; *open source* ; *open data* ; *data sharing* ; réutilisation des données ; standardisation ; *book sprint* 
 
 -----
 
@@ -35,7 +35,7 @@ the authors themselves.
 With this book written during a book sprint, students and engineers and researchers should find efficient and
 accessible ways leading them to improve their reproducible research practices.
 
-Key words : standardization ; replication crisis ; reproducible research ; research transparency ; open science ; open source ; open data ; data sharing ; book sprint 
+Key words : reproducible research ; research transparency ; open science ; replication crisis ; open source ; open data ; data sharing ; data reusability ; standardization ; book sprint 
 
 
 `r if(knitr::is_latex_output()){ '
