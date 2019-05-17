@@ -1,5 +1,5 @@
 [Versions HTML, PDF et
-EPUB](https://alegrand.github.io/bookrr/). [![Build
+EPUB](https://rr-france.github.io/bookrr/). [![Build
 Status](https://travis-ci.org/alegrand/bookrr.svg?branch=master)](https://travis-ci.org/alegrand/bookrr)
 
 # Vers une recherche reproductible : Faire évoluer ses pratiques
