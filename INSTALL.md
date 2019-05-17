@@ -76,8 +76,8 @@ Programmation et calcul
 ## Pour compiler le bookdown
 
 Normalement, ce livre est [automatiquement compilé et disponible
-ici](https://alegrand.github.io/bookrr/). [![Build
-Status](https://travis-ci.org/alegrand/bookrr.svg?branch=master)](https://travis-ci.org/alegrand/bookrr)
+ici](https://rr-france.github.io/bookrr/). [![Build
+Status](https://travis-ci.org/rr-france/bookrr.svg?branch=master)](https://travis-ci.org/rr-france/bookrr)
 
 Ce document a été rédigé à l'aide de [bookdown](https://bookdown.org).
 

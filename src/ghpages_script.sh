@@ -5,7 +5,7 @@
 # clone the repository to the book-output directory
 rm -rf book-output
 git clone -b gh-pages \
-  https://${GITHUB_PAT}@github.com/alegrand/bookrr.git \
+  https://${GITHUB_PAT}@github.com/rr-france/bookrr.git \
   book-output
 make all
 cd book-output

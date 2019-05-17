@@ -13,7 +13,7 @@ colorlinks: yes
 fontsize: 12pt
 description: "Livre d'introduction à la recherche reproductible rédigé lors d'un booksprint."
 url: 'https\://bookdown.org/alegrand/bookdown/'
-github-repo: alegrand/bookrr
+github-repo: rr-france/bookrr
 
 ---
 
