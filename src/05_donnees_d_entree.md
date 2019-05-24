@@ -50,7 +50,7 @@ d'échantillons) il devient tout à fait possible de perdre, non pas les donnée
 mais l'accès à ces données. Imaginez : vous avez utilisé un nommage particulier 
 des fichiers pour indiquer par exemple la nature de la donnée (*well done* !) 
 mais vous avez égaré le fichier expliquant les règles
-de nommages (*too bad*). Alors que vous possédez l'intégralité de vos données, 
+de nommage (*too bad*). Alors que vous possédez l'intégralité de vos données, 
 vous vous trouvez incapable les utiliser.
 
 ## Codages et unités
