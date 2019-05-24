@@ -84,7 +84,7 @@ RStudio ou Emacs).
 Si un logiciel de gestion de versions est installé sur l'ordinateur de
 l'utilisateur, il est prudent, voire impératif, de mettre en œuvre une
 synchronisation vers un dépôt distant, ce qui présente plusieurs avantages à la
-fois : sauvegarder les travaux, les partager, et collaborer. Ce dépot
+fois : sauvegarder les travaux, les partager, et collaborer. Ce dépôt
 distant peut être sur une plate-forme institutionnelle (par exemple le
 [GitLab de
 l'Inria](https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/gitlab)
