@@ -36,8 +36,8 @@ variées : par exemple, les erreurs sont bien renvoyées lorsque les arguments
 n'ont pas de sens. La difficulté dans l'écriture de ces tests est de prévoir les
 cas singuliers auxquels on ne pense pas forcément. Par exemple, dans le cas de
 l'addition que nous venons d'expliquer, nous avons proposé de vérifier que la
-somme de `a` et `-a` faisait bien 0, mais que se passe-t-il si `a = inf` ? (la
-réponse est que la somme est alors être non définie (`NaN`))
+somme de `a` et `-a` faisait bien 0, mais que se passe-t-il si `a = inf` ? La
+réponse est que la somme est alors être non définie (`NaN`).
 
 Une autre modalité pour tester un code est de le diffuser au sein de votre communauté. Vos collègues ne manqueront pas de vous faire des retours sur tel ou tel cas limite et il faudra dans un premier temps modifier votre code, puis ajouter ce test spéficique à votre collection de tests unitaires.
 
