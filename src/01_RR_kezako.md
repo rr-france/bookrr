@@ -36,7 +36,7 @@ Dans le meilleur des cas, cela peut conduire à la publication de résultats fra
 
 ## Définition(s) de "recherche reproductible" ?
 
-La majorité de la communauté scientifique perçoit ce que peut être une recherche reproductible dans son propre domaine, mais il s'avère difficile de fournir une définition satisfaisante pour toutes les disciplines, et ce, parce que la notion même de "résultat" dépend fortement du domaine de recherche. Pour les uns, il suffira de confirmer la significativité d'un effet, pour les autres, il s'agira d'obtenir le même résultat numérique au *bit* près. 
+La majorité de la communauté scientifique perçoit ce que peut être une recherche reproductible dans son propre domaine, mais il s'avère difficile de fournir une définition satisfaisante pour toutes les disciplines, et ce, parce que la notion même de "résultat" dépend fortement du domaine de recherche. Pour les uns, il suffira de confirmer la significativité d'un effet, pour les autres, il s'agira d'obtenir le même résultat numérique au bit près. 
 
 L'expression "recherche reproductible" apparaît pour la première fois en 1992, lors du congrès de la "*Society of Exploration Geophysics*" :
 
