@@ -30,7 +30,7 @@ En guise de préambule, débutons par une liste non exhaustive des cas où l'on 
   restructurée. Ce problème est connu sous le nom d'*URL decay* [@spinellisDecayFailuresWeb2003] ou de *Link
   Rot* [@wikipediaLinkRot2019].
 
-* **Cachez ce code que je ne saurais voir** : enfin, les auteurs du code peuvent tout simplement ne pas souhaiter le partager, par exemple parce qu'ils jugent qu'il n'est pas montrable en l'état (pas ou peu commentaires, structure horrible cachant des erreurs) ou encore pour conserver ce qu'ils considèrent comme un avantage compétitif.
+* **Cachez ce code que je ne saurais voir** : enfin, les auteurs du code peuvent tout simplement ne pas souhaiter le partager, par exemple parce qu'ils jugent qu'il n'est pas montrable en l'état (pas ou peu de commentaires, structure horrible cachant des erreurs) ou encore pour conserver ce qu'ils considèrent comme un avantage compétitif.
 
 Si cette question vous intéresse, vous pouvez lire les travaux de Collberg, Proebsting et Warren  : [@collbergRepeatabilityComputerSystems2016] [@collbergRepeatabilityBenefactionComputer2015]. 
 Les auteurs étudient les causes d'incapacité à réexécuter du code dans la communauté de recherche *Computer Systems*, pourtant très au fait des aspects logiciels. Vous y trouverez de nombreux témoignages (assez drôles si c'était sans conséquences !) issus d'une étude de terrain ; vous pourrez notamment lire les excuses les plus couramment utilisées pour justifier une incapacité à donner accès au code derrière une publication.
