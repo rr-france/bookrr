@@ -91,7 +91,7 @@ Deux questions se posent alors :
 - la première, déjà abordée ci-dessus, concerne la standardisation de la collecte des informations : 
 si cette collecte n’est pas standardisée, votre collègue et vous n’obtiendrez potentiellement 
 pas les mêmes valeurs des informations collectées lorsque vous évaluez pourtant les mêmes unités. 
-- la seconde concerne l'outils de partage de l'information : dans quel document, sur quel support, 
+- la seconde concerne l'outil de partage de l'information : dans quel document, sur quel support, 
 allez-vous collecter les données pour garantir que vous et votre collègue n’allez pas effacer ou affecter
 les informations collectées par l’autre ?
 
