@@ -2,7 +2,7 @@
 
 # Acquisition de l'information {#B-data-acquisition}
 
-Dans une démarche de recherche, la première étape est bien souvent l'aquisition
+Dans une démarche de recherche, la première étape est bien souvent l'acquisition
 d'information, que ce soit à partir de la collecte de nouvelles mesures expérimentales 
 ou à partir de données déjà publiées.
 
