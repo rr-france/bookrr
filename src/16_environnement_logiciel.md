@@ -48,7 +48,7 @@ soit au contraire, illisible car trop étendue (méthode n°2 ci-dessus).
 Entre ces deux extrêmes, il existe cependant un moyen d'identifier ces dépendances, notamment *via* des gestionnaires de paquets de langages interprétés tels que Packrat pour R [@lemoinePackratOuComment2017]. 
 
 Ainsi, permettre à un collègue de travailler avec un environnement logiciel similaire au sien s'avère une tâche ardue. 
-Fournir une description *ad hoc* ne peut être une opération manuelle tant cette tâche est fastidieuse. De plus, cette description ne résiterait pas à l'absence de standardisation entre systèmes d'exploitation. 
+Fournir une description *ad hoc* ne peut être une opération manuelle tant cette tâche est fastidieuse. De plus, cette description ne résisterait pas à l'absence de standardisation entre systèmes d'exploitation. 
 Il s'agit donc d'une solution informative sur son environnement, mais qui ne permet pas de 
 le reproduire en pratique.
 
