@@ -98,7 +98,7 @@ Il existe actuellement de nombreuses plates-formes permettant d'héberger
 "gratuitement" les données de la recherche. Nous avons évoqué dans le chapitre
 \@ref(C-versioning) des solutions pour le suivi de version (GitLab, GitHub,
 ...) qui permettent une forme d'archivage. La pérennité de cet archivage est
-meilleure qualité que celle des solutions précédentes mais n'est pas parfaite non
+de meilleure qualité que celle des solutions précédentes mais n'est pas parfaite non
 plus. D'autre part ces systèmes, initialement prévus pour héberger du code,
 gèrent assez mal les gros volumes de données et les données de type binaire
 (images bitmap, vidéogrammes, codes compilés...).
