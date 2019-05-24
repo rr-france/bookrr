@@ -3,8 +3,8 @@
 > "*Programs must be written for people to read, and only incidentally for machines to execute*."   
 > -- Harold Abelson
   
-Les chapitres précédents (et en particulier 
-"Programmation et calcul" (chapitre \@ref(B-code-aspect)) 
+Les chapitres précédents, et en particulier 
+"Programmation et calcul" (chapitre \@ref(B-code-aspect),
 ont souligné l'importance des questions de diffusion et de partage des codes informatiques. 
 Une étape préalable à cette démarche est de rendre son code facilement 
 compréhensible par un lecteur externe. 
