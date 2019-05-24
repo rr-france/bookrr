@@ -24,7 +24,7 @@ vous recevez vos données avec une certaine précision mais vous sauvegardez ces
 données avec une précision moindre. Vous serez alors confronté à une perte d'information
 irréversible : une partie de l'information s'est littéralement évaporée.
 De même, dans le cas de résultats produisant un déluge de données (comme par
-exemple le *Large Hydron Collider*) et devant l'impossibilité de tout
+exemple le *Large Hadron Collider*) et devant l'impossibilité de tout
 sauvegarder, il faut sélectionner les données à sauvegarder, sachant que
 les autres seront irrémédiablement perdues. Une mauvaise décision initiale peut
 se révéler catastrophique pour peu que vous ayez besoin de ces données à une étape ultérieure.
