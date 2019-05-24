@@ -86,7 +86,7 @@ Il existe d'ailleurs des outils permettant d'identifier et de capturer automatiq
 un tel environnement logiciel minimum pour pouvoir le partager avec d'autres : [CDE](http://www.pgbovine.net/cde.html) ou [ReproZip](https://vida-nyu.github.io/reprozip/). Pour en savoir plus sur Reprozip [@chirigatiReproZipComputationalReproducibility2016]. Ces approches automatiques sont efficaces et très pratiques mais peuvent passer à côté de
 certaines dépendances et ne permettent pas de variation. En effet, on obtient un
 environnement "binaire" figé sans sa recette de construction et il est donc très difficile de
-de changer une bibliothèque particulière ou de faire évoluer cet environnement.
+changer une bibliothèque particulière ou de faire évoluer cet environnement.
 
 ## Les systèmes de gestion de paquets
 
