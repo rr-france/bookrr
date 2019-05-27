@@ -112,7 +112,7 @@ narrativisée, les *personas* permettent :
 > aggraver la situation, tout doit être bouclé d'ici la fin de l'année
 > car le financement du projet arrive à échéance.
 > 
-> Récemment, j'ai aussi aussi reçu des nouvelles d'un ancien camarade
+> Récemment, j'ai aussi reçu des nouvelles d'un ancien camarade
 > de thèse dont un article important s'est fait rétracter. Certaines
 > conclusions de son papier ont été attaquées. Il n'a pas pu fournir
 > les données expérimentales qu'il avait utilisées : l'article date
