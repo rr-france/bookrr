@@ -48,7 +48,7 @@ passer à un stagiaire. Et là je me dis : "Mais pourquoi moi ?"
 
 ## Mon nouveau doctorant n'observe pas les mêmes effets que son prédécesseur !
 
-L'an passé, un de mes doctorants a soutenu brillament sa thèse après
+L'an passé, un de mes doctorants a soutenu brillamment sa thèse après
 avoir obtenu des résultats remarquables, que nous avons publiés dans 
 un excellent journal. Il a trouvé un post-doctorat à l'étranger sur un sujet
 sensiblement différent pour élargir le spectre de ses compétences.
