@@ -25,6 +25,7 @@ html: Rmd
 	rm -rf html;
 #	cd _book/; cp A-preambule.html index.html; cd ..
 	mv _book/ html
+	cd html; sed -i 's|<h3>References</h3>|<h3>Références</h3>|g' *.html
 
 .PHONY: pdf
 pdf: Rmd
