@@ -9,7 +9,7 @@ bookdown::gitbook:
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Compilé avec bookdown</a></li>
     download: ["pdf", "epub"]
-    edit: https://github.com/rr-france/bookrr/edit/master/%s
+    edit: https://github.com/rr-france/bookrr/edit/master/src/%s
     sharing:
       github: yes
       facebook: no
