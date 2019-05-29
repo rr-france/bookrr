@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Vers une recherche reproductible</title>
+  <meta name="description" content="Livre d’introduction à la recherche reproductible rédigé lors d’un booksprint." />
+  <meta name="generator" content="bookdown 0.11.1 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Vers une recherche reproductible" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="https://bookdown.org/alegrand/bookdown/" />
+  
+  <meta property="og:description" content="Livre d’introduction à la recherche reproductible rédigé lors d’un booksprint." />
+  <meta name="github-repo" content="rr-france/bookrr" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Vers une recherche reproductible" />
+  
+  <meta name="twitter:description" content="Livre d’introduction à la recherche reproductible rédigé lors d’un booksprint." />
+  
+
+<meta name="author" content="Loïc Desquilbet, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot, Nicolas Rougier   Facilitatrice : Elisa de Castro Guerra" />
+
+
+<meta name="date" content="2019-05-29" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+
+<link rel="next" href="A-preambule.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Vers une recherche reproducible</a></li>
+
+<li class="divider"></li>
+<li><a href="index.html#section"></a></li>
+<li class="chapter" data-level="" data-path="A-preambule.html"><a href="A-preambule.html"><i class="fa fa-check"></i>Préambule</a></li>
+<li class="part"><span><b>I Chroniques de la non reproductibilité</b></span></li>
+<li class="chapter" data-level="1" data-path="A-introduction.html"><a href="A-introduction.html"><i class="fa fa-check"></i><b>1</b> État des lieux</a><ul>
+<li class="chapter" data-level="1.1" data-path="A-introduction.html"><a href="A-introduction.html#la-crise-de-la-reproductibilite-de-la-science"><i class="fa fa-check"></i><b>1.1</b> La crise de la reproductibilité de la science</a></li>
+<li class="chapter" data-level="1.2" data-path="A-introduction.html"><a href="A-introduction.html#pourquoi-la-question-de-la-reproductibilite-est-elle-devenue-centrale-dans-les-debats-actuels"><i class="fa fa-check"></i><b>1.2</b> Pourquoi la question de la reproductibilité est-elle devenue centrale dans les débats actuels ?</a></li>
+<li class="chapter" data-level="1.3" data-path="A-introduction.html"><a href="A-introduction.html#definitions-de-recherche-reproductible"><i class="fa fa-check"></i><b>1.3</b> Définition(s) de “recherche reproductible” ?</a></li>
+<li class="chapter" data-level="1.4" data-path="A-introduction.html"><a href="A-introduction.html#ou-lon-parle-de-recherche-reproductible-de-maniere-pragmatique"><i class="fa fa-check"></i><b>1.4</b> Où l’on parle de recherche reproductible de manière pragmatique</a></li>
+<li class="chapter" data-level="1.5" data-path="A-introduction.html"><a href="A-introduction.html#echantillon-choisi-parmi-les-multiples-causes-dune-recherche-non-reproductible"><i class="fa fa-check"></i><b>1.5</b> Échantillon choisi parmi les multiples causes d’une recherche non reproductible</a></li>
+<li class="chapter" data-level="1.6" data-path="A-introduction.html"><a href="A-introduction.html#non-la-recherche-reproductible-nest-pas-un-sujet-reserve-aux-marathoniens-de-la-ligne-de-commande"><i class="fa fa-check"></i><b>1.6</b> Non, la recherche reproductible n’est pas un sujet réservé aux marathoniens de la ligne de commande</a></li>
+<li class="chapter" data-level="1.7" data-path="A-introduction.html"><a href="A-introduction.html#la-minute-theologie-negative-ce-que-vous-ne-trouverez-pas-dans-cet-ouvrage"><i class="fa fa-check"></i><b>1.7</b> La minute théologie négative : ce que vous ne trouverez pas dans cet ouvrage</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="A-personas.html"><a href="A-personas.html"><i class="fa fa-check"></i><b>2</b> Retours d’expériences</a><ul>
+<li class="chapter" data-level="2.1" data-path="A-personas.html"><a href="A-personas.html#charles-p.-doctorant-en-sociologie"><i class="fa fa-check"></i><b>2.1</b> <em>Charles P., doctorant en sociologie</em></a></li>
+<li class="chapter" data-level="2.2" data-path="A-personas.html"><a href="A-personas.html#jeanne-a.-jeune-methodologiste-en-biostatistique"><i class="fa fa-check"></i><b>2.2</b> <em>Jeanne A., jeune méthodologiste en biostatistique</em></a></li>
+<li class="chapter" data-level="2.3" data-path="A-personas.html"><a href="A-personas.html#cindy-d.-stagiaire-de-master-en-physique-des-materiaux"><i class="fa fa-check"></i><b>2.3</b> <em>Cindy D., stagiaire de Master en physique des matériaux</em></a></li>
+<li class="chapter" data-level="2.4" data-path="A-personas.html"><a href="A-personas.html#long-n.-enseignant-chercheur-en-biologie"><i class="fa fa-check"></i><b>2.4</b> <em>Long N., enseignant-chercheur en biologie</em></a></li>
+<li class="chapter" data-level="2.5" data-path="A-personas.html"><a href="A-personas.html#A-personas-ingenieur"><i class="fa fa-check"></i><b>2.5</b> <em>Mohammed B., ingénieur d’étude en calcul scientifique</em></a></li>
+<li class="chapter" data-level="2.6" data-path="A-personas.html"><a href="A-personas.html#christina-z.-directrice-de-recherche"><i class="fa fa-check"></i><b>2.6</b> <em>Christina Z., directrice de recherche</em></a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="A-cauchermars.html"><a href="A-cauchermars.html"><i class="fa fa-check"></i><b>3</b> Symptômes d’une recherche non reproductible</a><ul>
+<li class="chapter" data-level="3.1" data-path="A-cauchermars.html"><a href="A-cauchermars.html#jai-perdu-mes-donnees-ou-mon-code-de-programmation"><i class="fa fa-check"></i><b>3.1</b> J’ai perdu mes données ou mon code de programmation !</a></li>
+<li class="chapter" data-level="3.2" data-path="A-cauchermars.html"><a href="A-cauchermars.html#mes-resultats-ont-change"><i class="fa fa-check"></i><b>3.2</b> Mes résultats ont changé !</a></li>
+<li class="chapter" data-level="3.3" data-path="A-cauchermars.html"><a href="A-cauchermars.html#mon-code-ne-marche-plus"><i class="fa fa-check"></i><b>3.3</b> Mon code ne marche plus !</a></li>
+<li class="chapter" data-level="3.4" data-path="A-cauchermars.html"><a href="A-cauchermars.html#mon-nouveau-doctorant-nobserve-pas-les-memes-effets-que-son-predecesseur"><i class="fa fa-check"></i><b>3.4</b> Mon nouveau doctorant n’observe pas les mêmes effets que son prédécesseur !</a></li>
+<li class="chapter" data-level="3.5" data-path="A-cauchermars.html"><a href="A-cauchermars.html#mais-fallait-il-vraiment-ecrire-toute-cette-tartine"><i class="fa fa-check"></i><b>3.5</b> Mais fallait-il vraiment écrire toute cette tartine ?</a></li>
+</ul></li>
+<li class="part"><span><b>II Sources de non reproductibilité</b></span></li>
+<li class="chapter" data-level="4" data-path="B-data-acquisition.html"><a href="B-data-acquisition.html"><i class="fa fa-check"></i><b>4</b> Acquisition de l’information</a><ul>
+<li class="chapter" data-level="4.1" data-path="B-data-acquisition.html"><a href="B-data-acquisition.html#absence-de-standardisation-de-la-collecte-des-informations"><i class="fa fa-check"></i><b>4.1</b> Absence de standardisation de la collecte des informations</a></li>
+<li class="chapter" data-level="4.2" data-path="B-data-acquisition.html"><a href="B-data-acquisition.html#modification-des-donnees-apres-une-premiere-collecte"><i class="fa fa-check"></i><b>4.2</b> Modification des données après une première collecte</a></li>
+<li class="chapter" data-level="4.3" data-path="B-data-acquisition.html"><a href="B-data-acquisition.html#une-collecte-dinformations-non-repetable-ou-non-reproductible"><i class="fa fa-check"></i><b>4.3</b> Une collecte d’informations non répétable ou non reproductible</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="B-data-acquisition.html"><a href="B-data-acquisition.html#quelques-definitions-issues-du-vocabulaire-international-de-metrologie"><i class="fa fa-check"></i><b>4.3.1</b> Quelques définitions issues du <em>Vocabulaire International de Métrologie</em></a></li>
+<li class="chapter" data-level="4.3.2" data-path="B-data-acquisition.html"><a href="B-data-acquisition.html#impact-dune-absence-de-repetabilite-ou-de-reproductibilite-dans-la-collecte-des-informations"><i class="fa fa-check"></i><b>4.3.2</b> Impact d’une absence de répétabilité ou de reproductibilité dans la collecte des informations</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="B-data-acquisition.html"><a href="B-data-acquisition.html#collecte-des-donnees-a-plusieurs"><i class="fa fa-check"></i><b>4.4</b> Collecte des données à plusieurs</a></li>
+<li class="chapter" data-level="4.5" data-path="B-data-acquisition.html"><a href="B-data-acquisition.html#collecte-des-donnees-de-la-litterature"><i class="fa fa-check"></i><b>4.5</b> Collecte des données de la littérature</a></li>
+<li class="chapter" data-level="4.6" data-path="B-data-acquisition.html"><a href="B-data-acquisition.html#que-faire"><i class="fa fa-check"></i><b>4.6</b> Que faire ?</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="B-data-input.html"><a href="B-data-input.html"><i class="fa fa-check"></i><b>5</b> Gestion des données</a><ul>
+<li class="chapter" data-level="5.1" data-path="B-data-input.html"><a href="B-data-input.html#integrite-et-curation-des-donnees"><i class="fa fa-check"></i><b>5.1</b> Intégrité et curation des données</a></li>
+<li class="chapter" data-level="5.2" data-path="B-data-input.html"><a href="B-data-input.html#tracabilite-de-la-source-des-donnees"><i class="fa fa-check"></i><b>5.2</b> Traçabilité de la source des données</a></li>
+<li class="chapter" data-level="5.3" data-path="B-data-input.html"><a href="B-data-input.html#indexation-des-donnees"><i class="fa fa-check"></i><b>5.3</b> Indexation des données</a></li>
+<li class="chapter" data-level="5.4" data-path="B-data-input.html"><a href="B-data-input.html#codages-et-unites"><i class="fa fa-check"></i><b>5.4</b> Codages et unités</a></li>
+<li class="chapter" data-level="5.5" data-path="B-data-input.html"><a href="B-data-input.html#obsolescence-des-donnees"><i class="fa fa-check"></i><b>5.5</b> Obsolescence des données</a></li>
+<li class="chapter" data-level="5.6" data-path="B-data-input.html"><a href="B-data-input.html#que-faire-1"><i class="fa fa-check"></i><b>5.6</b> Que faire ?</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="B-code-aspect.html"><a href="B-code-aspect.html"><i class="fa fa-check"></i><b>6</b> Programmation et calcul</a><ul>
+<li class="chapter" data-level="6.1" data-path="B-code-aspect.html"><a href="B-code-aspect.html#le-code-nest-pas-disponible"><i class="fa fa-check"></i><b>6.1</b> Le code n’est pas disponible</a></li>
+<li class="chapter" data-level="6.2" data-path="B-code-aspect.html"><a href="B-code-aspect.html#comment-lance-t-on-ce-code-allo-houston"><i class="fa fa-check"></i><b>6.2</b> Comment lance-t-on ce code ? (“Allô Houston ?”)</a></li>
+<li class="chapter" data-level="6.3" data-path="B-code-aspect.html"><a href="B-code-aspect.html#comment-fonctionne-ce-code-lost-in-translation"><i class="fa fa-check"></i><b>6.3</b> Comment fonctionne ce code ? <em>Lost in translation</em></a></li>
+<li class="chapter" data-level="6.4" data-path="B-code-aspect.html"><a href="B-code-aspect.html#quelle-version-du-code"><i class="fa fa-check"></i><b>6.4</b> Quelle version du code ?</a></li>
+<li class="chapter" data-level="6.5" data-path="B-code-aspect.html"><a href="B-code-aspect.html#lenvironnement-de-calcul-ou-le-paradigme-des-poupees-russes-diaboliques"><i class="fa fa-check"></i><b>6.5</b> L’environnement de calcul ou le paradigme des poupées russes diaboliques</a></li>
+<li class="chapter" data-level="6.6" data-path="B-code-aspect.html"><a href="B-code-aspect.html#le-chaos-numerique"><i class="fa fa-check"></i><b>6.6</b> Le chaos numérique</a></li>
+<li class="chapter" data-level="6.7" data-path="B-code-aspect.html"><a href="B-code-aspect.html#que-faire-2"><i class="fa fa-check"></i><b>6.7</b> Que faire ?</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="B-data-output.html"><a href="B-data-output.html"><i class="fa fa-check"></i><b>7</b> Communication des résultats</a><ul>
+<li class="chapter" data-level="7.1" data-path="B-data-output.html"><a href="B-data-output.html#une-mauvaise-selection-des-resultats"><i class="fa fa-check"></i><b>7.1</b> Une mauvaise sélection des résultats</a></li>
+<li class="chapter" data-level="7.2" data-path="B-data-output.html"><a href="B-data-output.html#transformation-des-resultats"><i class="fa fa-check"></i><b>7.2</b> Transformation des résultats</a></li>
+<li class="chapter" data-level="7.3" data-path="B-data-output.html"><a href="B-data-output.html#presentation-des-resultats"><i class="fa fa-check"></i><b>7.3</b> Présentation des résultats</a></li>
+<li class="chapter" data-level="7.4" data-path="B-data-output.html"><a href="B-data-output.html#que-faire-3"><i class="fa fa-check"></i><b>7.4</b> Que faire ?</a></li>
+</ul></li>
+<li class="part"><span><b>III Solutions de la recherche reproductible</b></span></li>
+<li class="chapter" data-level="8" data-path="C-intro.html"><a href="C-intro.html"><i class="fa fa-check"></i><b>8</b> Le temps des changements ?</a><ul>
+<li class="chapter" data-level="8.1" data-path="C-intro.html"><a href="C-intro.html#quand-mettre-en-uvre-les-bonnes-pratiques"><i class="fa fa-check"></i><b>8.1</b> Quand mettre en œuvre les bonnes pratiques ?</a></li>
+<li class="chapter" data-level="8.2" data-path="C-intro.html"><a href="C-intro.html#concretement-que-changer-et-comment-sy-prendre"><i class="fa fa-check"></i><b>8.2</b> Concrètement, que changer et comment s’y prendre ?</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="C-data-acquisition.html"><a href="C-data-acquisition.html"><i class="fa fa-check"></i><b>9</b> Documenter ses pratiques</a><ul>
+<li class="chapter" data-level="9.1" data-path="C-data-acquisition.html"><a href="C-data-acquisition.html#rediger-un-protocole-de-collecte-des-informations"><i class="fa fa-check"></i><b>9.1</b> Rédiger un protocole de collecte des informations</a></li>
+<li class="chapter" data-level="9.2" data-path="C-data-acquisition.html"><a href="C-data-acquisition.html#partager-le-protocole-de-collecte-des-donnees"><i class="fa fa-check"></i><b>9.2</b> Partager le protocole de collecte des données</a></li>
+<li class="chapter" data-level="9.3" data-path="C-data-acquisition.html"><a href="C-data-acquisition.html#tenir-un-cahier-de-laboratoire"><i class="fa fa-check"></i><b>9.3</b> Tenir un cahier de laboratoire</a></li>
+<li class="chapter" data-level="9.4" data-path="C-data-acquisition.html"><a href="C-data-acquisition.html#collecter-les-donnees-de-facon-repetable-et-reproductible"><i class="fa fa-check"></i><b>9.4</b> Collecter les données de façon répétable ET reproductible</a></li>
+<li class="chapter" data-level="9.5" data-path="C-data-acquisition.html"><a href="C-data-acquisition.html#pour-en-savoir-plus"><i class="fa fa-check"></i><b>9.5</b> Pour en savoir plus</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="C-data-format.html"><a href="C-data-format.html"><i class="fa fa-check"></i><b>10</b> Formater et structurer l’information</a><ul>
+<li class="chapter" data-level="10.1" data-path="C-data-format.html"><a href="C-data-format.html#comment-structurer-mes-informations"><i class="fa fa-check"></i><b>10.1</b> Comment structurer mes informations ?</a></li>
+<li class="chapter" data-level="10.2" data-path="C-data-format.html"><a href="C-data-format.html#quel-format-choisir-pour-enregistrer-et-stocker-des-informations"><i class="fa fa-check"></i><b>10.2</b> Quel format choisir pour enregistrer et stocker des informations ?</a></li>
+<li class="chapter" data-level="10.3" data-path="C-data-format.html"><a href="C-data-format.html#la-presentation-des-resultats-numeriques"><i class="fa fa-check"></i><b>10.3</b> La présentation des résultats numériques</a><ul>
+<li class="chapter" data-level="10.3.1" data-path="C-data-format.html"><a href="C-data-format.html#nombre-de-chiffres-significatifs"><i class="fa fa-check"></i><b>10.3.1</b> Nombre de chiffres significatifs</a></li>
+<li class="chapter" data-level="10.3.2" data-path="C-data-format.html"><a href="C-data-format.html#incertitude"><i class="fa fa-check"></i><b>10.3.2</b> Incertitude</a></li>
+</ul></li>
+<li class="chapter" data-level="10.4" data-path="C-data-format.html"><a href="C-data-format.html#pour-en-savoir-plus-1"><i class="fa fa-check"></i><b>10.4</b> Pour en savoir plus</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="C-data-share.html"><a href="C-data-share.html"><i class="fa fa-check"></i><b>11</b> Partager ses données, codes et résultats</a><ul>
+<li class="chapter" data-level="11.1" data-path="C-data-share.html"><a href="C-data-share.html#compendium-de-recherche"><i class="fa fa-check"></i><b>11.1</b> <em>Compendium</em> de recherche</a></li>
+<li class="chapter" data-level="11.2" data-path="C-data-share.html"><a href="C-data-share.html#modalites-de-partage"><i class="fa fa-check"></i><b>11.2</b> Modalités de partage</a><ul>
+<li class="chapter" data-level="11.2.1" data-path="C-data-share.html"><a href="C-data-share.html#sur-demande"><i class="fa fa-check"></i><b>11.2.1</b> Sur demande</a></li>
+<li class="chapter" data-level="11.2.2" data-path="C-data-share.html"><a href="C-data-share.html#page-web-personnelle"><i class="fa fa-check"></i><b>11.2.2</b> Page web personnelle</a></li>
+<li class="chapter" data-level="11.2.3" data-path="C-data-share.html"><a href="C-data-share.html#hebergement-par-un-tiers"><i class="fa fa-check"></i><b>11.2.3</b> Hébergement par un tiers</a></li>
+<li class="chapter" data-level="11.2.4" data-path="C-data-share.html"><a href="C-data-share.html#archives-perennes"><i class="fa fa-check"></i><b>11.2.4</b> Archives pérennes</a></li>
+</ul></li>
+<li class="chapter" data-level="11.3" data-path="C-data-share.html"><a href="C-data-share.html#pour-en-savoir-plus-2"><i class="fa fa-check"></i><b>11.3</b> Pour en savoir plus</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="C-versioning.html"><a href="C-versioning.html"><i class="fa fa-check"></i><b>12</b> Versionner, versionner, versionner</a><ul>
+<li class="chapter" data-level="12.1" data-path="C-versioning.html"><a href="C-versioning.html#versionnage-par-nommage-de-fichiers"><i class="fa fa-check"></i><b>12.1</b> Versionnage par nommage de fichiers</a></li>
+<li class="chapter" data-level="12.2" data-path="C-versioning.html"><a href="C-versioning.html#outils-de-versionnage-differentiel"><i class="fa fa-check"></i><b>12.2</b> Outils de versionnage différentiel</a></li>
+<li class="chapter" data-level="12.3" data-path="C-versioning.html"><a href="C-versioning.html#pour-en-savoir-plus-3"><i class="fa fa-check"></i><b>12.3</b> Pour en savoir plus</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="C-code-learn.html"><a href="C-code-learn.html"><i class="fa fa-check"></i><b>13</b> Apprendre à programmer</a><ul>
+<li class="chapter" data-level="13.1" data-path="C-code-learn.html"><a href="C-code-learn.html#limiter-le-recours-aux-interfaces-graphiques"><i class="fa fa-check"></i><b>13.1</b> Limiter le recours aux interfaces graphiques</a></li>
+<li class="chapter" data-level="13.2" data-path="C-code-learn.html"><a href="C-code-learn.html#de-linteret-de-la-programmation"><i class="fa fa-check"></i><b>13.2</b> De l’intérêt de la programmation</a></li>
+<li class="chapter" data-level="13.3" data-path="C-code-learn.html"><a href="C-code-learn.html#le-choix-des-armes"><i class="fa fa-check"></i><b>13.3</b> Le choix des armes</a></li>
+<li class="chapter" data-level="13.4" data-path="C-code-learn.html"><a href="C-code-learn.html#pour-en-savoir-plus-4"><i class="fa fa-check"></i><b>13.4</b> Pour en savoir plus</a><ul>
+<li class="chapter" data-level="13.4.1" data-path="C-code-learn.html"><a href="C-code-learn.html#moocs"><i class="fa fa-check"></i><b>13.4.1</b> MOOCs</a></li>
+<li class="chapter" data-level="13.4.2" data-path="C-code-learn.html"><a href="C-code-learn.html#tutoriels"><i class="fa fa-check"></i><b>13.4.2</b> Tutoriels</a></li>
+<li class="chapter" data-level="13.4.3" data-path="C-code-learn.html"><a href="C-code-learn.html#livres"><i class="fa fa-check"></i><b>13.4.3</b> Livres</a></li>
+<li class="chapter" data-level="13.4.4" data-path="C-code-learn.html"><a href="C-code-learn.html#ateliers-en-ligne-software-carpentry"><i class="fa fa-check"></i><b>13.4.4</b> Ateliers en ligne “Software Carpentry”</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="C-code-good.html"><a href="C-code-good.html"><i class="fa fa-check"></i><b>14</b> Rendre son code compréhensible</a><ul>
+<li class="chapter" data-level="14.1" data-path="C-code-good.html"><a href="C-code-good.html#nommer-ses-variables-et-ses-fonctions-de-maniere-informative"><i class="fa fa-check"></i><b>14.1</b> Nommer ses variables et ses fonctions de manière informative</a></li>
+<li class="chapter" data-level="14.2" data-path="C-code-good.html"><a href="C-code-good.html#etre-explicite"><i class="fa fa-check"></i><b>14.2</b> Etre explicite</a></li>
+<li class="chapter" data-level="14.3" data-path="C-code-good.html"><a href="C-code-good.html#commenter-son-code"><i class="fa fa-check"></i><b>14.3</b> Commenter son code</a></li>
+<li class="chapter" data-level="14.4" data-path="C-code-good.html"><a href="C-code-good.html#documenter-son-code"><i class="fa fa-check"></i><b>14.4</b> Documenter son code</a></li>
+<li class="chapter" data-level="14.5" data-path="C-code-good.html"><a href="C-code-good.html#utiliser-des-document-computationnels-notebooks"><i class="fa fa-check"></i><b>14.5</b> Utiliser des document computationnels (<em>notebooks</em>)</a></li>
+<li class="chapter" data-level="14.6" data-path="C-code-good.html"><a href="C-code-good.html#restructurer-et-automatiser-lexecution-du-code-avec-un-workflow"><i class="fa fa-check"></i><b>14.6</b> Restructurer et automatiser l’exécution du code avec un <em>workflow</em></a></li>
+<li class="chapter" data-level="14.7" data-path="C-code-good.html"><a href="C-code-good.html#pour-en-savoir-plus-5"><i class="fa fa-check"></i><b>14.7</b> Pour en savoir plus</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="C-code-bugs.html"><a href="C-code-bugs.html"><i class="fa fa-check"></i><b>15</b> Exactitude des codes</a><ul>
+<li class="chapter" data-level="15.1" data-path="C-code-bugs.html"><a href="C-code-bugs.html#programmation-en-binome"><i class="fa fa-check"></i><b>15.1</b> Programmation en binôme</a></li>
+<li class="chapter" data-level="15.2" data-path="C-code-bugs.html"><a href="C-code-bugs.html#tester-votre-code"><i class="fa fa-check"></i><b>15.2</b> Tester votre code</a></li>
+<li class="chapter" data-level="15.3" data-path="C-code-bugs.html"><a href="C-code-bugs.html#integration-continue"><i class="fa fa-check"></i><b>15.3</b> Intégration continue</a></li>
+<li class="chapter" data-level="15.4" data-path="C-code-bugs.html"><a href="C-code-bugs.html#pour-en-savoir-plus-6"><i class="fa fa-check"></i><b>15.4</b> Pour en savoir plus</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="C-code-env.html"><a href="C-code-env.html"><i class="fa fa-check"></i><b>16</b> Environnement logiciel</a><ul>
+<li class="chapter" data-level="16.1" data-path="C-code-env.html"><a href="C-code-env.html#identifier-les-dependances-dessine-moi-une-dependance"><i class="fa fa-check"></i><b>16.1</b> Identifier les dépendances : dessine-moi une dépendance</a></li>
+<li class="chapter" data-level="16.2" data-path="C-code-env.html"><a href="C-code-env.html#preserver-le-desordre-aka-preserve-the-mess"><i class="fa fa-check"></i><b>16.2</b> Préserver le désordre (<em>aka “Preserve the mess”</em>)</a><ul>
+<li class="chapter" data-level="16.2.1" data-path="C-code-env.html"><a href="C-code-env.html#isoler-une-machine"><i class="fa fa-check"></i><b>16.2.1</b> Isoler une machine</a></li>
+<li class="chapter" data-level="16.2.2" data-path="C-code-env.html"><a href="C-code-env.html#isoler-un-environnement-a-laide-dun-conteneur"><i class="fa fa-check"></i><b>16.2.2</b> Isoler un environnement à l’aide d’un conteneur</a></li>
+</ul></li>
+<li class="chapter" data-level="16.3" data-path="C-code-env.html"><a href="C-code-env.html#les-systemes-de-gestion-de-paquets"><i class="fa fa-check"></i><b>16.3</b> Les systèmes de gestion de paquets</a></li>
+<li class="chapter" data-level="16.4" data-path="C-code-env.html"><a href="C-code-env.html#pour-en-savoir-plus-7"><i class="fa fa-check"></i><b>16.4</b> Pour en savoir plus</a></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="C-licences.html"><a href="C-licences.html"><i class="fa fa-check"></i><b>17</b> Sortez couverts !</a><ul>
+<li class="chapter" data-level="17.1" data-path="C-licences.html"><a href="C-licences.html#licence"><i class="fa fa-check"></i><b>17.1</b> Licence</a></li>
+<li class="chapter" data-level="17.2" data-path="C-licences.html"><a href="C-licences.html#confidentialite-et-protection-des-donnees-respect-de-la-vie-privee"><i class="fa fa-check"></i><b>17.2</b> Confidentialité et protection des données, respect de la vie privée</a></li>
+<li class="chapter" data-level="17.3" data-path="C-licences.html"><a href="C-licences.html#pour-en-savoir-plus-8"><i class="fa fa-check"></i><b>17.3</b> Pour en savoir plus</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="bibliographie.html"><a href="bibliographie.html"><i class="fa fa-check"></i>Bibliographie</a></li>
+<li class="part"><span><b>IV Annexes</b></span></li>
+<li class="chapter" data-level="18" data-path="annexes.html"><a href="annexes.html"><i class="fa fa-check"></i><b>18</b> Annexes</a><ul>
+<li class="chapter" data-level="18.1" data-path="annexes.html"><a href="annexes.html#modalites-de-conception-de-louvrage"><i class="fa fa-check"></i><b>18.1</b> Modalités de conception de l’ouvrage</a></li>
+<li class="chapter" data-level="18.2" data-path="annexes.html"><a href="annexes.html#objectif"><i class="fa fa-check"></i><b>18.2</b> Objectif</a></li>
+<li class="chapter" data-level="18.3" data-path="annexes.html"><a href="annexes.html#que-peut-apporter-un-book-sprint-a-des-chercheurs.euses"><i class="fa fa-check"></i><b>18.3</b> Que peut apporter un book sprint à des chercheurs.euses ?</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="portraits.html"><a href="portraits.html"><i class="fa fa-check"></i>Portraits</a><ul>
+<li class="chapter" data-level="" data-path="portraits.html"><a href="portraits.html#auteurs"><i class="fa fa-check"></i>Auteurs</a><ul>
+<li class="chapter" data-level="" data-path="portraits.html"><a href="portraits.html#loic-desquilbet"><i class="fa fa-check"></i>Loïc Desquilbet</a></li>
+<li class="chapter" data-level="" data-path="portraits.html"><a href="portraits.html#boris-hejblum"><i class="fa fa-check"></i>Boris Hejblum</a></li>
+<li class="chapter" data-level="" data-path="portraits.html"><a href="portraits.html#arnaud-legrand"><i class="fa fa-check"></i>Arnaud Legrand</a></li>
+<li class="chapter" data-level="" data-path="portraits.html"><a href="portraits.html#pascal-pernot"><i class="fa fa-check"></i>Pascal Pernot</a></li>
+<li class="chapter" data-level="" data-path="portraits.html"><a href="portraits.html#nicolas-rougier"><i class="fa fa-check"></i>Nicolas Rougier</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="portraits.html"><a href="portraits.html#facilitatrice"><i class="fa fa-check"></i>Facilitatrice</a><ul>
+<li class="chapter" data-level="" data-path="portraits.html"><a href="portraits.html#elisa-de-castro-guerra-activdesign"><i class="fa fa-check"></i>Elisa de Castro Guerra, ActivDesign</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="portraits.html"><a href="portraits.html#coordinatrice-du-projet"><i class="fa fa-check"></i>Coordinatrice du projet</a><ul>
+<li class="chapter" data-level="" data-path="portraits.html"><a href="portraits.html#sabrina-granger"><i class="fa fa-check"></i>Sabrina Granger</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="portraits.html"><a href="portraits.html#contributeurs-de-la-1re-edition"><i class="fa fa-check"></i>Contributeurs de la 1re édition</a></li>
+<li class="chapter" data-level="" data-path="portraits.html"><a href="portraits.html#contribuer"><i class="fa fa-check"></i>Contribuer</a></li>
+<li class="chapter" data-level="" data-path="portraits.html"><a href="portraits.html#remerciements"><i class="fa fa-check"></i>Remerciements</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="quatrieme-de-couverture.html"><a href="quatrieme-de-couverture.html"><i class="fa fa-check"></i>Quatrième de couverture</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Compilé avec bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Vers une recherche reproductible</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="header">
+<h1 class="title">Vers une recherche reproductible</h1>
+<h2 class="subtitle"><em>Faire évoluer ses pratiques</em></h2>
+<p class="author"><em>Loïc Desquilbet, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot, Nicolas Rougier <br> Facilitatrice : Elisa de Castro Guerra</em></p>
+<p class="date"><em>2019-05-29</em></p>
+</div>
+<div id="section" class="section level1 unnumbered">
+<h1></h1>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+<a href="A-preambule.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": false,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rr-france/bookrr/edit/master/index.Rmd",
+"text": "Editer"
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["booksprintrr.pdf", "booksprintrr.epub"],
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

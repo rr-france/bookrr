@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapitre 6 Programmation et calcul | Vers une recherche reproductible</title>
+  <meta name="description" content="Livre d’introduction à la recherche reproductible rédigé lors d’un booksprint." />
+  <meta name="generator" content="bookdown 0.11.1 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapitre 6 Programmation et calcul | Vers une recherche reproductible" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="https://bookdown.org/alegrand/bookdown/" />
+  
+  <meta property="og:description" content="Livre d’introduction à la recherche reproductible rédigé lors d’un booksprint." />
+  <meta name="github-repo" content="rr-france/bookrr" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapitre 6 Programmation et calcul | Vers une recherche reproductible" />
+  
+  <meta name="twitter:description" content="Livre d’introduction à la recherche reproductible rédigé lors d’un booksprint." />
+  
+
+<meta name="author" content="Loïc Desquilbet, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot, Nicolas Rougier   Facilitatrice : Elisa de Castro Guerra" />
+
+
+<meta name="date" content="2019-05-29" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="B-data-input.html">
+<link rel="next" href="B-data-output.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Vers une recherche reproducible</a></li>
+
+<li class="divider"></li>
+<li><a href="index.html#section"></a></li>
+<li class="chapter" data-level="" data-path="A-preambule.html"><a href="A-preambule.html"><i class="fa fa-check"></i>Préambule</a></li>
+<li class="part"><span><b>I Chroniques de la non reproductibilité</b></span></li>
+<li class="chapter" data-level="1" data-path="A-introduction.html"><a href="A-introduction.html"><i class="fa fa-check"></i><b>1</b> État des lieux</a><ul>
+<li class="chapter" data-level="1.1" data-path="A-introduction.html"><a href="A-introduction.html#la-crise-de-la-reproductibilite-de-la-science"><i class="fa fa-check"></i><b>1.1</b> La crise de la reproductibilité de la science</a></li>
+<li class="chapter" data-level="1.2" data-path="A-introduction.html"><a href="A-introduction.html#pourquoi-la-question-de-la-reproductibilite-est-elle-devenue-centrale-dans-les-debats-actuels"><i class="fa fa-check"></i><b>1.2</b> Pourquoi la question de la reproductibilité est-elle devenue centrale dans les débats actuels ?</a></li>
+<li class="chapter" data-level="1.3" data-path="A-introduction.html"><a href="A-introduction.html#definitions-de-recherche-reproductible"><i class="fa fa-check"></i><b>1.3</b> Définition(s) de “recherche reproductible” ?</a></li>
+<li class="chapter" data-level="1.4" data-path="A-introduction.html"><a href="A-introduction.html#ou-lon-parle-de-recherche-reproductible-de-maniere-pragmatique"><i class="fa fa-check"></i><b>1.4</b> Où l’on parle de recherche reproductible de manière pragmatique</a></li>
+<li class="chapter" data-level="1.5" data-path="A-introduction.html"><a href="A-introduction.html#echantillon-choisi-parmi-les-multiples-causes-dune-recherche-non-reproductible"><i class="fa fa-check"></i><b>1.5</b> Échantillon choisi parmi les multiples causes d’une recherche non reproductible</a></li>
+<li class="chapter" data-level="1.6" data-path="A-introduction.html"><a href="A-introduction.html#non-la-recherche-reproductible-nest-pas-un-sujet-reserve-aux-marathoniens-de-la-ligne-de-commande"><i class="fa fa-check"></i><b>1.6</b> Non, la recherche reproductible n’est pas un sujet réservé aux marathoniens de la ligne de commande</a></li>
+<li class="chapter" data-level="1.7" data-path="A-introduction.html"><a href="A-introduction.html#la-minute-theologie-negative-ce-que-vous-ne-trouverez-pas-dans-cet-ouvrage"><i class="fa fa-check"></i><b>1.7</b> La minute théologie négative : ce que vous ne trouverez pas dans cet ouvrage</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="A-personas.html"><a href="A-personas.html"><i class="fa fa-check"></i><b>2</b> Retours d’expériences</a><ul>
+<li class="chapter" data-level="2.1" data-path="A-personas.html"><a href="A-personas.html#charles-p.-doctorant-en-sociologie"><i class="fa fa-check"></i><b>2.1</b> <em>Charles P., doctorant en sociologie</em></a></li>
+<li class="chapter" data-level="2.2" data-path="A-personas.html"><a href="A-personas.html#jeanne-a.-jeune-methodologiste-en-biostatistique"><i class="fa fa-check"></i><b>2.2</b> <em>Jeanne A., jeune méthodologiste en biostatistique</em></a></li>
+<li class="chapter" data-level="2.3" data-path="A-personas.html"><a href="A-personas.html#cindy-d.-stagiaire-de-master-en-physique-des-materiaux"><i class="fa fa-check"></i><b>2.3</b> <em>Cindy D., stagiaire de Master en physique des matériaux</em></a></li>
+<li class="chapter" data-level="2.4" data-path="A-personas.html"><a href="A-personas.html#long-n.-enseignant-chercheur-en-biologie"><i class="fa fa-check"></i><b>2.4</b> <em>Long N., enseignant-chercheur en biologie</em></a></li>
+<li class="chapter" data-level="2.5" data-path="A-personas.html"><a href="A-personas.html#A-personas-ingenieur"><i class="fa fa-check"></i><b>2.5</b> <em>Mohammed B., ingénieur d’étude en calcul scientifique</em></a></li>
+<li class="chapter" data-level="2.6" data-path="A-personas.html"><a href="A-personas.html#christina-z.-directrice-de-recherche"><i class="fa fa-check"></i><b>2.6</b> <em>Christina Z., directrice de recherche</em></a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="A-cauchermars.html"><a href="A-cauchermars.html"><i class="fa fa-check"></i><b>3</b> Symptômes d’une recherche non reproductible</a><ul>
+<li class="chapter" data-level="3.1" data-path="A-cauchermars.html"><a href="A-cauchermars.html#jai-perdu-mes-donnees-ou-mon-code-de-programmation"><i class="fa fa-check"></i><b>3.1</b> J’ai perdu mes données ou mon code de programmation !</a></li>
+<li class="chapter" data-level="3.2" data-path="A-cauchermars.html"><a href="A-cauchermars.html#mes-resultats-ont-change"><i class="fa fa-check"></i><b>3.2</b> Mes résultats ont changé !</a></li>
+<li class="chapter" data-level="3.3" data-path="A-cauchermars.html"><a href="A-cauchermars.html#mon-code-ne-marche-plus"><i class="fa fa-check"></i><b>3.3</b> Mon code ne marche plus !</a></li>
+<li class="chapter" data-level="3.4" data-path="A-cauchermars.html"><a href="A-cauchermars.html#mon-nouveau-doctorant-nobserve-pas-les-memes-effets-que-son-predecesseur"><i class="fa fa-check"></i><b>3.4</b> Mon nouveau doctorant n’observe pas les mêmes effets que son prédécesseur !</a></li>
+<li class="chapter" data-level="3.5" data-path="A-cauchermars.html"><a href="A-cauchermars.html#mais-fallait-il-vraiment-ecrire-toute-cette-tartine"><i class="fa fa-check"></i><b>3.5</b> Mais fallait-il vraiment écrire toute cette tartine ?</a></li>
+</ul></li>
+<li class="part"><span><b>II Sources de non reproductibilité</b></span></li>
+<li class="chapter" data-level="4" data-path="B-data-acquisition.html"><a href="B-data-acquisition.html"><i class="fa fa-check"></i><b>4</b> Acquisition de l’information</a><ul>
+<li class="chapter" data-level="4.1" data-path="B-data-acquisition.html"><a href="B-data-acquisition.html#absence-de-standardisation-de-la-collecte-des-informations"><i class="fa fa-check"></i><b>4.1</b> Absence de standardisation de la collecte des informations</a></li>
+<li class="chapter" data-level="4.2" data-path="B-data-acquisition.html"><a href="B-data-acquisition.html#modification-des-donnees-apres-une-premiere-collecte"><i class="fa fa-check"></i><b>4.2</b> Modification des données après une première collecte</a></li>
+<li class="chapter" data-level="4.3" data-path="B-data-acquisition.html"><a href="B-data-acquisition.html#une-collecte-dinformations-non-repetable-ou-non-reproductible"><i class="fa fa-check"></i><b>4.3</b> Une collecte d’informations non répétable ou non reproductible</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="B-data-acquisition.html"><a href="B-data-acquisition.html#quelques-definitions-issues-du-vocabulaire-international-de-metrologie"><i class="fa fa-check"></i><b>4.3.1</b> Quelques définitions issues du <em>Vocabulaire International de Métrologie</em></a></li>
+<li class="chapter" data-level="4.3.2" data-path="B-data-acquisition.html"><a href="B-data-acquisition.html#impact-dune-absence-de-repetabilite-ou-de-reproductibilite-dans-la-collecte-des-informations"><i class="fa fa-check"></i><b>4.3.2</b> Impact d’une absence de répétabilité ou de reproductibilité dans la collecte des informations</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="B-data-acquisition.html"><a href="B-data-acquisition.html#collecte-des-donnees-a-plusieurs"><i class="fa fa-check"></i><b>4.4</b> Collecte des données à plusieurs</a></li>
+<li class="chapter" data-level="4.5" data-path="B-data-acquisition.html"><a href="B-data-acquisition.html#collecte-des-donnees-de-la-litterature"><i class="fa fa-check"></i><b>4.5</b> Collecte des données de la littérature</a></li>
+<li class="chapter" data-level="4.6" data-path="B-data-acquisition.html"><a href="B-data-acquisition.html#que-faire"><i class="fa fa-check"></i><b>4.6</b> Que faire ?</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="B-data-input.html"><a href="B-data-input.html"><i class="fa fa-check"></i><b>5</b> Gestion des données</a><ul>
+<li class="chapter" data-level="5.1" data-path="B-data-input.html"><a href="B-data-input.html#integrite-et-curation-des-donnees"><i class="fa fa-check"></i><b>5.1</b> Intégrité et curation des données</a></li>
+<li class="chapter" data-level="5.2" data-path="B-data-input.html"><a href="B-data-input.html#tracabilite-de-la-source-des-donnees"><i class="fa fa-check"></i><b>5.2</b> Traçabilité de la source des données</a></li>
+<li class="chapter" data-level="5.3" data-path="B-data-input.html"><a href="B-data-input.html#indexation-des-donnees"><i class="fa fa-check"></i><b>5.3</b> Indexation des données</a></li>
+<li class="chapter" data-level="5.4" data-path="B-data-input.html"><a href="B-data-input.html#codages-et-unites"><i class="fa fa-check"></i><b>5.4</b> Codages et unités</a></li>
+<li class="chapter" data-level="5.5" data-path="B-data-input.html"><a href="B-data-input.html#obsolescence-des-donnees"><i class="fa fa-check"></i><b>5.5</b> Obsolescence des données</a></li>
+<li class="chapter" data-level="5.6" data-path="B-data-input.html"><a href="B-data-input.html#que-faire-1"><i class="fa fa-check"></i><b>5.6</b> Que faire ?</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="B-code-aspect.html"><a href="B-code-aspect.html"><i class="fa fa-check"></i><b>6</b> Programmation et calcul</a><ul>
+<li class="chapter" data-level="6.1" data-path="B-code-aspect.html"><a href="B-code-aspect.html#le-code-nest-pas-disponible"><i class="fa fa-check"></i><b>6.1</b> Le code n’est pas disponible</a></li>
+<li class="chapter" data-level="6.2" data-path="B-code-aspect.html"><a href="B-code-aspect.html#comment-lance-t-on-ce-code-allo-houston"><i class="fa fa-check"></i><b>6.2</b> Comment lance-t-on ce code ? (“Allô Houston ?”)</a></li>
+<li class="chapter" data-level="6.3" data-path="B-code-aspect.html"><a href="B-code-aspect.html#comment-fonctionne-ce-code-lost-in-translation"><i class="fa fa-check"></i><b>6.3</b> Comment fonctionne ce code ? <em>Lost in translation</em></a></li>
+<li class="chapter" data-level="6.4" data-path="B-code-aspect.html"><a href="B-code-aspect.html#quelle-version-du-code"><i class="fa fa-check"></i><b>6.4</b> Quelle version du code ?</a></li>
+<li class="chapter" data-level="6.5" data-path="B-code-aspect.html"><a href="B-code-aspect.html#lenvironnement-de-calcul-ou-le-paradigme-des-poupees-russes-diaboliques"><i class="fa fa-check"></i><b>6.5</b> L’environnement de calcul ou le paradigme des poupées russes diaboliques</a></li>
+<li class="chapter" data-level="6.6" data-path="B-code-aspect.html"><a href="B-code-aspect.html#le-chaos-numerique"><i class="fa fa-check"></i><b>6.6</b> Le chaos numérique</a></li>
+<li class="chapter" data-level="6.7" data-path="B-code-aspect.html"><a href="B-code-aspect.html#que-faire-2"><i class="fa fa-check"></i><b>6.7</b> Que faire ?</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="B-data-output.html"><a href="B-data-output.html"><i class="fa fa-check"></i><b>7</b> Communication des résultats</a><ul>
+<li class="chapter" data-level="7.1" data-path="B-data-output.html"><a href="B-data-output.html#une-mauvaise-selection-des-resultats"><i class="fa fa-check"></i><b>7.1</b> Une mauvaise sélection des résultats</a></li>
+<li class="chapter" data-level="7.2" data-path="B-data-output.html"><a href="B-data-output.html#transformation-des-resultats"><i class="fa fa-check"></i><b>7.2</b> Transformation des résultats</a></li>
+<li class="chapter" data-level="7.3" data-path="B-data-output.html"><a href="B-data-output.html#presentation-des-resultats"><i class="fa fa-check"></i><b>7.3</b> Présentation des résultats</a></li>
+<li class="chapter" data-level="7.4" data-path="B-data-output.html"><a href="B-data-output.html#que-faire-3"><i class="fa fa-check"></i><b>7.4</b> Que faire ?</a></li>
+</ul></li>
+<li class="part"><span><b>III Solutions de la recherche reproductible</b></span></li>
+<li class="chapter" data-level="8" data-path="C-intro.html"><a href="C-intro.html"><i class="fa fa-check"></i><b>8</b> Le temps des changements ?</a><ul>
+<li class="chapter" data-level="8.1" data-path="C-intro.html"><a href="C-intro.html#quand-mettre-en-uvre-les-bonnes-pratiques"><i class="fa fa-check"></i><b>8.1</b> Quand mettre en œuvre les bonnes pratiques ?</a></li>
+<li class="chapter" data-level="8.2" data-path="C-intro.html"><a href="C-intro.html#concretement-que-changer-et-comment-sy-prendre"><i class="fa fa-check"></i><b>8.2</b> Concrètement, que changer et comment s’y prendre ?</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="C-data-acquisition.html"><a href="C-data-acquisition.html"><i class="fa fa-check"></i><b>9</b> Documenter ses pratiques</a><ul>
+<li class="chapter" data-level="9.1" data-path="C-data-acquisition.html"><a href="C-data-acquisition.html#rediger-un-protocole-de-collecte-des-informations"><i class="fa fa-check"></i><b>9.1</b> Rédiger un protocole de collecte des informations</a></li>
+<li class="chapter" data-level="9.2" data-path="C-data-acquisition.html"><a href="C-data-acquisition.html#partager-le-protocole-de-collecte-des-donnees"><i class="fa fa-check"></i><b>9.2</b> Partager le protocole de collecte des données</a></li>
+<li class="chapter" data-level="9.3" data-path="C-data-acquisition.html"><a href="C-data-acquisition.html#tenir-un-cahier-de-laboratoire"><i class="fa fa-check"></i><b>9.3</b> Tenir un cahier de laboratoire</a></li>
+<li class="chapter" data-level="9.4" data-path="C-data-acquisition.html"><a href="C-data-acquisition.html#collecter-les-donnees-de-facon-repetable-et-reproductible"><i class="fa fa-check"></i><b>9.4</b> Collecter les données de façon répétable ET reproductible</a></li>
+<li class="chapter" data-level="9.5" data-path="C-data-acquisition.html"><a href="C-data-acquisition.html#pour-en-savoir-plus"><i class="fa fa-check"></i><b>9.5</b> Pour en savoir plus</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="C-data-format.html"><a href="C-data-format.html"><i class="fa fa-check"></i><b>10</b> Formater et structurer l’information</a><ul>
+<li class="chapter" data-level="10.1" data-path="C-data-format.html"><a href="C-data-format.html#comment-structurer-mes-informations"><i class="fa fa-check"></i><b>10.1</b> Comment structurer mes informations ?</a></li>
+<li class="chapter" data-level="10.2" data-path="C-data-format.html"><a href="C-data-format.html#quel-format-choisir-pour-enregistrer-et-stocker-des-informations"><i class="fa fa-check"></i><b>10.2</b> Quel format choisir pour enregistrer et stocker des informations ?</a></li>
+<li class="chapter" data-level="10.3" data-path="C-data-format.html"><a href="C-data-format.html#la-presentation-des-resultats-numeriques"><i class="fa fa-check"></i><b>10.3</b> La présentation des résultats numériques</a><ul>
+<li class="chapter" data-level="10.3.1" data-path="C-data-format.html"><a href="C-data-format.html#nombre-de-chiffres-significatifs"><i class="fa fa-check"></i><b>10.3.1</b> Nombre de chiffres significatifs</a></li>
+<li class="chapter" data-level="10.3.2" data-path="C-data-format.html"><a href="C-data-format.html#incertitude"><i class="fa fa-check"></i><b>10.3.2</b> Incertitude</a></li>
+</ul></li>
+<li class="chapter" data-level="10.4" data-path="C-data-format.html"><a href="C-data-format.html#pour-en-savoir-plus-1"><i class="fa fa-check"></i><b>10.4</b> Pour en savoir plus</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="C-data-share.html"><a href="C-data-share.html"><i class="fa fa-check"></i><b>11</b> Partager ses données, codes et résultats</a><ul>
+<li class="chapter" data-level="11.1" data-path="C-data-share.html"><a href="C-data-share.html#compendium-de-recherche"><i class="fa fa-check"></i><b>11.1</b> <em>Compendium</em> de recherche</a></li>
+<li class="chapter" data-level="11.2" data-path="C-data-share.html"><a href="C-data-share.html#modalites-de-partage"><i class="fa fa-check"></i><b>11.2</b> Modalités de partage</a><ul>
+<li class="chapter" data-level="11.2.1" data-path="C-data-share.html"><a href="C-data-share.html#sur-demande"><i class="fa fa-check"></i><b>11.2.1</b> Sur demande</a></li>
+<li class="chapter" data-level="11.2.2" data-path="C-data-share.html"><a href="C-data-share.html#page-web-personnelle"><i class="fa fa-check"></i><b>11.2.2</b> Page web personnelle</a></li>
+<li class="chapter" data-level="11.2.3" data-path="C-data-share.html"><a href="C-data-share.html#hebergement-par-un-tiers"><i class="fa fa-check"></i><b>11.2.3</b> Hébergement par un tiers</a></li>
+<li class="chapter" data-level="11.2.4" data-path="C-data-share.html"><a href="C-data-share.html#archives-perennes"><i class="fa fa-check"></i><b>11.2.4</b> Archives pérennes</a></li>
+</ul></li>
+<li class="chapter" data-level="11.3" data-path="C-data-share.html"><a href="C-data-share.html#pour-en-savoir-plus-2"><i class="fa fa-check"></i><b>11.3</b> Pour en savoir plus</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="C-versioning.html"><a href="C-versioning.html"><i class="fa fa-check"></i><b>12</b> Versionner, versionner, versionner</a><ul>
+<li class="chapter" data-level="12.1" data-path="C-versioning.html"><a href="C-versioning.html#versionnage-par-nommage-de-fichiers"><i class="fa fa-check"></i><b>12.1</b> Versionnage par nommage de fichiers</a></li>
+<li class="chapter" data-level="12.2" data-path="C-versioning.html"><a href="C-versioning.html#outils-de-versionnage-differentiel"><i class="fa fa-check"></i><b>12.2</b> Outils de versionnage différentiel</a></li>
+<li class="chapter" data-level="12.3" data-path="C-versioning.html"><a href="C-versioning.html#pour-en-savoir-plus-3"><i class="fa fa-check"></i><b>12.3</b> Pour en savoir plus</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="C-code-learn.html"><a href="C-code-learn.html"><i class="fa fa-check"></i><b>13</b> Apprendre à programmer</a><ul>
+<li class="chapter" data-level="13.1" data-path="C-code-learn.html"><a href="C-code-learn.html#limiter-le-recours-aux-interfaces-graphiques"><i class="fa fa-check"></i><b>13.1</b> Limiter le recours aux interfaces graphiques</a></li>
+<li class="chapter" data-level="13.2" data-path="C-code-learn.html"><a href="C-code-learn.html#de-linteret-de-la-programmation"><i class="fa fa-check"></i><b>13.2</b> De l’intérêt de la programmation</a></li>
+<li class="chapter" data-level="13.3" data-path="C-code-learn.html"><a href="C-code-learn.html#le-choix-des-armes"><i class="fa fa-check"></i><b>13.3</b> Le choix des armes</a></li>
+<li class="chapter" data-level="13.4" data-path="C-code-learn.html"><a href="C-code-learn.html#pour-en-savoir-plus-4"><i class="fa fa-check"></i><b>13.4</b> Pour en savoir plus</a><ul>
+<li class="chapter" data-level="13.4.1" data-path="C-code-learn.html"><a href="C-code-learn.html#moocs"><i class="fa fa-check"></i><b>13.4.1</b> MOOCs</a></li>
+<li class="chapter" data-level="13.4.2" data-path="C-code-learn.html"><a href="C-code-learn.html#tutoriels"><i class="fa fa-check"></i><b>13.4.2</b> Tutoriels</a></li>
+<li class="chapter" data-level="13.4.3" data-path="C-code-learn.html"><a href="C-code-learn.html#livres"><i class="fa fa-check"></i><b>13.4.3</b> Livres</a></li>
+<li class="chapter" data-level="13.4.4" data-path="C-code-learn.html"><a href="C-code-learn.html#ateliers-en-ligne-software-carpentry"><i class="fa fa-check"></i><b>13.4.4</b> Ateliers en ligne “Software Carpentry”</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="C-code-good.html"><a href="C-code-good.html"><i class="fa fa-check"></i><b>14</b> Rendre son code compréhensible</a><ul>
+<li class="chapter" data-level="14.1" data-path="C-code-good.html"><a href="C-code-good.html#nommer-ses-variables-et-ses-fonctions-de-maniere-informative"><i class="fa fa-check"></i><b>14.1</b> Nommer ses variables et ses fonctions de manière informative</a></li>
+<li class="chapter" data-level="14.2" data-path="C-code-good.html"><a href="C-code-good.html#etre-explicite"><i class="fa fa-check"></i><b>14.2</b> Etre explicite</a></li>
+<li class="chapter" data-level="14.3" data-path="C-code-good.html"><a href="C-code-good.html#commenter-son-code"><i class="fa fa-check"></i><b>14.3</b> Commenter son code</a></li>
+<li class="chapter" data-level="14.4" data-path="C-code-good.html"><a href="C-code-good.html#documenter-son-code"><i class="fa fa-check"></i><b>14.4</b> Documenter son code</a></li>
+<li class="chapter" data-level="14.5" data-path="C-code-good.html"><a href="C-code-good.html#utiliser-des-document-computationnels-notebooks"><i class="fa fa-check"></i><b>14.5</b> Utiliser des document computationnels (<em>notebooks</em>)</a></li>
+<li class="chapter" data-level="14.6" data-path="C-code-good.html"><a href="C-code-good.html#restructurer-et-automatiser-lexecution-du-code-avec-un-workflow"><i class="fa fa-check"></i><b>14.6</b> Restructurer et automatiser l’exécution du code avec un <em>workflow</em></a></li>
+<li class="chapter" data-level="14.7" data-path="C-code-good.html"><a href="C-code-good.html#pour-en-savoir-plus-5"><i class="fa fa-check"></i><b>14.7</b> Pour en savoir plus</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="C-code-bugs.html"><a href="C-code-bugs.html"><i class="fa fa-check"></i><b>15</b> Exactitude des codes</a><ul>
+<li class="chapter" data-level="15.1" data-path="C-code-bugs.html"><a href="C-code-bugs.html#programmation-en-binome"><i class="fa fa-check"></i><b>15.1</b> Programmation en binôme</a></li>
+<li class="chapter" data-level="15.2" data-path="C-code-bugs.html"><a href="C-code-bugs.html#tester-votre-code"><i class="fa fa-check"></i><b>15.2</b> Tester votre code</a></li>
+<li class="chapter" data-level="15.3" data-path="C-code-bugs.html"><a href="C-code-bugs.html#integration-continue"><i class="fa fa-check"></i><b>15.3</b> Intégration continue</a></li>
+<li class="chapter" data-level="15.4" data-path="C-code-bugs.html"><a href="C-code-bugs.html#pour-en-savoir-plus-6"><i class="fa fa-check"></i><b>15.4</b> Pour en savoir plus</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="C-code-env.html"><a href="C-code-env.html"><i class="fa fa-check"></i><b>16</b> Environnement logiciel</a><ul>
+<li class="chapter" data-level="16.1" data-path="C-code-env.html"><a href="C-code-env.html#identifier-les-dependances-dessine-moi-une-dependance"><i class="fa fa-check"></i><b>16.1</b> Identifier les dépendances : dessine-moi une dépendance</a></li>
+<li class="chapter" data-level="16.2" data-path="C-code-env.html"><a href="C-code-env.html#preserver-le-desordre-aka-preserve-the-mess"><i class="fa fa-check"></i><b>16.2</b> Préserver le désordre (<em>aka “Preserve the mess”</em>)</a><ul>
+<li class="chapter" data-level="16.2.1" data-path="C-code-env.html"><a href="C-code-env.html#isoler-une-machine"><i class="fa fa-check"></i><b>16.2.1</b> Isoler une machine</a></li>
+<li class="chapter" data-level="16.2.2" data-path="C-code-env.html"><a href="C-code-env.html#isoler-un-environnement-a-laide-dun-conteneur"><i class="fa fa-check"></i><b>16.2.2</b> Isoler un environnement à l’aide d’un conteneur</a></li>
+</ul></li>
+<li class="chapter" data-level="16.3" data-path="C-code-env.html"><a href="C-code-env.html#les-systemes-de-gestion-de-paquets"><i class="fa fa-check"></i><b>16.3</b> Les systèmes de gestion de paquets</a></li>
+<li class="chapter" data-level="16.4" data-path="C-code-env.html"><a href="C-code-env.html#pour-en-savoir-plus-7"><i class="fa fa-check"></i><b>16.4</b> Pour en savoir plus</a></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="C-licences.html"><a href="C-licences.html"><i class="fa fa-check"></i><b>17</b> Sortez couverts !</a><ul>
+<li class="chapter" data-level="17.1" data-path="C-licences.html"><a href="C-licences.html#licence"><i class="fa fa-check"></i><b>17.1</b> Licence</a></li>
+<li class="chapter" data-level="17.2" data-path="C-licences.html"><a href="C-licences.html#confidentialite-et-protection-des-donnees-respect-de-la-vie-privee"><i class="fa fa-check"></i><b>17.2</b> Confidentialité et protection des données, respect de la vie privée</a></li>
+<li class="chapter" data-level="17.3" data-path="C-licences.html"><a href="C-licences.html#pour-en-savoir-plus-8"><i class="fa fa-check"></i><b>17.3</b> Pour en savoir plus</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="bibliographie.html"><a href="bibliographie.html"><i class="fa fa-check"></i>Bibliographie</a></li>
+<li class="part"><span><b>IV Annexes</b></span></li>
+<li class="chapter" data-level="18" data-path="annexes.html"><a href="annexes.html"><i class="fa fa-check"></i><b>18</b> Annexes</a><ul>
+<li class="chapter" data-level="18.1" data-path="annexes.html"><a href="annexes.html#modalites-de-conception-de-louvrage"><i class="fa fa-check"></i><b>18.1</b> Modalités de conception de l’ouvrage</a></li>
+<li class="chapter" data-level="18.2" data-path="annexes.html"><a href="annexes.html#objectif"><i class="fa fa-check"></i><b>18.2</b> Objectif</a></li>
+<li class="chapter" data-level="18.3" data-path="annexes.html"><a href="annexes.html#que-peut-apporter-un-book-sprint-a-des-chercheurs.euses"><i class="fa fa-check"></i><b>18.3</b> Que peut apporter un book sprint à des chercheurs.euses ?</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="portraits.html"><a href="portraits.html"><i class="fa fa-check"></i>Portraits</a><ul>
+<li class="chapter" data-level="" data-path="portraits.html"><a href="portraits.html#auteurs"><i class="fa fa-check"></i>Auteurs</a><ul>
+<li class="chapter" data-level="" data-path="portraits.html"><a href="portraits.html#loic-desquilbet"><i class="fa fa-check"></i>Loïc Desquilbet</a></li>
+<li class="chapter" data-level="" data-path="portraits.html"><a href="portraits.html#boris-hejblum"><i class="fa fa-check"></i>Boris Hejblum</a></li>
+<li class="chapter" data-level="" data-path="portraits.html"><a href="portraits.html#arnaud-legrand"><i class="fa fa-check"></i>Arnaud Legrand</a></li>
+<li class="chapter" data-level="" data-path="portraits.html"><a href="portraits.html#pascal-pernot"><i class="fa fa-check"></i>Pascal Pernot</a></li>
+<li class="chapter" data-level="" data-path="portraits.html"><a href="portraits.html#nicolas-rougier"><i class="fa fa-check"></i>Nicolas Rougier</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="portraits.html"><a href="portraits.html#facilitatrice"><i class="fa fa-check"></i>Facilitatrice</a><ul>
+<li class="chapter" data-level="" data-path="portraits.html"><a href="portraits.html#elisa-de-castro-guerra-activdesign"><i class="fa fa-check"></i>Elisa de Castro Guerra, ActivDesign</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="portraits.html"><a href="portraits.html#coordinatrice-du-projet"><i class="fa fa-check"></i>Coordinatrice du projet</a><ul>
+<li class="chapter" data-level="" data-path="portraits.html"><a href="portraits.html#sabrina-granger"><i class="fa fa-check"></i>Sabrina Granger</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="portraits.html"><a href="portraits.html#contributeurs-de-la-1re-edition"><i class="fa fa-check"></i>Contributeurs de la 1re édition</a></li>
+<li class="chapter" data-level="" data-path="portraits.html"><a href="portraits.html#contribuer"><i class="fa fa-check"></i>Contribuer</a></li>
+<li class="chapter" data-level="" data-path="portraits.html"><a href="portraits.html#remerciements"><i class="fa fa-check"></i>Remerciements</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="quatrieme-de-couverture.html"><a href="quatrieme-de-couverture.html"><i class="fa fa-check"></i>Quatrième de couverture</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Compilé avec bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Vers une recherche reproductible</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="B-code-aspect" class="section level1">
+<h1><span class="header-section-number">Chapitre 6</span> Programmation et calcul</h1>
+<p>Les problèmes inhérents au calcul et aux codes associés partagent des similarités avec les difficultés liées aux données, par exemple la non disponibilité. Toutefois, les questions de calcul ont leurs spécificités du fait de leur nature opératoire : il s’agit d’exécuter ce code afin d’obtenir un résultat. Or, c’est lors de cette étape d’exécution que vont surgir un certain nombre de complications que l’on peut classer en deux grandes catégories :</p>
+<ul>
+<li>d’une part, celles qui empêchent d’obtenir un résultat</li>
+<li>d’autre part, celles qui rendent un résultat différent voire faux.</li>
+</ul>
+<p>Si le premier type de problème est ennuyeux (euphémisme), le second type de problème est d’autant plus grave qu’il est difficile à détecter (effroi intense).</p>
+<!-- Dans le pire des cas, le programme plante avec un message d'erreur -->
+<!-- cryptique du genre `Un problème a fait que le programme a cessé de -->
+<!-- fonctionner correctement. [Oui] [Non] [Annuler]`, `segmentation fault -->
+<!-- Core dumped`, ou encore `java.lang.ExceptionInInitializerError: null`. -->
+<!-- Plus subtil voire fourbe, il se peut que le programme s'exécute à première vue -->
+<!-- normalement mais qu'en y regardant de plus près, on s'aperçoive que -->
+<!-- le résultat (valeur numérique, caractères illisibles, mise en page -->
+<!-- d'une figure, ...) ait changé. -->
+<div id="le-code-nest-pas-disponible" class="section level2">
+<h2><span class="header-section-number">6.1</span> Le code n’est pas disponible</h2>
+<p>En guise de préambule, débutons par une liste non exhaustive des cas où l’on n’a tout simplement pas ou plus accès au programme à exécuter :</p>
+<ul>
+<li><p><strong>Les logiciels propriétaires ou la loterie de la licence d’exploitation</strong> : votre équipe/structure a cessé de payer la licence. Variante : ce logiciel est disponible dans l’université d’un collègue mais pas dans l’établissement où vous travaillez actuellement. Autre variante : vous avez accès au logiciel, mais seul un nombre restreint de personnes peut y accéder en même temps, <em>via</em> un système de jetons. De fait, vous vous retrouvez à devoir attendre un bon moment avant d’y arriver.</p></li>
+<li><p><strong>Un seul code vous manque et tout est dépeuplé</strong> : le code a été développé “en interne”. Il arrive trop souvent qu’à la suite d’un <em>crash</em> disque, d’un vol d’ordinateur portable, du départ du développeur principal, que l’on n’ait simplement plus accès au logiciel. C’est souvent le résultat d’une politique (ou d’une absence de politique) de sauvegarde ou de partage d’informations au sein d’une équipe.</p></li>
+<li><p><strong>Le numéro que vous avez demandé n’est plus attribué</strong> : assez souvent, il s’agit d’un code développé “en externe” (dans une autre équipe de recherche par exemple) que l’on souhaite ré-exécuter, par exemple pour avoir un point de comparaison ou bien pour vérifier si on obtient bien des résultats similaires avec une autre méthode. En général, on cherche alors le code sur le web mais il est assez courant que l’URL indiquée dans l’article ne soit plus accessible car le développeur a depuis quitté l’équipe où il travaillait et que sa page web a été supprimée ou complètement restructurée. Ce problème est connu sous le nom d’<em>URL decay</em> <span class="citation">(Spinellis <a href="#ref-spinellisDecayFailuresWeb2003">2003</a>)</span> ou de <em>Link Rot</em> <span class="citation">(Wikipedia <a href="#ref-wikipediaLinkRot2019">2019</a><a href="#ref-wikipediaLinkRot2019">b</a>)</span>.</p></li>
+<li><p><strong>Cachez ce code que je ne saurais voir</strong> : enfin, les auteurs du code peuvent tout simplement ne pas souhaiter le partager, par exemple parce qu’ils jugent qu’il n’est pas montrable en l’état (pas ou peu de commentaires, structure horrible cachant des erreurs) ou encore pour conserver ce qu’ils considèrent comme un avantage compétitif.</p></li>
+</ul>
+<p>Si cette question vous intéresse, vous pouvez lire les travaux de Collberg, Proebsting et Warren : <span class="citation">(Collberg and Proebsting <a href="#ref-collbergRepeatabilityComputerSystems2016">2016</a>)</span> <span class="citation">(Collberg, Proebsting, and Warren <a href="#ref-collbergRepeatabilityBenefactionComputer2015">2015</a>)</span>. Les auteurs étudient les causes d’incapacité à réexécuter du code dans la communauté de recherche <em>Computer Systems</em>, pourtant très au fait des aspects logiciels. Vous y trouverez de nombreux témoignages (assez drôles si c’était sans conséquence !) issus d’une étude de terrain ; vous pourrez notamment lire les excuses les plus couramment utilisées pour justifier une incapacité à donner accès au code derrière une publication. Vous pouvez aussi consulter “Re-run, Repeat, Reproduce, Reuse, Replicate: Transforming Code into Scientific Contributions” <span class="citation">(Benureau and Rougier <a href="#ref-benureauRerunRepeatReproduce2017">2017</a>)</span>.</p>
+</div>
+<div id="comment-lance-t-on-ce-code-allo-houston" class="section level2">
+<h2><span class="header-section-number">6.2</span> Comment lance-t-on ce code ? (“Allô Houston ?”)</h2>
+<p>Lorsque l’on fait de la recherche, il est courant de devoir développer soi-même un code pour répondre à un besoin spécifique. Que ce soit un “gros” code ou un petit script, on prend rarement le temps de rédiger une documentation “externe” (à destination des utilisateurs) puisque le code est principalement utilisé par les membres de l’équipe que l’on croise tous les jours. Mais lorsque l’on revient quelques mois plus tard, pour ré-exécuter un de ses propres calculs ou bien que l’on essaye de repartir du travail de quelqu’un d’autre (qui a quitté le laboratoire ou n’y a même jamais travaillé), il est courant de ne pas (ou plus) savoir comment il avait été lancé. Avec quels paramètres, quels fichiers d’entrées, quelles variables d’environnement, <em>etc</em>. ? La moindre erreur sur les paramètres conduira à des résultats différents voire à un <em>crash</em>. Et malheureusement pour vous, le “vous” d’il y a 6 mois ne répond pas au <em>mail</em>. Enfin, et comme nous le verrons par la suite, il existe bien d’autres raisons qui peuvent conduire à ces deux symptômes.</p>
+</div>
+<div id="comment-fonctionne-ce-code-lost-in-translation" class="section level2">
+<h2><span class="header-section-number">6.3</span> Comment fonctionne ce code ? <em>Lost in translation</em></h2>
+<p>Si on n’est plus sûr des paramètres utilisés, on peut vouloir chercher à comprendre d’où vient le problème en inspectant le code … si tant est qu’on ait accès au code source bien sûr. Or, les logiciels propriétaires ou les logiciels disponibles uniquement sous forme binaire rendent toute inspection de ce type impossible. Mais admettons que vous ayez réussi à inspecter les sources et que vous ayez les compétences pour le comprendre (<em>a minima</em>, un langage de programmation que vous connaissez).</p>
+<p>Les codes de recherche, développés pour des besoins spécifiques, sont souvent des prototypes et il est rare de prendre le temps de rédiger une documentation “interne” (à destination des développeurs). Et quand bien même il y aurait des commentaires, encore faut-il qu’ils soient compréhensibles donc <em>a minima</em> en anglais. Par ailleurs, ils doivent aussi correspondre à la réalité : quand un code évolue vite, on ne prend pas toujours le temps d’actualiser au fur et à mesure les commentaires et la documentation. Si ces critères ne sont pas réunis, les commentaires risquent davantage de vous induire en erreur que de vous aider.</p>
+<p>Un célèbre dicton en informatique dit : “<em>Programs must be written for people to read, and only incidentally for machines to execute</em>.” C’est une citation d’<a href="https://en.wikipedia.org/wiki/Hal_Abelson">Harold Abelson</a> tirée de son livre <em>Structure and Interpretation of Computer Programs</em> publié en 1979 <span class="citation">(Abelson et al. <a href="#ref-abelsonStructureInterpretationComputer1996">1996</a>)</span>. Commenter, c’est une chose, mais lorsque l’on cherche à comprendre un programme, on se rend vite compte qu’il est indispensable que les noms de variables et de fonctions aient été bien choisis, que le code ait été été bien structuré avec des fonctions au rôle clairement défini, sans quoi le code devient totalement incompréhensible (ce qui est précisemment l’objet du concours “Obfuscated C” <span class="citation">(Broukhis, Cooper, and Curt Noll <a href="#ref-broukhisInternationalObfuscatedCode">2019</a>)</span>. De même, lorsque qu’il s’agit d’un code conséquent réparti dans de nombreux fichiers, une mauvaise convention de nommage des fichiers ou bien l’usage d’une structure de fichiers absconse empêchent toute tentative de compréhension.</p>
+<p>Enfin, même si le code est relativement compréhensible, il est possible que des <em>bugs</em> (des erreurs de programmation) soient à l’origine de vos malheurs mais comment les trouver ?</p>
+</div>
+<div id="quelle-version-du-code" class="section level2">
+<h2><span class="header-section-number">6.4</span> Quelle version du code ?</h2>
+<p>Nul n’est parfait et les <em>bugs</em> sont donc courants, même chez les programmeurs les plus chevronnés. Il se peut que le <em>bug</em> à l’origine de vos problèmes provienne de la version d’un logiciel actuellement installé sur la machine. Pour corriger ce <em>bug</em>, on peut vouloir mettre à jour le logiciel. Mais quelle version a été utilisée dans le passé et quelle est la version actuelle ? Et comment savoir si c’est effectivement la cause de la différence observée ? La mise à jour n’introduirait-elle pas de nouveaux <em>bugs</em> ? L’idéal serait peut-être de revenir à une version plus ancienne mais comment faire ? Quelle est la version la plus récente que je puisse utiliser ?</p>
+<p>Enfin, cette nouvelle version sera-t-elle toujours compatible avec mon ordinateur ? Et si je repars du code source, arriverai-je à le recompiler ?</p>
+</div>
+<div id="lenvironnement-de-calcul-ou-le-paradigme-des-poupees-russes-diaboliques" class="section level2">
+<h2><span class="header-section-number">6.5</span> L’environnement de calcul ou le paradigme des poupées russes diaboliques</h2>
+<p>Plus le langage que vous utilisez est de haut niveau, plus il est probable qu’il dissimule une grande complexité. Même le script le plus anodin dépend en général d’une large hiérarchie de bibliothèques que l’on a du mal à imaginer. À titre d’exemple, lorsqu’en Python vous souhaitez faire un petit graphique, il est courant de charger la bibliothèque <code>matplotlib</code> avec un simple :</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="im">import</span> matplotlib</code></pre></div>
+<p>Or cette bibliothèque est fournie par un “paquet” qui, sur la machine d’un des auteurs s’appelle, <code>python3-matplotlib</code>. Lorsque nous cherchons à en savoir plus sur ce paquet, voilà ce que nous obtenons :</p>
+<pre><code>Package: python3-matplotlib
+Version: 2.1.1-2
+Depends: python3-dateutil, python-matplotlib-data (&gt;= 2.1.1-2),
+python3-pyparsing (&gt;= 1.5.6), python3-six (&gt;= 1.10), python3-tz,
+libjs-jquery, libjs-jquery-ui, python3-numpy (&gt;= 1:1.13.1),
+python3-numpy-abi9, python3 (&lt;&lt; 3.7), python3 (&gt;= 3.6~),
+python3-cycler (&gt;= 0.10.0), python3:any (&gt;= 3.3.2-2~), libc6 (&gt;=
+2.14), libfreetype6 (&gt;= 2.2.1), libgcc1 (&gt;= 1:3.0), libpng16-16 (&gt;=
+1.6.2-1), libstdc++6 (&gt;= 5.2), zlib1g (&gt;= 1:1.1.4)</code></pre>
+<p>C’est ici la version 2.1.1-2 qui est présente et, pour l’installer, il a fallu installer les paquets <code>python3-dateutil</code>, <code>python-matplotlib-data</code>, <code>python3-pyparsing</code>, <em>etc</em>. C’est ce qu’on appelle les “dépendances”. Mais pour ces paquets dépendent eux-mêmes d’autres paquets. La figure 6.1 “Exemple des dépendances de la bibliothèque python matplotlib — obtenu avec debtree” (alerte paracétamol) permet de voir le graphe obtenu lorsque l’on récupère l’ensemble des paquets nécessaires avec leurs dépendances. <!-- ![Dépendances de Matplotlib sous Debian obtenues avec debtree](img/python3-matplotlib.png "debtree output") --></p>
+<div class="figure" style="text-align: center"><span id="fig:debtree"></span>
+<img src="img/python3-matplotlib.png" alt="Dépendances de Matplotlib sous Debian obtenues avec debtree." width="100%" />
+<p class="caption">
+Figure 6.1: Dépendances de Matplotlib sous Debian obtenues avec debtree.
+</p>
+</div>
+<p>Vous remarquerez dans les dépendances que la version n’est pas précisément indiquée mais qu’il faut par exemple une version supérieure de <code>python3-pyparsing</code> qui soit au moins 1.5.6. Mais si des <em>bugs</em> peuvent être introduits, comment être sûr que votre code fonctionnera de la même façon avec les versions <code>1.5.6</code>, <code>1.5.7</code>, …, sachant que nous en sommes maintenant au moins à la version <code>2.2.0</code>.</p>
+<p>En résumé, tout code, aussi petit soit-il, possède tout un arbre de dépendances qui sont le plus souvent cachées. Ce code s’exécute donc dans un environnement donné et une différence, même insignifiante, de cet environnement peut conduire à des résultats différents, c’est-à-dire à des problèmes de non reproductibilité.</p>
+<p>Si vous pensez que ce problème n’est que théorique, nous vous invitons à lire Gronenschild et ses co-auteurs <span class="citation">(Gronenschild et al. <a href="#ref-gronenschildEffectsFreeSurferVersion2012">2012</a>)</span> qui étudient l’influence de la version de MacOSX et de FreeSurfer, un logiciel permettant de mesurer l’épaisseur corticale et le volume de structures neuroanatomiques.</p>
+</div>
+<div id="le-chaos-numerique" class="section level2">
+<h2><span class="header-section-number">6.6</span> Le chaos numérique</h2>
+<p>Les nombres manipulés par ordinateur ne sont pas des nombres réels, avec une précision infinie, mais des nombres dits “à virgule flottante” qui n’obéissent pas exactement aux mêmes règles que celles que l’on nous enseigne à l’école. Par exemple, si vous demandez à, à peu près n’importe quel ordinateur si <code>0.1*3==0.3</code> ou si <code>3-2.9==0.1</code> il vous répondra très certainement <code>FALSE</code> (Faux) dans les deux cas. Cela est dû au fait que la représentation au format binaire de ces nombres, en apparence simple, n’est pas exacte. Beaucoup de machines à calculer ont une représentation interne en base 10 un peu différente, or, nous n’avons pas été habitués de manière précoce à intégrer ce genre de problème, sauf peut-être pour des nombres du genre <span class="math inline">\(1/3\approx 0,3333333\)</span>. Lorsque l’on programme, il faut donc faire très attention à cette subtilité qui joue des tours dès que l’on veut comparer deux nombres.</p>
+<p>Un autre problème au prime abord surprenant, mais probablement plus simple à comprendre, est la non associativité des opérations. Si avec les nombres réels, il va de soi que <span class="math inline">\((a+b)+c=a+(b+c)\)</span>, ce n’est pas le cas avec les nombres en virgules flottantes. Par exemple, <code>(1e-10+1e10)-1e10</code> vaut <code>0</code> alors que <code>1e-10+(1e10-1e10)</code> vaut <code>1e-10</code>. Même une simple moyenne peut donc devenir problématique et, non, il ne suffit pas de trier les nombres avant de les additionner pour résoudre le problème.</p>
+<p>Comme vous utilisez vraisemblablement un ordinateur parallèle (même votre téléphone a maintenant plusieurs cœurs de calcul), il est possible que la somme <span class="math inline">\(a_1 + \dots +a_n\)</span> ne soit pas calculée comme vous l’imaginez (i.e., <span class="math inline">\((((((((a_1 + a_2) + a_3) + \dots +a_n)\)</span>), mais en plusieurs parties (i.e., <span class="math inline">\(((((a_1 + a_2) + \dots +a_{n/2}) + ((((a_{n+1} + a_{n+2}) + \dots +a_n)\)</span>), chaque cœur de votre processeur réalisant une des sommes partielles, la somme finale étant faite à la fin. Les résultats peuvent changer par le simple fait de passer d’un ordinateur à un autre alors que les machines semblent avoir le même environnement. Les ordinateurs peuvent ne pas avoir exactement le même nombre de cœurs. Les cœurs d’un ordinateur n’allant pas toujours exactement à la même vitesse, un code un peu optimisé ajustera la taille des sommes partielles pour terminer le calcul le plus rapidement possible et le résultat du calcul variera donc d’une exécution sur l’autre alors que rien n’a changé ! Mais alors, comment décider lequel de ces différents résultats de calculs est le “bon” ?</p>
+<p>Toutes ces petites imprécisions de calcul peuvent hélas rapidement devenir très problématiques lorsque le système sous-jacent correspond par exemple à la discrétisation d’une équation différentielle. Le calcul est alors très sensible aux conditions initiales et l’accumulation des imprécisions peut amener à une catastrophe ; voir notamment <em>The Patriot Missile Failure</em> <span class="citation">(Arnold <a href="#ref-arnoldPatriotMissileFailure2000">2000</a>)</span>.</p>
+<p>Il y a de nombreux articles décrivant ce genre de cauchemars :</p>
+<ul>
+<li><p>“Numerical Errors in Minimization Based Binding Energy Calculations” <span class="citation">(Feher and Williams <a href="#ref-feherNumericalErrorsMinimization2012">2012</a><a href="#ref-feherNumericalErrorsMinimization2012">b</a>)</span></p></li>
+<li><p>“Numerical Errors and Chaotic Behavior in Docking Simulations” <span class="citation">(Feher and Williams <a href="#ref-feherNumericalErrorsChaotic2012">2012</a><a href="#ref-feherNumericalErrorsChaotic2012">a</a>)</span></p></li>
+</ul>
+<p>Vous pouvez vouloir lire le classique <a href="https://www.itu.dk/~sestoft/bachelor/IEEE754_article.pdf"><em>What Every Computer Scientist Should Know About Floating-point Arithmetic</em></a> <span class="citation">(Goldberg <a href="#ref-goldbergWhatEveryComputer1991">1991</a>)</span> ou encore les travaux de Stodden et ses collègues <span class="citation">(Stodden and Krafczyk <a href="#ref-stoddenAssessingReproducibilityAstrophysical2018">2018</a>)</span>. Pour une présentation de ces problématiques et de quelques solutions, vous pouvez aussi regarder ce séminaire sur la reproductibilité numérique <span class="citation">(Legrand <a href="#ref-legrandControlingYourEnvironment2016">2016</a><a href="#ref-legrandControlingYourEnvironment2016">a</a>)</span>.</p>
+</div>
+<div id="que-faire-2" class="section level2">
+<h2><span class="header-section-number">6.7</span> Que faire ?</h2>
+<p>Pour résoudre ces problèmes, des solutions sont abordées aux chapitres <a href="C-versioning.html#C-versioning">12</a>, <a href="C-code-good.html#C-code-good">14</a>, <a href="C-code-bugs.html#C-code-bugs">15</a> et <a href="C-code-env.html#C-code-env">16</a>.</p>
+
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-abelsonStructureInterpretationComputer1996">
+<p>Abelson, Harold, Gerald Jay Sussman, Julie Sussman, and Alan J. Perlis. 1996. <em>Structure and Interpretation of Computer Programs</em>. Cambridge, Etats-Unis d’Amérique: MIT Press.</p>
+</div>
+<div id="ref-arnoldPatriotMissileFailure2000">
+<p>Arnold, Douglas N. 2000. “The Patriot Missile Failure.” <em>Douglas N. Arnold McKnight, Presidential Professor of Mathematics</em>. <a href="http://www-users.math.umn.edu/~arnold/disasters/patriot.html" class="uri">http://www-users.math.umn.edu/~arnold/disasters/patriot.html</a>.</p>
+</div>
+<div id="ref-benureauRerunRepeatReproduce2017">
+<p>Benureau, Fabien, and Nicolas Rougier. 2017. “Re-Run, Repeat, Reproduce, Reuse, Replicate: Transforming Code into Scientific Contributions.” <em>arXiv:1708.08205 [Cs]</em>, August. <a href="http://arxiv.org/abs/1708.08205" class="uri">http://arxiv.org/abs/1708.08205</a>.</p>
+</div>
+<div id="ref-broukhisInternationalObfuscatedCode">
+<p>Broukhis, Leo, Simon Cooper, and Landon Curt Noll. 2019. “The International Obfuscated C Code Contest.” <em>The International Obfuscated C Code Contest</em>. <a href="http://ioccc.org/" class="uri">http://ioccc.org/</a>.</p>
+</div>
+<div id="ref-collbergRepeatabilityComputerSystems2016">
+<p>Collberg, Christian S., and Todd A. Proebsting. 2016. “Repeatability in Computer Systems Research.” <em>Communications of the ACM</em> 59 (3): 62–69. doi:<a href="https://doi.org/10.1145/2812803">10.1145/2812803</a>.</p>
+</div>
+<div id="ref-collbergRepeatabilityBenefactionComputer2015">
+<p>Collberg, Christian S., Todd A. Proebsting, and Alex M. Warren. 2015. “Repeatability and Benefaction in Computer Systems Research. A Study and a Modest Proposal.” University of Arizona: University of Arizona. <a href="http://reproducibility.cs.arizona.edu/v2/RepeatabilityTR.pdf" class="uri">http://reproducibility.cs.arizona.edu/v2/RepeatabilityTR.pdf</a>.</p>
+</div>
+<div id="ref-feherNumericalErrorsChaotic2012">
+<p>Feher, Miklos, and Christopher I. Williams. 2012a. “Numerical Errors and Chaotic Behavior in Docking Simulations.” <em>Journal of Chemical Information and Modeling</em> 52 (3): 724–38. doi:<a href="https://doi.org/10.1021/ci200598m">10.1021/ci200598m</a>.</p>
+</div>
+<div id="ref-feherNumericalErrorsMinimization2012">
+<p>Feher, Miklos, and Christopher I. 2012b. “Numerical Errors in Minimization Based Binding Energy Calculations.” <em>Journal of Chemical Information and Modeling</em> 52 (12): 3200–3212. doi:<a href="https://doi.org/10.1021/ci300298d">10.1021/ci300298d</a>.</p>
+</div>
+<div id="ref-goldbergWhatEveryComputer1991">
+<p>Goldberg, David. 1991. “What Every Computer Scientist Should Know About Floating-Point Arithmetic.” <em>ACM Comput. Surv.</em> 23 (1): 5–48. doi:<a href="https://doi.org/10.1145/103162.103163">10.1145/103162.103163</a>.</p>
+</div>
+<div id="ref-gronenschildEffectsFreeSurferVersion2012">
+<p>Gronenschild, Ed H. B. M., Petra Habets, Heidi I. L. Jacobs, Ron Mengelers, Nico Rozendaal, Jim van Os, and Machteld Marcelis. 2012. “The Effects of FreeSurfer Version, Workstation Type, and Macintosh Operating System Version on Anatomical Volume and Cortical Thickness Measurements.” Edited by Satoru Hayasaka. <em>PLoS ONE</em> 7 (6): e38234. doi:<a href="https://doi.org/10.1371/journal.pone.0038234">10.1371/journal.pone.0038234</a>.</p>
+</div>
+<div id="ref-legrandControlingYourEnvironment2016">
+<p>Legrand, Arnaud. 2016a. “Controling Your Environment.” <em>Series of Webinars and Documents on Reproducible Research</em>. <a href="https://github.com/alegrand/RR_webinars/blob/master/2_controling_your_environment/index.org" class="uri">https://github.com/alegrand/RR_webinars/blob/master/2_controling_your_environment/index.org</a>.</p>
+</div>
+<div id="ref-spinellisDecayFailuresWeb2003">
+<p>Spinellis, Diomidis. 2003. “The Decay and Failures of Web References.” <em>Communications of the ACM</em> 46 (1): 71–77. doi:<a href="https://doi.org/10.1145/602421.602422">10.1145/602421.602422</a>.</p>
+</div>
+<div id="ref-stoddenAssessingReproducibilityAstrophysical2018">
+<p>Stodden, Victoria, and Matthew S Krafczyk. 2018. “Assessing Reproducibility : An Astrophysical Example of Computational Uncertainty in the HPC Context,” August, 5. <a href="https://web.stanford.edu/~vcs/papers/ResCuE2018-VSMK.pdf" class="uri">https://web.stanford.edu/~vcs/papers/ResCuE2018-VSMK.pdf</a>.</p>
+</div>
+<div id="ref-wikipediaLinkRot2019">
+<p>Wikipedia. 2019b. “Link Rot.” <em>Wikipedia</em>. <a href="https://en.wikipedia.org/w/index.php?title=Link_rot&amp;oldid=893134620" class="uri">https://en.wikipedia.org/w/index.php?title=Link_rot&amp;oldid=893134620</a>.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="B-data-input.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="B-data-output.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": false,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rr-france/bookrr/edit/master/06_aspects_computationnels.Rmd",
+"text": "Editer"
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["booksprintrr.pdf", "booksprintrr.epub"],
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
