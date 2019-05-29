@@ -141,7 +141,7 @@ ces paquets dépendent eux-mêmes d'autres paquets. La figure 6.1 "Exemple des 
 <!-- ![Dépendances de Matplotlib sous Debian obtenues avec debtree](img/python3-matplotlib.png "debtree output") -->
 
 ```{r debtree, echo=FALSE, fig.align = 'center', out.width = "100%", fig.cap = "Dépendances de Matplotlib sous Debian obtenues avec debtree."}
-knitr::include_graphics(here::here("figs", "img/python3-matplotlib.png"))
+knitr::include_graphics("img/python3-matplotlib.png")
 ```
 
 Vous remarquerez dans les dépendances que la version n'est pas précisément
