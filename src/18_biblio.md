@@ -12,9 +12,6 @@ Nous vous signalons quelques outils pour rechercher de manière légale la versi
 
 - [Scili](https://www.scilit.net/) : https://www.scilit.net/ 
 
-Vous utilisez un outil de gestion des références biblios (Zotero, Mendeley, etc.) ? 
-Importez directement la [biblio de la 1re édition du livre](https://framadrive.org/s/9Fkfi32SCnJ7DNT), qui inclut la biblio préparatoire en plus des sources citées.
-
 
 
 `r if (knitr::is_html_output()){ '
