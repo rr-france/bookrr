@@ -143,6 +143,7 @@ ces paquets dépendent eux-mêmes d'autres paquets. La figure 6.1 "Exemple des 
 ```{r debtree, echo=FALSE, fig.align = 'center', out.width = "100%", fig.cap = "Dépendances de Matplotlib sous Debian obtenues avec debtree."}
 knitr::include_graphics(here::here("figs", "img/python3-matplotlib.png"))
 ```
+
 Vous remarquerez dans les dépendances que la version n'est pas précisément
 indiquée mais qu'il faut par exemple une version supérieure de
 `python3-pyparsing` qui soit au moins 1.5.6. Mais si des *bugs* peuvent être
