@@ -8,3 +8,4 @@ output:
   bookdown::gitbook:
     split_by: "chapter"
     split_bib: yes
+    fig_caption: true
