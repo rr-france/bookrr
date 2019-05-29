@@ -140,7 +140,7 @@ installer les paquets `python3-dateutil`, `python-matplotlib-data`,
 ces paquets dépendent eux-mêmes d'autres paquets. La figure 6.1 "Exemple des dépendances de la bibliothèque python matplotlib — obtenu avec debtree" (alerte paracétamol) permet de voir le graphe obtenu lorsque l'on récupère l'ensemble des paquets nécessaires avec leurs dépendances.
 <!-- ![Dépendances de Matplotlib sous Debian obtenues avec debtree](img/python3-matplotlib.png "debtree output") -->
 
-``{r debtree, fig.align = 'center', out.width = "100%", fig.cap = "Dépendances de Matplotlib sous Debian obtenues avec debtree."}
+```{r debtree, echo=FALSE, fig.align = 'center', out.width = "100%", fig.cap = "Dépendances de Matplotlib sous Debian obtenues avec debtree."}
 knitr::include_graphics(here::here("figs", "img/python3-matplotlib.png"))
 ```
 Vous remarquerez dans les dépendances que la version n'est pas précisément
