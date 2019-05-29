@@ -137,7 +137,7 @@ python3-cycler (>= 0.10.0), python3:any (>= 3.3.2-2~), libc6 (>=
 C'est ici la version 2.1.1-2 qui est présente et, pour l'installer, il a fallu
 installer les paquets `python3-dateutil`, `python-matplotlib-data`,
 `python3-pyparsing`, *etc*. C'est ce qu'on appelle les "dépendances". Mais pour
-ces paquets dépendent eux-mêmes d'autres paquets. La figure 6.1 (alerte paracétamol) permet de voir le graphe obtenu lorsque l'on récupère l'ensemble des paquets nécessaires avec leurs dépendances.
+ces paquets dépendent eux-mêmes d'autres paquets. La figure 6.1 "Exemple des dépendances de la bibliothèque python matplotlib — obtenu avec debtree" (alerte paracétamol) permet de voir le graphe obtenu lorsque l'on récupère l'ensemble des paquets nécessaires avec leurs dépendances.
 ![Dépendances de Matplotlib sous Debian obtenues avec debtree](img/python3-matplotlib.png "debtree output") 
 
 Vous remarquerez dans les dépendances que la version n'est pas précisément
