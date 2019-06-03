@@ -21,7 +21,7 @@ On peut bien sûr évoquer les causes structurelles qui soumettent les chercheur
 
 > "*Funders, publishers, societies, institutions, editors, reviewers and authors all contribute to the cultural norms that create and sustain dysfunctional incentives.*"[@munafoManifestoReproducibleScience2017]
 
-Ces injonctions peuvent engendrer des conduites plus que discutables sur le plan de la déontologie et de l'intégrité scientifiques. Mais selon nous, la majorité des chercheurs est en général de bonne foi. Les "sorties de route" sont la plupart du temps moins imputables à une volonté délibérée de frauder qu'à un défaut de maîtrise des méthodes ou/et des outils. Randall et Welser citent par exemple le problème du *p-hacking* : 
+Ces injonctions peuvent engendrer des conduites plus que discutables sur le plan de la déontologie et de l'intégrité scientifiques. Mais selon nous, la majorité des chercheurs est en général de bonne foi. Les "sorties de route" sont la plupart du temps moins imputables à une volonté délibérée de frauder qu'à un défaut de maîtrise des méthodes ou/et des outils. Randall et Welser citent par exemple le problème du *p-hacking* et surtout, du mauvais usage de la *p-value* : 
 
 > "*P-hacking may not be as widespread as one might fear, but it appears that many scientists who routinely use p-values and statistical significance testing misunderstand those concepts, and therefore employ them improperly in their research.*" [@randallIrreproducibilityCrisisModern2018] 
 
