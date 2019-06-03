@@ -16,7 +16,7 @@ Pour en savoir plus, voir les [annexes](src/21_auteurs.md).
 
 * Version imprimée : Desquilbet, Loïc, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot, et Nicolas P. Rougier. *Vers une recherche reproductible : Faire évoluer ses pratiques*. Bordeaux : Urfist de Bordeaux, 2019. ISBN : 979-10-97595-04-3 ; URL Sudoc (to do)
 
-* Version numérique : Desquilbet, Loïc, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot, et Nicolas P. Rougier. *Vers une recherche reproductible : Faire évoluer ses pratiques*. Bordeaux : Urfist de Bordeaux, 2019. ISBN : 979-10-97595-05-0 ; URL HAL (to do)
+* Version numérique : Desquilbet, Loïc, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot, et Nicolas P. Rougier. *Vers une recherche reproductible : Faire évoluer ses pratiques*. Bordeaux : Urfist de Bordeaux, 2019. ISBN : 979-10-97595-05-0 ; https://hal.archives-ouvertes.fr/hal-02144142
 
 * Site web : Le présent ouvrage se décline aussi sous forme d'un [site web](https://rr-france.github.io/bookrr/), intégrant des montées de version en attendant la prochaine édition du document. Si vous citez cette version évolutive dans des travaux, vous pouvez indiquer la date de consultation du site. 
 
