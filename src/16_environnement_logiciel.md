@@ -93,8 +93,8 @@ changer une bibliothèque particulière ou de faire évoluer cet environnement.
 L'approche la plus aboutie pour la reproduction de l'environnement logiciel 
 s'appuie sur les systèmes de gestion de paquets fonctionnels tels que :
 
-* [GUIX](https://www.gnu.org/software/guix/) ; voir aussi [@inriaGuixLogicielLibre] et [@wurmusReproducibleGenomicsAnalysis2018])
-* [NIX](https://nixos.org/)
+* [Guix](https://www.gnu.org/software/guix/) ; voir aussi [@inriaGuixLogicielLibre] et [@wurmusReproducibleGenomicsAnalysis2018])
+* [Nix](https://nixos.org/)
 
 Il s'agit d'outils permettant de décrire et d'isoler très précisément 
 l'environnement strictement nécessaire à la recherche reproductible, de le partager 
