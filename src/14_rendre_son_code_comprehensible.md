@@ -166,7 +166,7 @@ Il est donc important de bien faire la distinction entre ces deux
 types d'annotations (commentaire et documentation) qui peuvent se retrouver simultanément
 à l'intérieur du code.
 
-## Utiliser des document computationnels (*notebooks*)
+## Utiliser des documents computationnels (*notebooks*)
 
 La programmation lettrée a été conceptualisée en 1984 par Donald Knuth
 [@knuthLiterateProgramming1992] et propose des principes pour produire un
