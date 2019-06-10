@@ -217,8 +217,8 @@ effectivement exécuté,
 - d'autre part, ils facilitent sa compréhension car le code devient une partie intégrante d'une trame narrative ; certains *notebooks* peuvent ainsi quasiment s'apparenter à des articles,
 - enfin, ces documents peuvent répondre à des besoins de traçabilité en raison de leur caractère dynamique : on obtient en effet des cellules de codes prototypes qu'il est possible de réécrire et de réexécuter avec des paramètres différents.  
 
-Pour en savoir davantage sur les documents computationels, vous pouvez vous rapporter aux
-module 2 et 3 du [MOOC sur la recherche
+Pour en savoir davantage sur les documents computationels, vous pouvez vous reporter aux
+modules 2 et 3 du [MOOC sur la recherche
 reproductible](https://learninglab.inria.fr/mooc-recherche-reproductible-principes-methodologiques-pour-une-science-transparente/) [@inrialearninglabMOOCRechercheReproductible2018].
 
 ## Restructurer et automatiser l'exécution du code avec un *workflow*
