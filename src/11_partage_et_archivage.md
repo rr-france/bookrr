@@ -122,4 +122,9 @@ Accessible, Interoperable, Reusable)](https://www.go-fair.org/fair-principles/) 
 Pour une exposition très claire des problèmes de pérennité, vous
 pouvez regarder le [séminaire de Roberto Di
 Cosmo](https://github.com/alegrand/RR_webinars/blob/master/5_archiving_software_and_data/index.org) sur ce sujet *in* "*Series of webinars and documents on Reproducible Research - Preserving software: ensuring availability and traceability*" [@legrandSeriesWebinarsDocuments2016a].
+
+Le manuel *The Open Science Training Handbook* comporte des conseils pédagogiques et synthétise ces questions clairement. 
+Bezjak, Sonja, Philipp Conzett, Pedro L. Fernandes, Edit Görögh, Kerstin Helbig, Bianca Kramer, Ignasi Labastida, et al. 2018. The Open Science Training Handbook. Foster Open Science. https://doi.org/10.5281/zenodo.2587951.
+
+
  
