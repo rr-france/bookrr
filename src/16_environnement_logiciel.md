@@ -40,7 +40,7 @@ recherche ainsi que les doublons de versions successives). Elle
 correspond à l'ensemble du schéma ci-dessous (donc à TOUT le système 
 d'exploitation).
 
-![Schéma des différents environnements logiciel](img/schemaEnvirLogi2.png)
+![Schéma des différents environnements logiciels](img/schemaEnvirLogi2.png)
 
 L'identification des dépendances est donc soit lacunaire et imprécise (méthode n°1 ci-dessus),
 soit au contraire, illisible car trop étendue (méthode n°2 ci-dessus). 
