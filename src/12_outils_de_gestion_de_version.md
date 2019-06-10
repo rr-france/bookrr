@@ -33,7 +33,7 @@ Dans ce contexte, il est souvent recommandé de créer un nom de fichier constit
 * un numéro de version du document qui sera incrémenté aux étapes
   remarquables de l'évolution du document (v01, v02...)
 
-Le titre ne devrait pas être trop long : sous certains système d'exploitation,
+Le titre ne devrait pas être trop long : sous certains systèmes d'exploitation,
 il ne doit pas dépasser 31 caractères, extension comprise. Également pour
 des raisons de compatibilité, il est recommandé d'éviter l'utilisation de :
 
