@@ -135,6 +135,6 @@ de ressources accessibles en ligne que nous jugeons de qualité.
 ### Ateliers en ligne "Software Carpentry"
 
 * ["Programming with R"](http://swcarpentry.github.io/r-novice-inflammation) [@softwarecarpentryProgramming]
-* ["R for Reproducible Scientific Analysis"](http://swcarpentry.github.io/r-novice-gapminder) [@softwarecarpentryReproducibleScientificAnalysisa]
+* ["R for Reproducible Scientific Analysis"](http://swcarpentry.github.io/r-novice-gapminder[@softwarecarpentryReproducibleScientificAnalysis]
 * ["Programming with Python"](http://swcarpentry.github.io/python-novice-inflammation) [@softwarecarpentryProgrammingPython]
 * ["Plotting and Programming in Python"](http://swcarpentry.github.io/python-novice-gapminder) [@softwarecarpentryPlottingProgrammingPython]
