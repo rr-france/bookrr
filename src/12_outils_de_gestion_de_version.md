@@ -4,7 +4,7 @@ La sauvegarde des étapes successives du développement de documents (textes,
 bases de données, codes, *etc*.) est une des briques fondamentales de la
 recherche reproductible. Elle permet en effet de retrouver ou de reconstituer
 facilement des versions spécifiques et datées des documents. La mise en œuvre
-va de la simple sauvegarde de versions des fichiers, à des sauvegardes
+va de la simple sauvegarde de version des fichiers, à des sauvegardes
 différentielles n'enregistrant que les modifications.
 
 La mise en œuvre d'une stratégie de gestion de versions doit permettre d'éviter
