@@ -148,7 +148,7 @@ Vous remarquerez dans les dépendances que la version n'est pas précisément
 indiquée mais qu'il faut par exemple une version supérieure de
 `python3-pyparsing` qui soit au moins 1.5.6. Mais si des *bugs* peuvent être
 introduits, comment être sûr que votre code fonctionnera de la même façon avec
-les versions `1.5.6`, `1.5.7`, etc., sachant que nous en sommes maintenant au
+les versions `1.5.6`, `1.5.7`, *etc*., sachant que nous en sommes maintenant au
 moins à la version `2.2.0`?
 
 En résumé, tout code, aussi petit soit-il, possède tout un arbre de dépendances
