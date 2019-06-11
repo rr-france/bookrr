@@ -96,7 +96,7 @@ plus élaborées demanderont un peu plus de temps et d'énergie. Même si elles 
 
 ## La minute théologie négative : ce que vous ne trouverez pas dans cet ouvrage
 
-Le présent ouvrage n'a pas pour objectif de traiter toutes les solutions pour garantir la reproductibilité de la recherche au sens de Randall et Welser [@randallIrreproducibilityCrisisModern2018]. Ainsi, la question de la qualité et de la pertinence de la recherche est hors périmètre du livre. Nous vous proposons plutôt de nous focaliser sur les solutions qui permettent de communiquer vos résultats de la façon la plus exhaustive/explicite/pérenne possible afin qu'ils aient une chance de pouvoir être reproduits. 
+Le présent ouvrage n'a pas pour objectif de traiter toutes les solutions pour garantir la reproductibilité de la recherche au sens de Randall et Welser [@randallIrreproducibilityCrisisModern2018]. Ainsi, les questions de la qualité et de la pertinence de la recherche sont hors périmètre du livre. Nous vous proposons plutôt de nous focaliser sur les solutions qui permettent de communiquer vos résultats de la façon la plus exhaustive/explicite/pérenne possible afin qu'ils aient une chance de pouvoir être reproduits. 
 Dans cette édition, afin de proposer aux lecteurs des propositions applicables car suffisamment détaillées, nous laisserons volontairement de côté les problèmes inhérents à la qualité de la recherche et en particulier :
 
 - aller à la "pêche" aux résultats significatifs parmi tous les tests statistiques réalisés ("*p-hacking*") [@forstmeierDetectingAvoidingLikely2017], [@nuzzoScientificMethodStatistical2014], [@randallIrreproducibilityCrisisModern2018]
