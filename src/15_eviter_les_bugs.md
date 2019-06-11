@@ -52,7 +52,7 @@ des tests unitaires, en les évaluant :
 - à chaque nouvelle version du code, ou 
 - à intervalles de temps réguliers (chaque nuit par exemple). 
 
-Ces solutions peuvent être locales, telles que Jenkins, ou deportées,
+Ces solutions peuvent être locales, telles que Jenkins, ou déportées,
 telles que [Travis CI](https://travis-ci.org/) [@travisciTestDeployYour] ou [Appveyor](https://www.appveyor.com/). 
 
 Ces outils d'intégration continue peuvent en outre servir à vérifier que le
