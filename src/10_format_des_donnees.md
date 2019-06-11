@@ -109,7 +109,7 @@ numérique [@wilkinsonFAIRGuidingPrinciples2016].
 Les calculs numériques sont effectués avec une précision finie, et il faut donc 
 choisir le nombre de chiffres significatifs à reporter dans une table de données ou de 
 résultats. Dans un fichier de résultats, il est tentant d'inclure tous les chiffres 
-significatifs dont on dispose. Mais cela n'est pas necessairement souhaitable (cela peut conduire 
+significatifs dont on dispose. Mais cela n'est pas nécessairement souhaitable (cela peut conduire 
 à une inflation inutile des tailles de fichiers), d'autant plus que ce n'est pas nécessairement la précision
 dont on dispose réellement : par exemple, R n'affiche pas tous ses chiffres significatifs avec 
 sa commande `print()`. 
