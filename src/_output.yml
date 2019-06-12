@@ -5,7 +5,7 @@ bookdown::gitbook:
     toc:
       collapse: section
       before: |
-        <li><a href="./">Vers une recherche reproducible</a></li>
+        <li><a href="./">Vers une recherche reproductible</a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Compilé avec bookdown</a></li>
     download: ["pdf", "epub"]
