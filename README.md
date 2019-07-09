@@ -27,7 +27,7 @@ Vous pouvez soumettre vos propositions **de préférence** directement *via* une
  
  Si vous souhaitez juste nous dire si vous avez aimé ce livre (ou pas), ou n'êtes pas suffisament à l'aise avec les *pull-request*, vous pouvez également :
   - initier une discussion dans GitHub *via* une [*issue*](https://github.com/rr-france/bookrr/issues/)
-  - nous contacter par email : [urfist@u-bordeaux.fr](mailto:urfist@u-bordeaux.fr)
+  - nous contacter *via* email : [urfist@u-bordeaux.fr](mailto:urfist@u-bordeaux.fr)
 
 Vous pouvez aussi vouloir jeter un œil à [nos notes sur la compilation
 du livre via bookdown](INSTALL.md)
