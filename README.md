@@ -22,13 +22,12 @@ Pour en savoir plus, voir les [annexes](src/21_auteurs.md).
 Ce livre est ouvert aux nouveaux contenus : proposition d'ajout de chapitre, complément de chapitre, références complémentaires, mais aussi questions.
 Le livre ayant été rédigé collaborativement, les propositions sont étudiées par le collectif des auteurs. 
 En fonction de la nature de vos propositions, vous pourrez être amené.e à être cité.e comme [contributeur, ou co-auteur](https://publicationethics.org/authorship). 
-Vous pouvez soumettre vos propositions :
- - **idéalement** directement *via* une [*pull-request*](https://github.com/rr-france/bookrr/pulls) 
 
-ou juste nous dire si vous avez aimé ce livre (ou pas) :
- - en initiant une discussion dans GitHub *via* une [*issue*](https://github.com/rr-france/bookrr/issues/)
+Vous pouvez soumettre vos propositions **idéalement** directement *via* une [*pull-request*](https://github.com/rr-france/bookrr/pulls).
  
-Enfin, nhésitez à nous contacter par email : [urfist@u-bordeaux.fr](mailto:urfist@u-bordeaux.fr)
+ Si vous souhaitez juste nous dire si vous avez aimé ce livre (ou pas), ou n'êtes pas suffisament à l'aise avec les *pull-request*, vous pouvez :
+  - à défaut initier une discussion dans GitHub *via* une [*issue*](https://github.com/rr-france/bookrr/issues/)
+  - nous contacter par email : [urfist@u-bordeaux.fr](mailto:urfist@u-bordeaux.fr)
 
 Vous pouvez aussi vouloir jeter un œil à [nos notes sur la compilation
 du livre via bookdown](INSTALL.md)
