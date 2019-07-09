@@ -23,7 +23,7 @@ Ce livre est ouvert aux nouveaux contenus : proposition d'ajout de chapitre, co
 Le livre ayant été rédigé collaborativement, les propositions sont étudiées par le collectif des auteurs. 
 En fonction de la nature de vos propositions, vous pourrez être amené.e à être cité.e comme [contributeur, ou co-auteur](https://publicationethics.org/authorship). 
 
-Vous pouvez soumettre vos propositions **idéalement** directement *via* une [*pull-request*](https://github.com/rr-france/bookrr/pulls).
+Vous pouvez soumettre vos propositions **de préférence** directement *via* une [*pull-request*](https://github.com/rr-france/bookrr/pulls).
  
  Si vous souhaitez juste nous dire si vous avez aimé ce livre (ou pas), ou n'êtes pas suffisament à l'aise avec les *pull-request*, vous pouvez :
   - à défaut initier une discussion dans GitHub *via* une [*issue*](https://github.com/rr-france/bookrr/issues/)
