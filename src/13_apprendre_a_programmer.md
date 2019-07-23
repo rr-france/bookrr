@@ -2,11 +2,12 @@
 # Apprendre à programmer {#C-code-learn}
 
 Dans ce chapitre, nous mettons en évidence les limitations des interfaces
-graphiques en termes d'efficacité et de reproductibilité ; nous expliquons
-qu'il peut être nécessaire d'apprendre à programmer en conseillant deux langages devenus incontournables en traitement et analyse des données : Python et R.
+graphiques en termes d'efficacité et surtout de reproductibilité ; nous expliquons
+qu'il peut être nécessaire d'apprendre à programmer en conseillant deux langages 
+devenus incontournables en traitement et analyse des données : Python et R.
 
 
-## Limiter le recours aux interfaces graphiques
+## Les limites des interfaces graphiques
 
 Une interface graphique est un moyen simple et visuel d'indiquer à un logiciel
 ce que l'on souhaite faire. Par exemple, dans un logiciel de traitement de
@@ -18,9 +19,9 @@ simplifie la vie de nombreux utilisateurs.
 
 Dans de nombreux logiciels scientifiques, ce type d'interface est également disponible, 
 par exemple pour traiter les données ou concevoir des figures. 
-L'exemple le plus célèbre est très certainement le tableur Excel, très utilisé y compris pour faire des traitements statistiques relativement compliqués. 
+L'exemple le plus célèbre est très certainement le tableur Microsoft Excel, très utilisé y compris pour faire des traitements statistiques relativement compliqués. 
 Dans un premier temps, cet outil peut simplifier les traitements mais dès que vous souhaiterez effectuer des tâches plus subtiles
-ou des tâches répétitives, il va rapidement devenir un obstacle. Si vous effectuez des calculs exotiques, vous serez alors contraint d'entrer des formules de calcul complexes dans les cellules. 
+ou des tâches répétitives, il peut rapidement devenir un obstacle. Si vous effectuez des calculs exotiques, vous serez alors contraint d'entrer des formules de calcul complexes dans les cellules. 
 La bonne nouvelle est que, en faisant cela, vous avez commencé à programmer. 
 La mauvaise est que votre calcul n'est pas reproductible. 
 "Mais j'ai sauvé ma feuille Excel pourtant !". 
@@ -33,6 +34,12 @@ les données dans la feuille sauvegardée seront triées mais vous aurez
 perdu la trace de cette opération de tri et il vous sera facile d'oublier
 de la répéter si vous devez recommencer le traitement avec un autre jeu de données 
 (sauf si vous êtes précautionneux et tenez scrupuleusement à jour votre cahier de laboratoire).
+
+Ces interfaces graphiques présentent des avantages certains dans l'exploration 
+et la visualisation intéractive de données et de résultats expérimentaux. Mais 
+elles posent des difficultés d'enregistrement et de documentation des procédures 
+utilisées qui sont pourtant nécessaire pour une recherche reproductible.
+
 
 
 ## De l'intérêt de la programmation
