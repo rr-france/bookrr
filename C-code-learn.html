@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapitre 13 Apprendre à programmer | Vers une recherche reproductible</title>
   <meta name="description" content="Livre d’introduction à la recherche reproductible rédigé lors d’un booksprint." />
-  <meta name="generator" content="bookdown 0.11.3 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.12.1 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapitre 13 Apprendre à programmer | Vers une recherche reproductible" />
   <meta property="og:type" content="book" />
@@ -24,15 +24,15 @@
 <meta name="author" content="Loïc Desquilbet, Sabrina Granger, Boris Hejblum, Arnaud Legrand, Pascal Pernot, Nicolas Rougier   Facilitatrice : Elisa de Castro Guerra" />
 
 
-<meta name="date" content="2019-07-09" />
+<meta name="date" content="2019-07-23" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="C-versioning.html">
-<link rel="next" href="C-code-good.html">
+<link rel="prev" href="C-versioning.html"/>
+<link rel="next" href="C-code-good.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -242,7 +242,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="17.3" data-path="C-licences.html"><a href="C-licences.html#pour-en-savoir-plus-8"><i class="fa fa-check"></i><b>17.3</b> Pour en savoir plus</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="bibliographie.html"><a href="bibliographie.html"><i class="fa fa-check"></i>Bibliographie</a></li>
-<li class="part"><span><b>IV Annexes</b></span></li>
+<li class="part"><span><b>IV Compléments à la 1<sup>ère</sup> édition</b></span></li>
+<li><a href="introduction-aux-complements-a-la-1ere-edition.html#introduction-aux-complements-a-la-1ere-edition">Introduction aux compléments à la 1<sup>ère</sup> édition</a></li>
+<li class="part"><span><b>V Annexes</b></span></li>
 <li class="chapter" data-level="18" data-path="annexes.html"><a href="annexes.html"><i class="fa fa-check"></i><b>18</b> Annexes</a><ul>
 <li class="chapter" data-level="18.1" data-path="annexes.html"><a href="annexes.html#modalites-de-conception-de-louvrage"><i class="fa fa-check"></i><b>18.1</b> Modalités de conception de l’ouvrage</a></li>
 <li class="chapter" data-level="18.2" data-path="annexes.html"><a href="annexes.html#objectif"><i class="fa fa-check"></i><b>18.2</b> Objectif</a></li>
@@ -455,8 +457,9 @@ gitbook.start({
     script.type = "text/javascript";
     var src = "";
     if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:" && /^https?:/.test(src))
-      src = src.replace(/^https?:/, '');
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
     script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
